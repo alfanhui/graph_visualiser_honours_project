@@ -1,0 +1,55 @@
+/* Variables */
+$vin-blue: #5bb7db;
+$vin-green: #60b044;
+$vin-red: #ff0000;
+
+* {
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
+}
+
+/* Styles */
+body {
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #4d4d4d;
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+}
+
+td {
+	padding: 12px;
+}
+
+.h2 {
+  font: 75px 'Arial';
+  color: $vin-blue;
+}
+
+.input {
+    width: 40px;
+    height: 17px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.root {
+  flex: 1;
+  width:100%;
+}
+
+.main {
+  margin: 20px;
+}
+
+.centered {
+  position: fixed; /* or absolute */
+  top: 40%;
+  left: 50%;
+}
