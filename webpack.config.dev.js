@@ -8,7 +8,8 @@ export default {
         alias: {
             constants: path.resolve(__dirname, 'src/constants/'),
             components: path.resolve('src/components/'),
-            api: path.resolve('src/api/')
+            api: path.resolve('src/api/'),
+            utilities: path.resolve('src/utilities/')
         },
         extensions: ['*', '.js', '.jsx', '.json']
   },

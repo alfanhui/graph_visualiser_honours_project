@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import SomeThing from './SomeThing';
 import SomeThingSetter from './SomeThingSetter';
 import { PostQuery } from 'api/db';
+import { loadJSON, graphMLtoCypher } from 'utilities/graphML';
 //url path for the database
 
 
@@ -24,14 +25,26 @@ class HomePage extends React.Component{
         this.state = {
 
         };
-         
+
     }
  
 
  
     componentWillMount() {
-        PostQuery('RETURN count(*)', '');  
+        console.log("Wiping  database..");
+        PostQuery(['MATCH (n) OPTIONAL MATCH (n) - [r] - () DELETE n, r'], [null], "Wiping Database");
+        console.log("Testing JSON import..");
+        loadJSON(function (response) {
+            // Parse JSON string into object
+            let actual_JSON = JSON.parse(response);
+            console.log(actual_JSON);
+            graphMLtoCypher(actual_JSON);
+        });
+        
     }
+
+
+
 
     componentDidUpdate() {
 
