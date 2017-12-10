@@ -5,8 +5,10 @@
     "\\src\\actions",
     "\\src\\api",
     "\\src\\components",
-    "\\src\\constants"
+    "\\src\\constants",
+    "\\src\\reducers",
+    "\\src\\utilities"
   ],
-  "SelectedNode": "\\src\\api\\db.js",
+  "SelectedNode": "\\src\\utilities\\graphML.js",
   "PreviewInSolutionExplorer": false
 }

@@ -32,7 +32,7 @@ class HomePage extends React.Component{
  
     componentWillMount() {
         console.log("Wiping  database..");
-        PostQuery(['MATCH (n) OPTIONAL MATCH (n) - [r] - () DELETE n, r'], [null], "Wiping Database");
+        PostQuery(['MATCH (n) OPTIONAL MATCH (n) - [r] - () DELETE n, r'], null, "Wiping Database");
         console.log("Testing JSON import..");
         loadJSON(function (response) {
             // Parse JSON string into object
