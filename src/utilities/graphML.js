@@ -6,7 +6,7 @@ import { PostQuery } from 'api/db';
 export function loadJSON(callback) {   
 	let xobj = new XMLHttpRequest();
 	xobj.overrideMimeType("application/json");
-	xobj.open('GET', 'utilities/1238.json', true);
+    xobj.open('GET', 'utilities/10808.json', true);
 	xobj.onreadystatechange = function () {
 		if (xobj.readyState == 4 && xobj.status == "200") {
 			// Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
@@ -19,7 +19,7 @@ export function loadJSON(callback) {
 export function graphMLtoCypher(jsonObj){
     //create node statement
     
-
+    /*
     let nodeParameters = { "props": jsonObj.nodes };
     let edgeParameters = { "rows": jsonObj.edges };
     let edgeBackup = { "rows": jsonObj.edges };
@@ -75,16 +75,23 @@ export function graphMLtoCypher(jsonObj){
         console.log(index);
         nodeStatement.push('MERGE (n:' + item.fromType.type + '{' + fromType + '})-[r:'+ item.fromType.type + '{' + edge + '}]->(m:' + item.toType.type + '{' + toType + '})');
         PostQuery(nodeStatement, null, "Creating nodes");
+
+
+      /*
+    edgeStatements.push('UNWIND {rows} AS edge MATCH (n: edge.fromType), (m: edge.toType) WHERE n.nodeID =\'edge.fromID\' AND m.nodeID=\'edge.toID\' CREATE (n)-[r:edge.type]->(m))');
+    PostQuery(edgeStatements, edgeParameters, "Creating edges");
+    */
+    /*
+
+
+    // SET fromType = edge.fromType SET toType = edge.toType SET type = edge.type SET toID = edge.toID SET fromID = edge.fromID'
     });
-
-    /*
-    //create indexes
-    for (let nodeType in dictionary) {
-    PostQuery(['CREATE INDEX ON :' + nodeType + '(nodeID)'], null, "Creating index");
-    } 
+    
+    */
+    
 
 
-    /*
+    
 
     let nodeParameters = { "props": jsonObj.nodes };
     console.log(nodeParameters);
@@ -103,30 +110,26 @@ export function graphMLtoCypher(jsonObj){
     for (let nodeType in dictionary) {
         let nodeStatement = 'UNWIND {' + nodeType + '} AS map CREATE (n:' + nodeType + ') SET n = map';
         PostQuery([nodeStatement], dictionary, "Creating nodes");
-        PostQuery(['CREATE INDEX ON :' + nodeType + '(nodeID)'], null, "Creating index");//create index
+        PostQuery(['CREATE INDEX ON :' + nodeType + '(nodeID)'], null, "Creating index"); //create index
+
     }
-
-
+    
 	  //create edges
     let edgeParameters = { "rows": jsonObj.edges };
     edgeParameters.rows.map((item) => {
         item["toType"] = hashMap[item.toID].type;
         item["fromType"] = hashMap[item.fromID].type;
-        if (hashMap[item.toID].scheme) {
-            item["type"] = hashMap[item.toID].type;
-        } else {
-            item["type"] = "to";
-        }
     });
-    console.log(edgeParameters);
 
     let edgeStatements = []
+    
     edgeParameters.rows.map((edge) => {
-        edgeStatements.push('MATCH (n:' + edge.fromType + '{nodeID:' + edge.fromID + '}) WITH n MATCH(m:' + edge.toType + '{nodeID:' + edge.toID + '}) CREATE (n)-[r:' + edge.type + ']->(m)');
-        console.log('MATCH (n:' + edge.fromType + '{nodeID:' + edge.fromID + '}) WITH n MATCH(m:' + edge.toType + '{nodeID:' + edge.toID + '}) CREATE (n)-[r:' + edge.type + ']->(m)');
+        edgeStatements.push('MATCH (n:' + edge.fromType + '),(m:' + edge.toType + ') WHERE n.nodeID=\'' + edge.fromID + '\' AND m.nodeID=\'' + edge.toID + '\' CREATE (n)-[r:LINK]->(m)');
+        console.log('MATCH (n:' + edge.fromType + '),(m:' + edge.toType + ') WHERE n.nodeID=\'' + edge.fromID + '\' AND m.nodeID=\'' + edge.toID + '\' CREATE (n)-[r:LINK]->(m)');
     });
-    PostQuery(edgeStatements, null, "Creating edge");
-    */
+    PostQuery(edgeStatements, null, "Creating edges");
+  
 
-	//locutions?
+
+  	//locutions?
 }

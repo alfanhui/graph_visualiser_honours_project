@@ -7,13 +7,16 @@ import {BrowserRouter} from 'react-router-dom';
 import reducer from './reducers/index';
 require('./favicon.ico');
 import './styles/styles.scss'; //You can import SASS/CSS files too! Webpack will run the associated loader and plug this into the page.
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 const store = createStore(reducer);
 
 const App = (props) => (
     <div>
       {/*<Header/>*/}
-      <Root {... props}/>
+      <MuiThemeProvider>
+            <Root {...props} />
+      </MuiThemeProvider>
       {/*<Footer/>*/}
     </div>
 );

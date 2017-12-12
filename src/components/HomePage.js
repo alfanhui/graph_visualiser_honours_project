@@ -4,8 +4,7 @@ import SomeThing from './SomeThing';
 import SomeThingSetter from './SomeThingSetter';
 import { PostQuery } from 'api/db';
 import { loadJSON, graphMLtoCypher } from 'utilities/graphML';
-//url path for the database
-
+import Paper from 'material-ui/Paper';
 
 @connect((store) => {
   return {
@@ -13,13 +12,11 @@ import { loadJSON, graphMLtoCypher } from 'utilities/graphML';
   };
 })
 
-
+ 
 
 
 
 class HomePage extends React.Component{
-
-   
     constructor(props) {
         super(props);
         this.state = {
@@ -28,23 +25,9 @@ class HomePage extends React.Component{
 
     }
  
-
- 
     componentWillMount() {
-        console.log("Wiping  database..");
-        PostQuery(['MATCH (n) OPTIONAL MATCH (n) - [r] - () DELETE n, r'], null, "Wiping Database");
-        console.log("Testing JSON import..");
-        loadJSON(function (response) {
-            // Parse JSON string into object
-            let actual_JSON = JSON.parse(response);
-            console.log(actual_JSON);
-            graphMLtoCypher(actual_JSON);
-        });
-        
+        this.wipeDataBase();
     }
-
-
-
 
     componentDidUpdate() {
 
@@ -54,22 +37,34 @@ class HomePage extends React.Component{
 
     }
 
- 
+    wipeDataBase() {
+        console.log("Wiping  database..");
+        PostQuery(['MATCH (n) OPTIONAL MATCH (n) - [r] - () DELETE n, r'], null, "Wiping Database");
+        console.log("Testing JSON import..");
+        loadJSON(function (response) {
+            // Parse JSON string into object
+            let actual_JSON = JSON.parse(response);
+            console.log(actual_JSON);
+            graphMLtoCypher(actual_JSON);
+        });
+    }
 
 
     render(){
-      return (
-        <div className={"main"}>
-          <div className={'h2'}> REACT </div>
-          <SomeThing thingId="0" thing={this.props.state.thing0}/>
-          <SomeThingSetter thingId="0" />
+        return (
+          <Paper>
+            <div className={"main"}>
+              <div className={'h2'}> REACT </div>
+              <SomeThing thingId="0" thing={this.props.state.thing0}/>
+              <SomeThingSetter thingId="0" />
 
-          <SomeThing thingId="1" thing={this.props.state.thing1}/>
-          <SomeThingSetter thingId="1" />
+              <SomeThing thingId="1" thing={this.props.state.thing1}/>
+              <SomeThingSetter thingId="1" />
 
-          <SomeThing thingId="2" thing={this.props.state.thing2}/>
-          <SomeThingSetter thingId="2" />
-        </div>
+              <SomeThing thingId="2" thing={this.props.state.thing2}/>
+              <SomeThingSetter thingId="2" />
+            </div>
+          </Paper>
       );
     }
 
