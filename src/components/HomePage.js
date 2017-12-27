@@ -1,10 +1,11 @@
 import React from 'react';
 import { connect } from "react-redux";
 import SomeThing from './SomeThing';
-import SomeThingSetter from './SomeThingSetter';
-import { PostQuery } from 'api/db';
-import { loadJSON, graphMLtoCypher } from 'utilities/graphML';
+//import SomeThingSetter from './SomeThingSetter';
+//import { PostQuery } from 'api/dbConnection';
+//import { loadJSON, graphMLtoCypher } from 'utilities/graphML';
 import Paper from 'material-ui/Paper';
+import DatabaseOptions from './DatabaseOptions';
 
 @connect((store) => {
   return {
@@ -12,7 +13,7 @@ import Paper from 'material-ui/Paper';
   };
 })
 
- 
+
 
 
 
@@ -24,9 +25,9 @@ class HomePage extends React.Component{
         };
 
     }
- 
+
     componentWillMount() {
-        this.wipeDataBase();
+        //this.wipeDataBase();
     }
 
     componentDidUpdate() {
@@ -36,7 +37,7 @@ class HomePage extends React.Component{
     componentWillUnmount(){
 
     }
-
+/*
     wipeDataBase() {
         console.log("Wiping  database..");
         PostQuery(['MATCH (n) OPTIONAL MATCH (n) - [r] - () DELETE n, r'], null, "Wiping Database");
@@ -48,21 +49,14 @@ class HomePage extends React.Component{
             graphMLtoCypher(actual_JSON);
         });
     }
-
+*/
 
     render(){
         return (
-          <Paper>
+          <Paper> //main paper
             <div className={"main"}>
               <div className={'h2'}> REACT </div>
-              <SomeThing thingId="0" thing={this.props.state.thing0}/>
-              <SomeThingSetter thingId="0" />
-
-              <SomeThing thingId="1" thing={this.props.state.thing1}/>
-              <SomeThingSetter thingId="1" />
-
-              <SomeThing thingId="2" thing={this.props.state.thing2}/>
-              <SomeThingSetter thingId="2" />
+              <DatabaseOptions value={1}/>
             </div>
           </Paper>
       );
