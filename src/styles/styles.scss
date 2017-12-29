@@ -2,7 +2,6 @@
 $vin-blue: #5bb7db;
 $vin-green: #60b044;
 $vin-red: #ff0000;
-
 * {
     -webkit-transform: translatez(0);
     -moz-transform: translatez(0);
@@ -23,6 +22,14 @@ body {
   -moz-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   font-weight: 300;
+  display: flex;
+  flex-direction: column;
+}
+
+canvas{
+  height: 96.5vh;
+  width: 98.8vw;
+  border: solid blue 1px;
 }
 
 td {
@@ -34,6 +41,7 @@ td {
   color: $vin-blue;
 }
 
+
 .input {
     width: 40px;
     height: 17px;
@@ -44,13 +52,14 @@ td {
     padding: 0;
 }
 
+
 .root {
   flex: 1;
   width:100%;
 }
 
 .main {
-  margin: 20px;
+  //margin: 20px;
 }
 
 .centered {
@@ -60,7 +69,7 @@ td {
 }
 
 .paper {
-  height: 90vw;
+  height: 90vh;
   width: 90vw;
   margin: 20px;
   text-align: 'center';
