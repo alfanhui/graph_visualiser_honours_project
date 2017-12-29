@@ -12,6 +12,7 @@ import DatabaseOptions from './DatabaseOptions';
 //console.log(JSON.parse(JSON.stringify(err)));
 
 class HomePage extends React.Component{
+
     constructor(props) {
         super(props);
         this.state = {

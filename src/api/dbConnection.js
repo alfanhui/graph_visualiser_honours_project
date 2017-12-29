@@ -4,10 +4,10 @@ import {SET} from 'actions';
 let username = 'neo4j';
 let password = 'jazzyrice80';
 
-export function postQuery(statements, parameters, operationText) {
+export function postQuery(statements, parameters) {
   let preparedStatement = [];
   statements.map((s) => {
-    preparedStatement.push({statement: s, parameters: parameters})
+    preparedStatement.push({statement: s, parameters: parameters});
   });
   return dispatch => {
       return request.post(httpUrlForTransaction)
@@ -26,7 +26,7 @@ export function postQuery(statements, parameters, operationText) {
         console.log("This error: " , err);
         dispatch(SET("databaseError", '#F50057'));
       });
-  }
+  };
 }
 
 //Async but notice the return of request.. this makes it promised before other async actions happen.
@@ -41,5 +41,22 @@ export function wipeDatabase() {
     .catch((err)=> {
       console.log("This error: " , err);
     });
-  }
+  };
+}
+
+export function removeIndexes() {
+  return (dispatch) => {
+    return request.post(httpUrlForTransaction)
+    .send({ statements: [{ statement: 'CALL db.indexes()'}] })
+    .auth(username,password)
+    .then((res)=> {
+      let data = res.body.results[0].data;
+      data.map((item) => {
+        dispatch(postQuery(["DROP " + item.row[0]], null));
+      });
+    })
+    .catch((err)=> {
+      console.log("This error: " , err);
+    });
+  };
 }

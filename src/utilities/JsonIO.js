@@ -1,11 +1,14 @@
-import { postQuery, wipeDatabase } from 'api/dbConnection';
+import { postQuery, wipeDatabase, removeIndexes} from 'api/dbConnection';
 import request from 'superagent';
 import {SET} from 'actions';
 
 //Import json from local file. Await for database to be wiped via promise before continuing..
 export function importJSON() {
   return dispatch => {
+    dispatch(SET('databaseError', "#FFFFFF"));
     dispatch(wipeDatabase()).then(function(){
+      dispatch(removeIndexes()); //remove indexes
+    }).then(function(){
       request.get("data/1238.json")
       .then((res)=> {
         console.log(res.body);
@@ -13,10 +16,10 @@ export function importJSON() {
       })
       .catch((err)=> {
         console.log("This error: " , err);
-        dispatch(SET("databaseError", '#F50057'));
+        dispatch(SET("databaseError", "#F50057"));
       });
-    })
-  }
+    });
+  };
 }
 
 //handle json object ready for cypher conversion
@@ -26,6 +29,10 @@ function graphMLtoCypher(jsonObj) {
     //Sort by type
     let dictionary = {};
     let hashMap = {};
+    if(nodeParameters.props.length < 1){
+      console.log("Nothing to import");
+      return;
+    }
     nodeParameters.props.map((item) => {
       if (!dictionary[item.type]) {
         dictionary[item.type] = [item];
@@ -43,32 +50,35 @@ function graphMLtoCypher(jsonObj) {
 
     //create edges
     let edgeParameters = { "rows": jsonObj.edges };
-    edgeParameters.rows.map((item) => {
+    edgeParameters && edgeParameters.rows.map((item) => {
       item["toType"] = hashMap[item.toID].type;
       item["fromType"] = hashMap[item.fromID].type;
     });
     let edgeStatements = [];
-    edgeParameters.rows.map((edge) => {
+    edgeParameters && edgeParameters.rows.map((edge) => {
       edgeStatements.push('MATCH (n:' + edge.fromType + '),(m:' + edge.toType + ') WHERE n.nodeID=\'' + edge.fromID + '\' AND m.nodeID=\'' + edge.toID + '\' CREATE (n)-[r:LINK]->(m)');
     });
 
     //locutions?
 
+
     //console.log(nodeStatements, dictionary, edgeStatements);
-    dispatch(queryToPost(nodeStatements, dictionary, edgeStatements));
-  }
+    dispatch(compileQuery(nodeStatements, dictionary, edgeStatements));
+  };
 }
 
+
 //post dispatches
-function queryToPost(nodeStatements, dictionary, edgeStatements){
+function compileQuery(nodeStatements, dictionary, edgeStatements){
   return dispatch => {
     //send off queries, as promises, because you cannot create edges from nodes that don't already exist
-    dispatch(postQuery(nodeStatements, dictionary, "Creating nodes")).then(function(){
+    dispatch(postQuery(nodeStatements, dictionary)).then(function(){
       for (let nodeType in dictionary) {
-        dispatch(postQuery(['CREATE INDEX ON :' + nodeType + '(nodeID)'], null, "Creating index")); //create index
-      };
+        dispatch(postQuery(['CREATE INDEX ON :' + nodeType + '(nodeID)'], null)); //create index
+      }
+
     }).then(function(){
-      dispatch(postQuery(edgeStatements, null, "Creating edges"));
+      dispatch(postQuery(edgeStatements, null));
     });
-  }
+  };
 }

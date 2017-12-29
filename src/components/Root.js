@@ -9,7 +9,7 @@ const Root = (props) => (
           <Route exact path="*" render={() => (<NotFoundPage {...props}/>)}/>
         </Route>
     </Switch>
-)
+);
 
 
 export default Root;

@@ -1,9 +1,8 @@
 import React from 'react';
 import { connect } from "react-redux";
 import PropTypes from 'prop-types';
-import { postQuery, wipeDatabase} from 'api/dbConnection';
-import {SET} from 'actions';
 import {importJSON} from 'utilities/JsonIO';
+import {FlatButton} from 'material-ui';
 
 @connect((store) => {
   return {
@@ -13,23 +12,22 @@ import {importJSON} from 'utilities/JsonIO';
 
 class DatabaseOptions extends React.Component{
 
+  static propTypes = {
+    dispatch: PropTypes.func,
+    state: PropTypes.object
+  };
+
   constructor(props) {
     super(props);
   }
 
-
-  loadJson = () => {
-    this.props.dispatch(SET('databaseError', '#FFFFFF'));
-    //wipeDatabase();
-    this.props.dispatch(importJSON());
-  }
-
   render(){
     return (
-      <button
-      onClick={() => {this.loadJson();}}>
-      LOAD JSON
-      </button>
+      <FlatButton
+        backgroundColor={this.props.state.databaseError}
+        onClick={() => this.props.dispatch(importJSON())}>
+        LOAD JSON
+      </FlatButton>
     );
   }
 }
