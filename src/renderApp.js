@@ -1,6 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
-import {createStore} from 'redux';
+import {createStore, applyMiddleware, compose} from 'redux';
+import thunk from 'redux-thunk';
 import {Provider} from 'react-redux';
 import Root from './components/Root';
 import {BrowserRouter} from 'react-router-dom';
@@ -9,7 +10,13 @@ require('./favicon.ico');
 import './styles/styles.scss'; //You can import SASS/CSS files too! Webpack will run the associated loader and plug this into the page.
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-const store = createStore(reducer);
+const store = createStore(
+  reducer,
+  compose(applyMiddleware(thunk))
+);
+
+
+
 
 const App = (props) => (
     <div>

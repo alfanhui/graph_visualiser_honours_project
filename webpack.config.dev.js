@@ -6,9 +6,11 @@ import path from 'path';
 export default {
     resolve: {
         alias: {
+            actions: path.resolve(__dirname, 'src/actions/index.js'),
+            api: path.resolve('src/api/'),
             constants: path.resolve(__dirname, 'src/constants/'),
             components: path.resolve('src/components/'),
-            api: path.resolve('src/api/'),
+            data: path.resolve('src/data/'),
             utilities: path.resolve('src/utilities/')
         },
         extensions: ['*', '.js', '.jsx', '.json']

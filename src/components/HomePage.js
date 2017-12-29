@@ -1,9 +1,5 @@
 import React from 'react';
 import { connect } from "react-redux";
-import SomeThing from './SomeThing';
-//import SomeThingSetter from './SomeThingSetter';
-//import { PostQuery } from 'api/dbConnection';
-//import { loadJSON, graphMLtoCypher } from 'utilities/graphML';
 import Paper from 'material-ui/Paper';
 import DatabaseOptions from './DatabaseOptions';
 
@@ -13,9 +9,7 @@ import DatabaseOptions from './DatabaseOptions';
   };
 })
 
-
-
-
+//console.log(JSON.parse(JSON.stringify(err)));
 
 class HomePage extends React.Component{
     constructor(props) {
@@ -23,11 +17,10 @@ class HomePage extends React.Component{
         this.state = {
 
         };
-
     }
 
     componentWillMount() {
-        //this.wipeDataBase();
+
     }
 
     componentDidUpdate() {
@@ -37,26 +30,14 @@ class HomePage extends React.Component{
     componentWillUnmount(){
 
     }
-/*
-    wipeDataBase() {
-        console.log("Wiping  database..");
-        PostQuery(['MATCH (n) OPTIONAL MATCH (n) - [r] - () DELETE n, r'], null, "Wiping Database");
-        console.log("Testing JSON import..");
-        loadJSON(function (response) {
-            // Parse JSON string into object
-            let actual_JSON = JSON.parse(response);
-            console.log(actual_JSON);
-            graphMLtoCypher(actual_JSON);
-        });
-    }
-*/
 
     render(){
+        console.log("PROPS: " , JSON.parse(JSON.stringify(this.props)));
         return (
-          <Paper> //main paper
+          <Paper>
             <div className={"main"}>
               <div className={'h2'}> REACT </div>
-              <DatabaseOptions value={1}/>
+              <DatabaseOptions/>
             </div>
           </Paper>
       );

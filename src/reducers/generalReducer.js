@@ -1,14 +1,13 @@
 
 const initialState = {
-    thing0: "nothing",
-    thing1: "nothing",
-    thing2: "nothing",
-};
+    databaseError : '#FFFFFF'
+  };
 
 
 export default function reducer(state = initialState, action) {
   switch(action.type){
-    case "SET_THING":{
+    case "SET":{
+          console.log("setting.." + action.variable + " to.. " +  action.payload); 
           return {
               ...state,
               [action.variable]: action.payload,

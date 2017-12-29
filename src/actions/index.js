@@ -1,9 +1,10 @@
-import * as types from "../constants/actionTypes";
+import * as types from "constants/actionTypes"; //this does not work..
 
-export function setThing(variable, payload) {
-  console.log("Actions:", variable, payload)
+//any of these functions needs to be called via this.props.dispatch(<function name>)
+
+export function SET(variable, payload) {
   return {
-    type: "SET_THING",
+    type: "SET",
     variable: variable,
     payload: payload
   };
