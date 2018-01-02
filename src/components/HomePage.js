@@ -24,6 +24,7 @@ class HomePage extends React.Component{
 
   }
 
+
   componentDidMount(){
     this.setDisplaySize();
 
@@ -31,15 +32,29 @@ class HomePage extends React.Component{
     let width = +svg.attr("width");
     let height = +svg.attr("height");
 
+    let ratio = width / height; //5760 x 1900 (ratio)
+    console.log("Width: " + width + " Height: " + height + " Ratio: " + ratio);
+
+    var domainOnlyScale = d3.scaleLinear()
+                                  .domain([0,10000])
+                                  .range([0,100]);
+/*
+    svg.attr("transform", "scale(2)")
+        .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 " + width+ " " +height );
+*/
+
     const color = d3.scaleOrdinal(d3.schemeCategory20); //range the colours
 
     const simulation = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function(d) { return d.id; }))
+    .force("link", d3.forceLink().id(function(d) { return d.id; }).strength(0.005))
     .force("charge", d3.forceManyBody())
     .force("center", d3.forceCenter(width /2 , height /2 ));
+    //
 
 
     d3.json("data/1010.json", function(error, graph) {
+      console.log("graph", graph);
       if (error) throw error;
 
       let link = svg.append("g")
@@ -56,7 +71,7 @@ class HomePage extends React.Component{
       .selectAll("circle")
       .data(graph.nodes)
       .enter().append("circle")
-      .attr("r", 5)
+      .attr("r", 15)
       .attr("fill", function(d) { return color(d.type); })
       .call(d3.drag() //mouse movement
       .on("start", function(d){
@@ -89,6 +104,8 @@ class HomePage extends React.Component{
 
         node.attr("cx", function(d) { return d.x; })
         .attr("cy", function(d) { return d.y; });
+
+
       }
     });
 
@@ -103,8 +120,10 @@ class HomePage extends React.Component{
 
   }
 
-  dragstarted = (d) => {
-
+  //change the distance of the links/edges
+  changeRange(newStrength){
+    simulation.force("link").strength(+newStrength);
+    simulation.alpha(1).restart();
   }
 
   //This sets the size and coordinate maps in relation to one another
