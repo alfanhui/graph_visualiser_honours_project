@@ -31,6 +31,7 @@ class HomePage extends React.Component{
     var svg = d3.select("svg");
     let width = +svg.attr("width");
     let height = +svg.attr("height");
+    let radius = 15;
 
     let ratio = width / height; //5760 x 1900 (ratio)
     console.log("Width: " + width + " Height: " + height + " Ratio: " + ratio);
@@ -71,7 +72,7 @@ class HomePage extends React.Component{
       .selectAll("circle")
       .data(graph.nodes)
       .enter().append("circle")
-      .attr("r", 15)
+      .attr("r", radius)
       .attr("fill", function(d) { return color(d.type); })
       .call(d3.drag() //mouse movement
       .on("start", function(d){
@@ -102,8 +103,11 @@ class HomePage extends React.Component{
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; });
 
-        node.attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; });
+        //boundary box by Tom Roth
+        //https://bl.ocks.org/puzzler10/2531c035e8d514f125c4d15433f79d74
+        //18th March 2017
+        node.attr("cx", function(d) { return d.x = Math.max(radius, Math.min(width - radius, d.x)); })
+        .attr("cy", function(d) { return d.y = Math.max(radius, Math.min(height - radius, d.y)); });
 
 
       }
