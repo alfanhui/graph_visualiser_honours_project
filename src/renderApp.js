@@ -17,7 +17,6 @@ const store = createStore(
 
 
 
-
 const App = (props) => (
     <div className='app'>
       {/*<Header/>*/}
@@ -36,3 +35,5 @@ render(
       </Provider>
     , document.getElementById('root')
 );
+
+export default App;

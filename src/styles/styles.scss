@@ -47,6 +47,19 @@ td {
   padding: 12px;
 }
 
+text {
+  font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  pointer-events: none;
+}
+
+rect{
+  stroke:black;
+  stroke-width:1px;
+  opacity:0.5;
+  rx:2;
+  ry:2;
+}
+
 .h2 {
   font: 75px 'Arial';
   color: $vin-blue;

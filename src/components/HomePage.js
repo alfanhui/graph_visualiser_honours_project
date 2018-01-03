@@ -31,31 +31,28 @@ class HomePage extends React.Component{
     var svg = d3.select("svg");
     let width = +svg.attr("width");
     let height = +svg.attr("height");
-    let radius = 15;
+    let radius = 20,
+        rectX = 60,
+        rectY = 30;
 
     let ratio = width / height; //5760 x 1900 (ratio)
     console.log("Width: " + width + " Height: " + height + " Ratio: " + ratio);
 
-    var domainOnlyScale = d3.scaleLinear()
-                                  .domain([0,10000])
-                                  .range([0,100]);
-/*
+    /*
     svg.attr("transform", "scale(2)")
-        .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 " + width+ " " +height );
-*/
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", "0 0 " + width+ " " +height );
+    */
 
     const color = d3.scaleOrdinal(d3.schemeCategory20); //range the colours
 
     const simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }).strength(0.005))
     .force("charge", d3.forceManyBody())
-    .force("center", d3.forceCenter(width /2 , height /2 ));
-    //
+    .force("center", d3.forceCenter(width /2 , height /2));
 
 
     d3.json("data/1010.json", function(error, graph) {
-      console.log("graph", graph);
       if (error) throw error;
 
       let link = svg.append("g")
@@ -65,14 +62,13 @@ class HomePage extends React.Component{
       .enter().insert("line")
       .attr("stroke", color(1));
 
-      console.log(link);
-
       let node = svg.append("g")
       .attr("class", "nodes")
-      .selectAll("circle")
+      .selectAll("rect")
       .data(graph.nodes)
-      .enter().append("circle")
-      .attr("r", radius)
+      .enter().append("rect")
+      .attr("width", rectX)
+      .attr("height", rectY)
       .attr("fill", function(d) { return color(d.type); })
       .call(d3.drag() //mouse movement
       .on("start", function(d){
@@ -90,7 +86,16 @@ class HomePage extends React.Component{
         d.fy = null;
       }));
 
-      node.append("title") //titles?
+      node.append("text")
+      .text(function(d) { return d.text; });
+
+      let text = svg.append("g")
+      .attr("class", "labels")
+      .selectAll("text")
+      .data(graph.nodes)
+      .enter().append("text")
+      .attr("dx", 12)
+      .attr("dy", 20)
       .text(function(d) { return d.id; });
 
       simulation.nodes(graph.nodes).on("tick", ticked);
@@ -106,8 +111,11 @@ class HomePage extends React.Component{
         //boundary box by Tom Roth
         //https://bl.ocks.org/puzzler10/2531c035e8d514f125c4d15433f79d74
         //18th March 2017
-        node.attr("cx", function(d) { return d.x = Math.max(radius, Math.min(width - radius, d.x)); })
-        .attr("cy", function(d) { return d.y = Math.max(radius, Math.min(height - radius, d.y)); });
+        node.attr("x", function(d) { return d.x = Math.max(rectX/2, Math.min(width - rectX/2, d.x))-(rectX/2); })
+        .attr("y", function(d) { return d.y = Math.max(rectY/2, Math.min(height - rectY/2, d.y))-rectY; });
+
+        text.attr("dx", function(d) { return d.x +10; })
+        .attr("dy", function(d) { return d.y + 20; });
 
 
       }
