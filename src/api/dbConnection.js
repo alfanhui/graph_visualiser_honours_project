@@ -5,6 +5,9 @@ let username = 'neo4j';
 let password = 'jazzyrice80';
 
 export function postQuery(statements, parameters) {
+  if(!(statements.constructor === Array)){
+    statements = [statements];
+  }
   let preparedStatement = [];
   statements.map((s) => {
     preparedStatement.push({statement: s, parameters: parameters});
@@ -18,7 +21,7 @@ export function postQuery(statements, parameters) {
           if(res.body.errors.length >0){
             throw res.body.errors;
           }else if (res.body.results.length > 0){
-            console.log(res.body);
+            return(res.body.results);
           }
         }
       })

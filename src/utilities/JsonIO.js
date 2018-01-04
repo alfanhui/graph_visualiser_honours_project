@@ -56,7 +56,12 @@ function graphMLtoCypher(jsonObj) {
     });
     let edgeStatements = [];
     edgeParameters && edgeParameters.rows.map((edge) => {
-      edgeStatements.push('MATCH (n:' + edge.fromType + '),(m:' + edge.toType + ') WHERE n.nodeID=\'' + edge.fromID + '\' AND m.nodeID=\'' + edge.toID + '\' CREATE (n)-[r:LINK]->(m)');
+      edgeStatements.push('MATCH (n:' + edge.fromType + '),(m:' + edge.toType +
+                          ') WHERE n.nodeID=\'' + edge.fromID + '\' AND m.nodeID=\'' + edge.toID +
+                          '\' CREATE (n)-[r:LINK{edgeID:\'' + edge.edgeID +
+                                            '\', source: \'' + edge.fromID +
+                                            '\', target: \'' + edge.toID +
+                                            '\', formEdgeID: \'' + edge.formEdgeID + '\'}]->(m)');
     });
 
     //locutions?
