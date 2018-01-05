@@ -52,13 +52,27 @@ text {
   pointer-events: none;
 }
 
-rect{
+line {
+  pointer-events: none;
+}
+
+.node{
   stroke:black;
   stroke-width:1px;
   opacity:0.5;
   rx:2;
   ry:2;
+  pointer-events:fill;
+  cursor: move;
 }
+
+.node:focus {
+  fill: pink;
+  stroke: red;
+  stroke-width: 1;
+}
+
+
 
 .h2 {
   font: 75px 'Arial';
