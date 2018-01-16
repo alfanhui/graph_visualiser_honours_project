@@ -1,5 +1,10 @@
 const port = ':7475';
-export const host = 'http://10.201.84.137';
-export const secure_host = 'https://10.201.84.137';
-export const localhost = 'http://localhost';
-export const httpUrlForTransaction = localhost + port + '/db/data/transaction/commit';
+const non_secure = 'http://';
+const secure = 'https://';
+const remotehost = '10.201.84.137';
+const localhost = 'localhost';
+const transaction = '/db/data/transaction/commit';
+export const localhost_httpUrlForTransaction = non_secure + localhost + port + transaction;
+export const remotehost_httpUrlForTransaction = non_secure + remotehost + port + transaction;
+export const localhost_httpsUrlForTransaction = secure + localhost + port + transaction;
+export const remotehost_httpsUrlForTransaction = secure + remotehost + port + transaction;

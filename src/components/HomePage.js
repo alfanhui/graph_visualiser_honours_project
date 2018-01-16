@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from "react-redux";
 import Paper from 'material-ui/Paper';
 import DatabaseOptions from './DatabaseOptions';
-import {postQuery} from 'api/dbConnection';
+import {postQuery, checkAddress} from 'api/dbConnection';
 import {SET} from 'reducerActions';
 import ForceDirected from './ForceDirected';
 import {importJSON} from 'utilities/JsonIO';
@@ -25,13 +25,15 @@ class HomePage extends React.Component{
   }
 
   componentWillMount() {
-    //Grab data
-    this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
-      this.props.dispatch(SET('nodes', this.convertNeo4jResult(result)));
-    });
-    this.props.dispatch(postQuery('START r=rel(*) RETURN r')).then((result)=>{
-      this.props.dispatch(SET('links', this.convertNeo4jResult(result)));
-    });
+      this.props.dispatch(checkAddress()).then(() => {
+          //Grab data
+          this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
+              this.props.dispatch(SET('nodes', this.convertNeo4jResult(result)));
+          });
+          this.props.dispatch(postQuery('START r=rel(*) RETURN r')).then((result) => {
+              this.props.dispatch(SET('links', this.convertNeo4jResult(result)));
+          });
+      });
   }
 
   //from Neo4j http response

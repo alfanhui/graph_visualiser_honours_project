@@ -1,8 +1,27 @@
 import request from 'superagent';
-import { httpUrlForTransaction } from 'constants/globalVar';
+import { localhost_httpUrlForTransaction, remotehost_httpUrlForTransaction } from 'constants/globalVar';
 import {SET} from 'reducerActions';
 let username = 'neo4j';
 let password = 'jazzyrice80';
+let url = localhost_httpUrlForTransaction; //subject to change after check
+
+export function checkAddress() {
+    return dispatch => {
+        return request.get(url)
+            .auth(username, password)
+            .then((res) => {
+                if (res.ok) {
+                    console.log("LOCALHOST AVALIABLE");
+                    //run localhost, no change needed
+                }
+            })
+            .catch((err) => {
+                console.log("SWITCHED TO REMOTEHOST");
+                url = remotehost_httpUrlForTransaction;
+                //run host address instead
+            });
+    };
+}
 
 export function postQuery(statements, parameters) {
   if(!(statements.constructor === Array)){
@@ -13,7 +32,7 @@ export function postQuery(statements, parameters) {
     preparedStatement.push({statement: s, parameters: parameters});
   });
   return dispatch => {
-      return request.post(httpUrlForTransaction)
+      return request.post(url)
       .send({ statements: preparedStatement }) //[{ statement: s, parameters: parameters }]
       .auth(username,password)
       .then((res)=> {
@@ -35,7 +54,7 @@ export function postQuery(statements, parameters) {
 //Async but notice the return of request.. this makes it promised before other async actions happen.
 export function wipeDatabase() {
   return (dispatch) => {
-    return request.post(httpUrlForTransaction)
+      return request.post(url)
     .send({ statements: [{ statement: 'MATCH (n) OPTIONAL MATCH (n) - [r] - () DELETE n, r'}] })
     .auth(username,password)
     .then((res)=> {
@@ -49,7 +68,7 @@ export function wipeDatabase() {
 
 export function removeIndexes() {
   return (dispatch) => {
-    return request.post(httpUrlForTransaction)
+      return request.post(url)
     .send({ statements: [{ statement: 'CALL db.indexes()'}] })
     .auth(username,password)
     .then((res)=> {

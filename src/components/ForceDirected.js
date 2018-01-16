@@ -15,14 +15,14 @@ let height = window.innerHeight -40;
 const menuItem = {fontSize:'10px', lineHeight:'15px', padding:'0px 15px', minHeight:'25px'};
 
 const force = d3.forceSimulation()
-.force("link", d3.forceLink().id(function(d) { return d.nodeID; }).strength(0.005))
+.force("link", d3.forceLink().id(function(d) { return d.nodeID; }).strength(-0.2)) //was 0.005
 .force("charge", d3.forceManyBody())
 .force("center", d3.forceCenter(width /2 , height /2));
 
 const color = d3.scaleOrdinal(d3.schemeCategory20); //range the colours
 
-const calculation = d3.scaleLinear();
-calculation.domain([21000,41000]).range([0,3]);
+//const calculation = d3.scaleLinear();
+//calculation.domain([21000,41000]).range([0,3]);
 
 let drag = {
   elm: null,
@@ -132,7 +132,6 @@ class ForceDirected extends React.Component{
   }
   
   render(){
-    console.log("calc: " , calculation(36000));
     return (
       <svg
       className="svg" id="svg" ref="svg"
