@@ -1,6 +1,6 @@
 import { postQuery, wipeDatabase, removeIndexes} from 'api/dbConnection';
 import request from 'superagent';
-import {SET} from 'actions';
+import {SET} from 'reducerActions';
 
 //Import json from local file. Await for database to be wiped via promise before continuing..
 export function importJSON() {

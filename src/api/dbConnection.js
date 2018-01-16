@@ -1,6 +1,6 @@
 import request from 'superagent';
 import { httpUrlForTransaction } from 'constants/globalVar';
-import {SET} from 'actions';
+import {SET} from 'reducerActions';
 let username = 'neo4j';
 let password = 'jazzyrice80';
 

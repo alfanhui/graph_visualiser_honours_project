@@ -6,7 +6,7 @@ import path from 'path';
 export default {
     resolve: {
         alias: {
-            actions: path.resolve(__dirname, 'src/actions/index.js'),
+            reducerActions: path.resolve(__dirname, 'src/reducerActions/index.js'),
             api: path.resolve('src/api/'),
             constants: path.resolve(__dirname, 'src/constants/'),
             components: path.resolve('src/components/'),

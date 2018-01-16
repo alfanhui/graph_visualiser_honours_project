@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import Paper from 'material-ui/Paper';
 import DatabaseOptions from './DatabaseOptions';
 import {postQuery} from 'api/dbConnection';
-import {SET} from 'actions';
+import {SET} from 'reducerActions';
 import ForceDirected from './ForceDirected';
 import {importJSON} from 'utilities/JsonIO';
 
