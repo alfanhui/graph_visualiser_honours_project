@@ -7,7 +7,7 @@ let url = localhost_httpUrlForTransaction; //subject to change after check
 
 export function checkAddress() {
     return dispatch => {
-        return request.get(url)
+        return request.post(url)
             .auth(username, password)
             .then((res) => {
                 if (res.ok) {

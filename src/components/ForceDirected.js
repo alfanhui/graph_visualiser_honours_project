@@ -5,6 +5,7 @@ import _ from 'lodash';
 import {SET, UPDATE} from 'reducerActions';
 import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/MenuItem';
+import getUuid from 'uuid/v1';
 
 let radius = 20;
 let rectX = 60;
@@ -12,10 +13,16 @@ let rectY = 30;
 let width = window.innerWidth -40;
 let height = window.innerHeight -40;
 
-const menuItem = {fontSize:'10px', lineHeight:'15px', padding:'0px 15px', minHeight:'25px'};
+const menuItem = {fontSize:'10px', 
+                lineHeight:'15px', 
+                padding:'0px 15px', 
+                minHeight:'25px', 
+                backgroundColor: 'white', 
+                position:'fixed !important'
+                };
 
 const force = d3.forceSimulation()
-.force("link", d3.forceLink().id(function(d) { return d.nodeID; }).strength(-0.2)) //was 0.005
+.force("link", d3.forceLink().id(function(d) { return d.nodeID; }).strength(0.005)) //mac 0.005 // qmb -0.2
 .force("charge", d3.forceManyBody())
 .force("center", d3.forceCenter(width /2 , height /2));
 
@@ -108,26 +115,32 @@ class ForceDirected extends React.Component{
   }
   
   mainMenu = (nextMenu) => {
+    let transform = 'translate(' + (nextMenu.x -40 )+ ',' + (nextMenu.y-40) + ')'; //minus margins
     return(
-      <foreignObject x={nextMenu.x} y={nextMenu.y}>
+      <g key={"MM" + nextMenu.x + nextMenu.y} transform={transform}>
+      <foreignObject width='96' height='107'>
       <Menu desktop={true}>
-      <MenuItem primaryText="Database" disabled={true}/>
-      <MenuItem primaryText="Graph" disabled={true} />
-      <MenuItem primaryText="Options" disabled={true} />
+      <MenuItem style={menuItem} primaryText="Database" disabled={true}/>
+      <MenuItem style={menuItem} primaryText="Graph" disabled={true} />
+      <MenuItem style={menuItem} primaryText="Options" disabled={true} />
       </Menu>
       </foreignObject>
+      </g>
     );
   }
   
-  elementMenu = (newMenu) => {
+  elementMenu = (nextMenu) => {
+    let transform = 'translate(' + (nextMenu.x -40 )+ ',' + (nextMenu.y-40) + ')'; //minus margins
     return(
-      <foreignObject x={nextMenu.x} y={nextMenu.y}>
+      <g key={"EM" + nextMenu.x + nextMenu.y} transform={transform}>
+      <foreignObject width='96' height='107'>
       <Menu desktop={true}>
       <MenuItem style={menuItem} primaryText="Create edge" disabled={true} />
       <MenuItem style={menuItem} primaryText="Edit node" disabled={true} />
       <MenuItem style={menuItem} primaryText="Delete node" disabled={true} />
       </Menu>
       </foreignObject>
+      </g>
     );
   }
   
@@ -145,7 +158,7 @@ class ForceDirected extends React.Component{
       {this.props.state.nodes.length > 0 && this.props.state.nodes.map(this.renderLabels)}
       </g>
       {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map(this.mainMenu)}
-      {this.props.state.mainMenu.length > 0 && this.props.state.elementMenu.map(this.elementMenu)}
+      {this.props.state.elementMenu.length > 0 && this.props.state.elementMenu.map(this.elementMenu)}
       This Browser does not support html canvas.
       </svg>
     );
@@ -153,7 +166,9 @@ class ForceDirected extends React.Component{
   
   onNewMouseStart = (event) =>{
     if(event.target.getAttribute("id") == "main"){
-      let newMenu = {x:event.clientX,y: event.clientY}
+      let uuid = getUuid();
+      let timerID = setTimeout(()=>{this.timeOutMain();}, 3000, uuid);
+      let newMenu = {x:event.clientX,y: event.clientY, uuid, timerID};
       this.props.dispatch(UPDATE("mainMenu", newMenu));
       console.log("main menu open");
     }else{
@@ -194,12 +209,28 @@ class ForceDirected extends React.Component{
   onNewMouseUp =(event) => {
     if (drag.state) { //had hit element
       if(!drag.moved){
-        let newMenu = {x:event.clientX,y: event.clientY}
+        let uuid = getUuid();
+        let timerID = setTimeout(()=>{this.timeOutElement();}, 3000, uuid);
+        let newMenu = {x:event.clientX,y: event.clientY, uuid, timerID};
         this.props.dispatch(UPDATE("elementMenu", newMenu));
         console.log("element menu open");
       }
       drag.state = drag.moved = false;
     }
+  }
+
+  timeOutMain = (uuid) => {
+    let menu = this.props.state.mainMenu;
+    const newMenu = menu.filter(obj => obj.uuid == uuid);
+    console.log(newMenu);
+    this.props.dispatch(SET("mainMenu", newMenu));
+  }
+
+  timeOutElement = (uuid) => {
+    let menu = this.props.state.elementMenu;
+    const newMenu = menu.filter(obj => obj.uuid == uuid);
+    console.log(newMenu);
+    this.props.dispatch(SET("elementMenu", newMenu));
   }
   
   

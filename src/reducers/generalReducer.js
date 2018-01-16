@@ -18,12 +18,10 @@ export default function reducer(state = initialState, action) {
           };
     }
     case "UPDATE":{
-          //console.log("setting.." , action.variable , " to.. " , action.payload);
-          let appendedProperty = state[action.variable].push(action.payload);
-          console.log(action.payload);
+          //console.log("updating.." , action.variable , " to.. " , action.payload);
+          state[action.variable].push(action.payload);
           return {
               ...state,
-              [action.variable]: appendedProperty,
           };
     }
   }
