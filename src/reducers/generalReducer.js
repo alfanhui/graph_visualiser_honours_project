@@ -4,7 +4,8 @@ const initialState = {
     nodes:[],
     links:[],
     mainMenu:[],
-    elementMenu:[]
+    elementMenu:[],
+    treeData:[],
   };
 
 

@@ -50,14 +50,14 @@ let drag = {
 
 //.force("link", d3.forceLink().id(function(d) { return d.nodeID; }))
 
-class ForceDirected extends React.Component{
+class Layout_ForceDirected extends React.Component{
   
   
   
   constructor(props) {
     super(props);
     this.state = {
-      currentMatrix:{}
+      
     };
     console.log("Width: " + width + " Height: " + height + " Ratio: " + (width / height)); //5760 x 1900 (ratio of 3ish)
     
@@ -149,7 +149,7 @@ class ForceDirected extends React.Component{
       <svg
       className="svg" id="svg" ref="svg"
       width={width}
-      height={height}> //-40 as for margins
+      height={height}> 
       <rect id="main"width={width} height={height} style={{fill:'white', pointerEvents:'fill', strokeWidth:'0'}}
       onMouseDown={this.onNewMouseStart} onMouseMove={this.onNewMouseMove} onMouseUp={this.onNewMouseUp}/>
       <g>
@@ -242,4 +242,4 @@ class ForceDirected extends React.Component{
   
 }
 
-export default ForceDirected;
+export default Layout_ForceDirected;

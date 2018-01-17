@@ -4,7 +4,8 @@ import Paper from 'material-ui/Paper';
 import DatabaseOptions from './DatabaseOptions';
 import {postQuery, checkAddress} from 'api/dbConnection';
 import {SET} from 'reducerActions';
-import ForceDirected from './ForceDirected';
+import ForceDirected from './Layout_ForceDirected';
+import Tree from './Layout_Tree';
 import {importJSON} from 'utilities/JsonIO';
 
 @connect((store) => {
@@ -25,15 +26,16 @@ class HomePage extends React.Component{
   }
 
   componentWillMount() {
-      this.props.dispatch(checkAddress()).then(() => {
-          //Grab data
-          this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
-              this.props.dispatch(SET('nodes', this.convertNeo4jResult(result)));
-          });
-          this.props.dispatch(postQuery('START r=rel(*) RETURN r')).then((result) => {
-              this.props.dispatch(SET('links', this.convertNeo4jResult(result)));
-          });
-      });
+    
+    this.props.dispatch(checkAddress()).then(() => {
+        //Grab data
+        this.props.dispatch(postQuery('MATCH (n) where not n:L RETURN n')).then((result) => { //nodes
+          this.props.dispatch(SET('nodes', this.convertNeo4jResult(result))); //for forceDirected
+        });
+        this.props.dispatch(postQuery('START r=rel(*) WHERE NOT ((:L)-[r]->()) AND NOT (()-[r]->(:L)) RETURN r')).then((result) => { //edges
+          this.props.dispatch(SET('links', this.convertNeo4jResult(result))); //for forceDirected
+        });     
+    });
   }
 
   //from Neo4j http response
@@ -64,7 +66,8 @@ class HomePage extends React.Component{
     console.log("PROPS Updated: " , JSON.parse(JSON.stringify(this.props)));
     return (
       <Paper className="paper" id="paper" ref="paper">
-      <ForceDirected/>
+      {<ForceDirected/>}
+      {/*<Tree/>*/}
       </Paper>
     );
   }
