@@ -11,7 +11,7 @@ let radius = 20;
 let rectX = 60;
 let rectY = 30;
 let width = window.innerWidth -40;
-let height = window.innerHeight -40;
+let height = window.innerHeight - 40;
 
 const menuItem = {fontSize:'10px', 
                 lineHeight:'15px', 
@@ -75,36 +75,44 @@ class Layout_Tree extends React.Component{
   }
   
   componentWillReceiveProps(nextProps) {
-    nextProps.state.nodes.length > 0 && this.convertRawToTree(nextProps);
-    root = stratify(nextProps.state.nodes)
-      .sort(function(a, b) { return (a.height - b.height) || a.nodeID.localeCompare(b.nodeID); });
+      //convert data into tree form
+      nextProps.state.nodes.length > 0 && nextProps.state.links.length > 0 && this.convertRawToTree(nextProps);
 
-    //nextProps.state.nodes.length > 0 && force.nodes(nextProps.state.nodes);
-    //nextProps.state.links.length > 0 && force.force("link").links(nextProps.state.links);
-    //force.on('tick', () => {
-      // after force calculation starts, call
-      // forceUpdate on the React component on each tick
-     // this.forceUpdate()
-    //});
+      //update
+      root = stratify(nextProps.state.nodes)
+        .sort(function(a, b) { return (a.height - b.height) || a.nodeID.localeCompare(b.nodeID); });
+
+      //nextProps.state.nodes.length > 0 && force.nodes(nextProps.state.nodes);
+      //nextProps.state.links.length > 0 && force.force("link").links(nextProps.state.links);
+      //force.on('tick', () => {
+        // after force calculation starts, call
+        // forceUpdate on the React component on each tick
+       // this.forceUpdate()
+      //});
   }
   
   componentWillUnmount(){
     
   }
 
-  convertRawToTree(nextProps){
-    let tree = [];
-    let linkHash = {};
-    for (let link of nextProps.state.links) {
-      linkHash[link.target] = link;
-    }
-    //nodeHash = this.props.state.nodes.map(node => { nodeHash[node.ID] = node; return nodeHash; });
-    console.log("HASH MAP", linkHash);
-    console.log("Links", nextProps.state.links)
-    let links = nextProps.state.links;
-    //any node not in target is a parent node
-    let parentNodes = nextProps.state.nodes.filter(node => !linkHash.hasOwnProperty(node.nodeID));
-    console.log("PARENT NODES ARE: ", parentNodes)
+  convertRawToTree(nextProps) {
+      let tree = [];
+      let linkHash = {};
+      for (let link of nextProps.state.links) {
+        linkHash[link.target] = link;
+      }
+      //nodeHash = this.props.state.nodes.map(node => { nodeHash[node.ID] = node; return nodeHash; });
+      console.log("HASH MAP", linkHash);
+      console.log("Links", nextProps.state.links)
+      let links = nextProps.state.links;
+      //any node not in target is a parent node
+      let rootNodes = nextProps.state.nodes.filter(node => !linkHash.hasOwnProperty(node.nodeID));
+      console.log("PARENT NODES ARE: ", rootNodes);
+      //Apply children each root, while avoiding cartesian product
+      for (rootNode in rootNodes) {
+          
+      }
+
 
   }
   

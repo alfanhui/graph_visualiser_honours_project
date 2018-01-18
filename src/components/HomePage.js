@@ -66,8 +66,8 @@ class HomePage extends React.Component{
     console.log("PROPS Updated: " , JSON.parse(JSON.stringify(this.props)));
     return (
       <Paper className="paper" id="paper" ref="paper">
-      {<ForceDirected/>}
-      {/*<Tree/>*/}
+      {/*<ForceDirected/>*/}
+      {<Tree />}
       </Paper>
     );
   }
