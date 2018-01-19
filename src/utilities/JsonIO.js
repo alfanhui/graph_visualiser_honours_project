@@ -66,8 +66,6 @@ function graphMLtoCypher(jsonObj) {
 
     //locutions?
 
-
-    //console.log(nodeStatements, dictionary, edgeStatements);
     dispatch(compileQuery(nodeStatements, dictionary, edgeStatements));
   };
 }

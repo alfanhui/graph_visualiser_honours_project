@@ -7,6 +7,7 @@ import {SET} from 'reducerActions';
 import ForceDirected from './Layout_ForceDirected';
 import Tree from './Layout_Tree';
 import {importJSON} from 'utilities/JsonIO';
+import InteractionEvents from './InteractionEvents';
 
 @connect((store) => {
   return {
@@ -66,8 +67,7 @@ class HomePage extends React.Component{
     console.log("PROPS Updated: " , JSON.parse(JSON.stringify(this.props)));
     return (
       <Paper className="paper" id="paper" ref="paper">
-      {/*<ForceDirected/>*/}
-      {<Tree />}
+        <InteractionEvents/>
       </Paper>
     );
   }
