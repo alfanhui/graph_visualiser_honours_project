@@ -6,6 +6,9 @@ import { SET, UPDATE } from 'reducerActions';
 import getUuid from 'uuid/v1';
 import ForceDirected from './Layout_ForceDirected';
 import Tree from './Layout_Tree';
+import Menu from 'material-ui/Menu';
+import MenuItem from 'material-ui/MenuItem';
+
 
 let drag = {
   elm: null,
@@ -15,6 +18,17 @@ let drag = {
   state: false,
   moved: false
 }
+
+//********* this is a style and should be moved to ./styles
+const menuItem = { 
+  fontSize: '10px',
+  lineHeight: '15px',
+  padding: '0px 15px',
+  minHeight: '25px',
+  backgroundColor: 'white',
+  position: 'fixed !important'
+};
+
 
 @connect((store) => {
   return {
@@ -94,11 +108,42 @@ class InteractionEvents extends React.Component{
   }
   
   timeOutElement = (uuid) => {
+    console.log(this.props.state.elementMenu);
     let menu = this.props.state.elementMenu;
     const newMenu = menu.filter(obj => obj.uuid == uuid);
     console.log(newMenu);
     this.props.dispatch(SET("elementMenu", newMenu));
   }
+
+  mainMenu = (nextMenu) => {
+    let transform = 'translate(' + (nextMenu.x - 40) + ',' + (nextMenu.y - 40) + ')'; //minus margins
+    return (
+        <g key={"MM" + nextMenu.x + nextMenu.y} transform={transform}>
+            <foreignObject width='96' height='107'>
+                <Menu desktop={true}>
+                    <MenuItem style={menuItem} primaryText="Database" disabled={true} />
+                    <MenuItem style={menuItem} primaryText="Graph" disabled={true} />
+                    <MenuItem style={menuItem} primaryText="Options" disabled={true} />
+                </Menu>
+            </foreignObject>
+        </g>
+    );
+}
+
+elementMenu = (nextMenu) => {
+    let transform = 'translate(' + (nextMenu.x - 40) + ',' + (nextMenu.y - 40) + ')'; //minus margins
+    return (
+        <g key={"EM" + nextMenu.x + nextMenu.y} transform={transform}>
+            <foreignObject width='96' height='107'>
+                <Menu desktop={true}>
+                    <MenuItem style={menuItem} primaryText="Create edge" disabled={true} />
+                    <MenuItem style={menuItem} primaryText="Edit node" disabled={true} />
+                    <MenuItem style={menuItem} primaryText="Delete node" disabled={true} />
+                </Menu>
+            </foreignObject>
+        </g>
+    );
+}
   
   
   
@@ -109,12 +154,16 @@ class InteractionEvents extends React.Component{
       <ForceDirected 
       onMouseDown={this.onNewMouseStart}   
       onMouseMove={this.onNewMouseMove} 
-      onMouseUp={this.onNewMouseUp} />
+      onMouseUp={this.onNewMouseUp} 
+      mainMenu={this.mainMenu}
+      elementMenu={this.elementMenu}/>
         :
       <Tree 
       onMouseDown={this.onNewMouseStart}   
       onMouseMove={this.onNewMouseMove} 
-      onMouseUp={this.onNewMouseUp} />
+      onMouseUp={this.onNewMouseUp} 
+      mainMenu={this.mainMenu}
+      elementMenu={this.elementMenu}/>
         }
       </div>
     );

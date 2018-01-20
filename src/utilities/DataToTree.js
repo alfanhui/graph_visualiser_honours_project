@@ -1,4 +1,5 @@
 import {SET} from 'reducerActions';
+import * as d3 from 'd3';
 
 //covnerting to tree
 let childMatrixCounter; //needs to be global because of recursion
@@ -7,7 +8,9 @@ let linkHashByTarget;
 let nodeHash;
 const defaultNodeType = 'I';  //used in formatting tree, could be found automatically by the node with most type
 
-export function convertRawToTree(nextProps) {
+
+
+export function convertRawToTree(nextProps, height) {
     let dataTree = [];
     let matrixDepth = [];
     nodeHash = {};
@@ -29,6 +32,7 @@ export function convertRawToTree(nextProps) {
     for (let node of nextProps.state.nodes) {
         nodeHash[node.nodeID] = node;
     }
+    console.log(JSON.parse(JSON.stringify(nextProps.state.nodes)));
 
     //find all nodes that are not of I type
     let diffNodeTypes = nextProps.state.nodes.filter(node => node.type !== defaultNodeType);
@@ -44,21 +48,36 @@ export function convertRawToTree(nextProps) {
         nodeHash[node.nodeID].layer = counter;
     });
     let totalNumOfLayers = (countUniqueNumbers(layerMatrix) * 2 + 1); //
-    
+
+
+    let scaleHeight = d3.scaleLinear().domain([totalNumOfLayers,0]).range([40,height-40]); //scale Range!
+
+    //Apply scaled heights to other nodes
+    diffNodeTypes.map((node) => {
+        nodeHash[node.nodeID].scaledLayer = scaleHeight(node.layer);
+    });
+
     //Make all root nodes top layer as a precaution
     let rootNodes = getRootNodes(nextProps);
     rootNodes.map((rootNode) => {
         nodeHash[rootNode.nodeID].layer = totalNumOfLayers;
+        nodeHash[rootNode.nodeID].scaledLayer = scaleHeight(totalNumOfLayers);
     })
     
     //label nodes with correct layer order
     nextProps.state.links.map((link) => {
         if(nodeHash[link.source].type !== defaultNodeType){
-            nodeHash[link.target].layer = nodeHash[link.source].layer - 1;
+            let layer = nodeHash[link.source].layer - 1;
+            nodeHash[link.target].layer = layer;
+            nodeHash[link.target].scaledLayer = scaleHeight(layer);
         }else{
-            nodeHash[link.source].layer = nodeHash[link.target].layer + 1;
+            let layer = nodeHash[link.target].layer + 1
+            nodeHash[link.source].layer = layer;
+            nodeHash[link.source].scaledLayer = scaleHeight(layer);
         }
+       
     });
+    
     
     //convert nodeHash back to normal array
     let nodesWithLayers = [];
@@ -74,9 +93,9 @@ export function convertRawToTree(nextProps) {
     rootNodes.map((rootNode)=> {
         dataTree.push({
             "name":rootNode.nodeID,
-            "data":rootNode,
-            //"parent": "null",
-            "children":applyChildrenRecurssively(rootNode.nodeID, [])})
+            "parent": "",
+            "children":applyChildrenRecurssively(rootNode.nodeID, []),
+            ...rootNode})
         });
 
     console.log("TREE FORMATTING FINISHED: ", dataTree);
@@ -97,9 +116,9 @@ function applyChildrenRecurssively(node, children){ //linkHash is using link.sou
     if (linkHashBySource.hasOwnProperty(node)){ //contains a link
         linkHashBySource[node].map((link) => { // cycle through the exisiting links
             children.push({"name": link.target,
-            "data": nodeHash[link.target],
-            //"parent": link.source,
-            "children": applyChildrenRecurssively(link.target, [])});
+            "parent": link.source,
+            "children": applyChildrenRecurssively(link.target, []),
+            ...nodeHash[link.target]});
         })
     }
     return children;

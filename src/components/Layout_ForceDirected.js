@@ -2,23 +2,12 @@ import React from 'react';
 import { connect } from "react-redux";
 import * as d3 from 'd3';
 import { SET, UPDATE } from 'reducerActions';
-import Menu from 'material-ui/Menu';
-import MenuItem from 'material-ui/MenuItem';
 
 let radius = 20;
 let rectX = 60;
 let rectY = 30;
 let width = window.innerWidth - 40;
 let height = window.innerHeight - 40;
-
-const menuItem = {
-    fontSize: '10px',
-    lineHeight: '15px',
-    padding: '0px 15px',
-    minHeight: '25px',
-    backgroundColor: 'white',
-    position: 'fixed !important'
-};
 
 const force = d3.forceSimulation()
     .force("link", d3.forceLink().id(function (d) { return d.nodeID; }).strength(0.005)) //mac 0.005 // qmb -0.2
@@ -29,7 +18,7 @@ const color = d3.scaleOrdinal(d3.schemeCategory20); //range the colours
 
 //const calculation = d3.scaleLinear();
 //calculation.domain([21000,41000]).range([0,3]);
-
+//.force("link", d3.forceLink().id(function(d) { return d.nodeID; }))
 
 @connect((store) => {
     return {
@@ -39,8 +28,6 @@ const color = d3.scaleOrdinal(d3.schemeCategory20); //range the colours
 
 //console.log(JSON.parse(JSON.stringify(err)));
 
-//.force("link", d3.forceLink().id(function(d) { return d.nodeID; }))
-
 class Layout_ForceDirected extends React.Component {
 
     static propTypes = {
@@ -49,6 +36,8 @@ class Layout_ForceDirected extends React.Component {
       onMouseDown:PropTypes.func,
       onMouseMove:PropTypes.func,
       onMouseUp:PropTypes.func,
+      mainMenu:PropTypes.func,
+      elementMenu:PropTypes.func,
     };
 
     
@@ -111,36 +100,6 @@ class Layout_ForceDirected extends React.Component {
         );
     }
 
-    mainMenu = (nextMenu) => {
-        let transform = 'translate(' + (nextMenu.x - 40) + ',' + (nextMenu.y - 40) + ')'; //minus margins
-        return (
-            <g key={"MM" + nextMenu.x + nextMenu.y} transform={transform}>
-                <foreignObject width='96' height='107'>
-                    <Menu desktop={true}>
-                        <MenuItem style={menuItem} primaryText="Database" disabled={true} />
-                        <MenuItem style={menuItem} primaryText="Graph" disabled={true} />
-                        <MenuItem style={menuItem} primaryText="Options" disabled={true} />
-                    </Menu>
-                </foreignObject>
-            </g>
-        );
-    }
-
-    elementMenu = (nextMenu) => {
-        let transform = 'translate(' + (nextMenu.x - 40) + ',' + (nextMenu.y - 40) + ')'; //minus margins
-        return (
-            <g key={"EM" + nextMenu.x + nextMenu.y} transform={transform}>
-                <foreignObject width='96' height='107'>
-                    <Menu desktop={true}>
-                        <MenuItem style={menuItem} primaryText="Create edge" disabled={true} />
-                        <MenuItem style={menuItem} primaryText="Edit node" disabled={true} />
-                        <MenuItem style={menuItem} primaryText="Delete node" disabled={true} />
-                    </Menu>
-                </foreignObject>
-            </g>
-        );
-    }
-
     render() {
         return (
             <svg
@@ -156,8 +115,8 @@ class Layout_ForceDirected extends React.Component {
                     {this.props.state.nodes.length > 0 && this.props.state.nodes.map(this.renderNodes)}
                     {this.props.state.nodes.length > 0 && this.props.state.nodes.map(this.renderLabels)}
                 </g>
-                {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map(this.mainMenu)}
-                {this.props.state.elementMenu.length > 0 && this.props.state.elementMenu.map(this.elementMenu)}
+                {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map((menu)=>this.props.mainMenu(menu))}
+                {this.props.state.elementMenu.length > 0 && this.props.state.elementMenu.map((menu)=>this.props.elementMenu(menu))}
                 This Browser does not support html canvas.
       </svg>
         );
