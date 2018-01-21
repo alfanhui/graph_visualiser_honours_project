@@ -75,10 +75,8 @@ class Layout_Tree extends React.Component {
       "children":children[0]
     };
     root = d3.hierarchy(dataTree);  
-    console.log("dataTree", dataTree);
-    
+
     root = tree(root);
-    
     
     /*
     let cluster = d3.cluster()
