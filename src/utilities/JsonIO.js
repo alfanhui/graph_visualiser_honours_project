@@ -9,7 +9,7 @@ export function importJSON() {
     dispatch(wipeDatabase()).then(function(){
       dispatch(removeIndexes()); //remove indexes
     }).then(function(){
-      request.get("data/1238.json")
+      request.get("data/10808.json")
       .then((res)=> {
         console.log(res.body);
         dispatch(graphMLtoCypher(res.body));

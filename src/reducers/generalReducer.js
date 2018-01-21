@@ -7,6 +7,7 @@ const initialState = {
     elementMenu:[],
     treeData:[],
     layout:"TREE",
+    layoutReady: false,
   };
 
 
