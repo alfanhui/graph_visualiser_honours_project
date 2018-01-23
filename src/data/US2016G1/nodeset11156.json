@@ -1,0 +1,102 @@
+{
+    "nodes": [
+        {
+            "nodeID": "230793",
+            "text": "zombiebillnye : Yes, I too took high school history class Ms. Clinton",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:20"
+        },
+        {
+            "nodeID": "230795",
+            "text": "Yes, I too took high school history CLINTON",
+            "type": "I",
+            "timestamp": "2016-11-08 18:06:20"
+        },
+        {
+            "nodeID": "237622",
+            "text": "CLINTON : ARTICLE 5 : An attack on one is an attack on all",
+            "type": "L",
+            "timestamp": "2016-11-09 16:10:42"
+        },
+        {
+            "nodeID": "262959",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2017-03-07 14:23:21",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "262960",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-07 14:23:22",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262961",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2017-03-07 14:23:23",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "317452",
+            "fromID": "230795",
+            "toID": "262959",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317453",
+            "fromID": "262959",
+            "toID": "237622",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317454",
+            "fromID": "237622",
+            "toID": "262960",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317455",
+            "fromID": "262960",
+            "toID": "230793",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317456",
+            "fromID": "262960",
+            "toID": "262961",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317457",
+            "fromID": "262961",
+            "toID": "262959",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": [
+        {
+            "nodeID": "237622",
+            "personID": "0",
+            "timestamp": "2016-11-09 16:12:33",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "237622",
+            "personID": "0",
+            "timestamp": "2016-11-10 14:42:22",
+            "start": null,
+            "end": null,
+            "source": null
+        }
+    ]
+}

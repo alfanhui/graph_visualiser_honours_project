@@ -1,0 +1,1477 @@
+{
+    "nodes": [
+        {
+            "nodeID": "225534",
+            "text": "thelazt1 : he is absolutely right",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:25"
+        },
+        {
+            "nodeID": "225535",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:25",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225536",
+            "text": "TRUMP is absolutely right",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:25"
+        },
+        {
+            "nodeID": "225537",
+            "text": "Barbara: thelazt1 : he is absolutely right",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:26"
+        },
+        {
+            "nodeID": "225538",
+            "text": "thelazt1 : anyone in automotive can see this",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:26"
+        },
+        {
+            "nodeID": "225539",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:26",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225540",
+            "text": "anyone in automotive can see this",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:26"
+        },
+        {
+            "nodeID": "225541",
+            "text": "Barbara: thelazt1 : anyone in automotive can see this",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:26"
+        },
+        {
+            "nodeID": "225542",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-06 16:19:26",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "225543",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 16:19:26",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225544",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:26",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "225545",
+            "text": "MarcoPolo : Ford ain't leaving",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:26"
+        },
+        {
+            "nodeID": "225546",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:26",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225547",
+            "text": "Ford ain't leaving",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:27"
+        },
+        {
+            "nodeID": "225548",
+            "text": "Barbara: MarcoPolo : Ford ain't leaving",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:27"
+        },
+        {
+            "nodeID": "225549",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 16:19:27",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "225550",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 16:19:27",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225551",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:27",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "225552",
+            "text": "thelazt1 : but they did",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:27"
+        },
+        {
+            "nodeID": "225553",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:27",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225554",
+            "text": "Ford did leave",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:27"
+        },
+        {
+            "nodeID": "225555",
+            "text": "Barbara: thelazt1 : but they did",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:27"
+        },
+        {
+            "nodeID": "225556",
+            "text": "thelazt1 : they got a truck plant and small car division is in there",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:27"
+        },
+        {
+            "nodeID": "225557",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:28",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225558",
+            "text": "Ford got a truck plant and small car division is in there",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:28"
+        },
+        {
+            "nodeID": "225559",
+            "text": "Barbara: thelazt1 : they got a truck plant and small car division is in there",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:28"
+        },
+        {
+            "nodeID": "225560",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-06 16:19:28",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "225561",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 16:19:28",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "225562",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 16:19:28",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225563",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 16:19:28",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225564",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:28",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "225565",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:28",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "225566",
+            "text": "thelazt1 : nexteer and denso is also moving down there",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:28"
+        },
+        {
+            "nodeID": "225567",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:29",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225568",
+            "text": "nexteer and denso is also moving down there",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:29"
+        },
+        {
+            "nodeID": "225569",
+            "text": "Barbara: thelazt1 : nexteer and denso is also moving down there",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:29"
+        },
+        {
+            "nodeID": "225570",
+            "text": "MarcoPolo : They built a plant there",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:29"
+        },
+        {
+            "nodeID": "225571",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:29",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225572",
+            "text": "Ford built a plant there",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:29"
+        },
+        {
+            "nodeID": "225573",
+            "text": "Barbara: MarcoPolo : They built a plant there",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:29"
+        },
+        {
+            "nodeID": "225574",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-06 16:19:29",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "225575",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 16:19:29",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225576",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:29",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "225577",
+            "text": "MarcoPolo : Big deal, it's a global company",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:30"
+        },
+        {
+            "nodeID": "225578",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:30",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225579",
+            "text": "Ford is a global company",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:30"
+        },
+        {
+            "nodeID": "225580",
+            "text": "Barbara: MarcoPolo : Big deal, it's a global company",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:30"
+        },
+        {
+            "nodeID": "225581",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-06 16:19:30",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "225582",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 16:19:30",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225583",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:30",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "225584",
+            "text": "thelazt1 : They are not leaving Detroit",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:30"
+        },
+        {
+            "nodeID": "225585",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:30",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225586",
+            "text": "Ford are not leaving Detroit",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:30"
+        },
+        {
+            "nodeID": "225587",
+            "text": "Barbara: thelazt1 : They are not leaving Detroit",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:31"
+        },
+        {
+            "nodeID": "225588",
+            "text": "MarcoPolo : Ford stated this",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:31"
+        },
+        {
+            "nodeID": "225589",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:31",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225590",
+            "text": "Ford stated this",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:31"
+        },
+        {
+            "nodeID": "225591",
+            "text": "Barbara: MarcoPolo : Ford stated this",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:31"
+        },
+        {
+            "nodeID": "225592",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-06 16:19:31",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "225593",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 16:19:31",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225594",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:31",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "225595",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-06 16:19:31",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "225596",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 16:19:31",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225597",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:32",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "225598",
+            "text": "thelazt1 : corporate is staying Manufacturing is leaving",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:32"
+        },
+        {
+            "nodeID": "225599",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:32",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225600",
+            "text": "corporate is staying Manufacturing is leaving",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:32"
+        },
+        {
+            "nodeID": "225601",
+            "text": "Barbara: thelazt1 : corporate is staying Manufacturing is leaving",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:32"
+        },
+        {
+            "nodeID": "225602",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 16:19:32",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "225603",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 16:19:32",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225604",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:32",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "225605",
+            "text": "MarcoPolo : you are flat out wrong",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:32"
+        },
+        {
+            "nodeID": "225606",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:32",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225607",
+            "text": "you are flat out wrong",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:33"
+        },
+        {
+            "nodeID": "225608",
+            "text": "Barbara: MarcoPolo : you are flat out wrong",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:33"
+        },
+        {
+            "nodeID": "225609",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 16:19:33",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "225610",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 16:19:33",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225611",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:33",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "225612",
+            "text": "MarcoPolo : Look it up",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:33"
+        },
+        {
+            "nodeID": "225613",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:33",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225614",
+            "text": "Look it up",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:33"
+        },
+        {
+            "nodeID": "225615",
+            "text": "Barbara: MarcoPolo : Look it up",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:33"
+        },
+        {
+            "nodeID": "225616",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 16:19:33",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225617",
+            "text": "thelazt1 : https:\/\/media.ford.com\/content\/fordmedia\/fna\/us\/en\/news\/2015\/04\/17\/ford-announces-2-5-billion-usd-investment.html",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:34"
+        },
+        {
+            "nodeID": "225618",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:34",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225619",
+            "text": "https:\/\/media.ford.com\/content\/fordmedia\/fna\/us\/en\/news\/2015\/04\/17\/ford-announces-2-5-billion-usd-investment.html",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:34"
+        },
+        {
+            "nodeID": "225620",
+            "text": "Barbara: thelazt1 : https:\/\/media.ford.com\/content\/fordmedia\/fna\/us\/en\/news\/2015\/04\/17\/ford-announces-2-5-billion-usd-investment.html",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:34"
+        },
+        {
+            "nodeID": "225621",
+            "text": "thelazt1 : https:\/\/www.bing.com\/search?q=ford+building+in+mexico&form=EDGNTC&qs=AS&cvid=29aca6666c074a4f84f3617815d0c315&pq=ford+building+in+mexico",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:34"
+        },
+        {
+            "nodeID": "225622",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:34",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225623",
+            "text": "https:\/\/www.bing.com\/search?q=ford+building+in+mexico&form=EDGNTC&qs=AS&cvid=29aca6666c074a4f84f3617815d0c315&pq=ford+building+in+mexico",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:34"
+        },
+        {
+            "nodeID": "225624",
+            "text": "Barbara: thelazt1 : https:\/\/www.bing.com\/search?q=ford+building+in+mexico&form=EDGNTC&qs=AS&cvid=29aca6666c074a4f84f3617815d0c315&pq=ford+building+in+mexico",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:34"
+        },
+        {
+            "nodeID": "225625",
+            "text": "thelazt1 : two plants 2.5bn going to straight mexico",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:34"
+        },
+        {
+            "nodeID": "225626",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:35",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225627",
+            "text": "two plants 2.5bn going to straight mexico",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:35"
+        },
+        {
+            "nodeID": "225628",
+            "text": "Barbara: thelazt1 : two plants 2.5bn going to straight mexico",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:35"
+        },
+        {
+            "nodeID": "225629",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-06 16:19:35",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "225630",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 16:19:35",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225631",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:35",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "225632",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 16:19:35",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "225633",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 16:19:35",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225634",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:35",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "225635",
+            "text": "MarcoPolo :  the jobs ARENT leaving America",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:35"
+        },
+        {
+            "nodeID": "225636",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:36",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225637",
+            "text": "the jobs ARENT leaving America",
+            "type": "I",
+            "timestamp": "2016-11-06 16:19:36"
+        },
+        {
+            "nodeID": "225638",
+            "text": "Barbara: MarcoPolo :  the jobs ARENT leaving America",
+            "type": "L",
+            "timestamp": "2016-11-06 16:19:36"
+        },
+        {
+            "nodeID": "225639",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 16:19:36",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "225640",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 16:19:36",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225641",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 16:19:36",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "272735",
+            "fromID": "225535",
+            "toID": "225536",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272736",
+            "fromID": "225534",
+            "toID": "225535",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272737",
+            "fromID": "225539",
+            "toID": "225540",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272738",
+            "fromID": "225538",
+            "toID": "225539",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272739",
+            "fromID": "225540",
+            "toID": "225542",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272740",
+            "fromID": "225542",
+            "toID": "225536",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272741",
+            "fromID": "225534",
+            "toID": "225543",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272742",
+            "fromID": "225543",
+            "toID": "225538",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272743",
+            "fromID": "225543",
+            "toID": "225544",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272744",
+            "fromID": "225544",
+            "toID": "225542",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272745",
+            "fromID": "225546",
+            "toID": "225547",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272746",
+            "fromID": "225545",
+            "toID": "225546",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272747",
+            "fromID": "225547",
+            "toID": "225549",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272748",
+            "fromID": "225549",
+            "toID": "225536",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272749",
+            "fromID": "225534",
+            "toID": "225550",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272750",
+            "fromID": "225550",
+            "toID": "225545",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272751",
+            "fromID": "225550",
+            "toID": "225551",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272752",
+            "fromID": "225551",
+            "toID": "225549",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272753",
+            "fromID": "225553",
+            "toID": "225554",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272754",
+            "fromID": "225552",
+            "toID": "225553",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272755",
+            "fromID": "225557",
+            "toID": "225558",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272756",
+            "fromID": "225556",
+            "toID": "225557",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272757",
+            "fromID": "225558",
+            "toID": "225560",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272758",
+            "fromID": "225560",
+            "toID": "225554",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272759",
+            "fromID": "225554",
+            "toID": "225561",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272760",
+            "fromID": "225561",
+            "toID": "225547",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272761",
+            "fromID": "225545",
+            "toID": "225562",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272762",
+            "fromID": "225562",
+            "toID": "225552",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272763",
+            "fromID": "225552",
+            "toID": "225563",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272764",
+            "fromID": "225563",
+            "toID": "225556",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272765",
+            "fromID": "225562",
+            "toID": "225564",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272766",
+            "fromID": "225564",
+            "toID": "225561",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272767",
+            "fromID": "225563",
+            "toID": "225565",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272768",
+            "fromID": "225565",
+            "toID": "225560",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272769",
+            "fromID": "225567",
+            "toID": "225568",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272770",
+            "fromID": "225566",
+            "toID": "225567",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272771",
+            "fromID": "225568",
+            "toID": "225560",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272772",
+            "fromID": "225563",
+            "toID": "225566",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272773",
+            "fromID": "225571",
+            "toID": "225572",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272774",
+            "fromID": "225570",
+            "toID": "225571",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272775",
+            "fromID": "225572",
+            "toID": "225574",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272776",
+            "fromID": "225574",
+            "toID": "225558",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272777",
+            "fromID": "225556",
+            "toID": "225575",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272778",
+            "fromID": "225575",
+            "toID": "225570",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272779",
+            "fromID": "225575",
+            "toID": "225576",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272780",
+            "fromID": "225576",
+            "toID": "225574",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272781",
+            "fromID": "225578",
+            "toID": "225579",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272782",
+            "fromID": "225577",
+            "toID": "225578",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272783",
+            "fromID": "225579",
+            "toID": "225581",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272784",
+            "fromID": "225581",
+            "toID": "225572",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272785",
+            "fromID": "225570",
+            "toID": "225582",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272786",
+            "fromID": "225582",
+            "toID": "225577",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272787",
+            "fromID": "225582",
+            "toID": "225583",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272788",
+            "fromID": "225583",
+            "toID": "225581",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272789",
+            "fromID": "225585",
+            "toID": "225586",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272790",
+            "fromID": "225584",
+            "toID": "225585",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272791",
+            "fromID": "225589",
+            "toID": "225590",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272792",
+            "fromID": "225588",
+            "toID": "225589",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272793",
+            "fromID": "225590",
+            "toID": "225592",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272794",
+            "fromID": "225592",
+            "toID": "225586",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272795",
+            "fromID": "225584",
+            "toID": "225593",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272796",
+            "fromID": "225593",
+            "toID": "225588",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272797",
+            "fromID": "225593",
+            "toID": "225594",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272798",
+            "fromID": "225594",
+            "toID": "225592",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272799",
+            "fromID": "225586",
+            "toID": "225595",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272800",
+            "fromID": "225595",
+            "toID": "225547",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272801",
+            "fromID": "225545",
+            "toID": "225596",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272802",
+            "fromID": "225596",
+            "toID": "225584",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272803",
+            "fromID": "225596",
+            "toID": "225597",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272804",
+            "fromID": "225597",
+            "toID": "225595",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272805",
+            "fromID": "225599",
+            "toID": "225600",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272806",
+            "fromID": "225598",
+            "toID": "225599",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272807",
+            "fromID": "225600",
+            "toID": "225602",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272808",
+            "fromID": "225602",
+            "toID": "225586",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272809",
+            "fromID": "225584",
+            "toID": "225603",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272810",
+            "fromID": "225603",
+            "toID": "225598",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272811",
+            "fromID": "225603",
+            "toID": "225604",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272812",
+            "fromID": "225604",
+            "toID": "225602",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272813",
+            "fromID": "225606",
+            "toID": "225607",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272814",
+            "fromID": "225605",
+            "toID": "225606",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272815",
+            "fromID": "225607",
+            "toID": "225609",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272816",
+            "fromID": "225609",
+            "toID": "225600",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272817",
+            "fromID": "225598",
+            "toID": "225610",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272818",
+            "fromID": "225610",
+            "toID": "225605",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272819",
+            "fromID": "225610",
+            "toID": "225611",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272820",
+            "fromID": "225611",
+            "toID": "225609",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272821",
+            "fromID": "225613",
+            "toID": "225614",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272822",
+            "fromID": "225612",
+            "toID": "225613",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272823",
+            "fromID": "225605",
+            "toID": "225616",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272824",
+            "fromID": "225616",
+            "toID": "225612",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272825",
+            "fromID": "225618",
+            "toID": "225619",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272826",
+            "fromID": "225617",
+            "toID": "225618",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272827",
+            "fromID": "225622",
+            "toID": "225623",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272828",
+            "fromID": "225621",
+            "toID": "225622",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272829",
+            "fromID": "225626",
+            "toID": "225627",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272830",
+            "fromID": "225625",
+            "toID": "225626",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272831",
+            "fromID": "225619",
+            "toID": "225629",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272832",
+            "fromID": "225629",
+            "toID": "225627",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272833",
+            "fromID": "225623",
+            "toID": "225629",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272834",
+            "fromID": "225617",
+            "toID": "225630",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272835",
+            "fromID": "225630",
+            "toID": "225625",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272836",
+            "fromID": "225621",
+            "toID": "225630",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272837",
+            "fromID": "225630",
+            "toID": "225631",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272838",
+            "fromID": "225631",
+            "toID": "225629",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272839",
+            "fromID": "225627",
+            "toID": "225632",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272840",
+            "fromID": "225632",
+            "toID": "225607",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272841",
+            "fromID": "225605",
+            "toID": "225633",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272842",
+            "fromID": "225633",
+            "toID": "225625",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272843",
+            "fromID": "225633",
+            "toID": "225634",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272844",
+            "fromID": "225634",
+            "toID": "225632",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272845",
+            "fromID": "225636",
+            "toID": "225637",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272846",
+            "fromID": "225635",
+            "toID": "225636",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272847",
+            "fromID": "225637",
+            "toID": "225639",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272848",
+            "fromID": "225639",
+            "toID": "225627",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272849",
+            "fromID": "225625",
+            "toID": "225640",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272850",
+            "fromID": "225640",
+            "toID": "225635",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272851",
+            "fromID": "225640",
+            "toID": "225641",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272852",
+            "fromID": "225641",
+            "toID": "225639",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

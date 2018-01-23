@@ -1,0 +1,108 @@
+{
+    "nodes": [
+        {
+            "nodeID": "225895",
+            "text": "the Democrats have not stopped the job losses in manufacturing for the last 30 years",
+            "type": "I",
+            "timestamp": "2016-11-06 17:43:55"
+        },
+        {
+            "nodeID": "225897",
+            "text": "abfield : Why haven't the Democrats stopped the job losses in manufacturing for the last 30 years",
+            "type": "L",
+            "timestamp": "2016-11-06 17:43:55"
+        },
+        {
+            "nodeID": "233241",
+            "text": "CLINTON and others , politicians , should have been doing this for years , not right now",
+            "type": "I",
+            "timestamp": "2016-11-09 15:33:15"
+        },
+        {
+            "nodeID": "233253",
+            "text": "TRUMP : They should have been doing this for years",
+            "type": "L",
+            "timestamp": "2016-11-09 15:33:17"
+        },
+        {
+            "nodeID": "262652",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-06 13:11:29",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "262653",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-06 13:11:30",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262654",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-06 13:11:30",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "316897",
+            "fromID": "225895",
+            "toID": "262652",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316898",
+            "fromID": "262652",
+            "toID": "233241",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316899",
+            "fromID": "233253",
+            "toID": "262653",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316900",
+            "fromID": "262653",
+            "toID": "225897",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316901",
+            "fromID": "262653",
+            "toID": "262654",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316902",
+            "fromID": "262654",
+            "toID": "262652",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": [
+        {
+            "nodeID": "225897",
+            "personID": "2936",
+            "timestamp": "2016-11-06 17:44:03",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "233253",
+            "personID": "1602",
+            "timestamp": "2016-11-09 15:34:50",
+            "start": null,
+            "end": null,
+            "source": null
+        }
+    ]
+}

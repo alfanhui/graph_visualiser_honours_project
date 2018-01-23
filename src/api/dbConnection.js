@@ -6,7 +6,7 @@ let password = 'jazzyrice80';
 let url = localhost_httpUrlForTransaction; //subject to change after check
 
 export function checkAddress() {
-    return dispatch => {
+    return (dispatch) => {
         return request.post(url)
             .auth(username, password)
             .then((res) => {
@@ -31,7 +31,7 @@ export function postQuery(statements, parameters) {
   statements.map((s) => {
     preparedStatement.push({statement: s, parameters: parameters});
   });
-  return dispatch => {
+  return (dispatch) => {
       return request.post(url)
       .send({ statements: preparedStatement }) //[{ statement: s, parameters: parameters }]
       .auth(username,password)

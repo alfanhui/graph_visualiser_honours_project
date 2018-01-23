@@ -1,0 +1,172 @@
+{
+    "nodes": [
+        {
+            "nodeID": "230343",
+            "text": "coltsmetsfan614 : Can anyone explain why Trump's idea to \"take the oil\" from Iraq would have been anything other than plunder, which is a war crime",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:45"
+        },
+        {
+            "nodeID": "230345",
+            "text": "Trump's idea to \"take the oil\" from Iraq would have been plunder, which is a war crime",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:45"
+        },
+        {
+            "nodeID": "230421",
+            "text": "The_GMD : If you don't take the oil, a terror division (ISIS) can take control of it in the absence of a solid government in order to fund their operations",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:53"
+        },
+        {
+            "nodeID": "230423",
+            "text": "If you don't take the oil, a terror division (ISIS) can take control of it in the absence of a solid government in order to fund their operations",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:53"
+        },
+        {
+            "nodeID": "237287",
+            "text": "TRUMP : had we taken the oil\u2014and we should have taken the oil\u2014ISIS would not have been able to form either",
+            "type": "L",
+            "timestamp": "2016-11-09 16:02:45"
+        },
+        {
+            "nodeID": "237289",
+            "text": "had USA taken the oil, ISIS would not have been able to form either",
+            "type": "I",
+            "timestamp": "2016-11-09 16:02:46"
+        },
+        {
+            "nodeID": "262919",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2017-03-07 14:00:13",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "262920",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-07 14:00:14",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262921",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2017-03-07 14:00:14",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "262922",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-07 14:00:15",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "262923",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-07 14:00:15",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262924",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-07 14:00:16",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "317392",
+            "fromID": "230345",
+            "toID": "262919",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317393",
+            "fromID": "262919",
+            "toID": "237289",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317394",
+            "fromID": "237287",
+            "toID": "262920",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317395",
+            "fromID": "262920",
+            "toID": "230343",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317396",
+            "fromID": "262920",
+            "toID": "262921",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317397",
+            "fromID": "262921",
+            "toID": "262919",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317398",
+            "fromID": "230423",
+            "toID": "262922",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317399",
+            "fromID": "262922",
+            "toID": "237289",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317400",
+            "fromID": "237287",
+            "toID": "262923",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317401",
+            "fromID": "262923",
+            "toID": "230421",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317402",
+            "fromID": "262923",
+            "toID": "262924",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317403",
+            "fromID": "262924",
+            "toID": "262922",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": [
+        {
+            "nodeID": "230343",
+            "personID": "3129",
+            "timestamp": "2016-11-09 20:55:26",
+            "start": null,
+            "end": null,
+            "source": null
+        }
+    ]
+}

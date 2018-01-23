@@ -1,0 +1,645 @@
+{
+    "nodes": [
+        {
+            "nodeID": "226701",
+            "text": "SkepticalOrSceptical : NAFTA was spearheaded by the administration of George H.W. Bush",
+            "type": "L",
+            "timestamp": "2016-11-07 16:52:45"
+        },
+        {
+            "nodeID": "226702",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 16:52:46",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226703",
+            "text": "NAFTA was spearheaded by the administration of George H.W. BUSH",
+            "type": "I",
+            "timestamp": "2016-11-07 16:52:46"
+        },
+        {
+            "nodeID": "226704",
+            "text": "Barbara: SkepticalOrSceptical : NAFTA was spearheaded by the administration of George H.W. Bush",
+            "type": "L",
+            "timestamp": "2016-11-07 16:52:46"
+        },
+        {
+            "nodeID": "226705",
+            "text": "CareToRemember : who signed it",
+            "type": "L",
+            "timestamp": "2016-11-07 16:52:46"
+        },
+        {
+            "nodeID": "226706",
+            "text": "Pure Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-07 16:52:46",
+            "scheme": "PureQuestioning",
+            "schemeID": "91"
+        },
+        {
+            "nodeID": "226707",
+            "text": "xxx signed NAFTA",
+            "type": "I",
+            "timestamp": "2016-11-07 16:52:55"
+        },
+        {
+            "nodeID": "226708",
+            "text": "Barbara: CareToRemember : who signed it",
+            "type": "L",
+            "timestamp": "2016-11-07 16:52:55"
+        },
+        {
+            "nodeID": "226709",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 16:52:56",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226710",
+            "text": "Kai_Daigoji : Who also signed it, before Clinton came into office",
+            "type": "L",
+            "timestamp": "2016-11-07 16:52:56"
+        },
+        {
+            "nodeID": "226711",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 16:52:56",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226712",
+            "text": "BUSH also signed NAFTA, before CLINTON came into office",
+            "type": "I",
+            "timestamp": "2016-11-07 16:53:02"
+        },
+        {
+            "nodeID": "226713",
+            "text": "Barbara: Kai_Daigoji : Who also signed it, before Clinton came into office",
+            "type": "L",
+            "timestamp": "2016-11-07 16:53:05"
+        },
+        {
+            "nodeID": "226714",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-07 16:53:06",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "226715",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 16:53:06",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226716",
+            "text": "Default Illocuting",
+            "type": "YA",
+            "timestamp": "2016-11-07 16:53:06",
+            "scheme": "Default Illocuting",
+            "schemeID": "168"
+        },
+        {
+            "nodeID": "226717",
+            "text": "akeArvizu : H.W supports Clinton supposedly",
+            "type": "L",
+            "timestamp": "2016-11-07 16:53:06"
+        },
+        {
+            "nodeID": "226718",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 16:53:06",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226719",
+            "text": "H.W BUSH supports CLINTON supposedly",
+            "type": "I",
+            "timestamp": "2016-11-07 16:53:07"
+        },
+        {
+            "nodeID": "226720",
+            "text": "Barbara: akeArvizu : H.W supports Clinton supposedly",
+            "type": "L",
+            "timestamp": "2016-11-07 16:53:07"
+        },
+        {
+            "nodeID": "226721",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-07 16:53:07",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "226722",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 16:53:07",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226723",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-07 16:53:07",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "226724",
+            "text": "FatalErrorr : who signed it",
+            "type": "L",
+            "timestamp": "2016-11-07 16:53:07"
+        },
+        {
+            "nodeID": "226725",
+            "text": "Barbara: FatalErrorr : who signed it",
+            "type": "L",
+            "timestamp": "2016-11-07 16:53:07"
+        },
+        {
+            "nodeID": "226726",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 16:53:08",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226727",
+            "text": "Pure Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-07 16:53:08",
+            "scheme": "PureQuestioning",
+            "schemeID": "91"
+        },
+        {
+            "nodeID": "226728",
+            "text": "yfph : Bill Clinton vetoed it",
+            "type": "L",
+            "timestamp": "2016-11-07 16:53:08"
+        },
+        {
+            "nodeID": "226729",
+            "text": "Ironic Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 16:53:08",
+            "scheme": "Ironic Asserting",
+            "schemeID": "148"
+        },
+        {
+            "nodeID": "226730",
+            "text": "Bill CLINTON didn't veto NAFTA",
+            "type": "I",
+            "timestamp": "2016-11-07 16:53:08"
+        },
+        {
+            "nodeID": "226731",
+            "text": "Barbara: yfph : Bill Clinton vetoed it",
+            "type": "L",
+            "timestamp": "2016-11-07 16:53:08"
+        },
+        {
+            "nodeID": "226732",
+            "text": "yfph : Bill Clinton bravely vetoed the Glass-Steagall repeal from the Republican controlled Congress",
+            "type": "L",
+            "timestamp": "2016-11-07 16:53:08"
+        },
+        {
+            "nodeID": "226733",
+            "text": "Ironic Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 16:53:09",
+            "scheme": "Ironic Asserting",
+            "schemeID": "148"
+        },
+        {
+            "nodeID": "226734",
+            "text": "Bill CLINTON didn't bravely vetoed the Glass-Steagall repeal from the Republican controlled Congress",
+            "type": "I",
+            "timestamp": "2016-11-07 16:53:09"
+        },
+        {
+            "nodeID": "226735",
+            "text": "Barbara: yfph : Bill Clinton bravely vetoed the Glass-Steagall repeal from the Republican controlled Congress",
+            "type": "L",
+            "timestamp": "2016-11-07 16:53:09"
+        },
+        {
+            "nodeID": "226736",
+            "text": "yfph : Robert Rubin, Bill's Secretary of the Treasury, didn't join Citigroup's board after leaving office",
+            "type": "L",
+            "timestamp": "2016-11-07 16:53:09"
+        },
+        {
+            "nodeID": "226737",
+            "text": "Ironic Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 16:53:09",
+            "scheme": "Ironic Asserting",
+            "schemeID": "148"
+        },
+        {
+            "nodeID": "226738",
+            "text": "Robert RUBIN, Bill CLINTON's Secretary of the Treasury, did join Citigroup's board after leaving office",
+            "type": "I",
+            "timestamp": "2016-11-07 16:53:09"
+        },
+        {
+            "nodeID": "226739",
+            "text": "Barbara: yfph : Robert Rubin, Bill's Secretary of the Treasury, didn't join Citigroup's board after leaving office",
+            "type": "L",
+            "timestamp": "2016-11-07 16:53:10"
+        },
+        {
+            "nodeID": "226740",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-07 16:53:10",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "226741",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 16:53:10",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226742",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-07 16:53:10",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "226743",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 16:53:10",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226744",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 16:53:11",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226745",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-07 16:53:11",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "226746",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-07 16:53:11",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "226747",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-07 16:53:11",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "226748",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-07 16:53:11",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "274021",
+            "fromID": "226702",
+            "toID": "226703",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274022",
+            "fromID": "226701",
+            "toID": "226702",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274023",
+            "fromID": "226706",
+            "toID": "226707",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274024",
+            "fromID": "226705",
+            "toID": "226706",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274025",
+            "fromID": "226701",
+            "toID": "226709",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274026",
+            "fromID": "226709",
+            "toID": "226705",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274027",
+            "fromID": "226711",
+            "toID": "226712",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274028",
+            "fromID": "226710",
+            "toID": "226711",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274029",
+            "fromID": "226712",
+            "toID": "226714",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274030",
+            "fromID": "226714",
+            "toID": "226707",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274031",
+            "fromID": "226705",
+            "toID": "226715",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274032",
+            "fromID": "226715",
+            "toID": "226710",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274033",
+            "fromID": "226715",
+            "toID": "226716",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274034",
+            "fromID": "226716",
+            "toID": "226714",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274035",
+            "fromID": "226718",
+            "toID": "226719",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274036",
+            "fromID": "226717",
+            "toID": "226718",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274037",
+            "fromID": "226712",
+            "toID": "226721",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274038",
+            "fromID": "226721",
+            "toID": "226719",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274039",
+            "fromID": "226710",
+            "toID": "226722",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274040",
+            "fromID": "226722",
+            "toID": "226717",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274041",
+            "fromID": "226722",
+            "toID": "226723",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274042",
+            "fromID": "226723",
+            "toID": "226721",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274043",
+            "fromID": "226705",
+            "toID": "226726",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274044",
+            "fromID": "226726",
+            "toID": "226724",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274045",
+            "fromID": "226724",
+            "toID": "226727",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274046",
+            "fromID": "226727",
+            "toID": "226707",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274047",
+            "fromID": "226729",
+            "toID": "226730",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274048",
+            "fromID": "226728",
+            "toID": "226729",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274049",
+            "fromID": "226733",
+            "toID": "226734",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274050",
+            "fromID": "226732",
+            "toID": "226733",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274051",
+            "fromID": "226737",
+            "toID": "226738",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274052",
+            "fromID": "226736",
+            "toID": "226737",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274053",
+            "fromID": "226730",
+            "toID": "226740",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274054",
+            "fromID": "226740",
+            "toID": "226712",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274055",
+            "fromID": "226710",
+            "toID": "226741",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274056",
+            "fromID": "226741",
+            "toID": "226728",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274057",
+            "fromID": "226741",
+            "toID": "226742",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274058",
+            "fromID": "226742",
+            "toID": "226740",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274059",
+            "fromID": "226710",
+            "toID": "226743",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274060",
+            "fromID": "226743",
+            "toID": "226732",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274061",
+            "fromID": "226710",
+            "toID": "226744",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274062",
+            "fromID": "226744",
+            "toID": "226736",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274063",
+            "fromID": "226734",
+            "toID": "226745",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274064",
+            "fromID": "226745",
+            "toID": "226712",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274065",
+            "fromID": "226738",
+            "toID": "226746",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274066",
+            "fromID": "226746",
+            "toID": "226712",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274067",
+            "fromID": "226743",
+            "toID": "226747",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274068",
+            "fromID": "226747",
+            "toID": "226745",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274069",
+            "fromID": "226744",
+            "toID": "226748",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274070",
+            "fromID": "226748",
+            "toID": "226746",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

@@ -1,0 +1,748 @@
+{
+    "nodes": [
+        {
+            "nodeID": "225895",
+            "text": "the Democrats have not stopped the job losses in manufacturing for the last 30 years",
+            "type": "I",
+            "timestamp": "2016-11-06 17:43:55"
+        },
+        {
+            "nodeID": "225896",
+            "text": "Assertive Challenging",
+            "type": "YA",
+            "timestamp": "2016-11-06 17:43:55",
+            "scheme": "AssertiveChallenging",
+            "schemeID": "87"
+        },
+        {
+            "nodeID": "225897",
+            "text": "abfield : Why haven't the Democrats stopped the job losses in manufacturing for the last 30 years",
+            "type": "L",
+            "timestamp": "2016-11-06 17:43:55"
+        },
+        {
+            "nodeID": "225898",
+            "text": "Barbara: abfield : Why haven't the Democrats stopped the job losses in manufacturing for the last 30 years",
+            "type": "L",
+            "timestamp": "2016-11-06 17:43:55"
+        },
+        {
+            "nodeID": "225899",
+            "text": "the Republicans haven't stopped the job losses in manufacturing for the last 30 years",
+            "type": "I",
+            "timestamp": "2016-11-06 17:43:55"
+        },
+        {
+            "nodeID": "225900",
+            "text": "Assertive Challenging",
+            "type": "YA",
+            "timestamp": "2016-11-06 17:43:56",
+            "scheme": "AssertiveChallenging",
+            "schemeID": "87"
+        },
+        {
+            "nodeID": "225901",
+            "text": "weaglebeagle : Why haven't the Republicans",
+            "type": "L",
+            "timestamp": "2016-11-06 17:43:56"
+        },
+        {
+            "nodeID": "225902",
+            "text": "Barbara: weaglebeagle : Why haven't the Republicans",
+            "type": "L",
+            "timestamp": "2016-11-06 17:43:56"
+        },
+        {
+            "nodeID": "225903",
+            "text": "19683dwMichigan : Why haven't the GOP",
+            "type": "L",
+            "timestamp": "2016-11-06 17:43:56"
+        },
+        {
+            "nodeID": "225904",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 17:43:56",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225905",
+            "text": "the GOP haven't stopped the job losses in manufacturing for the last 30 years",
+            "type": "I",
+            "timestamp": "2016-11-06 17:43:56"
+        },
+        {
+            "nodeID": "225906",
+            "text": "Barbara: 19683dwMichigan : Why haven't the GOP",
+            "type": "L",
+            "timestamp": "2016-11-06 17:43:56"
+        },
+        {
+            "nodeID": "225907",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 17:43:56",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225908",
+            "text": "Assertive Challenging",
+            "type": "YA",
+            "timestamp": "2016-11-06 17:43:57",
+            "scheme": "AssertiveChallenging",
+            "schemeID": "87"
+        },
+        {
+            "nodeID": "225909",
+            "text": "miketeeeveee :  they don't control the House",
+            "type": "L",
+            "timestamp": "2016-11-06 17:43:57"
+        },
+        {
+            "nodeID": "225910",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 17:43:57",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225911",
+            "text": "the Democrats don't control the House",
+            "type": "I",
+            "timestamp": "2016-11-06 17:43:57"
+        },
+        {
+            "nodeID": "225912",
+            "text": "Barbara: miketeeeveee :  they don't control the House",
+            "type": "L",
+            "timestamp": "2016-11-06 17:43:57"
+        },
+        {
+            "nodeID": "225913",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-06 17:43:57",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "225914",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 17:43:57",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225915",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-06 17:43:57",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "225916",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-06 17:43:57",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "225917",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 17:43:57",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225918",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-06 17:43:58",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "225919",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 17:43:58",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "225920",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 17:43:58",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225921",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 17:43:58",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "225922",
+            "text": "Bigforsumthin : automation has a lot to do with that",
+            "type": "L",
+            "timestamp": "2016-11-06 17:43:58"
+        },
+        {
+            "nodeID": "225923",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 17:43:58",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225924",
+            "text": "automation has a lot to do with that",
+            "type": "I",
+            "timestamp": "2016-11-06 17:43:58"
+        },
+        {
+            "nodeID": "225925",
+            "text": "Barbara: Bigforsumthin : utomation has a lot to do with that",
+            "type": "L",
+            "timestamp": "2016-11-06 17:43:58"
+        },
+        {
+            "nodeID": "225926",
+            "text": "Bigforsumthin : A lot of manufacturing jobs are disappearing and it's only going to get worse as the future goes",
+            "type": "L",
+            "timestamp": "2016-11-06 17:43:58"
+        },
+        {
+            "nodeID": "225927",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 17:43:58",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225928",
+            "text": "a lot of manufacturing jobs are disappearing and it's only going to get worse as the future goes",
+            "type": "I",
+            "timestamp": "2016-11-06 17:43:59"
+        },
+        {
+            "nodeID": "225929",
+            "text": "Barbara: Bigforsumthin : A lot of manufacturing jobs are disappearing and it's only going to get worse as the future goes",
+            "type": "L",
+            "timestamp": "2016-11-06 17:43:59"
+        },
+        {
+            "nodeID": "225930",
+            "text": "Bigforsumthin : there is nothing either political party can do about that",
+            "type": "L",
+            "timestamp": "2016-11-06 17:43:59"
+        },
+        {
+            "nodeID": "225931",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 17:43:59",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225932",
+            "text": "there is nothing either political party can do about that",
+            "type": "I",
+            "timestamp": "2016-11-06 17:43:59"
+        },
+        {
+            "nodeID": "225933",
+            "text": "Barbara: Bigforsumthin : there is nothing either political party can do about that",
+            "type": "L",
+            "timestamp": "2016-11-06 17:43:59"
+        },
+        {
+            "nodeID": "225934",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 17:43:59",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225935",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 17:43:59",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225936",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-06 17:43:59",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "225937",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-06 17:43:59",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "225938",
+            "text": "Ridespacemountain25 : Nothing will stop that with the rise of technological unemployment",
+            "type": "L",
+            "timestamp": "2016-11-06 17:44:00"
+        },
+        {
+            "nodeID": "225939",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 17:44:00",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225940",
+            "text": "nothing will stop that with the rise of technological unemployment",
+            "type": "I",
+            "timestamp": "2016-11-06 17:44:00"
+        },
+        {
+            "nodeID": "225941",
+            "text": "Barbara: Ridespacemountain25 : Nothing will stop that with the rise of technological unemployment",
+            "type": "L",
+            "timestamp": "2016-11-06 17:44:00"
+        },
+        {
+            "nodeID": "225942",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-06 17:44:00",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "225943",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 17:44:00",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225944",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-06 17:44:00",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "225945",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 17:44:00",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "225946",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 17:44:00",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225947",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 17:44:00",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "273151",
+            "fromID": "225896",
+            "toID": "225895",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273152",
+            "fromID": "225897",
+            "toID": "225896",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273153",
+            "fromID": "225900",
+            "toID": "225899",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273154",
+            "fromID": "225901",
+            "toID": "225900",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273155",
+            "fromID": "225904",
+            "toID": "225905",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273156",
+            "fromID": "225903",
+            "toID": "225904",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273157",
+            "fromID": "225901",
+            "toID": "225907",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273158",
+            "fromID": "225907",
+            "toID": "225901",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273159",
+            "fromID": "225901",
+            "toID": "225908",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273160",
+            "fromID": "225908",
+            "toID": "225899",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273161",
+            "fromID": "225910",
+            "toID": "225911",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273162",
+            "fromID": "225909",
+            "toID": "225910",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273163",
+            "fromID": "225911",
+            "toID": "225913",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273164",
+            "fromID": "225913",
+            "toID": "225895",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273165",
+            "fromID": "225897",
+            "toID": "225914",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273166",
+            "fromID": "225914",
+            "toID": "225909",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273167",
+            "fromID": "225914",
+            "toID": "225915",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273168",
+            "fromID": "225915",
+            "toID": "225913",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273169",
+            "fromID": "225905",
+            "toID": "225916",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273170",
+            "fromID": "225916",
+            "toID": "225899",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273171",
+            "fromID": "225901",
+            "toID": "225917",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273172",
+            "fromID": "225917",
+            "toID": "225903",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273173",
+            "fromID": "225917",
+            "toID": "225918",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273174",
+            "fromID": "225918",
+            "toID": "225916",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273175",
+            "fromID": "225899",
+            "toID": "225919",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273176",
+            "fromID": "225919",
+            "toID": "225895",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273177",
+            "fromID": "225897",
+            "toID": "225920",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273178",
+            "fromID": "225920",
+            "toID": "225901",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273179",
+            "fromID": "225920",
+            "toID": "225921",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273180",
+            "fromID": "225921",
+            "toID": "225919",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273181",
+            "fromID": "225923",
+            "toID": "225924",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273182",
+            "fromID": "225922",
+            "toID": "225923",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273183",
+            "fromID": "225927",
+            "toID": "225928",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273184",
+            "fromID": "225926",
+            "toID": "225927",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273185",
+            "fromID": "225931",
+            "toID": "225932",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273186",
+            "fromID": "225930",
+            "toID": "225931",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273187",
+            "fromID": "225922",
+            "toID": "225934",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273188",
+            "fromID": "225934",
+            "toID": "225926",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273189",
+            "fromID": "225922",
+            "toID": "225935",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273190",
+            "fromID": "225935",
+            "toID": "225930",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273191",
+            "fromID": "225924",
+            "toID": "225936",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273192",
+            "fromID": "225936",
+            "toID": "225932",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273193",
+            "fromID": "225935",
+            "toID": "225937",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273194",
+            "fromID": "225937",
+            "toID": "225936",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273195",
+            "fromID": "225939",
+            "toID": "225940",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273196",
+            "fromID": "225938",
+            "toID": "225939",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273197",
+            "fromID": "225940",
+            "toID": "225942",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273198",
+            "fromID": "225942",
+            "toID": "225932",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273199",
+            "fromID": "225930",
+            "toID": "225943",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273200",
+            "fromID": "225943",
+            "toID": "225938",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273201",
+            "fromID": "225943",
+            "toID": "225944",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273202",
+            "fromID": "225944",
+            "toID": "225942",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273203",
+            "fromID": "225932",
+            "toID": "225945",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273204",
+            "fromID": "225945",
+            "toID": "225895",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273205",
+            "fromID": "225897",
+            "toID": "225946",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273206",
+            "fromID": "225946",
+            "toID": "225930",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273207",
+            "fromID": "225946",
+            "toID": "225947",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273208",
+            "fromID": "225947",
+            "toID": "225945",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": [
+        {
+            "nodeID": "225897",
+            "personID": "2936",
+            "timestamp": "2016-11-06 17:44:03",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "225901",
+            "personID": "2937",
+            "timestamp": "2016-11-06 17:44:03",
+            "start": null,
+            "end": null,
+            "source": null
+        }
+    ]
+}

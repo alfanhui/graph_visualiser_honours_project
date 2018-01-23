@@ -1,0 +1,235 @@
+{
+    "nodes": [
+        {
+            "nodeID": "231575",
+            "text": "starkshift : The Russian's strategic bomber is as old as ours",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:19"
+        },
+        {
+            "nodeID": "231577",
+            "text": "The Russian's strategic bomber is as old as ours",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:20"
+        },
+        {
+            "nodeID": "231609",
+            "text": "Crackzilla1 : Avionics need to be updated",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:23"
+        },
+        {
+            "nodeID": "231611",
+            "text": "Avionics need to be updated",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:23"
+        },
+        {
+            "nodeID": "231631",
+            "text": "starkshift : the aircraft will be mission-ready for at least another 24 years -- long enough that its replacement will be ready",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:25"
+        },
+        {
+            "nodeID": "231633",
+            "text": "the aircraft will be mission-ready for at least another 24 years -- long enough that its replacement will be ready",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:25"
+        },
+        {
+            "nodeID": "241758",
+            "text": "TRUMP : they 're old enough that your father , your grandfather could be flying them",
+            "type": "L",
+            "timestamp": "2016-11-11 13:10:22"
+        },
+        {
+            "nodeID": "241760",
+            "text": "B-52s are old enough that one's father or grandfather could be flying them",
+            "type": "I",
+            "timestamp": "2016-11-11 13:10:23"
+        },
+        {
+            "nodeID": "262980",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2017-03-07 14:36:05",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "262981",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-07 14:36:06",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262982",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2017-03-07 14:36:07",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "262983",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2017-03-07 14:36:07",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "262984",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-07 14:36:08",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262985",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2017-03-07 14:36:09",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "262986",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-07 14:36:09",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "262987",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-07 14:36:10",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262988",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-07 14:36:11",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "317488",
+            "fromID": "231577",
+            "toID": "262980",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317489",
+            "fromID": "262980",
+            "toID": "241760",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317490",
+            "fromID": "241758",
+            "toID": "262981",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317491",
+            "fromID": "262981",
+            "toID": "231575",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317492",
+            "fromID": "262981",
+            "toID": "262982",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317493",
+            "fromID": "262982",
+            "toID": "262980",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317494",
+            "fromID": "231633",
+            "toID": "262983",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317495",
+            "fromID": "262983",
+            "toID": "241760",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317496",
+            "fromID": "241758",
+            "toID": "262984",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317497",
+            "fromID": "262984",
+            "toID": "231631",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317498",
+            "fromID": "262984",
+            "toID": "262985",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317499",
+            "fromID": "262985",
+            "toID": "262983",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317500",
+            "fromID": "231611",
+            "toID": "262986",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317501",
+            "fromID": "262986",
+            "toID": "241760",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317502",
+            "fromID": "241758",
+            "toID": "262987",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317503",
+            "fromID": "262987",
+            "toID": "231609",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317504",
+            "fromID": "262987",
+            "toID": "262988",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317505",
+            "fromID": "262988",
+            "toID": "262986",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

@@ -1,0 +1,2021 @@
+{
+    "nodes": [
+        {
+            "nodeID": "232126",
+            "text": "livingunique : We have interests in those countries that we're protecting, moron",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:00"
+        },
+        {
+            "nodeID": "232127",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:00",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232128",
+            "text": "We have interests in those countries that we're protecting, moron",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:01"
+        },
+        {
+            "nodeID": "232129",
+            "text": "Rory: livingunique : We have interests in those countries that we're protecting, moron",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:01"
+        },
+        {
+            "nodeID": "232130",
+            "text": "Rory: crash_testdummy : their signed an agreement to pay 2% of their GDP into NATO",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:01"
+        },
+        {
+            "nodeID": "232131",
+            "text": "crash_testdummy : their signed an agreement to pay 2% of their GDP into NATO. Only 5 NATO members out of 28 pay that much",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:01"
+        },
+        {
+            "nodeID": "232132",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:01",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232133",
+            "text": "their signed an agreement to pay 2% of their GDP into NATO. Only 5 NATO members out of 28 pay that much",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:01"
+        },
+        {
+            "nodeID": "232134",
+            "text": "Rory: crash_testdummy : their signed an agreement to pay 2% of their GDP into NATO. Only 5 NATO members out of 28 pay that much",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:01"
+        },
+        {
+            "nodeID": "232135",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:01",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232136",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 18:20:01",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "232137",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:01",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "232138",
+            "text": "crash_testdummy : Are you arguing that America has more self-interest in defending those countries than the people actually living there",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:01"
+        },
+        {
+            "nodeID": "232139",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:02",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "232140",
+            "text": "you are arguing that America has more self-interest in defending those countries than the people actually living there",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:02"
+        },
+        {
+            "nodeID": "232141",
+            "text": "Rory: crash_testdummy : Are you arguing that America has more self-interest in defending those countries than the people actually living there",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:02"
+        },
+        {
+            "nodeID": "232142",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:02",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232143",
+            "text": "livingunique : No, I'm arguing that we have interests there and the ability to protect them, including Americans who live and do business there",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:02"
+        },
+        {
+            "nodeID": "232144",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:02",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232145",
+            "text": "No, I'm arguing that we have interests there and the ability to protect them, including Americans who live and do business there",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:02"
+        },
+        {
+            "nodeID": "232146",
+            "text": "Rory: livingunique : No, I'm arguing that we have interests there and the ability to protect them, including Americans who live and do business there",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:02"
+        },
+        {
+            "nodeID": "232147",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:02",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232148",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 18:20:02",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "232149",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:03",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "232150",
+            "text": "livingunique : Why wouldn't we do what's required to keep them safe and successful",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:03"
+        },
+        {
+            "nodeID": "232151",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:03",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "232152",
+            "text": "we would do what's required to keep them safe and successful",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:03"
+        },
+        {
+            "nodeID": "232153",
+            "text": "Rory: livingunique : Why wouldn't we do what's required to keep them safe and successful",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:03"
+        },
+        {
+            "nodeID": "232154",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:03",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232155",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:20:03",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "232156",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:03",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "232157",
+            "text": "crash_testdummy : Why shouldn't those countries pay us the amount agreed upon",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:03"
+        },
+        {
+            "nodeID": "232158",
+            "text": "Assertive Challenging",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:03",
+            "scheme": "AssertiveChallenging",
+            "schemeID": "87"
+        },
+        {
+            "nodeID": "232159",
+            "text": "those countries should pay us the amount agreed upon",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:04"
+        },
+        {
+            "nodeID": "232160",
+            "text": "Rory: crash_testdummy : Why shouldn't those countries pay us the amount agreed upon",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:04"
+        },
+        {
+            "nodeID": "232161",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:04",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232162",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 18:20:04",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "232163",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:04",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "232164",
+            "text": "crash_testdummy : Why should we spend literally billions of dollars to defend them when they've agreed to pay or at least help pay for their own defense",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:04"
+        },
+        {
+            "nodeID": "232165",
+            "text": "Assertive Challenging",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:04",
+            "scheme": "AssertiveChallenging",
+            "schemeID": "87"
+        },
+        {
+            "nodeID": "232166",
+            "text": "we shouldn't spend literally billions of dollars to defend them when they've agreed to pay or at least help pay for their own defense",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:04"
+        },
+        {
+            "nodeID": "232167",
+            "text": "Rory: crash_testdummy : Why should we spend literally billions of dollars to defend them when they've agreed to pay or at least help pay for their own defense",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:04"
+        },
+        {
+            "nodeID": "232168",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:04",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232169",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 18:20:05",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "232170",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:05",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "232171",
+            "text": "crash_testdummy : Why do you believe that countries should be able to renege on treaties with the USA",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:05"
+        },
+        {
+            "nodeID": "232172",
+            "text": "Assertive Challenging",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:05",
+            "scheme": "AssertiveChallenging",
+            "schemeID": "87"
+        },
+        {
+            "nodeID": "232173",
+            "text": "you believe that countries should be able to renege on treaties with the USA",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:05"
+        },
+        {
+            "nodeID": "232174",
+            "text": "Rory: crash_testdummy : Why do you believe that countries should be able to renege on treaties with the USA",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:05"
+        },
+        {
+            "nodeID": "232175",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:05",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232176",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 18:20:05",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "232177",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:05",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "232178",
+            "text": "livingunique : You're going to have to give me some specifics of what you mean before I can answer",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:05"
+        },
+        {
+            "nodeID": "232179",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:05",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232180",
+            "text": "You're going to have to give me some specifics of what you mean before I can answer",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:06"
+        },
+        {
+            "nodeID": "232181",
+            "text": "Rory: livingunique : You're going to have to give me some specifics of what you mean before I can answer",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:06"
+        },
+        {
+            "nodeID": "232182",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:06",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232183",
+            "text": "livingunique : There's a lot of variables in your questions",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:06"
+        },
+        {
+            "nodeID": "232184",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:06",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232185",
+            "text": "There's a lot of variables in your questions",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:06"
+        },
+        {
+            "nodeID": "232186",
+            "text": "Rory: livingunique : There's a lot of variables in your questions",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:06"
+        },
+        {
+            "nodeID": "232187",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:06",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232188",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:20:06",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "232189",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:07",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "232190",
+            "text": "crash_testdummy : Do you or do you not believe that countries should uphold treaties and agreements that they have with the United States",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:07"
+        },
+        {
+            "nodeID": "232191",
+            "text": "Pure Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:07",
+            "scheme": "PureQuestioning",
+            "schemeID": "91"
+        },
+        {
+            "nodeID": "232192",
+            "text": "Do you or do you not believe that countries should uphold treaties and agreements that they have with the United States",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:07"
+        },
+        {
+            "nodeID": "232193",
+            "text": "Rory: crash_testdummy : Do you or do you not believe that countries should uphold treaties and agreements that they have with the United States",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:07"
+        },
+        {
+            "nodeID": "232194",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:07",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232195",
+            "text": "crash_testdummy :  from my position you don't believe that",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:07"
+        },
+        {
+            "nodeID": "232196",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:07",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232197",
+            "text": "from my position you don't believe that",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:07"
+        },
+        {
+            "nodeID": "232198",
+            "text": "Rory: crash_testdummy :  from my position you don't believe that",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:07"
+        },
+        {
+            "nodeID": "232199",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:07",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232200",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-08 18:20:08",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "232201",
+            "text": "Default Illocuting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:08",
+            "scheme": "Default Illocuting",
+            "schemeID": "168"
+        },
+        {
+            "nodeID": "232202",
+            "text": "crash_testdummy : you believe that the United States should still honor treaties that have been broken by the other party",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:08"
+        },
+        {
+            "nodeID": "232203",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:08",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232204",
+            "text": "you believe that the United States should still honor treaties that have been broken by the other party",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:08"
+        },
+        {
+            "nodeID": "232205",
+            "text": "Rory: crash_testdummy : you believe that the United States should still honor treaties that have been broken by the other party",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:08"
+        },
+        {
+            "nodeID": "232206",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:08",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232207",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:20:08",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "232208",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:08",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "232209",
+            "text": "livingunique : Of course I do",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:08"
+        },
+        {
+            "nodeID": "232210",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:09",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232211",
+            "text": "Of course I do",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:09"
+        },
+        {
+            "nodeID": "232212",
+            "text": "Rory: livingunique : Of course I do",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:09"
+        },
+        {
+            "nodeID": "232213",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:09",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232214",
+            "text": "livingunique : I also live in the real world where things happen sometimes that prevent them from being able to",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:09"
+        },
+        {
+            "nodeID": "232215",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:09",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232216",
+            "text": "I also live in the real world where things happen sometimes that prevent them from being able to",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:09"
+        },
+        {
+            "nodeID": "232217",
+            "text": "Rory: livingunique : I also live in the real world where things happen sometimes that prevent them from being able to",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:09"
+        },
+        {
+            "nodeID": "232218",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:09",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232219",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:20:10",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "232220",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:10",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "232221",
+            "text": "livingunique : At that point, you have to weigh pros and cons",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:10"
+        },
+        {
+            "nodeID": "232222",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:10",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232223",
+            "text": "At that point, you have to weigh pros and cons",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:10"
+        },
+        {
+            "nodeID": "232224",
+            "text": "Rory: livingunique : At that point, you have to weigh pros and cons",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:10"
+        },
+        {
+            "nodeID": "232225",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:10",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232226",
+            "text": "livingunique : if you have a specific instance you're talking about, tell me what it is and then I'll tell you whether or not I think it was the right or wrong decision",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:10"
+        },
+        {
+            "nodeID": "232227",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:10",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232228",
+            "text": "if you have a specific instance you're talking about, tell me what it is and then I'll tell you whether or not I think it was the right or wrong decision",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:10"
+        },
+        {
+            "nodeID": "232229",
+            "text": "Rory: livingunique : if you have a specific instance you're talking about, tell me what it is and then I'll tell you whether or not I think it was the right or wrong decision",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:11"
+        },
+        {
+            "nodeID": "232230",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:11",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232231",
+            "text": "crash_testdummy : How about NATO nations not paying the 2% of their GDP as they agreed upon for NATO membership",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:11"
+        },
+        {
+            "nodeID": "232232",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:11",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "232233",
+            "text": "NATO nations not paying the 2% of their GDP as they agreed upon for NATO membership",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:11"
+        },
+        {
+            "nodeID": "232234",
+            "text": "Rory: crash_testdummy : How about NATO nations not paying the 2% of their GDP as they agreed upon for NATO membership",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:11"
+        },
+        {
+            "nodeID": "232235",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:11",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232236",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-08 18:20:11",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "232237",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:11",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "232238",
+            "text": "crash_testdummy :  Why do you believe the USA should be part of a one sided relationship",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:11"
+        },
+        {
+            "nodeID": "232239",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:11",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "232240",
+            "text": "you believe the USA should be part of a one sided relationship",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:12"
+        },
+        {
+            "nodeID": "232241",
+            "text": "Rory: crash_testdummy :  Why do you believe the USA should be part of a one sided relationship",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:12"
+        },
+        {
+            "nodeID": "232242",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:12",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232243",
+            "text": "livingunique : Do the benefits we receive from being part of NATO and from having NATO as a stabilizing force in the world outweigh the 2%",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:12"
+        },
+        {
+            "nodeID": "232244",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:12",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "232245",
+            "text": "the benefits we receive from being part of NATO and from having NATO as a stabilizing force in the world outweigh the 2%",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:12"
+        },
+        {
+            "nodeID": "232246",
+            "text": "Rory: livingunique : Do the benefits we receive from being part of NATO and from having NATO as a stabilizing force in the world outweigh the 2%",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:12"
+        },
+        {
+            "nodeID": "232247",
+            "text": "livingunique : I believe they do",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:12"
+        },
+        {
+            "nodeID": "232248",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:12",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232249",
+            "text": "I believe they do",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:12"
+        },
+        {
+            "nodeID": "232250",
+            "text": "Rory: livingunique : I believe they do",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:13"
+        },
+        {
+            "nodeID": "232251",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:13",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232252",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:13",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232253",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:20:13",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "232254",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:13",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "232255",
+            "text": "livingunique : It's obvious that we disagree on this and we're not going to convince each other",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:13"
+        },
+        {
+            "nodeID": "232256",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:13",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232257",
+            "text": "It's obvious that we disagree on this and we're not going to convince each other",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:13"
+        },
+        {
+            "nodeID": "232258",
+            "text": "Rory: livingunique : It's obvious that we disagree on this and we're not going to convince each other",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:13"
+        },
+        {
+            "nodeID": "232259",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:13",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232260",
+            "text": "crash_testdummy : you believe that countries don't have to argue with us in good faith",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:14"
+        },
+        {
+            "nodeID": "232261",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:14",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "232262",
+            "text": "you believe that countries don't have to argue with us in good faith",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:14"
+        },
+        {
+            "nodeID": "232263",
+            "text": "Rory: crash_testdummy : you believe that countries don't have to argue with us in good faith",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:14"
+        },
+        {
+            "nodeID": "232264",
+            "text": "crash_testdummy : hat they can break treaties if we get some undefinable, measurable benefit",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:14"
+        },
+        {
+            "nodeID": "232265",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:14",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "232266",
+            "text": "hat they can break treaties if we get some undefinable, measurable benefit",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:14"
+        },
+        {
+            "nodeID": "232267",
+            "text": "Rory: crash_testdummy : hat they can break treaties if we get some undefinable, measurable benefit",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:14"
+        },
+        {
+            "nodeID": "232268",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:14",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232269",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:14",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232270",
+            "text": "crash_testdummy : It's an incredibly simple question to answer and I'll repeat it once more",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:14"
+        },
+        {
+            "nodeID": "232271",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:15",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232272",
+            "text": "It's an incredibly simple question to answer and I'll repeat it once more",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:15"
+        },
+        {
+            "nodeID": "232273",
+            "text": "Rory: crash_testdummy : It's an incredibly simple question to answer and I'll repeat it once more",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:15"
+        },
+        {
+            "nodeID": "232274",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:15",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232275",
+            "text": "crash_testdummy : Do you believe that countries should follow through with the agreements and treaties they've signed with the US",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:15"
+        },
+        {
+            "nodeID": "232276",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:15",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "232277",
+            "text": "you don't believe that countries should follow through with the agreements and treaties they've signed with the US",
+            "type": "I",
+            "timestamp": "2016-11-08 18:20:15"
+        },
+        {
+            "nodeID": "232278",
+            "text": "Rory: crash_testdummy : Do you believe that countries should follow through with the agreements and treaties they've signed with the US",
+            "type": "L",
+            "timestamp": "2016-11-08 18:20:15"
+        },
+        {
+            "nodeID": "232279",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:20:15",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232280",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-08 18:20:15",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "232281",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:20:16",
+            "scheme": "Restating",
+            "schemeID": "101"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "280037",
+            "fromID": "232127",
+            "toID": "232128",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280038",
+            "fromID": "232126",
+            "toID": "232127",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280039",
+            "fromID": "232132",
+            "toID": "232133",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280040",
+            "fromID": "232131",
+            "toID": "232132",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280041",
+            "fromID": "232126",
+            "toID": "232135",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280042",
+            "fromID": "232135",
+            "toID": "232131",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280043",
+            "fromID": "232133",
+            "toID": "232136",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280044",
+            "fromID": "232136",
+            "toID": "232128",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280045",
+            "fromID": "232135",
+            "toID": "232137",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280046",
+            "fromID": "232137",
+            "toID": "232136",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280047",
+            "fromID": "232139",
+            "toID": "232140",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280048",
+            "fromID": "232138",
+            "toID": "232139",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280049",
+            "fromID": "232131",
+            "toID": "232142",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280050",
+            "fromID": "232142",
+            "toID": "232138",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280051",
+            "fromID": "232144",
+            "toID": "232145",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280052",
+            "fromID": "232143",
+            "toID": "232144",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280053",
+            "fromID": "232138",
+            "toID": "232147",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280054",
+            "fromID": "232147",
+            "toID": "232143",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280055",
+            "fromID": "232145",
+            "toID": "232148",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280056",
+            "fromID": "232148",
+            "toID": "232140",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280057",
+            "fromID": "232147",
+            "toID": "232149",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280058",
+            "fromID": "232149",
+            "toID": "232148",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280059",
+            "fromID": "232151",
+            "toID": "232152",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280060",
+            "fromID": "232150",
+            "toID": "232151",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280061",
+            "fromID": "232143",
+            "toID": "232154",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280062",
+            "fromID": "232154",
+            "toID": "232150",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280063",
+            "fromID": "232152",
+            "toID": "232155",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280064",
+            "fromID": "232155",
+            "toID": "232145",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280065",
+            "fromID": "232154",
+            "toID": "232156",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280066",
+            "fromID": "232156",
+            "toID": "232155",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280067",
+            "fromID": "232158",
+            "toID": "232159",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280068",
+            "fromID": "232157",
+            "toID": "232158",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280069",
+            "fromID": "232150",
+            "toID": "232161",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280070",
+            "fromID": "232161",
+            "toID": "232157",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280071",
+            "fromID": "232159",
+            "toID": "232162",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280072",
+            "fromID": "232162",
+            "toID": "232152",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280073",
+            "fromID": "232161",
+            "toID": "232163",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280074",
+            "fromID": "232163",
+            "toID": "232162",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280075",
+            "fromID": "232165",
+            "toID": "232166",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280076",
+            "fromID": "232164",
+            "toID": "232165",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280077",
+            "fromID": "232150",
+            "toID": "232168",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280078",
+            "fromID": "232168",
+            "toID": "232164",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280079",
+            "fromID": "232166",
+            "toID": "232169",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280080",
+            "fromID": "232169",
+            "toID": "232152",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280081",
+            "fromID": "232168",
+            "toID": "232170",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280082",
+            "fromID": "232170",
+            "toID": "232169",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280083",
+            "fromID": "232172",
+            "toID": "232173",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280084",
+            "fromID": "232171",
+            "toID": "232172",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280085",
+            "fromID": "232150",
+            "toID": "232175",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280086",
+            "fromID": "232175",
+            "toID": "232171",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280087",
+            "fromID": "232173",
+            "toID": "232176",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280088",
+            "fromID": "232176",
+            "toID": "232152",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280089",
+            "fromID": "232175",
+            "toID": "232177",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280090",
+            "fromID": "232177",
+            "toID": "232176",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280091",
+            "fromID": "232179",
+            "toID": "232180",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280092",
+            "fromID": "232178",
+            "toID": "232179",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280093",
+            "fromID": "232164",
+            "toID": "232182",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280094",
+            "fromID": "232182",
+            "toID": "232178",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280095",
+            "fromID": "232184",
+            "toID": "232185",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280096",
+            "fromID": "232183",
+            "toID": "232184",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280097",
+            "fromID": "232178",
+            "toID": "232187",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280098",
+            "fromID": "232187",
+            "toID": "232183",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280099",
+            "fromID": "232185",
+            "toID": "232188",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280100",
+            "fromID": "232188",
+            "toID": "232180",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280101",
+            "fromID": "232187",
+            "toID": "232189",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280102",
+            "fromID": "232189",
+            "toID": "232188",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280103",
+            "fromID": "232191",
+            "toID": "232192",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280104",
+            "fromID": "232190",
+            "toID": "232191",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280105",
+            "fromID": "232183",
+            "toID": "232194",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280106",
+            "fromID": "232194",
+            "toID": "232190",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280107",
+            "fromID": "232196",
+            "toID": "232197",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280108",
+            "fromID": "232195",
+            "toID": "232196",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280109",
+            "fromID": "232190",
+            "toID": "232199",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280110",
+            "fromID": "232199",
+            "toID": "232195",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280111",
+            "fromID": "232197",
+            "toID": "232200",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280112",
+            "fromID": "232200",
+            "toID": "232192",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280113",
+            "fromID": "232199",
+            "toID": "232201",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280114",
+            "fromID": "232201",
+            "toID": "232200",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280115",
+            "fromID": "232203",
+            "toID": "232204",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280116",
+            "fromID": "232202",
+            "toID": "232203",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280117",
+            "fromID": "232195",
+            "toID": "232206",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280118",
+            "fromID": "232206",
+            "toID": "232202",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280119",
+            "fromID": "232204",
+            "toID": "232207",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280120",
+            "fromID": "232207",
+            "toID": "232197",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280121",
+            "fromID": "232206",
+            "toID": "232208",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280122",
+            "fromID": "232208",
+            "toID": "232207",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280123",
+            "fromID": "232210",
+            "toID": "232211",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280124",
+            "fromID": "232209",
+            "toID": "232210",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280125",
+            "fromID": "232202",
+            "toID": "232213",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280126",
+            "fromID": "232213",
+            "toID": "232209",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280127",
+            "fromID": "232215",
+            "toID": "232216",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280128",
+            "fromID": "232214",
+            "toID": "232215",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280129",
+            "fromID": "232209",
+            "toID": "232218",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280130",
+            "fromID": "232218",
+            "toID": "232214",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280131",
+            "fromID": "232216",
+            "toID": "232219",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280132",
+            "fromID": "232219",
+            "toID": "232211",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280133",
+            "fromID": "232218",
+            "toID": "232220",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280134",
+            "fromID": "232220",
+            "toID": "232219",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280135",
+            "fromID": "232222",
+            "toID": "232223",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280136",
+            "fromID": "232221",
+            "toID": "232222",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280137",
+            "fromID": "232214",
+            "toID": "232225",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280138",
+            "fromID": "232225",
+            "toID": "232221",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280139",
+            "fromID": "232227",
+            "toID": "232228",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280140",
+            "fromID": "232226",
+            "toID": "232227",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280141",
+            "fromID": "232202",
+            "toID": "232230",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280142",
+            "fromID": "232230",
+            "toID": "232226",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280143",
+            "fromID": "232232",
+            "toID": "232233",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280144",
+            "fromID": "232231",
+            "toID": "232232",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280145",
+            "fromID": "232190",
+            "toID": "232235",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280146",
+            "fromID": "232235",
+            "toID": "232231",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280147",
+            "fromID": "232233",
+            "toID": "232236",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280148",
+            "fromID": "232236",
+            "toID": "232192",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280149",
+            "fromID": "232235",
+            "toID": "232237",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280150",
+            "fromID": "232237",
+            "toID": "232236",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280151",
+            "fromID": "232239",
+            "toID": "232240",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280152",
+            "fromID": "232238",
+            "toID": "232239",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280153",
+            "fromID": "232231",
+            "toID": "232242",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280154",
+            "fromID": "232242",
+            "toID": "232238",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280155",
+            "fromID": "232244",
+            "toID": "232245",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280156",
+            "fromID": "232243",
+            "toID": "232244",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280157",
+            "fromID": "232248",
+            "toID": "232249",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280158",
+            "fromID": "232247",
+            "toID": "232248",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280159",
+            "fromID": "232243",
+            "toID": "232251",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280160",
+            "fromID": "232251",
+            "toID": "232247",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280161",
+            "fromID": "232238",
+            "toID": "232252",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280162",
+            "fromID": "232252",
+            "toID": "232243",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280163",
+            "fromID": "232245",
+            "toID": "232253",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280164",
+            "fromID": "232253",
+            "toID": "232240",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280165",
+            "fromID": "232252",
+            "toID": "232254",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280166",
+            "fromID": "232254",
+            "toID": "232253",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280167",
+            "fromID": "232256",
+            "toID": "232257",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280168",
+            "fromID": "232255",
+            "toID": "232256",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280169",
+            "fromID": "232247",
+            "toID": "232259",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280170",
+            "fromID": "232259",
+            "toID": "232255",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280171",
+            "fromID": "232261",
+            "toID": "232262",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280172",
+            "fromID": "232260",
+            "toID": "232261",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280173",
+            "fromID": "232265",
+            "toID": "232266",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280174",
+            "fromID": "232264",
+            "toID": "232265",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280175",
+            "fromID": "232260",
+            "toID": "232268",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280176",
+            "fromID": "232268",
+            "toID": "232264",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280177",
+            "fromID": "232255",
+            "toID": "232269",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280178",
+            "fromID": "232269",
+            "toID": "232260",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280179",
+            "fromID": "232271",
+            "toID": "232272",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280180",
+            "fromID": "232270",
+            "toID": "232271",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280181",
+            "fromID": "232264",
+            "toID": "232274",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280182",
+            "fromID": "232274",
+            "toID": "232270",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280183",
+            "fromID": "232276",
+            "toID": "232277",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280184",
+            "fromID": "232275",
+            "toID": "232276",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280185",
+            "fromID": "232238",
+            "toID": "232279",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280186",
+            "fromID": "232279",
+            "toID": "232275",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280187",
+            "fromID": "232277",
+            "toID": "232280",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280188",
+            "fromID": "232280",
+            "toID": "232240",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280189",
+            "fromID": "232279",
+            "toID": "232281",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "280190",
+            "fromID": "232281",
+            "toID": "232280",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

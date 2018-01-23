@@ -1,0 +1,1201 @@
+{
+    "nodes": [
+        {
+            "nodeID": "226749",
+            "text": "PsychedelicEpiphany : What am I watching",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:43"
+        },
+        {
+            "nodeID": "226750",
+            "text": "Rhetorical Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:44",
+            "scheme": "RhetoricalQuestioning",
+            "schemeID": "85"
+        },
+        {
+            "nodeID": "226751",
+            "text": "I am watching xxx",
+            "type": "I",
+            "timestamp": "2016-11-07 17:13:44"
+        },
+        {
+            "nodeID": "226752",
+            "text": "Barbara: PsychedelicEpiphany : What am I watching",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:44"
+        },
+        {
+            "nodeID": "226753",
+            "text": "PsychedelicEpiphany : Who's mediating this",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:44"
+        },
+        {
+            "nodeID": "226754",
+            "text": "Rhetorical Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:44",
+            "scheme": "RhetoricalQuestioning",
+            "schemeID": "85"
+        },
+        {
+            "nodeID": "226755",
+            "text": "xxx is mediating this",
+            "type": "I",
+            "timestamp": "2016-11-07 17:13:44"
+        },
+        {
+            "nodeID": "226756",
+            "text": "Barbara: PsychedelicEpiphany : Who's mediating this",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:44"
+        },
+        {
+            "nodeID": "226757",
+            "text": "Gomazing :  Let them dance",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:44"
+        },
+        {
+            "nodeID": "226758",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:44",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226759",
+            "text": "let them dance",
+            "type": "I",
+            "timestamp": "2016-11-07 17:13:44"
+        },
+        {
+            "nodeID": "226760",
+            "text": "Barbara: Gomazing :  Let them dance",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:45"
+        },
+        {
+            "nodeID": "226761",
+            "text": "Gomazing : Pepe",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:45"
+        },
+        {
+            "nodeID": "226762",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:45",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226763",
+            "text": "Pepe",
+            "type": "I",
+            "timestamp": "2016-11-07 17:13:45"
+        },
+        {
+            "nodeID": "226764",
+            "text": "Barbara: Gomazing : Pepe",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:45"
+        },
+        {
+            "nodeID": "226765",
+            "text": "mrtomjones : He spoke once and was ignored and hasnt spoken since",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:45"
+        },
+        {
+            "nodeID": "226766",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:45",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226767",
+            "text": "HOLT spoke once and was ignored and hasn't spoken since",
+            "type": "I",
+            "timestamp": "2016-11-07 17:13:45"
+        },
+        {
+            "nodeID": "226768",
+            "text": "Barbara: mrtomjones : He spoke once and was ignored and hasnt spoken since",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:45"
+        },
+        {
+            "nodeID": "226769",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-07 17:13:45",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "226770",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:13:45",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226771",
+            "text": "Default Illocuting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:46",
+            "scheme": "Default Illocuting",
+            "schemeID": "168"
+        },
+        {
+            "nodeID": "226772",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:13:46",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226773",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:13:46",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226774",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:13:46",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226775",
+            "text": "mrtomjones : Oh there he was ignored again",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:46"
+        },
+        {
+            "nodeID": "226776",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:46",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226777",
+            "text": "there HOLT was ignored again",
+            "type": "I",
+            "timestamp": "2016-11-07 17:13:46"
+        },
+        {
+            "nodeID": "226778",
+            "text": "Barbara: mrtomjones : Oh there he was ignored again",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:46"
+        },
+        {
+            "nodeID": "226779",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:13:46",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226780",
+            "text": "weaglebeagle : Nobody apparently",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:47"
+        },
+        {
+            "nodeID": "226781",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:47",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226782",
+            "text": "nobody apparently",
+            "type": "I",
+            "timestamp": "2016-11-07 17:13:47"
+        },
+        {
+            "nodeID": "226783",
+            "text": "Barbara: weaglebeagle : Nobody apparently",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:47"
+        },
+        {
+            "nodeID": "226784",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-07 17:13:47",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "226785",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:13:47",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226786",
+            "text": "Default Illocuting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:47",
+            "scheme": "Default Illocuting",
+            "schemeID": "168"
+        },
+        {
+            "nodeID": "226787",
+            "text": "weaglebeagle : As we say in football, they're just letting them play",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:47"
+        },
+        {
+            "nodeID": "226788",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:47",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226789",
+            "text": "as we say in football, they're just letting them play",
+            "type": "I",
+            "timestamp": "2016-11-07 17:13:47"
+        },
+        {
+            "nodeID": "226790",
+            "text": "Barbara: weaglebeagle : As we say in football, they're just letting them play",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:48"
+        },
+        {
+            "nodeID": "226791",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:13:48",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226792",
+            "text": "ocean_spray : No one",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:48"
+        },
+        {
+            "nodeID": "226793",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:48",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226794",
+            "text": "no one",
+            "type": "I",
+            "timestamp": "2016-11-07 17:13:48"
+        },
+        {
+            "nodeID": "226795",
+            "text": "Barbara: ocean_spray : No one",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:48"
+        },
+        {
+            "nodeID": "226796",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-07 17:13:48",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "226797",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:13:48",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226798",
+            "text": "Default Illocuting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:48",
+            "scheme": "Default Illocuting",
+            "schemeID": "168"
+        },
+        {
+            "nodeID": "226799",
+            "text": "ocean_spray : It's a shitshow",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:48"
+        },
+        {
+            "nodeID": "226800",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:49",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226801",
+            "text": "it's a shitshow",
+            "type": "I",
+            "timestamp": "2016-11-07 17:13:49"
+        },
+        {
+            "nodeID": "226802",
+            "text": "Barbara: ocean_spray : It's a shitshow",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:49"
+        },
+        {
+            "nodeID": "226803",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-07 17:13:49",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "226804",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:13:49",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226805",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:49",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "226806",
+            "text": "ocean_spray : Not even at 2nd question",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:49"
+        },
+        {
+            "nodeID": "226807",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:49",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226808",
+            "text": "not even at 2nd question",
+            "type": "I",
+            "timestamp": "2016-11-07 17:13:49"
+        },
+        {
+            "nodeID": "226809",
+            "text": "Barbara: ocean_spray : Not even at 2nd question",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:49"
+        },
+        {
+            "nodeID": "226810",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:13:50",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226811",
+            "text": "Barbara: ocean_spray : the moderator went on a bathroom break",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:50"
+        },
+        {
+            "nodeID": "226812",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-07 17:13:50",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "226813",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:13:50",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226814",
+            "text": "Default Illocuting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:50",
+            "scheme": "Default Illocuting",
+            "schemeID": "168"
+        },
+        {
+            "nodeID": "226815",
+            "text": "This is rating gold",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:50"
+        },
+        {
+            "nodeID": "226816",
+            "text": "inksmudgedhands : the moderator went on a bathroom break",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:50"
+        },
+        {
+            "nodeID": "226817",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:50",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226818",
+            "text": "the moderator went on a bathroom break",
+            "type": "I",
+            "timestamp": "2016-11-07 17:13:50"
+        },
+        {
+            "nodeID": "226819",
+            "text": "Barbara: inksmudgedhands : the moderator went on a bathroom break",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:50"
+        },
+        {
+            "nodeID": "226820",
+            "text": "inksmudgedhands : This is rating gold",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:50"
+        },
+        {
+            "nodeID": "226821",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:51",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226822",
+            "text": "Barbara: inksmudgedhands : That or the networks are going",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:51"
+        },
+        {
+            "nodeID": "226823",
+            "text": "inksmudgedhands : Let them fight",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:51"
+        },
+        {
+            "nodeID": "226824",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:51",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226825",
+            "text": "let them fight",
+            "type": "I",
+            "timestamp": "2016-11-07 17:13:51"
+        },
+        {
+            "nodeID": "226826",
+            "text": "Barbara: inksmudgedhands : Let them fight",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:51"
+        },
+        {
+            "nodeID": "226827",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-07 17:13:51",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "226828",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:13:51",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226829",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:51",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "226830",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-07 17:13:52",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "226831",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:13:52",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226832",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:52",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "226833",
+            "text": "Ol0O01100lO1O1O1 : Without some authority, the moderator really can't do much",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:52"
+        },
+        {
+            "nodeID": "226834",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:52",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226835",
+            "text": "without some authority, the moderator really can't do much",
+            "type": "I",
+            "timestamp": "2016-11-07 17:13:52"
+        },
+        {
+            "nodeID": "226836",
+            "text": "Barbara: Ol0O01100lO1O1O1 : Without some authority, the moderator really can't do much",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:52"
+        },
+        {
+            "nodeID": "226837",
+            "text": "Ol0O01100lO1O1O1 : there's no way they'll get any real authority from the debate commission",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:52"
+        },
+        {
+            "nodeID": "226838",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:13:52",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226839",
+            "text": "there's no way they'll get any real authority from the debate commission",
+            "type": "I",
+            "timestamp": "2016-11-07 17:13:52"
+        },
+        {
+            "nodeID": "226840",
+            "text": "Barbara: Ol0O01100lO1O1O1 : there's no way they'll get any real authority from the debate commission",
+            "type": "L",
+            "timestamp": "2016-11-07 17:13:53"
+        },
+        {
+            "nodeID": "226841",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:13:53",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226842",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:13:53",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "274071",
+            "fromID": "226750",
+            "toID": "226751",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274072",
+            "fromID": "226749",
+            "toID": "226750",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274073",
+            "fromID": "226754",
+            "toID": "226755",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274074",
+            "fromID": "226753",
+            "toID": "226754",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274075",
+            "fromID": "226758",
+            "toID": "226759",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274076",
+            "fromID": "226757",
+            "toID": "226758",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274077",
+            "fromID": "226762",
+            "toID": "226763",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274078",
+            "fromID": "226761",
+            "toID": "226762",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274079",
+            "fromID": "226766",
+            "toID": "226767",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274080",
+            "fromID": "226765",
+            "toID": "226766",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274081",
+            "fromID": "226767",
+            "toID": "226769",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274082",
+            "fromID": "226769",
+            "toID": "226755",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274083",
+            "fromID": "226753",
+            "toID": "226770",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274084",
+            "fromID": "226770",
+            "toID": "226765",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274085",
+            "fromID": "226770",
+            "toID": "226771",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274086",
+            "fromID": "226771",
+            "toID": "226769",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274087",
+            "fromID": "226749",
+            "toID": "226772",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274088",
+            "fromID": "226772",
+            "toID": "226753",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274089",
+            "fromID": "226753",
+            "toID": "226773",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274090",
+            "fromID": "226773",
+            "toID": "226757",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274091",
+            "fromID": "226757",
+            "toID": "226774",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274092",
+            "fromID": "226774",
+            "toID": "226761",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274093",
+            "fromID": "226776",
+            "toID": "226777",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274094",
+            "fromID": "226775",
+            "toID": "226776",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274095",
+            "fromID": "226765",
+            "toID": "226779",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274096",
+            "fromID": "226779",
+            "toID": "226775",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274097",
+            "fromID": "226781",
+            "toID": "226782",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274098",
+            "fromID": "226780",
+            "toID": "226781",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274099",
+            "fromID": "226782",
+            "toID": "226784",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274100",
+            "fromID": "226784",
+            "toID": "226755",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274101",
+            "fromID": "226753",
+            "toID": "226785",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274102",
+            "fromID": "226785",
+            "toID": "226780",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274103",
+            "fromID": "226785",
+            "toID": "226786",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274104",
+            "fromID": "226786",
+            "toID": "226784",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274105",
+            "fromID": "226788",
+            "toID": "226789",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274106",
+            "fromID": "226787",
+            "toID": "226788",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274107",
+            "fromID": "226780",
+            "toID": "226791",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274108",
+            "fromID": "226791",
+            "toID": "226787",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274109",
+            "fromID": "226793",
+            "toID": "226794",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274110",
+            "fromID": "226792",
+            "toID": "226793",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274111",
+            "fromID": "226794",
+            "toID": "226796",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274112",
+            "fromID": "226796",
+            "toID": "226755",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274113",
+            "fromID": "226753",
+            "toID": "226797",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274114",
+            "fromID": "226797",
+            "toID": "226792",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274115",
+            "fromID": "226797",
+            "toID": "226798",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274116",
+            "fromID": "226798",
+            "toID": "226796",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274117",
+            "fromID": "226800",
+            "toID": "226801",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274118",
+            "fromID": "226799",
+            "toID": "226800",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274119",
+            "fromID": "226801",
+            "toID": "226803",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274120",
+            "fromID": "226803",
+            "toID": "226794",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274121",
+            "fromID": "226792",
+            "toID": "226804",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274122",
+            "fromID": "226804",
+            "toID": "226799",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274123",
+            "fromID": "226804",
+            "toID": "226805",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274124",
+            "fromID": "226805",
+            "toID": "226803",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274125",
+            "fromID": "226807",
+            "toID": "226808",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274126",
+            "fromID": "226806",
+            "toID": "226807",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274127",
+            "fromID": "226799",
+            "toID": "226810",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274128",
+            "fromID": "226810",
+            "toID": "226806",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274129",
+            "fromID": "226812",
+            "toID": "226755",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274130",
+            "fromID": "226753",
+            "toID": "226813",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274131",
+            "fromID": "226813",
+            "toID": "226814",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274132",
+            "fromID": "226814",
+            "toID": "226812",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274133",
+            "fromID": "226817",
+            "toID": "226818",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274134",
+            "fromID": "226816",
+            "toID": "226817",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274135",
+            "fromID": "226818",
+            "toID": "226812",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274136",
+            "fromID": "226813",
+            "toID": "226816",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274137",
+            "fromID": "226821",
+            "toID": "226815",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274138",
+            "fromID": "226820",
+            "toID": "226821",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274139",
+            "fromID": "226824",
+            "toID": "226825",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274140",
+            "fromID": "226823",
+            "toID": "226824",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274141",
+            "fromID": "226815",
+            "toID": "226827",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274142",
+            "fromID": "226827",
+            "toID": "226825",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274143",
+            "fromID": "226820",
+            "toID": "226828",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274144",
+            "fromID": "226828",
+            "toID": "226823",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274145",
+            "fromID": "226828",
+            "toID": "226829",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274146",
+            "fromID": "226829",
+            "toID": "226827",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274147",
+            "fromID": "226825",
+            "toID": "226830",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274148",
+            "fromID": "226830",
+            "toID": "226755",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274149",
+            "fromID": "226753",
+            "toID": "226831",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274150",
+            "fromID": "226831",
+            "toID": "226823",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274151",
+            "fromID": "226831",
+            "toID": "226832",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274152",
+            "fromID": "226832",
+            "toID": "226830",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274153",
+            "fromID": "226834",
+            "toID": "226835",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274154",
+            "fromID": "226833",
+            "toID": "226834",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274155",
+            "fromID": "226838",
+            "toID": "226839",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274156",
+            "fromID": "226837",
+            "toID": "226838",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274157",
+            "fromID": "226823",
+            "toID": "226841",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274158",
+            "fromID": "226841",
+            "toID": "226833",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274159",
+            "fromID": "226833",
+            "toID": "226842",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274160",
+            "fromID": "226842",
+            "toID": "226837",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

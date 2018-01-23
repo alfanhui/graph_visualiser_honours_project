@@ -1,0 +1,91 @@
+{
+    "nodes": [
+        {
+            "nodeID": "229096",
+            "text": "cowboysfan88 : She was really disrespectful to Obama before but now she talks like he's some sort of saint you can't badmouth",
+            "type": "L",
+            "timestamp": "2016-11-08 17:51:41"
+        },
+        {
+            "nodeID": "229098",
+            "text": "CLINTON was really disrespectful to Obama before but now CLINTON talks like OBAMA's some sort of saint you can't badmouth",
+            "type": "I",
+            "timestamp": "2016-11-08 17:51:41"
+        },
+        {
+            "nodeID": "236508",
+            "text": "TRUMP : You treated him with terrible disrespect",
+            "type": "L",
+            "timestamp": "2016-11-09 15:59:13"
+        },
+        {
+            "nodeID": "236510",
+            "text": "CLINTON treated OBAMA with terrible disrespect",
+            "type": "I",
+            "timestamp": "2016-11-09 15:59:13"
+        },
+        {
+            "nodeID": "262784",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-06 17:12:17",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "262785",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-06 17:12:18",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262786",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-06 17:12:18",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "317166",
+            "fromID": "229098",
+            "toID": "262784",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317167",
+            "fromID": "262784",
+            "toID": "236510",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317168",
+            "fromID": "236508",
+            "toID": "262785",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317169",
+            "fromID": "262785",
+            "toID": "229096",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317170",
+            "fromID": "262785",
+            "toID": "262786",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317171",
+            "fromID": "262786",
+            "toID": "262784",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

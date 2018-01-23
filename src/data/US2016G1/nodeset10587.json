@@ -1,0 +1,553 @@
+{
+    "nodes": [
+        {
+            "nodeID": "231350",
+            "text": "youcanttakemeserious : 10:1 Hillary gets the last word",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:54"
+        },
+        {
+            "nodeID": "231351",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:54",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231352",
+            "text": "10:1 CLINTON gets the last word",
+            "type": "I",
+            "timestamp": "2016-11-08 18:12:54"
+        },
+        {
+            "nodeID": "231353",
+            "text": "Rory: youcanttakemeserious : 10:1 Hillary gets the last word",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:54"
+        },
+        {
+            "nodeID": "231354",
+            "text": "youcanttakemeserious : Any takers",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:54"
+        },
+        {
+            "nodeID": "231355",
+            "text": "Rhetorical Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:54",
+            "scheme": "RhetoricalQuestioning",
+            "schemeID": "85"
+        },
+        {
+            "nodeID": "231356",
+            "text": "Any takers",
+            "type": "I",
+            "timestamp": "2016-11-08 18:12:54"
+        },
+        {
+            "nodeID": "231357",
+            "text": "Rory: youcanttakemeserious : Any takers",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:54"
+        },
+        {
+            "nodeID": "231358",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:12:54",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231359",
+            "text": "JacobCrim88 : Well someone coherent has to get the last word",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:54"
+        },
+        {
+            "nodeID": "231360",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:55",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231361",
+            "text": "Well someone coherent has to get the last word",
+            "type": "I",
+            "timestamp": "2016-11-08 18:12:55"
+        },
+        {
+            "nodeID": "231362",
+            "text": "Rory: JacobCrim88 : Well someone coherent has to get the last word",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:55"
+        },
+        {
+            "nodeID": "231363",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:12:55",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231364",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:12:55",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231365",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:55",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "231366",
+            "text": "youcanttakemeserious : neither one of them",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:55"
+        },
+        {
+            "nodeID": "231367",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:55",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231368",
+            "text": "neither one of them",
+            "type": "I",
+            "timestamp": "2016-11-08 18:12:55"
+        },
+        {
+            "nodeID": "231369",
+            "text": "Rory: youcanttakemeserious : neither one of them",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:55"
+        },
+        {
+            "nodeID": "231370",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:12:56",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231371",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:12:56",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231372",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:56",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "231373",
+            "text": "FroggerWithMyLife : She doesn't even need it",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:56"
+        },
+        {
+            "nodeID": "231374",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:56",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231375",
+            "text": "CLINTON doesn't even need it",
+            "type": "I",
+            "timestamp": "2016-11-08 18:12:56"
+        },
+        {
+            "nodeID": "231376",
+            "text": "Rory: FroggerWithMyLife : She doesn't even need it",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:56"
+        },
+        {
+            "nodeID": "231377",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:12:56",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231378",
+            "text": "unclejessesmullet : No way",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:56"
+        },
+        {
+            "nodeID": "231379",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:56",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231380",
+            "text": "No way",
+            "type": "I",
+            "timestamp": "2016-11-08 18:12:57"
+        },
+        {
+            "nodeID": "231381",
+            "text": "Rory: unclejessesmullet : No way",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:57"
+        },
+        {
+            "nodeID": "231382",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:12:57",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231383",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 18:12:57",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "231384",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:57",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "231385",
+            "text": "unclejessesmullet : Trump will still be shouting nonsense after they turn off the sound system and the room is clearing",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:57"
+        },
+        {
+            "nodeID": "231386",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:57",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231387",
+            "text": "TRUMP will still be shouting nonsense after they turn off the sound system and the room is clearing",
+            "type": "I",
+            "timestamp": "2016-11-08 18:12:57"
+        },
+        {
+            "nodeID": "231388",
+            "text": "Rory: unclejessesmullet : Trump will still be shouting nonsense after they turn off the sound system and the room is clearing",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:57"
+        },
+        {
+            "nodeID": "231389",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:12:57",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231390",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:12:58",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231391",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:58",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "279247",
+            "fromID": "231351",
+            "toID": "231352",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279248",
+            "fromID": "231350",
+            "toID": "231351",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279249",
+            "fromID": "231355",
+            "toID": "231356",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279250",
+            "fromID": "231354",
+            "toID": "231355",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279251",
+            "fromID": "231350",
+            "toID": "231358",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279252",
+            "fromID": "231358",
+            "toID": "231354",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279253",
+            "fromID": "231360",
+            "toID": "231361",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279254",
+            "fromID": "231359",
+            "toID": "231360",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279255",
+            "fromID": "231350",
+            "toID": "231363",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279256",
+            "fromID": "231363",
+            "toID": "231359",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279257",
+            "fromID": "231361",
+            "toID": "231364",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279258",
+            "fromID": "231364",
+            "toID": "231352",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279259",
+            "fromID": "231363",
+            "toID": "231365",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279260",
+            "fromID": "231365",
+            "toID": "231364",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279261",
+            "fromID": "231367",
+            "toID": "231368",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279262",
+            "fromID": "231366",
+            "toID": "231367",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279263",
+            "fromID": "231359",
+            "toID": "231370",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279264",
+            "fromID": "231370",
+            "toID": "231366",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279265",
+            "fromID": "231361",
+            "toID": "231371",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279266",
+            "fromID": "231371",
+            "toID": "231368",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279267",
+            "fromID": "231370",
+            "toID": "231372",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279268",
+            "fromID": "231372",
+            "toID": "231371",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279269",
+            "fromID": "231374",
+            "toID": "231375",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279270",
+            "fromID": "231373",
+            "toID": "231374",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279271",
+            "fromID": "231350",
+            "toID": "231377",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279272",
+            "fromID": "231377",
+            "toID": "231373",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279273",
+            "fromID": "231379",
+            "toID": "231380",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279274",
+            "fromID": "231378",
+            "toID": "231379",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279275",
+            "fromID": "231350",
+            "toID": "231382",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279276",
+            "fromID": "231382",
+            "toID": "231378",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279277",
+            "fromID": "231380",
+            "toID": "231383",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279278",
+            "fromID": "231383",
+            "toID": "231352",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279279",
+            "fromID": "231382",
+            "toID": "231384",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279280",
+            "fromID": "231384",
+            "toID": "231383",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279281",
+            "fromID": "231386",
+            "toID": "231387",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279282",
+            "fromID": "231385",
+            "toID": "231386",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279283",
+            "fromID": "231378",
+            "toID": "231389",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279284",
+            "fromID": "231389",
+            "toID": "231385",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279285",
+            "fromID": "231387",
+            "toID": "231390",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279286",
+            "fromID": "231390",
+            "toID": "231380",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279287",
+            "fromID": "231389",
+            "toID": "231391",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279288",
+            "fromID": "231391",
+            "toID": "231390",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

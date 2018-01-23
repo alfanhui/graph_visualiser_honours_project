@@ -1,0 +1,535 @@
+{
+    "nodes": [
+        {
+            "nodeID": "231311",
+            "text": "nikktheconqueerer :  any reason why the live thread is only posting Trump\/Anti-Hillary Tweets",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:14"
+        },
+        {
+            "nodeID": "231312",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:14",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "231313",
+            "text": "the live thread is only posting TRUMP\/Anti-CLINTON Tweets",
+            "type": "I",
+            "timestamp": "2016-11-08 18:12:14"
+        },
+        {
+            "nodeID": "231314",
+            "text": "Rory: nikktheconqueerer :  any reason why the live thread is only posting Trump\/Anti-Hillary Tweets",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:14"
+        },
+        {
+            "nodeID": "231315",
+            "text": "wall_fucker : im only getting pro hillary",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:14"
+        },
+        {
+            "nodeID": "231316",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:14",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231317",
+            "text": "im only getting pro CLINTON",
+            "type": "I",
+            "timestamp": "2016-11-08 18:12:14"
+        },
+        {
+            "nodeID": "231318",
+            "text": "Rory: wall_fucker : im only getting pro hillary",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:14"
+        },
+        {
+            "nodeID": "231319",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:12:14",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231320",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 18:12:15",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "231321",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:15",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "231322",
+            "text": "_trump_is_god_ : thats how everyone is feeling",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:15"
+        },
+        {
+            "nodeID": "231323",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:15",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231324",
+            "text": "thats how everyone is feeling",
+            "type": "I",
+            "timestamp": "2016-11-08 18:12:15"
+        },
+        {
+            "nodeID": "231325",
+            "text": "Rory: _trump_is_god_ : thats how everyone is feeling",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:15"
+        },
+        {
+            "nodeID": "231326",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:12:15",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231327",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:12:15",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231328",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:15",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "231329",
+            "text": "barf_the_mog : trump supporters are desperate",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:15"
+        },
+        {
+            "nodeID": "231330",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:16",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231331",
+            "text": "TRUMP supporters are desperate",
+            "type": "I",
+            "timestamp": "2016-11-08 18:12:16"
+        },
+        {
+            "nodeID": "231332",
+            "text": "Rory: barf_the_mog : trump supporters are desperate",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:16"
+        },
+        {
+            "nodeID": "231333",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:12:16",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231334",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:12:16",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231335",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:16",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "231336",
+            "text": "Aavenell : she's pretty clearly winning",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:16"
+        },
+        {
+            "nodeID": "231337",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:16",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231338",
+            "text": "CLINTON's pretty clearly winning",
+            "type": "I",
+            "timestamp": "2016-11-08 18:12:16"
+        },
+        {
+            "nodeID": "231339",
+            "text": "Rory: Aavenell : she's pretty clearly winning",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:16"
+        },
+        {
+            "nodeID": "231340",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:12:17",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231341",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:12:17",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231342",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:17",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "231343",
+            "text": "Airway : Trump supporters BTFO that he completely choked up there",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:17"
+        },
+        {
+            "nodeID": "231344",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:17",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231345",
+            "text": "TRUMP supporters BTFO that TRUMP completely choked up there",
+            "type": "I",
+            "timestamp": "2016-11-08 18:12:17"
+        },
+        {
+            "nodeID": "231346",
+            "text": "Rory: Airway : Trump supporters BTFO that he completely choked up there",
+            "type": "L",
+            "timestamp": "2016-11-08 18:12:17"
+        },
+        {
+            "nodeID": "231347",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:12:17",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231348",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:12:17",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231349",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:12:17",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "279205",
+            "fromID": "231312",
+            "toID": "231313",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279206",
+            "fromID": "231311",
+            "toID": "231312",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279207",
+            "fromID": "231316",
+            "toID": "231317",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279208",
+            "fromID": "231315",
+            "toID": "231316",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279209",
+            "fromID": "231311",
+            "toID": "231319",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279210",
+            "fromID": "231319",
+            "toID": "231315",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279211",
+            "fromID": "231317",
+            "toID": "231320",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279212",
+            "fromID": "231320",
+            "toID": "231313",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279213",
+            "fromID": "231319",
+            "toID": "231321",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279214",
+            "fromID": "231321",
+            "toID": "231320",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279215",
+            "fromID": "231323",
+            "toID": "231324",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279216",
+            "fromID": "231322",
+            "toID": "231323",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279217",
+            "fromID": "231311",
+            "toID": "231326",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279218",
+            "fromID": "231326",
+            "toID": "231322",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279219",
+            "fromID": "231324",
+            "toID": "231327",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279220",
+            "fromID": "231327",
+            "toID": "231313",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279221",
+            "fromID": "231326",
+            "toID": "231328",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279222",
+            "fromID": "231328",
+            "toID": "231327",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279223",
+            "fromID": "231330",
+            "toID": "231331",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279224",
+            "fromID": "231329",
+            "toID": "231330",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279225",
+            "fromID": "231311",
+            "toID": "231333",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279226",
+            "fromID": "231333",
+            "toID": "231329",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279227",
+            "fromID": "231331",
+            "toID": "231334",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279228",
+            "fromID": "231334",
+            "toID": "231313",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279229",
+            "fromID": "231333",
+            "toID": "231335",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279230",
+            "fromID": "231335",
+            "toID": "231334",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279231",
+            "fromID": "231337",
+            "toID": "231338",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279232",
+            "fromID": "231336",
+            "toID": "231337",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279233",
+            "fromID": "231311",
+            "toID": "231340",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279234",
+            "fromID": "231340",
+            "toID": "231336",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279235",
+            "fromID": "231338",
+            "toID": "231341",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279236",
+            "fromID": "231341",
+            "toID": "231313",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279237",
+            "fromID": "231340",
+            "toID": "231342",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279238",
+            "fromID": "231342",
+            "toID": "231341",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279239",
+            "fromID": "231344",
+            "toID": "231345",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279240",
+            "fromID": "231343",
+            "toID": "231344",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279241",
+            "fromID": "231311",
+            "toID": "231347",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279242",
+            "fromID": "231347",
+            "toID": "231343",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279243",
+            "fromID": "231345",
+            "toID": "231348",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279244",
+            "fromID": "231348",
+            "toID": "231313",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279245",
+            "fromID": "231347",
+            "toID": "231349",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279246",
+            "fromID": "231349",
+            "toID": "231348",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

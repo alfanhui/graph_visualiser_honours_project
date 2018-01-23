@@ -1,0 +1,409 @@
+{
+    "nodes": [
+        {
+            "nodeID": "229861",
+            "text": "XoGrain : She just sounds more presidential",
+            "type": "L",
+            "timestamp": "2016-11-08 17:58:53"
+        },
+        {
+            "nodeID": "229862",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:58:53",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "229863",
+            "text": "CLINTON just sounds more presidential",
+            "type": "I",
+            "timestamp": "2016-11-08 17:58:53"
+        },
+        {
+            "nodeID": "229864",
+            "text": "Rory: XoGrain : She just sounds more presidential",
+            "type": "L",
+            "timestamp": "2016-11-08 17:58:53"
+        },
+        {
+            "nodeID": "229865",
+            "text": "Orangeskill : She IS more presidential",
+            "type": "L",
+            "timestamp": "2016-11-08 17:58:53"
+        },
+        {
+            "nodeID": "229866",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:58:54",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "229867",
+            "text": "CLINTON IS more presidential",
+            "type": "I",
+            "timestamp": "2016-11-08 17:58:54"
+        },
+        {
+            "nodeID": "229868",
+            "text": "Rory: Orangeskill : She IS more presidential",
+            "type": "L",
+            "timestamp": "2016-11-08 17:58:54"
+        },
+        {
+            "nodeID": "229869",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:58:54",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "229870",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 17:58:54",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "229871",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:58:54",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "229872",
+            "text": "perl_Help : unfortunately shes crooked",
+            "type": "L",
+            "timestamp": "2016-11-08 17:58:54"
+        },
+        {
+            "nodeID": "229873",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:58:54",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "229874",
+            "text": "unfortunately CLINTONs crooked",
+            "type": "I",
+            "timestamp": "2016-11-08 17:58:54"
+        },
+        {
+            "nodeID": "229875",
+            "text": "Rory: perl_Help : unfortunately shes crooked",
+            "type": "L",
+            "timestamp": "2016-11-08 17:58:54"
+        },
+        {
+            "nodeID": "229876",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:58:54",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "229877",
+            "text": "XoGrain : agreed. but trump is a no go",
+            "type": "L",
+            "timestamp": "2016-11-08 17:58:55"
+        },
+        {
+            "nodeID": "229878",
+            "text": "Rory: XoGrain : agreed. but trump is a no go",
+            "type": "L",
+            "timestamp": "2016-11-08 17:58:55"
+        },
+        {
+            "nodeID": "229879",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:58:55",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "229880",
+            "text": "Agreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:58:55",
+            "scheme": "Agreeing",
+            "schemeID": "77"
+        },
+        {
+            "nodeID": "229881",
+            "text": "docmedic : Clinton wins on facts and feels",
+            "type": "L",
+            "timestamp": "2016-11-08 17:58:55"
+        },
+        {
+            "nodeID": "229882",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:58:55",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "229883",
+            "text": "CLINTON wins on facts and feels",
+            "type": "I",
+            "timestamp": "2016-11-08 17:58:55"
+        },
+        {
+            "nodeID": "229884",
+            "text": "Rory: docmedic : Clinton wins on facts and feels",
+            "type": "L",
+            "timestamp": "2016-11-08 17:58:55"
+        },
+        {
+            "nodeID": "229885",
+            "text": "docmedic : It is over",
+            "type": "L",
+            "timestamp": "2016-11-08 17:58:55"
+        },
+        {
+            "nodeID": "229886",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:58:55",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "229887",
+            "text": "It is over",
+            "type": "I",
+            "timestamp": "2016-11-08 17:58:56"
+        },
+        {
+            "nodeID": "229888",
+            "text": "Rory: docmedic : It is over",
+            "type": "L",
+            "timestamp": "2016-11-08 17:58:56"
+        },
+        {
+            "nodeID": "229889",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:58:56",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "229890",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 17:58:56",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "229891",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:58:56",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "229892",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:58:56",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "277683",
+            "fromID": "229862",
+            "toID": "229863",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277684",
+            "fromID": "229861",
+            "toID": "229862",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277685",
+            "fromID": "229866",
+            "toID": "229867",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277686",
+            "fromID": "229865",
+            "toID": "229866",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277687",
+            "fromID": "229861",
+            "toID": "229869",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277688",
+            "fromID": "229869",
+            "toID": "229865",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277689",
+            "fromID": "229867",
+            "toID": "229870",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277690",
+            "fromID": "229870",
+            "toID": "229863",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277691",
+            "fromID": "229869",
+            "toID": "229871",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277692",
+            "fromID": "229871",
+            "toID": "229870",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277693",
+            "fromID": "229873",
+            "toID": "229874",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277694",
+            "fromID": "229872",
+            "toID": "229873",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277695",
+            "fromID": "229861",
+            "toID": "229876",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277696",
+            "fromID": "229876",
+            "toID": "229872",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277697",
+            "fromID": "229872",
+            "toID": "229879",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277698",
+            "fromID": "229879",
+            "toID": "229877",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277699",
+            "fromID": "229879",
+            "toID": "229880",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277700",
+            "fromID": "229880",
+            "toID": "229874",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277701",
+            "fromID": "229882",
+            "toID": "229883",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277702",
+            "fromID": "229881",
+            "toID": "229882",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277703",
+            "fromID": "229886",
+            "toID": "229887",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277704",
+            "fromID": "229885",
+            "toID": "229886",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277705",
+            "fromID": "229881",
+            "toID": "229889",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277706",
+            "fromID": "229889",
+            "toID": "229885",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277707",
+            "fromID": "229883",
+            "toID": "229890",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277708",
+            "fromID": "229890",
+            "toID": "229887",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277709",
+            "fromID": "229889",
+            "toID": "229891",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277710",
+            "fromID": "229891",
+            "toID": "229890",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277711",
+            "fromID": "229861",
+            "toID": "229892",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277712",
+            "fromID": "229892",
+            "toID": "229881",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

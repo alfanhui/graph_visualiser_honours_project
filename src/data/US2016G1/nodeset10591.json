@@ -1,0 +1,909 @@
+{
+    "nodes": [
+        {
+            "nodeID": "231571",
+            "text": "starkshift : B-52: Introduced in 1952.  Tu-95: Introduced in 1952.",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:19"
+        },
+        {
+            "nodeID": "231572",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:19",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231573",
+            "text": "B-52: Introduced in 1952.  Tu-95: Introduced in 1952.",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:19"
+        },
+        {
+            "nodeID": "231574",
+            "text": "Rory: starkshift : B-52: Introduced in 1952.  Tu-95: Introduced in 1952.",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:19"
+        },
+        {
+            "nodeID": "231575",
+            "text": "starkshift : The Russian's strategic bomber is as old as ours",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:19"
+        },
+        {
+            "nodeID": "231576",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:20",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231577",
+            "text": "The Russian's strategic bomber is as old as ours",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:20"
+        },
+        {
+            "nodeID": "231578",
+            "text": "Rory: starkshift : The Russian's strategic bomber is as old as ours",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:20"
+        },
+        {
+            "nodeID": "231579",
+            "text": "starkshift : I fail to see what relevance this has to anything",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:20"
+        },
+        {
+            "nodeID": "231580",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:20",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231581",
+            "text": "I fail to see what relevance this has to anything",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:20"
+        },
+        {
+            "nodeID": "231582",
+            "text": "Rory: starkshift : I fail to see what relevance this has to anything",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:20"
+        },
+        {
+            "nodeID": "231583",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:15:20",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231584",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:15:20",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231585",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:20",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "231586",
+            "text": "shockinglyshocked : most people don't know that",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:21"
+        },
+        {
+            "nodeID": "231587",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:21",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231588",
+            "text": "most people don't know that",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:21"
+        },
+        {
+            "nodeID": "231589",
+            "text": "Rory: shockinglyshocked : most people don't know that",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:21"
+        },
+        {
+            "nodeID": "231590",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:15:21",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231591",
+            "text": "Meatpuppy : Bomber race",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:21"
+        },
+        {
+            "nodeID": "231592",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:21",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231593",
+            "text": "Bomber race",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:21"
+        },
+        {
+            "nodeID": "231594",
+            "text": "Rory: Meatpuppy : Bomber race",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:21"
+        },
+        {
+            "nodeID": "231595",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:15:21",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231596",
+            "text": "hangoverDOTTED : Thank you for this tidbit.  TIL that the Russian's have a propeller bomber named the TU-95 that came out the same year as the B-52.  NEAT",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:22"
+        },
+        {
+            "nodeID": "231597",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:22",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231598",
+            "text": "Thank you for this tidbit.  TIL that the Russian's have a propeller bomber named the TU-95 that came out the same year as the B-52.  NEAT",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:22"
+        },
+        {
+            "nodeID": "231599",
+            "text": "Rory: hangoverDOTTED : Thank you for this tidbit.  TIL that the Russian's have a propeller bomber named the TU-95 that came out the same year as the B-52.  NEAT",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:22"
+        },
+        {
+            "nodeID": "231600",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:15:22",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231601",
+            "text": "Crackzilla1 : TU-95 was being manufactured until 1994",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:22"
+        },
+        {
+            "nodeID": "231602",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:22",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231603",
+            "text": "TU-95 was being manufactured until 1994",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:22"
+        },
+        {
+            "nodeID": "231604",
+            "text": "Rory: Crackzilla1 : TU-95 was being manufactured until 1994",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:22"
+        },
+        {
+            "nodeID": "231605",
+            "text": "Crackzilla1 : Airframes have a limited lifespan",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:22"
+        },
+        {
+            "nodeID": "231606",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:23",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231607",
+            "text": "Airframes have a limited lifespan",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:23"
+        },
+        {
+            "nodeID": "231608",
+            "text": "Rory: Crackzilla1 : Airframes have a limited lifespan",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:23"
+        },
+        {
+            "nodeID": "231609",
+            "text": "Crackzilla1 : Avionics need to be updated",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:23"
+        },
+        {
+            "nodeID": "231610",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:23",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231611",
+            "text": "Avionics need to be updated",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:23"
+        },
+        {
+            "nodeID": "231612",
+            "text": "Rory: Crackzilla1 : Avionics need to be updated",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:23"
+        },
+        {
+            "nodeID": "231613",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:15:23",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231614",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:15:23",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231615",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:24",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "231616",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:15:24",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231617",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 18:15:24",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "231618",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:24",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "231619",
+            "text": "starkshift : The B-52H airframe has a ~35,000 flight hour service life",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:24"
+        },
+        {
+            "nodeID": "231620",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:24",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231621",
+            "text": "The B-52H airframe has a ~35,000 flight hour service life",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:24"
+        },
+        {
+            "nodeID": "231622",
+            "text": "Rory: starkshift : The B-52H airframe has a ~35,000 flight hour service life",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:24"
+        },
+        {
+            "nodeID": "231623",
+            "text": "starkshift : We keep sufficient aircraft in reserve to support B-52H operations past 2040, by which point the B-21 will be operational",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:24"
+        },
+        {
+            "nodeID": "231624",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:24",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231625",
+            "text": "We keep sufficient aircraft in reserve to support B-52H operations past 2040, by which point the B-21 will be operational",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:25"
+        },
+        {
+            "nodeID": "231626",
+            "text": "Rory: starkshift : We keep sufficient aircraft in reserve to support B-52H operations past 2040, by which point the B-21 will be operational",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:25"
+        },
+        {
+            "nodeID": "231627",
+            "text": "starkshift : B-52H avionics sustainment is ongoing, including $110M in 2000 and $750M in 2009",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:25"
+        },
+        {
+            "nodeID": "231628",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:25",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231629",
+            "text": "B-52H avionics sustainment is ongoing, including $110M in 2000 and $750M in 2009",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:25"
+        },
+        {
+            "nodeID": "231630",
+            "text": "Rory: starkshift : B-52H avionics sustainment is ongoing, including $110M in 2000 and $750M in 2009",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:25"
+        },
+        {
+            "nodeID": "231631",
+            "text": "starkshift : the aircraft will be mission-ready for at least another 24 years -- long enough that its replacement will be ready",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:25"
+        },
+        {
+            "nodeID": "231632",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:25",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231633",
+            "text": "the aircraft will be mission-ready for at least another 24 years -- long enough that its replacement will be ready",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:25"
+        },
+        {
+            "nodeID": "231634",
+            "text": "Rory: starkshift : the aircraft will be mission-ready for at least another 24 years -- long enough that its replacement will be ready",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:25"
+        },
+        {
+            "nodeID": "231635",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:15:26",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231636",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:15:26",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231637",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:26",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "231638",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:15:26",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231639",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 18:15:26",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "231640",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:26",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "279469",
+            "fromID": "231572",
+            "toID": "231573",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279470",
+            "fromID": "231571",
+            "toID": "231572",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279471",
+            "fromID": "231576",
+            "toID": "231577",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279472",
+            "fromID": "231575",
+            "toID": "231576",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279473",
+            "fromID": "231580",
+            "toID": "231581",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279474",
+            "fromID": "231579",
+            "toID": "231580",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279475",
+            "fromID": "231575",
+            "toID": "231583",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279476",
+            "fromID": "231583",
+            "toID": "231579",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279477",
+            "fromID": "231571",
+            "toID": "231583",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279478",
+            "fromID": "231577",
+            "toID": "231584",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279479",
+            "fromID": "231584",
+            "toID": "231581",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279480",
+            "fromID": "231573",
+            "toID": "231584",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279481",
+            "fromID": "231583",
+            "toID": "231585",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279482",
+            "fromID": "231585",
+            "toID": "231584",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279483",
+            "fromID": "231587",
+            "toID": "231588",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279484",
+            "fromID": "231586",
+            "toID": "231587",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279485",
+            "fromID": "231575",
+            "toID": "231590",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279486",
+            "fromID": "231590",
+            "toID": "231586",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279487",
+            "fromID": "231592",
+            "toID": "231593",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279488",
+            "fromID": "231591",
+            "toID": "231592",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279489",
+            "fromID": "231575",
+            "toID": "231595",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279490",
+            "fromID": "231595",
+            "toID": "231591",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279491",
+            "fromID": "231597",
+            "toID": "231598",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279492",
+            "fromID": "231596",
+            "toID": "231597",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279493",
+            "fromID": "231575",
+            "toID": "231600",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279494",
+            "fromID": "231600",
+            "toID": "231596",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279495",
+            "fromID": "231602",
+            "toID": "231603",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279496",
+            "fromID": "231601",
+            "toID": "231602",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279497",
+            "fromID": "231606",
+            "toID": "231607",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279498",
+            "fromID": "231605",
+            "toID": "231606",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279499",
+            "fromID": "231610",
+            "toID": "231611",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279500",
+            "fromID": "231609",
+            "toID": "231610",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279501",
+            "fromID": "231605",
+            "toID": "231613",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279502",
+            "fromID": "231613",
+            "toID": "231609",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279503",
+            "fromID": "231601",
+            "toID": "231613",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279504",
+            "fromID": "231607",
+            "toID": "231614",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279505",
+            "fromID": "231614",
+            "toID": "231611",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279506",
+            "fromID": "231603",
+            "toID": "231614",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279507",
+            "fromID": "231613",
+            "toID": "231615",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279508",
+            "fromID": "231615",
+            "toID": "231614",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279509",
+            "fromID": "231579",
+            "toID": "231616",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279510",
+            "fromID": "231616",
+            "toID": "231609",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279511",
+            "fromID": "231611",
+            "toID": "231617",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279512",
+            "fromID": "231617",
+            "toID": "231581",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279513",
+            "fromID": "231616",
+            "toID": "231618",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279514",
+            "fromID": "231618",
+            "toID": "231617",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279515",
+            "fromID": "231620",
+            "toID": "231621",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279516",
+            "fromID": "231619",
+            "toID": "231620",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279517",
+            "fromID": "231624",
+            "toID": "231625",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279518",
+            "fromID": "231623",
+            "toID": "231624",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279519",
+            "fromID": "231628",
+            "toID": "231629",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279520",
+            "fromID": "231627",
+            "toID": "231628",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279521",
+            "fromID": "231632",
+            "toID": "231633",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279522",
+            "fromID": "231631",
+            "toID": "231632",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279523",
+            "fromID": "231627",
+            "toID": "231635",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279524",
+            "fromID": "231635",
+            "toID": "231631",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279525",
+            "fromID": "231629",
+            "toID": "231636",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279526",
+            "fromID": "231636",
+            "toID": "231633",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279527",
+            "fromID": "231623",
+            "toID": "231635",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279528",
+            "fromID": "231625",
+            "toID": "231636",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279529",
+            "fromID": "231619",
+            "toID": "231635",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279530",
+            "fromID": "231621",
+            "toID": "231636",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279531",
+            "fromID": "231635",
+            "toID": "231637",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279532",
+            "fromID": "231637",
+            "toID": "231636",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279533",
+            "fromID": "231609",
+            "toID": "231638",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279534",
+            "fromID": "231638",
+            "toID": "231631",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279535",
+            "fromID": "231633",
+            "toID": "231639",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279536",
+            "fromID": "231639",
+            "toID": "231611",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279537",
+            "fromID": "231638",
+            "toID": "231640",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279538",
+            "fromID": "231640",
+            "toID": "231639",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

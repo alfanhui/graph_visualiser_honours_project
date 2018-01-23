@@ -1,0 +1,455 @@
+{
+    "nodes": [
+        {
+            "nodeID": "225104",
+            "text": "ryan924 : Ford losing 1000s of job? Bold lie",
+            "type": "L",
+            "timestamp": "2016-11-06 12:35:34"
+        },
+        {
+            "nodeID": "225105",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:35:34",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "225106",
+            "text": "Ford losing 1000s of job is a bold lie",
+            "type": "I",
+            "timestamp": "2016-11-06 12:35:34"
+        },
+        {
+            "nodeID": "225107",
+            "text": "Barbara: ryan924 : Ford losing 1000s of job? Bold lie",
+            "type": "L",
+            "timestamp": "2016-11-06 12:35:34"
+        },
+        {
+            "nodeID": "225108",
+            "text": "yeayeaok : They just sent a bunch of their auto production down to Mexico",
+            "type": "L",
+            "timestamp": "2016-11-06 12:35:34"
+        },
+        {
+            "nodeID": "225109",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:35:34",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225110",
+            "text": "Ford just sent a bunch of their auto production down to Mexico",
+            "type": "I",
+            "timestamp": "2016-11-06 12:35:34"
+        },
+        {
+            "nodeID": "225111",
+            "text": "Barbara: yeayeaok : They just sent a bunch of their auto production down to Mexico",
+            "type": "L",
+            "timestamp": "2016-11-06 12:35:34"
+        },
+        {
+            "nodeID": "225112",
+            "text": "yeayeaok : It's actually true",
+            "type": "L",
+            "timestamp": "2016-11-06 12:35:34"
+        },
+        {
+            "nodeID": "225113",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:35:34",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225114",
+            "text": "It's actually true",
+            "type": "I",
+            "timestamp": "2016-11-06 12:35:35"
+        },
+        {
+            "nodeID": "225115",
+            "text": "Barbara: yeayeaok : It's actually true",
+            "type": "L",
+            "timestamp": "2016-11-06 12:35:35"
+        },
+        {
+            "nodeID": "225116",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-06 12:35:35",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "225117",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 12:35:35",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225118",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:35:35",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "225119",
+            "text": "ryan924 : 1000s of people were fired as a result",
+            "type": "L",
+            "timestamp": "2016-11-06 12:35:35"
+        },
+        {
+            "nodeID": "225120",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:35:35",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "225121",
+            "text": "1000s of people werenot  fired as a result",
+            "type": "I",
+            "timestamp": "2016-11-06 12:35:35"
+        },
+        {
+            "nodeID": "225122",
+            "text": "Barbara: ryan924 : 1000s of people were fired as a result",
+            "type": "L",
+            "timestamp": "2016-11-06 12:35:35"
+        },
+        {
+            "nodeID": "225123",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 12:35:35",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "225124",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 12:35:36",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225125",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:35:36",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "225126",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 12:35:36",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "225127",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 12:35:36",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225128",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:35:36",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "225129",
+            "text": "yeayeaok : http:\/\/www.freep.com\/story\/money\/cars\/ford\/2016\/09\/14\/mexico-ford-shiftng-us-car-production-mexico\/90355146\/",
+            "type": "L",
+            "timestamp": "2016-11-06 12:35:36"
+        },
+        {
+            "nodeID": "225130",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:35:36",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225131",
+            "text": "http:\/\/www.freep.com\/story\/money\/cars\/ford\/2016\/09\/14\/mexico-ford-shiftng-us-car-production-mexico\/90355146\/",
+            "type": "I",
+            "timestamp": "2016-11-06 12:35:36"
+        },
+        {
+            "nodeID": "225132",
+            "text": "Barbara: yeayeaok : http:\/\/www.freep.com\/story\/money\/cars\/ford\/2016\/09\/14\/mexico-ford-shiftng-us-car-production-mexico\/90355146\/",
+            "type": "L",
+            "timestamp": "2016-11-06 12:35:36"
+        },
+        {
+            "nodeID": "225133",
+            "text": "ryan924 : http:\/\/money.cnn.com\/2016\/09\/15\/news\/companies\/donald-trump-ford-ceo-mark-fields\/",
+            "type": "L",
+            "timestamp": "2016-11-06 12:35:36"
+        },
+        {
+            "nodeID": "225134",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:35:37",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225135",
+            "text": "http:\/\/money.cnn.com\/2016\/09\/15\/news\/companies\/donald-trump-ford-ceo-mark-fields\/",
+            "type": "I",
+            "timestamp": "2016-11-06 12:35:37"
+        },
+        {
+            "nodeID": "225136",
+            "text": "Barbara: ryan924 : http:\/\/money.cnn.com\/2016\/09\/15\/news\/companies\/donald-trump-ford-ceo-mark-fields\/",
+            "type": "L",
+            "timestamp": "2016-11-06 12:35:37"
+        },
+        {
+            "nodeID": "225137",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 12:35:37",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225138",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 12:35:37",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "272307",
+            "fromID": "225105",
+            "toID": "225106",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272308",
+            "fromID": "225104",
+            "toID": "225105",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272309",
+            "fromID": "225109",
+            "toID": "225110",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272310",
+            "fromID": "225108",
+            "toID": "225109",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272311",
+            "fromID": "225113",
+            "toID": "225114",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272312",
+            "fromID": "225112",
+            "toID": "225113",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272313",
+            "fromID": "225110",
+            "toID": "225116",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272314",
+            "fromID": "225116",
+            "toID": "225114",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272315",
+            "fromID": "225108",
+            "toID": "225117",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272316",
+            "fromID": "225117",
+            "toID": "225112",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272317",
+            "fromID": "225117",
+            "toID": "225118",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272318",
+            "fromID": "225118",
+            "toID": "225116",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272319",
+            "fromID": "225120",
+            "toID": "225121",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272320",
+            "fromID": "225119",
+            "toID": "225120",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272321",
+            "fromID": "225121",
+            "toID": "225123",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272322",
+            "fromID": "225123",
+            "toID": "225114",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272323",
+            "fromID": "225112",
+            "toID": "225124",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272324",
+            "fromID": "225124",
+            "toID": "225119",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272325",
+            "fromID": "225124",
+            "toID": "225125",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272326",
+            "fromID": "225125",
+            "toID": "225123",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272327",
+            "fromID": "225114",
+            "toID": "225126",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272328",
+            "fromID": "225126",
+            "toID": "225106",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272329",
+            "fromID": "225104",
+            "toID": "225127",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272330",
+            "fromID": "225127",
+            "toID": "225112",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272331",
+            "fromID": "225127",
+            "toID": "225128",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272332",
+            "fromID": "225128",
+            "toID": "225126",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272333",
+            "fromID": "225130",
+            "toID": "225131",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272334",
+            "fromID": "225129",
+            "toID": "225130",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272335",
+            "fromID": "225134",
+            "toID": "225135",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272336",
+            "fromID": "225133",
+            "toID": "225134",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272337",
+            "fromID": "225119",
+            "toID": "225137",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272338",
+            "fromID": "225137",
+            "toID": "225129",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272339",
+            "fromID": "225129",
+            "toID": "225138",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272340",
+            "fromID": "225138",
+            "toID": "225133",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

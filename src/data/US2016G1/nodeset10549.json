@@ -1,0 +1,727 @@
+{
+    "nodes": [
+        {
+            "nodeID": "228555",
+            "text": "desertdungarees :  I'm down with more taxes, actually",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:04"
+        },
+        {
+            "nodeID": "228556",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:18:04",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228557",
+            "text": "I'm down with more taxes, actually",
+            "type": "I",
+            "timestamp": "2016-11-08 14:18:04"
+        },
+        {
+            "nodeID": "228558",
+            "text": "Barbara: desertdungarees :  I'm down with more taxes, actually",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:04"
+        },
+        {
+            "nodeID": "228559",
+            "text": "Barbara: desertdungarees : Just so long as it doesn't go to the police",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:04"
+        },
+        {
+            "nodeID": "228560",
+            "text": "desertdungarees : maybe for more social workers and people whose job it is to help others and not to punish minorities",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:04"
+        },
+        {
+            "nodeID": "228561",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:18:05",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228562",
+            "text": "the tax should go maybe for more social workers and people whose job it is to help others and not to punish minorities",
+            "type": "I",
+            "timestamp": "2016-11-08 14:18:05"
+        },
+        {
+            "nodeID": "228563",
+            "text": "Barbara: desertdungarees : maybe for more social workers and people whose job it is to help others and not to punish minorities",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:05"
+        },
+        {
+            "nodeID": "228564",
+            "text": "desertdungarees : Just so long as it doesn't go to the police",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:05"
+        },
+        {
+            "nodeID": "228565",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:18:05",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228566",
+            "text": "just so long as the tax doesn't go to the police",
+            "type": "I",
+            "timestamp": "2016-11-08 14:18:05"
+        },
+        {
+            "nodeID": "228567",
+            "text": "Yagoua81 : Hey, as a social worker, thats awesome",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:05"
+        },
+        {
+            "nodeID": "228568",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:18:05",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228569",
+            "text": "as a social worker, thats awesome",
+            "type": "I",
+            "timestamp": "2016-11-08 14:18:05"
+        },
+        {
+            "nodeID": "228570",
+            "text": "Barbara: Yagoua81 : Hey, as a social worker, thats awesome",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:05"
+        },
+        {
+            "nodeID": "228571",
+            "text": "dabasegawd :  I don't mind paying a slightly higher tax IF it helps people",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:06"
+        },
+        {
+            "nodeID": "228572",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:18:06",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228573",
+            "text": "I don't mind paying a slightly higher tax IF it helps people",
+            "type": "I",
+            "timestamp": "2016-11-08 14:18:06"
+        },
+        {
+            "nodeID": "228574",
+            "text": "Barbara: dabasegawd :  I don't mind paying a slightly higher tax IF it helps people",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:06"
+        },
+        {
+            "nodeID": "228575",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-08 14:18:06",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "228576",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:18:06",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228577",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:18:06",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "228578",
+            "text": "suphater : Good call",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:06"
+        },
+        {
+            "nodeID": "228579",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:18:06",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228580",
+            "text": "good call",
+            "type": "I",
+            "timestamp": "2016-11-08 14:18:06"
+        },
+        {
+            "nodeID": "228581",
+            "text": "Barbara: suphater : Good call",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:07"
+        },
+        {
+            "nodeID": "228582",
+            "text": "suphater : these create services and jobs",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:07"
+        },
+        {
+            "nodeID": "228583",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:18:07",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228584",
+            "text": "these create services and jobs",
+            "type": "I",
+            "timestamp": "2016-11-08 14:18:07"
+        },
+        {
+            "nodeID": "228585",
+            "text": "Barbara: suphater : these create services and jobs",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:07"
+        },
+        {
+            "nodeID": "228586",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 14:18:07",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "228587",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:18:07",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228588",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:18:07",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "228589",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:18:07",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228590",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:18:08",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228591",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:18:08",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228592",
+            "text": "desertdungarees : so do police jobs",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:08"
+        },
+        {
+            "nodeID": "228593",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:18:08",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228594",
+            "text": "so do police jobs",
+            "type": "I",
+            "timestamp": "2016-11-08 14:18:08"
+        },
+        {
+            "nodeID": "228595",
+            "text": "Barbara: desertdungarees : so do police jobs.",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:08"
+        },
+        {
+            "nodeID": "228596",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 14:18:08",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "228597",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:18:08",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228598",
+            "text": "desertdungarees : You need jailers and more prosecutors and more parole officers and more DEA agents, etc",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:08"
+        },
+        {
+            "nodeID": "228599",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:18:08",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228600",
+            "text": "you need jailers and more prosecutors and more parole officers and more DEA agents, etc",
+            "type": "I",
+            "timestamp": "2016-11-08 14:18:09"
+        },
+        {
+            "nodeID": "228601",
+            "text": "Barbara: desertdungarees : You need jailers and more prosecutors and more parole officers and more DEA agents, etc",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:09"
+        },
+        {
+            "nodeID": "228602",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 14:18:09",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "228603",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:18:09",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228604",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:18:09",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "228605",
+            "text": "desertdungarees : I just want more people helping people instead of branding people as \"criminals\"",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:09"
+        },
+        {
+            "nodeID": "228606",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:18:09",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228607",
+            "text": "I just want more people helping people instead of branding people as \"criminals\"",
+            "type": "I",
+            "timestamp": "2016-11-08 14:18:09"
+        },
+        {
+            "nodeID": "228608",
+            "text": "Barbara: desertdungarees : I just want more people helping people instead of branding people as \"criminals\"",
+            "type": "L",
+            "timestamp": "2016-11-08 14:18:09"
+        },
+        {
+            "nodeID": "228609",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-08 14:18:09",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "228610",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:18:10",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228611",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:18:10",
+            "scheme": "Restating",
+            "schemeID": "101"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "276139",
+            "fromID": "228556",
+            "toID": "228557",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276140",
+            "fromID": "228555",
+            "toID": "228556",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276141",
+            "fromID": "228561",
+            "toID": "228562",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276142",
+            "fromID": "228560",
+            "toID": "228561",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276143",
+            "fromID": "228565",
+            "toID": "228566",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276144",
+            "fromID": "228564",
+            "toID": "228565",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276145",
+            "fromID": "228568",
+            "toID": "228569",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276146",
+            "fromID": "228567",
+            "toID": "228568",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276147",
+            "fromID": "228572",
+            "toID": "228573",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276148",
+            "fromID": "228571",
+            "toID": "228572",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276149",
+            "fromID": "228573",
+            "toID": "228575",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276150",
+            "fromID": "228575",
+            "toID": "228562",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276151",
+            "fromID": "228560",
+            "toID": "228576",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276152",
+            "fromID": "228576",
+            "toID": "228571",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276153",
+            "fromID": "228576",
+            "toID": "228577",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276154",
+            "fromID": "228577",
+            "toID": "228575",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276155",
+            "fromID": "228579",
+            "toID": "228580",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276156",
+            "fromID": "228578",
+            "toID": "228579",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276157",
+            "fromID": "228583",
+            "toID": "228584",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276158",
+            "fromID": "228582",
+            "toID": "228583",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276159",
+            "fromID": "228584",
+            "toID": "228586",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276160",
+            "fromID": "228586",
+            "toID": "228580",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276161",
+            "fromID": "228578",
+            "toID": "228587",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276162",
+            "fromID": "228587",
+            "toID": "228582",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276163",
+            "fromID": "228587",
+            "toID": "228588",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276164",
+            "fromID": "228588",
+            "toID": "228586",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276165",
+            "fromID": "228571",
+            "toID": "228589",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276166",
+            "fromID": "228589",
+            "toID": "228578",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276167",
+            "fromID": "228564",
+            "toID": "228590",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276168",
+            "fromID": "228590",
+            "toID": "228560",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276169",
+            "fromID": "228555",
+            "toID": "228591",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276170",
+            "fromID": "228591",
+            "toID": "228564",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276171",
+            "fromID": "228593",
+            "toID": "228594",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276172",
+            "fromID": "228592",
+            "toID": "228593",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276173",
+            "fromID": "228594",
+            "toID": "228596",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276174",
+            "fromID": "228596",
+            "toID": "228584",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276175",
+            "fromID": "228582",
+            "toID": "228597",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276176",
+            "fromID": "228597",
+            "toID": "228592",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276177",
+            "fromID": "228599",
+            "toID": "228600",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276178",
+            "fromID": "228598",
+            "toID": "228599",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276179",
+            "fromID": "228600",
+            "toID": "228602",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276180",
+            "fromID": "228602",
+            "toID": "228594",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276181",
+            "fromID": "228592",
+            "toID": "228603",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276182",
+            "fromID": "228603",
+            "toID": "228598",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276183",
+            "fromID": "228603",
+            "toID": "228604",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276184",
+            "fromID": "228604",
+            "toID": "228602",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276185",
+            "fromID": "228606",
+            "toID": "228607",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276186",
+            "fromID": "228605",
+            "toID": "228606",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276187",
+            "fromID": "228607",
+            "toID": "228609",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276188",
+            "fromID": "228609",
+            "toID": "228562",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276189",
+            "fromID": "228560",
+            "toID": "228610",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276190",
+            "fromID": "228610",
+            "toID": "228605",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276191",
+            "fromID": "228610",
+            "toID": "228611",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276192",
+            "fromID": "228611",
+            "toID": "228609",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

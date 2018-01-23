@@ -1,0 +1,200 @@
+{
+    "nodes": [
+        {
+            "nodeID": "225697",
+            "text": "TRUMP : We have to stop them from leaving",
+            "type": "L",
+            "timestamp": "2016-11-06 16:43:33"
+        },
+        {
+            "nodeID": "225959",
+            "text": "you never let the jobs leave",
+            "type": "I",
+            "timestamp": "2016-11-06 18:16:33"
+        },
+        {
+            "nodeID": "225964",
+            "text": "Quixoticfutz : TRUMP : you never let them leave",
+            "type": "L",
+            "timestamp": "2016-11-06 18:16:33"
+        },
+        {
+            "nodeID": "225995",
+            "text": "Quixoticfutz : has lied and the list keeps going, including personal attacks on her and her husband who is not running",
+            "type": "L",
+            "timestamp": "2016-11-06 18:16:36"
+        },
+        {
+            "nodeID": "225997",
+            "text": "TRUMP has lied and the list keeps going, including personal attacks on her and her husband who is not running",
+            "type": "I",
+            "timestamp": "2016-11-06 18:16:37"
+        },
+        {
+            "nodeID": "233370",
+            "text": "we have to stop companies from leaving",
+            "type": "I",
+            "timestamp": "2016-11-09 15:33:29"
+        },
+        {
+            "nodeID": "233813",
+            "text": "TRUMP : he approved NAFTA",
+            "type": "L",
+            "timestamp": "2016-11-09 15:34:16"
+        },
+        {
+            "nodeID": "233815",
+            "text": "Bill Clinton approved NAFTA",
+            "type": "I",
+            "timestamp": "2016-11-09 15:34:16"
+        },
+        {
+            "nodeID": "262655",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2017-03-06 13:15:18",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "262656",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-06 13:15:19",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262657",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2017-03-06 13:15:19",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "262658",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2017-03-06 13:15:20",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "262659",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-06 13:15:20",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262660",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2017-03-06 13:15:21",
+            "scheme": "Restating",
+            "schemeID": "101"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "316903",
+            "fromID": "225997",
+            "toID": "262655",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316904",
+            "fromID": "262655",
+            "toID": "233815",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316905",
+            "fromID": "233813",
+            "toID": "262656",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316906",
+            "fromID": "262656",
+            "toID": "225995",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316907",
+            "fromID": "262656",
+            "toID": "262657",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316908",
+            "fromID": "262657",
+            "toID": "262655",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316909",
+            "fromID": "225959",
+            "toID": "262658",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316910",
+            "fromID": "262658",
+            "toID": "233370",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316911",
+            "fromID": "225697",
+            "toID": "262659",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316912",
+            "fromID": "262659",
+            "toID": "225964",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316913",
+            "fromID": "262659",
+            "toID": "262660",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316914",
+            "fromID": "262660",
+            "toID": "262658",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": [
+        {
+            "nodeID": "225697",
+            "personID": "1602",
+            "timestamp": "2016-11-06 16:43:45",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "225697",
+            "personID": "1602",
+            "timestamp": "2016-11-06 16:47:19",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "225964",
+            "personID": "2942",
+            "timestamp": "2016-11-06 18:16:47",
+            "start": null,
+            "end": null,
+            "source": null
+        }
+    ]
+}

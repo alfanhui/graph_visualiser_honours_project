@@ -1,0 +1,619 @@
+{
+    "nodes": [
+        {
+            "nodeID": "224907",
+            "text": "leif777 : He's a more normal shade of human today",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:50"
+        },
+        {
+            "nodeID": "224908",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:57:50",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224909",
+            "text": "TRUMP is a more normal shade of human today",
+            "type": "I",
+            "timestamp": "2016-11-06 11:57:50"
+        },
+        {
+            "nodeID": "224910",
+            "text": "Barbara: leif777 : He's a more normal shade of human today",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:50"
+        },
+        {
+            "nodeID": "224911",
+            "text": "Wand_Cloak_Stone : His makeup artist did some nice contour on his cheekbones",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:50"
+        },
+        {
+            "nodeID": "224912",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:57:51",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224913",
+            "text": "TRUMP's makeup artist did some nice contour on his cheekbones",
+            "type": "I",
+            "timestamp": "2016-11-06 11:57:51"
+        },
+        {
+            "nodeID": "224914",
+            "text": "Barbara: Wand_Cloak_Stone : His makeup artist did some nice contour on his cheekbones",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:51"
+        },
+        {
+            "nodeID": "224915",
+            "text": "Wand_Cloak_Stone : that's not even a joke lol",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:51"
+        },
+        {
+            "nodeID": "224916",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:57:51",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224917",
+            "text": "that's not even a joke lol",
+            "type": "I",
+            "timestamp": "2016-11-06 11:57:52"
+        },
+        {
+            "nodeID": "224918",
+            "text": "Barbara: Wand_Cloak_Stone : that's not even a joke lol",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:52"
+        },
+        {
+            "nodeID": "224919",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:57:52",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224920",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:57:52",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224921",
+            "text": "nutbreadPopcorn : Last night the Ghost of Christmas Democracy paid him a visit",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:52"
+        },
+        {
+            "nodeID": "224922",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:57:53",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224923",
+            "text": "last night the Ghost of Christmas Democracy paid TRUMP a visit",
+            "type": "I",
+            "timestamp": "2016-11-06 11:57:53"
+        },
+        {
+            "nodeID": "224924",
+            "text": "Barbara: nutbreadPopcorn : Last night the Ghost of Christmas Democracy paid him a visit",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:53"
+        },
+        {
+            "nodeID": "224925",
+            "text": "Gswansso : Looks like he vacuumed his tupee as well",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:53"
+        },
+        {
+            "nodeID": "224926",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:57:53",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224927",
+            "text": "looks like TRUMP vacuumed his tupee as well",
+            "type": "I",
+            "timestamp": "2016-11-06 11:57:53"
+        },
+        {
+            "nodeID": "224928",
+            "text": "Barbara: Gswansso : Looks like he vacuumed his tupee as well",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:53"
+        },
+        {
+            "nodeID": "224929",
+            "text": "ShortOfOrdinary : His handlers are out in force",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:53"
+        },
+        {
+            "nodeID": "224930",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:57:54",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224931",
+            "text": "TRUMP's handlers are out in force",
+            "type": "I",
+            "timestamp": "2016-11-06 11:57:54"
+        },
+        {
+            "nodeID": "224932",
+            "text": "Barbara: ShortOfOrdinary : His handlers are out in force",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:54"
+        },
+        {
+            "nodeID": "224933",
+            "text": "upnorthgirl : Lol. So true.",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:54"
+        },
+        {
+            "nodeID": "224934",
+            "text": "Barbara: upnorthgirl : Lol. So true.",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:54"
+        },
+        {
+            "nodeID": "224935",
+            "text": "upnorthgirl : Stylist Bannon must have told him to lay off the QT spray tan",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:55"
+        },
+        {
+            "nodeID": "224936",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:57:55",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224937",
+            "text": "Stylist Bannon must have told TRUMP to lay off the QT spray tan",
+            "type": "I",
+            "timestamp": "2016-11-06 11:57:55"
+        },
+        {
+            "nodeID": "224938",
+            "text": "Barbara: upnorthgirl : Stylist Bannon must have told him to lay off the QT spray tan",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:55"
+        },
+        {
+            "nodeID": "224939",
+            "text": "Aesop_Rocks : Yet the hair remains rodent like in nature",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:55"
+        },
+        {
+            "nodeID": "224940",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:57:56",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224941",
+            "text": "yet the hair remains rodent like in nature",
+            "type": "I",
+            "timestamp": "2016-11-06 11:57:56"
+        },
+        {
+            "nodeID": "224942",
+            "text": "Barbara: Aesop_Rocks : Yet the hair remains rodent like in nature",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:56"
+        },
+        {
+            "nodeID": "224943",
+            "text": "FlyingPeacock : a lesser shade of lizard",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:56"
+        },
+        {
+            "nodeID": "224944",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:57:56",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224945",
+            "text": "TRUMP is a lesser shade of lizard",
+            "type": "I",
+            "timestamp": "2016-11-06 11:57:57"
+        },
+        {
+            "nodeID": "224946",
+            "text": "Barbara: FlyingPeacock : a lesser shade of lizard",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:57"
+        },
+        {
+            "nodeID": "224947",
+            "text": "FlyingPeacock : All of them are fucking lizards",
+            "type": "L",
+            "timestamp": "2016-11-06 11:57:58"
+        },
+        {
+            "nodeID": "224948",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:57:58",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224949",
+            "text": "all of them are fucking lizards",
+            "type": "I",
+            "timestamp": "2016-11-06 11:58:00"
+        },
+        {
+            "nodeID": "224950",
+            "text": "Barbara: FlyingPeacock : All of them are fucking lizards",
+            "type": "L",
+            "timestamp": "2016-11-06 11:58:00"
+        },
+        {
+            "nodeID": "224951",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:58:00",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224952",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:58:02",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224953",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:58:03",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224954",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:58:03",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224955",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:58:03",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224956",
+            "text": "Agreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:58:03",
+            "scheme": "Agreeing",
+            "schemeID": "77"
+        },
+        {
+            "nodeID": "224957",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:58:04",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224958",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:58:04",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224959",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:58:04",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "272149",
+            "fromID": "224908",
+            "toID": "224909",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272150",
+            "fromID": "224907",
+            "toID": "224908",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272151",
+            "fromID": "224912",
+            "toID": "224913",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272152",
+            "fromID": "224911",
+            "toID": "224912",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272153",
+            "fromID": "224916",
+            "toID": "224917",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272154",
+            "fromID": "224915",
+            "toID": "224916",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272155",
+            "fromID": "224907",
+            "toID": "224919",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272156",
+            "fromID": "224919",
+            "toID": "224911",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272157",
+            "fromID": "224911",
+            "toID": "224920",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272158",
+            "fromID": "224920",
+            "toID": "224915",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272159",
+            "fromID": "224922",
+            "toID": "224923",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272160",
+            "fromID": "224921",
+            "toID": "224922",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272161",
+            "fromID": "224926",
+            "toID": "224927",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272162",
+            "fromID": "224925",
+            "toID": "224926",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272163",
+            "fromID": "224930",
+            "toID": "224931",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272164",
+            "fromID": "224929",
+            "toID": "224930",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272165",
+            "fromID": "224936",
+            "toID": "224937",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272166",
+            "fromID": "224935",
+            "toID": "224936",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272167",
+            "fromID": "224940",
+            "toID": "224941",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272168",
+            "fromID": "224939",
+            "toID": "224940",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272169",
+            "fromID": "224944",
+            "toID": "224945",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272170",
+            "fromID": "224943",
+            "toID": "224944",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272171",
+            "fromID": "224948",
+            "toID": "224949",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272172",
+            "fromID": "224947",
+            "toID": "224948",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272173",
+            "fromID": "224933",
+            "toID": "224951",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272174",
+            "fromID": "224951",
+            "toID": "224935",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272175",
+            "fromID": "224915",
+            "toID": "224952",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272176",
+            "fromID": "224952",
+            "toID": "224921",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272177",
+            "fromID": "224921",
+            "toID": "224953",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272178",
+            "fromID": "224953",
+            "toID": "224925",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272179",
+            "fromID": "224925",
+            "toID": "224954",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272180",
+            "fromID": "224954",
+            "toID": "224929",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272181",
+            "fromID": "224907",
+            "toID": "224955",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272182",
+            "fromID": "224955",
+            "toID": "224933",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272183",
+            "fromID": "224955",
+            "toID": "224956",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272184",
+            "fromID": "224956",
+            "toID": "224909",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272185",
+            "fromID": "224935",
+            "toID": "224957",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272186",
+            "fromID": "224957",
+            "toID": "224939",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272187",
+            "fromID": "224939",
+            "toID": "224958",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272188",
+            "fromID": "224958",
+            "toID": "224943",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272189",
+            "fromID": "224943",
+            "toID": "224959",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272190",
+            "fromID": "224959",
+            "toID": "224947",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

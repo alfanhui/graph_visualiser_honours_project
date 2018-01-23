@@ -1,0 +1,585 @@
+{
+    "nodes": [
+        {
+            "nodeID": "22328",
+            "text": "no",
+            "type": "I",
+            "timestamp": "2013-03-20 12:21:59"
+        },
+        {
+            "nodeID": "228174",
+            "text": "shagfoal : Does he understand that screaming at a woman in front of 100 million people makes him look like a fucking asshole",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:23"
+        },
+        {
+            "nodeID": "228175",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 12:57:23",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "228176",
+            "text": "TRUMP does not understand that screaming at a woman in front of 100 million people makes him look like a fucking asshole",
+            "type": "I",
+            "timestamp": "2016-11-08 12:57:23"
+        },
+        {
+            "nodeID": "228177",
+            "text": "Barbara: shagfoal : Does he understand that screaming at a woman in front of 100 million people makes him look like a fucking asshole",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:23"
+        },
+        {
+            "nodeID": "228178",
+            "text": "Thrownawayactually : No. No, he doesn't",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:23"
+        },
+        {
+            "nodeID": "228179",
+            "text": "Barbara: Thrownawayactually : No. No, he doesn't",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:23"
+        },
+        {
+            "nodeID": "228180",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 12:57:24",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228181",
+            "text": "Agreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 12:57:24",
+            "scheme": "Agreeing",
+            "schemeID": "77"
+        },
+        {
+            "nodeID": "228182",
+            "text": "shagfoal : Sure does",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:24"
+        },
+        {
+            "nodeID": "228183",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 12:57:24",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228184",
+            "text": "sure TRUMP does understand",
+            "type": "I",
+            "timestamp": "2016-11-08 12:57:24"
+        },
+        {
+            "nodeID": "228185",
+            "text": "Barbara: shagfoal : Sure does",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:24"
+        },
+        {
+            "nodeID": "228186",
+            "text": "Thrownawayactually : his screaming and gesticulating reminds me of a certain 1930s German fellow",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:24"
+        },
+        {
+            "nodeID": "228187",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 12:57:24",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228188",
+            "text": "TRUMP's screaming and gesticulating reminds me of a certain 1930s German fellow",
+            "type": "I",
+            "timestamp": "2016-11-08 12:57:24"
+        },
+        {
+            "nodeID": "228189",
+            "text": "Barbara: Thrownawayactually : his screaming and gesticulating reminds me of a certain 1930s German fellow",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:24"
+        },
+        {
+            "nodeID": "228190",
+            "text": "shagfoal : No",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:25"
+        },
+        {
+            "nodeID": "228191",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 12:57:25",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228192",
+            "text": "Barbara: shagfoal : No",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:25"
+        },
+        {
+            "nodeID": "228193",
+            "text": "shagfoal : gut reactions to a man screaming at a woman like a psychopath are usually negative",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:25"
+        },
+        {
+            "nodeID": "228194",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 12:57:25",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228195",
+            "text": "gut reactions to a man screaming at a woman like a psychopath are usually negative",
+            "type": "I",
+            "timestamp": "2016-11-08 12:57:25"
+        },
+        {
+            "nodeID": "228196",
+            "text": "Barbara: shagfoal : gut reactions to a man screaming at a woman like a psychopath are usually negative",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:25"
+        },
+        {
+            "nodeID": "228197",
+            "text": "shagfoal : She's handling it fine",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:25"
+        },
+        {
+            "nodeID": "228198",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 12:57:25",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228199",
+            "text": "CLINTON is handling it fine",
+            "type": "I",
+            "timestamp": "2016-11-08 12:57:26"
+        },
+        {
+            "nodeID": "228200",
+            "text": "Barbara: shagfoal : She's handling it fine",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:26"
+        },
+        {
+            "nodeID": "228201",
+            "text": "shagfoal : I'm talking about viewers reaction to Trump pointing and screaming like an abusive husband",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:26"
+        },
+        {
+            "nodeID": "228202",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 12:57:26",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228203",
+            "text": "I'm talking about viewers reaction to TRUMP pointing and screaming like an abusive husband",
+            "type": "I",
+            "timestamp": "2016-11-08 12:57:26"
+        },
+        {
+            "nodeID": "228204",
+            "text": "Barbara: shagfoal : I'm talking about viewers reaction to Trump pointing and screaming like an abusive husband",
+            "type": "L",
+            "timestamp": "2016-11-08 12:57:26"
+        },
+        {
+            "nodeID": "228205",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 12:57:26",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228206",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-08 12:57:26",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "228207",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 12:57:26",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228208",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-08 12:57:26",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "228209",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 12:57:27",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "228210",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 12:57:27",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228211",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 12:57:27",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "228212",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 12:57:27",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228213",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 12:57:27",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228214",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 12:57:27",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228215",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-08 12:57:27",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "228216",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 12:57:27",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228217",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-08 12:57:27",
+            "scheme": "Restating",
+            "schemeID": "101"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "275737",
+            "fromID": "228175",
+            "toID": "228176",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275738",
+            "fromID": "228174",
+            "toID": "228175",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275739",
+            "fromID": "228174",
+            "toID": "228180",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275740",
+            "fromID": "228180",
+            "toID": "228178",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275741",
+            "fromID": "228180",
+            "toID": "228181",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275742",
+            "fromID": "228181",
+            "toID": "228176",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275743",
+            "fromID": "228183",
+            "toID": "228184",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275744",
+            "fromID": "228182",
+            "toID": "228183",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275745",
+            "fromID": "228187",
+            "toID": "228188",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275746",
+            "fromID": "228186",
+            "toID": "228187",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275747",
+            "fromID": "228191",
+            "toID": "22328",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275748",
+            "fromID": "228190",
+            "toID": "228191",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275749",
+            "fromID": "228194",
+            "toID": "228195",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275750",
+            "fromID": "228193",
+            "toID": "228194",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275751",
+            "fromID": "228198",
+            "toID": "228199",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275752",
+            "fromID": "228197",
+            "toID": "228198",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275753",
+            "fromID": "228202",
+            "toID": "228203",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275754",
+            "fromID": "228201",
+            "toID": "228202",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275755",
+            "fromID": "228193",
+            "toID": "228205",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275756",
+            "fromID": "228205",
+            "toID": "228197",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275757",
+            "fromID": "228203",
+            "toID": "228206",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275758",
+            "fromID": "228206",
+            "toID": "228195",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275759",
+            "fromID": "228193",
+            "toID": "228207",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275760",
+            "fromID": "228207",
+            "toID": "228201",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275761",
+            "fromID": "228207",
+            "toID": "228208",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275762",
+            "fromID": "228208",
+            "toID": "228206",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275763",
+            "fromID": "228184",
+            "toID": "228209",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275764",
+            "fromID": "228209",
+            "toID": "228176",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275765",
+            "fromID": "228174",
+            "toID": "228210",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275766",
+            "fromID": "228210",
+            "toID": "228182",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275767",
+            "fromID": "228210",
+            "toID": "228211",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275768",
+            "fromID": "228211",
+            "toID": "228209",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275769",
+            "fromID": "228182",
+            "toID": "228212",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275770",
+            "fromID": "228212",
+            "toID": "228186",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275771",
+            "fromID": "228186",
+            "toID": "228213",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275772",
+            "fromID": "228213",
+            "toID": "228190",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275773",
+            "fromID": "228190",
+            "toID": "228214",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275774",
+            "fromID": "228214",
+            "toID": "228193",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275775",
+            "fromID": "228195",
+            "toID": "228215",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275776",
+            "fromID": "228215",
+            "toID": "228176",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275777",
+            "fromID": "228216",
+            "toID": "228193",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275778",
+            "fromID": "228174",
+            "toID": "228216",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275779",
+            "fromID": "228216",
+            "toID": "228217",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275780",
+            "fromID": "228217",
+            "toID": "228215",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

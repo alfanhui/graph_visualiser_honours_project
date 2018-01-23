@@ -1,0 +1,108 @@
+{
+    "nodes": [
+        {
+            "nodeID": "226130",
+            "text": "that's called business",
+            "type": "I",
+            "timestamp": "2016-11-07 10:37:15"
+        },
+        {
+            "nodeID": "226135",
+            "text": "Pulse99 : TRUMP : That's called business",
+            "type": "L",
+            "timestamp": "2016-11-07 10:37:15"
+        },
+        {
+            "nodeID": "233466",
+            "text": "what TRUMP did is called business",
+            "type": "I",
+            "timestamp": "2016-11-09 15:33:39"
+        },
+        {
+            "nodeID": "233468",
+            "text": "TRUMP : That 's called business , by the way",
+            "type": "L",
+            "timestamp": "2016-11-09 15:33:40"
+        },
+        {
+            "nodeID": "262664",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2017-03-06 13:31:42",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "262665",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-06 13:31:42",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262666",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2017-03-06 13:31:43",
+            "scheme": "Restating",
+            "schemeID": "101"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "316921",
+            "fromID": "226130",
+            "toID": "262664",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316922",
+            "fromID": "262664",
+            "toID": "233466",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316923",
+            "fromID": "233468",
+            "toID": "262665",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316924",
+            "fromID": "262665",
+            "toID": "226135",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316925",
+            "fromID": "262665",
+            "toID": "262666",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316926",
+            "fromID": "262666",
+            "toID": "262664",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": [
+        {
+            "nodeID": "226135",
+            "personID": "2950",
+            "timestamp": "2016-11-07 10:38:04",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "233468",
+            "personID": "1602",
+            "timestamp": "2016-11-09 15:34:50",
+            "start": null,
+            "end": null,
+            "source": null
+        }
+    ]
+}

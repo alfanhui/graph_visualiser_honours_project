@@ -1,0 +1,1064 @@
+{
+    "nodes": [
+        {
+            "nodeID": "226053",
+            "text": "first we have to stop the jobs from leaving",
+            "type": "I",
+            "timestamp": "2016-11-07 08:48:40"
+        },
+        {
+            "nodeID": "226054",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:40",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226055",
+            "text": "TRUMP : first we have to stop them from leaving",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:40"
+        },
+        {
+            "nodeID": "226056",
+            "text": "Barbara: TRUMP : first we have to stop them from leaving",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:40"
+        },
+        {
+            "nodeID": "226057",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:41",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226058",
+            "text": "ElectricFleshlight : TRUMP : first we have to stop them from leaving",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:41"
+        },
+        {
+            "nodeID": "226059",
+            "text": "Barbara: ElectricFleshlight : TRUMP : first we have to stop them from leaving",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:41"
+        },
+        {
+            "nodeID": "226060",
+            "text": "NO SHIT THE QUESTION IS HOW YOU PLAN TO DO THAT",
+            "type": "I",
+            "timestamp": "2016-11-07 08:48:41"
+        },
+        {
+            "nodeID": "226061",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:41",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226062",
+            "text": "ElectricFleshlight : NO SHIT THE QUESTION IS HOW YOU PLAN TO DO THAT",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:41"
+        },
+        {
+            "nodeID": "226063",
+            "text": "Barbara: ElectricFleshlight : NO SHIT THE QUESTION IS HOW YOU PLAN TO DO THAT",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:41"
+        },
+        {
+            "nodeID": "226064",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-07 08:48:41",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "226065",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 08:48:41",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226066",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:41",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "226067",
+            "text": "Barbara: falconbox :  He already said",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:42"
+        },
+        {
+            "nodeID": "226068",
+            "text": "Barbara: falconbox : ntroduce a more equal import tax, which would dissuade companies from leaving",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:42"
+        },
+        {
+            "nodeID": "226069",
+            "text": "introduce a more equal import tax, which would dissuade companies from leaving.",
+            "type": "I",
+            "timestamp": "2016-11-07 08:48:42"
+        },
+        {
+            "nodeID": "226070",
+            "text": "Barbara: falconbox : He already said. Introduce a more equal import tax, which would dissuade companies from leaving.",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:42"
+        },
+        {
+            "nodeID": "226071",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:42",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226072",
+            "text": "TRUMP :Introduce a more equal import tax, which would dissuade companies from leaving.",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:42"
+        },
+        {
+            "nodeID": "226073",
+            "text": "Barbara: TRUMP : He already said. Introduce a more equal import tax, which would dissuade companies from leaving.",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:42"
+        },
+        {
+            "nodeID": "226074",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:42",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226075",
+            "text": "falconbox : TRUMP : He already said. Introduce a more equal import tax, which would dissuade companies from leaving.",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:42"
+        },
+        {
+            "nodeID": "226076",
+            "text": "Barbara: falconbox : TRUMP : He already said. Introduce a more equal import tax, which would dissuade companies from leaving.",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:42"
+        },
+        {
+            "nodeID": "226077",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-07 08:48:43",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "226078",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 08:48:43",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226079",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:43",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "226080",
+            "text": "I really wish they would just give a straight answer",
+            "type": "I",
+            "timestamp": "2016-11-07 08:48:43"
+        },
+        {
+            "nodeID": "226081",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:43",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226082",
+            "text": "lilac2481 :  I really wish they would just give a straight answer",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:43"
+        },
+        {
+            "nodeID": "226083",
+            "text": "Barbara: lilac2481 :  I really wish they would just give a straight answer",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:43"
+        },
+        {
+            "nodeID": "226084",
+            "text": "magcmike : no",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:43"
+        },
+        {
+            "nodeID": "226085",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:43",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226086",
+            "text": "the question was not how do you plan to do that",
+            "type": "I",
+            "timestamp": "2016-11-07 08:48:43"
+        },
+        {
+            "nodeID": "226087",
+            "text": "Barbara: magcmike : no",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:44"
+        },
+        {
+            "nodeID": "226088",
+            "text": "magcmike : the question was how do you get them back",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:44"
+        },
+        {
+            "nodeID": "226089",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:44",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226090",
+            "text": "the question was how do you get them back",
+            "type": "I",
+            "timestamp": "2016-11-07 08:48:44"
+        },
+        {
+            "nodeID": "226091",
+            "text": "Barbara: magcmike : the question was how do you get them back",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:44"
+        },
+        {
+            "nodeID": "226092",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-07 08:48:44",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "226093",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 08:48:44",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226094",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:44",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "226095",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-07 08:48:44",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "226096",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 08:48:44",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226097",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:45",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "226098",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 08:48:45",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226099",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-07 08:48:45",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "226100",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:45",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "226101",
+            "text": "Brags427 : He answered the question",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:45"
+        },
+        {
+            "nodeID": "226102",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:45",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226103",
+            "text": "TRUMP answered the question",
+            "type": "I",
+            "timestamp": "2016-11-07 08:48:45"
+        },
+        {
+            "nodeID": "226104",
+            "text": "Barbara: Brags427 : He answered the question",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:45"
+        },
+        {
+            "nodeID": "226105",
+            "text": "Barbara: Brags427 : By putting tax on Chinese imports businesses will start using US manufacturing because it will cost less",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:45"
+        },
+        {
+            "nodeID": "226106",
+            "text": "Brags427 : By putting tax on Chinese imports businesses will start using US manufacturing",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:45"
+        },
+        {
+            "nodeID": "226107",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:46",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226108",
+            "text": "by putting tax on Chinese imports businesses will start using US manufacturing",
+            "type": "I",
+            "timestamp": "2016-11-07 08:48:46"
+        },
+        {
+            "nodeID": "226109",
+            "text": "Barbara: Brags427 : By putting tax on Chinese imports businesses will start using US manufacturing",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:46"
+        },
+        {
+            "nodeID": "226110",
+            "text": "Brags427 : it will cost less",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:46"
+        },
+        {
+            "nodeID": "226111",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:46",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226112",
+            "text": "it will cost less",
+            "type": "I",
+            "timestamp": "2016-11-07 08:48:46"
+        },
+        {
+            "nodeID": "226113",
+            "text": "Barbara: Brags427 : it will cost less",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:46"
+        },
+        {
+            "nodeID": "226114",
+            "text": "Brags427 : Import tax will make manufacturing in China more expensive",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:46"
+        },
+        {
+            "nodeID": "226115",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:46",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226116",
+            "text": "import tax will make manufacturing in China more expensive",
+            "type": "I",
+            "timestamp": "2016-11-07 08:48:46"
+        },
+        {
+            "nodeID": "226117",
+            "text": "Barbara: Brags427 : Import tax will make manufacturing in China more expensive",
+            "type": "L",
+            "timestamp": "2016-11-07 08:48:47"
+        },
+        {
+            "nodeID": "226118",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-07 08:48:47",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "226119",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-07 08:48:47",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "226120",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 08:48:47",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226121",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 08:48:47",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226122",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:47",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "226123",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:47",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "226124",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-07 08:48:47",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "226125",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 08:48:47",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226126",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:47",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "226127",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-07 08:48:48",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "226128",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 08:48:48",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226129",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-07 08:48:48",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "273315",
+            "fromID": "226054",
+            "toID": "226053",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273316",
+            "fromID": "226055",
+            "toID": "226054",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273317",
+            "fromID": "226057",
+            "toID": "226055",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273318",
+            "fromID": "226058",
+            "toID": "226057",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273319",
+            "fromID": "226061",
+            "toID": "226060",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273320",
+            "fromID": "226062",
+            "toID": "226061",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273321",
+            "fromID": "226060",
+            "toID": "226064",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273322",
+            "fromID": "226064",
+            "toID": "226053",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273323",
+            "fromID": "226058",
+            "toID": "226065",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273324",
+            "fromID": "226065",
+            "toID": "226062",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273325",
+            "fromID": "226065",
+            "toID": "226066",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273326",
+            "fromID": "226066",
+            "toID": "226064",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273327",
+            "fromID": "226071",
+            "toID": "226069",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273328",
+            "fromID": "226072",
+            "toID": "226071",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273329",
+            "fromID": "226074",
+            "toID": "226072",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273330",
+            "fromID": "226075",
+            "toID": "226074",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273331",
+            "fromID": "226069",
+            "toID": "226077",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273332",
+            "fromID": "226077",
+            "toID": "226060",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273333",
+            "fromID": "226062",
+            "toID": "226078",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273334",
+            "fromID": "226078",
+            "toID": "226075",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273335",
+            "fromID": "226078",
+            "toID": "226079",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273336",
+            "fromID": "226079",
+            "toID": "226077",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273337",
+            "fromID": "226081",
+            "toID": "226080",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273338",
+            "fromID": "226082",
+            "toID": "226081",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273339",
+            "fromID": "226085",
+            "toID": "226086",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273340",
+            "fromID": "226084",
+            "toID": "226085",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273341",
+            "fromID": "226089",
+            "toID": "226090",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273342",
+            "fromID": "226088",
+            "toID": "226089",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273343",
+            "fromID": "226090",
+            "toID": "226092",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273344",
+            "fromID": "226092",
+            "toID": "226086",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273345",
+            "fromID": "226084",
+            "toID": "226093",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273346",
+            "fromID": "226093",
+            "toID": "226088",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273347",
+            "fromID": "226093",
+            "toID": "226094",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273348",
+            "fromID": "226094",
+            "toID": "226092",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273349",
+            "fromID": "226086",
+            "toID": "226095",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273350",
+            "fromID": "226095",
+            "toID": "226060",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273351",
+            "fromID": "226062",
+            "toID": "226096",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273352",
+            "fromID": "226096",
+            "toID": "226084",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273353",
+            "fromID": "226096",
+            "toID": "226097",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273354",
+            "fromID": "226097",
+            "toID": "226095",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273355",
+            "fromID": "226062",
+            "toID": "226098",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273356",
+            "fromID": "226098",
+            "toID": "226082",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273357",
+            "fromID": "226060",
+            "toID": "226099",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273358",
+            "fromID": "226099",
+            "toID": "226080",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273359",
+            "fromID": "226098",
+            "toID": "226100",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273360",
+            "fromID": "226100",
+            "toID": "226099",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273361",
+            "fromID": "226102",
+            "toID": "226103",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273362",
+            "fromID": "226101",
+            "toID": "226102",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273363",
+            "fromID": "226107",
+            "toID": "226108",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273364",
+            "fromID": "226106",
+            "toID": "226107",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273365",
+            "fromID": "226111",
+            "toID": "226112",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273366",
+            "fromID": "226110",
+            "toID": "226111",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273367",
+            "fromID": "226115",
+            "toID": "226116",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273368",
+            "fromID": "226114",
+            "toID": "226115",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273369",
+            "fromID": "226116",
+            "toID": "226118",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273370",
+            "fromID": "226118",
+            "toID": "226112",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273371",
+            "fromID": "226112",
+            "toID": "226119",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273372",
+            "fromID": "226119",
+            "toID": "226108",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273373",
+            "fromID": "226106",
+            "toID": "226120",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273374",
+            "fromID": "226120",
+            "toID": "226110",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273375",
+            "fromID": "226110",
+            "toID": "226121",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273376",
+            "fromID": "226121",
+            "toID": "226114",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273377",
+            "fromID": "226120",
+            "toID": "226122",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273378",
+            "fromID": "226122",
+            "toID": "226119",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273379",
+            "fromID": "226121",
+            "toID": "226123",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273380",
+            "fromID": "226123",
+            "toID": "226118",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273381",
+            "fromID": "226108",
+            "toID": "226124",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273382",
+            "fromID": "226124",
+            "toID": "226103",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273383",
+            "fromID": "226106",
+            "toID": "226125",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273384",
+            "fromID": "226125",
+            "toID": "226101",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273385",
+            "fromID": "226125",
+            "toID": "226126",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273386",
+            "fromID": "226126",
+            "toID": "226124",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273387",
+            "fromID": "226103",
+            "toID": "226127",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273388",
+            "fromID": "226127",
+            "toID": "226060",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273389",
+            "fromID": "226062",
+            "toID": "226128",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273390",
+            "fromID": "226128",
+            "toID": "226101",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273391",
+            "fromID": "226128",
+            "toID": "226129",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "273392",
+            "fromID": "226129",
+            "toID": "226127",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": [
+        {
+            "nodeID": "226055",
+            "personID": "1602",
+            "timestamp": "2016-11-07 08:48:51",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "226058",
+            "personID": "2945",
+            "timestamp": "2016-11-07 08:48:51",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "226062",
+            "personID": "2945",
+            "timestamp": "2016-11-07 08:48:51",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "226072",
+            "personID": "1602",
+            "timestamp": "2016-11-07 08:48:51",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "226075",
+            "personID": "2946",
+            "timestamp": "2016-11-07 08:48:51",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "226082",
+            "personID": "2947",
+            "timestamp": "2016-11-07 08:48:51",
+            "start": null,
+            "end": null,
+            "source": null
+        }
+    ]
+}

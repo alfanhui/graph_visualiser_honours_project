@@ -1,0 +1,1293 @@
+{
+    "nodes": [
+        {
+            "nodeID": "224624",
+            "text": "Xatencio00 : Lie number one goes to Hillary about women getting paid less for the same work",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:02"
+        },
+        {
+            "nodeID": "224625",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:02",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224626",
+            "text": "lie number one goes to CLINTON about women getting paid less for the same work",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:02"
+        },
+        {
+            "nodeID": "224627",
+            "text": "Barbara: Xatencio00 : Lie number one goes to Hillary about women getting paid less for the same work",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:03"
+        },
+        {
+            "nodeID": "224628",
+            "text": "Xatencio00 : WIll the media report this as a lie",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:03"
+        },
+        {
+            "nodeID": "224629",
+            "text": "Rhetorical Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:03",
+            "scheme": "RhetoricalQuestioning",
+            "schemeID": "85"
+        },
+        {
+            "nodeID": "224630",
+            "text": "the media will\/will not report this as a lie",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:03"
+        },
+        {
+            "nodeID": "224631",
+            "text": "Barbara: Xatencio00 : WIll the media report this as a lie",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:03"
+        },
+        {
+            "nodeID": "224632",
+            "text": "Xatencio00 : Doubt it",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:03"
+        },
+        {
+            "nodeID": "224633",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:03",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224634",
+            "text": "I doubt the media will report it as a lie",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:03"
+        },
+        {
+            "nodeID": "224635",
+            "text": "Barbara: Xatencio00 : Doubt it",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:03"
+        },
+        {
+            "nodeID": "224636",
+            "text": "LawsGuy :  It's funny to me how nobody seems to be able to prove it either way",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:03"
+        },
+        {
+            "nodeID": "224637",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:04",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224638",
+            "text": "It's funny to me how nobody seems to be able to prove it either way",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:04"
+        },
+        {
+            "nodeID": "224639",
+            "text": "Barbara: LawsGuy :  It's funny to me how nobody seems to be able to prove it either way",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:04"
+        },
+        {
+            "nodeID": "224640",
+            "text": "LawsGuy : Both sides just cling onto their studies and point to them exasperatedly",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:04"
+        },
+        {
+            "nodeID": "224641",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:04",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224642",
+            "text": "both sides just cling onto their studies and point to them exasperatedly",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:04"
+        },
+        {
+            "nodeID": "224643",
+            "text": "Barbara: LawsGuy : Both sides just cling onto their studies and point to them exasperatedly",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:04"
+        },
+        {
+            "nodeID": "224644",
+            "text": "LawsGuy : Which truth do you believe",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:04"
+        },
+        {
+            "nodeID": "224645",
+            "text": "Pure Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:04",
+            "scheme": "PureQuestioning",
+            "schemeID": "91"
+        },
+        {
+            "nodeID": "224646",
+            "text": "which truth do you believe",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:04"
+        },
+        {
+            "nodeID": "224647",
+            "text": "Barbara: LawsGuy : Which truth do you believe",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:04"
+        },
+        {
+            "nodeID": "224648",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-06 11:03:05",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "224649",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:03:05",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224650",
+            "text": "Default Illocuting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:05",
+            "scheme": "Default Illocuting",
+            "schemeID": "168"
+        },
+        {
+            "nodeID": "224651",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:03:05",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224652",
+            "text": "Xatencio00 : No serious economist would argue that women get paid less for working the same job, with the same experience, and the same number of hours",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:05"
+        },
+        {
+            "nodeID": "224653",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:05",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224654",
+            "text": "no serious economist would argue that women get paid less for working the same job, with the same experience, and the same number of hours",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:05"
+        },
+        {
+            "nodeID": "224655",
+            "text": "Barbara: Xatencio00 : No serious economist would argue that women get paid less for working the same job, with the same experience, and the same number of hours",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:05"
+        },
+        {
+            "nodeID": "224656",
+            "text": "LawsGuy : You do realize you're just saying that right",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:05"
+        },
+        {
+            "nodeID": "224657",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:05",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "224658",
+            "text": "you do realize you're just saying that",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:06"
+        },
+        {
+            "nodeID": "224659",
+            "text": "Barbara: LawsGuy : You do realize you're just saying that right",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:06"
+        },
+        {
+            "nodeID": "224660",
+            "text": "LawsGuy : You have no citation, no evidence you're presenting at all",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:06"
+        },
+        {
+            "nodeID": "224661",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:06",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224662",
+            "text": "you have no citation, no evidence you're presenting at all",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:06"
+        },
+        {
+            "nodeID": "224663",
+            "text": "Barbara: LawsGuy : You have no citation, no evidence you're presenting at all",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:06"
+        },
+        {
+            "nodeID": "224664",
+            "text": "LawsGuy : If I asked someone who believed the opposite, they'd say the opposite",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:06"
+        },
+        {
+            "nodeID": "224665",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:06",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224666",
+            "text": "if I asked someone who believed the opposite, they'd say the opposite",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:06"
+        },
+        {
+            "nodeID": "224667",
+            "text": "Barbara: LawsGuy : If I asked someone who believed the opposite, they'd say the opposite",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:06"
+        },
+        {
+            "nodeID": "224668",
+            "text": "LawsGuy :  good job",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:06"
+        },
+        {
+            "nodeID": "224669",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:07",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224670",
+            "text": "not a good job",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:07"
+        },
+        {
+            "nodeID": "224671",
+            "text": "Barbara: LawsGuy :  good job",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:07"
+        },
+        {
+            "nodeID": "224672",
+            "text": "How about this",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:07"
+        },
+        {
+            "nodeID": "224673",
+            "text": "Xatencio00 : How about this https:\/\/www.google.com\/search?q=gender%20pay%20gap%20myth&rct=j",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:07"
+        },
+        {
+            "nodeID": "224674",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:07",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "224675",
+            "text": "how about this https:\/\/www.google.com\/search?q=gender%20pay%20gap%20myth&rct=j",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:07"
+        },
+        {
+            "nodeID": "224676",
+            "text": "Barbara:  Xatencio00 : Xatencio00",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:07"
+        },
+        {
+            "nodeID": "224677",
+            "text": "Barbara:  Xatencio00 : https:\/\/www.google.com\/search?q=gender%20pay%20gap%20myth&rct=j",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:07"
+        },
+        {
+            "nodeID": "224678",
+            "text": "LawsGuy : Thank you, that's better.",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:07"
+        },
+        {
+            "nodeID": "224679",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:08",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224680",
+            "text": "that's better",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:08"
+        },
+        {
+            "nodeID": "224681",
+            "text": "Barbara: LawsGuy : Thank you, that's better.",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:08"
+        },
+        {
+            "nodeID": "224682",
+            "text": "Barbara:  Xatencio00 : I mean I doubt it tells the entire story",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:08"
+        },
+        {
+            "nodeID": "224683",
+            "text": "LawsGuy : there still isn't good maternity leave in America yet",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:08"
+        },
+        {
+            "nodeID": "224684",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:08",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224685",
+            "text": "there still isn't good maternity leave in America yet",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:08"
+        },
+        {
+            "nodeID": "224686",
+            "text": "Barbara: LawsGuy : here still isn't good maternity leave in America yet",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:08"
+        },
+        {
+            "nodeID": "224687",
+            "text": "LawsGuy : I doubt it tells the entire story",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:08"
+        },
+        {
+            "nodeID": "224688",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:08",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224689",
+            "text": "I doubt it tells the entire story",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:09"
+        },
+        {
+            "nodeID": "224690",
+            "text": "Barbara: LawsGuy : I doubt it tells the entire story",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:09"
+        },
+        {
+            "nodeID": "224691",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-06 11:03:09",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "224692",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:03:09",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224693",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:09",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "224694",
+            "text": "LawsGuy :  this is at least some information",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:09"
+        },
+        {
+            "nodeID": "224695",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:09",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224696",
+            "text": "this is at least some information",
+            "type": "I",
+            "timestamp": "2016-11-06 11:03:09"
+        },
+        {
+            "nodeID": "224697",
+            "text": "Barbara: LawsGuy :  this is at least some information",
+            "type": "L",
+            "timestamp": "2016-11-06 11:03:09"
+        },
+        {
+            "nodeID": "224698",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:03:09",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224699",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 11:03:10",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "224700",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:03:10",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224701",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:10",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "224702",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 11:03:10",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "224703",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:03:10",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224704",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:10",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "224705",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:03:10",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224706",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:03:10",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224707",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-06 11:03:10",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "224708",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:10",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "224709",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-06 11:03:11",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "224710",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:03:11",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224711",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:11",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "224712",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 11:03:11",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "224713",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:03:11",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224714",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:11",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "224715",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-06 11:03:11",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "224716",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:03:11",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224717",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:11",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "224718",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:03:12",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224719",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 11:03:12",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "224720",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:03:12",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224721",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:03:12",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "224722",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:03:12",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224723",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:03:12",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "271871",
+            "fromID": "224625",
+            "toID": "224626",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271872",
+            "fromID": "224624",
+            "toID": "224625",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271873",
+            "fromID": "224629",
+            "toID": "224630",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271874",
+            "fromID": "224628",
+            "toID": "224629",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271875",
+            "fromID": "224633",
+            "toID": "224634",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271876",
+            "fromID": "224632",
+            "toID": "224633",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271877",
+            "fromID": "224637",
+            "toID": "224638",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271878",
+            "fromID": "224636",
+            "toID": "224637",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271879",
+            "fromID": "224641",
+            "toID": "224642",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271880",
+            "fromID": "224640",
+            "toID": "224641",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271881",
+            "fromID": "224645",
+            "toID": "224646",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271882",
+            "fromID": "224644",
+            "toID": "224645",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271883",
+            "fromID": "224634",
+            "toID": "224648",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271884",
+            "fromID": "224648",
+            "toID": "224630",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271885",
+            "fromID": "224628",
+            "toID": "224649",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271886",
+            "fromID": "224649",
+            "toID": "224632",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271887",
+            "fromID": "224649",
+            "toID": "224650",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271888",
+            "fromID": "224650",
+            "toID": "224648",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271889",
+            "fromID": "224624",
+            "toID": "224651",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271890",
+            "fromID": "224651",
+            "toID": "224628",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271891",
+            "fromID": "224653",
+            "toID": "224654",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271892",
+            "fromID": "224652",
+            "toID": "224653",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271893",
+            "fromID": "224657",
+            "toID": "224658",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271894",
+            "fromID": "224656",
+            "toID": "224657",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271895",
+            "fromID": "224661",
+            "toID": "224662",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271896",
+            "fromID": "224660",
+            "toID": "224661",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271897",
+            "fromID": "224665",
+            "toID": "224666",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271898",
+            "fromID": "224664",
+            "toID": "224665",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271899",
+            "fromID": "224669",
+            "toID": "224670",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271900",
+            "fromID": "224668",
+            "toID": "224669",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271901",
+            "fromID": "224674",
+            "toID": "224675",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271902",
+            "fromID": "224673",
+            "toID": "224674",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271903",
+            "fromID": "224679",
+            "toID": "224680",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271904",
+            "fromID": "224678",
+            "toID": "224679",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271905",
+            "fromID": "224684",
+            "toID": "224685",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271906",
+            "fromID": "224683",
+            "toID": "224684",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271907",
+            "fromID": "224688",
+            "toID": "224689",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271908",
+            "fromID": "224687",
+            "toID": "224688",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271909",
+            "fromID": "224685",
+            "toID": "224691",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271910",
+            "fromID": "224691",
+            "toID": "224689",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271911",
+            "fromID": "224687",
+            "toID": "224692",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271912",
+            "fromID": "224692",
+            "toID": "224683",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271913",
+            "fromID": "224692",
+            "toID": "224693",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271914",
+            "fromID": "224693",
+            "toID": "224691",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271915",
+            "fromID": "224695",
+            "toID": "224696",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271916",
+            "fromID": "224694",
+            "toID": "224695",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271917",
+            "fromID": "224683",
+            "toID": "224698",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271918",
+            "fromID": "224698",
+            "toID": "224694",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271919",
+            "fromID": "224638",
+            "toID": "224699",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271920",
+            "fromID": "224699",
+            "toID": "224626",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271921",
+            "fromID": "224624",
+            "toID": "224700",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271922",
+            "fromID": "224700",
+            "toID": "224636",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271923",
+            "fromID": "224700",
+            "toID": "224701",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271924",
+            "fromID": "224701",
+            "toID": "224699",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271925",
+            "fromID": "224654",
+            "toID": "224702",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271926",
+            "fromID": "224702",
+            "toID": "224638",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271927",
+            "fromID": "224636",
+            "toID": "224703",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271928",
+            "fromID": "224703",
+            "toID": "224652",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271929",
+            "fromID": "224703",
+            "toID": "224704",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271930",
+            "fromID": "224704",
+            "toID": "224702",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271931",
+            "fromID": "224636",
+            "toID": "224705",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271932",
+            "fromID": "224705",
+            "toID": "224640",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271933",
+            "fromID": "224640",
+            "toID": "224706",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271934",
+            "fromID": "224706",
+            "toID": "224644",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271935",
+            "fromID": "224642",
+            "toID": "224707",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271936",
+            "fromID": "224707",
+            "toID": "224638",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271937",
+            "fromID": "224705",
+            "toID": "224708",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271938",
+            "fromID": "224708",
+            "toID": "224707",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271939",
+            "fromID": "224662",
+            "toID": "224709",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271940",
+            "fromID": "224709",
+            "toID": "224658",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271941",
+            "fromID": "224656",
+            "toID": "224710",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271942",
+            "fromID": "224710",
+            "toID": "224660",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271943",
+            "fromID": "224710",
+            "toID": "224711",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271944",
+            "fromID": "224711",
+            "toID": "224709",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271945",
+            "fromID": "224658",
+            "toID": "224712",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271946",
+            "fromID": "224712",
+            "toID": "224654",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271947",
+            "fromID": "224652",
+            "toID": "224713",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271948",
+            "fromID": "224713",
+            "toID": "224656",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271949",
+            "fromID": "224713",
+            "toID": "224714",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271950",
+            "fromID": "224714",
+            "toID": "224712",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271951",
+            "fromID": "224666",
+            "toID": "224715",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271952",
+            "fromID": "224715",
+            "toID": "224670",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271953",
+            "fromID": "224664",
+            "toID": "224716",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271954",
+            "fromID": "224716",
+            "toID": "224668",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271955",
+            "fromID": "224716",
+            "toID": "224717",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271956",
+            "fromID": "224717",
+            "toID": "224715",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271957",
+            "fromID": "224660",
+            "toID": "224718",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271958",
+            "fromID": "224718",
+            "toID": "224664",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271959",
+            "fromID": "224675",
+            "toID": "224719",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271960",
+            "fromID": "224719",
+            "toID": "224662",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271961",
+            "fromID": "224660",
+            "toID": "224720",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271962",
+            "fromID": "224720",
+            "toID": "224673",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271963",
+            "fromID": "224720",
+            "toID": "224721",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271964",
+            "fromID": "224721",
+            "toID": "224719",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271965",
+            "fromID": "224673",
+            "toID": "224722",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271966",
+            "fromID": "224722",
+            "toID": "224678",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271967",
+            "fromID": "224678",
+            "toID": "224723",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "271968",
+            "fromID": "224723",
+            "toID": "224687",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

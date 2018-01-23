@@ -1,0 +1,271 @@
+{
+    "nodes": [
+        {
+            "nodeID": "232843",
+            "text": "Nova_Jake : she sounds so generic",
+            "type": "L",
+            "timestamp": "2016-11-09 10:16:43"
+        },
+        {
+            "nodeID": "232844",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-09 10:16:43",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232845",
+            "text": "CLINTON sounds so generic",
+            "type": "I",
+            "timestamp": "2016-11-09 10:16:44"
+        },
+        {
+            "nodeID": "232846",
+            "text": "Barbara: Nova_Jake : she sounds so generic",
+            "type": "L",
+            "timestamp": "2016-11-09 10:16:44"
+        },
+        {
+            "nodeID": "232847",
+            "text": "phero1190 : he's so childish",
+            "type": "L",
+            "timestamp": "2016-11-09 10:16:44"
+        },
+        {
+            "nodeID": "232848",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-09 10:16:44",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232849",
+            "text": "TRUMP is so childish",
+            "type": "I",
+            "timestamp": "2016-11-09 10:16:44"
+        },
+        {
+            "nodeID": "232850",
+            "text": "Barbara: phero1190 : he's so childish.",
+            "type": "L",
+            "timestamp": "2016-11-09 10:16:44"
+        },
+        {
+            "nodeID": "232851",
+            "text": "Nova_Jake : Not gonna deny, at least he's entertaining",
+            "type": "L",
+            "timestamp": "2016-11-09 10:16:44"
+        },
+        {
+            "nodeID": "232852",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-09 10:16:44",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232853",
+            "text": "not gonna deny, at least TRUMP is entertaining",
+            "type": "I",
+            "timestamp": "2016-11-09 10:16:44"
+        },
+        {
+            "nodeID": "232854",
+            "text": "Barbara: Nova_Jake : Not gonna deny, at least he's entertaining",
+            "type": "L",
+            "timestamp": "2016-11-09 10:16:44"
+        },
+        {
+            "nodeID": "232855",
+            "text": "kobe_bryant24 : it is crazy angry man vs robot woman",
+            "type": "L",
+            "timestamp": "2016-11-09 10:16:45"
+        },
+        {
+            "nodeID": "232856",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-09 10:16:45",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "232857",
+            "text": "it is crazy angry man vs robot woman",
+            "type": "I",
+            "timestamp": "2016-11-09 10:16:45"
+        },
+        {
+            "nodeID": "232858",
+            "text": "Barbara: kobe_bryant24 : it is crazy angry man vs robot woman",
+            "type": "L",
+            "timestamp": "2016-11-09 10:16:45"
+        },
+        {
+            "nodeID": "232859",
+            "text": "Nova_Jake : Agreed",
+            "type": "L",
+            "timestamp": "2016-11-09 10:16:45"
+        },
+        {
+            "nodeID": "232860",
+            "text": "Barbara: Nova_Jake : Agreed",
+            "type": "L",
+            "timestamp": "2016-11-09 10:16:45"
+        },
+        {
+            "nodeID": "232861",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-09 10:16:45",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232862",
+            "text": "Agreeing",
+            "type": "YA",
+            "timestamp": "2016-11-09 10:16:45",
+            "scheme": "Agreeing",
+            "schemeID": "77"
+        },
+        {
+            "nodeID": "232863",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-09 10:16:45",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232864",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-09 10:16:45",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "232865",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-09 10:16:46",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "281049",
+            "fromID": "232844",
+            "toID": "232845",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281050",
+            "fromID": "232843",
+            "toID": "232844",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281051",
+            "fromID": "232848",
+            "toID": "232849",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281052",
+            "fromID": "232847",
+            "toID": "232848",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281053",
+            "fromID": "232852",
+            "toID": "232853",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281054",
+            "fromID": "232851",
+            "toID": "232852",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281055",
+            "fromID": "232856",
+            "toID": "232857",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281056",
+            "fromID": "232855",
+            "toID": "232856",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281057",
+            "fromID": "232855",
+            "toID": "232861",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281058",
+            "fromID": "232861",
+            "toID": "232859",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281059",
+            "fromID": "232861",
+            "toID": "232862",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281060",
+            "fromID": "232862",
+            "toID": "232857",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281061",
+            "fromID": "232843",
+            "toID": "232863",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281062",
+            "fromID": "232863",
+            "toID": "232847",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281063",
+            "fromID": "232847",
+            "toID": "232864",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281064",
+            "fromID": "232864",
+            "toID": "232851",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281065",
+            "fromID": "232851",
+            "toID": "232865",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "281066",
+            "fromID": "232865",
+            "toID": "232855",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

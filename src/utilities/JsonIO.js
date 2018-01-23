@@ -3,28 +3,32 @@ import request from 'superagent';
 import {SET} from 'reducerActions';
 
 //Import json from local file. Await for database to be wiped via promise before continuing..
-export function importJSON() {
-  return dispatch => {
-    dispatch(SET('databaseError', "#FFFFFF"));
-    dispatch(wipeDatabase()).then(function(){
-      dispatch(removeIndexes()); //remove indexes
-    }).then(function(){
-      request.get("data/10808.json")
-      .then((res)=> {
-        console.log(res.body);
-        dispatch(graphMLtoCypher(res.body));
-      })
-      .catch((err)=> {
-        console.log("This error: " , err);
-        dispatch(SET("databaseError", "#F50057"));
+export function importJSON(randomBool) {
+  let fileName = 'nodeset11151'; //nodeset11076
+  if(randomBool){
+    //get random file
+  }
+  return (dispatch) => {
+      dispatch(SET('databaseError', "#FFFFFF"));
+      return dispatch(wipeDatabase()).then(function(){
+        dispatch(removeIndexes()); //remove indexes
+      }).then(function(){
+        return request.get("data/US2016G1/" + fileName + ".json")
+        .then((res)=> {
+          console.log(res.body);
+          let {nodeStatements, dictionary, edgeStatements} = graphMLtoCypher(res.body);
+          return dispatch(compileQuery(nodeStatements, dictionary, edgeStatements));
+        })
+        .catch((err)=> {
+          console.log("This error: " , err);
+          dispatch(SET("databaseError", "#F50057"));
+        });
       });
-    });
   };
 }
 
 //handle json object ready for cypher conversion
 function graphMLtoCypher(jsonObj) {
-  return dispatch => {
     let nodeParameters = { "props": jsonObj.nodes };
     //Sort by type
     let dictionary = {};
@@ -66,22 +70,21 @@ function graphMLtoCypher(jsonObj) {
 
     //locutions?
 
-    dispatch(compileQuery(nodeStatements, dictionary, edgeStatements));
-  };
+    return {nodeStatements, dictionary, edgeStatements};
 }
 
 
 //post dispatches
 function compileQuery(nodeStatements, dictionary, edgeStatements){
-  return dispatch => {
+  return (dispatch) => {
     //send off queries, as promises, because you cannot create edges from nodes that don't already exist
-    dispatch(postQuery(nodeStatements, dictionary)).then(function(){
+    return dispatch(postQuery(nodeStatements, dictionary)).then(function(){
       for (let nodeType in dictionary) {
         dispatch(postQuery(['CREATE INDEX ON :' + nodeType + '(nodeID)'], null)); //create index
       }
 
     }).then(function(){
-      dispatch(postQuery(edgeStatements, null));
+      return dispatch(postQuery(edgeStatements, null));
     });
   };
 }

@@ -1,0 +1,2557 @@
+{
+    "nodes": [
+        {
+            "nodeID": "254195",
+            "text": "HOLT : How do you heal the divide",
+            "type": "L",
+            "timestamp": "2016-12-21 18:01:17"
+        },
+        {
+            "nodeID": "257044",
+            "text": "HOLT : The share of Americans who say race relations are bad in this country is the highest it's been in decades",
+            "type": "L",
+            "timestamp": "2016-12-22 15:20:56"
+        },
+        {
+            "nodeID": "257045",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:20:56",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257046",
+            "text": "The share of Americans who say race relations are bad in this country is the highest it's been in decades",
+            "type": "I",
+            "timestamp": "2016-12-22 15:20:57"
+        },
+        {
+            "nodeID": "257047",
+            "text": "Jacky: HOLT : The share of Americans who say race relations are bad in this country is the highest it's been in decades",
+            "type": "L",
+            "timestamp": "2016-12-22 15:20:57"
+        },
+        {
+            "nodeID": "257048",
+            "text": "HOLT : much of it amplified by shootings of African-Americans by police",
+            "type": "L",
+            "timestamp": "2016-12-22 15:20:57"
+        },
+        {
+            "nodeID": "257049",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:20:57",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257050",
+            "text": "much of it amplified by shootings of African-Americans by police",
+            "type": "I",
+            "timestamp": "2016-12-22 15:20:57"
+        },
+        {
+            "nodeID": "257051",
+            "text": "Jacky: HOLT : much of it amplified by shootings of African-Americans by police",
+            "type": "L",
+            "timestamp": "2016-12-22 15:20:57"
+        },
+        {
+            "nodeID": "257052",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:20:57",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257053",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:20:57",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257054",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:20:58",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "257055",
+            "text": "HOLT : we've seen recently in Charlotte and Tulsa",
+            "type": "L",
+            "timestamp": "2016-12-22 15:20:58"
+        },
+        {
+            "nodeID": "257056",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:20:58",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257057",
+            "text": "we've seen recently in Charlotte and Tulsa",
+            "type": "I",
+            "timestamp": "2016-12-22 15:20:58"
+        },
+        {
+            "nodeID": "257058",
+            "text": "Jacky: HOLT : we've seen recently in Charlotte and Tulsa",
+            "type": "L",
+            "timestamp": "2016-12-22 15:20:58"
+        },
+        {
+            "nodeID": "257059",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:20:58",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257060",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:20:58",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257061",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:20:58",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "257062",
+            "text": "HOLT : Race has been a big issue in this campaign",
+            "type": "L",
+            "timestamp": "2016-12-22 15:20:58"
+        },
+        {
+            "nodeID": "257063",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:20:59",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257064",
+            "text": "Race has been a big issue in this campaign",
+            "type": "I",
+            "timestamp": "2016-12-22 15:20:59"
+        },
+        {
+            "nodeID": "257065",
+            "text": "Jacky: HOLT : Race has been a big issue in this campaign",
+            "type": "L",
+            "timestamp": "2016-12-22 15:20:59"
+        },
+        {
+            "nodeID": "257066",
+            "text": "HOLT : one of you is going to have to bridge a very wide and bitter gap",
+            "type": "L",
+            "timestamp": "2016-12-22 15:20:59"
+        },
+        {
+            "nodeID": "257067",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:20:59",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257068",
+            "text": "TRUMP is going to have to bridge a very wide and bitter gap",
+            "type": "I",
+            "timestamp": "2016-12-22 15:20:59"
+        },
+        {
+            "nodeID": "257069",
+            "text": "Jacky: HOLT : one of you is going to have to bridge a very wide and bitter gap",
+            "type": "L",
+            "timestamp": "2016-12-22 15:20:59"
+        },
+        {
+            "nodeID": "257070",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:20:59",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "257071",
+            "text": "it is hard to heal the divide",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:00"
+        },
+        {
+            "nodeID": "257072",
+            "text": "Jacky: HOLT : how do you heal the divide",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:00"
+        },
+        {
+            "nodeID": "257073",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:21:00",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257074",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:00",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257075",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:00",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "257076",
+            "text": "CLINTON : you're right",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:00"
+        },
+        {
+            "nodeID": "257077",
+            "text": "Jacky: CLINTON : you're right",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:00"
+        },
+        {
+            "nodeID": "257078",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:00",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257079",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:21:01",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257080",
+            "text": "CLINTON : Race remains a significant challenge in our country",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:01"
+        },
+        {
+            "nodeID": "257081",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:01",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257082",
+            "text": "Race remains a significant challenge in our country",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:01"
+        },
+        {
+            "nodeID": "257083",
+            "text": "Jacky: CLINTON : Race remains a significant challenge in our country",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:01"
+        },
+        {
+            "nodeID": "257084",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:01",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257085",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-12-22 15:21:01",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "257086",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:01",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257087",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:01",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "257088",
+            "text": "CLINTON : Unfortunately, race still determines too much",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:02"
+        },
+        {
+            "nodeID": "257089",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:02",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257090",
+            "text": "Unfortunately, race still determines too much",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:02"
+        },
+        {
+            "nodeID": "257091",
+            "text": "Jacky: CLINTON : Unfortunately, race still determines too much",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:02"
+        },
+        {
+            "nodeID": "257092",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:02",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257093",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:21:02",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257094",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:02",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "257095",
+            "text": "CLINTON : often determines where people live",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:02"
+        },
+        {
+            "nodeID": "257096",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:03",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257097",
+            "text": "often determines where people live",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:03"
+        },
+        {
+            "nodeID": "257098",
+            "text": "Jacky: CLINTON : often determines where people live",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:03"
+        },
+        {
+            "nodeID": "257099",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:03",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257100",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:21:03",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257101",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:03",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "257102",
+            "text": "CLINTON : determines what kind of education in their public schools they can get,",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:03"
+        },
+        {
+            "nodeID": "257103",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:03",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257104",
+            "text": "determines what kind of education in their public schools they can get,",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:03"
+        },
+        {
+            "nodeID": "257105",
+            "text": "Jacky: CLINTON : determines what kind of education in their public schools they can get,",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:04"
+        },
+        {
+            "nodeID": "257106",
+            "text": "CLINTON : it determines how they're treated in the criminal justice system",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:04"
+        },
+        {
+            "nodeID": "257107",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:04",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257108",
+            "text": "it determines how they're treated in the criminal justice system",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:04"
+        },
+        {
+            "nodeID": "257109",
+            "text": "Jacky: CLINTON : it determines how they're treated in the criminal justice system",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:04"
+        },
+        {
+            "nodeID": "257110",
+            "text": "CLINTON : We've just seen those two tragic examples in both Tulsa and Charlotte",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:04"
+        },
+        {
+            "nodeID": "257111",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:04",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257112",
+            "text": "We've just seen those two tragic examples in both Tulsa and Charlotte",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:04"
+        },
+        {
+            "nodeID": "257113",
+            "text": "Jacky: CLINTON : We've just seen those two tragic examples in both Tulsa and Charlotte",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:04"
+        },
+        {
+            "nodeID": "257114",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:05",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257115",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:21:05",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257116",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:05",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "257117",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:05",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257118",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-12-22 15:21:05",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "257119",
+            "text": "Default Illocuting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:05",
+            "scheme": "Default Illocuting",
+            "schemeID": "168"
+        },
+        {
+            "nodeID": "257120",
+            "text": "CLINTON : we've got to do several things at the same time",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:05"
+        },
+        {
+            "nodeID": "257121",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:05",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257122",
+            "text": "we've got to do several things at the same time",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:06"
+        },
+        {
+            "nodeID": "257123",
+            "text": "Jacky: CLINTON : we've got to do several things at the same time",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:06"
+        },
+        {
+            "nodeID": "257124",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:06",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257125",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:21:06",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257126",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:06",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "257127",
+            "text": "CLINTON : We have to restore trust between communities and the police",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:06"
+        },
+        {
+            "nodeID": "257128",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:06",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257129",
+            "text": "We have to restore trust between communities and the police",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:06"
+        },
+        {
+            "nodeID": "257130",
+            "text": "Jacky: CLINTON : We have to restore trust between communities and the police",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:06"
+        },
+        {
+            "nodeID": "257131",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:07",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257132",
+            "text": "CLINTON : We have to work to make sure that our police are using the best training, the best techniques, that they're well prepared to use force only when necessary",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:07"
+        },
+        {
+            "nodeID": "257133",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:07",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257134",
+            "text": "We have to work to make sure that our police are using the best training, the best techniques, that they're well prepared to use force only when necessary",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:07"
+        },
+        {
+            "nodeID": "257135",
+            "text": "Jacky: CLINTON : We have to work to make sure that our police are using the best training, the best techniques, that they're well prepared to use force only when necessary",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:07"
+        },
+        {
+            "nodeID": "257136",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:07",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257137",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:21:07",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257138",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:07",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "257139",
+            "text": "CLINTON : Everyone should be respected by the law, and everyone should respect the law",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:08"
+        },
+        {
+            "nodeID": "257140",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:08",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257141",
+            "text": "Everyone should be respected by the law, and everyone should respect the law",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:08"
+        },
+        {
+            "nodeID": "257142",
+            "text": "Jacky: CLINTON : Everyone should be respected by the law, and everyone should respect the law",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:08"
+        },
+        {
+            "nodeID": "257143",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:08",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257144",
+            "text": "CLINTON : Right now, that's not the case in a lot of our neighborhoods",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:08"
+        },
+        {
+            "nodeID": "257145",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:08",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257146",
+            "text": "Right now, that's not the case in a lot of our neighborhoods",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:08"
+        },
+        {
+            "nodeID": "257147",
+            "text": "Jacky: CLINTON : Right now, that's not the case in a lot of our neighborhoods",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:08"
+        },
+        {
+            "nodeID": "257148",
+            "text": "CLINTON : I have, ever since the first day of my campaign, called for criminal justice reform",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:09"
+        },
+        {
+            "nodeID": "257149",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:09",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257150",
+            "text": "CLINTON has, ever since the first day of CLINTON's campaign, called for criminal justice reform",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:09"
+        },
+        {
+            "nodeID": "257151",
+            "text": "Jacky: CLINTON : I have, ever since the first day of my campaign, called for criminal justice reform",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:09"
+        },
+        {
+            "nodeID": "257152",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:09",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257153",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:21:09",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257154",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:09",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "257155",
+            "text": "CLINTON : I've laid out a platform that I think would begin to remedy some of the problems we have in the criminal justice system",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:09"
+        },
+        {
+            "nodeID": "257156",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:10",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257157",
+            "text": "CLINTON has laid out a platform that would begin to remedy some of the problems we have in the criminal justice system",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:10"
+        },
+        {
+            "nodeID": "257158",
+            "text": "Jacky: CLINTON : I've laid out a platform that I think would begin to remedy some of the problems we have in the criminal justice system",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:10"
+        },
+        {
+            "nodeID": "257159",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:10",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257160",
+            "text": "CLINTON : we also have to recognize, in addition to the challenges that we face with policing, there are so many good, brave police officers who equally want reform",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:10"
+        },
+        {
+            "nodeID": "257161",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:10",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257162",
+            "text": "we also have to recognize, in addition to the challenges that we face with policing, there are so many good, brave police officers who equally want reform",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:10"
+        },
+        {
+            "nodeID": "257163",
+            "text": "Jacky: CLINTON : we also have to recognize, in addition to the challenges that we face with policing, there are so many good, brave police officers who equally want reform",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:10"
+        },
+        {
+            "nodeID": "257164",
+            "text": "CLINTON : we have to bring communities together in order to begin working on that as a mutual goal",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:10"
+        },
+        {
+            "nodeID": "257165",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:11",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257166",
+            "text": "we have to bring communities together in order to begin working on that as a mutual goal",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:11"
+        },
+        {
+            "nodeID": "257167",
+            "text": "Jacky: CLINTON : we have to bring communities together in order to begin working on that as a mutual goal",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:11"
+        },
+        {
+            "nodeID": "257168",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:11",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257169",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:21:11",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257170",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:11",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "257171",
+            "text": "CLINTON : we've got to get guns out of the hands of people who should not have them",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:11"
+        },
+        {
+            "nodeID": "257172",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:11",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257173",
+            "text": "we've got to get guns out of the hands of people who should not have them",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:12"
+        },
+        {
+            "nodeID": "257174",
+            "text": "Jacky: CLINTON : we've got to get guns out of the hands of people who should not have them",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:12"
+        },
+        {
+            "nodeID": "257175",
+            "text": "CLINTON : The gun epidemic is the leading cause of death of young African- American men, more than the next nine causes put together",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:12"
+        },
+        {
+            "nodeID": "257176",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:12",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257177",
+            "text": "The gun epidemic is the leading cause of death of young African- American men, more than the next nine causes put together",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:12"
+        },
+        {
+            "nodeID": "257178",
+            "text": "Jacky: CLINTON : The gun epidemic is the leading cause of death of young African- American men, more than the next nine causes put together",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:12"
+        },
+        {
+            "nodeID": "257179",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:21:12",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257180",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:12",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257181",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:12",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "257182",
+            "text": "CLINTON : we have to do two things",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:13"
+        },
+        {
+            "nodeID": "257183",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:13",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257184",
+            "text": "we have to do two things",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:13"
+        },
+        {
+            "nodeID": "257185",
+            "text": "Jacky: CLINTON : we have to do two things",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:13"
+        },
+        {
+            "nodeID": "257186",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:13",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257187",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-12-22 15:21:13",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "257188",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:13",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "257189",
+            "text": "CLINTON : We have to restore trust",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:13"
+        },
+        {
+            "nodeID": "257190",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:13",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257191",
+            "text": "We have to restore trust",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:14"
+        },
+        {
+            "nodeID": "257192",
+            "text": "Jacky: CLINTON : We have to restore trust",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:14"
+        },
+        {
+            "nodeID": "257193",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:14",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257194",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:21:14",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257195",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:21:14",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257196",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:14",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "257197",
+            "text": "CLINTON : We have to work with the police",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:14"
+        },
+        {
+            "nodeID": "257198",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:14",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257199",
+            "text": "We have to work with the police",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:15"
+        },
+        {
+            "nodeID": "257200",
+            "text": "Jacky: CLINTON : We have to work with the police",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:15"
+        },
+        {
+            "nodeID": "257201",
+            "text": "CLINTON : We have to make sure they respect the communities and the communities respect them",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:15"
+        },
+        {
+            "nodeID": "257202",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:15",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257203",
+            "text": "We have to make sure they respect the communities and the communities respect them",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:15"
+        },
+        {
+            "nodeID": "257204",
+            "text": "Jacky: CLINTON : We have to make sure they respect the communities and the communities respect them",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:15"
+        },
+        {
+            "nodeID": "257205",
+            "text": "CLINTON : we have to tackle the plague of gun violence",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:15"
+        },
+        {
+            "nodeID": "257206",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:15",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257207",
+            "text": "we have to tackle the plague of gun violence",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:15"
+        },
+        {
+            "nodeID": "257208",
+            "text": "Jacky: CLINTON : we have to tackle the plague of gun violence",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:16"
+        },
+        {
+            "nodeID": "257209",
+            "text": "CLINTON : which is a big contributor to a lot of the problems that we're seeing today",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:16"
+        },
+        {
+            "nodeID": "257210",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:16",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "257211",
+            "text": "which is a big contributor to a lot of the problems that we're seeing today",
+            "type": "I",
+            "timestamp": "2016-12-22 15:21:16"
+        },
+        {
+            "nodeID": "257212",
+            "text": "Jacky: CLINTON : which is a big contributor to a lot of the problems that we're seeing today",
+            "type": "L",
+            "timestamp": "2016-12-22 15:21:16"
+        },
+        {
+            "nodeID": "257213",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:16",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257214",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:21:16",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257215",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:16",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "257216",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:21:17",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257217",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-12-22 15:21:17",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "257218",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:17",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257219",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:17",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257220",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:17",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "257221",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:17",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "257222",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:17",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257223",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-12-22 15:21:17",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "257224",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:18",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "257225",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-12-22 15:21:18",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "257226",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-12-22 15:21:18",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "257227",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-12-22 15:21:18",
+            "scheme": "Restating",
+            "schemeID": "101"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "308432",
+            "fromID": "257045",
+            "toID": "257046",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308433",
+            "fromID": "257044",
+            "toID": "257045",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308434",
+            "fromID": "257049",
+            "toID": "257050",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308435",
+            "fromID": "257048",
+            "toID": "257049",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308436",
+            "fromID": "257044",
+            "toID": "257052",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308437",
+            "fromID": "257052",
+            "toID": "257048",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308438",
+            "fromID": "257050",
+            "toID": "257053",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308439",
+            "fromID": "257053",
+            "toID": "257046",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308440",
+            "fromID": "257052",
+            "toID": "257054",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308441",
+            "fromID": "257054",
+            "toID": "257053",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308442",
+            "fromID": "257056",
+            "toID": "257057",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308443",
+            "fromID": "257055",
+            "toID": "257056",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308444",
+            "fromID": "257048",
+            "toID": "257059",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308445",
+            "fromID": "257059",
+            "toID": "257055",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308446",
+            "fromID": "257057",
+            "toID": "257060",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308447",
+            "fromID": "257060",
+            "toID": "257050",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308448",
+            "fromID": "257059",
+            "toID": "257061",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308449",
+            "fromID": "257061",
+            "toID": "257060",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308450",
+            "fromID": "257063",
+            "toID": "257064",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308451",
+            "fromID": "257062",
+            "toID": "257063",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308452",
+            "fromID": "257067",
+            "toID": "257068",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308453",
+            "fromID": "257066",
+            "toID": "257067",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308454",
+            "fromID": "257070",
+            "toID": "257071",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308455",
+            "fromID": "254195",
+            "toID": "257070",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308456",
+            "fromID": "257068",
+            "toID": "257073",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308457",
+            "fromID": "257073",
+            "toID": "257071",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308458",
+            "fromID": "257064",
+            "toID": "257073",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308459",
+            "fromID": "257066",
+            "toID": "257074",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308460",
+            "fromID": "257074",
+            "toID": "254195",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308461",
+            "fromID": "257062",
+            "toID": "257074",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308462",
+            "fromID": "257074",
+            "toID": "257075",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308463",
+            "fromID": "257075",
+            "toID": "257073",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308464",
+            "fromID": "257046",
+            "toID": "257073",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308465",
+            "fromID": "257044",
+            "toID": "257074",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308466",
+            "fromID": "254195",
+            "toID": "257078",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308467",
+            "fromID": "257078",
+            "toID": "257076",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308468",
+            "fromID": "257078",
+            "toID": "257079",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308469",
+            "fromID": "257079",
+            "toID": "257071",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308470",
+            "fromID": "257081",
+            "toID": "257082",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308471",
+            "fromID": "257080",
+            "toID": "257081",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308472",
+            "fromID": "257076",
+            "toID": "257084",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308473",
+            "fromID": "257084",
+            "toID": "257080",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308474",
+            "fromID": "257082",
+            "toID": "257085",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308475",
+            "fromID": "257085",
+            "toID": "257046",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308476",
+            "fromID": "257044",
+            "toID": "257086",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308477",
+            "fromID": "257086",
+            "toID": "257080",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308478",
+            "fromID": "257086",
+            "toID": "257087",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308479",
+            "fromID": "257087",
+            "toID": "257085",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308480",
+            "fromID": "257089",
+            "toID": "257090",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308481",
+            "fromID": "257088",
+            "toID": "257089",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308482",
+            "fromID": "257080",
+            "toID": "257092",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308483",
+            "fromID": "257092",
+            "toID": "257088",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308484",
+            "fromID": "257090",
+            "toID": "257093",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308485",
+            "fromID": "257093",
+            "toID": "257082",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308486",
+            "fromID": "257092",
+            "toID": "257094",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308487",
+            "fromID": "257094",
+            "toID": "257093",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308488",
+            "fromID": "257096",
+            "toID": "257097",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308489",
+            "fromID": "257095",
+            "toID": "257096",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308490",
+            "fromID": "257088",
+            "toID": "257099",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308491",
+            "fromID": "257099",
+            "toID": "257095",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308492",
+            "fromID": "257097",
+            "toID": "257100",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308493",
+            "fromID": "257100",
+            "toID": "257090",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308494",
+            "fromID": "257099",
+            "toID": "257101",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308495",
+            "fromID": "257101",
+            "toID": "257100",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308496",
+            "fromID": "257103",
+            "toID": "257104",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308497",
+            "fromID": "257102",
+            "toID": "257103",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308498",
+            "fromID": "257099",
+            "toID": "257102",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308499",
+            "fromID": "257104",
+            "toID": "257100",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308500",
+            "fromID": "257107",
+            "toID": "257108",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308501",
+            "fromID": "257106",
+            "toID": "257107",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308502",
+            "fromID": "257099",
+            "toID": "257106",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308503",
+            "fromID": "257108",
+            "toID": "257100",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308504",
+            "fromID": "257111",
+            "toID": "257112",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308505",
+            "fromID": "257110",
+            "toID": "257111",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308506",
+            "fromID": "257106",
+            "toID": "257114",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308507",
+            "fromID": "257114",
+            "toID": "257110",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308508",
+            "fromID": "257112",
+            "toID": "257115",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308509",
+            "fromID": "257115",
+            "toID": "257108",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308510",
+            "fromID": "257114",
+            "toID": "257116",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308511",
+            "fromID": "257116",
+            "toID": "257115",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308512",
+            "fromID": "257055",
+            "toID": "257117",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308513",
+            "fromID": "257117",
+            "toID": "257110",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308514",
+            "fromID": "257112",
+            "toID": "257118",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308515",
+            "fromID": "257118",
+            "toID": "257057",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308516",
+            "fromID": "257117",
+            "toID": "257119",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308517",
+            "fromID": "257119",
+            "toID": "257118",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308518",
+            "fromID": "257121",
+            "toID": "257122",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308519",
+            "fromID": "257120",
+            "toID": "257121",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308520",
+            "fromID": "257080",
+            "toID": "257124",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308521",
+            "fromID": "257124",
+            "toID": "257120",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308522",
+            "fromID": "257082",
+            "toID": "257125",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308523",
+            "fromID": "257125",
+            "toID": "257122",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308524",
+            "fromID": "257124",
+            "toID": "257126",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308525",
+            "fromID": "257126",
+            "toID": "257125",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308526",
+            "fromID": "257128",
+            "toID": "257129",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308527",
+            "fromID": "257127",
+            "toID": "257128",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308528",
+            "fromID": "257120",
+            "toID": "257131",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308529",
+            "fromID": "257131",
+            "toID": "257127",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308530",
+            "fromID": "257133",
+            "toID": "257134",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308531",
+            "fromID": "257132",
+            "toID": "257133",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308532",
+            "fromID": "257127",
+            "toID": "257136",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308533",
+            "fromID": "257136",
+            "toID": "257132",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308534",
+            "fromID": "257129",
+            "toID": "257137",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308535",
+            "fromID": "257137",
+            "toID": "257134",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308536",
+            "fromID": "257136",
+            "toID": "257138",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308537",
+            "fromID": "257138",
+            "toID": "257137",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308538",
+            "fromID": "257140",
+            "toID": "257141",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308539",
+            "fromID": "257139",
+            "toID": "257140",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308540",
+            "fromID": "257132",
+            "toID": "257143",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308541",
+            "fromID": "257143",
+            "toID": "257139",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308542",
+            "fromID": "257145",
+            "toID": "257146",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308543",
+            "fromID": "257144",
+            "toID": "257145",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308544",
+            "fromID": "257149",
+            "toID": "257150",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308545",
+            "fromID": "257148",
+            "toID": "257149",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308546",
+            "fromID": "257144",
+            "toID": "257152",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308547",
+            "fromID": "257152",
+            "toID": "257148",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308548",
+            "fromID": "257139",
+            "toID": "257152",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308549",
+            "fromID": "257141",
+            "toID": "257153",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308550",
+            "fromID": "257153",
+            "toID": "257150",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308551",
+            "fromID": "257146",
+            "toID": "257153",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308552",
+            "fromID": "257152",
+            "toID": "257154",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308553",
+            "fromID": "257154",
+            "toID": "257153",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308554",
+            "fromID": "257156",
+            "toID": "257157",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308555",
+            "fromID": "257155",
+            "toID": "257156",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308556",
+            "fromID": "257148",
+            "toID": "257159",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308557",
+            "fromID": "257159",
+            "toID": "257155",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308558",
+            "fromID": "257161",
+            "toID": "257162",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308559",
+            "fromID": "257160",
+            "toID": "257161",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308560",
+            "fromID": "257165",
+            "toID": "257166",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308561",
+            "fromID": "257164",
+            "toID": "257165",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308562",
+            "fromID": "257160",
+            "toID": "257168",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308563",
+            "fromID": "257168",
+            "toID": "257164",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308564",
+            "fromID": "257162",
+            "toID": "257169",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308565",
+            "fromID": "257169",
+            "toID": "257166",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308566",
+            "fromID": "257155",
+            "toID": "257168",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308567",
+            "fromID": "257157",
+            "toID": "257169",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308568",
+            "fromID": "257168",
+            "toID": "257170",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308569",
+            "fromID": "257170",
+            "toID": "257169",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308570",
+            "fromID": "257172",
+            "toID": "257173",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308571",
+            "fromID": "257171",
+            "toID": "257172",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308572",
+            "fromID": "257176",
+            "toID": "257177",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308573",
+            "fromID": "257175",
+            "toID": "257176",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308574",
+            "fromID": "257177",
+            "toID": "257179",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308575",
+            "fromID": "257179",
+            "toID": "257173",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308576",
+            "fromID": "257171",
+            "toID": "257180",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308577",
+            "fromID": "257180",
+            "toID": "257175",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308578",
+            "fromID": "257180",
+            "toID": "257181",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308579",
+            "fromID": "257181",
+            "toID": "257179",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308580",
+            "fromID": "257183",
+            "toID": "257184",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308581",
+            "fromID": "257182",
+            "toID": "257183",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308582",
+            "fromID": "257120",
+            "toID": "257186",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308583",
+            "fromID": "257186",
+            "toID": "257182",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308584",
+            "fromID": "257184",
+            "toID": "257187",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308585",
+            "fromID": "257187",
+            "toID": "257122",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308586",
+            "fromID": "257186",
+            "toID": "257188",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308587",
+            "fromID": "257188",
+            "toID": "257187",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308588",
+            "fromID": "257190",
+            "toID": "257191",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308589",
+            "fromID": "257189",
+            "toID": "257190",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308590",
+            "fromID": "257182",
+            "toID": "257193",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308591",
+            "fromID": "257193",
+            "toID": "257189",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308592",
+            "fromID": "257191",
+            "toID": "257194",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308593",
+            "fromID": "257194",
+            "toID": "257184",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308594",
+            "fromID": "257129",
+            "toID": "257195",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308595",
+            "fromID": "257195",
+            "toID": "257122",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308596",
+            "fromID": "257131",
+            "toID": "257196",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308597",
+            "fromID": "257196",
+            "toID": "257195",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308598",
+            "fromID": "257131",
+            "toID": "257171",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308599",
+            "fromID": "257173",
+            "toID": "257195",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308600",
+            "fromID": "257198",
+            "toID": "257199",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308601",
+            "fromID": "257197",
+            "toID": "257198",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308602",
+            "fromID": "257202",
+            "toID": "257203",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308603",
+            "fromID": "257201",
+            "toID": "257202",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308604",
+            "fromID": "257206",
+            "toID": "257207",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308605",
+            "fromID": "257205",
+            "toID": "257206",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308606",
+            "fromID": "257210",
+            "toID": "257211",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308607",
+            "fromID": "257209",
+            "toID": "257210",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308608",
+            "fromID": "257205",
+            "toID": "257213",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308609",
+            "fromID": "257213",
+            "toID": "257209",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308610",
+            "fromID": "257211",
+            "toID": "257214",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308611",
+            "fromID": "257214",
+            "toID": "257207",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308612",
+            "fromID": "257213",
+            "toID": "257215",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308613",
+            "fromID": "257215",
+            "toID": "257214",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308614",
+            "fromID": "257207",
+            "toID": "257194",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308615",
+            "fromID": "257193",
+            "toID": "257205",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308616",
+            "fromID": "257191",
+            "toID": "257216",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308617",
+            "fromID": "257216",
+            "toID": "257199",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308618",
+            "fromID": "257191",
+            "toID": "257217",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308619",
+            "fromID": "257217",
+            "toID": "257203",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308620",
+            "fromID": "257189",
+            "toID": "257218",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308621",
+            "fromID": "257218",
+            "toID": "257201",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308622",
+            "fromID": "257189",
+            "toID": "257219",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308623",
+            "fromID": "257219",
+            "toID": "257197",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308624",
+            "fromID": "257219",
+            "toID": "257220",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308625",
+            "fromID": "257220",
+            "toID": "257216",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308626",
+            "fromID": "257218",
+            "toID": "257221",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308627",
+            "fromID": "257221",
+            "toID": "257217",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308628",
+            "fromID": "257127",
+            "toID": "257222",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308629",
+            "fromID": "257222",
+            "toID": "257189",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308630",
+            "fromID": "257191",
+            "toID": "257223",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308631",
+            "fromID": "257223",
+            "toID": "257129",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308632",
+            "fromID": "257222",
+            "toID": "257224",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308633",
+            "fromID": "257224",
+            "toID": "257223",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308634",
+            "fromID": "257139",
+            "toID": "257225",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308635",
+            "fromID": "257225",
+            "toID": "257201",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308636",
+            "fromID": "257203",
+            "toID": "257226",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308637",
+            "fromID": "257226",
+            "toID": "257141",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308638",
+            "fromID": "257225",
+            "toID": "257227",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "308639",
+            "fromID": "257227",
+            "toID": "257226",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

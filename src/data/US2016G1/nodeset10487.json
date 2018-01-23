@@ -1,0 +1,607 @@
+{
+    "nodes": [
+        {
+            "nodeID": "224960",
+            "text": "lavenuma : trump mentioned mexico",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:33"
+        },
+        {
+            "nodeID": "224961",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:06:33",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224962",
+            "text": "TRUMP mentioned Mexico",
+            "type": "I",
+            "timestamp": "2016-11-06 12:06:33"
+        },
+        {
+            "nodeID": "224963",
+            "text": "Barbara: lavenuma : trump mentioned mexico",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:33"
+        },
+        {
+            "nodeID": "224964",
+            "text": "lavenuma : everybody drink",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:33"
+        },
+        {
+            "nodeID": "224965",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:06:33",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224966",
+            "text": "everybody drink",
+            "type": "I",
+            "timestamp": "2016-11-06 12:06:33"
+        },
+        {
+            "nodeID": "224967",
+            "text": "Barbara: lavenuma : everybody drink",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:33"
+        },
+        {
+            "nodeID": "224968",
+            "text": "neecho235 :  If this is a rule, we're all getting wasted",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:33"
+        },
+        {
+            "nodeID": "224969",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:06:34",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224970",
+            "text": "if this is a rule, we're all getting wasted",
+            "type": "I",
+            "timestamp": "2016-11-06 12:06:34"
+        },
+        {
+            "nodeID": "224971",
+            "text": "Barbara: neecho235 :  If this is a rule, we're all getting wasted",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:34"
+        },
+        {
+            "nodeID": "224972",
+            "text": "Airway : Already wasted from the all the China",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:34"
+        },
+        {
+            "nodeID": "224973",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:06:34",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224974",
+            "text": "already wasted from the all the China",
+            "type": "I",
+            "timestamp": "2016-11-06 12:06:34"
+        },
+        {
+            "nodeID": "224975",
+            "text": "Barbara: Airway : Already wasted from the all the China",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:34"
+        },
+        {
+            "nodeID": "224976",
+            "text": "coolerthanabagof : I stopped drinking for good",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:34"
+        },
+        {
+            "nodeID": "224977",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:06:34",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224978",
+            "text": "I stopped drinking for good",
+            "type": "I",
+            "timestamp": "2016-11-06 12:06:34"
+        },
+        {
+            "nodeID": "224979",
+            "text": "Barbara: coolerthanabagof :  stopped drinking for good",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:34"
+        },
+        {
+            "nodeID": "224980",
+            "text": "I now drink for evil",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:35"
+        },
+        {
+            "nodeID": "224981",
+            "text": "coolerthanabagof :  I now drink for evil",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:35"
+        },
+        {
+            "nodeID": "224982",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:06:35",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224983",
+            "text": "Barbara: coolerthanabagof : coolerthanabagof",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:35"
+        },
+        {
+            "nodeID": "224984",
+            "text": "sawmyoldgirlfriend : Tequila",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:35"
+        },
+        {
+            "nodeID": "224985",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:06:35",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "224986",
+            "text": "drink Tequila",
+            "type": "I",
+            "timestamp": "2016-11-06 12:06:35"
+        },
+        {
+            "nodeID": "224987",
+            "text": "Barbara: sawmyoldgirlfriend : Tequila",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:35"
+        },
+        {
+            "nodeID": "224988",
+            "text": "sawmyoldgirlfriend : cyanide",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:35"
+        },
+        {
+            "nodeID": "224989",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:06:35",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "224990",
+            "text": "drink cyanide",
+            "type": "I",
+            "timestamp": "2016-11-06 12:06:36"
+        },
+        {
+            "nodeID": "224991",
+            "text": "Barbara: sawmyoldgirlfriend : cyanide",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:36"
+        },
+        {
+            "nodeID": "224992",
+            "text": "BrainDeadNeoCon : I did tbe math",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:36"
+        },
+        {
+            "nodeID": "224993",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:06:36",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224994",
+            "text": "I did the math",
+            "type": "I",
+            "timestamp": "2016-11-06 12:06:36"
+        },
+        {
+            "nodeID": "224995",
+            "text": "Barbara: BrainDeadNeoCon : I did tbe math",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:36"
+        },
+        {
+            "nodeID": "224996",
+            "text": "BrainDeadNeoCon : There was no format for a drinking game that didn't end with me in the hospital",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:36"
+        },
+        {
+            "nodeID": "224997",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:06:36",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224998",
+            "text": "there was no format for a drinking game that didn't end with me in the hospital",
+            "type": "I",
+            "timestamp": "2016-11-06 12:06:36"
+        },
+        {
+            "nodeID": "224999",
+            "text": "Barbara: BrainDeadNeoCon : There was no format for a drinking game that didn't end with me in the hospital",
+            "type": "L",
+            "timestamp": "2016-11-06 12:06:36"
+        },
+        {
+            "nodeID": "225000",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-06 12:06:37",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "225001",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 12:06:37",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225002",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-06 12:06:37",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "225003",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 12:06:37",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225004",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 12:06:37",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225005",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 12:06:37",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225006",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 12:06:37",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225007",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 12:06:37",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225008",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 12:06:37",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225009",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 12:06:38",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225010",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 12:06:38",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "272191",
+            "fromID": "224961",
+            "toID": "224962",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272192",
+            "fromID": "224960",
+            "toID": "224961",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272193",
+            "fromID": "224965",
+            "toID": "224966",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272194",
+            "fromID": "224964",
+            "toID": "224965",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272195",
+            "fromID": "224969",
+            "toID": "224970",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272196",
+            "fromID": "224968",
+            "toID": "224969",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272197",
+            "fromID": "224973",
+            "toID": "224974",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272198",
+            "fromID": "224972",
+            "toID": "224973",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272199",
+            "fromID": "224977",
+            "toID": "224978",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272200",
+            "fromID": "224976",
+            "toID": "224977",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272201",
+            "fromID": "224982",
+            "toID": "224980",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272202",
+            "fromID": "224981",
+            "toID": "224982",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272203",
+            "fromID": "224985",
+            "toID": "224986",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272204",
+            "fromID": "224984",
+            "toID": "224985",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272205",
+            "fromID": "224989",
+            "toID": "224990",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272206",
+            "fromID": "224988",
+            "toID": "224989",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272207",
+            "fromID": "224993",
+            "toID": "224994",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272208",
+            "fromID": "224992",
+            "toID": "224993",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272209",
+            "fromID": "224997",
+            "toID": "224998",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272210",
+            "fromID": "224996",
+            "toID": "224997",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272211",
+            "fromID": "224962",
+            "toID": "225000",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272212",
+            "fromID": "225000",
+            "toID": "224966",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272213",
+            "fromID": "224960",
+            "toID": "225001",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272214",
+            "fromID": "225001",
+            "toID": "224964",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272215",
+            "fromID": "225001",
+            "toID": "225002",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272216",
+            "fromID": "225002",
+            "toID": "225000",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272217",
+            "fromID": "224964",
+            "toID": "225003",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272218",
+            "fromID": "225003",
+            "toID": "224968",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272219",
+            "fromID": "224968",
+            "toID": "225004",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272220",
+            "fromID": "225004",
+            "toID": "224972",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272221",
+            "fromID": "224972",
+            "toID": "225005",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272222",
+            "fromID": "225005",
+            "toID": "224976",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272223",
+            "fromID": "225006",
+            "toID": "224981",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272224",
+            "fromID": "224976",
+            "toID": "225006",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272225",
+            "fromID": "224981",
+            "toID": "225007",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272226",
+            "fromID": "225007",
+            "toID": "224984",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272227",
+            "fromID": "224984",
+            "toID": "225008",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272228",
+            "fromID": "225008",
+            "toID": "224988",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272229",
+            "fromID": "224988",
+            "toID": "225009",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272230",
+            "fromID": "225009",
+            "toID": "224992",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272231",
+            "fromID": "224992",
+            "toID": "225010",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272232",
+            "fromID": "225010",
+            "toID": "224996",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

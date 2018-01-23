@@ -1,0 +1,1239 @@
+{
+    "nodes": [
+        {
+            "nodeID": "228463",
+            "text": "jjmicallef1 : Why does Hillary Clinton wear red for Republican",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:42"
+        },
+        {
+            "nodeID": "228464",
+            "text": "Assertive Challenging",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:42",
+            "scheme": "AssertiveChallenging",
+            "schemeID": "87"
+        },
+        {
+            "nodeID": "228465",
+            "text": "CLINTON wears red for Republican",
+            "type": "I",
+            "timestamp": "2016-11-08 14:07:42"
+        },
+        {
+            "nodeID": "228466",
+            "text": "Barbara: jjmicallef1 : Why does Hillary Clinton wear red for Republican",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:42"
+        },
+        {
+            "nodeID": "228467",
+            "text": "Scary : Same reason Trump is wearing blue I suppose",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:42"
+        },
+        {
+            "nodeID": "228468",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:42",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228469",
+            "text": "same reason Trump is wearing blue I suppose",
+            "type": "I",
+            "timestamp": "2016-11-08 14:07:42"
+        },
+        {
+            "nodeID": "228470",
+            "text": "Barbara: Scary : Same reason Trump is wearing blue I suppose",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:42"
+        },
+        {
+            "nodeID": "228471",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 14:07:42",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "228472",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:07:42",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228473",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:43",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "228474",
+            "text": "HollandGW215 : That hasn't been a thing for like....20 years",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:43"
+        },
+        {
+            "nodeID": "228475",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:43",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228476",
+            "text": "that hasn't been a thing for like....20 years",
+            "type": "I",
+            "timestamp": "2016-11-08 14:07:43"
+        },
+        {
+            "nodeID": "228477",
+            "text": "Barbara: HollandGW215 : That hasn't been a thing for like....20 years",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:43"
+        },
+        {
+            "nodeID": "228478",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 14:07:43",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "228479",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:07:43",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228480",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:43",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "228481",
+            "text": "HollandGW215 : He is wearing a blue tie",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:43"
+        },
+        {
+            "nodeID": "228482",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:44",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228483",
+            "text": "TRUMP is wearing a blue tie",
+            "type": "I",
+            "timestamp": "2016-11-08 14:07:44"
+        },
+        {
+            "nodeID": "228484",
+            "text": "Barbara: HollandGW215 : He is wearing a blue tie",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:44"
+        },
+        {
+            "nodeID": "228485",
+            "text": "HollandGW215 : It doesn't matter",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:44"
+        },
+        {
+            "nodeID": "228486",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:44",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228487",
+            "text": "It doesn't matter",
+            "type": "I",
+            "timestamp": "2016-11-08 14:07:44"
+        },
+        {
+            "nodeID": "228488",
+            "text": "Barbara: HollandGW215 : It doesn't matter",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:44"
+        },
+        {
+            "nodeID": "228489",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 14:07:44",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "228490",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:07:44",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228491",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:44",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "228492",
+            "text": "RickytheFreak : LumaNoddy confirmed",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:45"
+        },
+        {
+            "nodeID": "228493",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:45",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228494",
+            "text": "LumaNoddy confirmed",
+            "type": "I",
+            "timestamp": "2016-11-08 14:07:45"
+        },
+        {
+            "nodeID": "228495",
+            "text": "Barbara: RickytheFreak : LumaNoddy confirmed",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:45"
+        },
+        {
+            "nodeID": "228496",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:07:45",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228497",
+            "text": "Barbara: gioraffe32 : o ones beholden to these things",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:45"
+        },
+        {
+            "nodeID": "228498",
+            "text": "gioraffe32 : Over the years, you see people wear whatever color",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:45"
+        },
+        {
+            "nodeID": "228499",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:45",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228500",
+            "text": "over the years, you see people wear whatever color",
+            "type": "I",
+            "timestamp": "2016-11-08 14:07:45"
+        },
+        {
+            "nodeID": "228501",
+            "text": "Barbara: gioraffe32 : Over the years, you see people wear whatever colo",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:45"
+        },
+        {
+            "nodeID": "228502",
+            "text": "gioraffe32 :  it'd be tacky if our politicians held to the color division thing strongly",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:46"
+        },
+        {
+            "nodeID": "228503",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:46",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228504",
+            "text": "it'd be tacky if our politicians held to the color division thing strongly",
+            "type": "I",
+            "timestamp": "2016-11-08 14:07:46"
+        },
+        {
+            "nodeID": "228505",
+            "text": "Barbara: gioraffe32 :  it'd be tacky if our politicians held to the color division thing strongly",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:46"
+        },
+        {
+            "nodeID": "228506",
+            "text": "gioraffe32 : Last thing we need is a Thai yellow\/red shirt thing going on",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:46"
+        },
+        {
+            "nodeID": "228507",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:46",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228508",
+            "text": "last thing we need is a Thai yellow\/red shirt thing going on",
+            "type": "I",
+            "timestamp": "2016-11-08 14:07:46"
+        },
+        {
+            "nodeID": "228509",
+            "text": "Barbara: gioraffe32 : Last thing we need is a Thai yellow\/red shirt thing going on",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:46"
+        },
+        {
+            "nodeID": "228510",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 14:07:46",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "228511",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:07:46",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228512",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:47",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "228513",
+            "text": "gioraffe32 : no ones beholden to these things",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:47"
+        },
+        {
+            "nodeID": "228514",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:47",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228515",
+            "text": "no one is beholden to these things",
+            "type": "I",
+            "timestamp": "2016-11-08 14:07:47"
+        },
+        {
+            "nodeID": "228516",
+            "text": "Barbara: gioraffe32 : no ones beholden to these things",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:47"
+        },
+        {
+            "nodeID": "228517",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 14:07:47",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "228518",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:07:47",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228519",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:47",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "228520",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:07:47",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228521",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-08 14:07:47",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "228522",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:48",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "228523",
+            "text": "TheMastersSkywalker : Red is the power colour",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:48"
+        },
+        {
+            "nodeID": "228524",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:48",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228525",
+            "text": "red is the power colour",
+            "type": "I",
+            "timestamp": "2016-11-08 14:07:48"
+        },
+        {
+            "nodeID": "228526",
+            "text": "Barbara: TheMastersSkywalker : Red is the power colour",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:48"
+        },
+        {
+            "nodeID": "228527",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 14:07:48",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "228528",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:07:48",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228529",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:48",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "228530",
+            "text": "TheMastersSkywalker : It symbolizes power, passions, confidence, etc",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:48"
+        },
+        {
+            "nodeID": "228531",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:48",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228532",
+            "text": "red symbolizes power, passions, confidence, etc",
+            "type": "I",
+            "timestamp": "2016-11-08 14:07:49"
+        },
+        {
+            "nodeID": "228533",
+            "text": "Barbara: TheMastersSkywalker : It symbolizes power, passions, confidence, etc",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:49"
+        },
+        {
+            "nodeID": "228534",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 14:07:49",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "228535",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:07:49",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228536",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:49",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "228537",
+            "text": "Man_On-The_Moon : Trump is wearing blue",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:49"
+        },
+        {
+            "nodeID": "228538",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:49",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228539",
+            "text": "TRUMP is wearing blue",
+            "type": "I",
+            "timestamp": "2016-11-08 14:07:49"
+        },
+        {
+            "nodeID": "228540",
+            "text": "Barbara: Man_On-The_Moon : Trump is wearing blue",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:49"
+        },
+        {
+            "nodeID": "228541",
+            "text": "Man_On-The_Moon : it's weird",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:49"
+        },
+        {
+            "nodeID": "228542",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:50",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228543",
+            "text": "it's weird",
+            "type": "I",
+            "timestamp": "2016-11-08 14:07:50"
+        },
+        {
+            "nodeID": "228544",
+            "text": "Barbara: Man_On-The_Moon : it's weird",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:50"
+        },
+        {
+            "nodeID": "228545",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 14:07:50",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "228546",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:07:50",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228547",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:50",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "228548",
+            "text": "LordPennyfarthington : She was and is one",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:50"
+        },
+        {
+            "nodeID": "228549",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:50",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228550",
+            "text": "CLINTON was and is a Republican",
+            "type": "I",
+            "timestamp": "2016-11-08 14:07:50"
+        },
+        {
+            "nodeID": "228551",
+            "text": "Barbara: LordPennyfarthington : She was and is one",
+            "type": "L",
+            "timestamp": "2016-11-08 14:07:50"
+        },
+        {
+            "nodeID": "228552",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 14:07:51",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228553",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 14:07:51",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "228554",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 14:07:51",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "276041",
+            "fromID": "228464",
+            "toID": "228465",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276042",
+            "fromID": "228463",
+            "toID": "228464",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276043",
+            "fromID": "228468",
+            "toID": "228469",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276044",
+            "fromID": "228467",
+            "toID": "228468",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276045",
+            "fromID": "228469",
+            "toID": "228471",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276046",
+            "fromID": "228471",
+            "toID": "228465",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276047",
+            "fromID": "228463",
+            "toID": "228472",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276048",
+            "fromID": "228472",
+            "toID": "228467",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276049",
+            "fromID": "228472",
+            "toID": "228473",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276050",
+            "fromID": "228473",
+            "toID": "228471",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276051",
+            "fromID": "228475",
+            "toID": "228476",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276052",
+            "fromID": "228474",
+            "toID": "228475",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276053",
+            "fromID": "228476",
+            "toID": "228478",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276054",
+            "fromID": "228478",
+            "toID": "228465",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276055",
+            "fromID": "228463",
+            "toID": "228479",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276056",
+            "fromID": "228479",
+            "toID": "228474",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276057",
+            "fromID": "228479",
+            "toID": "228480",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276058",
+            "fromID": "228480",
+            "toID": "228478",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276059",
+            "fromID": "228482",
+            "toID": "228483",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276060",
+            "fromID": "228481",
+            "toID": "228482",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276061",
+            "fromID": "228486",
+            "toID": "228487",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276062",
+            "fromID": "228485",
+            "toID": "228486",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276063",
+            "fromID": "228476",
+            "toID": "228489",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276064",
+            "fromID": "228489",
+            "toID": "228487",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276065",
+            "fromID": "228483",
+            "toID": "228489",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276066",
+            "fromID": "228474",
+            "toID": "228490",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276067",
+            "fromID": "228490",
+            "toID": "228485",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276068",
+            "fromID": "228481",
+            "toID": "228490",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276069",
+            "fromID": "228490",
+            "toID": "228491",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276070",
+            "fromID": "228491",
+            "toID": "228489",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276071",
+            "fromID": "228493",
+            "toID": "228494",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276072",
+            "fromID": "228492",
+            "toID": "228493",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276073",
+            "fromID": "228485",
+            "toID": "228496",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276074",
+            "fromID": "228496",
+            "toID": "228492",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276075",
+            "fromID": "228499",
+            "toID": "228500",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276076",
+            "fromID": "228498",
+            "toID": "228499",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276077",
+            "fromID": "228503",
+            "toID": "228504",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276078",
+            "fromID": "228502",
+            "toID": "228503",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276079",
+            "fromID": "228507",
+            "toID": "228508",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276080",
+            "fromID": "228506",
+            "toID": "228507",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276081",
+            "fromID": "228508",
+            "toID": "228510",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276082",
+            "fromID": "228510",
+            "toID": "228504",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276083",
+            "fromID": "228502",
+            "toID": "228511",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276084",
+            "fromID": "228511",
+            "toID": "228506",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276085",
+            "fromID": "228511",
+            "toID": "228512",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276086",
+            "fromID": "228512",
+            "toID": "228510",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276087",
+            "fromID": "228514",
+            "toID": "228515",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276088",
+            "fromID": "228513",
+            "toID": "228514",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276089",
+            "fromID": "228504",
+            "toID": "228517",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276090",
+            "fromID": "228517",
+            "toID": "228515",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276091",
+            "fromID": "228500",
+            "toID": "228517",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276092",
+            "fromID": "228513",
+            "toID": "228518",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276093",
+            "fromID": "228518",
+            "toID": "228498",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276094",
+            "fromID": "228518",
+            "toID": "228502",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276095",
+            "fromID": "228518",
+            "toID": "228519",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276096",
+            "fromID": "228519",
+            "toID": "228517",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276097",
+            "fromID": "228474",
+            "toID": "228520",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276098",
+            "fromID": "228520",
+            "toID": "228513",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276099",
+            "fromID": "228515",
+            "toID": "228521",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276100",
+            "fromID": "228521",
+            "toID": "228476",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276101",
+            "fromID": "228520",
+            "toID": "228522",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276102",
+            "fromID": "228522",
+            "toID": "228521",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276103",
+            "fromID": "228524",
+            "toID": "228525",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276104",
+            "fromID": "228523",
+            "toID": "228524",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276105",
+            "fromID": "228525",
+            "toID": "228527",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276106",
+            "fromID": "228527",
+            "toID": "228465",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276107",
+            "fromID": "228463",
+            "toID": "228528",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276108",
+            "fromID": "228528",
+            "toID": "228523",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276109",
+            "fromID": "228528",
+            "toID": "228529",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276110",
+            "fromID": "228529",
+            "toID": "228527",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276111",
+            "fromID": "228531",
+            "toID": "228532",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276112",
+            "fromID": "228530",
+            "toID": "228531",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276113",
+            "fromID": "228532",
+            "toID": "228534",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276114",
+            "fromID": "228534",
+            "toID": "228525",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276115",
+            "fromID": "228523",
+            "toID": "228535",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276116",
+            "fromID": "228535",
+            "toID": "228530",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276117",
+            "fromID": "228535",
+            "toID": "228536",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276118",
+            "fromID": "228536",
+            "toID": "228534",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276119",
+            "fromID": "228538",
+            "toID": "228539",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276120",
+            "fromID": "228537",
+            "toID": "228538",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276121",
+            "fromID": "228542",
+            "toID": "228543",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276122",
+            "fromID": "228541",
+            "toID": "228542",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276123",
+            "fromID": "228465",
+            "toID": "228545",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276124",
+            "fromID": "228545",
+            "toID": "228543",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276125",
+            "fromID": "228539",
+            "toID": "228545",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276126",
+            "fromID": "228463",
+            "toID": "228546",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276127",
+            "fromID": "228546",
+            "toID": "228541",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276128",
+            "fromID": "228537",
+            "toID": "228546",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276129",
+            "fromID": "228546",
+            "toID": "228547",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276130",
+            "fromID": "228547",
+            "toID": "228545",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276131",
+            "fromID": "228549",
+            "toID": "228550",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276132",
+            "fromID": "228548",
+            "toID": "228549",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276133",
+            "fromID": "228463",
+            "toID": "228552",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276134",
+            "fromID": "228552",
+            "toID": "228548",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276135",
+            "fromID": "228550",
+            "toID": "228553",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276136",
+            "fromID": "228553",
+            "toID": "228465",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276137",
+            "fromID": "228552",
+            "toID": "228554",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276138",
+            "fromID": "228554",
+            "toID": "228553",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

@@ -1,0 +1,428 @@
+{
+    "nodes": [
+        {
+            "nodeID": "225642",
+            "text": "pletentious_asshore : He's not answering the question about how to bring jobs back",
+            "type": "L",
+            "timestamp": "2016-11-06 16:43:27"
+        },
+        {
+            "nodeID": "225644",
+            "text": "TRUMP is not answering the question about how to bring jobs back",
+            "type": "I",
+            "timestamp": "2016-11-06 16:43:27"
+        },
+        {
+            "nodeID": "225650",
+            "text": "Solario_ff14 : But he did",
+            "type": "L",
+            "timestamp": "2016-11-06 16:43:28"
+        },
+        {
+            "nodeID": "225652",
+            "text": "TRUMP did answer the question",
+            "type": "I",
+            "timestamp": "2016-11-06 16:43:28"
+        },
+        {
+            "nodeID": "225720",
+            "text": "Listen, we can't let the jobs leave, ok",
+            "type": "I",
+            "timestamp": "2016-11-06 16:43:35"
+        },
+        {
+            "nodeID": "225725",
+            "text": "thewarmpandabear : TRUMP : Listen, we can't let the jobs leave, ok",
+            "type": "L",
+            "timestamp": "2016-11-06 16:43:36"
+        },
+        {
+            "nodeID": "225727",
+            "text": "We're losing jobs like crazy and, I'm telling ya, we can't let them leave",
+            "type": "I",
+            "timestamp": "2016-11-06 16:43:36"
+        },
+        {
+            "nodeID": "225735",
+            "text": "All our jobs. It's about keeping the jobs here",
+            "type": "I",
+            "timestamp": "2016-11-06 16:43:37"
+        },
+        {
+            "nodeID": "225738",
+            "text": "thewarmpandabear : TRUMP : We're losing jobs like crazy and, I'm telling ya, we can't let them leave",
+            "type": "L",
+            "timestamp": "2016-11-06 16:43:37"
+        },
+        {
+            "nodeID": "225747",
+            "text": "thewarmpandabear : TRUMP : All our jobs. It's about keeping the jobs here",
+            "type": "L",
+            "timestamp": "2016-11-06 16:43:38"
+        },
+        {
+            "nodeID": "233284",
+            "text": "TRUMP : the first thing you do is do n't let the jobs leave",
+            "type": "L",
+            "timestamp": "2016-11-09 15:33:20"
+        },
+        {
+            "nodeID": "233286",
+            "text": "the first thing you do is don't let the jobs leave",
+            "type": "I",
+            "timestamp": "2016-11-09 15:33:20"
+        },
+        {
+            "nodeID": "262637",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2017-03-06 12:22:23",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "262638",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-06 12:22:24",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262639",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2017-03-06 12:22:24",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "262640",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2017-03-06 12:22:25",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "262641",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-06 12:22:25",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262642",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2017-03-06 12:22:26",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "262643",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2017-03-06 12:22:26",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "262644",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-06 12:22:27",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262645",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2017-03-06 12:22:27",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "262646",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2017-03-06 12:22:28",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "262647",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-06 12:22:28",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262648",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2017-03-06 12:22:29",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "262649",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-06 12:22:29",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "262650",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-06 12:22:30",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262651",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-06 12:22:30",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "316867",
+            "fromID": "225735",
+            "toID": "262637",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316868",
+            "fromID": "262637",
+            "toID": "233286",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316869",
+            "fromID": "233284",
+            "toID": "262638",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316870",
+            "fromID": "262638",
+            "toID": "225747",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316871",
+            "fromID": "262638",
+            "toID": "262639",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316872",
+            "fromID": "262639",
+            "toID": "262637",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316873",
+            "fromID": "225727",
+            "toID": "262640",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316874",
+            "fromID": "262640",
+            "toID": "233286",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316875",
+            "fromID": "233284",
+            "toID": "262641",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316876",
+            "fromID": "262641",
+            "toID": "225738",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316877",
+            "fromID": "262641",
+            "toID": "262642",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316878",
+            "fromID": "262642",
+            "toID": "262640",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316879",
+            "fromID": "225720",
+            "toID": "262643",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316880",
+            "fromID": "262643",
+            "toID": "233286",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316881",
+            "fromID": "233284",
+            "toID": "262644",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316882",
+            "fromID": "262644",
+            "toID": "225725",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316883",
+            "fromID": "262644",
+            "toID": "262645",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316884",
+            "fromID": "262645",
+            "toID": "262643",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316885",
+            "fromID": "225644",
+            "toID": "262646",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316886",
+            "fromID": "262646",
+            "toID": "233284",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316887",
+            "fromID": "233284",
+            "toID": "262647",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316888",
+            "fromID": "262647",
+            "toID": "225642",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316889",
+            "fromID": "262647",
+            "toID": "262648",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316890",
+            "fromID": "262648",
+            "toID": "262646",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316891",
+            "fromID": "225652",
+            "toID": "262649",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316892",
+            "fromID": "262649",
+            "toID": "233284",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316893",
+            "fromID": "233284",
+            "toID": "262650",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316894",
+            "fromID": "262650",
+            "toID": "225650",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316895",
+            "fromID": "262650",
+            "toID": "262651",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316896",
+            "fromID": "262651",
+            "toID": "262649",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": [
+        {
+            "nodeID": "225725",
+            "personID": "2928",
+            "timestamp": "2016-11-06 16:43:45",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "225738",
+            "personID": "2928",
+            "timestamp": "2016-11-06 16:43:45",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "225747",
+            "personID": "2928",
+            "timestamp": "2016-11-06 16:43:45",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "225725",
+            "personID": "2928",
+            "timestamp": "2016-11-06 16:47:19",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "225738",
+            "personID": "2928",
+            "timestamp": "2016-11-06 16:47:19",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "225747",
+            "personID": "2928",
+            "timestamp": "2016-11-06 16:47:19",
+            "start": null,
+            "end": null,
+            "source": null
+        }
+    ]
+}

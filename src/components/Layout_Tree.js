@@ -29,11 +29,15 @@ class Layout_Tree extends React.Component {
   static propTypes = {
     dispatch: PropTypes.func,
     state: PropTypes.object,
-    onMouseDown:PropTypes.func,
-    onMouseMove:PropTypes.func,
-    onMouseUp:PropTypes.func,
+    //onMouseDown:PropTypes.func,
+    //onMouseMove:PropTypes.func,
+    //onMouseUp:PropTypes.func,
     mainMenu:PropTypes.func,
     elementMenu:PropTypes.func,
+    onTouchStart:PropTypes.func,
+    onTouchMove:PropTypes.func,
+    onTouchEnd:PropTypes.func,
+    onTouchCancel:PropTypes.func,
   };
   
   constructor(props) {
@@ -66,14 +70,18 @@ class Layout_Tree extends React.Component {
   
   renderNodes = (node) => {
     let transform = 'translate(' + node.x + ',' + node.y + ')';
-    let transformLabel = 'translate(' + (node.x + 10) + ',' + (node.y +20) + ')';
+    let transformLabel = 'translate(' + (node.x + 5) + ',' + (node.y +20) + ')';
     return (
       <g key={"group" + node.nodeID}  >
-      <rect ref="node" id={node.nodeID} key={'node' + node.nodeID} width={rectX} height={rectY}
+      <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={rectX} height={rectY}
       fill={color(node.type)} transform={transform} 
-      onMouseDown={(event)=>this.props.onMouseDown(event)} 
-      onMouseMove={(event)=>this.props.onMouseMove(event)} 
-      onMouseUp={(event)=>this.props.onMouseUp(event)} />
+      //onMouseDown={(event)=>this.props.onMouseDown(event)} 
+      //onMouseMove={(event)=>this.props.onMouseMove(event)} 
+      //onMouseUp={(event)=>this.props.onMouseUp(event)} 
+      onTouchStart={(event)=>this.props.onTouchStart(event)}
+      onTouchMove={(event)=>this.props.onTouchMove(event)}
+      onTouchEnd={(event)=>this.props.onTouchEnd(event)}
+      onTouchCancel={(event)=>this.props.onTouchCancel(event)}/>
       <text key={'label' + node.nodeID} transform={transformLabel} >{node.nodeID}</text>
       </g>
     );
@@ -111,9 +119,14 @@ class Layout_Tree extends React.Component {
       width={width}
       height={height}>
       <rect id="main" width={width} height={height} style={{ fill: 'white', pointerEvents: 'fill', strokeWidth: '0' }}
-      onMouseDown={(event)=>this.props.onMouseDown(event)} 
-      onMouseMove={(event)=>this.props.onMouseMove(event)} 
-      onMouseUp={(event)=>this.props.onMouseUp(event)} />
+      //onMouseDown={(event)=>this.props.onMouseDown(event)} 
+      //onMouseMove={(event)=>this.props.onMouseMove(event)} 
+      //onMouseUp={(event)=>this.props.onMouseUp(event)} 
+      
+      onTouchStart={(event)=>this.props.onTouchStart(event)}
+      onTouchMove={(event)=>this.props.onTouchMove(event)}
+      onTouchEnd={(event)=>this.props.onTouchEnd(event)}
+      onTouchCancel={(event)=>this.props.onTouchCancel(event)}/>
       <g>
       {this.props.state.layoutReady && this.props.state.links.map(this.renderLinks)}
       {this.props.state.layoutReady && this.props.state.nodes.map(this.renderNodes)}

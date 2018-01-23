@@ -1,0 +1,633 @@
+{
+    "nodes": [
+        {
+            "nodeID": "225321",
+            "text": "sawmyoldgirlfriend : Trump is sniffing",
+            "type": "L",
+            "timestamp": "2016-11-06 14:49:49"
+        },
+        {
+            "nodeID": "225322",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 14:49:49",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225323",
+            "text": "TRUMP is sniffing",
+            "type": "I",
+            "timestamp": "2016-11-06 14:49:49"
+        },
+        {
+            "nodeID": "225324",
+            "text": "Barbara: sawmyoldgirlfriend : Trump is sniffing",
+            "type": "L",
+            "timestamp": "2016-11-06 14:49:50"
+        },
+        {
+            "nodeID": "225325",
+            "text": "sawmyoldgirlfriend : he must have pneumonia",
+            "type": "L",
+            "timestamp": "2016-11-06 14:49:50"
+        },
+        {
+            "nodeID": "225326",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 14:49:50",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225327",
+            "text": "TRUMP must have pneumonia",
+            "type": "I",
+            "timestamp": "2016-11-06 14:49:50"
+        },
+        {
+            "nodeID": "225328",
+            "text": "Barbara: sawmyoldgirlfriend : he must have pneumonia",
+            "type": "L",
+            "timestamp": "2016-11-06 14:49:50"
+        },
+        {
+            "nodeID": "225329",
+            "text": "hivaSkunk777 : had some coke leftover on his upper lip",
+            "type": "L",
+            "timestamp": "2016-11-06 14:49:50"
+        },
+        {
+            "nodeID": "225330",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 14:49:50",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225331",
+            "text": "TRUMP had some coke leftover on his upper lip",
+            "type": "I",
+            "timestamp": "2016-11-06 14:49:50"
+        },
+        {
+            "nodeID": "225332",
+            "text": "Barbara: hivaSkunk777 : had some coke leftover on his upper lip",
+            "type": "L",
+            "timestamp": "2016-11-06 14:49:50"
+        },
+        {
+            "nodeID": "225333",
+            "text": "Wormhog : Coke",
+            "type": "L",
+            "timestamp": "2016-11-06 14:49:50"
+        },
+        {
+            "nodeID": "225334",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 14:49:51",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225335",
+            "text": "coke",
+            "type": "I",
+            "timestamp": "2016-11-06 14:49:51"
+        },
+        {
+            "nodeID": "225336",
+            "text": "Barbara: Wormhog : Coke",
+            "type": "L",
+            "timestamp": "2016-11-06 14:49:51"
+        },
+        {
+            "nodeID": "225337",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-06 14:49:51",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "225338",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 14:49:51",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225339",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-06 14:49:51",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "225340",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-06 14:49:51",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "225341",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 14:49:51",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225342",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-06 14:49:51",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "225343",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 14:49:51",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225344",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 14:49:52",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "225345",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 14:49:52",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "225346",
+            "text": "HelreaverPennsylvania :  it's seizure like symptoms",
+            "type": "L",
+            "timestamp": "2016-11-06 14:49:52"
+        },
+        {
+            "nodeID": "225347",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 14:49:52",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225348",
+            "text": "TRUMP has seizure like symptoms",
+            "type": "I",
+            "timestamp": "2016-11-06 14:49:52"
+        },
+        {
+            "nodeID": "225349",
+            "text": "Barbara: HelreaverPennsylvania :  it's seizure like symptoms",
+            "type": "L",
+            "timestamp": "2016-11-06 14:49:52"
+        },
+        {
+            "nodeID": "225350",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 14:49:52",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "225351",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 14:49:52",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225352",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 14:49:52",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "225353",
+            "text": "Airway : Look how much water he's drinking",
+            "type": "L",
+            "timestamp": "2016-11-06 14:49:52"
+        },
+        {
+            "nodeID": "225354",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 14:49:53",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225355",
+            "text": "look how much water TRUMP is drinking",
+            "type": "I",
+            "timestamp": "2016-11-06 14:49:53"
+        },
+        {
+            "nodeID": "225356",
+            "text": "Barbara: Airway : Look how much water he's drinking",
+            "type": "L",
+            "timestamp": "2016-11-06 14:49:53"
+        },
+        {
+            "nodeID": "225357",
+            "text": "Airway : Must be ill",
+            "type": "L",
+            "timestamp": "2016-11-06 14:49:53"
+        },
+        {
+            "nodeID": "225358",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 14:49:53",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "225359",
+            "text": "TRUMP must be ill",
+            "type": "I",
+            "timestamp": "2016-11-06 14:49:53"
+        },
+        {
+            "nodeID": "225360",
+            "text": "Barbara: Airway : Must be ill",
+            "type": "L",
+            "timestamp": "2016-11-06 14:49:53"
+        },
+        {
+            "nodeID": "225361",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-06 14:49:53",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "225362",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 14:49:53",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225363",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-06 14:49:54",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "225364",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-06 14:49:54",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "225365",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 14:49:54",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "225366",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-06 14:49:54",
+            "scheme": "Restating",
+            "schemeID": "101"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "272521",
+            "fromID": "225322",
+            "toID": "225323",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272522",
+            "fromID": "225321",
+            "toID": "225322",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272523",
+            "fromID": "225326",
+            "toID": "225327",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272524",
+            "fromID": "225325",
+            "toID": "225326",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272525",
+            "fromID": "225330",
+            "toID": "225331",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272526",
+            "fromID": "225329",
+            "toID": "225330",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272527",
+            "fromID": "225334",
+            "toID": "225335",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272528",
+            "fromID": "225333",
+            "toID": "225334",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272529",
+            "fromID": "225335",
+            "toID": "225337",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272530",
+            "fromID": "225337",
+            "toID": "225331",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272531",
+            "fromID": "225329",
+            "toID": "225338",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272532",
+            "fromID": "225338",
+            "toID": "225333",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272533",
+            "fromID": "225338",
+            "toID": "225339",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272534",
+            "fromID": "225339",
+            "toID": "225337",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272535",
+            "fromID": "225323",
+            "toID": "225340",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272536",
+            "fromID": "225340",
+            "toID": "225327",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272537",
+            "fromID": "225321",
+            "toID": "225341",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272538",
+            "fromID": "225341",
+            "toID": "225325",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272539",
+            "fromID": "225341",
+            "toID": "225342",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272540",
+            "fromID": "225342",
+            "toID": "225340",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272541",
+            "fromID": "225325",
+            "toID": "225343",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272542",
+            "fromID": "225343",
+            "toID": "225329",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272543",
+            "fromID": "225331",
+            "toID": "225344",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272544",
+            "fromID": "225344",
+            "toID": "225327",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272545",
+            "fromID": "225343",
+            "toID": "225345",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272546",
+            "fromID": "225345",
+            "toID": "225344",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272547",
+            "fromID": "225347",
+            "toID": "225348",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272548",
+            "fromID": "225346",
+            "toID": "225347",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272549",
+            "fromID": "225348",
+            "toID": "225350",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272550",
+            "fromID": "225350",
+            "toID": "225327",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272551",
+            "fromID": "225325",
+            "toID": "225351",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272552",
+            "fromID": "225351",
+            "toID": "225346",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272553",
+            "fromID": "225351",
+            "toID": "225352",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272554",
+            "fromID": "225352",
+            "toID": "225350",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272555",
+            "fromID": "225354",
+            "toID": "225355",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272556",
+            "fromID": "225353",
+            "toID": "225354",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272557",
+            "fromID": "225358",
+            "toID": "225359",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272558",
+            "fromID": "225357",
+            "toID": "225358",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272559",
+            "fromID": "225355",
+            "toID": "225361",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272560",
+            "fromID": "225361",
+            "toID": "225359",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272561",
+            "fromID": "225353",
+            "toID": "225362",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272562",
+            "fromID": "225362",
+            "toID": "225357",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272563",
+            "fromID": "225362",
+            "toID": "225363",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272564",
+            "fromID": "225363",
+            "toID": "225361",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272565",
+            "fromID": "225359",
+            "toID": "225364",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272566",
+            "fromID": "225364",
+            "toID": "225327",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272567",
+            "fromID": "225325",
+            "toID": "225365",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272568",
+            "fromID": "225365",
+            "toID": "225357",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272569",
+            "fromID": "225365",
+            "toID": "225366",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272570",
+            "fromID": "225366",
+            "toID": "225364",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

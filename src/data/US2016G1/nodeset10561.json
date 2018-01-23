@@ -1,0 +1,749 @@
+{
+    "nodes": [
+        {
+            "nodeID": "229201",
+            "text": "celtic1888 : Can Trump say 3 sentences without gasping for air",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:41"
+        },
+        {
+            "nodeID": "229202",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:52:42",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "229203",
+            "text": "Trump can't say 3 sentences without gasping for air",
+            "type": "I",
+            "timestamp": "2016-11-08 17:52:42"
+        },
+        {
+            "nodeID": "229204",
+            "text": "Rory: celtic1888 : Can Trump say 3 sentences without gasping for air",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:42"
+        },
+        {
+            "nodeID": "229205",
+            "text": "celtic1888 : COPD sufferer",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:42"
+        },
+        {
+            "nodeID": "229206",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:52:42",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "229207",
+            "text": "TRUMP is a COPD sufferer",
+            "type": "I",
+            "timestamp": "2016-11-08 17:52:42"
+        },
+        {
+            "nodeID": "229208",
+            "text": "Rory: celtic1888 : COPD sufferer",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:42"
+        },
+        {
+            "nodeID": "229209",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:52:42",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "229210",
+            "text": "farcetragedy : he looks very unhealthy",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:42"
+        },
+        {
+            "nodeID": "229211",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:52:42",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "229212",
+            "text": "TRUMP looks very unhealthy",
+            "type": "I",
+            "timestamp": "2016-11-08 17:52:42"
+        },
+        {
+            "nodeID": "229213",
+            "text": "Rory: farcetragedy : he looks very unhealthy",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:43"
+        },
+        {
+            "nodeID": "229214",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:52:43",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "229215",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 17:52:43",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "229216",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:52:43",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "229217",
+            "text": "BeerFarts86 : I stutter",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:43"
+        },
+        {
+            "nodeID": "229218",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:52:43",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "229219",
+            "text": "I stutter",
+            "type": "I",
+            "timestamp": "2016-11-08 17:52:43"
+        },
+        {
+            "nodeID": "229220",
+            "text": "Rory: BeerFarts86 : I stutter",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:43"
+        },
+        {
+            "nodeID": "229221",
+            "text": "BeerFarts86 : Don't judge people based on that shit",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:43"
+        },
+        {
+            "nodeID": "229222",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:52:44",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "229223",
+            "text": "Don't judge people based on that shit",
+            "type": "I",
+            "timestamp": "2016-11-08 17:52:44"
+        },
+        {
+            "nodeID": "229224",
+            "text": "Rory: BeerFarts86 : Don't judge people based on that shit",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:44"
+        },
+        {
+            "nodeID": "229225",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:52:44",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "229226",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 17:52:44",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "229227",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:52:44",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "229228",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:52:44",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "229229",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 17:52:44",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "229230",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:52:44",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "229231",
+            "text": "celtic1888 : That's not a stutter that's a gasp",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:44"
+        },
+        {
+            "nodeID": "229232",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:52:45",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "229233",
+            "text": "That's not a stutter that's a gasp",
+            "type": "I",
+            "timestamp": "2016-11-08 17:52:45"
+        },
+        {
+            "nodeID": "229234",
+            "text": "Rory: celtic1888 : That's not a stutter that's a gasp",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:45"
+        },
+        {
+            "nodeID": "229235",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:52:45",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "229236",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 17:52:45",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "229237",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:52:45",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "229238",
+            "text": "BeerFarts86 : I'm saying that has nothing to do with intelligence, which is what this should be about",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:45"
+        },
+        {
+            "nodeID": "229239",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:52:45",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "229240",
+            "text": "I'm saying that has nothing to do with intelligence, which is what this should be about",
+            "type": "I",
+            "timestamp": "2016-11-08 17:52:45"
+        },
+        {
+            "nodeID": "229241",
+            "text": "Rory: BeerFarts86 : I'm saying that has nothing to do with intelligence, which is what this should be about",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:45"
+        },
+        {
+            "nodeID": "229242",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:52:46",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "229243",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 17:52:46",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "229244",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:52:46",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "229245",
+            "text": "Jyiiga : I haven't seen him nearly faint the past few weeks",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:46"
+        },
+        {
+            "nodeID": "229246",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:52:46",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "229247",
+            "text": "I haven't seen TRUMP nearly faint the past few weeks",
+            "type": "I",
+            "timestamp": "2016-11-08 17:52:46"
+        },
+        {
+            "nodeID": "229248",
+            "text": "Rory: Jyiiga : I haven't seen him nearly faint the past few weeks",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:46"
+        },
+        {
+            "nodeID": "229249",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:52:46",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "229250",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 17:52:46",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "229251",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:52:46",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "229252",
+            "text": "CESmokey : Let's just wait for Hillary to have a seizure or whatever the fucks been happening",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:47"
+        },
+        {
+            "nodeID": "229253",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:52:47",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "229254",
+            "text": "Let's just wait for CLINTON to have a seizure or whatever the fucks been happening",
+            "type": "I",
+            "timestamp": "2016-11-08 17:52:47"
+        },
+        {
+            "nodeID": "229255",
+            "text": "Rory: CESmokey : Let's just wait for Hillary to have a seizure or whatever the fucks been happening",
+            "type": "L",
+            "timestamp": "2016-11-08 17:52:47"
+        },
+        {
+            "nodeID": "229256",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:52:47",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "276993",
+            "fromID": "229202",
+            "toID": "229203",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276994",
+            "fromID": "229201",
+            "toID": "229202",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276995",
+            "fromID": "229206",
+            "toID": "229207",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276996",
+            "fromID": "229205",
+            "toID": "229206",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276997",
+            "fromID": "229201",
+            "toID": "229209",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276998",
+            "fromID": "229209",
+            "toID": "229205",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276999",
+            "fromID": "229211",
+            "toID": "229212",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277000",
+            "fromID": "229210",
+            "toID": "229211",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277001",
+            "fromID": "229205",
+            "toID": "229214",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277002",
+            "fromID": "229214",
+            "toID": "229210",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277003",
+            "fromID": "229212",
+            "toID": "229215",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277004",
+            "fromID": "229215",
+            "toID": "229207",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277005",
+            "fromID": "229214",
+            "toID": "229216",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277006",
+            "fromID": "229216",
+            "toID": "229215",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277007",
+            "fromID": "229218",
+            "toID": "229219",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277008",
+            "fromID": "229217",
+            "toID": "229218",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277009",
+            "fromID": "229222",
+            "toID": "229223",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277010",
+            "fromID": "229221",
+            "toID": "229222",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277011",
+            "fromID": "229205",
+            "toID": "229225",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277012",
+            "fromID": "229225",
+            "toID": "229221",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277013",
+            "fromID": "229223",
+            "toID": "229226",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277014",
+            "fromID": "229226",
+            "toID": "229207",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277015",
+            "fromID": "229225",
+            "toID": "229227",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277016",
+            "fromID": "229227",
+            "toID": "229226",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277017",
+            "fromID": "229217",
+            "toID": "229228",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277018",
+            "fromID": "229228",
+            "toID": "229221",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277019",
+            "fromID": "229219",
+            "toID": "229229",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277020",
+            "fromID": "229229",
+            "toID": "229223",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277021",
+            "fromID": "229228",
+            "toID": "229230",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277022",
+            "fromID": "229230",
+            "toID": "229229",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277023",
+            "fromID": "229232",
+            "toID": "229233",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277024",
+            "fromID": "229231",
+            "toID": "229232",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277025",
+            "fromID": "229217",
+            "toID": "229235",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277026",
+            "fromID": "229235",
+            "toID": "229231",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277027",
+            "fromID": "229233",
+            "toID": "229236",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277028",
+            "fromID": "229236",
+            "toID": "229219",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277029",
+            "fromID": "229235",
+            "toID": "229237",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277030",
+            "fromID": "229237",
+            "toID": "229236",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277031",
+            "fromID": "229239",
+            "toID": "229240",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277032",
+            "fromID": "229238",
+            "toID": "229239",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277033",
+            "fromID": "229221",
+            "toID": "229242",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277034",
+            "fromID": "229242",
+            "toID": "229238",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277035",
+            "fromID": "229240",
+            "toID": "229243",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277036",
+            "fromID": "229243",
+            "toID": "229223",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277037",
+            "fromID": "229242",
+            "toID": "229244",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277038",
+            "fromID": "229244",
+            "toID": "229243",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277039",
+            "fromID": "229246",
+            "toID": "229247",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277040",
+            "fromID": "229245",
+            "toID": "229246",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277041",
+            "fromID": "229205",
+            "toID": "229249",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277042",
+            "fromID": "229249",
+            "toID": "229245",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277043",
+            "fromID": "229247",
+            "toID": "229250",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277044",
+            "fromID": "229250",
+            "toID": "229207",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277045",
+            "fromID": "229249",
+            "toID": "229251",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277046",
+            "fromID": "229251",
+            "toID": "229250",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277047",
+            "fromID": "229253",
+            "toID": "229254",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277048",
+            "fromID": "229252",
+            "toID": "229253",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277049",
+            "fromID": "229205",
+            "toID": "229256",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "277050",
+            "fromID": "229256",
+            "toID": "229252",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

@@ -1,0 +1,834 @@
+{
+    "nodes": [
+        {
+            "nodeID": "228321",
+            "text": "bigly",
+            "type": "I",
+            "timestamp": "2016-11-08 13:27:23"
+        },
+        {
+            "nodeID": "228323",
+            "text": "TRUMP : Bigly",
+            "type": "L",
+            "timestamp": "2016-11-08 13:27:23"
+        },
+        {
+            "nodeID": "228324",
+            "text": "Barbara: TRUMP : Bigly",
+            "type": "L",
+            "timestamp": "2016-11-08 13:27:23"
+        },
+        {
+            "nodeID": "228341",
+            "text": "Barbara: TRUMP : he said big league",
+            "type": "L",
+            "timestamp": "2016-11-08 13:27:25"
+        },
+        {
+            "nodeID": "228346",
+            "text": "TRUMP : Big-league",
+            "type": "L",
+            "timestamp": "2016-11-08 13:27:26"
+        },
+        {
+            "nodeID": "228358",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:39:48",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228359",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:39:48",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228360",
+            "text": "dj_kled : TRUMP : Bigly",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:49"
+        },
+        {
+            "nodeID": "228361",
+            "text": "Barbara: dj_kled : TRUMP : Bigly",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:49"
+        },
+        {
+            "nodeID": "228362",
+            "text": "TRUMP is an illiterate",
+            "type": "I",
+            "timestamp": "2016-11-08 13:39:49"
+        },
+        {
+            "nodeID": "228363",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:39:49",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228364",
+            "text": "dj_kled : he's an illiterate",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:49"
+        },
+        {
+            "nodeID": "228365",
+            "text": "Barbara: dj_kled : he's an illiterate",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:49"
+        },
+        {
+            "nodeID": "228366",
+            "text": "Ad hominem",
+            "type": "CA",
+            "timestamp": "2016-11-08 13:39:49",
+            "scheme": "Ad hominem",
+            "schemeID": "172"
+        },
+        {
+            "nodeID": "228367",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:39:49",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228368",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:39:49",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "228369",
+            "text": "big-league",
+            "type": "I",
+            "timestamp": "2016-11-08 13:39:49"
+        },
+        {
+            "nodeID": "228370",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:39:50",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228371",
+            "text": "Barbara: TRUMP : big-league",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:50"
+        },
+        {
+            "nodeID": "228372",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:39:50",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228373",
+            "text": "recalcitrantJester : TRUMP : big-league",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:50"
+        },
+        {
+            "nodeID": "228374",
+            "text": "Barbara: recalcitrantJester : TRUMP : big-league",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:50"
+        },
+        {
+            "nodeID": "228375",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:39:50",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228376",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 13:39:50",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "228377",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:39:50",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "228378",
+            "text": "you deaf fuck",
+            "type": "I",
+            "timestamp": "2016-11-08 13:39:50"
+        },
+        {
+            "nodeID": "228379",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:39:51",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228380",
+            "text": "recalcitrantJester :  you deaf fuck",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:51"
+        },
+        {
+            "nodeID": "228381",
+            "text": "Barbara: recalcitrantJester :  you deaf fuck",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:51"
+        },
+        {
+            "nodeID": "228382",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:39:51",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228383",
+            "text": "Ad hominem",
+            "type": "CA",
+            "timestamp": "2016-11-08 13:39:51",
+            "scheme": "Ad hominem",
+            "schemeID": "172"
+        },
+        {
+            "nodeID": "228384",
+            "text": "cry more, trumphumper",
+            "type": "I",
+            "timestamp": "2016-11-08 13:39:51"
+        },
+        {
+            "nodeID": "228385",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:39:51",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228386",
+            "text": "dj_kled : Cry more, trumphumper",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:51"
+        },
+        {
+            "nodeID": "228387",
+            "text": "Barbara: dj_kled : Cry more, trumphumper",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:51"
+        },
+        {
+            "nodeID": "228388",
+            "text": "Ad hominem",
+            "type": "CA",
+            "timestamp": "2016-11-08 13:39:51",
+            "scheme": "Ad hominem",
+            "schemeID": "172"
+        },
+        {
+            "nodeID": "228389",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:39:52",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228390",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:39:52",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "228391",
+            "text": "TRUMP : he said Big League",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:52"
+        },
+        {
+            "nodeID": "228392",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:39:52",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228393",
+            "text": "SolaireOfCaestora : TRUMP : he said Big League",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:52"
+        },
+        {
+            "nodeID": "228394",
+            "text": "Barbara: SolaireOfCaestora : TRUMP : he said Big League",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:52"
+        },
+        {
+            "nodeID": "228395",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:39:52",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228396",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:39:52",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228397",
+            "text": "TRUMP said that the second time anyway",
+            "type": "I",
+            "timestamp": "2016-11-08 13:39:52"
+        },
+        {
+            "nodeID": "228398",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:39:53",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228399",
+            "text": "SolaireOfCaestora : He said that the second time anyway",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:53"
+        },
+        {
+            "nodeID": "228400",
+            "text": "Barbara: SolaireOfCaestora : He said that the second time anyway",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:53"
+        },
+        {
+            "nodeID": "228401",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:39:53",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228402",
+            "text": "once TRUMP cleared himself up",
+            "type": "I",
+            "timestamp": "2016-11-08 13:39:53"
+        },
+        {
+            "nodeID": "228403",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:39:53",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228404",
+            "text": "dj_kled : Once he cleared himself up",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:53"
+        },
+        {
+            "nodeID": "228405",
+            "text": "Barbara: dj_kled : Once he cleared himself up",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:53"
+        },
+        {
+            "nodeID": "228406",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:39:53",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228407",
+            "text": "dj_kled : dj_kled : Once he cleared himself up",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:53"
+        },
+        {
+            "nodeID": "228408",
+            "text": "Barbara: dj_kled : dj_kled : Once he cleared himself up",
+            "type": "L",
+            "timestamp": "2016-11-08 13:39:54"
+        },
+        {
+            "nodeID": "228409",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:39:54",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "275937",
+            "fromID": "228358",
+            "toID": "228321",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275938",
+            "fromID": "228323",
+            "toID": "228358",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275939",
+            "fromID": "228359",
+            "toID": "228323",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275940",
+            "fromID": "228360",
+            "toID": "228359",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275941",
+            "fromID": "228363",
+            "toID": "228362",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275942",
+            "fromID": "228364",
+            "toID": "228363",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275943",
+            "fromID": "228362",
+            "toID": "228366",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275944",
+            "fromID": "228366",
+            "toID": "228323",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275945",
+            "fromID": "228360",
+            "toID": "228367",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275946",
+            "fromID": "228367",
+            "toID": "228364",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275947",
+            "fromID": "228367",
+            "toID": "228368",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275948",
+            "fromID": "228368",
+            "toID": "228366",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275949",
+            "fromID": "228370",
+            "toID": "228369",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275950",
+            "fromID": "228346",
+            "toID": "228370",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275951",
+            "fromID": "228372",
+            "toID": "228346",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275952",
+            "fromID": "228373",
+            "toID": "228372",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275953",
+            "fromID": "228360",
+            "toID": "228375",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275954",
+            "fromID": "228375",
+            "toID": "228373",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275955",
+            "fromID": "228369",
+            "toID": "228376",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275956",
+            "fromID": "228376",
+            "toID": "228321",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275957",
+            "fromID": "228375",
+            "toID": "228377",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275958",
+            "fromID": "228377",
+            "toID": "228376",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275959",
+            "fromID": "228379",
+            "toID": "228378",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275960",
+            "fromID": "228380",
+            "toID": "228379",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275961",
+            "fromID": "228364",
+            "toID": "228382",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275962",
+            "fromID": "228382",
+            "toID": "228380",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275963",
+            "fromID": "228378",
+            "toID": "228383",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275964",
+            "fromID": "228383",
+            "toID": "228362",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275965",
+            "fromID": "228385",
+            "toID": "228384",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275966",
+            "fromID": "228386",
+            "toID": "228385",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275967",
+            "fromID": "228384",
+            "toID": "228388",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275968",
+            "fromID": "228388",
+            "toID": "228378",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275969",
+            "fromID": "228380",
+            "toID": "228389",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275970",
+            "fromID": "228389",
+            "toID": "228386",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275971",
+            "fromID": "228389",
+            "toID": "228390",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275972",
+            "fromID": "228390",
+            "toID": "228388",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275973",
+            "fromID": "228392",
+            "toID": "228391",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275974",
+            "fromID": "228393",
+            "toID": "228392",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275975",
+            "fromID": "228391",
+            "toID": "228395",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275976",
+            "fromID": "228395",
+            "toID": "228369",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275977",
+            "fromID": "228373",
+            "toID": "228396",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275978",
+            "fromID": "228396",
+            "toID": "228393",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275979",
+            "fromID": "228398",
+            "toID": "228397",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275980",
+            "fromID": "228399",
+            "toID": "228398",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275981",
+            "fromID": "228393",
+            "toID": "228401",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275982",
+            "fromID": "228401",
+            "toID": "228399",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275983",
+            "fromID": "228403",
+            "toID": "228402",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275984",
+            "fromID": "228404",
+            "toID": "228403",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275985",
+            "fromID": "228406",
+            "toID": "228404",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275986",
+            "fromID": "228407",
+            "toID": "228406",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275987",
+            "fromID": "228399",
+            "toID": "228409",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275988",
+            "fromID": "228409",
+            "toID": "228407",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": [
+        {
+            "nodeID": "228323",
+            "personID": "1602",
+            "timestamp": "2016-11-08 13:27:28",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "228346",
+            "personID": "1602",
+            "timestamp": "2016-11-08 13:27:28",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "228323",
+            "personID": "1602",
+            "timestamp": "2016-11-08 13:39:56",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "228360",
+            "personID": "3034",
+            "timestamp": "2016-11-08 13:39:56",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "228364",
+            "personID": "3034",
+            "timestamp": "2016-11-08 13:39:56",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "228346",
+            "personID": "1602",
+            "timestamp": "2016-11-08 13:39:56",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "228373",
+            "personID": "3035",
+            "timestamp": "2016-11-08 13:39:56",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "228380",
+            "personID": "3035",
+            "timestamp": "2016-11-08 13:39:56",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "228386",
+            "personID": "3034",
+            "timestamp": "2016-11-08 13:39:56",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "228391",
+            "personID": "1602",
+            "timestamp": "2016-11-08 13:39:56",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "228393",
+            "personID": "3036",
+            "timestamp": "2016-11-08 13:39:56",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "228399",
+            "personID": "3036",
+            "timestamp": "2016-11-08 13:39:56",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "228404",
+            "personID": "3034",
+            "timestamp": "2016-11-08 13:39:56",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "228407",
+            "personID": "3034",
+            "timestamp": "2016-11-08 13:39:56",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "228323",
+            "personID": "1602",
+            "timestamp": "2016-11-08 13:52:09",
+            "start": null,
+            "end": null,
+            "source": null
+        }
+    ]
+}

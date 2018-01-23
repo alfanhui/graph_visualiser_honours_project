@@ -1,0 +1,1207 @@
+{
+    "nodes": [
+        {
+            "nodeID": "228904",
+            "text": "p_sweezy : Not sure what Clinton thinks she's going to gain by harping on how racist Trump is",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:27"
+        },
+        {
+            "nodeID": "228905",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:27",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228906",
+            "text": "Not sure what CLINTON thinks CLINTON's going to gain by harping on how racist TRUMP is",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:27"
+        },
+        {
+            "nodeID": "228907",
+            "text": "Rory: p_sweezy : Not sure what Clinton thinks she's going to gain by harping on how racist Trump is",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:28"
+        },
+        {
+            "nodeID": "228908",
+            "text": "p_sweezy : It's not like he was going to have a huge amount of support from the black community anyway",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:28"
+        },
+        {
+            "nodeID": "228909",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:28",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228910",
+            "text": "It's not like TRUMP was going to have a huge amount of support from the black community anyway",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:28"
+        },
+        {
+            "nodeID": "228911",
+            "text": "Rory: p_sweezy : It's not like he was going to have a huge amount of support from the black community anyway",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:28"
+        },
+        {
+            "nodeID": "228912",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:50:28",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228913",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 17:50:28",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "228914",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:28",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "228915",
+            "text": "stupid_rat_creature : Suburban women",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:28"
+        },
+        {
+            "nodeID": "228916",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:28",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228917",
+            "text": "Suburban women",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:29"
+        },
+        {
+            "nodeID": "228918",
+            "text": "Rory: stupid_rat_creature : Suburban women",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:29"
+        },
+        {
+            "nodeID": "228919",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:50:29",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228920",
+            "text": "darwinn_69 : Reminding all the white people he's been trying to win",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:29"
+        },
+        {
+            "nodeID": "228921",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:29",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228922",
+            "text": "Reminding all the white people TRUMP's been trying to win",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:29"
+        },
+        {
+            "nodeID": "228923",
+            "text": "Rory: darwinn_69 : Reminding all the white people he's been trying to win",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:29"
+        },
+        {
+            "nodeID": "228924",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:50:29",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228925",
+            "text": "Bornsalty : He's actually gaining some support",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:29"
+        },
+        {
+            "nodeID": "228926",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:30",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228927",
+            "text": "TRUMP's actually gaining some support",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:30"
+        },
+        {
+            "nodeID": "228928",
+            "text": "Rory: Bornsalty : He's actually gaining some support",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:30"
+        },
+        {
+            "nodeID": "228929",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:50:30",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228930",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 17:50:30",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "228931",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:30",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "228932",
+            "text": "Isnt that mostly a slight on white Americans for not being put off by his racism",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:30"
+        },
+        {
+            "nodeID": "228933",
+            "text": "RonaldoNazario : Isnt that mostly a slight on white Americans for not being put off by his racism",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:30"
+        },
+        {
+            "nodeID": "228934",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:30",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228935",
+            "text": "it's mostly a slight on white Americans for not being put off by TRUMPs racism",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:30"
+        },
+        {
+            "nodeID": "228936",
+            "text": "Rory: RonaldoNazario : Isnt that mostly a slight on white Americans for not being put off by his racism",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:31"
+        },
+        {
+            "nodeID": "228937",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:50:31",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228938",
+            "text": "HollywoodCote : He doesn't have much to lose from the black community",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:31"
+        },
+        {
+            "nodeID": "228939",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:31",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228940",
+            "text": "TRUMP doesn't have much to lose from the black community",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:31"
+        },
+        {
+            "nodeID": "228941",
+            "text": "Rory: HollywoodCote : He doesn't have much to lose from the black community",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:31"
+        },
+        {
+            "nodeID": "228942",
+            "text": "HollywoodCote : he can still lose a lot of support from whites with a conscious",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:31"
+        },
+        {
+            "nodeID": "228943",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:31",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228944",
+            "text": "TRUMP can still lose a lot of support from whites with a conscious",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:31"
+        },
+        {
+            "nodeID": "228945",
+            "text": "Rory: HollywoodCote : he can still lose a lot of support from whites with a conscious",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:31"
+        },
+        {
+            "nodeID": "228946",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:50:32",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228947",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 17:50:32",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "228948",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:50:32",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228949",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-08 17:50:32",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "228950",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:32",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "228951",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:32",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "228952",
+            "text": "mastersword130 : Enders Wiggins way. You stomp their face in until they are destroyed",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:32"
+        },
+        {
+            "nodeID": "228953",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:32",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228954",
+            "text": "Enders Wiggins way. You stomp their face in until they are destroyed",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:32"
+        },
+        {
+            "nodeID": "228955",
+            "text": "Rory: mastersword130 : Enders Wiggins way. You stomp their face in until they are destroyed",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:32"
+        },
+        {
+            "nodeID": "228956",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:50:33",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228957",
+            "text": "FaithIsFoolish : Black people are the only ones that care about racism",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:33"
+        },
+        {
+            "nodeID": "228958",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:33",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228959",
+            "text": "Black people are the only ones that care about racism",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:33"
+        },
+        {
+            "nodeID": "228960",
+            "text": "Rory: FaithIsFoolish : Black people are the only ones that care about racism",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:33"
+        },
+        {
+            "nodeID": "228961",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:50:33",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228962",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 17:50:33",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "228963",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:33",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "228964",
+            "text": "p_sweezy : Fair point, I suppose there are at least a handful of 'murica lovin' Trump supporters that are turned off by it",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:33"
+        },
+        {
+            "nodeID": "228965",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:34",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228966",
+            "text": "Fair point, I suppose there are at least a handful of 'murica lovin' Trump supporters that are turned off by it",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:34"
+        },
+        {
+            "nodeID": "228967",
+            "text": "Rory: p_sweezy : Fair point, I suppose there are at least a handful of 'murica lovin' Trump supporters that are turned off by it",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:34"
+        },
+        {
+            "nodeID": "228968",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:50:34",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228969",
+            "text": "gampo : It's about convincing undecided voters he is racist",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:34"
+        },
+        {
+            "nodeID": "228970",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:34",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228971",
+            "text": "It's about convincing undecided voters TRUMP is racist",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:34"
+        },
+        {
+            "nodeID": "228972",
+            "text": "Rory: gampo : It's about convincing undecided voters he is racist",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:34"
+        },
+        {
+            "nodeID": "228973",
+            "text": "gampo : shouldn't be president",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:34"
+        },
+        {
+            "nodeID": "228974",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:34",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228975",
+            "text": "TRUMP shouldn't be president",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:35"
+        },
+        {
+            "nodeID": "228976",
+            "text": "Rory: gampo : shouldn't be president",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:35"
+        },
+        {
+            "nodeID": "228977",
+            "text": "trump has given speeches about helping minorities",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:35"
+        },
+        {
+            "nodeID": "228978",
+            "text": "gampo : trump has given speeches about helping minorities",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:35"
+        },
+        {
+            "nodeID": "228979",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:35",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228980",
+            "text": "TRUM has given speeches about helping minorities",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:35"
+        },
+        {
+            "nodeID": "228981",
+            "text": "Rory: gampo : trump has given speeches about helping minorities",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:35"
+        },
+        {
+            "nodeID": "228982",
+            "text": "gampo : Not cuz he he thinks he will get their vote, but to convince undecideds that he isn't racist",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:35"
+        },
+        {
+            "nodeID": "228983",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:35",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228984",
+            "text": "Not cuz TRUMP thinks TRUMP will get their vote, but to convince undecideds that TRUMP isn't racist",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:35"
+        },
+        {
+            "nodeID": "228985",
+            "text": "Rory: gampo : Not cuz he he thinks he will get their vote, but to convince undecideds that he isn't racist",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:36"
+        },
+        {
+            "nodeID": "228986",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:50:36",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228987",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 17:50:36",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "228988",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:36",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "228989",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:50:36",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228990",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 17:50:36",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "228991",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:36",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "228992",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:50:36",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228993",
+            "text": "No_stop_signs : Trump is picking up a bit of support with them. Not much, but more than she probably expected",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:36"
+        },
+        {
+            "nodeID": "228994",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 17:50:37",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228995",
+            "text": "TRUMP is picking up a bit of support with them. Not much, but more than CLINTON probably expected",
+            "type": "I",
+            "timestamp": "2016-11-08 17:50:37"
+        },
+        {
+            "nodeID": "228996",
+            "text": "Rory: No_stop_signs : Trump is picking up a bit of support with them. Not much, but more than she probably expected",
+            "type": "L",
+            "timestamp": "2016-11-08 17:50:37"
+        },
+        {
+            "nodeID": "228997",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:50:37",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228998",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 17:50:37",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "276689",
+            "fromID": "228905",
+            "toID": "228906",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276690",
+            "fromID": "228904",
+            "toID": "228905",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276691",
+            "fromID": "228909",
+            "toID": "228910",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276692",
+            "fromID": "228908",
+            "toID": "228909",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276693",
+            "fromID": "228904",
+            "toID": "228912",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276694",
+            "fromID": "228912",
+            "toID": "228908",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276695",
+            "fromID": "228910",
+            "toID": "228913",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276696",
+            "fromID": "228913",
+            "toID": "228906",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276697",
+            "fromID": "228912",
+            "toID": "228914",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276698",
+            "fromID": "228914",
+            "toID": "228913",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276699",
+            "fromID": "228916",
+            "toID": "228917",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276700",
+            "fromID": "228915",
+            "toID": "228916",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276701",
+            "fromID": "228904",
+            "toID": "228919",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276702",
+            "fromID": "228919",
+            "toID": "228915",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276703",
+            "fromID": "228921",
+            "toID": "228922",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276704",
+            "fromID": "228920",
+            "toID": "228921",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276705",
+            "fromID": "228904",
+            "toID": "228924",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276706",
+            "fromID": "228924",
+            "toID": "228920",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276707",
+            "fromID": "228926",
+            "toID": "228927",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276708",
+            "fromID": "228925",
+            "toID": "228926",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276709",
+            "fromID": "228908",
+            "toID": "228929",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276710",
+            "fromID": "228929",
+            "toID": "228925",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276711",
+            "fromID": "228927",
+            "toID": "228930",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276712",
+            "fromID": "228930",
+            "toID": "228910",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276713",
+            "fromID": "228929",
+            "toID": "228931",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276714",
+            "fromID": "228931",
+            "toID": "228930",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276715",
+            "fromID": "228934",
+            "toID": "228935",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276716",
+            "fromID": "228933",
+            "toID": "228934",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276717",
+            "fromID": "228937",
+            "toID": "228933",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276718",
+            "fromID": "228904",
+            "toID": "228937",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276719",
+            "fromID": "228939",
+            "toID": "228940",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276720",
+            "fromID": "228938",
+            "toID": "228939",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276721",
+            "fromID": "228943",
+            "toID": "228944",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276722",
+            "fromID": "228942",
+            "toID": "228943",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276723",
+            "fromID": "228908",
+            "toID": "228946",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276724",
+            "fromID": "228946",
+            "toID": "228942",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276725",
+            "fromID": "228944",
+            "toID": "228947",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276726",
+            "fromID": "228947",
+            "toID": "228910",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276727",
+            "fromID": "228908",
+            "toID": "228948",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276728",
+            "fromID": "228948",
+            "toID": "228938",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276729",
+            "fromID": "228940",
+            "toID": "228949",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276730",
+            "fromID": "228949",
+            "toID": "228910",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276731",
+            "fromID": "228948",
+            "toID": "228950",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276732",
+            "fromID": "228950",
+            "toID": "228949",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276733",
+            "fromID": "228946",
+            "toID": "228951",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276734",
+            "fromID": "228951",
+            "toID": "228947",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276735",
+            "fromID": "228953",
+            "toID": "228954",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276736",
+            "fromID": "228952",
+            "toID": "228953",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276737",
+            "fromID": "228904",
+            "toID": "228956",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276738",
+            "fromID": "228956",
+            "toID": "228952",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276739",
+            "fromID": "228958",
+            "toID": "228959",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276740",
+            "fromID": "228957",
+            "toID": "228958",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276741",
+            "fromID": "228908",
+            "toID": "228961",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276742",
+            "fromID": "228961",
+            "toID": "228957",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276743",
+            "fromID": "228959",
+            "toID": "228962",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276744",
+            "fromID": "228962",
+            "toID": "228910",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276745",
+            "fromID": "228963",
+            "toID": "228962",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276746",
+            "fromID": "228961",
+            "toID": "228963",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276747",
+            "fromID": "228965",
+            "toID": "228966",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276748",
+            "fromID": "228964",
+            "toID": "228965",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276749",
+            "fromID": "228957",
+            "toID": "228968",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276750",
+            "fromID": "228968",
+            "toID": "228964",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276751",
+            "fromID": "228970",
+            "toID": "228971",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276752",
+            "fromID": "228969",
+            "toID": "228970",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276753",
+            "fromID": "228974",
+            "toID": "228975",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276754",
+            "fromID": "228973",
+            "toID": "228974",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276755",
+            "fromID": "228979",
+            "toID": "228980",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276756",
+            "fromID": "228978",
+            "toID": "228979",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276757",
+            "fromID": "228983",
+            "toID": "228984",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276758",
+            "fromID": "228982",
+            "toID": "228983",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276759",
+            "fromID": "228978",
+            "toID": "228986",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276760",
+            "fromID": "228986",
+            "toID": "228982",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276761",
+            "fromID": "228984",
+            "toID": "228987",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276762",
+            "fromID": "228987",
+            "toID": "228980",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276763",
+            "fromID": "228986",
+            "toID": "228988",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276764",
+            "fromID": "228988",
+            "toID": "228987",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276765",
+            "fromID": "228969",
+            "toID": "228989",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276766",
+            "fromID": "228989",
+            "toID": "228973",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276767",
+            "fromID": "228971",
+            "toID": "228990",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276768",
+            "fromID": "228990",
+            "toID": "228975",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276769",
+            "fromID": "228989",
+            "toID": "228991",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276770",
+            "fromID": "228991",
+            "toID": "228990",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276771",
+            "fromID": "228904",
+            "toID": "228992",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276772",
+            "fromID": "228992",
+            "toID": "228973",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276773",
+            "fromID": "228994",
+            "toID": "228995",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276774",
+            "fromID": "228993",
+            "toID": "228994",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276775",
+            "fromID": "228904",
+            "toID": "228997",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276776",
+            "fromID": "228997",
+            "toID": "228993",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276777",
+            "fromID": "228973",
+            "toID": "228998",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "276778",
+            "fromID": "228998",
+            "toID": "228978",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

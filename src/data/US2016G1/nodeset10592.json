@@ -1,0 +1,945 @@
+{
+    "nodes": [
+        {
+            "nodeID": "231641",
+            "text": "cwgoskins : This dudes english and grammar level is below high school",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:58"
+        },
+        {
+            "nodeID": "231642",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:58",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231643",
+            "text": "TRUMPs english and grammar level is below high school",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:58"
+        },
+        {
+            "nodeID": "231644",
+            "text": "Rory: cwgoskins : This dudes english and grammar level is below high school",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:58"
+        },
+        {
+            "nodeID": "231645",
+            "text": "cwgoskins : I hate how he speaks like a 15 year old",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:58"
+        },
+        {
+            "nodeID": "231646",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:59",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231647",
+            "text": "I hate how TRUMP speaks like a 15 year old",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:59"
+        },
+        {
+            "nodeID": "231648",
+            "text": "Rory: cwgoskins : I hate how he speaks like a 15 year old",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:59"
+        },
+        {
+            "nodeID": "231649",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:15:59",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231650",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:15:59",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231651",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:59",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "231652",
+            "text": "cwgoskins : He cant even sound smart if he tries",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:59"
+        },
+        {
+            "nodeID": "231653",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:15:59",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231654",
+            "text": "TRUMP cant even sound smart if he tries",
+            "type": "I",
+            "timestamp": "2016-11-08 18:15:59"
+        },
+        {
+            "nodeID": "231655",
+            "text": "Rory: cwgoskins : He cant even sound smart if he tries",
+            "type": "L",
+            "timestamp": "2016-11-08 18:15:59"
+        },
+        {
+            "nodeID": "231656",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:16:00",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231657",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:16:00",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231658",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:16:00",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "231659",
+            "text": "Blue_5ive : he has the best words",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:00"
+        },
+        {
+            "nodeID": "231660",
+            "text": "Ironic Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:16:00",
+            "scheme": "Ironic Asserting",
+            "schemeID": "148"
+        },
+        {
+            "nodeID": "231661",
+            "text": "he has the best words",
+            "type": "I",
+            "timestamp": "2016-11-08 18:16:00"
+        },
+        {
+            "nodeID": "231662",
+            "text": "Rory:  Blue_5ive : he has the best words",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:00"
+        },
+        {
+            "nodeID": "231663",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:16:00",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231664",
+            "text": "mwagner1385 : Thats insulting to a 15 year old",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:00"
+        },
+        {
+            "nodeID": "231665",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:16:00",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231666",
+            "text": "Thats insulting to a 15 year old",
+            "type": "I",
+            "timestamp": "2016-11-08 18:16:01"
+        },
+        {
+            "nodeID": "231667",
+            "text": "Rory: mwagner1385 : Thats insulting to a 15 year old",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:01"
+        },
+        {
+            "nodeID": "231668",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:16:01",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231669",
+            "text": "mwagner1385 : I would put him at 10 years old",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:01"
+        },
+        {
+            "nodeID": "231670",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:16:01",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231671",
+            "text": "I would put TRUMP at 10 years old",
+            "type": "I",
+            "timestamp": "2016-11-08 18:16:01"
+        },
+        {
+            "nodeID": "231672",
+            "text": "Rory: mwagner1385 : I would put him at 10 years old",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:01"
+        },
+        {
+            "nodeID": "231673",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:16:01",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231674",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:16:01",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231675",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:16:01",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "231676",
+            "text": "DukeIsFast : He is appealing to every level of American",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:02"
+        },
+        {
+            "nodeID": "231677",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:16:02",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231678",
+            "text": "TRUMP is appealing to every level of American",
+            "type": "I",
+            "timestamp": "2016-11-08 18:16:02"
+        },
+        {
+            "nodeID": "231679",
+            "text": "Rory: DukeIsFast : He is appealing to every level of American",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:02"
+        },
+        {
+            "nodeID": "231680",
+            "text": "DukeIsFast : There is a reason why he speaks this way",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:02"
+        },
+        {
+            "nodeID": "231681",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:16:02",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231682",
+            "text": "There is a reason why TRUMP speaks this way",
+            "type": "I",
+            "timestamp": "2016-11-08 18:16:02"
+        },
+        {
+            "nodeID": "231683",
+            "text": "Rory: DukeIsFast : There is a reason why he speaks this way",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:02"
+        },
+        {
+            "nodeID": "231684",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:16:02",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231685",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 18:16:03",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "231686",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:16:03",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "231687",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:16:03",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231688",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:16:03",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231689",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:16:03",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "231690",
+            "text": "chillywaterphish : he happens to be tied in some states",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:03"
+        },
+        {
+            "nodeID": "231691",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:16:03",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231692",
+            "text": "TRUMP happens to be tied in some states",
+            "type": "I",
+            "timestamp": "2016-11-08 18:16:03"
+        },
+        {
+            "nodeID": "231693",
+            "text": "Rory: chillywaterphish : he happens to be tied in some states",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:03"
+        },
+        {
+            "nodeID": "231694",
+            "text": "chillywaterphish : Sometimes sounding smart doesn't win elections. Ask Mitt Romney",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:03"
+        },
+        {
+            "nodeID": "231695",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:16:04",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231696",
+            "text": "Sometimes sounding smart doesn't win elections. Ask ROMNEY",
+            "type": "I",
+            "timestamp": "2016-11-08 18:16:04"
+        },
+        {
+            "nodeID": "231697",
+            "text": "Rory: chillywaterphish : Sometimes sounding smart doesn't win elections. Ask Mitt Romney",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:04"
+        },
+        {
+            "nodeID": "231698",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:16:04",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231699",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:16:04",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231700",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:16:04",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "231701",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:16:04",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231702",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 18:16:04",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "231703",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:16:04",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "231704",
+            "text": "dontbeamaybe : he's completely incapable of understanding the basics of how logic works",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:04"
+        },
+        {
+            "nodeID": "231705",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:16:05",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "231706",
+            "text": "TRUMP's completely incapable of understanding the basics of how logic works",
+            "type": "I",
+            "timestamp": "2016-11-08 18:16:05"
+        },
+        {
+            "nodeID": "231707",
+            "text": "Rory: dontbeamaybe : he's completely incapable of understanding the basics of how logic works",
+            "type": "L",
+            "timestamp": "2016-11-08 18:16:05"
+        },
+        {
+            "nodeID": "231708",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:16:05",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "231709",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:16:05",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "231710",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:16:05",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "279539",
+            "fromID": "231642",
+            "toID": "231643",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279540",
+            "fromID": "231641",
+            "toID": "231642",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279541",
+            "fromID": "231646",
+            "toID": "231647",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279542",
+            "fromID": "231645",
+            "toID": "231646",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279543",
+            "fromID": "231641",
+            "toID": "231649",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279544",
+            "fromID": "231649",
+            "toID": "231645",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279545",
+            "fromID": "231647",
+            "toID": "231650",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279546",
+            "fromID": "231650",
+            "toID": "231643",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279547",
+            "fromID": "231649",
+            "toID": "231651",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279548",
+            "fromID": "231651",
+            "toID": "231650",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279549",
+            "fromID": "231653",
+            "toID": "231654",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279550",
+            "fromID": "231652",
+            "toID": "231653",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279551",
+            "fromID": "231641",
+            "toID": "231656",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279552",
+            "fromID": "231656",
+            "toID": "231652",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279553",
+            "fromID": "231654",
+            "toID": "231657",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279554",
+            "fromID": "231657",
+            "toID": "231643",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279555",
+            "fromID": "231656",
+            "toID": "231658",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279556",
+            "fromID": "231658",
+            "toID": "231657",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279557",
+            "fromID": "231660",
+            "toID": "231661",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279558",
+            "fromID": "231659",
+            "toID": "231660",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279559",
+            "fromID": "231641",
+            "toID": "231663",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279560",
+            "fromID": "231663",
+            "toID": "231659",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279561",
+            "fromID": "231665",
+            "toID": "231666",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279562",
+            "fromID": "231664",
+            "toID": "231665",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279563",
+            "fromID": "231645",
+            "toID": "231668",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279564",
+            "fromID": "231668",
+            "toID": "231664",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279565",
+            "fromID": "231670",
+            "toID": "231671",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279566",
+            "fromID": "231669",
+            "toID": "231670",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279567",
+            "fromID": "231641",
+            "toID": "231673",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279568",
+            "fromID": "231673",
+            "toID": "231669",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279569",
+            "fromID": "231671",
+            "toID": "231674",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279570",
+            "fromID": "231674",
+            "toID": "231643",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279571",
+            "fromID": "231673",
+            "toID": "231675",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279572",
+            "fromID": "231675",
+            "toID": "231674",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279573",
+            "fromID": "231677",
+            "toID": "231678",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279574",
+            "fromID": "231676",
+            "toID": "231677",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279575",
+            "fromID": "231681",
+            "toID": "231682",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279576",
+            "fromID": "231680",
+            "toID": "231681",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279577",
+            "fromID": "231641",
+            "toID": "231684",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279578",
+            "fromID": "231684",
+            "toID": "231680",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279579",
+            "fromID": "231682",
+            "toID": "231685",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279580",
+            "fromID": "231685",
+            "toID": "231643",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279581",
+            "fromID": "231684",
+            "toID": "231686",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279582",
+            "fromID": "231686",
+            "toID": "231685",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279583",
+            "fromID": "231676",
+            "toID": "231687",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279584",
+            "fromID": "231687",
+            "toID": "231680",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279585",
+            "fromID": "231678",
+            "toID": "231688",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279586",
+            "fromID": "231688",
+            "toID": "231682",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279587",
+            "fromID": "231687",
+            "toID": "231689",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279588",
+            "fromID": "231689",
+            "toID": "231688",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279589",
+            "fromID": "231691",
+            "toID": "231692",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279590",
+            "fromID": "231690",
+            "toID": "231691",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279591",
+            "fromID": "231695",
+            "toID": "231696",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279592",
+            "fromID": "231694",
+            "toID": "231695",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279593",
+            "fromID": "231690",
+            "toID": "231698",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279594",
+            "fromID": "231698",
+            "toID": "231694",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279595",
+            "fromID": "231696",
+            "toID": "231699",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279596",
+            "fromID": "231699",
+            "toID": "231692",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279597",
+            "fromID": "231698",
+            "toID": "231700",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279598",
+            "fromID": "231700",
+            "toID": "231699",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279599",
+            "fromID": "231641",
+            "toID": "231701",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279600",
+            "fromID": "231701",
+            "toID": "231690",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279601",
+            "fromID": "231692",
+            "toID": "231702",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279602",
+            "fromID": "231702",
+            "toID": "231643",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279603",
+            "fromID": "231701",
+            "toID": "231703",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279604",
+            "fromID": "231703",
+            "toID": "231702",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279605",
+            "fromID": "231705",
+            "toID": "231706",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279606",
+            "fromID": "231704",
+            "toID": "231705",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279607",
+            "fromID": "231641",
+            "toID": "231708",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279608",
+            "fromID": "231708",
+            "toID": "231704",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279609",
+            "fromID": "231706",
+            "toID": "231709",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279610",
+            "fromID": "231709",
+            "toID": "231643",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279611",
+            "fromID": "231708",
+            "toID": "231710",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "279612",
+            "fromID": "231710",
+            "toID": "231709",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

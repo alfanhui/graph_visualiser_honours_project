@@ -1,0 +1,807 @@
+{
+    "nodes": [
+        {
+            "nodeID": "230793",
+            "text": "zombiebillnye : Yes, I too took high school history class Ms. Clinton",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:20"
+        },
+        {
+            "nodeID": "230794",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:20",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230795",
+            "text": "Yes, I too took high school history CLINTON",
+            "type": "I",
+            "timestamp": "2016-11-08 18:06:20"
+        },
+        {
+            "nodeID": "230796",
+            "text": "Rory: zombiebillnye : Yes, I too took high school history class Ms. Clinton",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:20"
+        },
+        {
+            "nodeID": "230797",
+            "text": "zombiebillnye : Do people not know that NATO is a defensive alliance",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:20"
+        },
+        {
+            "nodeID": "230798",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:20",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "230799",
+            "text": "people don't know that NATO is a defensive alliance",
+            "type": "I",
+            "timestamp": "2016-11-08 18:06:20"
+        },
+        {
+            "nodeID": "230800",
+            "text": "Rory: zombiebillnye : Do people not know that NATO is a defensive alliance",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:20"
+        },
+        {
+            "nodeID": "230801",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:06:21",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230802",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:06:21",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "230803",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:21",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "230804",
+            "text": "NeoMoonlight : Trump doesn't, I'd bet money",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:21"
+        },
+        {
+            "nodeID": "230805",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:21",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230806",
+            "text": "TRUMP doesn't, I'd bet money",
+            "type": "I",
+            "timestamp": "2016-11-08 18:06:21"
+        },
+        {
+            "nodeID": "230807",
+            "text": "Rory: NeoMoonlight : Trump doesn't, I'd bet money",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:21"
+        },
+        {
+            "nodeID": "230808",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:06:21",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230809",
+            "text": "Get_a_GOB : Trump called for not honoring the fundamental defensive pact undergirding NATO against hypothetical Russian aggression",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:21"
+        },
+        {
+            "nodeID": "230810",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:21",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230811",
+            "text": "TRUMP called for not honoring the fundamental defensive pact undergirding NATO against hypothetical Russian aggression",
+            "type": "I",
+            "timestamp": "2016-11-08 18:06:22"
+        },
+        {
+            "nodeID": "230812",
+            "text": "Rory: Get_a_GOB : Trump called for not honoring the fundamental defensive pact undergirding NATO against hypothetical Russian aggression",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:22"
+        },
+        {
+            "nodeID": "230813",
+            "text": "Get_a_GOB : yeah, maybe not",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:22"
+        },
+        {
+            "nodeID": "230814",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:22",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230815",
+            "text": "yeah, maybe not",
+            "type": "I",
+            "timestamp": "2016-11-08 18:06:22"
+        },
+        {
+            "nodeID": "230816",
+            "text": "Rory: Get_a_GOB : yeah, maybe not",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:22"
+        },
+        {
+            "nodeID": "230817",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:06:22",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230818",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-08 18:06:22",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "230819",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:22",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "230820",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:06:22",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230821",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:06:23",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "230822",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:23",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "230823",
+            "text": "screen317 : All the trump supporters I've talked to want to disband nato",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:23"
+        },
+        {
+            "nodeID": "230824",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:23",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230825",
+            "text": "All the TRUMP supporters I've talked to want to disband nato",
+            "type": "I",
+            "timestamp": "2016-11-08 18:06:23"
+        },
+        {
+            "nodeID": "230826",
+            "text": "Rory: screen317 : All the trump supporters I've talked to want to disband nato",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:23"
+        },
+        {
+            "nodeID": "230827",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:06:23",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230828",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:06:23",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "230829",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:23",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "230830",
+            "text": "nurfbat : have you been paying attention to the discourse this election",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:23"
+        },
+        {
+            "nodeID": "230831",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:24",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "230832",
+            "text": "you haven't been paying attention to the discourse this election",
+            "type": "I",
+            "timestamp": "2016-11-08 18:06:24"
+        },
+        {
+            "nodeID": "230833",
+            "text": "Rory: nurfbat : have you been paying attention to the discourse this election",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:24"
+        },
+        {
+            "nodeID": "230834",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:06:24",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230835",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 18:06:24",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "230836",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:24",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "230837",
+            "text": "impasto_ : Trump doesn't",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:24"
+        },
+        {
+            "nodeID": "230838",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:24",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230839",
+            "text": "Trump doesn't",
+            "type": "I",
+            "timestamp": "2016-11-08 18:06:24"
+        },
+        {
+            "nodeID": "230840",
+            "text": "Rory: impasto_ : Trump doesn't",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:24"
+        },
+        {
+            "nodeID": "230841",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:06:25",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230842",
+            "text": "DICK_WORF : I absolutely believe that more than 50% of the people watching the debate would not know what NATO was if you asked them",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:25"
+        },
+        {
+            "nodeID": "230843",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:25",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230844",
+            "text": "I absolutely believe that more than 50% of the people watching the debate would not know what NATO was if you asked them",
+            "type": "I",
+            "timestamp": "2016-11-08 18:06:25"
+        },
+        {
+            "nodeID": "230845",
+            "text": "Rory: DICK_WORF : I absolutely believe that more than 50% of the people watching the debate would not know what NATO was if you asked them",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:25"
+        },
+        {
+            "nodeID": "230846",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:06:25",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230847",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 18:06:25",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "230848",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:25",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "230849",
+            "text": "ToughActinInaction : You'd be surprised",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:25"
+        },
+        {
+            "nodeID": "230850",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:06:25",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230851",
+            "text": "You'd be surprised",
+            "type": "I",
+            "timestamp": "2016-11-08 18:06:26"
+        },
+        {
+            "nodeID": "230852",
+            "text": "Rory: ToughActinInaction : You'd be surprised",
+            "type": "L",
+            "timestamp": "2016-11-08 18:06:26"
+        },
+        {
+            "nodeID": "230853",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:06:26",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "278641",
+            "fromID": "230794",
+            "toID": "230795",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278642",
+            "fromID": "230793",
+            "toID": "230794",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278643",
+            "fromID": "230798",
+            "toID": "230799",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278644",
+            "fromID": "230797",
+            "toID": "230798",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278645",
+            "fromID": "230793",
+            "toID": "230801",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278646",
+            "fromID": "230801",
+            "toID": "230797",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278647",
+            "fromID": "230799",
+            "toID": "230802",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278648",
+            "fromID": "230802",
+            "toID": "230795",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278649",
+            "fromID": "230801",
+            "toID": "230803",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278650",
+            "fromID": "230803",
+            "toID": "230802",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278651",
+            "fromID": "230805",
+            "toID": "230806",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278652",
+            "fromID": "230804",
+            "toID": "230805",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278653",
+            "fromID": "230797",
+            "toID": "230808",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278654",
+            "fromID": "230808",
+            "toID": "230804",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278655",
+            "fromID": "230810",
+            "toID": "230811",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278656",
+            "fromID": "230809",
+            "toID": "230810",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278657",
+            "fromID": "230814",
+            "toID": "230815",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278658",
+            "fromID": "230813",
+            "toID": "230814",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278659",
+            "fromID": "230797",
+            "toID": "230817",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278660",
+            "fromID": "230817",
+            "toID": "230813",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278661",
+            "fromID": "230815",
+            "toID": "230818",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278662",
+            "fromID": "230818",
+            "toID": "230799",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278663",
+            "fromID": "230817",
+            "toID": "230819",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278664",
+            "fromID": "230819",
+            "toID": "230818",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278665",
+            "fromID": "230809",
+            "toID": "230820",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278666",
+            "fromID": "230820",
+            "toID": "230813",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278667",
+            "fromID": "230811",
+            "toID": "230821",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278668",
+            "fromID": "230821",
+            "toID": "230815",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278669",
+            "fromID": "230820",
+            "toID": "230822",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278670",
+            "fromID": "230822",
+            "toID": "230821",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278671",
+            "fromID": "230824",
+            "toID": "230825",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278672",
+            "fromID": "230823",
+            "toID": "230824",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278673",
+            "fromID": "230797",
+            "toID": "230827",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278674",
+            "fromID": "230827",
+            "toID": "230823",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278675",
+            "fromID": "230825",
+            "toID": "230828",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278676",
+            "fromID": "230828",
+            "toID": "230799",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278677",
+            "fromID": "230827",
+            "toID": "230829",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278678",
+            "fromID": "230829",
+            "toID": "230828",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278679",
+            "fromID": "230831",
+            "toID": "230832",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278680",
+            "fromID": "230830",
+            "toID": "230831",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278681",
+            "fromID": "230797",
+            "toID": "230834",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278682",
+            "fromID": "230834",
+            "toID": "230830",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278683",
+            "fromID": "230832",
+            "toID": "230835",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278684",
+            "fromID": "230835",
+            "toID": "230799",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278685",
+            "fromID": "230834",
+            "toID": "230836",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278686",
+            "fromID": "230836",
+            "toID": "230835",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278687",
+            "fromID": "230838",
+            "toID": "230839",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278688",
+            "fromID": "230837",
+            "toID": "230838",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278689",
+            "fromID": "230797",
+            "toID": "230841",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278690",
+            "fromID": "230841",
+            "toID": "230837",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278691",
+            "fromID": "230843",
+            "toID": "230844",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278692",
+            "fromID": "230842",
+            "toID": "230843",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278693",
+            "fromID": "230797",
+            "toID": "230846",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278694",
+            "fromID": "230846",
+            "toID": "230842",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278695",
+            "fromID": "230844",
+            "toID": "230847",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278696",
+            "fromID": "230847",
+            "toID": "230799",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278697",
+            "fromID": "230846",
+            "toID": "230848",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278698",
+            "fromID": "230848",
+            "toID": "230847",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278699",
+            "fromID": "230850",
+            "toID": "230851",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278700",
+            "fromID": "230849",
+            "toID": "230850",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278701",
+            "fromID": "230797",
+            "toID": "230853",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278702",
+            "fromID": "230853",
+            "toID": "230849",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

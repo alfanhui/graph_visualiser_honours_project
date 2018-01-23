@@ -1,0 +1,528 @@
+{
+    "nodes": [
+        {
+            "nodeID": "224865",
+            "text": "redditsucks4321 : Florida left the US",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:03"
+        },
+        {
+            "nodeID": "224866",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:47:03",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "224867",
+            "text": "Florida left the US",
+            "type": "I",
+            "timestamp": "2016-11-06 11:47:03"
+        },
+        {
+            "nodeID": "224868",
+            "text": "Barbara: redditsucks4321 : Florida left the US",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:03"
+        },
+        {
+            "nodeID": "224869",
+            "text": "OvFall : Yup",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:03"
+        },
+        {
+            "nodeID": "224870",
+            "text": "Barbara: OvFall : Yup",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:03"
+        },
+        {
+            "nodeID": "224871",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:47:03",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224872",
+            "text": "Agreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:47:03",
+            "scheme": "Agreeing",
+            "schemeID": "77"
+        },
+        {
+            "nodeID": "224873",
+            "text": "Xatencio00 : Ford",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:03"
+        },
+        {
+            "nodeID": "224874",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:47:04",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224875",
+            "text": "Ford left the US",
+            "type": "I",
+            "timestamp": "2016-11-06 11:47:04"
+        },
+        {
+            "nodeID": "224876",
+            "text": "Barbara: Xatencio00 : Ford",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:04"
+        },
+        {
+            "nodeID": "224877",
+            "text": "TRUMP : Ford",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:04"
+        },
+        {
+            "nodeID": "224878",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:47:04",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224879",
+            "text": "Ford",
+            "type": "I",
+            "timestamp": "2016-11-06 11:47:04"
+        },
+        {
+            "nodeID": "224880",
+            "text": "Barbara: TRUMP : He said Ford",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:04"
+        },
+        {
+            "nodeID": "224881",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:47:04",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224882",
+            "text": "Xatencio00 : TRUMP : He said Ford",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:04"
+        },
+        {
+            "nodeID": "224883",
+            "text": "Barbara: Xatencio00 : TRUMP : He said Ford",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:04"
+        },
+        {
+            "nodeID": "224884",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-06 11:47:05",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "224885",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:47:05",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224886",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:47:05",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "224887",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-06 11:47:05",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "224888",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:47:05",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224889",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:47:05",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "224890",
+            "text": "Barbara: XoGrain : finally",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:05"
+        },
+        {
+            "nodeID": "224891",
+            "text": "ItsBobDoleYo : finally",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:05"
+        },
+        {
+            "nodeID": "224892",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:47:05",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224893",
+            "text": "finally",
+            "type": "I",
+            "timestamp": "2016-11-06 11:47:05"
+        },
+        {
+            "nodeID": "224894",
+            "text": "Barbara: ItsBobDoleYo : finally",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:06"
+        },
+        {
+            "nodeID": "224895",
+            "text": "omfg I thought that's what he said too",
+            "type": "I",
+            "timestamp": "2016-11-06 11:47:06"
+        },
+        {
+            "nodeID": "224896",
+            "text": "Barbara: TRUMP : omfg I thought that's what he said too",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:06"
+        },
+        {
+            "nodeID": "224897",
+            "text": "owa00 : Should...should we celebrate",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:06"
+        },
+        {
+            "nodeID": "224898",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:47:06",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "224899",
+            "text": "should we celebrate",
+            "type": "I",
+            "timestamp": "2016-11-06 11:47:06"
+        },
+        {
+            "nodeID": "224900",
+            "text": "Barbara: owa00 : Should...should we celebrate",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:06"
+        },
+        {
+            "nodeID": "224901",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:47:06",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224902",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-06 11:47:06",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "224903",
+            "text": "ItsBobDoleYo : omfg I thought that's what he said too",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:06"
+        },
+        {
+            "nodeID": "224904",
+            "text": "Barbara: ItsBobDoleYo : omfg I thought that's what he said too",
+            "type": "L",
+            "timestamp": "2016-11-06 11:47:06"
+        },
+        {
+            "nodeID": "224905",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:47:07",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "224906",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-06 11:47:07",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "272113",
+            "fromID": "224866",
+            "toID": "224867",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272114",
+            "fromID": "224865",
+            "toID": "224866",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272115",
+            "fromID": "224865",
+            "toID": "224871",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272116",
+            "fromID": "224871",
+            "toID": "224869",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272117",
+            "fromID": "224871",
+            "toID": "224872",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272118",
+            "fromID": "224872",
+            "toID": "224867",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272119",
+            "fromID": "224874",
+            "toID": "224875",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272120",
+            "fromID": "224873",
+            "toID": "224874",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272121",
+            "fromID": "224878",
+            "toID": "224879",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272122",
+            "fromID": "224877",
+            "toID": "224878",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272123",
+            "fromID": "224881",
+            "toID": "224877",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272124",
+            "fromID": "224882",
+            "toID": "224881",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272125",
+            "fromID": "224877",
+            "toID": "224884",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272126",
+            "fromID": "224884",
+            "toID": "224875",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272127",
+            "fromID": "224873",
+            "toID": "224885",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272128",
+            "fromID": "224885",
+            "toID": "224882",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272129",
+            "fromID": "224885",
+            "toID": "224886",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272130",
+            "fromID": "224886",
+            "toID": "224884",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272131",
+            "fromID": "224875",
+            "toID": "224887",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272132",
+            "fromID": "224887",
+            "toID": "224867",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272133",
+            "fromID": "224865",
+            "toID": "224888",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272134",
+            "fromID": "224888",
+            "toID": "224873",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272135",
+            "fromID": "224888",
+            "toID": "224889",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272136",
+            "fromID": "224889",
+            "toID": "224887",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272137",
+            "fromID": "224892",
+            "toID": "224893",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272138",
+            "fromID": "224891",
+            "toID": "224892",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272139",
+            "fromID": "224898",
+            "toID": "224899",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272140",
+            "fromID": "224897",
+            "toID": "224898",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272141",
+            "fromID": "224865",
+            "toID": "224901",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272142",
+            "fromID": "224901",
+            "toID": "224891",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272143",
+            "fromID": "224902",
+            "toID": "224895",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272144",
+            "fromID": "224903",
+            "toID": "224902",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272145",
+            "fromID": "224865",
+            "toID": "224905",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272146",
+            "fromID": "224905",
+            "toID": "224903",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272147",
+            "fromID": "224865",
+            "toID": "224906",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "272148",
+            "fromID": "224906",
+            "toID": "224897",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": [
+        {
+            "nodeID": "224882",
+            "personID": "2844",
+            "timestamp": "2016-11-06 11:47:09",
+            "start": null,
+            "end": null,
+            "source": null
+        },
+        {
+            "nodeID": "224903",
+            "personID": "1795",
+            "timestamp": "2016-11-06 11:47:09",
+            "start": null,
+            "end": null,
+            "source": null
+        }
+    ]
+}

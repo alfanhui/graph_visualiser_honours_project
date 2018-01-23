@@ -1,0 +1,633 @@
+{
+    "nodes": [
+        {
+            "nodeID": "226917",
+            "text": "SHOW_ME_YOUR_GOATS : Where is the moderator",
+            "type": "L",
+            "timestamp": "2016-11-07 17:52:33"
+        },
+        {
+            "nodeID": "226918",
+            "text": "Rhetorical Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:52:33",
+            "scheme": "RhetoricalQuestioning",
+            "schemeID": "85"
+        },
+        {
+            "nodeID": "226919",
+            "text": "where is the moderator",
+            "type": "I",
+            "timestamp": "2016-11-07 17:52:33"
+        },
+        {
+            "nodeID": "226920",
+            "text": "Barbara: SHOW_ME_YOUR_GOATS : Where is the moderator",
+            "type": "L",
+            "timestamp": "2016-11-07 17:52:33"
+        },
+        {
+            "nodeID": "226921",
+            "text": "Wtfeifi7 : He ain't interrupting this shit",
+            "type": "L",
+            "timestamp": "2016-11-07 17:52:33"
+        },
+        {
+            "nodeID": "226922",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:52:34",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226923",
+            "text": "the moderator ain't interrupting this shit",
+            "type": "I",
+            "timestamp": "2016-11-07 17:52:34"
+        },
+        {
+            "nodeID": "226924",
+            "text": "Barbara: Wtfeifi7 : He ain't interrupting this shit",
+            "type": "L",
+            "timestamp": "2016-11-07 17:52:34"
+        },
+        {
+            "nodeID": "226925",
+            "text": "Wtfeifi7 : his is (unfortunately) what the American people want to see",
+            "type": "L",
+            "timestamp": "2016-11-07 17:52:34"
+        },
+        {
+            "nodeID": "226926",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:52:34",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226927",
+            "text": "this is (unfortunately) what the American people want to see",
+            "type": "I",
+            "timestamp": "2016-11-07 17:52:34"
+        },
+        {
+            "nodeID": "226928",
+            "text": "Barbara: Wtfeifi7 : his is (unfortunately) what the American people want to see",
+            "type": "L",
+            "timestamp": "2016-11-07 17:52:34"
+        },
+        {
+            "nodeID": "226929",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-07 17:52:34",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "226930",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:52:34",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226931",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:52:34",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "226932",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-07 17:52:35",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "226933",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:52:35",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226934",
+            "text": "Default Illocuting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:52:35",
+            "scheme": "Default Illocuting",
+            "schemeID": "168"
+        },
+        {
+            "nodeID": "226935",
+            "text": "SHOW_ME_YOUR_GOATS : Should just cut the mic",
+            "type": "L",
+            "timestamp": "2016-11-07 17:52:35"
+        },
+        {
+            "nodeID": "226936",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:52:35",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226937",
+            "text": "the moderator should just cut the mic",
+            "type": "I",
+            "timestamp": "2016-11-07 17:52:35"
+        },
+        {
+            "nodeID": "226938",
+            "text": "Barbara: SHOW_ME_YOUR_GOATS : Should just cut the mic",
+            "type": "L",
+            "timestamp": "2016-11-07 17:52:35"
+        },
+        {
+            "nodeID": "226939",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-07 17:52:35",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "226940",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:52:35",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226941",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:52:35",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "226942",
+            "text": "The_Grubgrub : Being quiet, like he should be",
+            "type": "L",
+            "timestamp": "2016-11-07 17:52:36"
+        },
+        {
+            "nodeID": "226943",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:52:36",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226944",
+            "text": "the moderator is being quiet, like he should be",
+            "type": "I",
+            "timestamp": "2016-11-07 17:52:36"
+        },
+        {
+            "nodeID": "226945",
+            "text": "Barbara: The_Grubgrub : Being quiet, like he should be",
+            "type": "L",
+            "timestamp": "2016-11-07 17:52:36"
+        },
+        {
+            "nodeID": "226946",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-07 17:52:36",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "226947",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:52:36",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226948",
+            "text": "Default Illocuting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:52:36",
+            "scheme": "Default Illocuting",
+            "schemeID": "168"
+        },
+        {
+            "nodeID": "226949",
+            "text": "RambleRant : he's letting them go at it on purpose",
+            "type": "L",
+            "timestamp": "2016-11-07 17:52:36"
+        },
+        {
+            "nodeID": "226950",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:52:36",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226951",
+            "text": "the moderator is letting them go at it on purpose",
+            "type": "I",
+            "timestamp": "2016-11-07 17:52:36"
+        },
+        {
+            "nodeID": "226952",
+            "text": "Barbara: RambleRant : he's letting them go at it on purpose",
+            "type": "L",
+            "timestamp": "2016-11-07 17:52:36"
+        },
+        {
+            "nodeID": "226953",
+            "text": "RambleRant : This is how we see the real people who are running, let them get rattled",
+            "type": "L",
+            "timestamp": "2016-11-07 17:52:37"
+        },
+        {
+            "nodeID": "226954",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:52:37",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226955",
+            "text": "this is how we see the real people who are running, let them get rattled",
+            "type": "I",
+            "timestamp": "2016-11-07 17:52:37"
+        },
+        {
+            "nodeID": "226956",
+            "text": "Barbara: RambleRant : This is how we see the real people who are running, let them get rattled",
+            "type": "L",
+            "timestamp": "2016-11-07 17:52:37"
+        },
+        {
+            "nodeID": "226957",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-07 17:52:37",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "226958",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:52:37",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226959",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:52:37",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "226960",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-07 17:52:37",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "226961",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:52:37",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226962",
+            "text": "Default Illocuting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:52:37",
+            "scheme": "Default Illocuting",
+            "schemeID": "168"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "274233",
+            "fromID": "226918",
+            "toID": "226919",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274234",
+            "fromID": "226917",
+            "toID": "226918",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274235",
+            "fromID": "226922",
+            "toID": "226923",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274236",
+            "fromID": "226921",
+            "toID": "226922",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274237",
+            "fromID": "226926",
+            "toID": "226927",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274238",
+            "fromID": "226925",
+            "toID": "226926",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274239",
+            "fromID": "226927",
+            "toID": "226929",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274240",
+            "fromID": "226929",
+            "toID": "226923",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274241",
+            "fromID": "226921",
+            "toID": "226930",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274242",
+            "fromID": "226930",
+            "toID": "226925",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274243",
+            "fromID": "226930",
+            "toID": "226931",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274244",
+            "fromID": "226931",
+            "toID": "226929",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274245",
+            "fromID": "226923",
+            "toID": "226932",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274246",
+            "fromID": "226932",
+            "toID": "226919",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274247",
+            "fromID": "226917",
+            "toID": "226933",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274248",
+            "fromID": "226933",
+            "toID": "226921",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274249",
+            "fromID": "226933",
+            "toID": "226934",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274250",
+            "fromID": "226934",
+            "toID": "226932",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274251",
+            "fromID": "226936",
+            "toID": "226937",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274252",
+            "fromID": "226935",
+            "toID": "226936",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274253",
+            "fromID": "226937",
+            "toID": "226939",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274254",
+            "fromID": "226939",
+            "toID": "226923",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274255",
+            "fromID": "226921",
+            "toID": "226940",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274256",
+            "fromID": "226940",
+            "toID": "226935",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274257",
+            "fromID": "226940",
+            "toID": "226941",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274258",
+            "fromID": "226941",
+            "toID": "226939",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274259",
+            "fromID": "226943",
+            "toID": "226944",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274260",
+            "fromID": "226942",
+            "toID": "226943",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274261",
+            "fromID": "226944",
+            "toID": "226946",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274262",
+            "fromID": "226946",
+            "toID": "226919",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274263",
+            "fromID": "226917",
+            "toID": "226947",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274264",
+            "fromID": "226947",
+            "toID": "226942",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274265",
+            "fromID": "226947",
+            "toID": "226948",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274266",
+            "fromID": "226948",
+            "toID": "226946",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274267",
+            "fromID": "226950",
+            "toID": "226951",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274268",
+            "fromID": "226949",
+            "toID": "226950",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274269",
+            "fromID": "226954",
+            "toID": "226955",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274270",
+            "fromID": "226953",
+            "toID": "226954",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274271",
+            "fromID": "226955",
+            "toID": "226957",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274272",
+            "fromID": "226957",
+            "toID": "226951",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274273",
+            "fromID": "226949",
+            "toID": "226958",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274274",
+            "fromID": "226958",
+            "toID": "226953",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274275",
+            "fromID": "226958",
+            "toID": "226959",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274276",
+            "fromID": "226959",
+            "toID": "226957",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274277",
+            "fromID": "226951",
+            "toID": "226960",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274278",
+            "fromID": "226960",
+            "toID": "226919",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274279",
+            "fromID": "226917",
+            "toID": "226961",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274280",
+            "fromID": "226961",
+            "toID": "226949",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274281",
+            "fromID": "226961",
+            "toID": "226962",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274282",
+            "fromID": "226962",
+            "toID": "226960",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

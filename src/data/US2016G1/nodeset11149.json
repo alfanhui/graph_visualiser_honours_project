@@ -1,0 +1,91 @@
+{
+    "nodes": [
+        {
+            "nodeID": "230006",
+            "text": "notaneggspert : The whole assault rifle style weapon thing is complete bullshit",
+            "type": "L",
+            "timestamp": "2016-11-08 18:00:20"
+        },
+        {
+            "nodeID": "230008",
+            "text": "The whole assault rifle style weapon thing is complete bullshit",
+            "type": "I",
+            "timestamp": "2016-11-08 18:00:20"
+        },
+        {
+            "nodeID": "254855",
+            "text": "CLINTON : Right now\u2014and this is something Donald has supported, along with the gun lobby\u2014right now, we've got too many military- style weapons on the streets",
+            "type": "L",
+            "timestamp": "2016-12-21 18:04:47"
+        },
+        {
+            "nodeID": "254857",
+            "text": "right now there are too many military-style weapons on the streets",
+            "type": "I",
+            "timestamp": "2016-12-21 18:04:47"
+        },
+        {
+            "nodeID": "262900",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2017-03-07 13:55:41",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "262901",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-07 13:55:42",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262902",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2017-03-07 13:55:42",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "317368",
+            "fromID": "230008",
+            "toID": "262900",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317369",
+            "fromID": "262900",
+            "toID": "254857",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317370",
+            "fromID": "254855",
+            "toID": "262901",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317371",
+            "fromID": "262901",
+            "toID": "230006",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317372",
+            "fromID": "262901",
+            "toID": "262902",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317373",
+            "fromID": "262902",
+            "toID": "262900",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

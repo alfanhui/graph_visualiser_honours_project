@@ -1,0 +1,873 @@
+{
+    "nodes": [
+        {
+            "nodeID": "228235",
+            "text": "CunnedStunt : Lol I'm so sorry America",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:18"
+        },
+        {
+            "nodeID": "228236",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:18",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228237",
+            "text": "lol I'm so sorry America",
+            "type": "I",
+            "timestamp": "2016-11-08 13:06:18"
+        },
+        {
+            "nodeID": "228238",
+            "text": "Barbara: CunnedStunt : Lol I'm so sorry America",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:18"
+        },
+        {
+            "nodeID": "228239",
+            "text": "CunnedStunt : You're so fucked",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:18"
+        },
+        {
+            "nodeID": "228240",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:18",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228241",
+            "text": "you're so fucked",
+            "type": "I",
+            "timestamp": "2016-11-08 13:06:19"
+        },
+        {
+            "nodeID": "228242",
+            "text": "Barbara: CunnedStunt : You're so fucked",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:19"
+        },
+        {
+            "nodeID": "228243",
+            "text": "peanut-butter-vibes : We know",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:19"
+        },
+        {
+            "nodeID": "228244",
+            "text": "Barbara: peanut-butter-vibes : We know",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:19"
+        },
+        {
+            "nodeID": "228245",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:06:19",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228246",
+            "text": "Agreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:19",
+            "scheme": "Agreeing",
+            "schemeID": "77"
+        },
+        {
+            "nodeID": "228247",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:06:19",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228248",
+            "text": "peanut-butter-vibes : Save us pls",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:19"
+        },
+        {
+            "nodeID": "228249",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:19",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228250",
+            "text": "save us pls",
+            "type": "I",
+            "timestamp": "2016-11-08 13:06:19"
+        },
+        {
+            "nodeID": "228251",
+            "text": "Barbara: peanut-butter-vibes : Save us pls",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:19"
+        },
+        {
+            "nodeID": "228252",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:06:20",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228253",
+            "text": "CunnedStunt : Hop on your nearest moose and come on up brother",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:20"
+        },
+        {
+            "nodeID": "228254",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:20",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228255",
+            "text": "hop on your nearest moose and come on up brother",
+            "type": "I",
+            "timestamp": "2016-11-08 13:06:20"
+        },
+        {
+            "nodeID": "228256",
+            "text": "Barbara: CunnedStunt : Hop on your nearest moose and come on up brother",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:20"
+        },
+        {
+            "nodeID": "228257",
+            "text": "peanut-butter-vibes : Lots of room, maple syrup and soon to be cannabis up here for yah",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:20"
+        },
+        {
+            "nodeID": "228258",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:20",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228259",
+            "text": "lots of room, maple syrup and soon to be cannabis up here for yah",
+            "type": "I",
+            "timestamp": "2016-11-08 13:06:20"
+        },
+        {
+            "nodeID": "228260",
+            "text": "Barbara: peanut-butter-vibes : Lots of room, maple syrup and soon to be cannabis up here for yah",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:20"
+        },
+        {
+            "nodeID": "228261",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:06:21",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228262",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:06:21",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228263",
+            "text": "peanut-butter-vibes : How about for a sister",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:21"
+        },
+        {
+            "nodeID": "228264",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:21",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "228265",
+            "text": "how about for a sister",
+            "type": "I",
+            "timestamp": "2016-11-08 13:06:21"
+        },
+        {
+            "nodeID": "228266",
+            "text": "Barbara: peanut-butter-vibes : How about for a sister",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:21"
+        },
+        {
+            "nodeID": "228267",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:06:21",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228268",
+            "text": "peanut-butter-vibes : I wish",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:21"
+        },
+        {
+            "nodeID": "228269",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:21",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228270",
+            "text": "I wish I was in Canada",
+            "type": "I",
+            "timestamp": "2016-11-08 13:06:21"
+        },
+        {
+            "nodeID": "228271",
+            "text": "Barbara: peanut-butter-vibes : I wish",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:21"
+        },
+        {
+            "nodeID": "228272",
+            "text": "peanut-butter-vibes : I miss Canada so much",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:22"
+        },
+        {
+            "nodeID": "228273",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:22",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228274",
+            "text": "I miss Canada so much",
+            "type": "I",
+            "timestamp": "2016-11-08 13:06:22"
+        },
+        {
+            "nodeID": "228275",
+            "text": "Barbara: peanut-butter-vibes : I miss Canada so much",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:22"
+        },
+        {
+            "nodeID": "228276",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:06:22",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228277",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:06:22",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228278",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 13:06:22",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "228279",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:22",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "228280",
+            "text": "chormin :  Can we crash at your place",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:22"
+        },
+        {
+            "nodeID": "228281",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:22",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "228282",
+            "text": "can we crash at your place",
+            "type": "I",
+            "timestamp": "2016-11-08 13:06:23"
+        },
+        {
+            "nodeID": "228283",
+            "text": "Barbara: chormin :  Can we crash at your place?",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:23"
+        },
+        {
+            "nodeID": "228284",
+            "text": "chormin : Mom and dad are fighting again",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:23"
+        },
+        {
+            "nodeID": "228285",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:23",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228286",
+            "text": "mom and dad are fighting again",
+            "type": "I",
+            "timestamp": "2016-11-08 13:06:23"
+        },
+        {
+            "nodeID": "228287",
+            "text": "Barbara: chormin : Mom and dad are fighting again",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:23"
+        },
+        {
+            "nodeID": "228288",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 13:06:23",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "228289",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:06:23",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228290",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:23",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "228291",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:06:23",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228292",
+            "text": "CunnedStunt : Door is always open",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:24"
+        },
+        {
+            "nodeID": "228293",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:24",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228294",
+            "text": "door is always open",
+            "type": "I",
+            "timestamp": "2016-11-08 13:06:24"
+        },
+        {
+            "nodeID": "228295",
+            "text": "Barbara: CunnedStunt : Door is always open",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:24"
+        },
+        {
+            "nodeID": "228296",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:06:24",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228297",
+            "text": "CunnedStunt :  Just keep walking north til your balls freeze off",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:24"
+        },
+        {
+            "nodeID": "228298",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:24",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228299",
+            "text": "just keep walking north til your balls freeze off",
+            "type": "I",
+            "timestamp": "2016-11-08 13:06:24"
+        },
+        {
+            "nodeID": "228300",
+            "text": "Barbara: CunnedStunt :  Just keep walking north til your balls freeze off",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:24"
+        },
+        {
+            "nodeID": "228301",
+            "text": "CunnedStunt : That's how you know you're here",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:24"
+        },
+        {
+            "nodeID": "228302",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 13:06:25",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "228303",
+            "text": "that's how you know you're here",
+            "type": "I",
+            "timestamp": "2016-11-08 13:06:25"
+        },
+        {
+            "nodeID": "228304",
+            "text": "Barbara: CunnedStunt : That's how you know you're here",
+            "type": "L",
+            "timestamp": "2016-11-08 13:06:25"
+        },
+        {
+            "nodeID": "228305",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:06:25",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "228306",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 13:06:25",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "275815",
+            "fromID": "228236",
+            "toID": "228237",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275816",
+            "fromID": "228235",
+            "toID": "228236",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275817",
+            "fromID": "228240",
+            "toID": "228241",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275818",
+            "fromID": "228239",
+            "toID": "228240",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275819",
+            "fromID": "228239",
+            "toID": "228245",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275820",
+            "fromID": "228245",
+            "toID": "228243",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275821",
+            "fromID": "228245",
+            "toID": "228246",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275822",
+            "fromID": "228246",
+            "toID": "228241",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275823",
+            "fromID": "228235",
+            "toID": "228247",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275824",
+            "fromID": "228247",
+            "toID": "228239",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275825",
+            "fromID": "228249",
+            "toID": "228250",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275826",
+            "fromID": "228248",
+            "toID": "228249",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275827",
+            "fromID": "228243",
+            "toID": "228252",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275828",
+            "fromID": "228252",
+            "toID": "228248",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275829",
+            "fromID": "228254",
+            "toID": "228255",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275830",
+            "fromID": "228253",
+            "toID": "228254",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275831",
+            "fromID": "228258",
+            "toID": "228259",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275832",
+            "fromID": "228257",
+            "toID": "228258",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275833",
+            "fromID": "228248",
+            "toID": "228261",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275834",
+            "fromID": "228261",
+            "toID": "228253",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275835",
+            "fromID": "228253",
+            "toID": "228262",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275836",
+            "fromID": "228262",
+            "toID": "228257",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275837",
+            "fromID": "228264",
+            "toID": "228265",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275838",
+            "fromID": "228263",
+            "toID": "228264",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275839",
+            "fromID": "228257",
+            "toID": "228267",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275840",
+            "fromID": "228267",
+            "toID": "228263",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275841",
+            "fromID": "228269",
+            "toID": "228270",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275842",
+            "fromID": "228268",
+            "toID": "228269",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275843",
+            "fromID": "228273",
+            "toID": "228274",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275844",
+            "fromID": "228272",
+            "toID": "228273",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275845",
+            "fromID": "228263",
+            "toID": "228276",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275846",
+            "fromID": "228276",
+            "toID": "228268",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275847",
+            "fromID": "228268",
+            "toID": "228277",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275848",
+            "fromID": "228277",
+            "toID": "228272",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275849",
+            "fromID": "228274",
+            "toID": "228278",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275850",
+            "fromID": "228278",
+            "toID": "228270",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275851",
+            "fromID": "228277",
+            "toID": "228279",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275852",
+            "fromID": "228279",
+            "toID": "228278",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275853",
+            "fromID": "228281",
+            "toID": "228282",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275854",
+            "fromID": "228280",
+            "toID": "228281",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275855",
+            "fromID": "228285",
+            "toID": "228286",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275856",
+            "fromID": "228284",
+            "toID": "228285",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275857",
+            "fromID": "228286",
+            "toID": "228288",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275858",
+            "fromID": "228288",
+            "toID": "228282",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275859",
+            "fromID": "228280",
+            "toID": "228289",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275860",
+            "fromID": "228289",
+            "toID": "228284",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275861",
+            "fromID": "228289",
+            "toID": "228290",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275862",
+            "fromID": "228290",
+            "toID": "228288",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275863",
+            "fromID": "228257",
+            "toID": "228291",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275864",
+            "fromID": "228291",
+            "toID": "228280",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275865",
+            "fromID": "228293",
+            "toID": "228294",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275866",
+            "fromID": "228292",
+            "toID": "228293",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275867",
+            "fromID": "228280",
+            "toID": "228296",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275868",
+            "fromID": "228296",
+            "toID": "228292",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275869",
+            "fromID": "228298",
+            "toID": "228299",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275870",
+            "fromID": "228297",
+            "toID": "228298",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275871",
+            "fromID": "228302",
+            "toID": "228303",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275872",
+            "fromID": "228301",
+            "toID": "228302",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275873",
+            "fromID": "228292",
+            "toID": "228305",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275874",
+            "fromID": "228305",
+            "toID": "228297",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275875",
+            "fromID": "228297",
+            "toID": "228306",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "275876",
+            "fromID": "228306",
+            "toID": "228301",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

@@ -1,0 +1,307 @@
+{
+  "nodes": [
+    {
+      "nodeID": "232126",
+      "text": "livingunique : We have interests in those countries that we're protecting, moron",
+      "type": "L",
+      "timestamp": "2016-11-08 18:20:00"
+    },
+    {
+      "nodeID": "232128",
+      "text": "We have interests in those countries that we're protecting, moron",
+      "type": "I",
+      "timestamp": "2016-11-08 18:20:01"
+    },
+    {
+      "nodeID": "232131",
+      "text": "crash_testdummy : their signed an agreement to pay 2% of their GDP into NATO. Only 5 NATO members out of 28 pay that much",
+      "type": "L",
+      "timestamp": "2016-11-08 18:20:01"
+    },
+    {
+      "nodeID": "232133",
+      "text": "their signed an agreement to pay 2% of their GDP into NATO. Only 5 NATO members out of 28 pay that much",
+      "type": "I",
+      "timestamp": "2016-11-08 18:20:01"
+    },
+    {
+      "nodeID": "232143",
+      "text": "livingunique : No, I'm arguing that we have interests there and the ability to protect them, including Americans who live and do business there",
+      "type": "L",
+      "timestamp": "2016-11-08 18:20:02"
+    },
+    {
+      "nodeID": "232145",
+      "text": "No, I'm arguing that we have interests there and the ability to protect them, including Americans who live and do business there",
+      "type": "I",
+      "timestamp": "2016-11-08 18:20:02"
+    },
+    {
+      "nodeID": "232157",
+      "text": "crash_testdummy : Why shouldn't those countries pay us the amount agreed upon",
+      "type": "L",
+      "timestamp": "2016-11-08 18:20:03"
+    },
+    {
+      "nodeID": "232159",
+      "text": "those countries should pay us the amount agreed upon",
+      "type": "I",
+      "timestamp": "2016-11-08 18:20:04"
+    },
+    {
+      "nodeID": "255834",
+      "text": "TRUMP : we should be asking—we're defending them, and they should at least be paying us what they're supposed to be paying by treaty and contract",
+      "type": "L",
+      "timestamp": "2016-12-21 18:18:53"
+    },
+    {
+      "nodeID": "255836",
+      "text": "we should be asking—we're defending them, and they should at least be paying us what they're supposed to be paying by treaty and contract",
+      "type": "I",
+      "timestamp": "2016-12-21 18:18:53"
+    },
+    {
+      "nodeID": "264004",
+      "text": "Default Conflict",
+      "type": "CA",
+      "timestamp": "2017-03-08 11:32:13",
+      "scheme": "Default Conflict",
+      "schemeID": "71"
+    },
+    {
+      "nodeID": "264005",
+      "text": "Default Transition",
+      "type": "TA",
+      "timestamp": "2017-03-08 11:32:14",
+      "scheme": "Default Transition",
+      "schemeID": "82"
+    },
+    {
+      "nodeID": "264006",
+      "text": "Disagreeing",
+      "type": "YA",
+      "timestamp": "2017-03-08 11:32:16",
+      "scheme": "Disagreeing",
+      "schemeID": "78"
+    },
+    {
+      "nodeID": "264007",
+      "text": "Default Inference",
+      "type": "RA",
+      "timestamp": "2017-03-08 11:32:18",
+      "scheme": "Default Inference",
+      "schemeID": "72"
+    },
+    {
+      "nodeID": "264008",
+      "text": "Default Transition",
+      "type": "TA",
+      "timestamp": "2017-03-08 11:32:20",
+      "scheme": "Default Transition",
+      "schemeID": "82"
+    },
+    {
+      "nodeID": "264009",
+      "text": "Arguing",
+      "type": "YA",
+      "timestamp": "2017-03-08 11:32:21",
+      "scheme": "Arguing",
+      "schemeID": "80"
+    },
+    {
+      "nodeID": "264010",
+      "text": "Default Conflict",
+      "type": "CA",
+      "timestamp": "2017-03-08 11:32:23",
+      "scheme": "Default Conflict",
+      "schemeID": "71"
+    },
+    {
+      "nodeID": "264011",
+      "text": "Default Transition",
+      "type": "TA",
+      "timestamp": "2017-03-08 11:32:25",
+      "scheme": "Default Transition",
+      "schemeID": "82"
+    },
+    {
+      "nodeID": "264012",
+      "text": "Disagreeing",
+      "type": "YA",
+      "timestamp": "2017-03-08 11:32:26",
+      "scheme": "Disagreeing",
+      "schemeID": "78"
+    },
+    {
+      "nodeID": "264013",
+      "text": "Default Inference",
+      "type": "RA",
+      "timestamp": "2017-03-08 11:32:28",
+      "scheme": "Default Inference",
+      "schemeID": "72"
+    },
+    {
+      "nodeID": "264014",
+      "text": "Default Transition",
+      "type": "TA",
+      "timestamp": "2017-03-08 11:32:29",
+      "scheme": "Default Transition",
+      "schemeID": "82"
+    },
+    {
+      "nodeID": "264015",
+      "text": "Arguing",
+      "type": "YA",
+      "timestamp": "2017-03-08 11:32:30",
+      "scheme": "Arguing",
+      "schemeID": "80"
+    }
+  ],
+  "edges": [
+    {
+      "edgeID": "319126",
+      "fromID": "232128",
+      "toID": "264004",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319127",
+      "fromID": "264004",
+      "toID": "255834",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319128",
+      "fromID": "255834",
+      "toID": "264005",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319129",
+      "fromID": "264005",
+      "toID": "232126",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319130",
+      "fromID": "264005",
+      "toID": "264006",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319131",
+      "fromID": "264006",
+      "toID": "264004",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319132",
+      "fromID": "232133",
+      "toID": "264007",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319133",
+      "fromID": "264007",
+      "toID": "255836",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319134",
+      "fromID": "255834",
+      "toID": "264008",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319135",
+      "fromID": "264008",
+      "toID": "232131",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319136",
+      "fromID": "264008",
+      "toID": "264009",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319137",
+      "fromID": "264009",
+      "toID": "264007",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319138",
+      "fromID": "232145",
+      "toID": "264010",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319139",
+      "fromID": "264010",
+      "toID": "255836",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319140",
+      "fromID": "255834",
+      "toID": "264011",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319141",
+      "fromID": "264011",
+      "toID": "232143",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319142",
+      "fromID": "264011",
+      "toID": "264012",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319143",
+      "fromID": "264012",
+      "toID": "264010",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319144",
+      "fromID": "232159",
+      "toID": "264013",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319145",
+      "fromID": "264013",
+      "toID": "255836",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319146",
+      "fromID": "255834",
+      "toID": "264014",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319147",
+      "fromID": "264014",
+      "toID": "232157",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319148",
+      "fromID": "264014",
+      "toID": "264015",
+      "formEdgeID": null
+    },
+    {
+      "edgeID": "319149",
+      "fromID": "264015",
+      "toID": "264013",
+      "formEdgeID": null
+    }
+  ],
+  "locutions": []
+}

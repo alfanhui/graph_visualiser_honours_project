@@ -1,0 +1,1440 @@
+{
+    "nodes": [
+        {
+            "nodeID": "230343",
+            "text": "coltsmetsfan614 : Can anyone explain why Trump's idea to \"take the oil\" from Iraq would have been anything other than plunder, which is a war crime",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:45"
+        },
+        {
+            "nodeID": "230344",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:45",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230345",
+            "text": "Trump's idea to \"take the oil\" from Iraq would have been plunder, which is a war crime",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:45"
+        },
+        {
+            "nodeID": "230346",
+            "text": "Rory: coltsmetsfan614 : Can anyone explain why Trump's idea to \"take the oil\" from Iraq would have been anything other than plunder, which is a war crime",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:46"
+        },
+        {
+            "nodeID": "230347",
+            "text": "SasquatchUFO : Nope",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:46"
+        },
+        {
+            "nodeID": "230348",
+            "text": "Rory: SasquatchUFO : Nope",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:46"
+        },
+        {
+            "nodeID": "230349",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:46",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230350",
+            "text": "Agreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:46",
+            "scheme": "Agreeing",
+            "schemeID": "77"
+        },
+        {
+            "nodeID": "230351",
+            "text": "Ibreathelotsofair : Trump does not care about your puny accords and conventions, all shall bow to trump",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:46"
+        },
+        {
+            "nodeID": "230352",
+            "text": "Ironic Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:46",
+            "scheme": "Ironic Asserting",
+            "schemeID": "148"
+        },
+        {
+            "nodeID": "230353",
+            "text": "Trump does not care about your puny accords and conventions, all shall bow to trump",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:46"
+        },
+        {
+            "nodeID": "230354",
+            "text": "Rory: Ibreathelotsofair : Trump does not care about your puny accords and conventions, all shall bow to trump",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:46"
+        },
+        {
+            "nodeID": "230355",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:46",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230356",
+            "text": "Pennwisedom : stealing \"all the Oil\" and putting it \"somewhere else\" is more of a Carmen Sandiego type crime",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:46"
+        },
+        {
+            "nodeID": "230357",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:47",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230358",
+            "text": "stealing \"all the Oil\" and putting it \"somewhere else\" is more of a Carmen Sandiego type crime",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:47"
+        },
+        {
+            "nodeID": "230359",
+            "text": "Rory: Pennwisedom : stealing \"all the Oil\" and putting it \"somewhere else\" is more of a Carmen Sandiego type crime",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:47"
+        },
+        {
+            "nodeID": "230360",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:47",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230361",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:02:47",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "230362",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:47",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "230363",
+            "text": "rdinsb : He also wants to return to torture, also a war crime",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:47"
+        },
+        {
+            "nodeID": "230364",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:47",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230365",
+            "text": "TRUMP also wants to return to torture, also a war crime",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:47"
+        },
+        {
+            "nodeID": "230366",
+            "text": "Rory: rdinsb : He also wants to return to torture, also a war crime",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:48"
+        },
+        {
+            "nodeID": "230367",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:48",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230368",
+            "text": "PhoenixFox : It would absolutely have been a war crimes",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:48"
+        },
+        {
+            "nodeID": "230369",
+            "text": "Rory: PhoenixFox : It would absolutely have been a war crimes",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:48"
+        },
+        {
+            "nodeID": "230370",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:48",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230371",
+            "text": "Agreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:48",
+            "scheme": "Agreeing",
+            "schemeID": "77"
+        },
+        {
+            "nodeID": "230372",
+            "text": "PhoenixFox : I can't believe she isn't pressing that fact home",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:48"
+        },
+        {
+            "nodeID": "230373",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:48",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230374",
+            "text": "I can't believe CLINTON isn't pressing that fact home",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:48"
+        },
+        {
+            "nodeID": "230375",
+            "text": "Rory: PhoenixFox : I can't believe she isn't pressing that fact home",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:48"
+        },
+        {
+            "nodeID": "230376",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:48",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230377",
+            "text": "corbygray528 : he also mentioned bringing back waterboarding and \"worse than waterboarding\" in a primary debate at some point",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:49"
+        },
+        {
+            "nodeID": "230378",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:49",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230379",
+            "text": "TRUMP also mentioned bringing back waterboarding and \"worse than waterboarding\" in a primary debate at some point",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:49"
+        },
+        {
+            "nodeID": "230380",
+            "text": "Rory: corbygray528 : he also mentioned bringing back waterboarding and \"worse than waterboarding\" in a primary debate at some point",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:49"
+        },
+        {
+            "nodeID": "230381",
+            "text": "corbygray528 :  I don't think he cares too much about war crimes",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:49"
+        },
+        {
+            "nodeID": "230382",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:49",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230383",
+            "text": "I don't think TRUMP cares too much about war crimes",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:49"
+        },
+        {
+            "nodeID": "230384",
+            "text": "Rory: corbygray528 :  I don't think he cares too much about war crimes",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:49"
+        },
+        {
+            "nodeID": "230385",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:49",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230386",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:02:50",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "230387",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:50",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "230388",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:50",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230389",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-08 18:02:50",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "230390",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:50",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "230391",
+            "text": "RoccoStiglitz : Not in a way that would make any kind of sense. Stealing natural resources is indeed a war crime",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:50"
+        },
+        {
+            "nodeID": "230392",
+            "text": "Rory: RoccoStiglitz : Not in a way that would make any kind of sense. Stealing natural resources is indeed a war crime",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:50"
+        },
+        {
+            "nodeID": "230393",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:50",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230394",
+            "text": "Agreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:50",
+            "scheme": "Agreeing",
+            "schemeID": "77"
+        },
+        {
+            "nodeID": "230395",
+            "text": "vthings : People kinda gloss over that",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:50"
+        },
+        {
+            "nodeID": "230396",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:51",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230397",
+            "text": "People kinda gloss over that",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:51"
+        },
+        {
+            "nodeID": "230398",
+            "text": "Rory: vthings : People kinda gloss over that",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:51"
+        },
+        {
+            "nodeID": "230399",
+            "text": "vthings : I'm surprised that level of blatant 19-century style imperialism isn't getting more scrutiny",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:51"
+        },
+        {
+            "nodeID": "230400",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:51",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230401",
+            "text": "I'm surprised that level of blatant 19-century style imperialism isn't getting more scrutiny",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:51"
+        },
+        {
+            "nodeID": "230402",
+            "text": "Rory: vthings : I'm surprised that level of blatant 19-century style imperialism isn't getting more scrutiny",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:51"
+        },
+        {
+            "nodeID": "230403",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:51",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230404",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:02:51",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "230405",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:51",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "230406",
+            "text": "kgraham227 : There's no way to explain it",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:52"
+        },
+        {
+            "nodeID": "230407",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:52",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230408",
+            "text": "There's no way to explain it",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:52"
+        },
+        {
+            "nodeID": "230409",
+            "text": "Rory: kgraham227 : There's no way to explain it",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:52"
+        },
+        {
+            "nodeID": "230410",
+            "text": "kgraham227 : What he's proposing is LITERALLY stealing the oil",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:52"
+        },
+        {
+            "nodeID": "230411",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:52",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230412",
+            "text": "What TRUMP's proposing is LITERALLY stealing the oil",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:52"
+        },
+        {
+            "nodeID": "230413",
+            "text": "Rory: kgraham227 : What he's proposing is LITERALLY stealing the oil",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:52"
+        },
+        {
+            "nodeID": "230414",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:52",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230415",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:02:52",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "230416",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:53",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "230417",
+            "text": "The_GMD : It's like a catch-22",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:53"
+        },
+        {
+            "nodeID": "230418",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:53",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230419",
+            "text": "It's like a catch-22",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:53"
+        },
+        {
+            "nodeID": "230420",
+            "text": "Rory: The_GMD : It's like a catch-22",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:53"
+        },
+        {
+            "nodeID": "230421",
+            "text": "The_GMD : If you don't take the oil, a terror division (ISIS) can take control of it in the absence of a solid government in order to fund their operations",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:53"
+        },
+        {
+            "nodeID": "230422",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:53",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230423",
+            "text": "If you don't take the oil, a terror division (ISIS) can take control of it in the absence of a solid government in order to fund their operations",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:53"
+        },
+        {
+            "nodeID": "230424",
+            "text": "Rory: The_GMD : If you don't take the oil, a terror division (ISIS) can take control of it in the absence of a solid government in order to fund their operations",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:53"
+        },
+        {
+            "nodeID": "230425",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:53",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230426",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:02:54",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "230427",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:54",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "230428",
+            "text": "The_GMD : If you take the oil, you fuck over the country's economy",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:54"
+        },
+        {
+            "nodeID": "230429",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:54",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230430",
+            "text": "If you take the oil, you fuck over the country's economy",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:54"
+        },
+        {
+            "nodeID": "230431",
+            "text": "Rory: The_GMD : If you take the oil, you fuck over the country's economy",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:54"
+        },
+        {
+            "nodeID": "230432",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:54",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230433",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:02:54",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "230434",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:54",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "230435",
+            "text": "The_GMD :  It basically comes down to is it less harmful to facilitate a terror group, or is it less harmful to damage a countries economy by taking it's largest import",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:54"
+        },
+        {
+            "nodeID": "230436",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:55",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "230437",
+            "text": "It basically comes down to is it less harmful to facilitate a terror group, or is it less harmful to damage a countries economy by taking it's largest import",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:55"
+        },
+        {
+            "nodeID": "230438",
+            "text": "Rory: The_GMD :  It basically comes down to is it less harmful to facilitate a terror group, or is it less harmful to damage a countries economy by taking it's largest import",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:55"
+        },
+        {
+            "nodeID": "230439",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:55",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230440",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-08 18:02:55",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "230441",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:55",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "230442",
+            "text": "dmee : WRONG. (that's how this works, right? I just yell wrong over whatever facts you state?)",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:55"
+        },
+        {
+            "nodeID": "230443",
+            "text": "Ironic Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:55",
+            "scheme": "Ironic Asserting",
+            "schemeID": "148"
+        },
+        {
+            "nodeID": "230444",
+            "text": "WRONG. (that's how this works, right? I just yell wrong over whatever facts you state?)",
+            "type": "I",
+            "timestamp": "2016-11-08 18:02:55"
+        },
+        {
+            "nodeID": "230445",
+            "text": "Rory: dmee : WRONG. (that's how this works, right? I just yell wrong over whatever facts you state?)",
+            "type": "L",
+            "timestamp": "2016-11-08 18:02:55"
+        },
+        {
+            "nodeID": "230446",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:56",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230447",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-08 18:02:56",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "230448",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:56",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "230449",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:56",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "230450",
+            "text": "Agreeing",
+            "type": "YA",
+            "timestamp": "2016-11-08 18:02:56",
+            "scheme": "Agreeing",
+            "schemeID": "77"
+        },
+        {
+            "nodeID": "230451",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-08 18:02:56",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "278185",
+            "fromID": "230344",
+            "toID": "230345",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278186",
+            "fromID": "230343",
+            "toID": "230344",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278187",
+            "fromID": "230343",
+            "toID": "230349",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278188",
+            "fromID": "230349",
+            "toID": "230347",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278189",
+            "fromID": "230349",
+            "toID": "230350",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278190",
+            "fromID": "230350",
+            "toID": "230345",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278191",
+            "fromID": "230352",
+            "toID": "230353",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278192",
+            "fromID": "230351",
+            "toID": "230352",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278193",
+            "fromID": "230343",
+            "toID": "230355",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278194",
+            "fromID": "230355",
+            "toID": "230351",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278195",
+            "fromID": "230357",
+            "toID": "230358",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278196",
+            "fromID": "230356",
+            "toID": "230357",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278197",
+            "fromID": "230343",
+            "toID": "230360",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278198",
+            "fromID": "230360",
+            "toID": "230356",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278199",
+            "fromID": "230358",
+            "toID": "230361",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278200",
+            "fromID": "230361",
+            "toID": "230345",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278201",
+            "fromID": "230360",
+            "toID": "230362",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278202",
+            "fromID": "230362",
+            "toID": "230361",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278203",
+            "fromID": "230364",
+            "toID": "230365",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278204",
+            "fromID": "230363",
+            "toID": "230364",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278205",
+            "fromID": "230343",
+            "toID": "230367",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278206",
+            "fromID": "230367",
+            "toID": "230363",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278207",
+            "fromID": "230343",
+            "toID": "230370",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278208",
+            "fromID": "230370",
+            "toID": "230368",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278209",
+            "fromID": "230370",
+            "toID": "230371",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278210",
+            "fromID": "230371",
+            "toID": "230345",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278211",
+            "fromID": "230373",
+            "toID": "230374",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278212",
+            "fromID": "230372",
+            "toID": "230373",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278213",
+            "fromID": "230368",
+            "toID": "230376",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278214",
+            "fromID": "230376",
+            "toID": "230372",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278215",
+            "fromID": "230378",
+            "toID": "230379",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278216",
+            "fromID": "230377",
+            "toID": "230378",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278217",
+            "fromID": "230382",
+            "toID": "230383",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278218",
+            "fromID": "230381",
+            "toID": "230382",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278219",
+            "fromID": "230377",
+            "toID": "230385",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278220",
+            "fromID": "230385",
+            "toID": "230381",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278221",
+            "fromID": "230379",
+            "toID": "230386",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278222",
+            "fromID": "230386",
+            "toID": "230383",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278223",
+            "fromID": "230385",
+            "toID": "230387",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278224",
+            "fromID": "230387",
+            "toID": "230386",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278225",
+            "fromID": "230343",
+            "toID": "230388",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278226",
+            "fromID": "230388",
+            "toID": "230381",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278227",
+            "fromID": "230383",
+            "toID": "230389",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278228",
+            "fromID": "230389",
+            "toID": "230345",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278229",
+            "fromID": "230388",
+            "toID": "230390",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278230",
+            "fromID": "230390",
+            "toID": "230389",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278231",
+            "fromID": "230343",
+            "toID": "230393",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278232",
+            "fromID": "230393",
+            "toID": "230391",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278233",
+            "fromID": "230393",
+            "toID": "230394",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278234",
+            "fromID": "230394",
+            "toID": "230345",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278235",
+            "fromID": "230396",
+            "toID": "230397",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278236",
+            "fromID": "230395",
+            "toID": "230396",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278237",
+            "fromID": "230400",
+            "toID": "230401",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278238",
+            "fromID": "230399",
+            "toID": "230400",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278239",
+            "fromID": "230395",
+            "toID": "230403",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278240",
+            "fromID": "230403",
+            "toID": "230399",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278241",
+            "fromID": "230397",
+            "toID": "230404",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278242",
+            "fromID": "230404",
+            "toID": "230401",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278243",
+            "fromID": "230403",
+            "toID": "230405",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278244",
+            "fromID": "230405",
+            "toID": "230404",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278245",
+            "fromID": "230407",
+            "toID": "230408",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278246",
+            "fromID": "230406",
+            "toID": "230407",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278247",
+            "fromID": "230411",
+            "toID": "230412",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278248",
+            "fromID": "230410",
+            "toID": "230411",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278249",
+            "fromID": "230406",
+            "toID": "230414",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278250",
+            "fromID": "230414",
+            "toID": "230410",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278251",
+            "fromID": "230412",
+            "toID": "230415",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278252",
+            "fromID": "230415",
+            "toID": "230408",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278253",
+            "fromID": "230414",
+            "toID": "230416",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278254",
+            "fromID": "230416",
+            "toID": "230415",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278255",
+            "fromID": "230418",
+            "toID": "230419",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278256",
+            "fromID": "230417",
+            "toID": "230418",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278257",
+            "fromID": "230422",
+            "toID": "230423",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278258",
+            "fromID": "230421",
+            "toID": "230422",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278259",
+            "fromID": "230417",
+            "toID": "230425",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278260",
+            "fromID": "230425",
+            "toID": "230421",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278261",
+            "fromID": "230423",
+            "toID": "230426",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278262",
+            "fromID": "230426",
+            "toID": "230419",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278263",
+            "fromID": "230425",
+            "toID": "230427",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278264",
+            "fromID": "230427",
+            "toID": "230426",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278265",
+            "fromID": "230429",
+            "toID": "230430",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278266",
+            "fromID": "230428",
+            "toID": "230429",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278267",
+            "fromID": "230417",
+            "toID": "230432",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278268",
+            "fromID": "230432",
+            "toID": "230428",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278269",
+            "fromID": "230430",
+            "toID": "230433",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278270",
+            "fromID": "230433",
+            "toID": "230419",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278271",
+            "fromID": "230432",
+            "toID": "230434",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278272",
+            "fromID": "230434",
+            "toID": "230433",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278273",
+            "fromID": "230436",
+            "toID": "230437",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278274",
+            "fromID": "230435",
+            "toID": "230436",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278275",
+            "fromID": "230417",
+            "toID": "230439",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278276",
+            "fromID": "230439",
+            "toID": "230435",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278277",
+            "fromID": "230437",
+            "toID": "230440",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278278",
+            "fromID": "230440",
+            "toID": "230419",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278279",
+            "fromID": "230439",
+            "toID": "230441",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278280",
+            "fromID": "230441",
+            "toID": "230440",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278281",
+            "fromID": "230443",
+            "toID": "230444",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278282",
+            "fromID": "230442",
+            "toID": "230443",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278283",
+            "fromID": "230343",
+            "toID": "230446",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278284",
+            "fromID": "230446",
+            "toID": "230399",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278285",
+            "fromID": "230401",
+            "toID": "230447",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278286",
+            "fromID": "230447",
+            "toID": "230345",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278287",
+            "fromID": "230446",
+            "toID": "230448",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278288",
+            "fromID": "230448",
+            "toID": "230447",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278289",
+            "fromID": "230343",
+            "toID": "230449",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278290",
+            "fromID": "230449",
+            "toID": "230417",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278291",
+            "fromID": "230449",
+            "toID": "230450",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278292",
+            "fromID": "230450",
+            "toID": "230345",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278293",
+            "fromID": "230343",
+            "toID": "230451",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "278294",
+            "fromID": "230451",
+            "toID": "230442",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": [
+        {
+            "nodeID": "230343",
+            "personID": "3129",
+            "timestamp": "2016-11-09 20:55:26",
+            "start": null,
+            "end": null,
+            "source": null
+        }
+    ]
+}

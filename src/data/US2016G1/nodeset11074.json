@@ -1,0 +1,163 @@
+{
+    "nodes": [
+        {
+            "nodeID": "223793",
+            "text": "CLINTON : That starts with raising the national minimum wage and also guarantee , finally , equal pay for women 's work",
+            "type": "L",
+            "timestamp": "2016-11-03 17:09:16"
+        },
+        {
+            "nodeID": "223795",
+            "text": "That starts with raising the national minimum wage and also guarantee , finally , equal pay for women 's work",
+            "type": "I",
+            "timestamp": "2016-11-03 17:09:16"
+        },
+        {
+            "nodeID": "224724",
+            "text": "Cyfa : I hate when they pull that \"women aren't paid the same as men\" pandering bullshit card",
+            "type": "L",
+            "timestamp": "2016-11-06 11:20:18"
+        },
+        {
+            "nodeID": "224726",
+            "text": "I hate when they pull that \"women aren't paid the same as men\" pandering bullshit card",
+            "type": "I",
+            "timestamp": "2016-11-06 11:20:19"
+        },
+        {
+            "nodeID": "224750",
+            "text": "mhaydar : I don't see why she shouldn't be allowed to bring that up",
+            "type": "L",
+            "timestamp": "2016-11-06 11:20:21"
+        },
+        {
+            "nodeID": "224752",
+            "text": "I don't see why CLINTON shouldn't be allowed to bring that up",
+            "type": "I",
+            "timestamp": "2016-11-06 11:20:21"
+        },
+        {
+            "nodeID": "262289",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2017-03-03 16:06:37",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "262290",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-03 16:06:38",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262291",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2017-03-03 16:06:38",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        },
+        {
+            "nodeID": "262292",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-03 16:06:39",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "262293",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-03 16:06:39",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262294",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-03 16:06:40",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "316320",
+            "fromID": "224726",
+            "toID": "262289",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316321",
+            "fromID": "262289",
+            "toID": "223795",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316322",
+            "fromID": "223793",
+            "toID": "262290",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316323",
+            "fromID": "262290",
+            "toID": "224724",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316324",
+            "fromID": "262290",
+            "toID": "262291",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316325",
+            "fromID": "262291",
+            "toID": "262289",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316326",
+            "fromID": "224752",
+            "toID": "262292",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316327",
+            "fromID": "262292",
+            "toID": "223793",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316328",
+            "fromID": "223793",
+            "toID": "262293",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316329",
+            "fromID": "262293",
+            "toID": "224750",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316330",
+            "fromID": "262293",
+            "toID": "262294",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316331",
+            "fromID": "262294",
+            "toID": "262292",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

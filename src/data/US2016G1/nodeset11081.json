@@ -1,0 +1,235 @@
+{
+    "nodes": [
+        {
+            "nodeID": "225382",
+            "text": "TacitTreeTexas : How is he going to do it",
+            "type": "L",
+            "timestamp": "2016-11-06 15:02:01"
+        },
+        {
+            "nodeID": "225384",
+            "text": "how is TRUMP going to do bring back 25 million jobs",
+            "type": "I",
+            "timestamp": "2016-11-06 15:02:01"
+        },
+        {
+            "nodeID": "225387",
+            "text": "stagshore : Let me follow up with Trump - you've talked about bringing back jobs and creating 25 million jobs. How are you going to bring them back specifically from overseas",
+            "type": "L",
+            "timestamp": "2016-11-06 15:02:01"
+        },
+        {
+            "nodeID": "225389",
+            "text": "let me follow up with Trump - you've talked about bringing back jobs and creating 25 million jobs. How are you going to bring them back specifically from overseas",
+            "type": "I",
+            "timestamp": "2016-11-06 15:02:02"
+        },
+        {
+            "nodeID": "225401",
+            "text": "ilac2481 : How to bring back jobs to the U.S.",
+            "type": "L",
+            "timestamp": "2016-11-06 15:02:03"
+        },
+        {
+            "nodeID": "225403",
+            "text": "how to bring back jobs to the U.S.",
+            "type": "I",
+            "timestamp": "2016-11-06 15:02:03"
+        },
+        {
+            "nodeID": "256138",
+            "text": "HOLT : How are you going to bring back the industries that have left this country for cheaper labor overseas?",
+            "type": "L",
+            "timestamp": "2016-12-22 13:06:45"
+        },
+        {
+            "nodeID": "256140",
+            "text": "TRUMP is going to bring back the industries that have left this country for cheaper labor overseas by X",
+            "type": "I",
+            "timestamp": "2016-12-22 13:06:45"
+        },
+        {
+            "nodeID": "262388",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2017-03-03 16:55:00",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "262389",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-03 16:55:01",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262390",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2017-03-03 16:55:01",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "262391",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2017-03-03 16:55:02",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "262392",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-03 16:55:02",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262393",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2017-03-03 16:55:03",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "262394",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2017-03-03 16:55:03",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "262395",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-03 16:55:04",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262396",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2017-03-03 16:55:04",
+            "scheme": "Restating",
+            "schemeID": "101"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "316444",
+            "fromID": "225384",
+            "toID": "262388",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316445",
+            "fromID": "262388",
+            "toID": "256140",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316446",
+            "fromID": "256138",
+            "toID": "262389",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316447",
+            "fromID": "262389",
+            "toID": "225382",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316448",
+            "fromID": "262389",
+            "toID": "262390",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316449",
+            "fromID": "262390",
+            "toID": "262388",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316450",
+            "fromID": "225389",
+            "toID": "262391",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316451",
+            "fromID": "262391",
+            "toID": "256140",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316452",
+            "fromID": "256138",
+            "toID": "262392",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316453",
+            "fromID": "262392",
+            "toID": "225387",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316454",
+            "fromID": "262392",
+            "toID": "262393",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316455",
+            "fromID": "262393",
+            "toID": "262391",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316456",
+            "fromID": "225403",
+            "toID": "262394",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316457",
+            "fromID": "262394",
+            "toID": "256140",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316458",
+            "fromID": "256138",
+            "toID": "262395",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316459",
+            "fromID": "262395",
+            "toID": "225401",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316460",
+            "fromID": "262395",
+            "toID": "262396",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "316461",
+            "fromID": "262396",
+            "toID": "262394",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

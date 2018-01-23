@@ -1,0 +1,369 @@
+{
+    "nodes": [
+        {
+            "nodeID": "226843",
+            "text": "KJones77 : Did she just plug her book",
+            "type": "L",
+            "timestamp": "2016-11-07 17:31:53"
+        },
+        {
+            "nodeID": "226844",
+            "text": "Assertive Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:31:53",
+            "scheme": "AssertiveQuestioning",
+            "schemeID": "73"
+        },
+        {
+            "nodeID": "226845",
+            "text": "CLINTON just plugged her book",
+            "type": "I",
+            "timestamp": "2016-11-07 17:31:54"
+        },
+        {
+            "nodeID": "226846",
+            "text": "Barbara: KJones77 : Did she just plug her book",
+            "type": "L",
+            "timestamp": "2016-11-07 17:31:54"
+        },
+        {
+            "nodeID": "226847",
+            "text": "Honestliartom : My god she did lmao",
+            "type": "L",
+            "timestamp": "2016-11-07 17:31:54"
+        },
+        {
+            "nodeID": "226848",
+            "text": "Barbara: Honestliartom : My god she did lmao",
+            "type": "L",
+            "timestamp": "2016-11-07 17:31:54"
+        },
+        {
+            "nodeID": "226849",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:31:54",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226850",
+            "text": "Agreeing",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:31:54",
+            "scheme": "Agreeing",
+            "schemeID": "77"
+        },
+        {
+            "nodeID": "226851",
+            "text": "IndigoFreak : You mean the book that's available right now on Amazon",
+            "type": "L",
+            "timestamp": "2016-11-07 17:31:54"
+        },
+        {
+            "nodeID": "226852",
+            "text": "Rhetorical Questioning",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:31:54",
+            "scheme": "RhetoricalQuestioning",
+            "schemeID": "85"
+        },
+        {
+            "nodeID": "226853",
+            "text": "CLINTON plugged the book that's available right now on Amazon",
+            "type": "I",
+            "timestamp": "2016-11-07 17:31:54"
+        },
+        {
+            "nodeID": "226854",
+            "text": "Barbara: IndigoFreak : You mean the book that's available right now on Amazon",
+            "type": "L",
+            "timestamp": "2016-11-07 17:31:54"
+        },
+        {
+            "nodeID": "226855",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2016-11-07 17:31:54",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "226856",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:31:55",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226857",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:31:55",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "226858",
+            "text": "curly_spork : She is not on a book tour",
+            "type": "L",
+            "timestamp": "2016-11-07 17:31:55"
+        },
+        {
+            "nodeID": "226859",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:31:55",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226860",
+            "text": "CLINTON is not on a book tour",
+            "type": "I",
+            "timestamp": "2016-11-07 17:31:55"
+        },
+        {
+            "nodeID": "226861",
+            "text": "Barbara: curly_spork : She is not on a book tour",
+            "type": "L",
+            "timestamp": "2016-11-07 17:31:55"
+        },
+        {
+            "nodeID": "226862",
+            "text": "curly_spork : she is here to keep improving America",
+            "type": "L",
+            "timestamp": "2016-11-07 17:31:55"
+        },
+        {
+            "nodeID": "226863",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:31:55",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226864",
+            "text": "CLINTON is here to keep improving America",
+            "type": "I",
+            "timestamp": "2016-11-07 17:31:55"
+        },
+        {
+            "nodeID": "226865",
+            "text": "Barbara: curly_spork : she is here to keep improving America",
+            "type": "L",
+            "timestamp": "2016-11-07 17:31:55"
+        },
+        {
+            "nodeID": "226866",
+            "text": "ZiggyKitty : our third world airports",
+            "type": "L",
+            "timestamp": "2016-11-07 17:31:56"
+        },
+        {
+            "nodeID": "226867",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 17:31:56",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226868",
+            "text": "our third world airports",
+            "type": "I",
+            "timestamp": "2016-11-07 17:31:56"
+        },
+        {
+            "nodeID": "226869",
+            "text": "Barbara: ZiggyKitty : And our third world airports",
+            "type": "L",
+            "timestamp": "2016-11-07 17:31:56"
+        },
+        {
+            "nodeID": "226870",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:31:56",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226871",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:31:56",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226872",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 17:31:56",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "274161",
+            "fromID": "226844",
+            "toID": "226845",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274162",
+            "fromID": "226843",
+            "toID": "226844",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274163",
+            "fromID": "226843",
+            "toID": "226849",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274164",
+            "fromID": "226849",
+            "toID": "226847",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274165",
+            "fromID": "226849",
+            "toID": "226850",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274166",
+            "fromID": "226850",
+            "toID": "226845",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274167",
+            "fromID": "226852",
+            "toID": "226853",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274168",
+            "fromID": "226851",
+            "toID": "226852",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274169",
+            "fromID": "226853",
+            "toID": "226855",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274170",
+            "fromID": "226855",
+            "toID": "226845",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274171",
+            "fromID": "226843",
+            "toID": "226856",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274172",
+            "fromID": "226856",
+            "toID": "226851",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274173",
+            "fromID": "226856",
+            "toID": "226857",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274174",
+            "fromID": "226857",
+            "toID": "226855",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274175",
+            "fromID": "226859",
+            "toID": "226860",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274176",
+            "fromID": "226858",
+            "toID": "226859",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274177",
+            "fromID": "226863",
+            "toID": "226864",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274178",
+            "fromID": "226862",
+            "toID": "226863",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274179",
+            "fromID": "226867",
+            "toID": "226868",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274180",
+            "fromID": "226866",
+            "toID": "226867",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274181",
+            "fromID": "226851",
+            "toID": "226870",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274182",
+            "fromID": "226870",
+            "toID": "226858",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274183",
+            "fromID": "226858",
+            "toID": "226871",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274184",
+            "fromID": "226871",
+            "toID": "226862",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274185",
+            "fromID": "226862",
+            "toID": "226872",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274186",
+            "fromID": "226872",
+            "toID": "226866",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

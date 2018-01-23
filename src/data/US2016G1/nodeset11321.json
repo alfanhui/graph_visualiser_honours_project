@@ -1,0 +1,2456 @@
+{
+    "nodes": [
+        {
+            "nodeID": "244399",
+            "text": "one of the candidates will not win this election",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:49"
+        },
+        {
+            "nodeID": "244401",
+            "text": "HOLT : One of you will not win this election",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:49"
+        },
+        {
+            "nodeID": "244402",
+            "text": "M: HOLT : One of you will not win this election",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:49"
+        },
+        {
+            "nodeID": "244403",
+            "text": "HOLT : my final question to you tonight , are you willing to accept the outcome as the will of the voters ?",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:49"
+        },
+        {
+            "nodeID": "244405",
+            "text": "X is\/is not willing to accept the outcome as the will of the voters",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:50"
+        },
+        {
+            "nodeID": "244406",
+            "text": "M: HOLT : my final question to you tonight , are you willing to accept the outcome as the will of the voters ?",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:50"
+        },
+        {
+            "nodeID": "244408",
+            "text": "CLINTON : I support our democracy",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:50"
+        },
+        {
+            "nodeID": "244410",
+            "text": "CLINTON supports USA's democracy",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:50"
+        },
+        {
+            "nodeID": "244411",
+            "text": "M: CLINTON : I support our democracy",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:50"
+        },
+        {
+            "nodeID": "244412",
+            "text": "CLINTON : sometimes you win , sometimes you lose",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:50"
+        },
+        {
+            "nodeID": "244414",
+            "text": "sometimes you win , sometimes you lose",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:50"
+        },
+        {
+            "nodeID": "244415",
+            "text": "M: CLINTON : sometimes you win , sometimes you lose",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:51"
+        },
+        {
+            "nodeID": "244417",
+            "text": "CLINTON : I certainly will support the outcome of this election",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:51"
+        },
+        {
+            "nodeID": "244419",
+            "text": "CLINTON certainly will support the outcome of this election",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:51"
+        },
+        {
+            "nodeID": "244420",
+            "text": "M: CLINTON : I certainly will support the outcome of this election",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:51"
+        },
+        {
+            "nodeID": "244421",
+            "text": "M: CLINTON : I know Donald 's trying very hard to plant doubts about it",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:51"
+        },
+        {
+            "nodeID": "244422",
+            "text": "CLINTON : Donald 's trying very hard to plant doubts about it",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:51"
+        },
+        {
+            "nodeID": "244424",
+            "text": "TRUMP's trying very hard to plant doubts about the outcome of this election",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:52"
+        },
+        {
+            "nodeID": "244425",
+            "text": "M: CLINTON : Donald 's trying very hard to plant doubts about it",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:52"
+        },
+        {
+            "nodeID": "244430",
+            "text": "CLINTON : I hope the people out there understand : This election 's really up to you",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:52"
+        },
+        {
+            "nodeID": "244432",
+            "text": "CLINTON hopes the people out there understand that the election's really up to them",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:52"
+        },
+        {
+            "nodeID": "244433",
+            "text": "M: CLINTON : I hope the people out there understand : This election 's really up to you",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:53"
+        },
+        {
+            "nodeID": "244435",
+            "text": "M: CLINTON : It 's not about us so much as it is about you and your families and the kind of country and future you want",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:53"
+        },
+        {
+            "nodeID": "244436",
+            "text": "CLINTON : It 's not about us so much as it is about you and your families and the kind of country and future you want",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:53"
+        },
+        {
+            "nodeID": "244438",
+            "text": "the election is not about CLINTON and TRUMP so much as it is about the people and their families and the kind of country and future they want",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:53"
+        },
+        {
+            "nodeID": "244440",
+            "text": "CLINTON : I sure hope you will get out and vote as though your future depended on it",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:53"
+        },
+        {
+            "nodeID": "244442",
+            "text": "CLINTON sure hopes people will get out and vote as though their future depended on it",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:54"
+        },
+        {
+            "nodeID": "244443",
+            "text": "M: CLINTON : I sure hope you will get out and vote as though your future depended on it",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:54"
+        },
+        {
+            "nodeID": "244445",
+            "text": "M: CLINTON : I think it does",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:54"
+        },
+        {
+            "nodeID": "244449",
+            "text": "CLINTON : it does",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:54"
+        },
+        {
+            "nodeID": "244451",
+            "text": "people's future does depend on the election",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:55"
+        },
+        {
+            "nodeID": "244452",
+            "text": "M: CLINTON : it does",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:55"
+        },
+        {
+            "nodeID": "244453",
+            "text": "HOLT : Secretary Clinton ?",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:55"
+        },
+        {
+            "nodeID": "244455",
+            "text": "CLINTON should respond",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:55"
+        },
+        {
+            "nodeID": "244456",
+            "text": "M: HOLT : Secretary Clinton ?",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:55"
+        },
+        {
+            "nodeID": "244459",
+            "text": "HOLT : Mr. Trump , very quickly , same question",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:55"
+        },
+        {
+            "nodeID": "244461",
+            "text": "TRUMP should very quickly answer the same question",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:56"
+        },
+        {
+            "nodeID": "244462",
+            "text": "M: HOLT : Mr. Trump , very quickly , same question",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:56"
+        },
+        {
+            "nodeID": "244464",
+            "text": "M: HOLT : Will you accept the outcome as the will of the voters ?",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:56"
+        },
+        {
+            "nodeID": "244465",
+            "text": "HOLT : Will you accept the outcome as the will of the voters ?",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:56"
+        },
+        {
+            "nodeID": "244467",
+            "text": "TRUMP will\/will not accept the outcome as the will of the voters",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:56"
+        },
+        {
+            "nodeID": "244471",
+            "text": "TRUMP : I want to make America great again",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:57"
+        },
+        {
+            "nodeID": "244473",
+            "text": "TRUMP wants to make America great again",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:57"
+        },
+        {
+            "nodeID": "244474",
+            "text": "M: TRUMP : I want to make America great again",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:57"
+        },
+        {
+            "nodeID": "244476",
+            "text": "TRUMP : We are a nation that is seriously troubled",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:57"
+        },
+        {
+            "nodeID": "244478",
+            "text": "Americans are a nation that is seriously troubled",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:58"
+        },
+        {
+            "nodeID": "244479",
+            "text": "M: TRUMP : We are a nation that is seriously troubled",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:58"
+        },
+        {
+            "nodeID": "244483",
+            "text": "TRUMP : We 're losing our jobs",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:58"
+        },
+        {
+            "nodeID": "244485",
+            "text": "Americans are losing their jobs",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:58"
+        },
+        {
+            "nodeID": "244486",
+            "text": "M: TRUMP : We 're losing our jobs",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:58"
+        },
+        {
+            "nodeID": "244490",
+            "text": "TRUMP : People are pouring into our country",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:59"
+        },
+        {
+            "nodeID": "244492",
+            "text": "people are pouring into the USA",
+            "type": "I",
+            "timestamp": "2016-11-13 14:03:59"
+        },
+        {
+            "nodeID": "244493",
+            "text": "M: TRUMP : People are pouring into our country",
+            "type": "L",
+            "timestamp": "2016-11-13 14:03:59"
+        },
+        {
+            "nodeID": "244497",
+            "text": "TRUMP : The other day , we were deporting 800 people",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:00"
+        },
+        {
+            "nodeID": "244499",
+            "text": "the other day USA were deporting 800 people",
+            "type": "I",
+            "timestamp": "2016-11-13 14:04:00"
+        },
+        {
+            "nodeID": "244500",
+            "text": "M: TRUMP : The other day , we were deporting 800 people",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:00"
+        },
+        {
+            "nodeID": "244504",
+            "text": "TRUMP : perhaps they passed the wrong button",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:00"
+        },
+        {
+            "nodeID": "244506",
+            "text": "perhaps they passed the wrong button",
+            "type": "I",
+            "timestamp": "2016-11-13 14:04:01"
+        },
+        {
+            "nodeID": "244507",
+            "text": "M: TRUMP : perhaps they passed the wrong button",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:01"
+        },
+        {
+            "nodeID": "244509",
+            "text": "TRUMP : they pressed the wrong button",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:01"
+        },
+        {
+            "nodeID": "244511",
+            "text": "they pressed the wrong button",
+            "type": "I",
+            "timestamp": "2016-11-13 14:04:01"
+        },
+        {
+            "nodeID": "244512",
+            "text": "M: TRUMP : they pressed the wrong button",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:01"
+        },
+        {
+            "nodeID": "244516",
+            "text": "M: TRUMP : perhaps worse than that , it was corruption",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:02"
+        },
+        {
+            "nodeID": "244517",
+            "text": "TRUMP : perhaps worse than that",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:02"
+        },
+        {
+            "nodeID": "244519",
+            "text": "perhaps it was worse than pressing the wrong button",
+            "type": "I",
+            "timestamp": "2016-11-13 14:04:02"
+        },
+        {
+            "nodeID": "244520",
+            "text": "M: TRUMP : perhaps worse than that",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:02"
+        },
+        {
+            "nodeID": "244522",
+            "text": "TRUMP : it was corruption",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:02"
+        },
+        {
+            "nodeID": "244524",
+            "text": "perhaps it was corruption",
+            "type": "I",
+            "timestamp": "2016-11-13 14:04:03"
+        },
+        {
+            "nodeID": "244525",
+            "text": "M: TRUMP : it was corruption",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:03"
+        },
+        {
+            "nodeID": "244529",
+            "text": "TRUMP : these people that we were going to deport for good reason ended up becoming citizens",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:03"
+        },
+        {
+            "nodeID": "244531",
+            "text": "these people that we were going to deport for good reason ended up becoming citizens",
+            "type": "I",
+            "timestamp": "2016-11-13 14:04:03"
+        },
+        {
+            "nodeID": "244532",
+            "text": "M: TRUMP : these people that we were going to deport for good reason ended up becoming citizens",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:03"
+        },
+        {
+            "nodeID": "244536",
+            "text": "TRUMP : Ended up becoming citizens",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:04"
+        },
+        {
+            "nodeID": "244538",
+            "text": "these people ended up becoming citizens",
+            "type": "I",
+            "timestamp": "2016-11-13 14:04:04"
+        },
+        {
+            "nodeID": "244539",
+            "text": "M: TRUMP : Ended up becoming citizens",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:04"
+        },
+        {
+            "nodeID": "244543",
+            "text": "TRUMP : it was 800",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:05"
+        },
+        {
+            "nodeID": "244544",
+            "text": "M: TRUMP : it was 800",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:05"
+        },
+        {
+            "nodeID": "244547",
+            "text": "TRUMP : now it turns out it might be 1,800",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:05"
+        },
+        {
+            "nodeID": "244549",
+            "text": "now it turns out USA might be deporting 1,800 people",
+            "type": "I",
+            "timestamp": "2016-11-13 14:04:05"
+        },
+        {
+            "nodeID": "244550",
+            "text": "M: TRUMP : now it turns out it might be 1,800",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:05"
+        },
+        {
+            "nodeID": "244552",
+            "text": "TRUMP : they do n't even know",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:06"
+        },
+        {
+            "nodeID": "244554",
+            "text": "they don't even know how many people USA were deporting",
+            "type": "I",
+            "timestamp": "2016-11-13 14:04:06"
+        },
+        {
+            "nodeID": "244555",
+            "text": "M: TRUMP : they do n't even know",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:06"
+        },
+        {
+            "nodeID": "244560",
+            "text": "HOLT : Will you accept the outcome of the election ?",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:07"
+        },
+        {
+            "nodeID": "244562",
+            "text": "TRUMP will\/will not accept the outcome of the election",
+            "type": "I",
+            "timestamp": "2016-11-13 14:04:07"
+        },
+        {
+            "nodeID": "244563",
+            "text": "M: HOLT : Will you accept the outcome of the election ?",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:07"
+        },
+        {
+            "nodeID": "244567",
+            "text": "TRUMP : Look , here 's the story",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:07"
+        },
+        {
+            "nodeID": "244569",
+            "text": "here's the story",
+            "type": "I",
+            "timestamp": "2016-11-13 14:04:07"
+        },
+        {
+            "nodeID": "244570",
+            "text": "M: TRUMP : Look , here 's the story",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:08"
+        },
+        {
+            "nodeID": "244574",
+            "text": "TRUMP : I 'm going to be able to do it",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:08"
+        },
+        {
+            "nodeID": "244576",
+            "text": "TRUMP is going to be able to make America great again",
+            "type": "I",
+            "timestamp": "2016-11-13 14:04:08"
+        },
+        {
+            "nodeID": "244577",
+            "text": "M: TRUMP : I 'm going to be able to do it",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:09"
+        },
+        {
+            "nodeID": "244579",
+            "text": "TRUMP : I do n't believe Hillary will",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:09"
+        },
+        {
+            "nodeID": "244581",
+            "text": "TRUMP doesn't believe CLINTON will be able to make America great again",
+            "type": "I",
+            "timestamp": "2016-11-13 14:04:09"
+        },
+        {
+            "nodeID": "244582",
+            "text": "M: TRUMP : I do n't believe Hillary will",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:09"
+        },
+        {
+            "nodeID": "244584",
+            "text": "TRUMP : The answer is , if she wins , I will absolutely support her",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:09"
+        },
+        {
+            "nodeID": "244586",
+            "text": "the answer is if CLINTON wins TRUMP will absolutely support her",
+            "type": "I",
+            "timestamp": "2016-11-13 14:04:10"
+        },
+        {
+            "nodeID": "244587",
+            "text": "M: TRUMP : The answer is , if she wins , I will absolutely support her",
+            "type": "L",
+            "timestamp": "2016-11-13 14:04:10"
+        },
+        {
+            "nodeID": "264667",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:26:57",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264668",
+            "text": "Pure Questioning",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:26:57",
+            "scheme": "PureQuestioning",
+            "schemeID": "91"
+        },
+        {
+            "nodeID": "264669",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:26:57",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264670",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:26:58",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264671",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:26:58",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264672",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:26:58",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264673",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:26:59",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264674",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:26:59",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264675",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:00",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264676",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-17 11:27:00",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "264677",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:00",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264678",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:00",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "264679",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:00",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264680",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:01",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264681",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:01",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264682",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:01",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264683",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:01",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264684",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:02",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264685",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:02",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264686",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-17 11:27:02",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "264687",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:02",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "264688",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:03",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264689",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:03",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264690",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:03",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264691",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:03",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264692",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:04",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264693",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:04",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264694",
+            "text": "Pure Questioning",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:04",
+            "scheme": "PureQuestioning",
+            "schemeID": "91"
+        },
+        {
+            "nodeID": "264695",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2017-03-17 11:27:05",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "264696",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:05",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264697",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:05",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "264698",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:05",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264699",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:06",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264700",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:06",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264701",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:06",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264702",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-17 11:27:06",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "264703",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:06",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "264704",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:07",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264705",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-17 11:27:07",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "264706",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:07",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264707",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:07",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "264708",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:07",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264709",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-17 11:27:08",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "264710",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:08",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264711",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:08",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "264712",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:08",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264713",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-17 11:27:09",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "264714",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:09",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264715",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:09",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "264716",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:09",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264717",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:10",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264718",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:10",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264719",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2017-03-17 11:27:10",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "264720",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:10",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264721",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:10",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "264722",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:11",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264723",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:11",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264724",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:11",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264725",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:12",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264726",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-17 11:27:12",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "264727",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:12",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "264728",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:12",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264729",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-17 11:27:12",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "264730",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:13",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264731",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:13",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "264732",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:13",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264733",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:13",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264734",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2017-03-17 11:27:13",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "264735",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:14",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "264736",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:14",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264737",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:14",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264738",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:14",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264739",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2017-03-17 11:27:15",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "264740",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:15",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264741",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-17 11:27:15",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "264742",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:15",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264743",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:16",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264744",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:16",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "264745",
+            "text": "Pure Questioning",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:16",
+            "scheme": "PureQuestioning",
+            "schemeID": "91"
+        },
+        {
+            "nodeID": "264746",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:16",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264747",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2017-03-17 11:27:16",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "264748",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:16",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "264749",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:17",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264750",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:17",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264751",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:17",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264752",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:18",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264753",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:18",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264754",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:18",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264755",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:18",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264756",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:19",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "264757",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2017-03-17 11:27:19",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "264758",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-17 11:27:19",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "320354",
+            "fromID": "264667",
+            "toID": "244399",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320355",
+            "fromID": "244401",
+            "toID": "264667",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320356",
+            "fromID": "264668",
+            "toID": "244405",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320357",
+            "fromID": "244403",
+            "toID": "264668",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320358",
+            "fromID": "244401",
+            "toID": "264669",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320359",
+            "fromID": "264669",
+            "toID": "244403",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320360",
+            "fromID": "264670",
+            "toID": "244410",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320361",
+            "fromID": "244408",
+            "toID": "264670",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320362",
+            "fromID": "264671",
+            "toID": "244414",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320363",
+            "fromID": "244412",
+            "toID": "264671",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320364",
+            "fromID": "244408",
+            "toID": "264672",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320365",
+            "fromID": "264672",
+            "toID": "244412",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320366",
+            "fromID": "264673",
+            "toID": "244419",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320367",
+            "fromID": "244417",
+            "toID": "264673",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320368",
+            "fromID": "264674",
+            "toID": "244424",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320369",
+            "fromID": "244422",
+            "toID": "264674",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320370",
+            "fromID": "244417",
+            "toID": "264675",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320371",
+            "fromID": "264675",
+            "toID": "244422",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320372",
+            "fromID": "244410",
+            "toID": "264676",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320373",
+            "fromID": "264676",
+            "toID": "244419",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320374",
+            "fromID": "244408",
+            "toID": "264677",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320375",
+            "fromID": "264677",
+            "toID": "244417",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320376",
+            "fromID": "264677",
+            "toID": "264678",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320377",
+            "fromID": "264678",
+            "toID": "264676",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320378",
+            "fromID": "264679",
+            "toID": "244432",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320379",
+            "fromID": "244430",
+            "toID": "264679",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320380",
+            "fromID": "244422",
+            "toID": "264680",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320381",
+            "fromID": "264680",
+            "toID": "244430",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320382",
+            "fromID": "264681",
+            "toID": "244438",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320383",
+            "fromID": "244436",
+            "toID": "264681",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320384",
+            "fromID": "244430",
+            "toID": "264682",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320385",
+            "fromID": "264682",
+            "toID": "244436",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320386",
+            "fromID": "264683",
+            "toID": "244442",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320387",
+            "fromID": "244440",
+            "toID": "264683",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320388",
+            "fromID": "244436",
+            "toID": "264684",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320389",
+            "fromID": "264684",
+            "toID": "244440",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320390",
+            "fromID": "244440",
+            "toID": "264685",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320391",
+            "fromID": "264686",
+            "toID": "244442",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320392",
+            "fromID": "264685",
+            "toID": "264687",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320393",
+            "fromID": "264687",
+            "toID": "264686",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320394",
+            "fromID": "264688",
+            "toID": "244451",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320395",
+            "fromID": "244449",
+            "toID": "264688",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320396",
+            "fromID": "244451",
+            "toID": "264686",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320397",
+            "fromID": "264685",
+            "toID": "244449",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320398",
+            "fromID": "264689",
+            "toID": "244455",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320399",
+            "fromID": "244453",
+            "toID": "264689",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320400",
+            "fromID": "244403",
+            "toID": "264690",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320401",
+            "fromID": "264690",
+            "toID": "244453",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320402",
+            "fromID": "244453",
+            "toID": "264691",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320403",
+            "fromID": "264691",
+            "toID": "244408",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320404",
+            "fromID": "264692",
+            "toID": "244461",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320405",
+            "fromID": "244459",
+            "toID": "264692",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320406",
+            "fromID": "244449",
+            "toID": "264693",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320407",
+            "fromID": "264693",
+            "toID": "244459",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320408",
+            "fromID": "264694",
+            "toID": "244467",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320409",
+            "fromID": "244465",
+            "toID": "264694",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320410",
+            "fromID": "244467",
+            "toID": "264695",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320411",
+            "fromID": "264695",
+            "toID": "244405",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320412",
+            "fromID": "244403",
+            "toID": "264696",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320413",
+            "fromID": "264696",
+            "toID": "244465",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320414",
+            "fromID": "264696",
+            "toID": "264697",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320415",
+            "fromID": "264697",
+            "toID": "264695",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320416",
+            "fromID": "264698",
+            "toID": "244473",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320417",
+            "fromID": "244471",
+            "toID": "264698",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320418",
+            "fromID": "244465",
+            "toID": "264699",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320419",
+            "fromID": "264699",
+            "toID": "244471",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320420",
+            "fromID": "264700",
+            "toID": "244478",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320421",
+            "fromID": "244476",
+            "toID": "264700",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320422",
+            "fromID": "244471",
+            "toID": "264701",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320423",
+            "fromID": "264701",
+            "toID": "244476",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320424",
+            "fromID": "244478",
+            "toID": "264702",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320425",
+            "fromID": "264702",
+            "toID": "244473",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320426",
+            "fromID": "264701",
+            "toID": "264703",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320427",
+            "fromID": "264703",
+            "toID": "264702",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320428",
+            "fromID": "264704",
+            "toID": "244485",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320429",
+            "fromID": "244483",
+            "toID": "264704",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320430",
+            "fromID": "244485",
+            "toID": "264705",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320431",
+            "fromID": "264705",
+            "toID": "244478",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320432",
+            "fromID": "244476",
+            "toID": "264706",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320433",
+            "fromID": "264706",
+            "toID": "244483",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320434",
+            "fromID": "264706",
+            "toID": "264707",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320435",
+            "fromID": "264707",
+            "toID": "264705",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320436",
+            "fromID": "264708",
+            "toID": "244492",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320437",
+            "fromID": "244490",
+            "toID": "264708",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320438",
+            "fromID": "244492",
+            "toID": "264709",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320439",
+            "fromID": "264709",
+            "toID": "244485",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320440",
+            "fromID": "244483",
+            "toID": "264710",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320441",
+            "fromID": "264710",
+            "toID": "244490",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320442",
+            "fromID": "264710",
+            "toID": "264711",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320443",
+            "fromID": "264711",
+            "toID": "264709",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320444",
+            "fromID": "264712",
+            "toID": "244499",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320445",
+            "fromID": "244497",
+            "toID": "264712",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320446",
+            "fromID": "244499",
+            "toID": "264713",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320447",
+            "fromID": "264713",
+            "toID": "244492",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320448",
+            "fromID": "244490",
+            "toID": "264714",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320449",
+            "fromID": "264714",
+            "toID": "244497",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320450",
+            "fromID": "264714",
+            "toID": "264715",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320451",
+            "fromID": "264715",
+            "toID": "264713",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320452",
+            "fromID": "264716",
+            "toID": "244506",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320453",
+            "fromID": "244504",
+            "toID": "264716",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320454",
+            "fromID": "244497",
+            "toID": "264717",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320455",
+            "fromID": "264717",
+            "toID": "244504",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320456",
+            "fromID": "264718",
+            "toID": "244511",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320457",
+            "fromID": "244509",
+            "toID": "264718",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320458",
+            "fromID": "244511",
+            "toID": "264719",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320459",
+            "fromID": "264719",
+            "toID": "244506",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320460",
+            "fromID": "244504",
+            "toID": "264720",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320461",
+            "fromID": "264720",
+            "toID": "244509",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320462",
+            "fromID": "264720",
+            "toID": "264721",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320463",
+            "fromID": "264721",
+            "toID": "264719",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320464",
+            "fromID": "264722",
+            "toID": "244519",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320465",
+            "fromID": "244517",
+            "toID": "264722",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320466",
+            "fromID": "244509",
+            "toID": "264723",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320467",
+            "fromID": "264723",
+            "toID": "244517",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320468",
+            "fromID": "264724",
+            "toID": "244524",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320469",
+            "fromID": "244522",
+            "toID": "264724",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320470",
+            "fromID": "244517",
+            "toID": "264725",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320471",
+            "fromID": "264725",
+            "toID": "244522",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320472",
+            "fromID": "244524",
+            "toID": "264726",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320473",
+            "fromID": "264726",
+            "toID": "244519",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320474",
+            "fromID": "264725",
+            "toID": "264727",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320475",
+            "fromID": "264727",
+            "toID": "264726",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320476",
+            "fromID": "264728",
+            "toID": "244531",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320477",
+            "fromID": "244529",
+            "toID": "264728",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320478",
+            "fromID": "244531",
+            "toID": "264729",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320479",
+            "fromID": "264729",
+            "toID": "244524",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320480",
+            "fromID": "244522",
+            "toID": "264730",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320481",
+            "fromID": "264730",
+            "toID": "244529",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320482",
+            "fromID": "264730",
+            "toID": "264731",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320483",
+            "fromID": "264731",
+            "toID": "264729",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320484",
+            "fromID": "264732",
+            "toID": "244538",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320485",
+            "fromID": "244536",
+            "toID": "264732",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320486",
+            "fromID": "244529",
+            "toID": "264733",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320487",
+            "fromID": "264733",
+            "toID": "244536",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320488",
+            "fromID": "244538",
+            "toID": "264734",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320489",
+            "fromID": "264734",
+            "toID": "244531",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320490",
+            "fromID": "264733",
+            "toID": "264735",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320491",
+            "fromID": "264735",
+            "toID": "264734",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320492",
+            "fromID": "244543",
+            "toID": "264736",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320493",
+            "fromID": "264736",
+            "toID": "244499",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320494",
+            "fromID": "244536",
+            "toID": "264737",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320495",
+            "fromID": "264737",
+            "toID": "244543",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320496",
+            "fromID": "264738",
+            "toID": "244549",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320497",
+            "fromID": "244547",
+            "toID": "264738",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320498",
+            "fromID": "244549",
+            "toID": "264739",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320499",
+            "fromID": "264739",
+            "toID": "244499",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320500",
+            "fromID": "264740",
+            "toID": "244554",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320501",
+            "fromID": "244552",
+            "toID": "264740",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320502",
+            "fromID": "244549",
+            "toID": "264741",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320503",
+            "fromID": "264741",
+            "toID": "244554",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320504",
+            "fromID": "244547",
+            "toID": "264742",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320505",
+            "fromID": "264742",
+            "toID": "244552",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320506",
+            "fromID": "244543",
+            "toID": "264743",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320507",
+            "fromID": "264743",
+            "toID": "244547",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320508",
+            "fromID": "264742",
+            "toID": "264744",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320509",
+            "fromID": "264744",
+            "toID": "264741",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320510",
+            "fromID": "244499",
+            "toID": "264741",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320511",
+            "fromID": "244497",
+            "toID": "264742",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320512",
+            "fromID": "264745",
+            "toID": "244562",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320513",
+            "fromID": "244560",
+            "toID": "264745",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320514",
+            "fromID": "244465",
+            "toID": "264746",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320515",
+            "fromID": "264746",
+            "toID": "244560",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320516",
+            "fromID": "244562",
+            "toID": "264747",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320517",
+            "fromID": "264747",
+            "toID": "244467",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320518",
+            "fromID": "264746",
+            "toID": "264748",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320519",
+            "fromID": "264748",
+            "toID": "264747",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320520",
+            "fromID": "264749",
+            "toID": "244569",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320521",
+            "fromID": "244567",
+            "toID": "264749",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320522",
+            "fromID": "244560",
+            "toID": "264750",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320523",
+            "fromID": "264750",
+            "toID": "244567",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320524",
+            "fromID": "244471",
+            "toID": "264751",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320525",
+            "fromID": "264751",
+            "toID": "244473",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320526",
+            "fromID": "244567",
+            "toID": "264752",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320527",
+            "fromID": "264752",
+            "toID": "244471",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320528",
+            "fromID": "264753",
+            "toID": "244576",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320529",
+            "fromID": "244574",
+            "toID": "264753",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320530",
+            "fromID": "244471",
+            "toID": "264754",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320531",
+            "fromID": "264754",
+            "toID": "244574",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320532",
+            "fromID": "264755",
+            "toID": "244581",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320533",
+            "fromID": "244579",
+            "toID": "264755",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320534",
+            "fromID": "244574",
+            "toID": "264756",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320535",
+            "fromID": "264756",
+            "toID": "244579",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320536",
+            "fromID": "264757",
+            "toID": "244586",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320537",
+            "fromID": "244584",
+            "toID": "264757",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320538",
+            "fromID": "244579",
+            "toID": "264758",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "320539",
+            "fromID": "264758",
+            "toID": "244584",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": [
+        {
+            "nodeID": "244401",
+            "personID": "2819",
+            "timestamp": "2017-03-17 11:27:29",
+            "start": null,
+            "end": null,
+            "source": null
+        }
+    ]
+}

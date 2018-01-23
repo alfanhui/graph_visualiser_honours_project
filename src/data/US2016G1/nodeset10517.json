@@ -1,0 +1,679 @@
+{
+    "nodes": [
+        {
+            "nodeID": "226963",
+            "text": "zitroaaa : He's trying to bully her",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:29"
+        },
+        {
+            "nodeID": "226964",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 18:02:29",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226965",
+            "text": "TRUMP trying to bully CLINTON",
+            "type": "I",
+            "timestamp": "2016-11-07 18:02:29"
+        },
+        {
+            "nodeID": "226966",
+            "text": "Barbara: zitroaaa : He's trying to bully her,",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:30"
+        },
+        {
+            "nodeID": "226967",
+            "text": "zitroaaa : Hillary's too prepped for that shit",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:30"
+        },
+        {
+            "nodeID": "226968",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 18:02:30",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226969",
+            "text": "CLINTON is too prepped for that shit",
+            "type": "I",
+            "timestamp": "2016-11-07 18:02:30"
+        },
+        {
+            "nodeID": "226970",
+            "text": "Barbara: zitroaaa : Hillary's too prepped for that shit",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:30"
+        },
+        {
+            "nodeID": "226971",
+            "text": "zitroaaa : This is amazing",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:30"
+        },
+        {
+            "nodeID": "226972",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 18:02:30",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226973",
+            "text": "this is amazing",
+            "type": "I",
+            "timestamp": "2016-11-07 18:02:30"
+        },
+        {
+            "nodeID": "226974",
+            "text": "Barbara: zitroaaa : This is amazing!",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:30"
+        },
+        {
+            "nodeID": "226975",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-07 18:02:30",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "226976",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 18:02:31",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226977",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-07 18:02:31",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "226978",
+            "text": "CareToRemember : oh stop",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:31"
+        },
+        {
+            "nodeID": "226979",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 18:02:31",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226980",
+            "text": "oh stop",
+            "type": "I",
+            "timestamp": "2016-11-07 18:02:31"
+        },
+        {
+            "nodeID": "226981",
+            "text": "Barbara: CareToRemember : oh stop",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:31"
+        },
+        {
+            "nodeID": "226982",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 18:02:31",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226983",
+            "text": "NiggalopiansToSaturn : Yelled out \"stiff arm!\"",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:31"
+        },
+        {
+            "nodeID": "226984",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 18:02:31",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226985",
+            "text": "yelled out \"stiff arm!\"",
+            "type": "I",
+            "timestamp": "2016-11-07 18:02:31"
+        },
+        {
+            "nodeID": "226986",
+            "text": "Barbara: NiggalopiansToSaturn : Yelled out \"stiff arm!\"",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:32"
+        },
+        {
+            "nodeID": "226987",
+            "text": "NiggalopiansToSaturn : After that last deflection",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:32"
+        },
+        {
+            "nodeID": "226988",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 18:02:32",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226989",
+            "text": "after that last deflection",
+            "type": "I",
+            "timestamp": "2016-11-07 18:02:32"
+        },
+        {
+            "nodeID": "226990",
+            "text": "Barbara: NiggalopiansToSaturn : After that last deflection",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:32"
+        },
+        {
+            "nodeID": "226991",
+            "text": "NiggalopiansToSaturn : The robot is well tuned",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:32"
+        },
+        {
+            "nodeID": "226992",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 18:02:32",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "226993",
+            "text": "the robot is well tuned",
+            "type": "I",
+            "timestamp": "2016-11-07 18:02:32"
+        },
+        {
+            "nodeID": "226994",
+            "text": "Barbara: NiggalopiansToSaturn : The robot is well tuned.",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:32"
+        },
+        {
+            "nodeID": "226995",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 18:02:32",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226996",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 18:02:33",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226997",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 18:02:33",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "226998",
+            "text": "strokesy : She's cracking from my view",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:33"
+        },
+        {
+            "nodeID": "226999",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 18:02:33",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "227000",
+            "text": "CLINTON is cracking from my view",
+            "type": "I",
+            "timestamp": "2016-11-07 18:02:33"
+        },
+        {
+            "nodeID": "227001",
+            "text": "Barbara: strokesy : She's cracking from my view",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:33"
+        },
+        {
+            "nodeID": "227002",
+            "text": "strokesy : The second she starts giggling and hurling insults is when Hillary starts losing it",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:33"
+        },
+        {
+            "nodeID": "227003",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 18:02:33",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "227004",
+            "text": "the second CLINTON starts giggling and hurling insults is when Hillary starts losing it",
+            "type": "I",
+            "timestamp": "2016-11-07 18:02:33"
+        },
+        {
+            "nodeID": "227005",
+            "text": "Barbara: strokesy : The second she starts giggling and hurling insults is when Hillary starts losing it",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:33"
+        },
+        {
+            "nodeID": "227006",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2016-11-07 18:02:34",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "227007",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 18:02:34",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "227008",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2016-11-07 18:02:34",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "227009",
+            "text": "strokesy : He's a buffoon though he won't close it out",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:34"
+        },
+        {
+            "nodeID": "227010",
+            "text": "Asserting",
+            "type": "YA",
+            "timestamp": "2016-11-07 18:02:34",
+            "scheme": "Asserting",
+            "schemeID": "74"
+        },
+        {
+            "nodeID": "227011",
+            "text": "TRUMP is a buffoon though he won't close it out",
+            "type": "I",
+            "timestamp": "2016-11-07 18:02:34"
+        },
+        {
+            "nodeID": "227012",
+            "text": "Barbara: strokesy : He's a buffoon though he won't close it out",
+            "type": "L",
+            "timestamp": "2016-11-07 18:02:34"
+        },
+        {
+            "nodeID": "227013",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 18:02:34",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "227014",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2016-11-07 18:02:34",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "227015",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2016-11-07 18:02:34",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "227016",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2016-11-07 18:02:35",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "274283",
+            "fromID": "226964",
+            "toID": "226965",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274284",
+            "fromID": "226963",
+            "toID": "226964",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274285",
+            "fromID": "226968",
+            "toID": "226969",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274286",
+            "fromID": "226967",
+            "toID": "226968",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274287",
+            "fromID": "226972",
+            "toID": "226973",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274288",
+            "fromID": "226971",
+            "toID": "226972",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274289",
+            "fromID": "226969",
+            "toID": "226975",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274290",
+            "fromID": "226975",
+            "toID": "226973",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274291",
+            "fromID": "226965",
+            "toID": "226975",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274292",
+            "fromID": "226963",
+            "toID": "226976",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274293",
+            "fromID": "226976",
+            "toID": "226971",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274294",
+            "fromID": "226967",
+            "toID": "226976",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274295",
+            "fromID": "226976",
+            "toID": "226977",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274296",
+            "fromID": "226977",
+            "toID": "226975",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274297",
+            "fromID": "226979",
+            "toID": "226980",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274298",
+            "fromID": "226978",
+            "toID": "226979",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274299",
+            "fromID": "226971",
+            "toID": "226982",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274300",
+            "fromID": "226982",
+            "toID": "226978",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274301",
+            "fromID": "226984",
+            "toID": "226985",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274302",
+            "fromID": "226983",
+            "toID": "226984",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274303",
+            "fromID": "226988",
+            "toID": "226989",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274304",
+            "fromID": "226987",
+            "toID": "226988",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274305",
+            "fromID": "226992",
+            "toID": "226993",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274306",
+            "fromID": "226991",
+            "toID": "226992",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274307",
+            "fromID": "226978",
+            "toID": "226995",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274308",
+            "fromID": "226995",
+            "toID": "226983",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274309",
+            "fromID": "226983",
+            "toID": "226996",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274310",
+            "fromID": "226996",
+            "toID": "226987",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274311",
+            "fromID": "226987",
+            "toID": "226997",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274312",
+            "fromID": "226997",
+            "toID": "226991",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274313",
+            "fromID": "226999",
+            "toID": "227000",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274314",
+            "fromID": "226998",
+            "toID": "226999",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274315",
+            "fromID": "227003",
+            "toID": "227004",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274316",
+            "fromID": "227002",
+            "toID": "227003",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274317",
+            "fromID": "227004",
+            "toID": "227006",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274318",
+            "fromID": "227006",
+            "toID": "227000",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274319",
+            "fromID": "226998",
+            "toID": "227007",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274320",
+            "fromID": "227007",
+            "toID": "227002",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274321",
+            "fromID": "227007",
+            "toID": "227008",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274322",
+            "fromID": "227008",
+            "toID": "227006",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274323",
+            "fromID": "227010",
+            "toID": "227011",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274324",
+            "fromID": "227009",
+            "toID": "227010",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274325",
+            "fromID": "227002",
+            "toID": "227013",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274326",
+            "fromID": "227013",
+            "toID": "227009",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274327",
+            "fromID": "227000",
+            "toID": "227014",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274328",
+            "fromID": "227014",
+            "toID": "226969",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274329",
+            "fromID": "226967",
+            "toID": "227015",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274330",
+            "fromID": "227015",
+            "toID": "226998",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274331",
+            "fromID": "227015",
+            "toID": "227016",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "274332",
+            "fromID": "227016",
+            "toID": "227014",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

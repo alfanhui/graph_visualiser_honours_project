@@ -1,5 +1,7 @@
 import {SET} from 'reducerActions';
 import * as d3 from 'd3';
+import moment from 'moment';
+import _ from 'lodash';
 
 //covnerting to tree
 let linkHashBySource;
@@ -23,6 +25,7 @@ export function convertRawToTree(object) {
         linkHashBySource = {};
         linkHashByTarget = {};
         nodeHash = {};
+
         createDataHashes(nodes, links);
 
         //Calculate possible depths for all nodes, starting from roots
@@ -149,7 +152,9 @@ function possibleDepthTraversalRecurssively(nodeID, counter) {
         linkHashBySource[nodeID].map((childNode) => {
             nodeHash[childNode.target].depthArray.push(counter);
             nodeHash[childNode.target].layer = counter;
-            possibleDepthTraversalRecurssively(childNode.target, (counter + 1));
+            if(nodeID !== childNode.target){
+                possibleDepthTraversalRecurssively(childNode.target, (counter + 1));
+            }
         });
     }
 }
@@ -167,7 +172,11 @@ function correctDepthTraversalRecurssively(nodeID, counter) {
 //gets all the nodes that do not have parents
 function getRootNodes(nodes) {
     //any node not in target is a parent node
-    return nodes.filter(node => !linkHashByTarget.hasOwnProperty(node.nodeID));
+    let rootNodes = nodes.filter(node => !linkHashByTarget.hasOwnProperty(node.nodeID));
+    let sortedRootNodes = rootNodes.sort(function(node1, node2) {
+        return moment.utc(node1.timestamp).isAfter(moment.utc(node2.timestamp));
+      });
+    return sortedRootNodes;
 }
 
 function structureIntoTree(rootNodes){

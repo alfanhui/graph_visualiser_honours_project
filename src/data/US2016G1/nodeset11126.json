@@ -1,0 +1,244 @@
+{
+    "nodes": [
+        {
+            "nodeID": "228823",
+            "text": "The lawsuit wasn't just TRUMP",
+            "type": "I",
+            "timestamp": "2016-11-08 17:49:28"
+        },
+        {
+            "nodeID": "228826",
+            "text": "ocean_spray : The lawsuit wasn't just me",
+            "type": "L",
+            "timestamp": "2016-11-08 17:49:29"
+        },
+        {
+            "nodeID": "228853",
+            "text": "internet_badass_here : If you don't have to admit it, you're not guilty",
+            "type": "L",
+            "timestamp": "2016-11-08 17:49:31"
+        },
+        {
+            "nodeID": "228855",
+            "text": "If you don't have to admit it, you're not guilty",
+            "type": "I",
+            "timestamp": "2016-11-08 17:49:31"
+        },
+        {
+            "nodeID": "228872",
+            "text": "The_Shoelaces : he never even said that he didn't do it",
+            "type": "L",
+            "timestamp": "2016-11-08 17:49:33"
+        },
+        {
+            "nodeID": "228874",
+            "text": "TRUMP never even said that TRUMP didn't do it",
+            "type": "I",
+            "timestamp": "2016-11-08 17:49:33"
+        },
+        {
+            "nodeID": "236606",
+            "text": "TRUMP : I settled that lawsuit with no admission of guilt , but that was a lawsuit brought against many real estate firms , and it 's just one of those things",
+            "type": "L",
+            "timestamp": "2016-11-09 15:59:23"
+        },
+        {
+            "nodeID": "236608",
+            "text": "TRUMP settled that lawsuit with no admission of guilt , but that was a lawsuit brought against many real estate firms , and it 's just one of those things",
+            "type": "I",
+            "timestamp": "2016-11-09 15:59:23"
+        },
+        {
+            "nodeID": "262772",
+            "text": "Default Rephrase",
+            "type": "MA",
+            "timestamp": "2017-03-06 17:05:47",
+            "scheme": "Default Rephrase",
+            "schemeID": "144"
+        },
+        {
+            "nodeID": "262773",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-06 17:05:48",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262774",
+            "text": "Restating",
+            "type": "YA",
+            "timestamp": "2017-03-06 17:05:48",
+            "scheme": "Restating",
+            "schemeID": "101"
+        },
+        {
+            "nodeID": "262775",
+            "text": "Default Inference",
+            "type": "RA",
+            "timestamp": "2017-03-06 17:05:49",
+            "scheme": "Default Inference",
+            "schemeID": "72"
+        },
+        {
+            "nodeID": "262776",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-06 17:05:50",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262777",
+            "text": "Arguing",
+            "type": "YA",
+            "timestamp": "2017-03-06 17:05:50",
+            "scheme": "Arguing",
+            "schemeID": "80"
+        },
+        {
+            "nodeID": "262778",
+            "text": "Default Conflict",
+            "type": "CA",
+            "timestamp": "2017-03-06 17:05:51",
+            "scheme": "Default Conflict",
+            "schemeID": "71"
+        },
+        {
+            "nodeID": "262779",
+            "text": "Default Transition",
+            "type": "TA",
+            "timestamp": "2017-03-06 17:05:51",
+            "scheme": "Default Transition",
+            "schemeID": "82"
+        },
+        {
+            "nodeID": "262780",
+            "text": "Disagreeing",
+            "type": "YA",
+            "timestamp": "2017-03-06 17:05:52",
+            "scheme": "Disagreeing",
+            "schemeID": "78"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "317142",
+            "fromID": "228823",
+            "toID": "262772",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317143",
+            "fromID": "262772",
+            "toID": "236608",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317144",
+            "fromID": "236606",
+            "toID": "262773",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317145",
+            "fromID": "262773",
+            "toID": "228826",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317146",
+            "fromID": "262773",
+            "toID": "262774",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317147",
+            "fromID": "262774",
+            "toID": "262772",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317148",
+            "fromID": "228855",
+            "toID": "262775",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317149",
+            "fromID": "262775",
+            "toID": "236608",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317150",
+            "fromID": "236606",
+            "toID": "262776",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317151",
+            "fromID": "262776",
+            "toID": "228853",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317152",
+            "fromID": "262776",
+            "toID": "262777",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317153",
+            "fromID": "262777",
+            "toID": "262775",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317154",
+            "fromID": "228874",
+            "toID": "262778",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317155",
+            "fromID": "262778",
+            "toID": "236606",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317156",
+            "fromID": "236606",
+            "toID": "262779",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317157",
+            "fromID": "262779",
+            "toID": "228872",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317158",
+            "fromID": "262779",
+            "toID": "262780",
+            "formEdgeID": null
+        },
+        {
+            "edgeID": "317159",
+            "fromID": "262780",
+            "toID": "262778",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": [
+        {
+            "nodeID": "228826",
+            "personID": "2999",
+            "timestamp": "2016-11-08 17:49:41",
+            "start": null,
+            "end": null,
+            "source": null
+        }
+    ]
+}
