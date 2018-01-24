@@ -7,7 +7,6 @@ import _ from 'lodash';
 let linkHashBySource;
 let linkHashByTarget;
 let nodeHash;
-const defaultNodeType = 'I';  //used in formatting tree, could be found automatically by the node with most type
 let totalNumOfLayers = 0;
 
 let width = window.innerWidth - 40;
@@ -39,7 +38,7 @@ export function convertRawToTree(object) {
         nodeDepthConflict = _.orderBy(nodeDepthConflict, ['size'],['asc']);
         nodeDepthConflict.map((childNode) =>{
             correctDepthTraversalRecurssively(childNode.nodeID, (childNode.size -1));
-        })    
+        });    
         
         //scale for vertical placement
         let scaleHeight = d3.scaleLinear().domain([0,totalNumOfLayers]).range([40,height-40]);  
@@ -58,9 +57,7 @@ export function convertRawToTree(object) {
                 nodesWithLayers.push(nodeHash[node]);
             }
         }
-        //sort nodes by layer
-        let orderedNodesWithLayers = _.orderBy(nodesWithLayers, ['layer'],['asc']);
-        
+
         //Structure into tree for d3
         let dataTree = structureIntoTree(rootNodes);
         
@@ -72,7 +69,7 @@ export function convertRawToTree(object) {
 
         dispatch(SET("nodes", newNodes));
         dispatch(SET("layoutReady",true));
-    }
+    };
 }
 
 
@@ -125,14 +122,6 @@ function getNodesWithMaxDepth(){
     return nodeDepthConflict;
 }
 
-/* https://stackoverflow.com/questions/15052702/count-unique-elements-in-array-without-sorting
-* Counting unique elements in array
-* By Web_Designer @ stackoverflow on 07/07/17
-*/
-function countUniqueNumbers(array) {
-    return new Set(array).size;
-}
-
 //Recursively goes through and adds correct children to each node
 function applyChildrenRecurssively(node, children){ //linkHash is using link.source
     if (linkHashBySource.hasOwnProperty(node)){ //contains a link
@@ -141,7 +130,7 @@ function applyChildrenRecurssively(node, children){ //linkHash is using link.sou
             "parent": link.source,
             "children": applyChildrenRecurssively(link.target, []),
             ...nodeHash[link.target]});
-        })
+        });
     }
     return children;
 }
@@ -187,13 +176,13 @@ function structureIntoTree(rootNodes){
             "name":rootNode.nodeID,
             "parent": "",
             "children":applyChildrenRecurssively(rootNode.nodeID, []),
-            ...rootNode})
+            ...rootNode});
     });
 
     let children = [];
     children.push(branches.map((rootNode) => {return(
         {...rootNode}
-    )}));
+    );}));
 
     let dataTree = {
         "name":"TopLevel",
@@ -212,7 +201,7 @@ function treeIntoNodes(root){
             if (node_children.children && node_children.children.length > 0){ 
                 node_children.children.map((child)=>{
                     findChildren(child);
-                })
+                });
             }
             if(!_.find(newNodeArray, {"nodeID": node_children.data.nodeID})){
                 newNodeArray.push({
@@ -229,7 +218,7 @@ function treeIntoNodes(root){
         if (node.children && node.children.length > 0){ 
             node.children.map((child)=>{
                 findChildren(child);
-            })
+            });
         }
         if(!_.find(newNodeArray, {"nodeID": node.data.nodeID})){
             newNodeArray.push({"nodeID":node.data.nodeID,
@@ -241,6 +230,6 @@ function treeIntoNodes(root){
                     "y":node.data.scaleLayer,           
                     });
                 }
-    })  
+    });  
     return newNodeArray;
 }

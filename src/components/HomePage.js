@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from "react-redux";
+import PropTypes from 'prop-types';
 import Paper from 'material-ui/Paper';
-import DatabaseOptions from './DatabaseOptions';
 import { postQuery, checkAddress } from 'api/dbConnection';
 import { SET } from 'reducerActions';
-import { importJSON } from 'utilities/JsonIO';
 import { convertRawToTree } from 'utilities/DataToTree';
 import InteractionEvents from './InteractionEvents';
-
+//import { importJSON } from 'utilities/JsonIO';
+//import DatabaseOptions from './DatabaseOptions';
 
 @connect((store) => {
   return {
@@ -18,6 +18,11 @@ import InteractionEvents from './InteractionEvents';
 //console.log(JSON.parse(JSON.stringify(err)));
 
 class HomePage extends React.Component {
+
+  static propTypes = {
+    dispatch: PropTypes.func,
+    state: PropTypes.object
+  };
 
   constructor(props) {
     super(props);
@@ -34,27 +39,22 @@ class HomePage extends React.Component {
       //send data to database
       //this.props.dispatch(importJSON()).then(() => {
 
-        //Grab nodes from database  'MATCH (n) where not n:L RETURN n'
-        this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
-          nodes = this.convertNeo4jResult(result);
-          this.props.dispatch(SET('nodes', nodes));
-          //Grab edges   'START r=rel(*) WHERE NOT ((:L)-[r]->()) AND NOT (()-[r]->(:L)) RETURN r'
-          this.props.dispatch(postQuery('START r=rel(*) RETURN r')).then((result) => {
-            links = this.convertNeo4jResult(result);
-            this.props.dispatch(SET('links', links));
-          }).then(() => {
-              if (this.props.state.layout == "TREE") {
-                this.props.dispatch(convertRawToTree({ "nodes": nodes, "links": links }));
-              };
-          });
-          });
-        //});
+      //Grab nodes from database  'MATCH (n) where not n:L RETURN n'
+      this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
+        nodes = this.convertNeo4jResult(result);
+        this.props.dispatch(SET('nodes', nodes));
+        //Grab edges   'START r=rel(*) WHERE NOT ((:L)-[r]->()) AND NOT (()-[r]->(:L)) RETURN r'
+        this.props.dispatch(postQuery('START r=rel(*) RETURN r')).then((result) => {
+          links = this.convertNeo4jResult(result);
+          this.props.dispatch(SET('links', links));
+        }).then(() => {
+          if (this.props.state.layout == "TREE") {
+            this.props.dispatch(convertRawToTree({ "nodes": nodes, "links": links }));
+          }
+        });
       });
-  }
-
-  //from Neo4j http response
-  convertNeo4jResult(result) {
-    return result[0].data.map((item) => { return item.row[0]; });
+      //});
+    });
   }
 
   componentDidMount() {
@@ -68,6 +68,11 @@ class HomePage extends React.Component {
 
   componentWillUnmount() {
 
+  }
+
+  //from Neo4j http response
+  convertNeo4jResult(result) {
+    return result[0].data.map((item) => { return item.row[0]; });
   }
 
   initPaper() {

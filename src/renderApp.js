@@ -18,7 +18,7 @@ const store = createStore(
 
 
 const App = (props) => (
-    <div className='app'>
+    <div className="app">
       {/*<Header/>*/}
       <MuiThemeProvider>
             <Root {...props} />

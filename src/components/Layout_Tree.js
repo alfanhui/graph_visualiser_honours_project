@@ -1,20 +1,15 @@
 import React from 'react';
 import { connect } from "react-redux";
 import * as d3 from 'd3';
-import { SET, UPDATE } from 'reducerActions';
+import PropTypes from 'prop-types';
+import _ from 'lodash';
 
-let radius = 20;
 let rectX = 60;
 let rectY = 30;
 let width = window.innerWidth - 40;
 let height = window.innerHeight - 40;
 
 const color = d3.scaleOrdinal(d3.schemeCategory20); //range the colours
-
-let dataTree = [];
-let root;
-
-let displayedNodes = {};
 
 @connect((store) => {
   return {
@@ -57,7 +52,7 @@ class Layout_Tree extends React.Component {
     
   }
   
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps() {
     
   }
   
@@ -93,7 +88,7 @@ class Layout_Tree extends React.Component {
     + " " + (link.parent.x + (rectX/2)) + "," + (link.parent.data.layer + rectY)
     + " " + (link.parent.x + (rectX/2)) + "," + (link.parent.data.layer + rectY);
     return (
-      <path className='link' key={'label' + link.data.name + " to " + link.parent.data.name} stroke={color(1)} d={d} />
+      <path className="link" key={"label" + link.data.name + " to " + link.parent.data.name} stroke={color(1)} d={d} />
     );
   }
   /*
@@ -106,7 +101,7 @@ class Layout_Tree extends React.Component {
     let source = _.find(this.props.state.nodes, {"nodeID": link.source});
     let target = _.find(this.props.state.nodes, {"nodeID": link.target});
     return (
-      <line className='link' key={link.edgeID} stroke={color(1)}
+      <line className="link" key={link.edgeID} stroke={color(1)}
       x1={(source.x + rectX/2)} y1={(source.y + rectY)} 
       x2={(target.x + rectX/2)} y2={target.y} />
     );

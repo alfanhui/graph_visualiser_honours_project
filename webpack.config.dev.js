@@ -34,7 +34,9 @@ export default {
       net: 'empty',
       tls: 'empty',
       dns: 'empty',
-      readline: 'empty'
+      dgram: 'empty',
+      readline: 'empty',
+      ws: 'empty'
   },
   plugins: [
     new webpack.DefinePlugin({

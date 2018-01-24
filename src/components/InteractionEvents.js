@@ -1,15 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; //this solves everything (react warning comments removed with dom'ing this.)
 import { connect } from "react-redux";
 import _ from 'lodash';
+import PropTypes from 'prop-types';
 import { SET, UPDATE } from 'reducerActions';
 import getUuid from 'uuid/v1';
 import ForceDirected from './Layout_ForceDirected';
 import Tree from './Layout_Tree';
 import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/MenuItem';
-import tuio from 'tuio-nw';
-
+//import Tuio from 'tuio-nw';
 
 let drag = {
   elm: null,
@@ -18,13 +17,15 @@ let drag = {
   currentY: 0,
   state: false,
   moved: false
-}
+};
 
-
-var client = new tuio.Client({
-  host: '10.201.226.69:3333',
+/*
+var client = new Tuio.Client({
+  host: '10.201.226.69',
   port: 3333
 });
+*/
+
 
 //********* this is a style and should be moved to ./styles
 const menuItem = {
@@ -36,34 +37,6 @@ const menuItem = {
   position: 'fixed !important'
 };
 
-var onAddTuioCursor = function (addCursor) {
-  console.log(addCursor);
-},
- 
-onUpdateTuioCursor = function (updateCursor) {
-  console.log(updateCursor);
-},
- 
-onRemoveTuioCursor = function (removeCursor) {
-  console.log(removeCursor);
-},
- 
-onAddTuioObject = function (addObject) {
-  console.log(addObject);
-},
- 
-onUpdateTuioObject = function (updateObject) {
-  console.log(updateObject);
-},
- 
-onRemoveTuioObject = function (removeObject) {
-  console.log(removeObject);
-},
- 
-onRefresh = function (time) {
-  console.log(time);
-};
-
 @connect((store) => {
   return {
     state: store.generalReducer
@@ -72,24 +45,22 @@ onRefresh = function (time) {
 
 class InteractionEvents extends React.Component {
 
+  static propTypes = {
+    dispatch: PropTypes.func,
+    state: PropTypes.object
+  };
+
   constructor(props) {
     super(props);
     this.state = {
       currentTouches: [],
       log: "",
     };
+    //client.listen();
   }
 
   componentWillMount(){
-    tuio.on('addTuioCursor', onAddTuioCursor);
-    tuio.on('updateTuioCursor', onUpdateTuioCursor);
-    tuio.on('removeTuioCursor', onRemoveTuioCursor);
-    tuio.on('addTuioObject', onAddTuioObject);
-    tuio.on('updateTuioObject', onUpdateTuioObject);
-    tuio.on('removeTuioObject', onRemoveTuioObject);
-    tuio.on('refresh', onRefresh);
-     
-    tuio.listen();
+   
   }
 
   onNewMouseStart = (event) => {
@@ -117,7 +88,7 @@ class InteractionEvents extends React.Component {
     event.stopPropagation();
     if (drag.state) {
       drag.moved = true;
-      let node = _.find(this.props.state.nodes, { "nodeID": drag.elem.getAttribute("id") })
+      let node = _.find(this.props.state.nodes, { "nodeID": drag.elem.getAttribute("id") });
       node.x = drag.transform[0] += event.clientX - drag.currentX;
       node.y = drag.transform[1] += event.clientY - drag.currentY;
       let node_props = this.updateNode(this.props.state.nodes, { "nodeID": drag.elem.getAttribute("id") }, node);
@@ -163,10 +134,10 @@ class InteractionEvents extends React.Component {
   }
 
   mainMenu = (nextMenu) => {
-    let transform = 'translate(' + (nextMenu.x - 40) + ',' + (nextMenu.y - 40) + ')'; //minus margins
+    let transform = "translate(" + (nextMenu.x - 40) + "," + (nextMenu.y - 40) + ")"; //minus margins
     return (
       <g key={"MM" + nextMenu.x + nextMenu.y} transform={transform}>
-        <foreignObject width='96' height='107'>
+        <foreignObject width="96" height="107">
           <Menu desktop={true}>
             <MenuItem style={menuItem} primaryText="Database" disabled={true} />
             <MenuItem style={menuItem} primaryText="Graph" disabled={true} />
@@ -178,10 +149,10 @@ class InteractionEvents extends React.Component {
   }
 
   elementMenu = (nextMenu) => {
-    let transform = 'translate(' + (nextMenu.x - 40) + ',' + (nextMenu.y - 40) + ')'; //minus margins
+    let transform = "translate(" + (nextMenu.x - 40) + "," + (nextMenu.y - 40) + ")"; //minus margins
     return (
       <g key={"EM" + nextMenu.x + nextMenu.y} transform={transform}>
-        <foreignObject width='96' height='107'>
+        <foreignObject width="96" height="107">
           <Menu desktop={true}>
             <MenuItem style={menuItem} primaryText="Create edge" disabled={true} />
             <MenuItem style={menuItem} primaryText="Edit node" disabled={true} />
@@ -217,7 +188,6 @@ class InteractionEvents extends React.Component {
         });
       }
       this.setState({ currentTouches: $currentTouches });
-      //return false;
     }
   }
 
@@ -229,12 +199,12 @@ class InteractionEvents extends React.Component {
     let $currentTouches = this.state.currentTouches;
     for (let i = 0; i < event.changedTouches.length; i++) {
       let touch = event.changedTouches[i];
-      let currentTouchIndex = _.findIndex($currentTouches, function (currentTouch) { return currentTouch.id == touch.identifier });
+      let currentTouchIndex = _.findIndex($currentTouches, function (currentTouch) { return currentTouch.id == touch.identifier; });
       if (currentTouchIndex >= 0) {
         let currentTouch = $currentTouches[currentTouchIndex];
         if (currentTouch.state) {
           currentTouch.moved = true;
-          let node = _.find(this.props.state.nodes, { "nodeID": currentTouch.elem.getAttribute("id") })
+          let node = _.find(this.props.state.nodes, { "nodeID": currentTouch.elem.getAttribute("id") });
           node.x = currentTouch.transform[0] += touch.clientX - currentTouch.currentX;
           node.y = currentTouch.transform[1] += touch.clientY - currentTouch.currentY;
           let node_props = this.updateNode(this.props.state.nodes, { "nodeID": currentTouch.elem.getAttribute("id") }, node);
@@ -244,7 +214,7 @@ class InteractionEvents extends React.Component {
         }
         $currentTouches.splice(currentTouchIndex, 1, currentTouch);
       } else {
-        console.log('Touch was not found!');
+        console.log("Touch was not found!");
       }
       this.setState({ currentTouches: $currentTouches });
     }
@@ -257,7 +227,7 @@ class InteractionEvents extends React.Component {
     let $currentTouches = this.state.currentTouches;
     for (let i = 0; i < event.changedTouches.length; i++) {
       let touch = event.changedTouches[i];
-      let currentTouchIndex = _.findIndex($currentTouches, function (currentTouch) { return currentTouch.id == touch.identifier })
+      let currentTouchIndex = _.findIndex($currentTouches, function (currentTouch) { return currentTouch.id == touch.identifier; });
       if (currentTouchIndex >= 0) {
         let currentTouch = $currentTouches[currentTouchIndex];
         if (currentTouch.state) { //had hit element
@@ -274,7 +244,7 @@ class InteractionEvents extends React.Component {
           $currentTouches.splice(currentTouchIndex, 1);
           this.setState({ currentTouches: $currentTouches });
         } else {
-          console.log('Touch was not found!');
+          console.log("Touch was not found!");
         }
       }
     }
@@ -284,13 +254,14 @@ class InteractionEvents extends React.Component {
     event.stopPropagation();
     let $currentTouches = this.state.currentTouches;
     for (let i = 0; i < event.changedTouches.length; i++) {
-      let currentTouchIndex = _.findIndex($currentTouches, function (currentTouch) { return currentTouch.id == touch.identifier });
+      let touch = event.changedTouches[i];
+      let currentTouchIndex = _.findIndex($currentTouches, function (currentTouch) { return currentTouch.id == touch.identifier; });
       if (currentTouchIndex >= 0) {
         // Remove the touch record.
         $currentTouches.splice(currentTouchIndex, 1);
  
       } else {
-        console.log('Touch was not found!');
+        console.log("Touch was not found!");
       }
     }
     this.setState({ currentTouches: $currentTouches });

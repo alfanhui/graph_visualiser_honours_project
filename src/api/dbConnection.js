@@ -6,7 +6,7 @@ let password = 'jazzyrice80';
 let url = localhost_httpUrlForTransaction; //subject to change after check
 
 export function checkAddress() {
-    return (dispatch) => {
+    return () => {
         return request.post(url)
             .auth(username, password)
             .then((res) => {
@@ -15,7 +15,7 @@ export function checkAddress() {
                     //run localhost, no change needed
                 }
             })
-            .catch((err) => {
+            .catch(() => {
                 console.log("SWITCHED TO REMOTEHOST");
                 url = remotehost_httpUrlForTransaction;
                 //run host address instead
@@ -33,7 +33,7 @@ export function postQuery(statements, parameters) {
   });
   return (dispatch) => {
       return request.post(url)
-      .send({ statements: preparedStatement }) //[{ statement: s, parameters: parameters }]
+      .send({ statements: preparedStatement })
       .auth(username,password)
       .then((res)=> {
         if(res.ok){
@@ -53,11 +53,11 @@ export function postQuery(statements, parameters) {
 
 //Async but notice the return of request.. this makes it promised before other async actions happen.
 export function wipeDatabase() {
-  return (dispatch) => {
+  return () => {
       return request.post(url)
     .send({ statements: [{ statement: 'MATCH (n) OPTIONAL MATCH (n) - [r] - () DELETE n, r'}] })
     .auth(username,password)
-    .then((res)=> {
+    .then(()=> {
       console.log("Database wiped");
     })
     .catch((err)=> {

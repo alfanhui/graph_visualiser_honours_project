@@ -37,6 +37,7 @@
     "express": "4.16.2",
     "lodash": "4.17.4",
     "material-ui": "0.20.0",
+    "moment": "2.20.1",
     "neo4j": "1.1.1",
     "neo4j-driver": "1.5.0",
     "object-assign": "4.1.0",
@@ -145,6 +146,7 @@
       "jest": true
     },
     "rules": {
+      "import/no-unresolved": 0,      
       "quotes": 0,
       "no-console": 1,
       "no-debugger": 1,

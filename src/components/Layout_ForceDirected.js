@@ -1,9 +1,8 @@
 import React from 'react';
 import { connect } from "react-redux";
 import * as d3 from 'd3';
-import { SET, UPDATE } from 'reducerActions';
+import PropTypes from 'prop-types';
 
-let radius = 20;
 let rectX = 60;
 let rectY = 30;
 let width = window.innerWidth - 40;
@@ -31,20 +30,20 @@ const color = d3.scaleOrdinal(d3.schemeCategory20); //range the colours
 class Layout_ForceDirected extends React.Component {
 
     static propTypes = {
-      dispatch: PropTypes.func,
-      state: PropTypes.object,
-      onMouseDown:PropTypes.func,
-      onMouseMove:PropTypes.func,
-      onMouseUp:PropTypes.func,
-      mainMenu:PropTypes.func,
-      elementMenu:PropTypes.func,
+        dispatch: PropTypes.func,
+        state: PropTypes.object,
+        onMouseDown: PropTypes.func,
+        onMouseMove: PropTypes.func,
+        onMouseUp: PropTypes.func,
+        mainMenu: PropTypes.func,
+        elementMenu: PropTypes.func,
     };
 
-    
+
     constructor(props) {
         super(props);
         this.state = {
-   
+
         };
         console.log("Width: " + width + " Height: " + height + " Ratio: " + (width / height)); //5760 x 1900 (ratio of 3ish)
     }
@@ -63,7 +62,7 @@ class Layout_ForceDirected extends React.Component {
         force.on('tick', () => {
             // after force calculation starts, call
             // forceUpdate on the React component on each tick
-            this.forceUpdate()
+            this.forceUpdate();
         });
     }
 
@@ -77,9 +76,9 @@ class Layout_ForceDirected extends React.Component {
         //18th March 2017
         let transX = Math.max(rectX / 2, Math.min(width - rectX / 2, node.x)) - (rectX / 2),
             transY = Math.max(rectY / 2, Math.min(height - rectY / 2, node.y)) - (rectY / 2);
-        let transform = 'translate(' + transX + ',' + transY + ')';
+        let transform = "translate(" + transX + "," + transY + ")";
         return (
-            <rect className="node" ref="node" id={node.nodeID} key={'node' + node.nodeID} width={rectX} height={rectY}
+            <rect className="node" ref="node" id={node.nodeID} key={"node" + node.nodeID} width={rectX} height={rectY}
                 fill={color(node.type)} transform={transform} onMouseDown={this.onNewMouseStart} onMouseMove={this.onNewMouseMove} onMouseUp={this.onNewMouseUp} />
         );
     }
@@ -87,17 +86,22 @@ class Layout_ForceDirected extends React.Component {
     renderLabels = (node) => {
         let transX = Math.max(rectX / 2, Math.min(width - rectX / 2, node.x)) - (rectX / 2),
             transY = Math.max(rectY / 2, Math.min(height - rectY / 2, node.y)) - (rectY / 2);
-        let transform = 'translate(' + (transX + 15) + ',' + (transY + 20) + ')';
+        let transform = "translate(" + (transX + 15) + "," + (transY + 20) + ")";
         return (
-            <text key={'label' + node.nodeID} transform={transform}>{node.nodeID}</text>
+            <text key={"label" + node.nodeID} transform={transform}>{node.nodeID}</text>
         );
     }
 
     renderLinks = (link) => {
         return (
-            <line className='link' key={link.edgeID} stroke={color(1)}
+            <line className="link" key={link.edgeID} stroke={color(1)}
                 x1={link.source.x} y1={link.source.y + (rectY / 2)} x2={link.target.x} y2={link.target.y + (rectY / 2)} />
         );
+    }
+    //change the distance of the links/edges
+    changeRange(simulation, newStrength) {
+        simulation.force("link").strength(+newStrength);
+        simulation.alpha(1).restart();
     }
 
     render() {
@@ -107,27 +111,20 @@ class Layout_ForceDirected extends React.Component {
                 width={width}
                 height={height}>
                 <rect id="main" width={width} height={height} style={{ fill: 'white', pointerEvents: 'fill', strokeWidth: '0' }}
-                    onMouseDown={(event)=>this.props.onMouseDown(event)} 
-                    onMouseMove={(event)=>this.props.onMouseMove(event)} 
-                    onMouseUp={(event)=>this.props.onMouseUp(event)} />
+                    onMouseDown={(event) => this.props.onMouseDown(event)}
+                    onMouseMove={(event) => this.props.onMouseMove(event)}
+                    onMouseUp={(event) => this.props.onMouseUp(event)} />
                 <g>
                     {this.props.state.links.length > 0 && this.props.state.links.map(this.renderLinks)}
                     {this.props.state.nodes.length > 0 && this.props.state.nodes.map(this.renderNodes)}
                     {this.props.state.nodes.length > 0 && this.props.state.nodes.map(this.renderLabels)}
                 </g>
-                {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map((menu)=>this.props.mainMenu(menu))}
-                {this.props.state.elementMenu.length > 0 && this.props.state.elementMenu.map((menu)=>this.props.elementMenu(menu))}
+                {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map((menu) => this.props.mainMenu(menu))}
+                {this.props.state.elementMenu.length > 0 && this.props.state.elementMenu.map((menu) => this.props.elementMenu(menu))}
                 This Browser does not support html canvas.
       </svg>
         );
     }
-
-    //change the distance of the links/edges
-    changeRange(simulation, newStrength) {
-        simulation.force("link").strength(+newStrength);
-        simulation.alpha(1).restart();
-    }
-
 }
 
 export default Layout_ForceDirected;
