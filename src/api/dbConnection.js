@@ -45,7 +45,7 @@ export function postQuery(statements, parameters) {
         }
       })
       .catch((err)=> {
-        console.log("This error: " , err);
+        console.log("This error: " , err, "statement:", preparedStatement);
         dispatch(SET("databaseError", '#F50057'));
       });
   };

@@ -10,9 +10,9 @@ let nodeHash;
 let totalNumOfLayers = 0;
 
 let width = window.innerWidth - 40;
-let height = window.innerHeight - 40;
+let height = window.innerHeight - 80;
 let tree = d3.tree()
-.size([width - 75, height]);
+.size([width - 75, height - 75]);
 
 
 

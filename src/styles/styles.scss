@@ -53,9 +53,15 @@ td {
   padding: 12px;
 }
 
-text {
+.ContentText {
+  font: 10px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  pointer-events: none;
+}
+
+.NonContentText {
   font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
   pointer-events: none;
+  font-weight: 500;
 }
 
 line {
@@ -91,3 +97,4 @@ line {
 .paper {
   margin: 20px;
 }
+

@@ -4,10 +4,7 @@ import {SET} from 'reducerActions';
 
 //Import json from local file. Await for database to be wiped via promise before continuing..
 export function importJSON(randomBool) {
-  let fileName = 'nodeset11151'; //nodeset11076
-  if(randomBool){
-    //get random file
-  }
+  let fileName = 'nodeset11130'; //nodeset11076
   return (dispatch) => {
       dispatch(SET('databaseError', "#FFFFFF"));
       return dispatch(wipeDatabase()).then(function(){
@@ -26,6 +23,7 @@ export function importJSON(randomBool) {
       });
   };
 }
+
 
 //handle json object ready for cypher conversion
 function graphMLtoCypher(jsonObj) {

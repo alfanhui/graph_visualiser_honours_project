@@ -6,8 +6,9 @@ import { postQuery, checkAddress } from 'api/dbConnection';
 import { SET } from 'reducerActions';
 import { convertRawToTree } from 'utilities/DataToTree';
 import InteractionEvents from './InteractionEvents';
-//import { importJSON } from 'utilities/JsonIO';
-//import DatabaseOptions from './DatabaseOptions';
+import {textToWrappedArray} from 'utilities/WrapText';
+import { importJSON } from 'utilities/JsonIO';
+import DatabaseOptions from './DatabaseOptions';
 
 @connect((store) => {
   return {
@@ -37,11 +38,17 @@ class HomePage extends React.Component {
     this.props.dispatch(checkAddress()).then(() => {
 
       //send data to database
-      //this.props.dispatch(importJSON()).then(() => {
+      this.props.dispatch(importJSON()).then(() => {
 
       //Grab nodes from database  'MATCH (n) where not n:L RETURN n'
       this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
         nodes = this.convertNeo4jResult(result);
+        //wordwrap
+        nodes = nodes.map((node)=>{
+          console.log(node.nodeID, node.text);
+          node.text = textToWrappedArray(node.text);
+          return node;
+        });
         this.props.dispatch(SET('nodes', nodes));
         //Grab edges   'START r=rel(*) WHERE NOT ((:L)-[r]->()) AND NOT (()-[r]->(:L)) RETURN r'
         this.props.dispatch(postQuery('START r=rel(*) RETURN r')).then((result) => {
@@ -53,7 +60,7 @@ class HomePage extends React.Component {
           }
         });
       });
-      //});
+      });
     });
   }
 

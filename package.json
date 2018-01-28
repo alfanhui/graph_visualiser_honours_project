@@ -50,6 +50,7 @@
     "react-router-dom": "4.2.2",
     "react-router-native": "4.2.0",
     "react-router-redux": "4.0.8",
+    "react-svg-text": "0.1.2",
     "react-text-field": "0.4.0",
     "redux": "3.6.0",
     "redux-thunk": "2.1.0",
@@ -146,7 +147,7 @@
       "jest": true
     },
     "rules": {
-      "import/no-unresolved": 0,      
+      "import/no-unresolved": 0,
       "quotes": 0,
       "no-console": 1,
       "no-debugger": 1,
