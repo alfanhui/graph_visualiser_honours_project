@@ -11,6 +11,7 @@ const initialState = {
     defaultNodeTypes: ["I","L"],
     updateInterval: 15000,
     autoUpdate: true,
+    updateAvailable: false,
   };
 
 

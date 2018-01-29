@@ -6,7 +6,7 @@ import { postQuery, checkAddress } from 'api/dbConnection';
 import { SET } from 'reducerActions';
 import { convertRawToTree } from 'utilities/DataToTree';
 import InteractionEvents from './InteractionEvents';
-import {wrapContextTextToArray, wrapNonContextTextToArray} from 'utilities/WrapText';
+import { wrapContextTextToArray, wrapNonContextTextToArray } from 'utilities/WrapText';
 import { importJSON } from 'utilities/JsonIO';
 import DatabaseOptions from './DatabaseOptions';
 import hash from 'object-hash';
@@ -29,7 +29,7 @@ class HomePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentHash:null,
+      currentHash: null,
     };
   }
 
@@ -43,16 +43,17 @@ class HomePage extends React.Component {
 
       //Grab nodes from database  'MATCH (n) where not n:L RETURN n'
       this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
-        this.setState({currentHash: hash(result, {algorithm:'md5'})});
+        this.props.dispatch(SET("updateAvailable", false));
+        this.setState({ currentHash: hash(result, { algorithm: 'md5' }) });
         nodes = this.convertNeo4jResult(result);
         //wordwrap
-        nodes = nodes.map((node)=>{
-          if(this.props.state.defaultNodeTypes.includes(node.type)){
-            node.text = wrapContextTextToArray(node.text);  
-          }else{
-            node.text = wrapNonContextTextToArray(node.text);  
+        nodes = nodes.map((node) => {
+          if (this.props.state.defaultNodeTypes.includes(node.type)) {
+            node.text = wrapContextTextToArray(node.text);
+          } else {
+            node.text = wrapNonContextTextToArray(node.text);
           }
-          
+
           return node;
         });
         this.props.dispatch(SET('nodes', nodes));
@@ -84,28 +85,26 @@ class HomePage extends React.Component {
 
   }
 
-  updateScheduler(){
+  updateScheduler() {
     setInterval(() => { this.checkUpdate(); }, this.props.state.updateInterval);
   }
 
-  checkUpdate(){
+  checkUpdate() {
     //get all data 
-    this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) =>{
-      let newHash = hash(result, {algorithm: 'md5'});
-      if(newHash !==this.state.currentHash){
-        console.log("There is a new update available");
-        //Autoupdate if enabled - or prompt user
+    this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
+      let newHash = hash(result, { algorithm: 'md5' });
+      if (newHash !== this.state.currentHash) {
         
-        //idea is to update node details: without disturbing too much?!
-
-        //set new hash as current hash
-
-      }else{ //do nothing..
-
+        //Autoupdate if enabled - or prompt user
+        if (this.props.state.autoUpdate) {
+          console.log("Updating...");
+          this.componentWillMount();
+        } else {
+          console.log("There is a new update available");
+          this.props.dispatch(SET("updateAvailable", true));
+        }
       }
     })
-    
-
   }
 
   //from Neo4j http response
