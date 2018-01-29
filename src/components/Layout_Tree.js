@@ -143,15 +143,11 @@ class Layout_Tree extends React.Component {
     + "  " + (source.x + (contextWidth / 2)) + " " + (layerMidHeight) //change source.x to target to make correct curve.
     + "  " + (target.x + (contextWidth / 2)) + " " + (target.y);
     return (
-      <path className="link" key={"label" + source.nodeID + " to " + target.nodeID} stroke={color(1)} d={d} markerMid={'url(#arrow)'} />
+      <path className="link" key={"label" + source.nodeID + " to " + target.nodeID} stroke={color(1)} d={d} markerEnd={'url(#markerArrow)'} />
     );
   }
-  /*
-  
-  var diagonal = d3.svg.diagonal()
-  .projection(function(d) { return [d.y, d.x]; });
-  
-  */
+
+
   renderLink = (link) => {
     let source = _.find(this.props.state.nodes, { "nodeID": link.source });
     let target = _.find(this.props.state.nodes, { "nodeID": link.target });
@@ -186,20 +182,10 @@ class Layout_Tree extends React.Component {
       <marker id="markerArrow" viewBox="0 0 10 10" 
       markerUnits="strokeWidth" markerWidth="7" markerHeight="7"
       refX="7"refY="5" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 z" />
+      <path d="M 0 0 L 10 5 L 0 10 z" style={{fill: 'black'}}/>
       </marker>
-
-      <marker
-      id="arrow"
-      markerUnits="strokeWidth"
-      markerWidth="12"
-      markerHeight="12"
-      viewBox="0 0 12 12"
-      refX="6"
-      refY="6"
-      orient="auto">
-      <path d="M2,2 L10,6 L2,10 L6,6 L2,2" style={{fill: '#f00'}}/>
-      </marker>
+    
+     
       </defs>
 
       <rect id="main" width={width} height={height} style={{ fill: 'white', pointerEvents: 'fill', strokeWidth: '0' }}
