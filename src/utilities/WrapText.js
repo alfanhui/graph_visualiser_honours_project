@@ -4,7 +4,7 @@ const maxLength = 30;
 let regEx = /^[\s]*$/;
 
 //for fontsize 10px, max char is 30.
-export function textToWrappedArray(text) {
+export function wrapContextTextToArray(text) {
     let wrappedArray = [];
     let lengthOfString = text.length;
     if (text.length > maxLength) {
@@ -44,4 +44,9 @@ export function textToWrappedArray(text) {
         return [text];
     }
     return wrappedArray;
+}
+
+
+export function wrapNonContextTextToArray(text){
+    return(text.split(" "));
 }

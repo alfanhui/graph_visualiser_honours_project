@@ -41,6 +41,8 @@ body {
 //sized via javascript
 svg{
   //border: solid blue 1px;
+  overflow: auto;
+  touch-action: none
 }
 
 foreignObject{
@@ -56,16 +58,23 @@ td {
 .ContentText {
   font: 10px "Helvetica Neue", Helvetica, Arial, sans-serif;
   pointer-events: none;
+  touch-action: none;
 }
 
 .NonContentText {
-  font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
   pointer-events: none;
   font-weight: 500;
+  text-anchor: middle;
+  touch-action: none;
 }
 
 line {
   pointer-events: none;
+}
+
+path{
+  fill:none;
 }
 
 .node{

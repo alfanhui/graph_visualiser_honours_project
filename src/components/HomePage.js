@@ -6,7 +6,7 @@ import { postQuery, checkAddress } from 'api/dbConnection';
 import { SET } from 'reducerActions';
 import { convertRawToTree } from 'utilities/DataToTree';
 import InteractionEvents from './InteractionEvents';
-import {textToWrappedArray} from 'utilities/WrapText';
+import {wrapContextTextToArray, wrapNonContextTextToArray} from 'utilities/WrapText';
 import { importJSON } from 'utilities/JsonIO';
 import DatabaseOptions from './DatabaseOptions';
 
@@ -38,15 +38,19 @@ class HomePage extends React.Component {
     this.props.dispatch(checkAddress()).then(() => {
 
       //send data to database
-      this.props.dispatch(importJSON()).then(() => {
+      //this.props.dispatch(importJSON()).then(() => {
 
       //Grab nodes from database  'MATCH (n) where not n:L RETURN n'
       this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
         nodes = this.convertNeo4jResult(result);
         //wordwrap
         nodes = nodes.map((node)=>{
-          console.log(node.nodeID, node.text);
-          node.text = textToWrappedArray(node.text);
+          if(this.props.state.defaultNodeTypes.includes(node.type)){
+            node.text = wrapContextTextToArray(node.text);  
+          }else{
+            node.text = wrapNonContextTextToArray(node.text);  
+          }
+          
           return node;
         });
         this.props.dispatch(SET('nodes', nodes));
@@ -60,7 +64,7 @@ class HomePage extends React.Component {
           }
         });
       });
-      });
+      //});
     });
   }
 

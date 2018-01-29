@@ -3,13 +3,17 @@ import { connect } from "react-redux";
 import * as d3 from 'd3';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
+import {scaleHeight} from 'utilities/DataToTree';
 
-let rectX = 150;
-let rectY = 10;
+let contextWidth = 150;
+let contextHeight = 10;
+let nonContextWidth = 50,
+    nonContextHeight = 50;
 let width = window.innerWidth - 40;
 let height = window.innerHeight - 40;
 
 const color = d3.scaleOrdinal(d3.schemeCategory20); //range the colours
+
 
 @connect((store) => {
   return {
@@ -38,7 +42,6 @@ class Layout_Tree extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      
     };
     console.log("Width: " + width + " Height: " + height + " Ratio: " + (width / height)); //5760 x 1900 (ratio of 3ish)
     
@@ -60,21 +63,21 @@ class Layout_Tree extends React.Component {
     
   }
   
-  renderNodes = (node) => {
+  renderNode = (node) => {
     if(this.props.state.defaultNodeTypes.includes(node.type)){
-      return this.renderContentNodes(node)
+      return this.renderContentNode(node)
     }else{
-      return this.renderNonContentNodes(node)
+      return this.renderNonContentNode(node)
     }
   }
   
   //These nodes are the transcript elements: ie. content
 
-  renderContentNodes = (node) => {
+  renderContentNode = (node) => {
     let transform = 'translate(' + node.x + ',' + node.y + ')';
     return (
       <g key={"group" + node.nodeID}  >
-      <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={rectX} height={rectY + (node.text.length * 15)}
+      <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={contextWidth} height={contextHeight + (node.text.length * 15)}
       fill={color(node.type)} transform={transform}
       //onMouseDown={(event)=>this.props.onMouseDown(event)} 
       //onMouseMove={(event)=>this.props.onMouseMove(event)} 
@@ -96,12 +99,11 @@ class Layout_Tree extends React.Component {
   }
 
   //Non-default are AIF added extended nodes
-  renderNonContentNodes = (node) => {
-    let transform = 'translate(' + (node.x - 15 + rectX/2)+ ',' + (node.y + 5) + ') rotate(45 ' +30/2 + ' ' + 30/2 + ')';
-    let transformLabel = 'translate(' + (node.x - 10 + rectX/2) + ',' + (node.y + 25) + ')';
+  renderNonContentNode = (node) => {
+    let transform = 'translate(' + (node.x - 15 + contextWidth/2)+ ',' + (node.y + 5) + ') rotate(45 ' +30/2 + ' ' + 30/2 + ')';
     return (
       <g key={"group" + node.nodeID}  >
-      <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={30} height={30}
+      <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={nonContextWidth} height={nonContextHeight}
       fill={color(node.type)} transform={transform}
       //onMouseDown={(event)=>this.props.onMouseDown(event)} 
       //onMouseMove={(event)=>this.props.onMouseMove(event)} 
@@ -110,7 +112,14 @@ class Layout_Tree extends React.Component {
       onTouchMove={(event) => this.props.onTouchMove(event)}
       onTouchEnd={(event) => this.props.onTouchEnd(event)}
       onTouchCancel={(event) => this.props.onTouchCancel(event)} />
-      <text className="NonContentText" key={'label' + node.nodeID} transform={transformLabel} >{node.type}</text>
+        {
+        node.text.map((line, index) => {
+          let transformLabel = 'translate(' + (node.x + contextWidth/2) + ',' + (node.y + 30 + (index * 15)) + ')';
+          return(
+            <text className="NonContentText" key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
+          );
+        })
+      }      
       </g>
     );
   }
@@ -118,12 +127,23 @@ class Layout_Tree extends React.Component {
   
   
   renderPath = (link) => {
-    let d = "M" + (link.x + rectX / 2) + "," + link.data.layer
-    + "C" + (link.parent.x + (rectX / 2)) + "," + link.data.layer
-    + " " + (link.parent.x + (rectX / 2)) + "," + (link.parent.data.layer + rectY)
-    + " " + (link.parent.x + (rectX / 2)) + "," + (link.parent.data.layer + rectY);
+    let source = _.find(this.props.state.nodes, { "nodeID": link.source });
+    let target = _.find(this.props.state.nodes, { "nodeID": link.target });
+    let yHeightAdjustment = 60;//(nonContextWidth + nonContextHeight / 2);
+    //for arrow placement.
+    if(this.props.state.defaultNodeTypes.includes(source.type)){
+      yHeightAdjustment = (15 * source.text.length);
+    }
+    let layerMidHeight = scaleHeight(source.layer + .35) + contextHeight + yHeightAdjustment;
+    if(layerMidHeight < (source.y + contextHeight + yHeightAdjustment)){ //stops weird line tangle
+      layerMidHeight = (source.y + contextHeight + yHeightAdjustment);
+    }
+    let d = "M " + (source.x + (contextWidth / 2)) + " " + (source.y + contextHeight + yHeightAdjustment)
+    + " C " + (source.x + (contextWidth / 2)) + " " + (layerMidHeight)
+    + "  " + (source.x + (contextWidth / 2)) + " " + (layerMidHeight) //change source.x to target to make correct curve.
+    + "  " + (target.x + (contextWidth / 2)) + " " + (target.y);
     return (
-      <path className="link" key={"label" + link.data.name + " to " + link.parent.data.name} stroke={color(1)} d={d} />
+      <path className="link" key={"label" + source.nodeID + " to " + target.nodeID} stroke={color(1)} d={d} markerMid={'url(#arrow)'} />
     );
   }
   /*
@@ -132,7 +152,7 @@ class Layout_Tree extends React.Component {
   .projection(function(d) { return [d.y, d.x]; });
   
   */
-  renderLinks = (link) => {
+  renderLink = (link) => {
     let source = _.find(this.props.state.nodes, { "nodeID": link.source });
     let target = _.find(this.props.state.nodes, { "nodeID": link.target });
     let yHeightAdjustment = 30;
@@ -140,16 +160,16 @@ class Layout_Tree extends React.Component {
     if(this.props.state.defaultNodeTypes.includes(source.type)){
       yHeightAdjustment = (15 * source.text.length);
     }
-    let midx = ((source.x + rectX / 2) + (target.x + rectX / 2))*.50;
-    let midy = ((source.y + rectY + yHeightAdjustment) + target.y)*.50;
-    let midx2 = (midx + (target.x + rectX / 2))*.50;
+    let midx = ((source.x + contextWidth / 2) + (target.x + contextWidth / 2))*.50;
+    let midy = ((source.y + contextHeight + yHeightAdjustment) + target.y)*.50;
+    let midx2 = (midx + (target.x + contextWidth / 2))*.50;
     let midy2 = (midy + target.y)*.50;
 
     return (
       <g key={link.edgeID}>
-      <line className="link" stroke={color(1)}
-      x1={(source.x + rectX / 2)} y1={(source.y + rectY + yHeightAdjustment)}
-      x2={(target.x + rectX / 2)} y2={target.y} />
+      <line className="link" stroke={color(2)}
+      x1={(source.x + contextWidth / 2)} y1={(source.y + contextHeight + yHeightAdjustment)}
+      x2={(target.x + contextWidth / 2)} y2={target.y} />
       <line x1={midx} y1={midy} x2={midx2} y2={midy2} markerEnd={'url(#markerArrow)'} />
       </g>
     );
@@ -161,25 +181,39 @@ class Layout_Tree extends React.Component {
       className="svg" id="svg" ref="svg"
       width={width}
       height={height}>
+
       <defs>
       <marker id="markerArrow" viewBox="0 0 10 10" 
       markerUnits="strokeWidth" markerWidth="7" markerHeight="7"
       refX="7"refY="5" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" />
       </marker>
+
+      <marker
+      id="arrow"
+      markerUnits="strokeWidth"
+      markerWidth="12"
+      markerHeight="12"
+      viewBox="0 0 12 12"
+      refX="6"
+      refY="6"
+      orient="auto">
+      <path d="M2,2 L10,6 L2,10 L6,6 L2,2" style={{fill: '#f00'}}/>
+      </marker>
       </defs>
+
       <rect id="main" width={width} height={height} style={{ fill: 'white', pointerEvents: 'fill', strokeWidth: '0' }}
       //onMouseDown={(event)=>this.props.onMouseDown(event)} 
       //onMouseMove={(event)=>this.props.onMouseMove(event)} 
       //onMouseUp={(event)=>this.props.onMouseUp(event)} 
       
-      onTouchStart={(event) => this.props.onTouchStart(event)}
-      onTouchMove={(event) => this.props.onTouchMove(event)}
+      onTouchStart={(event) => {event.preventDefault(); this.props.onTouchStart(event)}}
+      onTouchMove={(event) =>  this.props.onTouchMove(event)}
       onTouchEnd={(event) => this.props.onTouchEnd(event)}
-      onTouchCancel={(event) => this.props.onTouchCancel(event)} />
+      onTouchCancel={(event) =>  this.props.onTouchCancel(event)} />
       <g>
-      {this.props.state.layoutReady && this.props.state.links.map(this.renderLinks)}
-      {this.props.state.layoutReady && this.props.state.nodes.map(this.renderNodes)}
+      {this.props.state.layoutReady && this.props.state.nodes.map(this.renderNode)}
+      {this.props.state.layoutReady && this.props.state.links.map(this.renderPath)}
     }
     </g>
     {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map(this.props.mainMenu)}

@@ -9,12 +9,15 @@ let linkHashByTarget;
 let nodeHash;
 let totalNumOfLayers = 0;
 
-let width = window.innerWidth - 40;
-let height = window.innerHeight - 80;
+let width = window.innerWidth - 50;
+let height = window.innerHeight - 100;
 let tree = d3.tree()
-.size([width - 75, height - 75]);
+.size([width - 75, height]);
 
-
+export function scaleHeight(number){
+    let scale = d3.scaleLinear().domain([0,totalNumOfLayers]).range([20,height-60]);
+    return scale(number);
+}
 
 export function convertRawToTree(object) {
     return (dispatch) => {
@@ -39,10 +42,7 @@ export function convertRawToTree(object) {
         nodeDepthConflict.map((childNode) =>{
             correctDepthTraversalRecurssively(childNode.nodeID, (childNode.size -1));
         });    
-        
-        //scale for vertical placement
-        let scaleHeight = d3.scaleLinear().domain([0,totalNumOfLayers]).range([40,height-40]);  
-        
+          
         //Scale all nodes according to correct layer
         for (let node in nodeHash) {
             if (nodeHash.hasOwnProperty(node)) {

@@ -8,7 +8,7 @@ const initialState = {
     treeData:[],
     layout:"TREE",
     layoutReady: false,
-    defaultNodeTypes: ["I","L"]
+    defaultNodeTypes: ["I","L"],
   };
 
 
