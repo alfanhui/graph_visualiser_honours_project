@@ -9,6 +9,7 @@ import InteractionEvents from './InteractionEvents';
 import {wrapContextTextToArray, wrapNonContextTextToArray} from 'utilities/WrapText';
 import { importJSON } from 'utilities/JsonIO';
 import DatabaseOptions from './DatabaseOptions';
+import hash from 'object-hash';
 
 @connect((store) => {
   return {
@@ -28,7 +29,7 @@ class HomePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      currentHash:null,
     };
   }
 
@@ -42,6 +43,7 @@ class HomePage extends React.Component {
 
       //Grab nodes from database  'MATCH (n) where not n:L RETURN n'
       this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
+        this.setState({currentHash: hash(result, {algorithm:'md5'})});
         nodes = this.convertNeo4jResult(result);
         //wordwrap
         nodes = nodes.map((node)=>{
@@ -61,6 +63,7 @@ class HomePage extends React.Component {
         }).then(() => {
           if (this.props.state.layout == "TREE") {
             this.props.dispatch(convertRawToTree({ "nodes": nodes, "links": links }));
+            this.updateScheduler();
           }
         });
       });
@@ -78,6 +81,30 @@ class HomePage extends React.Component {
   }
 
   componentWillUnmount() {
+
+  }
+
+  updateScheduler(){
+    setInterval(() => { this.checkUpdate(); }, this.props.state.updateInterval);
+  }
+
+  checkUpdate(){
+    //get all data 
+    this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) =>{
+      let newHash = hash(result, {algorithm: 'md5'});
+      if(newHash !==this.state.currentHash){
+        console.log("There is a new update available");
+        //Autoupdate if enabled - or prompt user
+        
+        //idea is to update node details: without disturbing too much?!
+
+        //set new hash as current hash
+
+      }else{ //do nothing..
+
+      }
+    })
+    
 
   }
 

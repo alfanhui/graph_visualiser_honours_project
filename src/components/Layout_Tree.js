@@ -183,9 +183,7 @@ class Layout_Tree extends React.Component {
       markerUnits="strokeWidth" markerWidth="7" markerHeight="7"
       refX="7"refY="5" orient="auto">
       <path d="M 0 0 L 10 5 L 0 10 z" style={{fill: 'black'}}/>
-      </marker>
-    
-     
+      </marker>     
       </defs>
 
       <rect id="main" width={width} height={height} style={{ fill: 'white', pointerEvents: 'fill', strokeWidth: '0' }}

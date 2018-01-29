@@ -9,6 +9,8 @@ const initialState = {
     layout:"TREE",
     layoutReady: false,
     defaultNodeTypes: ["I","L"],
+    updateInterval: 15000,
+    autoUpdate: true,
   };
 
 
