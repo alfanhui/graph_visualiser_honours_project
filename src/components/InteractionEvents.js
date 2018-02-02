@@ -44,12 +44,12 @@ const menuItem = {
 })
 
 class InteractionEvents extends React.Component {
-
+  
   static propTypes = {
     dispatch: PropTypes.func,
     state: PropTypes.object
   };
-
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -58,11 +58,11 @@ class InteractionEvents extends React.Component {
     };
     //client.listen();
   }
-
+  
   componentWillMount(){
-   
+    
   }
-
+  
   onNewMouseStart = (event) => {
     event.stopPropagation();
     if (event.target.getAttribute("id") == "main") {
@@ -75,7 +75,7 @@ class InteractionEvents extends React.Component {
       if (!drag.state) {
         drag.elem = event.target;
         drag.currentX = event.clientX,
-          drag.currentY = event.clientY;
+        drag.currentY = event.clientY;
         let transform = event.target.getAttributeNS(null, "transform").slice(10, -1).split(',');
         drag.transform = transform.map(parseFloat);
         drag.state = true;
@@ -83,7 +83,7 @@ class InteractionEvents extends React.Component {
       return false;
     }
   }
-
+  
   onNewMouseMove = (event) => {
     event.stopPropagation();
     if (drag.state) {
@@ -97,7 +97,7 @@ class InteractionEvents extends React.Component {
       drag.currentY = event.clientY;
     }
   }
-
+  
   //https://stackoverflow.com/questions/27641731/is-there-a-function-in-lodash-to-replace-matched-item
   //24th of Dec 2014 at 20:24
   //User dfsq from stackoverflow
@@ -106,7 +106,7 @@ class InteractionEvents extends React.Component {
     match ? arr.splice(_.findIndex(arr, key), 1, newval) : arr.push(newval);
     return arr;
   }
-
+  
   onNewMouseUp = (event) => {
     event.stopPropagation();
     if (drag.state) { //had hit element
@@ -120,49 +120,57 @@ class InteractionEvents extends React.Component {
       drag.state = drag.moved = false;
     }
   }
-
+  
   timeOutMain = (uuid) => {
     let menu = this.props.state.mainMenu;
     const newMenu = menu.filter(obj => obj.uuid !== uuid);
     this.props.dispatch(SET("mainMenu", newMenu));
   }
-
+  
   timeOutElement = (uuid) => {
     let menu = this.props.state.elementMenu;
     const newMenu = menu.filter(obj => obj.uuid !== uuid);
     this.props.dispatch(SET("elementMenu", newMenu));
   }
-
+  
   mainMenu = (nextMenu) => {
     let transform = "translate(" + (nextMenu.x - 40) + "," + (nextMenu.y - 40) + ")"; //minus margins
     return (
       <g key={"MM" + nextMenu.x + nextMenu.y} transform={transform}>
-        <foreignObject width="96" height="107">
-          <Menu desktop={true}>
-            <MenuItem style={menuItem} primaryText="Database" disabled={true} />
-            <MenuItem style={menuItem} primaryText="Graph" disabled={true} />
-            <MenuItem style={menuItem} primaryText="Options" disabled={true} />
-          </Menu>
-        </foreignObject>
+      <foreignObject width="96" height="107">
+      <Menu desktop={true}>
+      <MenuItem style={menuItem} primaryText="Database" disabled={true} />
+      <MenuItem style={menuItem} primaryText="Graph" disabled={true} />
+      <MenuItem style={menuItem} primaryText="Options" disabled={true} />
+      </Menu>
+      </foreignObject>
       </g>
     );
   }
-
+  
   elementMenu = (nextMenu) => {
     let transform = "translate(" + (nextMenu.x - 40) + "," + (nextMenu.y - 40) + ")"; //minus margins
+    let node = _.find(this.props.state.nodes, { "nodeID": nextMenu.nodeID });
+    let date = node.timestamp.split(" ")[0].split("-");
+    date = date[2] + "/" + date[1] + "/" + date[0]
+    let time = node.timestamp.split(" ")[1];
     return (
       <g key={"EM" + nextMenu.x + nextMenu.y} transform={transform}>
-        <foreignObject width="96" height="107">
-          <Menu desktop={true}>
-            <MenuItem style={menuItem} primaryText="Create edge" disabled={true} />
-            <MenuItem style={menuItem} primaryText="Edit node" disabled={true} />
-            <MenuItem style={menuItem} primaryText="Delete node" disabled={true} />
-          </Menu>
+        <rect x={20} y={20} width={130} height={40} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
+        <text x={40} y={30} className="ContentText" key={'elementDetails1' + node.nodeID}>{"ID: " + node.type + "_" + node.nodeID}</text>
+        <text x={25} y={43} className="ContentText" key={'elementDetails2' + node.nodeID} >{"DATE: " + date}</text>
+        <text x={25} y={56} className="ContentText" key={'elementDetails3' + node.nodeID} >{"TIME: " + time}</text>
+        <foreignObject x="20" y="45" width="96" height="107">
+        <Menu desktop={true}>
+        <MenuItem style={menuItem} primaryText="Create edge" disabled={true} />
+        <MenuItem style={menuItem} primaryText="Edit node" disabled={true} />
+        <MenuItem style={menuItem} primaryText="Delete node" disabled={true} />
+        </Menu>
         </foreignObject>
       </g>
     );
   }
-
+  
   touchStart = (event) => {
     event.stopPropagation();
     this.setState({ log: "touchStart" });
@@ -173,9 +181,8 @@ class InteractionEvents extends React.Component {
       if (event.target.getAttribute("id") == "main") {
         let uuid = getUuid();
         let timerID = setTimeout((uuid) => { this.timeOutMain(uuid); }, 3000, uuid);
-        let newMenu = { x: touch.clientX, y: touch.clientY, uuid, timerID };
+        let newMenu = { x: touch.clientX, y: touch.clientY, uuid, timerID};
         this.props.dispatch(UPDATE("mainMenu", newMenu));
-        console.log("main menu open via touch");
       } else {
         let transform = touch.target.getAttributeNS(null, "transform").slice(10, -1).split(',');
         $currentTouches.push({
@@ -190,9 +197,9 @@ class InteractionEvents extends React.Component {
       this.setState({ currentTouches: $currentTouches });
     }
   }
-
-
-
+  
+  
+  
   touchMove = (event) => {
     event.stopPropagation();
     this.setState({ log: "touchMove" });
@@ -218,10 +225,10 @@ class InteractionEvents extends React.Component {
       }
       this.setState({ currentTouches: $currentTouches });
     }
-
+    
   }
-
-
+  
+  
   touchEnd = (event) => {
     event.stopPropagation();
     let $currentTouches = this.state.currentTouches;
@@ -233,13 +240,12 @@ class InteractionEvents extends React.Component {
         if (currentTouch.state) { //had hit element
           if (!currentTouch.moved) {
             let uuid = getUuid();
-            let timerID = setTimeout((uuid) => { this.timeOutElement(uuid); }, 3000, uuid);
-            let newMenu = { x: touch.clientX, y: touch.clientY, uuid, timerID };
+            let timerID = setTimeout((uuid) => { this.timeOutElement(uuid); }, 5000, uuid);
+            let newMenu = { x: touch.clientX, y: touch.clientY, uuid, timerID, nodeID: event.target.id};
             this.props.dispatch(UPDATE("elementMenu", newMenu));
-            console.log("element menu open", currentTouch.elem);
           }
           currentTouch.state = currentTouch.moved = false;
-
+          
           //remove record
           $currentTouches.splice(currentTouchIndex, 1);
           this.setState({ currentTouches: $currentTouches });
@@ -249,7 +255,7 @@ class InteractionEvents extends React.Component {
       }
     }
   }
-
+  
   touchCancel = (event) => {
     event.stopPropagation();
     let $currentTouches = this.state.currentTouches;
@@ -259,46 +265,46 @@ class InteractionEvents extends React.Component {
       if (currentTouchIndex >= 0) {
         // Remove the touch record.
         $currentTouches.splice(currentTouchIndex, 1);
- 
+        
       } else {
         console.log("Touch was not found!");
       }
     }
     this.setState({ currentTouches: $currentTouches });
   }
-
-
-
-
+  
+  
+  
+  
   render() {
     return (
       <div>
-        {this.props.state.layout == "FORCE" ?
-          <ForceDirected
-            onMouseDown={this.onNewMouseStart}
-            onMouseMove={this.onNewMouseMove}
-            onMouseUp={this.onNewMouseUp}
-            mainMenu={this.mainMenu}
-            elementMenu={this.elementMenu}
-            onTouchStart={this.touchStart}
-            onTouchMove={this.touchMove}
-            onTouchEnd={this.touchEnd}
-            onTouchCancel={this.touchCancel} />
-          :
-          <Tree
-            onMouseDown={this.onNewMouseStart}
-            onMouseMove={this.onNewMouseMove}
-            onMouseUp={this.onNewMouseUp}
-            mainMenu={this.mainMenu}
-            elementMenu={this.elementMenu}
-            onTouchStart={this.touchStart}
-            onTouchMove={this.touchMove}
-            onTouchEnd={this.touchEnd}
-            onTouchCancel={this.touchCancel} />
-        }
-      </div>
-    );
-  }
+      {this.props.state.layout == "FORCE" ?
+      <ForceDirected
+      onMouseDown={this.onNewMouseStart}
+      onMouseMove={this.onNewMouseMove}
+      onMouseUp={this.onNewMouseUp}
+      mainMenu={this.mainMenu}
+      elementMenu={this.elementMenu}
+      onTouchStart={this.touchStart}
+      onTouchMove={this.touchMove}
+      onTouchEnd={this.touchEnd}
+      onTouchCancel={this.touchCancel} />
+      :
+      <Tree
+      onMouseDown={this.onNewMouseStart}
+      onMouseMove={this.onNewMouseMove}
+      onMouseUp={this.onNewMouseUp}
+      mainMenu={this.mainMenu}
+      elementMenu={this.elementMenu}
+      onTouchStart={this.touchStart}
+      onTouchMove={this.touchMove}
+      onTouchEnd={this.touchEnd}
+      onTouchCancel={this.touchCancel} />
+    }
+    </div>
+  );
+}
 }
 
 export default InteractionEvents;
