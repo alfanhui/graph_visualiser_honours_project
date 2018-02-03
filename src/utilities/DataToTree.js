@@ -209,7 +209,9 @@ function treeIntoNodes(root){
                     "type":node_children.data.type,
                     "text":node_children.data.text, 
                     "timestamp":node_children.data.timestamp,      
-                    "layer":node_children.data.layer,      
+                    "layer":node_children.data.layer,
+                    "time":node_children.data.time,
+                    "date":node_children.data.date,      
                     "x":node_children.x,      
                     "y":node_children.data.scaleLayer,           
                     });
@@ -225,7 +227,9 @@ function treeIntoNodes(root){
                     "text":node.data.text, 
                     "type":node.data.type,
                     "timestamp":node.data.timestamp,      
-                    "layer":node.data.layer,      
+                    "layer":node.data.layer,
+                    "time":node.data.time,
+                    "date":node.data.date,        
                     "x":node.x,      
                     "y":node.data.scaleLayer,           
                     });

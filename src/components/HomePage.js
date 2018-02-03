@@ -46,16 +46,8 @@ class HomePage extends React.Component {
         this.props.dispatch(SET("updateAvailable", false));
         this.setState({ currentHash: hash(result, { algorithm: 'md5' }) });
         nodes = this.convertNeo4jResult(result);
-        //wordwrap
-        nodes = nodes.map((node) => {
-          if (this.props.state.defaultNodeTypes.includes(node.type)) {
-            node.text = wrapContextTextToArray(node.text);
-          } else {
-            node.text = wrapNonContextTextToArray(node.text);
-          }
-
-          return node;
-        });
+        //format data (wordwrap and other activities)
+        nodes = this.formatNodes(nodes);
         this.props.dispatch(SET('nodes', nodes));
         //Grab edges   'START r=rel(*) WHERE NOT ((:L)-[r]->()) AND NOT (()-[r]->(:L)) RETURN r'
         this.props.dispatch(postQuery('START r=rel(*) RETURN r')).then((result) => {
@@ -83,6 +75,25 @@ class HomePage extends React.Component {
 
   componentWillUnmount() {
 
+  }
+
+  //wraps the text, splits the date and time to readable formats
+  formatNodes(nodes){
+    nodes = nodes.map((node) => {
+      let date = node.timestamp.split(" ")[0].split("-");
+          date = date[2] + "/" + date[1] + "/" + date[0]
+      let time = node.timestamp.split(" ")[1];
+      if (this.props.state.defaultNodeTypes.includes(node.type)) {
+        node.text = wrapContextTextToArray(node.text);
+      } else {
+        node.text = wrapNonContextTextToArray(node.text);
+      }
+      node.time = time;
+      node.date = date;
+      return node;
+    });
+    
+    return nodes;
   }
 
   updateScheduler() {

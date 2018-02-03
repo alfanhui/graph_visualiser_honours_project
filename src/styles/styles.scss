@@ -45,12 +45,6 @@ svg{
   touch-action: none
 }
 
-foreignObject{
-  //position: relative;
-  //width: 100px;
-  //height:100px;
-}
-
 td {
   padding: 12px;
 }
@@ -97,7 +91,6 @@ path{
   font-size:10px;
 }
 
-
 .h2 {
   font: 75px 'Arial';
   color: $vin-blue;
@@ -106,4 +99,24 @@ path{
 .paper {
   margin: 20px;
 }
+
+.menuItem {
+  border:10px;
+  box-sizing: border-box;
+  display:block;
+  font-family:Roboto, sans-serif;
+  cursor: pointer;
+  text-decoration:none;
+  margin:0;
+  padding: 16px 0px;
+  outline:none;
+  font-size:15px;
+  font-weight:100;
+  color: #4c4c4c;
+  line-height:32px;
+  min-height:32px;
+  white-space:nowrap;
+  background:none;
+  text-anchor: middle;
+};
 
