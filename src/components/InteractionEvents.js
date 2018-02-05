@@ -17,6 +17,9 @@ let drag = {
   moved: false
 };
 
+let width = window.innerWidth - 40;
+let height = window.innerHeight - 40;
+
 //********* this is a style and should be moved to ./styles
 const menu = {
   
@@ -56,11 +59,13 @@ class InteractionEvents extends React.Component {
   onNewMouseStart = (event) => {
     event.stopPropagation();
     if (event.target.getAttribute("id") == "main") {
-      let uuid = getUuid();
-      let timerID = setTimeout((uuid) => { this.timeOutMain(uuid); }, 3000, uuid);
-      let newMenu = { x: event.clientX, y: event.clientY, uuid, timerID };
-      this.props.dispatch(UPDATE("mainMenu", newMenu));
-      console.log("main menu open");
+      if(this.deadZone(event.clientX, event.clientY)){
+        let uuid = getUuid();
+        let timerID = setTimeout((uuid) => { this.timeOutMain(uuid); }, 3000, uuid);
+        let newMenu = { x: event.clientX, y: event.clientY, uuid, timerID };
+        this.props.dispatch(UPDATE("mainMenu", newMenu));
+        console.log("main menu open");
+      }
     } else {
       if (!drag.state) {
         drag.elem = event.target;
@@ -111,6 +116,16 @@ class InteractionEvents extends React.Component {
     }
   }
   
+  deadZone(x, y){
+    if(x > (width-100)){
+      return false;
+    }else if(y >  (height-100)){
+      return false;
+    } else {
+      return true;
+    }
+  }
+
   timeOutMain = (uuid) => {
     let menu = this.props.state.mainMenu;
     const newMenu = menu.filter(obj => obj.uuid !== uuid);
@@ -151,10 +166,12 @@ class InteractionEvents extends React.Component {
     for (let i = 0; i < touches.length; i++) {
       let touch = touches[i];
       if (event.target.getAttribute("id") == "main") {
-        let uuid = getUuid();
-        let timerID = setTimeout((uuid) => { this.timeOutMain(uuid); }, 300000, uuid);
-        let newMenu = { x: touch.clientX, y: touch.clientY, uuid, timerID};
-        this.props.dispatch(UPDATE("mainMenu", newMenu));
+        if(this.deadZone(touch.clientX, touch.clientY)){
+          let uuid = getUuid();
+          let timerID = setTimeout((uuid) => { this.timeOutMain(uuid); }, 3000, uuid);
+          let newMenu = { x: touch.clientX, y: touch.clientY, uuid, timerID};
+          this.props.dispatch(UPDATE("mainMenu", newMenu));
+        }
       } else {
         let transform = touch.target.getAttributeNS(null, "transform").slice(10, -1).split(',');
         $currentTouches.push({
@@ -212,7 +229,7 @@ class InteractionEvents extends React.Component {
         if (currentTouch.state) { //had hit element
           if (!currentTouch.moved) {
             let uuid = getUuid();
-            let timerID = setTimeout((uuid) => { this.timeOutElement(uuid); }, 400000, uuid);
+            let timerID = setTimeout((uuid) => { this.timeOutElement(uuid); }, 3000, uuid);
             let newMenu = { x: touch.clientX, y: touch.clientY, uuid, timerID, nodeID: event.target.id};
             this.props.dispatch(UPDATE("elementMenu", newMenu));
           }

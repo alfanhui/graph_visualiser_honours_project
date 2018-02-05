@@ -44,6 +44,10 @@ class HomePage extends React.Component {
       //Grab nodes from database  'MATCH (n) where not n:L RETURN n'
       this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
         this.props.dispatch(SET("updateAvailable", false));
+        let now = Date.now();
+        let hours = new Date(now).getHours(),
+            minutes = new Date(now).getMinutes();
+        this.props.dispatch(SET("lastUpdated", hours + ":" + minutes));
         this.setState({ currentHash: hash(result, { algorithm: 'md5' }) });
         nodes = this.convertNeo4jResult(result);
         //format data (wordwrap and other activities)
@@ -80,6 +84,7 @@ class HomePage extends React.Component {
   //wraps the text, splits the date and time to readable formats
   formatNodes(nodes){
     nodes = nodes.map((node) => {
+      if(node.timestamp){
       let date = node.timestamp.split(" ")[0].split("-");
           date = date[2] + "/" + date[1] + "/" + date[0]
       let time = node.timestamp.split(" ")[1];
@@ -90,6 +95,7 @@ class HomePage extends React.Component {
       }
       node.time = time;
       node.date = date;
+    }
       return node;
     });
     

@@ -10,8 +10,9 @@ const initialState = {
     layoutReady: false,
     defaultNodeTypes: ["I","L"],
     updateInterval: 15000,
-    autoUpdate: true,
+    autoUpdate: false,
     updateAvailable: false,
+    lastUpdated: null,
   };
 
 

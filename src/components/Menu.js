@@ -60,13 +60,24 @@ class Menu extends React.Component {
     if(type == "main"){
       return (
         <g transform={transform}>
-        <rect x={-50} y={-80} width={200} height={200} key={'touchborder' + + menu.x + menu.y} style={{fillOpacity:"0.0"}}/> {/* stops touches conflicting */}
-        <rect x={origin} y={origin} width={110} height={30} key={'mainRect1' + + menu.x + menu.y} style={{stroke:'grey', strokeWidth:'0.25px', fill:'white'}}/>
-          <text x={origin + 55} y={origin + 20} className="menuItem" key={'mainMenuItem1' + menu.x + menu.y}>Database</text>
-        <rect x={origin} y={origin + 30} width={110} height={30} key={'mainRect2' + + menu.x + menu.y} style={{stroke:'grey', strokeWidth:'0.25px', fill:'white'}}/>
-          <text x={origin + 55} y={origin + 50} className="menuItem" key={'mainMenuItem2' + + menu.x + menu.y}>Graph</text>
-        <rect x={origin} y={origin + 60} width={110} height={30} key={'mainRect3' + + menu.x + menu.y} style={{stroke:'grey', strokeWidth:'0.25px', fill:'white'}}/>
-          <text x={origin + 55} y={origin + 80} className="menuItem" key={'mainMenuItem3' + + menu.x + menu.y}>Options</text>
+        <rect x={-50} y={-80} width={200} height={200} key={'touchborder' + menu.x + menu.y} style={{fillOpacity:"0.0"}}/> {/* stops touches conflicting */}
+        <rect x={origin} y={origin} width={110} height={40} key={'mainMenuRect' + menu.x + menu.y} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
+          <text x={origin + 5} y={origin+ 10} className="ContentText" key={'mainMenuDetails1' + menu.x + menu.y} >{"Nodes: (" + this.props.state.nodes.length + ")"}</text>
+          <text x={origin + 5} y={origin + 23} className="ContentText" key={'mainMenuDetails2' + menu.x + menu.y} >{"Edges: (" + this.props.state.links.length + ")"}</text>
+          {
+            this.props.state.updateAvailable
+            ?
+            <text x={origin + 5} y={origin + 36} className="ContentText" key={'mainMenuDetails3' + menu.x + menu.y} stroke="none" fill="red">{"Update Available!"}</text>
+            :
+            <text x={origin + 5} y={origin + 36} className="ContentText" key={'mainMenuDetails3' + menu.x + menu.y} >{"Last updated: " + this.props.state.lastUpdated}</text>
+          }
+          
+        <rect x={origin} y={origin + 40} width={110} height={30} key={'mainRect1' + + menu.x + menu.y} style={{stroke:'grey', strokeWidth:'0.25px', fill:'white'}}/>
+          <text x={origin + 55} y={origin + 60} className="menuItem" key={'mainMenuItem1' + menu.x + menu.y}>Database</text>
+        <rect x={origin} y={origin + 70} width={110} height={30} key={'mainRect2' + + menu.x + menu.y} style={{stroke:'grey', strokeWidth:'0.25px', fill:'white'}}/>
+          <text x={origin + 55} y={origin + 90} className="menuItem" key={'mainMenuItem2' + + menu.x + menu.y}>Graph</text>
+        <rect x={origin} y={origin + 100} width={110} height={30} key={'mainRect3' + + menu.x + menu.y} style={{stroke:'grey', strokeWidth:'0.25px', fill:'white'}}/>
+          <text x={origin + 55} y={origin + 120} className="menuItem" key={'mainMenuItem3' + + menu.x + menu.y}>Options</text>
         </g>
       );
     }else{
