@@ -28,9 +28,6 @@ class Layout_Tree extends React.Component {
   static propTypes = {
     dispatch: PropTypes.func,
     state: PropTypes.object,
-    //onMouseDown:PropTypes.func,
-    //onMouseMove:PropTypes.func,
-    //onMouseUp:PropTypes.func,
     mainMenu: PropTypes.func,
     elementMenu: PropTypes.func,
     onTouchStart: PropTypes.func,
@@ -79,13 +76,13 @@ class Layout_Tree extends React.Component {
       <g key={"group" + node.nodeID}  >
       <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={contextWidth} height={contextHeight + (node.text.length * 15)}
       fill={color(node.type)} transform={transform}
-      //onMouseDown={(event)=>this.props.onMouseDown(event)} 
-      //onMouseMove={(event)=>this.props.onMouseMove(event)} 
-      //onMouseUp={(event)=>this.props.onMouseUp(event)} 
-      onTouchStart={(event) => this.props.onTouchStart(event)}
-      onTouchMove={(event) => this.props.onTouchMove(event)}
-      onTouchEnd={(event) => this.props.onTouchEnd(event)}
-      onTouchCancel={(event) => this.props.onTouchCancel(event)} />
+      onMouseDown={(event)=>this.props.onTouchStart(event, true)} 
+      onMouseMove={(event)=>this.props.onTouchMove(event, true)} 
+      onMouseUp={(event)=>this.props.onTouchEnd(event, true)} 
+      onTouchStart={(event) => this.props.onTouchStart(event, false)}
+      onTouchMove={(event) => this.props.onTouchMove(event, false)}
+      onTouchEnd={(event) => this.props.onTouchEnd(event, false)}
+      onTouchCancel={(event) => this.props.onTouchCancel(event, false)} />
       {
         node.text.map((line, index) => {
           let transformLabel = 'translate(' + (node.x + 5) + ',' + (node.y + 15 + (index * 15)) + ')';
@@ -105,13 +102,13 @@ class Layout_Tree extends React.Component {
       <g key={"group" + node.nodeID}  >
       <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={nonContextWidth} height={nonContextHeight}
       fill={color(node.type)} transform={transform}
-      //onMouseDown={(event)=>this.props.onMouseDown(event)} 
-      //onMouseMove={(event)=>this.props.onMouseMove(event)} 
-      //onMouseUp={(event)=>this.props.onMouseUp(event)} 
-      onTouchStart={(event) => this.props.onTouchStart(event)}
-      onTouchMove={(event) => this.props.onTouchMove(event)}
-      onTouchEnd={(event) => this.props.onTouchEnd(event)}
-      onTouchCancel={(event) => this.props.onTouchCancel(event)} />
+      onMouseDown={(event)=>this.props.onTouchStart(event, true)} 
+      onMouseMove={(event)=>this.props.onTouchMove(event, true)} 
+      onMouseUp={(event)=>this.props.onTouchEnd(event, true)} 
+      onTouchStart={(event) => this.props.onTouchStart(event, false)}
+      onTouchMove={(event) => this.props.onTouchMove(event, false)}
+      onTouchEnd={(event) => this.props.onTouchEnd(event, false)}
+      onTouchCancel={(event) => this.props.onTouchCancel(event, false)} />
         {
         node.text.map((line, index) => {
           let transformLabel = 'translate(' + (node.x + contextWidth/2) + ',' + (node.y + 30 + (index * 15)) + ')';
@@ -187,14 +184,14 @@ class Layout_Tree extends React.Component {
       </defs>
 
       <rect id="main" width={width} height={height} style={{ fill: 'white', pointerEvents: 'fill', strokeWidth: '0' }}
-      //onMouseDown={(event)=>this.props.onMouseDown(event)} 
-      //onMouseMove={(event)=>this.props.onMouseMove(event)} 
-      //onMouseUp={(event)=>this.props.onMouseUp(event)} 
-      
-      onTouchStart={(event) => {event.preventDefault(); this.props.onTouchStart(event)}}
-      onTouchMove={(event) =>  this.props.onTouchMove(event)}
-      onTouchEnd={(event) => this.props.onTouchEnd(event)}
-      onTouchCancel={(event) =>  this.props.onTouchCancel(event)} />
+        onMouseDown={(event)=>this.props.onTouchStart(event, true)} 
+        onMouseMove={(event)=>this.props.onTouchMove(event, true)} 
+        onMouseUp={(event)=>this.props.onTouchEnd(event, true)} 
+        onTouchStart={(event) => this.props.onTouchStart(event, false)}
+        onTouchMove={(event) => this.props.onTouchMove(event, false)}
+        onTouchEnd={(event) => this.props.onTouchEnd(event, false)}
+        onTouchCancel={(event) => this.props.onTouchCancel(event, false)} 
+        />
       <g>
       {this.props.state.layoutReady && this.props.state.nodes.map(this.renderNode)}
       {this.props.state.layoutReady && this.props.state.links.map(this.renderPath)}

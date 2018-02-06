@@ -47,7 +47,7 @@ class HomePage extends React.Component {
         let now = Date.now();
         let hours = new Date(now).getHours(),
             minutes = new Date(now).getMinutes();
-        if (minutes.toString().length == 1){
+        if (minutes < 10){
           minutes = "0" + minutes;
         }
         this.props.dispatch(SET("lastUpdated", hours + ":" + minutes));
