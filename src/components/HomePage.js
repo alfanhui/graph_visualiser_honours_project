@@ -47,6 +47,9 @@ class HomePage extends React.Component {
         let now = Date.now();
         let hours = new Date(now).getHours(),
             minutes = new Date(now).getMinutes();
+        if (minutes.toString().length == 1){
+          minutes = "0" + minutes;
+        }
         this.props.dispatch(SET("lastUpdated", hours + ":" + minutes));
         this.setState({ currentHash: hash(result, { algorithm: 'md5' }) });
         nodes = this.convertNeo4jResult(result);
@@ -114,7 +117,7 @@ class HomePage extends React.Component {
         
         //Autoupdate if enabled - or prompt user
         if (this.props.state.autoUpdate) {
-          console.log("Updating...");
+          console.log("Update taking place..");
           this.componentWillMount();
         } else {
           console.log("There is a new update available");
