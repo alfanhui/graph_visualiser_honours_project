@@ -20,7 +20,7 @@ let drag = {
 let width = window.innerWidth - 40,
 height = window.innerHeight - 40;
 let boundaryWidth = 100,
-boundaryHeight = 100;
+boundaryHeight = 120;
 
 //********* this is a style and should be moved to ./styles
 const menu = {
@@ -71,12 +71,11 @@ class InteractionEvents extends React.Component {
       for (let i = 0; i < touches.length; i++) {
         let touch = touches[i];
         if (event.target.getAttribute("id") == "main") {
-          if(this.deadZone(touch.clientX, touch.clientY)){
+            let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
             let uuid = getUuid();
             let timerID = setTimeout((uuid) => { this.timeOutMain(uuid); }, 3000, uuid);
-            let newMenu = { x: touch.clientX, y: touch.clientY, uuid, timerID};
+            let newMenu = { x: newX, y: newY, uuid, timerID};
             this.props.dispatch(UPDATE("mainMenu", newMenu));
-          }
         } else {
           let transform = touch.target.getAttributeNS(null, "transform").slice(10, -1).split(',');
           
@@ -101,12 +100,11 @@ class InteractionEvents extends React.Component {
       }
     }else{
       if (event.target.getAttribute("id") == "main") {
-        if(this.deadZone(event.clientX, event.clientY)){
+          let {newX, newY} = this.deadZone(event.clientX, event.clientY);
           let uuid = getUuid();
           let timerID = setTimeout((uuid) => { this.timeOutMain(uuid); }, 3000, uuid);
-          let newMenu = { x: event.clientX, y: event.clientY, uuid, timerID };
+          let newMenu = { x: newX, y: newY, uuid, timerID };
           this.props.dispatch(UPDATE("mainMenu", newMenu));
-        }
       } else {
         if (!drag.state) {
           drag.elem = event.target;
@@ -240,13 +238,9 @@ class InteractionEvents extends React.Component {
   
   //touch boundary
   deadZone(x, y){
-    if(x > (width-boundaryWidth)){
-      return false;
-    }else if(y >  (height-boundaryHeight)){
-      return false;
-    } else {
-      return true;
-    }
+    let newX = x > (width-boundaryWidth) ? (width-boundaryWidth) : x ;
+    let newY = y > (height-boundaryHeight) ? (height-boundaryHeight) : y ;
+    return {newX, newY};
   }
   
   timeOutMain = (uuid) => {

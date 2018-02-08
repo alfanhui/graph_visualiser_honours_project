@@ -57,7 +57,7 @@ class Menu extends React.Component {
   renderMainMenu = (menu, transform) =>{
       return(
         <g transform={transform}>
-        <rect x={-50} y={-80} width={200} height={200} key={'touchborder' + menu.x + menu.y} style={{fillOpacity:"0.0"}}/> {/* stops touches conflicting */}
+        <rect x={-50} y={-100} width={200} height={250} key={'touchborder' + menu.x + menu.y} style={{fillOpacity:"0.0"}}/> {/* stops touches conflicting */}
         <rect x={origin} y={origin} width={110} height={40} key={'mainMenuRect' + menu.x + menu.y} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
           <text x={origin + 5} y={origin+ 10} className="ContentText" key={'mainMenuDetails1' + menu.x + menu.y} >{"Nodes: (" + this.props.state.nodes.length + ")"}</text>
           <text x={origin + 5} y={origin + 23} className="ContentText" key={'mainMenuDetails2' + menu.x + menu.y} >{"Edges: (" + this.props.state.links.length + ")"}</text>
@@ -111,38 +111,3 @@ class Menu extends React.Component {
 }
 
 export default Menu;
-
-/*
-
-
-*/
-
-
-/*
-
-<foreignObject width="96" height="107">
-<Menu desktop={true}>
-<MenuItem style={menuItem} primaryText="Database" disabled={true} />
-<MenuItem style={menuItem} primaryText="Graph" disabled={true} />
-<MenuItem style={menuItem} primaryText="Options" disabled={true} />
-</Menu>
-</foreignObject>
-
-
-*/
-
-
-/*
-<rect x={20} y={20} width={110} height={40} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
-<text x={40} y={30} className="ContentText" key={'elementDetails1' + node.nodeID}>{"ID: " + node.type + "_" + node.nodeID}</text>
-<text x={25} y={43} className="ContentText" key={'elementDetails2' + node.nodeID} >{"DATE: " + date}</text>
-<text x={25} y={56} className="ContentText" key={'elementDetails3' + node.nodeID} >{"TIME: " + time}</text>
-<foreignObject x="20" y="53" width="100" height="100">
-<Menu>
-<MenuItem style={menuItem} onClick={this.testClick}><div style={{position:'fixed'}}>Create edge</div></MenuItem>
-<MenuItem style={menuItem} onClick={this.testClick}><div style={{position:'fixed'}}>Edit Node</div></MenuItem>
-<MenuItem style={menuItem} onClick={this.testClick}><div style={{position:'fixed'}}>Delete Node</div></MenuItem>
-</Menu>
-</foreignObject>
-
-*/
