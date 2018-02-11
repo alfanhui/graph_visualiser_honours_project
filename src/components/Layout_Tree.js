@@ -15,14 +15,6 @@ let height = window.innerHeight - 40;
 
 const color = d3.scaleOrdinal(d3.schemeCategory20); //range the colours
 
-let origin = 20;
-let menuItemRectOrigin = origin+40,
-menuItemTextXOrigin = menuItemRectOrigin + 15,
-menuItemTextYOrigin = menuItemRectOrigin + 20;
-
-let menu_width = 110,
-    menu_height = 30;
-
 @connect((store) => {
   return {
     state: store.generalReducer

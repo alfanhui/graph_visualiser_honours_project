@@ -20,11 +20,12 @@ export function startTimer(menu) {
     };
 }
 
+//I add more because the menu is actively being used so more time should be added
 export function addToTimer(uuid, type) {
     return (dispatch) => {
         let object = {uuid, type};
         clearTimeout(internalHash[uuid]); //Stop timer
-        let newTimerId = setTimeout((object) => { dispatch(stopTimer(object.uuid, object.type)) }, timeDelay, object);
+        let newTimerId = setTimeout((object) => { dispatch(stopTimer(object.uuid, object.type)) }, timeDelay+2000, object); 
         internalHash[uuid]=newTimerId;
     };
 }

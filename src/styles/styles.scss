@@ -31,7 +31,8 @@ html {
 }
 
 body {
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
   color: #4d4d4d;
   -moz-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
@@ -50,13 +51,15 @@ td {
 }
 
 .ContentText {
-  font: 10px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px ;
+  font-family: Roboto, sans-serif;
   pointer-events: none;
   touch-action: none;
 }
 
 .NonContentText {
-  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px ;
+  font-family: Roboto, sans-serif;
   pointer-events: none;
   font-weight: 500;
   text-anchor: middle;
@@ -102,6 +105,14 @@ path{
   margin: 20px;
 }
 
+.menuDetails {
+  font-size: 10px ;
+  font-family: Roboto, sans-serif;
+  pointer-events: none;
+  touch-action: none;
+}
+
+
 .menuItem {
   border:10px;
   box-sizing: border-box;
@@ -112,11 +123,11 @@ path{
   margin:0;
   padding: 16px 0px;
   outline:none;
-  font-size:15px;
+  font-size:15px; //15
   font-weight:100;
   color: #4c4c4c;
-  line-height:32px;
-  min-height:32px;
+  line-height:30px; //30
+  min-height:30px; //30
   white-space:nowrap;
   background:none;
   text-anchor: middle;
