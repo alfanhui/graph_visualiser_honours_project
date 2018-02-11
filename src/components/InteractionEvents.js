@@ -19,8 +19,8 @@ let drag = {
 
 let width = window.innerWidth - 40,
 height = window.innerHeight - 40;
-let boundaryWidth = 100,
-boundaryHeight = 120;
+//let boundaryWidth = 100,
+//boundaryHeight = 120;
 
 
 let timeDelay = 4500;
@@ -29,6 +29,7 @@ let timeDelay = 4500;
 const menu = {
   
 };
+
 
 
 const menuItem = {
@@ -53,14 +54,30 @@ class InteractionEvents extends React.Component {
   
   constructor(props) {
     super(props);
+    let height = window.innerHeight - 40,
+        width = window.innerWidth - 40;
+    let defaultWidth = 1920 - 40,
+        defaultHeight = 1080 - 40; 
+    
+    //if the screen is smaller, do not make the menus smaller.
+    let scaledHeight = defaultHeight < height ?  height /defaultHeight : 1,
+        scaledWidth = defaultWidth < width ? width / defaultWidth : 1;
+    let averagedScale = (scaledHeight + scaledWidth) / 2;
+
+    let menu_width = 150 * averagedScale, //original 110 x 30 
+        menu_height = 40.9 * averagedScale;
     this.state = {
       currentTouches: [],
       log: "",
+      boundaryWidth: (menu_width *.9),
+      boundaryHeight: (menu_height*4),
     };
-    //client.listen();
+
+    this.props.dispatch(SET("averagedScale", averagedScale));
   }
   
   componentWillMount(){
+    
     
   }
   
@@ -238,8 +255,8 @@ class InteractionEvents extends React.Component {
 
   //touch boundary
   deadZone(x, y){
-    let newX = x > (width-boundaryWidth) ? (width-boundaryWidth) : x ;
-    let newY = y > (height-boundaryHeight) ? (height-boundaryHeight) : y ;
+    let newX = x > (width-this.state.boundaryWidth) ? (width-this.state.boundaryWidth) : x ;
+    let newY = y > (height-this.state.boundaryHeight) ? (height-this.state.boundaryHeight) : y ;
     return {newX, newY};
   }
 

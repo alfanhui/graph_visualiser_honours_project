@@ -30,23 +30,13 @@ class Menu extends React.Component {
   
   constructor(props) {
     super(props);
-    const menu_ratio = 3.666666666666;
-    let height = window.innerheight - 40,
-        width = window.innerWidth - 40;
-    let defaultHeight = 1920 - 40, 
-        defaultWidth = 1080 - 40;
-    //if the screen is smaller, do not make the menus smaller.
-    let scaledHeight = defaultHeight < height ?  height /defaultHeight : 1,
-        scaledWidth = defaultWidth < width ? width / defaultWidth : 1;
-    let averagedScale = (scaledHeight + scaledWidth) / 2;
-
-    console.log("averageScale", averagedScale);    
-
+    //const menu_ratio = 3.666666666666; 
+    let averagedScale = this.props.state.averagedScale;
     //to set state correctly.
     let menu_width = 150 * averagedScale, //original 110 x 30 
         menu_height = 40.9 * averagedScale,
         origin = 20;
-    let menuItemRectYOrigin = (menu_height*1.35);
+    let menuItemRectYOrigin = (origin + menu_height);
 
     this.state = {
       menu_width,
@@ -191,10 +181,10 @@ class Menu extends React.Component {
     return (
       <g transform={transform} key={menu.uuid}>
   {/*<rect x={-(this.state.menu_width/2)} y={-(this.state.menu_height*3.5)} width={this.state.menu_width*1.8} height={this.state.menu_height*8} key={'touchborder' + menu.x + menu.y} style={{ fillOpacity:"1.0", fill:'blue'}}*/}/> {/* stops touches conflicting */}
-      <rect x={this.state.origin} y={this.state.origin} width={this.state.menu_width} height={this.state.menu_height*1.33} key={'elementRect' + node.nodeID} onClick={()=>this.resetTimer(menu.uuid, menu.type)} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
+      <rect x={this.state.origin} y={this.state.origin} width={this.state.menu_width} height={this.state.menu_height} key={'elementRect' + node.nodeID} onClick={()=>this.resetTimer(menu.uuid, menu.type)} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
       <text x={this.state.origin*2} y={this.state.origin + (this.state.menu_height *.3)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'elementDetails1' + node.nodeID}>{"ID: " + node.type + "_" + node.nodeID}</text>
-      <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.6)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'elementDetails2' + node.nodeID} >{"DATE: " + node.date}</text>
-      <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.9)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'elementDetails3' + node.nodeID} >{"TIME: " + node.time}</text>
+      <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.6)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'elementDetails2' + node.nodeID} >{"Date: " + node.date}</text>
+      <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.9)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'elementDetails3' + node.nodeID} >{"Time: " + node.time}</text>
         {this.menuItems(menu)}
       </g>
     );
@@ -208,7 +198,7 @@ class Menu extends React.Component {
         }));
       }
       case 1:{
-        return(
+        return( 
             <g>
               <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={this.state.menu_height*3} key={'displayOption' + menu.uuid} onClick={()=>this.resetTimer(menu.uuid, menu.type)} style={{stroke:'black', strokeWidth:'1px', fill:'#FF8A80'}}/>
               {this.state.clickedOption(menu.uuid)}
@@ -220,7 +210,7 @@ class Menu extends React.Component {
   
   
   renderMenuItem = (menuObject, index, uuid) => {
-    return (
+    return ( 
       <g key ={'ItemGroup' + index + "_" + uuid}>
       <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (index * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'menuRect' + index + "_" + uuid} onClick={() => menuObject.onClick(uuid)}/>
       <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (index * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'MenuItem' + index + "_" + uuid} >{menuObject.title}</text>

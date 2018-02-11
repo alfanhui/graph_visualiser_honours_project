@@ -14,6 +14,7 @@ const initialState = {
   autoUpdate: false,
   updateAvailable: false,
   lastUpdated: null,
+  averageScale: 1,
 };
 
 

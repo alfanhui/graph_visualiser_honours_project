@@ -6,10 +6,6 @@ import _ from 'lodash';
 import {scaleHeight} from 'utilities/DataToTree';
 import Menu from 'components/menu';
 
-let contextWidth = 150;
-let contextHeight = 10;
-let nonContextWidth = 50,
-    nonContextHeight = 50;
 let width = window.innerWidth - 40;
 let height = window.innerHeight - 40;
 
@@ -38,12 +34,29 @@ class Layout_Tree extends React.Component {
   
   constructor(props) {
     super(props);
+    let averagedScale = this.props.state.averagedScale;
+    console.log(averagedScale);
+
     this.state = {
+      contextWidth: (150 * averagedScale),
+      contextHeight: (10 * averagedScale),
+      nonContextWidth: (50 * averagedScale),
+      nonContextHeight: (50 * averagedScale),
       layer:0,
       elementMenuLayer0:[{title:"Create Edge", onClick:(uuid) => this.createEdge(uuid)}, 
                           {title:"Edit Node", onClick:this.editNode}, 
                           {title:"Delete Node", onClick:this.deleteNode}],
       mainMenuLayer0:["Database", "Graph", "Options"],
+      contextFontAdjustment:{
+        fontSize: ((10 * averagedScale) + 'px'),
+        lineHeight:((22 * averagedScale) + 'px'),
+        minHeight:((22 * averagedScale) + 'px'),
+      },
+      nonContextFontAdjustment:{
+        fontSize:((12 * averagedScale) + 'px'),
+        lineHeight:((26 * averagedScale) + 'px'),
+        minHeight:((26 * averagedScale) + 'px'),
+      }
     };
     console.log("Width: " + width + " Height: " + height + " Ratio: " + (width / height)); //5760 x 1900 (ratio of 3ish)
     
@@ -79,7 +92,7 @@ class Layout_Tree extends React.Component {
     let transform = 'translate(' + node.x + ',' + node.y + ')';
     return (
       <g key={"group" + node.nodeID}  >
-      <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={contextWidth} height={contextHeight + (node.text.length * 15)}
+      <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={this.state.contextWidth} height={this.state.contextHeight + (node.text.length * (15*this.props.state.averagedScale))}
       fill={color(node.type)} transform={transform}
       onMouseDown={(event)=>this.props.onTouchStart(event, true)} 
       onMouseMove={(event)=>this.props.onTouchMove(event, true)} 
@@ -90,9 +103,9 @@ class Layout_Tree extends React.Component {
       onTouchCancel={(event) => this.props.onTouchCancel(event, false)} />
       {
         node.text.map((line, index) => {
-          let transformLabel = 'translate(' + (node.x + 5) + ',' + (node.y + 15 + (index * 15)) + ')';
+          let transformLabel = 'translate(' + (node.x + 5) + ',' + (node.y + (15*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
           return(
-            <text className="ContentText" key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
+            <text className="ContentText" style={this.state.contextFontAdjustment} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
           );
         })
       }      
@@ -102,10 +115,10 @@ class Layout_Tree extends React.Component {
 
   //Non-default are AIF added extended nodes
   renderNonContentNode = (node) => {
-    let transform = 'translate(' + (node.x - 15 + contextWidth/2)+ ',' + (node.y + 5) + ') rotate(45 ' +30/2 + ' ' + 30/2 + ')';
+    let transform = 'translate(' + (node.x - 15 + this.state.contextWidth/2)+ ',' + (node.y + 5) + ') rotate(45 ' +30/2 + ' ' + 30/2 + ')';
     return (
       <g key={"group" + node.nodeID}  >
-      <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={nonContextWidth} height={nonContextHeight}
+      <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={this.state.nonContextWidth} height={this.state.nonContextHeight}
       fill={color(node.type)} transform={transform}
       onMouseDown={(event)=>this.props.onTouchStart(event, true)} 
       onMouseMove={(event)=>this.props.onTouchMove(event, true)} 
@@ -116,9 +129,9 @@ class Layout_Tree extends React.Component {
       onTouchCancel={(event) => this.props.onTouchCancel(event, false)} />
         {
         node.text.map((line, index) => {
-          let transformLabel = 'translate(' + (node.x + contextWidth/2) + ',' + (node.y + 30 + (index * 15)) + ')';
+          let transformLabel = 'translate(' + (node.x + this.state.contextWidth/2) + ',' + (node.y + (30*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
           return(
-            <text className="NonContentText" key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
+            <text className="NonContentText" style={this.state.nonContextFontAdjustment} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
           );
         })
       }      
@@ -131,19 +144,19 @@ class Layout_Tree extends React.Component {
   renderPath = (link) => {
     let source = _.find(this.props.state.nodes, { "nodeID": link.source });
     let target = _.find(this.props.state.nodes, { "nodeID": link.target });
-    let yHeightAdjustment = 60;//(nonContextWidth + nonContextHeight / 2);
+    let yHeightAdjustment = (60 * this.props.state.averagedScale);//(nonContextWidth + nonContextHeight / 2);
     //for arrow placement.
     if(this.props.state.defaultNodeTypes.includes(source.type)){
-      yHeightAdjustment = (15 * source.text.length);
+      yHeightAdjustment = ((15*this.props.state.averagedScale) * source.text.length);
     }
-    let layerMidHeight = scaleHeight(source.layer + .35) + contextHeight + yHeightAdjustment;
-    if(layerMidHeight < (source.y + contextHeight + yHeightAdjustment)){ //stops weird line tangle
-      layerMidHeight = (source.y + contextHeight + yHeightAdjustment);
+    let layerMidHeight = scaleHeight(source.layer + .35) + this.state.contextHeight + yHeightAdjustment;
+    if(layerMidHeight < (source.y + this.state.contextHeight + yHeightAdjustment)){ //stops weird line tangle
+      layerMidHeight = (source.y + this.state.contextHeight + yHeightAdjustment);
     }
-    let d = "M " + (source.x + (contextWidth / 2)) + " " + (source.y + contextHeight + yHeightAdjustment)
-    + " C " + (source.x + (contextWidth / 2)) + " " + (layerMidHeight)
-    + "  " + (source.x + (contextWidth / 2)) + " " + (layerMidHeight) //change source.x to target to make correct curve.
-    + "  " + (target.x + (contextWidth / 2)) + " " + (target.y);
+    let d = "M " + (source.x + (this.state.contextWidth / 2)) + " " + (source.y + this.state.contextHeight + yHeightAdjustment)
+    + " C " + (source.x + (this.state.contextWidth / 2)) + " " + (layerMidHeight)
+    + "  " + (source.x + (this.state.contextWidth / 2)) + " " + (layerMidHeight) //change source.x to target to make correct curve.
+    + "  " + (target.x + (this.state.contextWidth / 2)) + " " + (target.y);
     return (
       <path className="link" key={"label" + source.nodeID + " to " + target.nodeID} stroke={color(1)} d={d} markerEnd={'url(#markerArrow)'} />
     );
@@ -153,21 +166,21 @@ class Layout_Tree extends React.Component {
   renderLink = (link) => {
     let source = _.find(this.props.state.nodes, { "nodeID": link.source });
     let target = _.find(this.props.state.nodes, { "nodeID": link.target });
-    let yHeightAdjustment = 30;
+    let yHeightAdjustment = (30*this.props.state.averagedScale);//30
     //for arrow placement.
     if(this.props.state.defaultNodeTypes.includes(source.type)){
-      yHeightAdjustment = (15 * source.text.length);
+      yHeightAdjustment = ((15*this.props.state.averagedScale) * source.text.length);
     }
-    let midx = ((source.x + contextWidth / 2) + (target.x + contextWidth / 2))*.50;
-    let midy = ((source.y + contextHeight + yHeightAdjustment) + target.y)*.50;
-    let midx2 = (midx + (target.x + contextWidth / 2))*.50;
+    let midx = ((source.x + this.state.contextWidth / 2) + (target.x + this.state.contextWidth / 2))*.50;
+    let midy = ((source.y + this.state.contextHeight + yHeightAdjustment) + target.y)*.50;
+    let midx2 = (midx + (target.x + this.state.contextWidth / 2))*.50;
     let midy2 = (midy + target.y)*.50;
 
     return (
       <g key={link.edgeID}>
       <line className="link" stroke={color(2)}
-      x1={(source.x + contextWidth / 2)} y1={(source.y + contextHeight + yHeightAdjustment)}
-      x2={(target.x + contextWidth / 2)} y2={target.y} />
+      x1={(source.x + this.state.contextWidth / 2)} y1={(source.y + this.state.contextHeight + yHeightAdjustment)}
+      x2={(target.x + this.state.contextWidth / 2)} y2={target.y} />
       <line x1={midx} y1={midy} x2={midx2} y2={midy2} markerEnd={'url(#markerArrow)'} />
       </g>
     );
@@ -182,7 +195,7 @@ class Layout_Tree extends React.Component {
 
       <defs>
       <marker id="markerArrow" viewBox="0 0 10 10" 
-      markerUnits="strokeWidth" markerWidth="7" markerHeight="7"
+      markerUnits="strokeWidth" markerWidth={7*this.props.state.averagedScale} markerHeight={7*this.props.state.averagedScale}
       refX="7"refY="5" orient="90">
       <path d="M 0 0 L 10 5 L 0 10 z" style={{fill: 'black'}}/>
       </marker>     
