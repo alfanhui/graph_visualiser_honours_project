@@ -17,3 +17,21 @@ export function UPDATE(variable, payload) {
     payload: payload
   };
 }
+
+export function REPLACE(variable, id, payload) {
+  return {
+    type: "REPLACE",
+    variable: variable,
+    id:id,
+    payload: payload
+  };
+}
+
+export function DROP(variable, id, payload) {
+  return {
+    type: "DROP",
+    variable: variable,
+    id:id,
+    payload: payload
+  };
+}

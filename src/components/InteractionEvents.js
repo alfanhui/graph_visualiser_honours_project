@@ -6,7 +6,7 @@ import { SET, UPDATE } from 'reducerActions';
 import getUuid from 'uuid/v1';
 import ForceDirected from './Layout_ForceDirected';
 import Tree from './Layout_Tree';
-import Menu from 'components/Menu';
+import { startTimer } from '../utilities/Timer';
 
 let drag = {
   elm: null,
@@ -21,6 +21,9 @@ let width = window.innerWidth - 40,
 height = window.innerHeight - 40;
 let boundaryWidth = 100,
 boundaryHeight = 120;
+
+
+let timeDelay = 4500;
 
 //********* this is a style and should be moved to ./styles
 const menu = {
@@ -60,7 +63,7 @@ class InteractionEvents extends React.Component {
   componentWillMount(){
     
   }
-
+  
   
   touchStart = (event, mouseUse) => {
     event.stopPropagation();
@@ -71,16 +74,15 @@ class InteractionEvents extends React.Component {
       for (let i = 0; i < touches.length; i++) {
         let touch = touches[i];
         if (event.target.getAttribute("id") == "main") {
-            let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
-            let uuid = getUuid();
-            let timerID = setTimeout((uuid) => { this.timeOutMain(uuid); }, 3000, uuid);
-            let newMenu = { x: newX, y: newY, uuid, timerID};
-            this.props.dispatch(UPDATE("mainMenu", newMenu));
+          let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
+          let uuid = getUuid();
+          let newMenu = { x: newX, y: newY, uuid, type:"mainMenu"};
+          this.props.dispatch(startTimer(newMenu));
         } else {
           let transform = touch.target.getAttributeNS(null, "transform").slice(10, -1).split(',');
           
           let currentX = touch.clientX, 
-              currentY = touch.clientY;
+          currentY = touch.clientY;
           let node = _.find(this.props.state.nodes, { "nodeID": event.target.id });
           //issue with rotated nodes positing is not correct upon moving
           if(!this.props.state.defaultNodeTypes.includes(node.type)){ 
@@ -100,17 +102,16 @@ class InteractionEvents extends React.Component {
       }
     }else{
       if (event.target.getAttribute("id") == "main") {
-          let {newX, newY} = this.deadZone(event.clientX, event.clientY);
-          let uuid = getUuid();
-          let timerID = setTimeout((uuid) => { this.timeOutMain(uuid); }, 3000, uuid);
-          let newMenu = { x: newX, y: newY, uuid, timerID };
-          this.props.dispatch(UPDATE("mainMenu", newMenu));
+        let {newX, newY} = this.deadZone(event.clientX, event.clientY);
+        let uuid = getUuid();
+        let newMenu = { x: newX, y: newY, uuid, type:"mainMenu"};
+        this.props.dispatch(startTimer(newMenu));
       } else {
         if (!drag.state) {
           drag.elem = event.target;
           drag.currentX = event.clientX;
           drag.currentY = event.clientY;
-
+          
           let node = _.find(this.props.state.nodes, { "nodeID": event.target.id });
           //issue with rotated nodes positing is not correct upon moving
           if(!this.props.state.defaultNodeTypes.includes(node.type)){ 
@@ -181,13 +182,12 @@ class InteractionEvents extends React.Component {
           let currentTouch = $currentTouches[currentTouchIndex];
           if (currentTouch.state) { //had hit element
             if (!currentTouch.moved) {
+              let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
               let uuid = getUuid();
-              let timerID = setTimeout((uuid) => { this.timeOutElement(uuid); }, 3000, uuid);
-              let newMenu = { x: touch.clientX, y: touch.clientY, uuid, timerID, nodeID: event.target.id};
-              this.props.dispatch(UPDATE("elementMenu", newMenu));
+              let newMenu = { x: newX, y: newY, uuid,   type:"elementMenu", nodeID: event.target.id};
+              this.props.dispatch(startTimer(newMenu));
             }
             currentTouch.state = currentTouch.moved = false;
-            
             //remove record
             $currentTouches.splice(currentTouchIndex, 1);
             this.setState({ currentTouches: $currentTouches });
@@ -199,10 +199,10 @@ class InteractionEvents extends React.Component {
     }else{
       if (drag.state) { //had hit element
         if (!drag.moved) {
+          let {newX, newY} = this.deadZone(event.clientX, event.clientY);
           let uuid = getUuid();
-          let timerID = setTimeout((uuid) => { this.timeOutElement(uuid); }, 3000, uuid);
-          let newMenu = { x: event.clientX, y: event.clientY, uuid, timerID, nodeID: event.target.id };
-          this.props.dispatch(UPDATE("elementMenu", newMenu));
+          let newMenu = { x: newX, y: newY, uuid, type:"elementMenu", nodeID: event.target.id };
+          this.props.dispatch(startTimer(newMenu));
         }
         drag.state = drag.moved = false;
       }
@@ -226,7 +226,6 @@ class InteractionEvents extends React.Component {
     this.setState({ currentTouches: $currentTouches });
   }
   
-  
   //https://stackoverflow.com/questions/27641731/is-there-a-function-in-lodash-to-replace-matched-item
   //24th of Dec 2014 at 20:24
   //User dfsq from stackoverflow
@@ -236,44 +235,14 @@ class InteractionEvents extends React.Component {
     return arr;
   }
   
+
   //touch boundary
   deadZone(x, y){
     let newX = x > (width-boundaryWidth) ? (width-boundaryWidth) : x ;
     let newY = y > (height-boundaryHeight) ? (height-boundaryHeight) : y ;
     return {newX, newY};
   }
-  
-  timeOutMain = (uuid) => {
-    let menu = this.props.state.mainMenu;
-    const newMenu = menu.filter(obj => obj.uuid !== uuid);
-    this.props.dispatch(SET("mainMenu", newMenu));
-  }
-  
-  timeOutElement = (uuid) => {
-    let menu = this.props.state.elementMenu;
-    const newMenu = menu.filter(obj => obj.uuid !== uuid);
-    this.props.dispatch(SET("elementMenu", newMenu));
-  }
-  
-  mainMenu = (nextMenu) => {
-    return (
-      <Menu
-      key={"MM" + nextMenu.x + nextMenu.y}
-      type="main"
-      menu={nextMenu}
-      />
-    );
-  }
-  
-  elementMenu = (nextMenu) => {
-    return (
-      <Menu 
-      key={"EM" + nextMenu.x + nextMenu.y}
-      type="element"
-      menu={nextMenu}
-      />
-    );
-  }  
+
   
   render() {
     return (
@@ -285,6 +254,7 @@ class InteractionEvents extends React.Component {
       onMouseUp={this.onNewMouseUp}
       mainMenu={this.mainMenu}
       elementMenu={this.elementMenu}
+      resetTimer={this.resetTimer}
       onTouchStart={this.touchStart}
       onTouchMove={this.touchMove}
       onTouchEnd={this.touchEnd}
@@ -296,6 +266,7 @@ class InteractionEvents extends React.Component {
       onMouseUp={this.onNewMouseUp}
       mainMenu={this.mainMenu}
       elementMenu={this.elementMenu}
+      resetTimer={this.resetTimer}
       onTouchStart={this.touchStart}
       onTouchMove={this.touchMove}
       onTouchEnd={this.touchEnd}

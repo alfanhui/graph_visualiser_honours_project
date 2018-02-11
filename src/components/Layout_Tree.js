@@ -4,6 +4,7 @@ import * as d3 from 'd3';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import {scaleHeight} from 'utilities/DataToTree';
+import Menu from 'components/menu';
 
 let contextWidth = 150;
 let contextHeight = 10;
@@ -14,6 +15,13 @@ let height = window.innerHeight - 40;
 
 const color = d3.scaleOrdinal(d3.schemeCategory20); //range the colours
 
+let origin = 20;
+let menuItemRectOrigin = origin+40,
+menuItemTextXOrigin = menuItemRectOrigin + 15,
+menuItemTextYOrigin = menuItemRectOrigin + 20;
+
+let menu_width = 110,
+    menu_height = 30;
 
 @connect((store) => {
   return {
@@ -39,6 +47,11 @@ class Layout_Tree extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      layer:0,
+      elementMenuLayer0:[{title:"Create Edge", onClick:(uuid) => this.createEdge(uuid)}, 
+                          {title:"Edit Node", onClick:this.editNode}, 
+                          {title:"Delete Node", onClick:this.deleteNode}],
+      mainMenuLayer0:["Database", "Graph", "Options"],
     };
     console.log("Width: " + width + " Height: " + height + " Ratio: " + (width / height)); //5760 x 1900 (ratio of 3ish)
     
@@ -167,7 +180,7 @@ class Layout_Tree extends React.Component {
       </g>
     );
   }
-  
+
   render() {
     return (
       <svg
@@ -197,8 +210,22 @@ class Layout_Tree extends React.Component {
       {this.props.state.layoutReady && this.props.state.links.map(this.renderPath)}
     }
     </g>
-    {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map(this.props.mainMenu)}
-    {this.props.state.elementMenu.length > 0 && this.props.state.elementMenu.map(this.props.elementMenu)}
+    {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map((nextMenu)=> {
+       return (
+            <Menu
+            key={"MM" + nextMenu.x + nextMenu.y}
+            menu={nextMenu}
+            />
+          );
+    })}
+    {this.props.state.elementMenu.length > 0 && this.props.state.elementMenu.map((nextMenu)=> {
+      return (
+            <Menu 
+              key={"EM" + nextMenu.x + nextMenu.y}
+              menu={nextMenu}
+            />
+          );
+    })}
     This Browser does not support html canvas.
     </svg>
   );

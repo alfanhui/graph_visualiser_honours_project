@@ -87,8 +87,10 @@ path{
   stroke-width: 1;
 }
 
-.menuitem {
-  font-size:10px;
+.menuItemRect {
+  stroke:grey;
+  stroke-width:0.25px;
+  fill:white;
 }
 
 .h2 {
@@ -118,5 +120,7 @@ path{
   white-space:nowrap;
   background:none;
   text-anchor: middle;
+  touch-action: none;
+  pointer-events:none;
 };
 
