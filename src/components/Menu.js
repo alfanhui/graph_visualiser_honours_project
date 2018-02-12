@@ -71,6 +71,11 @@ class Menu extends React.Component {
   resetTimer = (uuid, type) => {
     this.props.dispatch(addToTimer(uuid, type));
   }
+
+  clickBack = (uuid, type) => {
+    this.props.dispatch(addToTimer(uuid, type));
+    this.setState({layer: 0});
+  }
   
     
   //Main menu option click
@@ -159,10 +164,16 @@ class Menu extends React.Component {
 
   
   renderMainMenu = (menu, transform) =>{
+    let pathTransform = "translate(" + (this.state.origin + (this.state.menu_width * .825)) + "," + this.state.origin +") " + "scale( " + (1* this.props.state.averagedScale) + "," + (1* this.props.state.averagedScale)  + ")";
     return(
       <g transform={transform} key={menu.uuid}>
       {/*<rect x={-(this.state.menu_width/2)} y={-(this.state.menu_height*3.5)} width={this.state.menu_width*1.8} height={this.state.menu_height*8} key={'touchborder' + menu.x + menu.y} style={{fillOpacity:"1.0", fill:'red'}}/>*/} {/* stops touches conflicting */}
       <rect x={this.state.origin} y={this.state.origin} width={this.state.menu_width} height={this.state.menu_height} key={'mainMenuRect' + menu.x + menu.y} onClick={()=>this.resetTimer(menu.uuid, menu.type)} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
+      {this.state.layer > 0 ? 
+          <path stroke={"black"} viewBox="0 0 30 30" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" transform={pathTransform} style={{fill:"black"}} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
+        :
+       <g/>
+      }
       <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.3)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'mainMenuDetails1' + menu.x + menu.y} >{"Nodes: (" + this.props.state.nodes.length + ")"}</text>
       <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.6)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'mainMenuDetails2' + menu.x + menu.y} >{"Edges: (" + this.props.state.links.length + ")"}</text>
       {
@@ -178,10 +189,16 @@ class Menu extends React.Component {
   }  
   
   renderElementMenu = (menu, transform, node) => {
+    let pathTransform = "translate(" + (this.state.origin + (this.state.menu_width * .825)) + "," + this.state.origin +") " + "scale( " + (1* this.props.state.averagedScale) + "," + (1* this.props.state.averagedScale)  + ")";
     return (
       <g transform={transform} key={menu.uuid}>
   {/*<rect x={-(this.state.menu_width/2)} y={-(this.state.menu_height*3.5)} width={this.state.menu_width*1.8} height={this.state.menu_height*8} key={'touchborder' + menu.x + menu.y} style={{ fillOpacity:"1.0", fill:'blue'}}*/}/> {/* stops touches conflicting */}
       <rect x={this.state.origin} y={this.state.origin} width={this.state.menu_width} height={this.state.menu_height} key={'elementRect' + node.nodeID} onClick={()=>this.resetTimer(menu.uuid, menu.type)} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
+      {this.state.layer > 0 ? 
+          <path stroke={"black"} viewBox="0 0 30 30" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" transform={pathTransform} style={{fill:"black"}} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
+        :
+       <g/>
+      }
       <text x={this.state.origin*2} y={this.state.origin + (this.state.menu_height *.3)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'elementDetails1' + node.nodeID}>{"ID: " + node.type + "_" + node.nodeID}</text>
       <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.6)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'elementDetails2' + node.nodeID} >{"Date: " + node.date}</text>
       <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.9)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'elementDetails3' + node.nodeID} >{"Time: " + node.time}</text>

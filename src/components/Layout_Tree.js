@@ -35,7 +35,6 @@ class Layout_Tree extends React.Component {
   constructor(props) {
     super(props);
     let averagedScale = this.props.state.averagedScale;
-    console.log(averagedScale);
 
     this.state = {
       contextWidth: (150 * averagedScale),

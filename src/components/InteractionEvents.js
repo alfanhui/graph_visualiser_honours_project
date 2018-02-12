@@ -19,8 +19,6 @@ let drag = {
 
 let width = window.innerWidth - 40,
 height = window.innerHeight - 40;
-//let boundaryWidth = 100,
-//boundaryHeight = 120;
 
 
 let timeDelay = 4500;
@@ -69,8 +67,8 @@ class InteractionEvents extends React.Component {
     this.state = {
       currentTouches: [],
       log: "",
-      boundaryWidth: (menu_width *.9),
-      boundaryHeight: (menu_height*4),
+      boundaryWidth: (menu_width*.9),
+      boundaryHeight: (menu_height*3.5),
     };
 
     this.props.dispatch(SET("averagedScale", averagedScale));
