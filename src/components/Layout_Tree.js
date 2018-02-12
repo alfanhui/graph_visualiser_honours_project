@@ -128,7 +128,12 @@ class Layout_Tree extends React.Component {
       onTouchCancel={(event) => this.props.onTouchCancel(event, false)} />
         {
         node.text.map((line, index) => {
-          let transformLabel = 'translate(' + (node.x + this.state.contextWidth/2) + ',' + (node.y + (30*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
+          let transformLabel;
+          if(node.text.length == 1){
+            transformLabel = 'translate(' + (node.x + this.state.contextWidth/2) + ',' + (node.y + (37*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
+          }else{
+            transformLabel = 'translate(' + (node.x + this.state.contextWidth/2) + ',' + (node.y + (28*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
+          }
           return(
             <text className="NonContentText" style={this.state.nonContextFontAdjustment} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
           );

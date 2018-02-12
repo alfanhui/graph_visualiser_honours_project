@@ -15,6 +15,23 @@ const initialState = {
   updateAvailable: false,
   lastUpdated: null,
   averagedScale: 1,
+  edgeTypes:{
+    "RA":"Default Inference",
+    "CA":"Default Conflict",
+    "TA":"Default Transition",
+    "MA":"Default Rephrase",
+    "PA":"Default Preference",
+  },
+  edgeTypesTEST:{
+    "DAD":"FATHER TO",
+    "MUM":"MOTHER TO",
+    "BROTHER":"BROTHER TO",
+    "SISTER":"SISTER TO",
+    "AUNT":"AUNT TO",
+    "UNCLE":"UNCLE TO",
+    "SON":"SON TO",
+    "DAUGHTER":"DAUGHTER TO",
+  }
 };
 
 
