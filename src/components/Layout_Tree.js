@@ -30,6 +30,7 @@ class Layout_Tree extends React.Component {
     onTouchMove: PropTypes.func,
     onTouchEnd: PropTypes.func,
     onTouchCancel: PropTypes.func,
+    loadDatabase: PropTypes.func,
   };
   
   constructor(props) {
@@ -130,7 +131,7 @@ class Layout_Tree extends React.Component {
         node.text.map((line, index) => {
           let transformLabel;
           if(node.text.length == 1){
-            transformLabel = 'translate(' + (node.x + this.state.contextWidth/2) + ',' + (node.y + (37*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
+            transformLabel = 'translate(' + (node.x + this.state.contextWidth/2) + ',' + (node.y + (38*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
           }else{
             transformLabel = 'translate(' + (node.x + this.state.contextWidth/2) + ',' + (node.y + (28*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
           }
@@ -215,8 +216,8 @@ class Layout_Tree extends React.Component {
         onTouchCancel={(event) => this.props.onTouchCancel(event, false)} 
         />
       <g>
-      {this.props.state.layoutReady && this.props.state.nodes.map(this.renderNode)}
-      {this.props.state.layoutReady && this.props.state.links.map(this.renderPath)}
+      {this.props.state.layoutReady && this.props.state.nodes.length > 0 && this.props.state.nodes.map(this.renderNode)}
+      {this.props.state.layoutReady && this.props.state.nodes.length > 0 && this.props.state.links.map(this.renderPath)}
     }
     </g>
     {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map((nextMenu)=> {
@@ -224,6 +225,7 @@ class Layout_Tree extends React.Component {
             <Menu
             key={"MM" + nextMenu.x + nextMenu.y}
             menu={nextMenu}
+            loadDatabase={(dataFile)=>this.props.loadDatabase(dataFile)}
             />
           );
     })}

@@ -3,24 +3,25 @@ import request from 'superagent';
 import {SET} from 'reducerActions';
 
 //Import json from local file. Await for database to be wiped via promise before continuing..
-export function importJSON(randomBool) {
-  let fileName = 'nodeset11130'; //nodeset11076
+export function importJSON(dataFile) {
+  let fileName = 'nodeset'+ dataFile; //nodeset11076
   return (dispatch) => {
-      dispatch(SET('databaseError', "#FFFFFF"));
-      return dispatch(wipeDatabase()).then(function(){
-        dispatch(removeIndexes()); //remove indexes
-      }).then(function(){
-        return request.get("data/US2016G1/" + fileName + ".json")
-        .then((res)=> {
-          console.log(res.body);
-          let {nodeStatements, dictionary, edgeStatements} = graphMLtoCypher(res.body);
-          return dispatch(compileQuery(nodeStatements, dictionary, edgeStatements));
-        })
-        .catch((err)=> {
-          console.log("This error: " , err);
-          dispatch(SET("databaseError", "#F50057"));
-        });
+    dispatch(SET('databaseError', "#FFFFFF"));
+    return dispatch(wipeDatabase()).then(function(){
+      dispatch(removeIndexes()); //remove indexes
+    }).then(function(){
+      return request.get("data/US2016G1/" + fileName + ".json")
+      .then((res)=> {
+        dispatch(SET("currentDataFile", dataFile));
+        console.log(res.body);
+        let {nodeStatements, dictionary, edgeStatements} = graphMLtoCypher(res.body);
+        return dispatch(compileQuery(nodeStatements, dictionary, edgeStatements));
+      })
+      .catch((err)=> {
+        console.log("This error: " , err);
+        dispatch(SET("databaseError", "#F50057"));
       });
+    });
   };
 }
 

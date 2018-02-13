@@ -9,6 +9,11 @@ let linkHashByTarget;
 let nodeHash;
 let totalNumOfLayers = 0;
 
+//loop protectors
+let possibleLoopHash = {};
+let correctLoopHash = {};
+let applyChildrenLoopHash = {};
+
 let width = window.innerWidth - 50;
 let height = window.innerHeight - 100;
 let tree = d3.tree()
@@ -20,16 +25,22 @@ export function scaleHeight(number){
 }
 
 export function convertRawToTree(object) {
+    possibleLoopHash = {};
+    correctLoopHash = {};
+    applyChildrenLoopHash ={};
     return (dispatch) => {
+        if(object.nodes.length == 0){
+            return;
+        }
         let nodes = object.nodes,
-            links = object.links;
+        links = object.links;
         nodeHash = {};
         linkHashBySource = {};
         linkHashByTarget = {};
         nodeHash = {};
-
+        
         createDataHashes(nodes, links);
-
+        
         //Calculate possible depths for all nodes, starting from roots
         let rootNodes = getRootNodes(nodes);
         calculatePossibleDepths(rootNodes);
@@ -42,7 +53,7 @@ export function convertRawToTree(object) {
         nodeDepthConflict.map((childNode) =>{
             correctDepthTraversalRecurssively(childNode.nodeID, (childNode.size -1));
         });    
-          
+        
         //Scale all nodes according to correct layer
         for (let node in nodeHash) {
             if (nodeHash.hasOwnProperty(node)) {
@@ -57,16 +68,16 @@ export function convertRawToTree(object) {
                 nodesWithLayers.push(nodeHash[node]);
             }
         }
-
+        
         //Structure into tree for d3
         let dataTree = structureIntoTree(rootNodes);
         
         //Apply horizontal positioning
         let root = d3.hierarchy(dataTree);  
         root = tree(root);
-
+        
         let newNodes = treeIntoNodes(root);
-
+        
         dispatch(SET("nodes", newNodes));
         dispatch(SET("layoutReady",true));
     };
@@ -126,24 +137,38 @@ function getNodesWithMaxDepth(){
 function applyChildrenRecurssively(node, children){ //linkHash is using link.source
     if (linkHashBySource.hasOwnProperty(node)){ //contains a link
         linkHashBySource[node].map((link) => { // cycle through the exisiting links
-            children.push({"name": link.target,
-            "parent": link.source,
-            "children": applyChildrenRecurssively(link.target, []),
-            ...nodeHash[link.target]});
+            if(applyChildrenLoopHash[link.target] == link.source){
+                return;
+            }else{
+                applyChildrenLoopHash[link.target] = link.source;
+                children.push({"name": link.target,
+                "parent": link.source,
+                "children": applyChildrenRecurssively(link.target, []),
+                ...nodeHash[link.target]});
+            }
         });
     }
     return children;
 }
 
+/*
+*
+*
+*/
 //adds suspected layer to depthLayer array
 function possibleDepthTraversalRecurssively(nodeID, counter) {
     if (linkHashBySource.hasOwnProperty(nodeID)) {
         linkHashBySource[nodeID].map((childNode) => {
-            nodeHash[childNode.target].depthArray.push(counter);
-            nodeHash[childNode.target].layer = counter;
-            if(nodeID !== childNode.target){
-                possibleDepthTraversalRecurssively(childNode.target, (counter + 1));
-            }
+            // if(possibleLoopHash[nodeID] == childNode.target){
+            //     return;
+            // }else{
+            //  possibleLoopHash[nodeID] = childNode.target;
+                nodeHash[childNode.target].depthArray.push(counter);
+                nodeHash[childNode.target].layer = counter;
+                if(nodeID !== childNode.target){
+                    possibleDepthTraversalRecurssively(childNode.target, (counter + 1));
+                }
+           // }
         });
     }
 }
@@ -152,8 +177,13 @@ function possibleDepthTraversalRecurssively(nodeID, counter) {
 function correctDepthTraversalRecurssively(nodeID, counter) {
     if (linkHashByTarget.hasOwnProperty(nodeID)) {
         linkHashByTarget[nodeID].map((parentNode) => {
-            nodeHash[parentNode.source].layer = counter;
-            correctDepthTraversalRecurssively(parentNode.source, (counter - 1));
+            if(correctLoopHash[parentNode] == nodeID){
+                return;
+            }else{
+                correctLoopHash[parentNode] = nodeID;
+                nodeHash[parentNode.source].layer = counter;
+                correctDepthTraversalRecurssively(parentNode.source, (counter - 1));
+            }
         });
     }
 }
@@ -164,7 +194,7 @@ function getRootNodes(nodes) {
     let rootNodes = nodes.filter(node => !linkHashByTarget.hasOwnProperty(node.nodeID));
     let sortedRootNodes = rootNodes.sort(function(node1, node2) {
         return moment.utc(node1.timestamp).isAfter(moment.utc(node2.timestamp));
-      });
+    });
     return sortedRootNodes;
 }
 
@@ -177,63 +207,63 @@ function structureIntoTree(rootNodes){
             "parent": "",
             "children":applyChildrenRecurssively(rootNode.nodeID, []),
             ...rootNode});
-    });
-
-    let children = [];
-    children.push(branches.map((rootNode) => {return(
-        {...rootNode}
-    );}));
-
-    let dataTree = {
-        "name":"TopLevel",
-        "children":children[0]
-    };
-    return dataTree;
-}
-
-
-//This converts the hierarchal data of all the root nodes and their children back into normal node data.  
-function treeIntoNodes(root){
-    let newNodeArray = [];
-    root.children.map((node) => { 
-        //recursion function inside this function because keeping newNodeArray a local variable.
-        let findChildren = function(node_children){
-            if (node_children.children && node_children.children.length > 0){ 
-                node_children.children.map((child)=>{
+        });
+        
+        let children = [];
+        children.push(branches.map((rootNode) => {return(
+            {...rootNode}
+        );}));
+        
+        let dataTree = {
+            "name":"TopLevel",
+            "children":children[0]
+        };
+        return dataTree;
+    }
+    
+    
+    //This converts the hierarchal data of all the root nodes and their children back into normal node data.  
+    function treeIntoNodes(root){
+        let newNodeArray = [];
+        root.children.map((node) => { 
+            //recursion function inside this function because keeping newNodeArray a local variable.
+            let findChildren = function(node_children){
+                if (node_children.children && node_children.children.length > 0){ 
+                    node_children.children.map((child)=>{
+                        findChildren(child);
+                    });
+                }
+                if(!_.find(newNodeArray, {"nodeID": node_children.data.nodeID})){
+                    newNodeArray.push({
+                        "nodeID":node_children.data.nodeID,
+                        "type":node_children.data.type,
+                        "text":node_children.data.text, 
+                        "timestamp":node_children.data.timestamp,      
+                        "layer":node_children.data.layer,
+                        "time":node_children.data.time,
+                        "date":node_children.data.date,      
+                        "x":node_children.x,      
+                        "y":node_children.data.scaleLayer,           
+                    });
+                }
+            };
+            if (node.children && node.children.length > 0){ 
+                node.children.map((child)=>{
                     findChildren(child);
                 });
             }
-            if(!_.find(newNodeArray, {"nodeID": node_children.data.nodeID})){
-                newNodeArray.push({
-                    "nodeID":node_children.data.nodeID,
-                    "type":node_children.data.type,
-                    "text":node_children.data.text, 
-                    "timestamp":node_children.data.timestamp,      
-                    "layer":node_children.data.layer,
-                    "time":node_children.data.time,
-                    "date":node_children.data.date,      
-                    "x":node_children.x,      
-                    "y":node_children.data.scaleLayer,           
-                    });
-                }
-        };
-        if (node.children && node.children.length > 0){ 
-            node.children.map((child)=>{
-                findChildren(child);
+            if(!_.find(newNodeArray, {"nodeID": node.data.nodeID})){
+                newNodeArray.push({"nodeID":node.data.nodeID,
+                "text":node.data.text, 
+                "type":node.data.type,
+                "timestamp":node.data.timestamp,      
+                "layer":node.data.layer,
+                "time":node.data.time,
+                "date":node.data.date,        
+                "x":node.x,      
+                "y":node.data.scaleLayer,           
             });
         }
-        if(!_.find(newNodeArray, {"nodeID": node.data.nodeID})){
-            newNodeArray.push({"nodeID":node.data.nodeID,
-                    "text":node.data.text, 
-                    "type":node.data.type,
-                    "timestamp":node.data.timestamp,      
-                    "layer":node.data.layer,
-                    "time":node.data.time,
-                    "date":node.data.date,        
-                    "x":node.x,      
-                    "y":node.data.scaleLayer,           
-                    });
-                }
     });  
     return newNodeArray;
 }

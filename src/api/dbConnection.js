@@ -53,11 +53,13 @@ export function postQuery(statements, parameters) {
 
 //Async but notice the return of request.. this makes it promised before other async actions happen.
 export function wipeDatabase() {
-  return () => {
+  return (dispatch) => {
       return request.post(url)
     .send({ statements: [{ statement: 'MATCH (n) OPTIONAL MATCH (n) - [r] - () DELETE n, r'}] })
     .auth(username,password)
     .then(()=> {
+      dispatch(SET("nodes", []));
+      dispatch(SET("links", []));
       console.log("Database wiped");
     })
     .catch((err)=> {

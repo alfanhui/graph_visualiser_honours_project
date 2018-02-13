@@ -47,7 +47,8 @@ class InteractionEvents extends React.Component {
   
   static propTypes = {
     dispatch: PropTypes.func,
-    state: PropTypes.object
+    state: PropTypes.object,
+    loadDatabase: PropTypes.func,
   };
   
   constructor(props) {
@@ -58,10 +59,9 @@ class InteractionEvents extends React.Component {
         defaultHeight = 1080 - 40; 
     
     //if the screen is smaller, do not make the menus smaller.
-    let scaledHeight = defaultHeight < height ?  height /defaultHeight : 1,
-        scaledWidth = defaultWidth < width ? width / defaultWidth : 1;
+    let scaledHeight = defaultHeight < height ?  ((height /defaultHeight)*.8) : 1,
+        scaledWidth = defaultWidth < width ? ((width / defaultWidth)*.8) : 1;
     let averagedScale = (scaledHeight + scaledWidth) / 2;
-
     let menu_width = 150 * averagedScale, //original 110 x 30 
         menu_height = 40.9 * averagedScale;
     this.state = {
@@ -285,7 +285,8 @@ class InteractionEvents extends React.Component {
       onTouchStart={this.touchStart}
       onTouchMove={this.touchMove}
       onTouchEnd={this.touchEnd}
-      onTouchCancel={this.touchCancel} />
+      onTouchCancel={this.touchCancel} 
+      loadDatabase={(dataFile)=>this.props.loadDatabase(dataFile)}/>
     }
     </div>
   );

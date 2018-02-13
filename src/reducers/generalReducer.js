@@ -15,13 +15,13 @@ const initialState = {
   updateAvailable: false,
   lastUpdated: null,
   averagedScale: 1,
-  edgeTypes:{
-    "RA":"Default Inference",
-    "CA":"Default Conflict",
-    "TA":"Default Transition",
-    "MA":"Default Rephrase",
-    "PA":"Default Preference",
-  },
+  edgeTypes:[
+    {name:"RA", type:"Default Inference"},
+    {name:"CA", type:"Default Conflict"},
+    {name:"TA", type:"Default Transition"},
+    {name:"MA", type:"Default Rephrase"},
+    {name:"PA", type:"Default Preference"},
+  ],
   edgeTypesTEST:{
     "DAD":"FATHER TO",
     "MUM":"MOTHER TO",
@@ -31,7 +31,21 @@ const initialState = {
     "UNCLE":"UNCLE TO",
     "SON":"SON TO",
     "DAUGHTER":"DAUGHTER TO",
-  }
+  },
+  currentDataFile:'11130',
+  dataFiles:[
+    //"11257", //looper
+    "11166",
+    //"11161", //looper
+    //"11157", //looper (possibleDepth)
+    "11130",
+    "11118",
+    "11116",
+    "11108",
+    //"10852", //too big
+    //"10701", //too wide
+    "10612",
+    "CLEAR"]
 };
 
 
