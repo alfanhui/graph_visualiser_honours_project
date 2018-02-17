@@ -6,6 +6,8 @@ import { SET, UPDATE } from 'reducerActions';
 import { addToTimer, stopTimer } from 'utilities/Timer';
 import {wipeDatabase} from 'api/dbConnection';
 import moment from 'moment';
+import Node_Content from 'utilities/Node_Content';
+import {importNode} from 'utilities/JsonIO';
 
 @connect((store) => {
 return {
@@ -129,12 +131,18 @@ constructor(props) {
       <g key ={'createNode' + "_" + uuid}>
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'createNodeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid, "nodeTypes")}}/>
         <text x={this.state.origin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuCreateNodeFontAdjustment} key={'createNodeBoxText' + "_" + uuid} >Type:</text>
-        <text x={this.state.origin*4} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuItemFontAdjustment} key={'createNodeBoxTextType' + "_" + uuid} >{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].name}</text>
+        <text x={this.state.origin + (this.state.menu_width/2)} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuItemFontAdjustment} key={'createNodeBoxTextType1' + "_" + uuid} >{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type}</text>
         
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'CreateNodeTarget' + "_" + uuid} onClick={()=>{}}/>
         <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuCreateNodeFontAdjustment} key ={'CreateNodeTargetText' + "_" + uuid}> Text:</text>
-        
-        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'createNodeButton' + "_" + uuid} onClick={()=>{}}/>
+        <foreignObject key={"FO_Div" + uuid} x={this.state.menu_width/2.4} y={this.state.menuItemTextYOrigin + (0.5 * this.state.menu_height)} width={(this.state.menu_width / 2)} height={this.state.menu_height}>
+          <div key={"inputDiv" + uuid}xmlns="http://www.w3.org/1999/xhtml">
+            <input key={"inputInput" + uuid} id={"inputInput" + uuid} style={{width:(this.state.menu_width/1.6)+"px", height:((this.state.menu_height*.7) + "px"), fontSize:((22 * this.props.state.averagedScale) + "px")}} onChange={()=>this.resetTimer(uuid, "mainMenu")}></input>
+          </div>
+        </foreignObject>
+        {/*<text x={this.state.origin*4} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key={'createNodeBoxTextType2' + "_" + uuid} contentEditable="true">Enter Text</text>*/}
+
+        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'createNodeButton' + "_" + uuid} onClick={()=>{this.createNode(uuid)}}/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'createNodeButtonText' + "_" + uuid} >Create</text>
       </g>
     );
@@ -195,6 +203,23 @@ constructor(props) {
       <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'ExportOptionText2' + "_" + uuid}>.JSON</text>
       </g>
     );
+  }
+
+  createNode(uuid){
+    let menu = this.props.menu;
+    let inputObject = document.getElementById("inputInput" + uuid);
+    let now = Date.now();
+    let hours = new Date(now).getHours(),
+    minutes = new Date(now).getMinutes();
+    if (minutes < 10){
+      minutes = "0" + minutes;
+    }
+    let text = inputObject && inputObject.value !="" ? inputObject.value : "NODE_" + hours + minutes;
+    let partialNode = {type:this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex], text};
+    let newNode = new Node_Content(menu, partialNode);
+    this.props.dispatch(UPDATE("nodes", newNode)); //update local nodes
+    this.props.dispatch(stopTimer(uuid, "mainMenu")); //remove menu
+    //this.props.dispatch(importNode(newNode)); //import into neo4j
   }
 
   cycleIndex(uuid, type){
@@ -318,7 +343,7 @@ constructor(props) {
       <rect x={this.state.origin} y={this.state.origin} width={this.state.menu_width} height={this.state.menu_height} key={'mainMenuRect' + menu.x + menu.y} fill="white" onClick={()=>this.resetTimer(menu.uuid, menu.type)} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
       {this.state.layer > 0 ? 
         <g>
-        <rect fill='white' width={25*this.props.state.averagedScale} height={25*this.props.state.averagedScale} transform={pathTransform} fill={"white"} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
+        <rect fill='white' width={25} height={25} transform={pathTransform} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
         <path stroke={"black"} d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" transform={pathTransform} style={{fill:"black"}} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
         </g>
         :

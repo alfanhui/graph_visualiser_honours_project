@@ -87,3 +87,48 @@ function compileQuery(nodeStatements, dictionary, edgeStatements){
     });
   };
 }
+
+export function importNode(newNode){
+  return (dispatch) => {
+    let {nodeStatements, dictionary} = nodeToCypher({nodes:[newNode]});
+    return dispatch(postQuery(nodeStatements, dictionary)).then(function(){
+      for (let nodeType in dictionary) {
+        dispatch(postQuery(['CREATE INDEX ON :' + nodeType + '(nodeID)'], null)); //create index
+      }
+    });
+  };
+}
+
+//handle json object ready for cypher conversion
+function nodeToCypher(jsonObj) {
+  console.log(jsonObj);
+  let nodeParameters = { "props": jsonObj.nodes };
+  //Sort by type
+  let dictionary = {};
+  let hashMap = {};
+  if(nodeParameters.props.length < 1){
+    console.log("Nothing to import");
+    return;
+  }
+  nodeParameters.props.map((item) => {
+    if (!dictionary[item.type]) {
+      dictionary[item.type] = [item];
+    } else {
+      dictionary[item.type].push(item);
+    }
+    hashMap[item.nodeID] = item; //aid in creating edges
+  });
+
+  //create nodes
+  let nodeStatements = [];
+  for (let nodeType in dictionary) {
+    nodeStatements.push('UNWIND {' + nodeType + '} AS map CREATE (n:' + nodeType + ') SET n = map');
+  }
+
+  //locutions?
+
+  return {nodeStatements, dictionary};
+}
+
+
+

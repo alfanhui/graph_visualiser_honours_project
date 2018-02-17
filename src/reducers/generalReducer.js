@@ -17,15 +17,15 @@ const initialState = {
   averagedScale: 1,
   creationHaltRefresh: false,
   nodeTypes:[
-    {name:"I", type:"Information Node"},
-    {name:"LA", type:"Locution Node"},
+    {type:"I", name:"Information Node"},
+    {type:"LA", name:"Locution Node"},
   ],
   edgeTypes:[
-    {name:"RA", type:"Default Inference"},
-    {name:"CA", type:"Default Conflict"},
-    {name:"TA", type:"Default Transition"},
-    {name:"MA", type:"Default Rephrase"},
-    {name:"PA", type:"Default Preference"},
+    {type:"RA", name:"Default Inference"},
+    {type:"CA", name:"Default Conflict"},
+    {type:"TA", name:"Default Transition"},
+    {type:"MA", name:"Default Rephrase"},
+    {type:"PA", name:"Default Preference"},
   ],
   edgeTypesTEST:{
     "DAD":"FATHER TO",

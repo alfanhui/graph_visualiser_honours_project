@@ -5,6 +5,7 @@ import _ from 'lodash';
 import { SET, UPDATE } from 'reducerActions';
 import { addToTimer, stopTimer } from 'utilities/Timer';
 import moment from 'moment';
+import Node_Extended from 'utilities/Node_Extended';
 
 @connect((store) => {
   return {
@@ -96,7 +97,7 @@ class Menu extends React.Component {
       <g key ={'createEdge' + "_" + uuid}>
       <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'createEdgeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid, "edgeTypes")}}/>
       <text x={this.state.origin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key={'createEdgeBoxText' + "_" + uuid} >Type:</text>
-      <text x={this.state.origin*4} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuItemFontAdjustment} key={'createEdgeBoxTextType' + "_" + uuid} >{this.props.state.edgeTypes[this.state.currentedgeTypeIndex].name}</text>
+      <text x={this.state.origin + (this.state.menu_width/2)} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuItemFontAdjustment} key={'createEdgeBoxTextType' + "_" + uuid} >{this.props.state.edgeTypes[this.state.currentedgeTypeIndex].type}</text>
       
       <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'CreateEdgeTarget' + "_" + uuid} onClick={()=>{}}/>
       <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key ={'CreateEdgeTargetText' + "_" + uuid}> Target:</text>
@@ -183,8 +184,8 @@ class Menu extends React.Component {
       <rect fill="white" x={this.state.origin} y={this.state.origin} width={this.state.menu_width} height={this.state.menu_height} key={'elementRect' + node.nodeID} onClick={()=>this.resetTimer(menu.uuid, menu.type)} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
       {this.state.layer > 0 ? 
         <g>
-        <rect fill='white' width={25*this.props.state.averagedScale} height={25*this.props.state.averagedScale} transform={pathTransform} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
-        <path stroke={"black"} d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" transform={pathTransform} style={{fill:"black"}} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
+         <rect fill='white' width={25} height={25} transform={pathTransform} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
+          <path stroke={"black"} d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" transform={pathTransform} style={{fill:"black"}} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
         </g>
         :
         <g/>
