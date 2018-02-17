@@ -15,6 +15,7 @@ const initialState = {
   updateAvailable: false,
   lastUpdated: null,
   averagedScale: 1,
+  creationHaltRefresh: false,
   edgeTypes:[
     {name:"RA", type:"Default Inference"},
     {name:"CA", type:"Default Conflict"},

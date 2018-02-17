@@ -163,7 +163,7 @@ class Layout_Tree extends React.Component {
     + "  " + (source.x + (this.state.contextWidth / 2)) + " " + (layerMidHeight) //change source.x to target to make correct curve.
     + "  " + (target.x + (this.state.contextWidth / 2)) + " " + (target.y);
     return (
-      <path className="link" key={"label" + source.nodeID + " to " + target.nodeID} stroke={color(1)} d={d} markerEnd={'url(#markerArrow)'} />
+      <path className="link" key={"label" + source.nodeID + " to " + target.nodeID} stroke={color(1)} fill={"none"} d={d} markerEnd={'url(#markerArrow)'} />
     );
   }
 

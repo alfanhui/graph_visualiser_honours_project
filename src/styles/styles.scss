@@ -46,8 +46,8 @@ svg{
   touch-action: none
 }
 
-td {
-  padding: 12px;
+line {
+  pointer-events: none;
 }
 
 .ContentText {
@@ -64,14 +64,6 @@ td {
   font-weight: 500;
   text-anchor: middle;
   touch-action: none;
-}
-
-line {
-  pointer-events: none;
-}
-
-path{
-  fill:none;
 }
 
 .node{
