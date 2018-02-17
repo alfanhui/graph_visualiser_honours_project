@@ -16,6 +16,10 @@ const initialState = {
   lastUpdated: null,
   averagedScale: 1,
   creationHaltRefresh: false,
+  nodeTypes:[
+    {name:"I", type:"Information Node"},
+    {name:"LA", type:"Locution Node"},
+  ],
   edgeTypes:[
     {name:"RA", type:"Default Inference"},
     {name:"CA", type:"Default Conflict"},

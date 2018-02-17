@@ -4,7 +4,8 @@ import * as d3 from 'd3';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import {scaleHeight} from 'utilities/DataToTree';
-import Menu from 'components/menu';
+import Menu_Element from 'components/Menu_Element';
+import Menu_Main from 'components/Menu_Main';
 
 let width = window.innerWidth - 40;
 let height = window.innerHeight - 40;
@@ -222,7 +223,7 @@ class Layout_Tree extends React.Component {
     </g>
     {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map((nextMenu)=> {
        return (
-            <Menu
+            <Menu_Main
             key={"MM" + nextMenu.x + nextMenu.y}
             menu={nextMenu}
             loadDatabase={(dataFile)=>this.props.loadDatabase(dataFile)}
@@ -231,7 +232,7 @@ class Layout_Tree extends React.Component {
     })}
     {this.props.state.elementMenu.length > 0 && this.props.state.elementMenu.map((nextMenu)=> {
       return (
-            <Menu 
+            <Menu_Element
               key={"EM" + nextMenu.x + nextMenu.y}
               menu={nextMenu}
             />
