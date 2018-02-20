@@ -162,6 +162,5 @@ export function removeEdge(edgeToRemove){
   return(dispatch) => {
     dispatch(postQuery("MATCH (n)-[rel:LINK]->(r) WHERE n.nodeID=\'" + edgeToRemove.source + "\' AND r.nodeID=\'" + edgeToRemove.target + "\' DELETE rel;"))
   }
-
 }
 

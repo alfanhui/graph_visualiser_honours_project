@@ -1,21 +1,26 @@
 import moment from 'moment';
-import {wrapNonContextTextToArray} from 'utilities/WrapText';
+import {wrapContextTextToArray, wrapNonContextTextToArray} from 'utilities/WrapText';
 
-export default class Node_Extended{
-    constructor(menu, nodeData, sourceNode){
+export default class Node{
+    //constructor for extended nodes
+    constructor(menu, nodeData, isContext){
         let nodeID = menu.uuid.slice(0,6);
         let timestamp = moment().format("YYYY-MM-DD HH:MM:SS");
         let date = moment(timestamp, "YYYY-MM-DD HH:MM:SS").format("DD/MM/YYYY");
         let time = moment(timestamp, "YYYY-MM-DD HH:MM:SS").format("HH:MM:SS");
-        
+
         //type of extended node
         let type = nodeData.type;
-        let text = wrapNonContextTextToArray(nodeData.text);
-        
-        //details from source node
-        let layer = sourceNode.layer + 1;
-        let x = menu.x + 50;
-        let y = menu.y + 50;
+        let text;
+        if(isContext){
+            text = wrapContextTextToArray(nodeData.text);
+        }else{
+            text = wrapNonContextTextToArray(nodeData.text);
+        }
+    
+        let layer = 0;
+        let x = menu.x; //need to move this node to a new location
+        let y = menu.y; 
         
         //Assign
         this.nodeID = nodeID;

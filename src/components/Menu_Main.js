@@ -6,7 +6,7 @@ import { SET, UPDATE } from 'reducerActions';
 import { addToTimer, stopTimer } from 'utilities/Timer';
 import {wipeDatabase} from 'api/dbConnection';
 import moment from 'moment';
-import Node_Content from 'utilities/Node_Content';
+import Node from 'utilities/Node';
 import {importNode} from 'utilities/JsonIO';
 
 @connect((store) => {
@@ -134,13 +134,19 @@ constructor(props) {
         <text x={this.state.origin + (this.state.menu_width/2)} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuItemFontAdjustment} key={'createNodeBoxTextType1' + "_" + uuid} >{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type}</text>
         
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'CreateNodeTarget' + "_" + uuid} onClick={()=>{}}/>
-        <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuCreateNodeFontAdjustment} key ={'CreateNodeTargetText' + "_" + uuid}> Text:</text>
-        <foreignObject key={"FO_Div" + uuid} x={this.state.menu_width/2.4} y={this.state.menuItemTextYOrigin + (0.5 * this.state.menu_height)} width={(this.state.menu_width / 2)} height={this.state.menu_height}>
-          <div key={"inputDiv" + uuid}xmlns="http://www.w3.org/1999/xhtml">
-            <input key={"inputInput" + uuid} id={"inputInput" + uuid} style={{width:(this.state.menu_width/1.6)+"px", height:((this.state.menu_height*.7) + "px"), fontSize:((22 * this.props.state.averagedScale) + "px")}} onChange={()=>this.resetTimer(uuid, "mainMenu")}></input>
-          </div>
-        </foreignObject>
-
+        {
+          this.props.state.defaultNodeTypes.includes(this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type) ? 
+          <g>
+            <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuCreateNodeFontAdjustment} key ={'CreateNodeTargetText' + "_" + uuid}> Text:</text>
+            <foreignObject key={"FO_Div" + uuid} x={this.state.menu_width/2.4} y={this.state.menuItemTextYOrigin + (0.5 * this.state.menu_height)} width={(this.state.menu_width / 2)} height={this.state.menu_height}>
+              <div key={"inputDiv" + uuid}xmlns="http://www.w3.org/1999/xhtml">
+                <input key={"inputInput" + uuid} id={"inputInput" + uuid} style={{width:(this.state.menu_width/1.6)+"px", height:((this.state.menu_height*.7) + "px"), fontSize:((22 * this.props.state.averagedScale) + "px")}} onChange={()=>this.resetTimer(uuid, "mainMenu")}></input>
+              </div>
+            </foreignObject>
+          </g>
+        :
+        <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuCreateNodeFontAdjustment} key ={'CreateNodeTargetText' + "_" + uuid}>{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].name}</text>
+        }
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'createNodeButton' + "_" + uuid} onClick={()=>{this.createNode(uuid)}}/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'createNodeButtonText' + "_" + uuid} >Create</text>
       </g>
@@ -206,20 +212,26 @@ constructor(props) {
 
   createNode(uuid){
     let menu = this.props.menu;
-    let inputObject = document.getElementById("inputInput" + uuid);
-    let now = Date.now();
-    let hours = new Date(now).getHours(),
-        minutes = new Date(now).getMinutes(),
-        seconds = new Date(now).getSeconds();
-    if (minutes < 10){
-      minutes = "0" + minutes;
+    let text;
+    let isContent = this.props.state.defaultNodeTypes.includes(this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type);
+    if(isContent){
+      let inputObject = document.getElementById("inputInput" + uuid);
+      let now = Date.now();
+      let hours = new Date(now).getHours(),
+          minutes = new Date(now).getMinutes(),
+          seconds = new Date(now).getSeconds();
+      if (minutes < 10){
+        minutes = "0" + minutes;
+      }
+      if(seconds < 10){
+        seconds = "0" + seconds;
+      }
+      text = inputObject && inputObject.value !="" ? inputObject.value : "NODE_" + hours + minutes + seconds;
+    } else{
+      text = this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].name;
     }
-    if(seconds < 10){
-      seconds = "0" + seconds;
-    }
-    let text = inputObject && inputObject.value !="" ? inputObject.value : "NODE_" + hours + minutes + seconds;
     let nodeData = {type:this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type, text};
-    let newNode = new Node_Content(menu, nodeData);
+    let newNode = new Node(menu, nodeData, isContent);
     this.props.dispatch(UPDATE("nodes", newNode)); //update local nodes
     this.props.dispatch(stopTimer(uuid, "mainMenu")); //remove menu
     if(this.props.state.updateFromCreate){

@@ -6,8 +6,7 @@ import * as d3 from 'd3';
 import { SET, UPDATE, DROP } from 'reducerActions';
 import { addToTimer, stopTimer } from 'utilities/Timer';
 import moment from 'moment';
-import Node_Extended from 'utilities/Node_Extended';
-import {makeEdges} from 'utilities/Edge';
+import {makeEdge} from 'utilities/Edge';
 
 const color = d3.scaleOrdinal(d3.schemeCategory20); 
 
@@ -109,7 +108,7 @@ class Menu extends React.Component {
             , .5)}
           );
         }); 
-        distanceArray = distanceArray.filter(item => !item.invalid_layer);
+        //distanceArray = distanceArray.filter(item => !item.invalid_layer);
         distanceArray = _.orderBy(distanceArray, ['distance'],['asc']);
         return distanceArray;
       }
@@ -147,8 +146,7 @@ class Menu extends React.Component {
         return(
           <g key ={'createEdge' + "_" + uuid}>
           <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'createEdgeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid, "edgeTypes")}}/>
-          <text x={this.state.origin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key={'createEdgeBoxText' + "_" + uuid} >Type:</text>
-          <text x={this.state.origin + (this.state.menu_width/2)} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuItemFontAdjustment} key={'createEdgeBoxTextType' + "_" + uuid} >{this.props.state.edgeTypes[this.state.edgeTypesCurrentIndex].type}</text>
+          <text x={this.state.origin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key={'createEdgeBoxText' + "_" + uuid} >Tap to Choose</text>
           
           <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'CreateEdgeTarget' + "_" + uuid} onClick={()=>{this.cycleDistanceIndex(uuid)}}/>
           <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key ={'CreateEdgeTargetText' + "_" + uuid}> Target:</text>
@@ -185,20 +183,11 @@ class Menu extends React.Component {
       createEdge(uuid){
         let menu = this.props.menu;
         let node = _.find(this.props.state.nodes, { "nodeID": menu.nodeID });
-        let nodeData = {
-          type:this.props.state.edgeTypes[this.state.edgeTypesCurrentIndex].type, 
-          text:this.props.state.edgeTypes[this.state.edgeTypesCurrentIndex].name
-        };
-        let newNode = new Node_Extended(menu, nodeData, node);
-        this.props.dispatch(UPDATE("nodes", newNode)); //update local nodes
-        
-        let newEdges = makeEdges(node, newNode, {nodeID:this.state.distancesToTarget[this.state.nodeTargetCurrentIndex].targetNode});
-        newEdges.map((newEdge) =>{
-          this.props.dispatch(UPDATE("links", newEdge)); //update local nodes
-        })
+
+        let newEdge = makeEdge(node, {nodeID:this.state.distancesToTarget[this.state.nodeTargetCurrentIndex].targetNode});
+        this.props.dispatch(UPDATE("links", newEdge)); //update local nodes
         this.props.dispatch(stopTimer(uuid, "elementMenu")); //remove menu
         if(this.props.state.updateFromCreate){
-          this.props.dispatch(importNode(newNode)); //import node into neo4j
           this.props.dispatch(importEdge(newEdges)); //import edges into neo4j
         }
       }

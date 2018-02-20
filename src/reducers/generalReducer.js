@@ -21,8 +21,6 @@ const initialState = {
   nodeTypes:[
     {type:"I", name:"Information Node"},
     {type:"LA", name:"Locution Node"},
-  ],
-  edgeTypes:[
     {type:"RA", name:"Default Inference"},
     {type:"CA", name:"Default Conflict"},
     {type:"TA", name:"Default Transition"},
@@ -82,7 +80,7 @@ export default function reducer(state = initialState, action) {
       };
     }
     case "DROP": {
-      console.log("Dropping.." , action.variable , " to.. " , action.payload, " by..", action.id);
+      //console.log("Dropping.." , action.variable , " to.. " , action.payload, " by..", action.id);
       let newState = state[action.variable].filter(obj => obj[action.id] !== action.payload[action.id]);
       return {
         ...state,

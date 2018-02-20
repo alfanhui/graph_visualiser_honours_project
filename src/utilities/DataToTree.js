@@ -61,6 +61,7 @@ export function convertRawToTree(object) {
             }
         }
         
+        /*
         //convert nodeHash back to normal array
         let nodesWithLayers = [];
         for (let node in nodeHash) {
@@ -68,7 +69,7 @@ export function convertRawToTree(object) {
                 nodesWithLayers.push(nodeHash[node]);
             }
         }
-        
+        */    
         //Structure into tree for d3
         let dataTree = structureIntoTree(rootNodes);
         
