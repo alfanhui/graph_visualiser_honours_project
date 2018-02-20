@@ -118,10 +118,10 @@ constructor(props) {
   }
   
   importDatabase(){
-    if(this.props.state.dataFiles[this.state.currentDataFileIndex] == "CLEAR"){
+    if(this.props.state.dataFiles[this.state.dataFilesCurrentIndex] == "CLEAR"){
       this.props.dispatch(wipeDatabase());
     }else{
-      this.props.loadDatabase(this.props.state.dataFiles[this.state.currentDataFileIndex]);
+      this.props.loadDatabase(this.props.state.dataFiles[this.state.dataFilesCurrentIndex]);
     }
   }
   
@@ -140,7 +140,6 @@ constructor(props) {
             <input key={"inputInput" + uuid} id={"inputInput" + uuid} style={{width:(this.state.menu_width/1.6)+"px", height:((this.state.menu_height*.7) + "px"), fontSize:((22 * this.props.state.averagedScale) + "px")}} onChange={()=>this.resetTimer(uuid, "mainMenu")}></input>
           </div>
         </foreignObject>
-        {/*<text x={this.state.origin*4} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key={'createNodeBoxTextType2' + "_" + uuid} contentEditable="true">Enter Text</text>*/}
 
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'createNodeButton' + "_" + uuid} onClick={()=>{this.createNode(uuid)}}/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'createNodeButtonText' + "_" + uuid} >Create</text>
@@ -161,7 +160,7 @@ constructor(props) {
       <g key ={'import' + "_" + uuid}>
       <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'importOptionBox' + "_" + uuid} fill="white" onClick={()=>{this.cycleIndex(uuid, "dataFiles")}}/>
       <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'importInfo' + "_" + uuid} >[Tap to Choose]</text>
-      <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'importFileName' + "_" + uuid} >{("nodeset " + this.props.state.dataFiles[this.state.DataFilesCurrentIndex])}</text>
+      <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'importFileName' + "_" + uuid} >{("nodeset " + this.props.state.dataFiles[this.state.dataFilesCurrentIndex])}</text>
       <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'importButton' + "_" + uuid} fill="white" onClick={()=>{this.importDatabase()}}/>
       <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'importButtonText' + "_" + uuid} >IMPORT</text>
       </g>
@@ -210,16 +209,22 @@ constructor(props) {
     let inputObject = document.getElementById("inputInput" + uuid);
     let now = Date.now();
     let hours = new Date(now).getHours(),
-    minutes = new Date(now).getMinutes();
+        minutes = new Date(now).getMinutes(),
+        seconds = new Date(now).getSeconds();
     if (minutes < 10){
       minutes = "0" + minutes;
     }
-    let text = inputObject && inputObject.value !="" ? inputObject.value : "NODE_" + hours + minutes;
-    let partialNode = {type:this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex], text};
-    let newNode = new Node_Content(menu, partialNode);
+    if(seconds < 10){
+      seconds = "0" + seconds;
+    }
+    let text = inputObject && inputObject.value !="" ? inputObject.value : "NODE_" + hours + minutes + seconds;
+    let nodeData = {type:this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type, text};
+    let newNode = new Node_Content(menu, nodeData);
     this.props.dispatch(UPDATE("nodes", newNode)); //update local nodes
     this.props.dispatch(stopTimer(uuid, "mainMenu")); //remove menu
-    //this.props.dispatch(importNode(newNode)); //import into neo4j
+    if(this.props.state.updateFromCreate){
+      this.props.dispatch(importNode(newNode)); //import into neo4j
+    }
   }
 
   cycleIndex(uuid, type){

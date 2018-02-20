@@ -11,11 +11,13 @@ const initialState = {
   layoutReady: false,
   defaultNodeTypes: ["I", "L"],
   updateInterval: 15000,
-  autoUpdate: false,
+  updateFromCreate: false,
+  updateAuto: false,
   updateAvailable: false,
   lastUpdated: null,
   averagedScale: 1,
   creationHaltRefresh: false,
+  highlightedNodes:[],
   nodeTypes:[
     {type:"I", name:"Information Node"},
     {type:"LA", name:"Locution Node"},
@@ -71,7 +73,7 @@ export default function reducer(state = initialState, action) {
       };
     }
     case "REPLACE": {
-      //console.log("updating.." , action.variable , " to.. " , action.payload);
+      //console.log("replacing.." , action.variable , " to.. " , action.payload, " by..", action.id);
       let newState = state[action.variable].filter(obj => obj[action.id] !== action.payload[action.id]);
       newState.push(action.payload);
       return {
@@ -80,8 +82,8 @@ export default function reducer(state = initialState, action) {
       };
     }
     case "DROP": {
-      //console.log("updating.." , action.variable , " to.. " , action.payload);
-      let newState = state[action.variable].filter(obj => obj[action.id] !== action.payload);
+      console.log("Dropping.." , action.variable , " to.. " , action.payload, " by..", action.id);
+      let newState = state[action.variable].filter(obj => obj[action.id] !== action.payload[action.id]);
       return {
         ...state,
         [action.variable]: newState,

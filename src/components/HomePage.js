@@ -125,11 +125,13 @@ class HomePage extends React.Component {
   checkUpdate() {
     //get all data 
     this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
+      if(result[0].data.length == 0){ //stops empty database autoupdate complaints
+        return;
+      }
       let newHash = hash(result, { algorithm: 'md5' });
       if (newHash !== this.state.currentHash) {
-        
         //Autoupdate if enabled - or prompt user
-        if (this.props.state.autoUpdate) {
+        if (this.props.state.updateAuto) {
           console.log("Update taking place..");
           this.componentWillMount();
         } else {

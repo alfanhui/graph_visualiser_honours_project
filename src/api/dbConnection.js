@@ -23,7 +23,7 @@ export function checkAddress() {
     };
 }
 
-export function postQuery(statements, parameters) {
+export function postQuery(statements, parameters = null) {
   if(!(statements.constructor === Array)){
     statements = [statements];
   }

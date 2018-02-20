@@ -34,6 +34,6 @@ export function stopTimer(uuid, type) {
     return (dispatch) => {
         clearTimeout(internalHash[uuid]); //Stop timer
         delete internalHash[uuid];
-        dispatch(DROP(type,"uuid", uuid));
+        dispatch(DROP(type,"uuid", {uuid}));
     };
 }

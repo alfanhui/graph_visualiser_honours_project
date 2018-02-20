@@ -90,59 +90,75 @@ class Layout_Tree extends React.Component {
   //These nodes are the transcript elements: ie. content
 
   renderContentNode = (node) => {
-    let transform = 'translate(' + node.x + ',' + node.y + ')';
-    return (
-      <g key={"group" + node.nodeID}  >
-      <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={this.state.contextWidth} height={this.state.contextHeight + (node.text.length * (15*this.props.state.averagedScale))}
-      fill={color(node.type)} transform={transform}
-      onMouseDown={(event)=>this.props.onTouchStart(event, true)} 
-      onMouseMove={(event)=>this.props.onTouchMove(event, true)} 
-      onMouseUp={(event)=>this.props.onTouchEnd(event, true)} 
-      onTouchStart={(event) => this.props.onTouchStart(event, false)}
-      onTouchMove={(event) => this.props.onTouchMove(event, false)}
-      onTouchEnd={(event) => this.props.onTouchEnd(event, false)}
-      onTouchCancel={(event) => this.props.onTouchCancel(event, false)} />
-      {
-        node.text.map((line, index) => {
-          let transformLabel = 'translate(' + (node.x + 5) + ',' + (node.y + (15*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
-          return(
-            <text className="ContentText" style={this.state.contextFontAdjustment} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
-          );
-        })
-      }      
-      </g>
-    );
+    if(node.hasOwnProperty("x")){ //this is because DataToTree has not finished ordering
+      let transform = 'translate(' + node.x + ',' + node.y + ')';
+      let style = {};
+      let highlightedNodeUUID = _.find(this.props.state.highlightedNodes, {nodeID:node.nodeID});
+      if(highlightedNodeUUID){
+        style = {stroke:highlightedNodeUUID.color, strokeWidth:"10px", opacity:1};
+      }
+      return (
+        <g key={"group" + node.nodeID}  >
+        <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={this.state.contextWidth} height={this.state.contextHeight + (node.text.length * (15*this.props.state.averagedScale))}
+        fill={color(node.type)} transform={transform}
+        style={style}
+        onMouseDown={(event)=>this.props.onTouchStart(event, true)} 
+        onMouseMove={(event)=>this.props.onTouchMove(event, true)} 
+        onMouseUp={(event)=>this.props.onTouchEnd(event, true)} 
+        onTouchStart={(event) => this.props.onTouchStart(event, false)}
+        onTouchMove={(event) => this.props.onTouchMove(event, false)}
+        onTouchEnd={(event) => this.props.onTouchEnd(event, false)}
+        onTouchCancel={(event) => this.props.onTouchCancel(event, false)} />
+        {
+          node.text.map((line, index) => {
+            let transformLabel = 'translate(' + (node.x + 5) + ',' + (node.y + (15*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
+            return(
+              <text className="ContentText" style={this.state.contextFontAdjustment} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
+            );
+          })
+        }      
+        </g>
+      );
+    }
   }
 
   //Non-default are AIF added extended nodes
   renderNonContentNode = (node) => {
-    let transform = 'translate(' + (node.x - 15 + this.state.contextWidth/2)+ ',' + (node.y + 5) + ') rotate(45 ' +30/2 + ' ' + 30/2 + ')';
-    return (
-      <g key={"group" + node.nodeID}  >
-      <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={this.state.nonContextWidth} height={this.state.nonContextHeight}
-      fill={color(node.type)} transform={transform}
-      onMouseDown={(event)=>this.props.onTouchStart(event, true)} 
-      onMouseMove={(event)=>this.props.onTouchMove(event, true)} 
-      onMouseUp={(event)=>this.props.onTouchEnd(event, true)} 
-      onTouchStart={(event) => this.props.onTouchStart(event, false)}
-      onTouchMove={(event) => this.props.onTouchMove(event, false)}
-      onTouchEnd={(event) => this.props.onTouchEnd(event, false)}
-      onTouchCancel={(event) => this.props.onTouchCancel(event, false)} />
-        {
-        node.text.map((line, index) => {
-          let transformLabel;
-          if(node.text.length == 1){
-            transformLabel = 'translate(' + (node.x + this.state.contextWidth/2) + ',' + (node.y + (38*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
-          }else{
-            transformLabel = 'translate(' + (node.x + this.state.contextWidth/2) + ',' + (node.y + (28*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
-          }
-          return(
-            <text className="NonContentText" style={this.state.nonContextFontAdjustment} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
-          );
-        })
-      }      
-      </g>
-    );
+    if(node.hasOwnProperty("x")){ //this is because DataToTree has not finished ordering
+      let transform = 'translate(' + (node.x - 15 + this.state.contextWidth/2)+ ',' + (node.y + 5) + ') rotate(45 ' +30/2 + ' ' + 30/2 + ')';
+      let style = {};
+      let highlightedNodeUUID = _.find(this.props.state.highlightedNodes, {nodeID:node.nodeID});
+      if(highlightedNodeUUID){
+        style = {stroke:highlightedNodeUUID.color, strokeWidth:"10px", opacity:1};
+      }
+      return (
+        <g key={"group" + node.nodeID}  >
+        <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={this.state.nonContextWidth} height={this.state.nonContextHeight}
+        fill={color(node.type)} transform={transform}
+        style={style}
+        onMouseDown={(event)=>this.props.onTouchStart(event, true)} 
+        onMouseMove={(event)=>this.props.onTouchMove(event, true)} 
+        onMouseUp={(event)=>this.props.onTouchEnd(event, true)} 
+        onTouchStart={(event) => this.props.onTouchStart(event, false)}
+        onTouchMove={(event) => this.props.onTouchMove(event, false)}
+        onTouchEnd={(event) => this.props.onTouchEnd(event, false)}
+        onTouchCancel={(event) => this.props.onTouchCancel(event, false)} />
+          {
+          node.text.map((line, index) => {
+            let transformLabel;
+            if(node.text.length == 1){
+              transformLabel = 'translate(' + (node.x + this.state.contextWidth/2) + ',' + (node.y + (38*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
+            }else{
+              transformLabel = 'translate(' + (node.x + this.state.contextWidth/2) + ',' + (node.y + (28*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
+            }
+            return(
+              <text className="NonContentText" style={this.state.nonContextFontAdjustment} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
+            );
+          })
+        }      
+        </g>
+      );
+    }
   }
   
   
@@ -150,31 +166,33 @@ class Layout_Tree extends React.Component {
   renderPath = (link) => {
     let source = _.find(this.props.state.nodes, { "nodeID": link.source });
     let target = _.find(this.props.state.nodes, { "nodeID": link.target });
-    let yHeightAdjustment = (60 * this.props.state.averagedScale);//(nonContextWidth + nonContextHeight / 2);
-    //for arrow placement.
-    if(this.props.state.defaultNodeTypes.includes(source.type)){
-      yHeightAdjustment = ((15*this.props.state.averagedScale) * source.text.length);
+    if(target && target.hasOwnProperty("x")){ //this is because DataToTree has not finished ordering
+      let yHeightAdjustment = (60 * this.props.state.averagedScale);//(nonContextWidth + nonContextHeight / 2);
+      //for arrow placement.
+      if(this.props.state.defaultNodeTypes.includes(source.type)){
+        yHeightAdjustment = ((15*this.props.state.averagedScale) * source.text.length);
+      }
+      let layerMidHeight = scaleHeight(source.layer + .35) + this.state.contextHeight + yHeightAdjustment;
+      if(layerMidHeight < (source.y + this.state.contextHeight + yHeightAdjustment)){ //stops weird line tangle
+        layerMidHeight = (source.y + this.state.contextHeight + yHeightAdjustment);
+      }
+      let d = "M " + (source.x + (this.state.contextWidth / 2)) + " " + (source.y + this.state.contextHeight + yHeightAdjustment)
+      + " C " + (source.x + (this.state.contextWidth / 2)) + " " + (layerMidHeight)
+      + "  " + (source.x + (this.state.contextWidth / 2)) + " " + (layerMidHeight) //change source.x to target to make correct curve.
+      + "  " + (target.x + (this.state.contextWidth / 2)) + " " + (target.y);
+      return (
+        <path className="link" key={"label" + source.nodeID + " to " + target.nodeID} stroke={color(1)} fill={"none"} d={d} markerEnd={'url(#markerArrow)'} />
+      );
     }
-    let layerMidHeight = scaleHeight(source.layer + .35) + this.state.contextHeight + yHeightAdjustment;
-    if(layerMidHeight < (source.y + this.state.contextHeight + yHeightAdjustment)){ //stops weird line tangle
-      layerMidHeight = (source.y + this.state.contextHeight + yHeightAdjustment);
-    }
-    let d = "M " + (source.x + (this.state.contextWidth / 2)) + " " + (source.y + this.state.contextHeight + yHeightAdjustment)
-    + " C " + (source.x + (this.state.contextWidth / 2)) + " " + (layerMidHeight)
-    + "  " + (source.x + (this.state.contextWidth / 2)) + " " + (layerMidHeight) //change source.x to target to make correct curve.
-    + "  " + (target.x + (this.state.contextWidth / 2)) + " " + (target.y);
-    return (
-      <path className="link" key={"label" + source.nodeID + " to " + target.nodeID} stroke={color(1)} fill={"none"} d={d} markerEnd={'url(#markerArrow)'} />
-    );
   }
 
-
+  //Deprecated
   renderLink = (link) => {
     let source = _.find(this.props.state.nodes, { "nodeID": link.source });
     let target = _.find(this.props.state.nodes, { "nodeID": link.target });
-    let yHeightAdjustment = (30*this.props.state.averagedScale);//30
+    let yHeightAdjustment = (30*this.props.state.averagedScale);
     //for arrow placement.
-    if(this.props.state.defaultNodeTypes.includes(source.type)){
+    if(this.props.state.defaultNodeTypes.includes(source.type)){ //if it is a content node.
       yHeightAdjustment = ((15*this.props.state.averagedScale) * source.text.length);
     }
     let midx = ((source.x + this.state.contextWidth / 2) + (target.x + this.state.contextWidth / 2))*.50;
@@ -217,8 +235,8 @@ class Layout_Tree extends React.Component {
         onTouchCancel={(event) => this.props.onTouchCancel(event, false)} 
         />
       <g>
-      {this.props.state.layoutReady && this.props.state.nodes.length > 0 && this.props.state.nodes.map(this.renderNode)}
-      {this.props.state.layoutReady && this.props.state.nodes.length > 0 && this.props.state.links.map(this.renderPath)}
+      {this.props.state.nodes && this.props.state.nodes.length > 0 && this.props.state.nodes.map(this.renderNode)}
+      {this.props.state.links &&  this.props.state.links.length > 0 && this.props.state.links.map(this.renderPath)}
     }
     </g>
     {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map((nextMenu)=> {
