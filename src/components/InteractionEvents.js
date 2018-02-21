@@ -2,11 +2,11 @@ import React from 'react';
 import { connect } from "react-redux";
 import _ from 'lodash';
 import PropTypes from 'prop-types';
-import { SET, UPDATE } from 'reducerActions';
+import { SET} from 'reducerActions';
 import getUuid from 'uuid/v1';
-import ForceDirected from './Layout_ForceDirected';
-import Tree from './Layout_Tree';
-import { startTimer } from '../utilities/Timer';
+import ForceDirected from './LayoutForceDirected';
+import Tree from './LayoutTree';
+import { startTimer } from 'utilities/Timer';
 
 let drag = {
   elm: null,
@@ -19,23 +19,6 @@ let drag = {
 
 let width = window.innerWidth - 40,
 height = window.innerHeight - 40;
-
-
-let timeDelay = 4500;
-
-//********* this is a style and should be moved to ./styles
-const menu = {
-  
-};
-
-
-
-const menuItem = {
-  backgroundColor: 'white', 
-};
-
-//********* this is a style and should be moved to ./styles
-
 
 @connect((store) => {
   return {
@@ -101,8 +84,8 @@ class InteractionEvents extends React.Component {
           let node = _.find(this.props.state.nodes, { "nodeID": event.target.id });
           //issue with rotated nodes positing is not correct upon moving
           if(!this.props.state.defaultNodeTypes.includes(node.type)){ 
-            currentX += 60;
-            currentY += 5;
+            currentX += (60*this.props.state.averagedScale);
+            currentY += (5*this.props.state.averagedScale);
           }
           $currentTouches.push({
             "id": touch.identifier,
@@ -166,7 +149,7 @@ class InteractionEvents extends React.Component {
           }
           $currentTouches.splice(currentTouchIndex, 1, currentTouch);
         } else {
-          console.log("Touch was not found!");
+          //console.log("Touch was not found!");
         }
         this.setState({ currentTouches: $currentTouches });
       }
@@ -207,7 +190,7 @@ class InteractionEvents extends React.Component {
             $currentTouches.splice(currentTouchIndex, 1);
             this.setState({ currentTouches: $currentTouches });
           } else {
-            console.log("Touch was not found!");
+            //console.log("Touch was not found!");
           }
         } 
       }
@@ -235,7 +218,7 @@ class InteractionEvents extends React.Component {
         $currentTouches.splice(currentTouchIndex, 1);
         
       } else {
-        console.log("Touch was not found!");
+        //console.log("Touch was not found!");
       }
     }
     this.setState({ currentTouches: $currentTouches });

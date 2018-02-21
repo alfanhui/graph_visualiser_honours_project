@@ -1,12 +1,9 @@
-import _ from 'lodash';
-
 const maxLength = 30;
 let regEx = /^[\s]*$/;
 
 //for fontsize 10px, max char is 30.
 export function wrapContextTextToArray(text) {
     let wrappedArray = [];
-    let lengthOfString = text.length;
     if (text.length > maxLength) {
         while (text.length > 0) {
             let indexStart = regEx.test(text[0]) ? 1 : 0;
@@ -14,7 +11,6 @@ export function wrapContextTextToArray(text) {
             let remainingLength = text.length > maxLength ? maxLength : text.length;
             if (text.length >= maxLength) {
                 if (!regEx.test(text[remainingLength])){//backtrack to next available space
-                    let tempIndex = 0;
                     pushChecker = false;
                     for (let i = (remainingLength-1); i > 1; i--) {
                         if (!regEx.test(text[i])) {
@@ -27,7 +23,7 @@ export function wrapContextTextToArray(text) {
                         }
                     }
                     if(!pushChecker){
-                        console.log("Invalid text string");
+                        console.log("Invalid text string"); // eslint-disable-line
                         wrappedArray.push(text.slice(indexStart, remainingLength));
                         text = text.slice(remainingLength);
                     }

@@ -8,7 +8,6 @@ import { convertRawToTree } from 'utilities/DataToTree';
 import InteractionEvents from './InteractionEvents';
 import { wrapContextTextToArray, wrapNonContextTextToArray } from 'utilities/WrapText';
 import { importJSON } from 'utilities/JsonIO';
-import DatabaseOptions from './DatabaseOptions';
 import hash from 'object-hash';
 
 @connect((store) => {
@@ -102,7 +101,7 @@ class HomePage extends React.Component {
     nodes = nodes.map((node) => {
       if(node.timestamp){
         let date = node.timestamp.split(" ")[0].split("-");
-        date = date[2] + "/" + date[1] + "/" + date[0]
+        date = date[2] + "/" + date[1] + "/" + date[0];
         let time = node.timestamp.split(" ")[1];
         if (this.props.state.defaultNodeTypes.includes(node.type)) {
           node.text = wrapContextTextToArray(node.text);
@@ -132,14 +131,14 @@ class HomePage extends React.Component {
       if (newHash !== this.state.currentHash) {
         //Autoupdate if enabled - or prompt user
         if (this.props.state.updateAuto) {
-          console.log("Update taking place..");
+          console.log("Update taking place.."); // eslint-disable-line
           this.componentWillMount();
         } else {
-          console.log("There is a new update available");
+          console.log("There is a new update available"); // eslint-disable-line
           this.props.dispatch(SET("updateAvailable", true));
         }
       }
-    })
+    });
   }
   
   //from Neo4j http response
@@ -154,7 +153,7 @@ class HomePage extends React.Component {
   }
   
   render() {
-    console.log("PROPS Updated: ", JSON.parse(JSON.stringify(this.props)));
+    console.log("PROPS Updated: ", JSON.parse(JSON.stringify(this.props))); // eslint-disable-line
     return (
       <Paper className="paper" id="paper" ref="paper">
       <InteractionEvents 
@@ -164,6 +163,5 @@ class HomePage extends React.Component {
   }
 }
 
-{/*<DatabaseOptions/> //button to load database */ }
 
 export default HomePage;

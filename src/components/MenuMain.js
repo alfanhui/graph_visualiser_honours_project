@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from "react-redux";
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import { SET, UPDATE } from 'reducerActions';
+import { UPDATE } from 'reducerActions';
 import { addToTimer, stopTimer } from 'utilities/Timer';
 import {wipeDatabase} from 'api/dbConnection';
 import moment from 'moment';
@@ -17,7 +17,7 @@ state: store.generalReducer
 
 //console.log(JSON.parse(JSON.stringify(err)));
 
-class Menu_Main extends React.Component {
+class MenuMain extends React.Component {
 
 static propTypes = {
 dispatch: PropTypes.func,
@@ -36,7 +36,7 @@ constructor(props) {
   origin = 20;
   let menuItemRectYOrigin = (origin + menu_height);
   let currentFileName = this.props.state.currentDataFile;
-  let dataFilesCurrentIndex = _.findIndex(this.props.state.dataFiles, function(file){return file==currentFileName })
+  let dataFilesCurrentIndex = _.findIndex(this.props.state.dataFiles, function(file){return(file==currentFileName); });
   this.state = {
     menu_width,
     menu_height,
@@ -129,7 +129,7 @@ constructor(props) {
   displayOptionCreateNode = (uuid) =>{
     return(
       <g key ={'createNode' + "_" + uuid}>
-        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'createNodeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid, "nodeTypes")}}/>
+        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'createNodeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid, "nodeTypes");}}/>
         <text x={this.state.origin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuCreateNodeFontAdjustment} key={'createNodeBoxText' + "_" + uuid} >Type:</text>
         <text x={this.state.origin + (this.state.menu_width/2)} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuItemFontAdjustment} key={'createNodeBoxTextType1' + "_" + uuid} >{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type}</text>
         
@@ -140,14 +140,14 @@ constructor(props) {
             <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuCreateNodeFontAdjustment} key ={'CreateNodeTargetText' + "_" + uuid}> Text:</text>
             <foreignObject key={"FO_Div" + uuid} x={this.state.menu_width/2.4} y={this.state.menuItemTextYOrigin + (0.5 * this.state.menu_height)} width={(this.state.menu_width / 2)} height={this.state.menu_height}>
               <div key={"inputDiv" + uuid}xmlns="http://www.w3.org/1999/xhtml">
-                <input key={"inputInput" + uuid} id={"inputInput" + uuid} style={{width:(this.state.menu_width/1.6)+"px", height:((this.state.menu_height*.7) + "px"), fontSize:((22 * this.props.state.averagedScale) + "px")}} onChange={()=>this.resetTimer(uuid, "mainMenu")}></input>
+                <input key={"inputInput" + uuid} id={"inputInput" + uuid} style={{width:(this.state.menu_width/1.6)+"px", height:((this.state.menu_height*.7) + "px"), fontSize:((22 * this.props.state.averagedScale) + "px")}} onChange={()=>{this.resetTimer(uuid, "mainMenu");}}/>
               </div>
             </foreignObject>
           </g>
         :
         <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuCreateNodeFontAdjustment} key ={'CreateNodeTargetText' + "_" + uuid}>{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].name}</text>
         }
-        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'createNodeButton' + "_" + uuid} onClick={()=>{this.createNode(uuid)}}/>
+        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'createNodeButton' + "_" + uuid} onClick={()=>{this.createNode(uuid);}}/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'createNodeButtonText' + "_" + uuid} >Create</text>
       </g>
     );
@@ -155,7 +155,7 @@ constructor(props) {
   
   displayOptionAbout = (uuid) => {
     return(
-      <g>
+      <g key ={'about' + "_" + uuid}>
       
       </g>
     );
@@ -164,10 +164,10 @@ constructor(props) {
   displayOptionImport = (uuid) =>{
     return(
       <g key ={'import' + "_" + uuid}>
-      <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'importOptionBox' + "_" + uuid} fill="white" onClick={()=>{this.cycleIndex(uuid, "dataFiles")}}/>
+      <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'importOptionBox' + "_" + uuid} fill="white" onClick={()=>{this.cycleIndex(uuid, "dataFiles");}}/>
       <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'importInfo' + "_" + uuid} >[Tap to Choose]</text>
       <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'importFileName' + "_" + uuid} >{("nodeset " + this.props.state.dataFiles[this.state.dataFilesCurrentIndex])}</text>
-      <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'importButton' + "_" + uuid} fill="white" onClick={()=>{this.importDatabase()}}/>
+      <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'importButton' + "_" + uuid} fill="white" onClick={()=>{this.importDatabase();}}/>
       <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'importButtonText' + "_" + uuid} >IMPORT</text>
       </g>
     );
@@ -189,7 +189,7 @@ constructor(props) {
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'AutoLayoutOptionBox0' + "_" + uuid} fill="white"/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'AutoLayoutOptionText0' + "_" + uuid} >Auto-Layout</text>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'AutoLayoutOptionText1' + "_" + uuid} >will refresh page</text>
-        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'AutoLayoutOptionBox1' + "_" + uuid} fill="white" onClick={()=>{this.props.dispatch(stopTimer(uuid, "mainMenu")), this.props.loadDatabase(null)}}/>
+        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'AutoLayoutOptionBox1' + "_" + uuid} fill="white" onClick={()=>{this.props.dispatch(stopTimer(uuid, "mainMenu")), this.props.loadDatabase(null);}}/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'AutoLayoutOptionText2' + "_" + uuid}> OK </text>
         </g>
       );
@@ -202,9 +202,9 @@ constructor(props) {
       <g>
       <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'ExportOptionBox0' + "_" + uuid} fill="white"/>
       <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'ExportOptionText0' + "_" + uuid} >Export as:</text>
-      <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'ExportOptionBox1' + "_" + uuid} fill="white" onClick={()=>{this.svgToPNG()}}/>
+      <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'ExportOptionBox1' + "_" + uuid} fill="white" onClick={()=>{this.svgToPNG();}}/>
       <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'ExportOptionText1' + "_" + uuid} >.PNG</text>
-      <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'ExportOptionBox2' + "_" + uuid} fill="white" onClick={()=>{this.svgToJSON()}}/>
+      <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'ExportOptionBox2' + "_" + uuid} fill="white" onClick={()=>{this.svgToJSON();}}/>
       <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'ExportOptionText2' + "_" + uuid}>.JSON</text>
       </g>
     );
@@ -257,6 +257,7 @@ constructor(props) {
   */
   svgToPNG(){
     let svgString = new XMLSerializer().serializeToString(document.querySelector('svg'));
+    let canvas = document.getElementById("canvas");
     canvas.width = window.innerWidth -40;
     canvas.height = window.innerHeight -40;
     let ctx = canvas.getContext("2d");
@@ -266,7 +267,6 @@ constructor(props) {
     let url = DOMURL.createObjectURL(svg);
     img.onload = function() {
       ctx.drawImage(img, 0, 0);
-      let png = canvas.toDataURL("image/png");
       let imgURI = canvas
       .toDataURL("image/png")
       .replace("image/png", "image/octet-stream");
@@ -360,7 +360,7 @@ constructor(props) {
       <rect x={this.state.origin} y={this.state.origin} width={this.state.menu_width} height={this.state.menu_height} key={'mainMenuRect' + menu.x + menu.y} fill="white" onClick={()=>this.resetTimer(menu.uuid, menu.type)} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
       {this.state.layer > 0 ? 
         <g>
-        <rect fill='white' width={25} height={25} transform={pathTransform} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
+        <rect fill="white" width={25} height={25} transform={pathTransform} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
         <path stroke={"black"} d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" transform={pathTransform} style={{fill:"black"}} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
         </g>
         :
@@ -382,4 +382,4 @@ constructor(props) {
   
 }
 
-export default Menu_Main;
+export default MenuMain;

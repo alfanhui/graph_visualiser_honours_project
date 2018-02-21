@@ -15,10 +15,6 @@ const force = d3.forceSimulation()
 
 const color = d3.scaleOrdinal(d3.schemeCategory20); //range the colours
 
-//const calculation = d3.scaleLinear();
-//calculation.domain([21000,41000]).range([0,3]);
-//.force("link", d3.forceLink().id(function(d) { return d.nodeID; }))
-
 @connect((store) => {
     return {
         state: store.generalReducer
@@ -27,7 +23,7 @@ const color = d3.scaleOrdinal(d3.schemeCategory20); //range the colours
 
 //console.log(JSON.parse(JSON.stringify(err)));
 
-class Layout_ForceDirected extends React.Component {
+class LayoutForceDirected extends React.Component {
 
     static propTypes = {
         dispatch: PropTypes.func,
@@ -45,7 +41,7 @@ class Layout_ForceDirected extends React.Component {
         this.state = {
 
         };
-        console.log("Width: " + width + " Height: " + height + " Ratio: " + (width / height)); //5760 x 1900 (ratio of 3ish)
+        console.log("Width: " + width + " Height: " + height + " Ratio: " + (width / height)); // eslint-disable-line
     }
 
     componentWillMount() {
@@ -127,4 +123,4 @@ class Layout_ForceDirected extends React.Component {
     }
 }
 
-export default Layout_ForceDirected;
+export default LayoutForceDirected;

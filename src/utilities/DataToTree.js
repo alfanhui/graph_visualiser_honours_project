@@ -195,6 +195,8 @@ function getRootNodes(nodes) {
     return sortedRootNodes;
 }
 
+
+//Because some graphs loop back on themselves, the layers can get into negative numbers. This adjusts this error.
 function fixLayerCount(){
     //Correct layer count
     for (let node in nodeHash) {
@@ -208,7 +210,6 @@ function fixLayerCount(){
         let positiveLowestLayer = Math.abs(lowestNumOfLayers);
         for (let node in nodeHash) {
             if (nodeHash.hasOwnProperty(node)) {
-                console.log(node, "was" , nodeHash[node].layer, " now ", (nodeHash[node].layer + positiveLowestLayer));
                 nodeHash[node].layer + positiveLowestLayer;
             }
         }

@@ -2,13 +2,10 @@ import React from 'react';
 import { connect } from "react-redux";
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import * as d3 from 'd3';
-import { SET, UPDATE, DROP } from 'reducerActions';
+import { UPDATE, DROP } from 'reducerActions';
 import { addToTimer, stopTimer } from 'utilities/Timer';
-import moment from 'moment';
 import {makeEdge} from 'utilities/Edge';
-
-const color = d3.scaleOrdinal(d3.schemeCategory20); 
+import {importEdge, updateNode} from 'utilities/JsonIO';
 
 @connect((store) => {
   return {
@@ -18,7 +15,7 @@ const color = d3.scaleOrdinal(d3.schemeCategory20);
 
 //console.log(JSON.parse(JSON.stringify(err)));
 
-class Menu extends React.Component {
+class MenuElement extends React.Component {
   
   static propTypes = {
     dispatch: PropTypes.func,
@@ -76,7 +73,6 @@ class Menu extends React.Component {
     }  
     
     componentWillUnmount(){
-      let menu = this.props.menu;
       this.props.dispatch(DROP("highlightedNodes", "color", {color:this.state.colourTag}));
     }
 
@@ -86,7 +82,7 @@ class Menu extends React.Component {
      getRandomColor() {
       let letters = '0123456789ABCDEF';
       let color = '#';
-      for (var i = 0; i < 6; i++) {
+      for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
       }
       return color;
@@ -118,7 +114,6 @@ class Menu extends React.Component {
       }
       
       clickBack = (uuid, type) => {
-        let menu = this.props.menu;
         this.props.dispatch(DROP("highlightedNodes", "color", {color:this.state.colourTag}));
         this.props.dispatch(addToTimer(uuid, type));
         this.setState({layer: 0});
@@ -148,35 +143,37 @@ class Menu extends React.Component {
           <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'createEdgeBox' + "_" + uuid}/>
           <text x={this.state.origin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key={'createEdgeBoxText' + "_" + uuid} >Tap to Choose</text>
           
-          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'CreateEdgeTarget' + "_" + uuid} onClick={()=>{this.cycleDistanceIndex(uuid)}}/>
+          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'CreateEdgeTarget' + "_" + uuid} onClick={()=>{this.cycleDistanceIndex(uuid);}}/>
           <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key ={'CreateEdgeTargetText' + "_" + uuid}> Target:</text>
           <text x={this.state.origin + (this.state.menu_width*.75)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" 
-          style={{fontSize:((18 * this.props.state.averagedScale) + 'px'), 
-          lineHeight:((36 * this.props.state.averagedScale) + 'px'),
-          minHeight:((36 * this.props.state.averagedScale) + 'px'),
-          stroke:this.state.colourTag,
-          strokeWidth:"2" }} 
-          key={'createEdgeBoxTarget' + "_" + uuid}> {this.state.distancesToTarget.length > 1 && this.state.distancesToTarget[this.state.nodeTargetCurrentIndex].targetNode}</text>
+              style={{fontSize:((18 * this.props.state.averagedScale) + 'px'), 
+              lineHeight:((36 * this.props.state.averagedScale) + 'px'),
+              minHeight:((36 * this.props.state.averagedScale) + 'px'),
+              stroke:this.state.colourTag,
+              strokeWidth:"2" }} 
+              key={'createEdgeBoxTarget' + "_" + uuid}> 
+            {this.state.distancesToTarget.length > 1 && this.state.distancesToTarget[this.state.nodeTargetCurrentIndex].targetNode}
+          </text>
           
-          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'createEdgeButton' + "_" + uuid} onClick={()=>{this.createEdge(uuid)}}/>
+          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'createEdgeButton' + "_" + uuid} onClick={()=>{this.createEdge(uuid);}}/>
           <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'createEdgeButtonText' + "_" + uuid} >Create</text>
           </g>
         );
       }
       
       displayOptionEditNode = (uuid) =>{
-        let node = _.find(this.props.state.nodes, { "nodeID": menu.nodeID });
+        let node = _.find(this.props.state.nodes, { "nodeID": this.props.menu.nodeID });
         return(
           <g key ={'editEdge' + "_" + uuid}>
           <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'editEdgeBox' + "_" + uuid}/>
           <text x={this.state.origin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key={'editEdgeBoxText' + "_" + uuid} >Current Type: </text>
           <text x={this.state.origin + (this.state.menu_width*.75)} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key={'editEdgeBoxText' + "_" + uuid} >{node.type}</text>
 
-          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeTarget' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid,"nodeTypes")}}/>
+          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeTarget' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid,"nodeTypes");}}/>
           <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key ={'editEdgeTargetText' + "_" + uuid}>New Type:</text>
           <text x={this.state.origin + (this.state.menu_width*.5)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" key={'editEdgeBoxTarget' + "_" + uuid}>{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type}</text>
           
-          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeButton' + "_" + uuid} onClick={()=>{this.editNode(uuid)}}/>
+          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeButton' + "_" + uuid} onClick={()=>{this.editNode(uuid);}}/>
           <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'editEdgeButtonText' + "_" + uuid} >Ammend</text>
           </g>
         );
@@ -184,7 +181,7 @@ class Menu extends React.Component {
       
       displayOptionDeleteNode = (uuid) => {
         return(
-          <g>
+          <g key={"deleteNode" + uuid}>
           
           </g>
         );
@@ -197,7 +194,7 @@ class Menu extends React.Component {
         this.props.dispatch(UPDATE("links", newEdge)); //update local nodes
         this.props.dispatch(stopTimer(uuid, "elementMenu")); //remove menu
         if(this.props.state.updateFromCreate){
-          this.props.dispatch(importEdge(newEdges)); //import edges into neo4j
+          this.props.dispatch(importEdge(newEdge)); //import edges into neo4j
         }
       }
 
@@ -205,21 +202,22 @@ class Menu extends React.Component {
         let menu = this.props.menu;
         let node = _.find(this.props.state.nodes, { "nodeID": menu.nodeID });
         this.props.dispatch(DROP("nodes", node)); //update local nodes
-        node.type = 
+        //node.type = 
         this.props.dispatch(UPDATE("nodes", node)); //update local nodes
         this.props.dispatch(stopTimer(uuid, "elementMenu")); //remove menu
         if(this.props.state.updateFromCreate){
-          this.props.dispatch(updateNode(newNode)); //import edges into neo4j
+          //this.props.dispatch(updateNode(newNode)); //import edges into neo4j
         }
       }
 
+      //futher work needed
       deleteNode(uuid){
         let menu = this.props.menu;
         let node = _.find(this.props.state.nodes, { "nodeID": menu.nodeID });
         this.props.dispatch(DROP("nodes", node)); //update local nodes
         this.props.dispatch(stopTimer(uuid, "elementMenu")); //remove menu
         if(this.props.state.updateFromCreate){
-          this.props.dispatch(importEdge(newEdges)); //import edges into neo4j
+          //this.props.dispatch(importEdge(newEdges)); 
         }
       }
     
@@ -290,7 +288,7 @@ class Menu extends React.Component {
           <rect fill="white" x={this.state.origin} y={this.state.origin} width={this.state.menu_width} height={this.state.menu_height} key={'elementRect' + node.nodeID} onClick={()=>this.resetTimer(menu.uuid, menu.type)} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
           {this.state.layer > 0 ? 
             <g>
-            <rect fill='white' width={25} height={25} transform={pathTransform} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
+            <rect fill="white" width={25} height={25} transform={pathTransform} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
             <path stroke={"black"} d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" transform={pathTransform} style={{fill:"black"}} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
             </g>
             :
@@ -306,4 +304,4 @@ class Menu extends React.Component {
       
     }
     
-    export default Menu;
+    export default MenuElement;

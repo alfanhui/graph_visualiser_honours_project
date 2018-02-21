@@ -13,17 +13,17 @@ export function importJSON(dataFile) {
         return request.get("data/US2016G1/" + fileName + ".json")
         .then((res)=> {
           dispatch(SET("currentDataFile", dataFile));
-          console.log(res.body);
+          console.log(res.body); // eslint-disable-line
           let {nodeStatements, dictionary, edgeStatements} = graphMLtoCypher(res.body);
           return dispatch(compileQuery(nodeStatements, dictionary, edgeStatements));
         })
         .catch((err)=> {
-          console.log("This error: " , err);
+          console.log("This error: " , err); // eslint-disable-line
           dispatch(SET("databaseError", "#F50057"));
         });
       });
     });
-  }
+  };
 }
 
 
@@ -34,7 +34,7 @@ function graphMLtoCypher(jsonObj) {
   let dictionary = {};
   let hashMap = {};
   if(nodeParameters.props.length < 1){
-    console.log("Nothing to import");
+    console.log("Nothing to import"); // eslint-disable-line
     return;
   }
   nodeParameters.props.map((item) => {
@@ -102,13 +102,12 @@ export function importNode(newNode){
 
 //handle json object ready for cypher conversion
 function nodeToCypher(jsonObj) {
-  console.log(jsonObj);
   let nodeParameters = { "props": jsonObj.nodes };
   //Sort by type
   let dictionary = {};
   let hashMap = {};
   if(nodeParameters.props.length < 1){
-    console.log("Nothing to import");
+    console.log("Nothing to import"); // eslint-disable-line
     return;
   }
   nodeParameters.props.map((item) => {
@@ -131,10 +130,10 @@ function nodeToCypher(jsonObj) {
   return {nodeStatements, dictionary};
 }
 
-export function importEdge(newEdge, connectedNodes){
+export function importEdge(newEdge){
   return (dispatch) => {
     let {edgeStatements} = edgeToCypher({edges:[newEdge]});
-    return dispatch(postQuery(nodeStatements));
+    return dispatch(postQuery(edgeStatements));
   };
 }
 
@@ -155,13 +154,13 @@ function edgeToCypher(jsonObj) {
 
 export function removeNode(nodeToRemove){
   return(dispatch) => {
-    dispatch(postQuery("Match (n:" + nodeToRemove.type + ") where n.nodeID=\'" + nodeToRemove.nodeID + "\' delete n"))
-  }
+    dispatch(postQuery("Match (n:" + nodeToRemove.type + ") where n.nodeID=\'" + nodeToRemove.nodeID + "\' delete n"));// eslint-disable-line
+  };
 }
 
 export function removeEdge(edgeToRemove){
   return(dispatch) => {
-    dispatch(postQuery("MATCH (n)-[rel:LINK]->(r) WHERE n.nodeID=\'" + edgeToRemove.source + "\' AND r.nodeID=\'" + edgeToRemove.target + "\' DELETE rel;"))
-  }
+    dispatch(postQuery("MATCH (n)-[rel:LINK]->(r) WHERE n.nodeID=\'" + edgeToRemove.source + "\' AND r.nodeID=\'" + edgeToRemove.target + "\' DELETE rel;")); // eslint-disable-line
+  };
 }
 

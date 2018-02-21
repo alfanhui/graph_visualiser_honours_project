@@ -1,4 +1,4 @@
-import { UPDATE, REPLACE, DROP } from 'reducerActions';
+import { UPDATE, DROP } from 'reducerActions';
 
 let timeDelay = 4500;
 /*
@@ -14,7 +14,7 @@ export function startTimer(menu) {
     //console.log("starting timer");
     return (dispatch) => {
         let object = {uuid:menu.uuid, type:menu.type};
-        let timerId = setTimeout((object) => { dispatch(stopTimer(object.uuid, object.type)) }, timeDelay, object);
+        let timerId = setTimeout((object) => { dispatch(stopTimer(object.uuid, object.type)); }, timeDelay, object);
         internalHash[menu.uuid] = timerId;
         dispatch(UPDATE(menu.type, menu));
     };
@@ -25,7 +25,7 @@ export function addToTimer(uuid, type) {
     return (dispatch) => {
         let object = {uuid, type};
         clearTimeout(internalHash[uuid]); //Stop timer
-        let newTimerId = setTimeout((object) => { dispatch(stopTimer(object.uuid, object.type)) }, timeDelay+2000, object); 
+        let newTimerId = setTimeout((object) => { dispatch(stopTimer(object.uuid, object.type)); }, timeDelay+2000, object); 
         internalHash[uuid]=newTimerId;
     };
 }

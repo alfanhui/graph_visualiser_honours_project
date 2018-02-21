@@ -4,8 +4,8 @@ import * as d3 from 'd3';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import {scaleHeight} from 'utilities/DataToTree';
-import Menu_Element from 'components/Menu_Element';
-import Menu_Main from 'components/Menu_Main';
+import MenuElement from 'components/MenuElement';
+import MenuMain from 'components/MenuMain';
 
 let width = window.innerWidth - 40;
 let height = window.innerHeight - 40;
@@ -20,7 +20,7 @@ const color = d3.scaleOrdinal(d3.schemeCategory20); //range the colours
 
 //console.log(JSON.parse(JSON.stringify(err)));
 
-class Layout_Tree extends React.Component {
+class LayoutTree extends React.Component {
   
   static propTypes = {
     dispatch: PropTypes.func,
@@ -59,7 +59,7 @@ class Layout_Tree extends React.Component {
         minHeight:((26 * averagedScale) + 'px'),
       }
     };
-    console.log("Width: " + width + " Height: " + height + " Ratio: " + (width / height)); //5760 x 1900 (ratio of 3ish)
+    console.log("Width: " + width + " Height: " + height + " Ratio: " + (width / height)); // eslint-disable-line
     
   }
   
@@ -81,9 +81,9 @@ class Layout_Tree extends React.Component {
   
   renderNode = (node) => {
     if(this.props.state.defaultNodeTypes.includes(node.type)){
-      return this.renderContentNode(node)
+      return this.renderContentNode(node);
     }else{
-      return this.renderNonContentNode(node)
+      return this.renderNonContentNode(node);
     }
   }
   
@@ -241,7 +241,7 @@ class Layout_Tree extends React.Component {
     </g>
     {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map((nextMenu)=> {
        return (
-            <Menu_Main
+            <MenuMain
             key={"MM" + nextMenu.x + nextMenu.y}
             menu={nextMenu}
             loadDatabase={(dataFile)=>this.props.loadDatabase(dataFile)}
@@ -250,7 +250,7 @@ class Layout_Tree extends React.Component {
     })}
     {this.props.state.elementMenu.length > 0 && this.props.state.elementMenu.map((nextMenu)=> {
       return (
-            <Menu_Element
+            <MenuElement
               key={"EM" + nextMenu.x + nextMenu.y}
               menu={nextMenu}
             />
@@ -260,7 +260,6 @@ class Layout_Tree extends React.Component {
     </svg>
   );
 }
-
 }
 
-export default Layout_Tree;
+export default LayoutTree;

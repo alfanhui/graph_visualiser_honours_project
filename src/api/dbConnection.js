@@ -1,23 +1,24 @@
 import request from 'superagent';
-import { localhost_httpUrlForTransaction, remotehost_httpUrlForTransaction } from 'constants/globalVar';
 import {SET} from 'reducerActions';
-let username = 'neo4j';
-let password = 'jazzyrice80';
-let url = localhost_httpUrlForTransaction; //subject to change after check
+/*Code in file written by Stephen Wright from Stackoverflow on 12th of Mar 2014 at 23:00, see config.js */
+let env = process.env.NODE_ENV || 'development';
+let config = require('../config')[env];
+/******* */
+let url = config.localhost + config.port + config.transaction ; //subject to change after check
 
 export function checkAddress() {
     return () => {
         return request.post(url)
-            .auth(username, password)
+            .auth(config.login.username, config.login.password)
             .then((res) => {
                 if (res.ok) {
-                    console.log("LOCALHOST AVALIABLE");
+                    console.log("LOCALHOST AVALIABLE"); // eslint-disable-line
                     //run localhost, no change needed
                 }
             })
             .catch(() => {
-                console.log("SWITCHED TO REMOTEHOST");
-                url = remotehost_httpUrlForTransaction;
+                console.log("SWITCHED TO REMOTEHOST"); // eslint-disable-line
+                url = config.remotehost + config.port + config.transaction;
                 //run host address instead
             });
     };
@@ -34,7 +35,7 @@ export function postQuery(statements, parameters = null) {
   return (dispatch) => {
       return request.post(url)
       .send({ statements: preparedStatement })
-      .auth(username,password)
+      .auth(config.login.username,config.login.password)
       .then((res)=> {
         if(res.ok){
           if(res.body.errors.length >0){
@@ -45,7 +46,7 @@ export function postQuery(statements, parameters = null) {
         }
       })
       .catch((err)=> {
-        console.log("This error: " , err, "statement:", preparedStatement);
+        console.log("This error: " , err, "statement:", preparedStatement); // eslint-disable-line
         dispatch(SET("databaseError", '#F50057'));
       });
   };
@@ -56,14 +57,14 @@ export function wipeDatabase() {
   return (dispatch) => {
       return request.post(url)
     .send({ statements: [{ statement: 'MATCH (n) OPTIONAL MATCH (n) - [r] - () DELETE n, r'}] })
-    .auth(username,password)
+    .auth(config.login.username,config.login.password)
     .then(()=> {
       dispatch(SET("nodes", []));
       dispatch(SET("links", []));
-      console.log("Database wiped");
+      console.log("Database wiped"); // eslint-disable-line
     })
     .catch((err)=> {
-      console.log("This error: " , err);
+      console.log("This error: " , err); // eslint-disable-line
     });
   };
 }
@@ -72,7 +73,7 @@ export function removeIndexes() {
   return (dispatch) => {
       return request.post(url)
     .send({ statements: [{ statement: 'CALL db.indexes()'}] })
-    .auth(username,password)
+    .auth(config.login.username,config.login.password)
     .then((res)=> {
       let data = res.body.results[0].data;
       data.map((item) => {
@@ -80,7 +81,7 @@ export function removeIndexes() {
       });
     })
     .catch((err)=> {
-      console.log("This error: " , err);
+      console.log("This error: " , err); // eslint-disable-line
     });
   };
 }
