@@ -125,6 +125,15 @@ line {
   pointer-events:none;
 };
 
+.paint{
+  position:absolute;
+  border: 2px solid blueviolet;
+  fill: none;
+  pointer-events: none;
+  touch-action: none;
+}
+
+
 /****  Spinner Code written by Zeeshan Ansari from CodePen  https://codepen.io/zeeshan_ansari/pen/gpwQvw on 22nd of May 2015   ****/
 .qp-circular-loader {
   width: 64px; 

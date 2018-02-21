@@ -109,7 +109,6 @@ class InteractionEvents extends React.Component {
           drag.elem = event.target;
           drag.currentX = event.clientX;
           drag.currentY = event.clientY;
-          
           let node = _.find(this.props.state.nodes, { "nodeID": event.target.id });
           //issue with rotated nodes positing is not correct upon moving
           if(!this.props.state.defaultNodeTypes.includes(node.type)){ 

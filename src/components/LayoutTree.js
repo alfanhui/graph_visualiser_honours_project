@@ -218,6 +218,8 @@ class LayoutTree extends React.Component {
 
   render() {
     return (
+      <div>
+        { this.props.state.paint &&   <canvas className="paint" width={width} height={height} /> }
       <svg
       className="svg" id="svg" ref="svg"
       width={width}
@@ -272,6 +274,7 @@ class LayoutTree extends React.Component {
     })}
     This Browser does not support html canvas.
     </svg>
+    </div>
   );
 }
 }
