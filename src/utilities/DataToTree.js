@@ -7,6 +7,7 @@ import _ from 'lodash';
 let linkHashBySource;
 let linkHashByTarget;
 let nodeHash;
+let lowestNumOfLayers = 0;
 let totalNumOfLayers = 0;
 
 //loop protectors
@@ -20,7 +21,7 @@ let tree = d3.tree()
 .size([width - 75, height]);
 
 export function scaleHeight(number){
-    let scale = d3.scaleLinear().domain([0,totalNumOfLayers]).range([20,height-60]);
+    let scale = d3.scaleLinear().domain([lowestNumOfLayers,totalNumOfLayers]).range([20,height-60]);
     return scale(number);
 }
 
@@ -51,8 +52,11 @@ export function convertRawToTree(object) {
         //recursively amend layer heights from conflicts in asceding order so we don't override higher ordered layers
         nodeDepthConflict = _.orderBy(nodeDepthConflict, ['size'],['asc']);
         nodeDepthConflict.map((childNode) =>{
+            correctLoopHash = {};
             correctDepthTraversalRecurssively(childNode.nodeID, (childNode.size -1));
         });    
+
+        fixLayerCount();
         
         //Scale all nodes according to correct layer
         for (let node in nodeHash) {
@@ -60,16 +64,7 @@ export function convertRawToTree(object) {
                 nodeHash[node].scaleLayer = scaleHeight(nodeHash[node].layer);
             }
         }
-        
-        /*
-        //convert nodeHash back to normal array
-        let nodesWithLayers = [];
-        for (let node in nodeHash) {
-            if (nodeHash.hasOwnProperty(node)) {
-                nodesWithLayers.push(nodeHash[node]);
-            }
-        }
-        */    
+           
         //Structure into tree for d3
         let dataTree = structureIntoTree(rootNodes);
         
@@ -112,6 +107,7 @@ function createDataHashes(nodes, links){
 function calculatePossibleDepths(rootNodes){
     rootNodes.map((rootNode) => {
         nodeHash[rootNode.nodeID].layer = 0;
+        possibleLoopHash = {};
         possibleDepthTraversalRecurssively(rootNode.nodeID, 1);
     });
 }
@@ -160,16 +156,16 @@ function applyChildrenRecurssively(node, children){ //linkHash is using link.sou
 function possibleDepthTraversalRecurssively(nodeID, counter) {
     if (linkHashBySource.hasOwnProperty(nodeID)) {
         linkHashBySource[nodeID].map((childNode) => {
-            // if(possibleLoopHash[nodeID] == childNode.target){
-            //     return;
-            // }else{
-            //  possibleLoopHash[nodeID] = childNode.target;
+             if(possibleLoopHash.hasOwnProperty(nodeID+"_"+childNode.target)){
+                 return;
+             }else{
+                possibleLoopHash[nodeID+"_"+childNode.target] = null;
                 nodeHash[childNode.target].depthArray.push(counter);
                 nodeHash[childNode.target].layer = counter;
                 if(nodeID !== childNode.target){
                     possibleDepthTraversalRecurssively(childNode.target, (counter + 1));
                 }
-           // }
+            }
         });
     }
 }
@@ -178,10 +174,10 @@ function possibleDepthTraversalRecurssively(nodeID, counter) {
 function correctDepthTraversalRecurssively(nodeID, counter) {
     if (linkHashByTarget.hasOwnProperty(nodeID)) {
         linkHashByTarget[nodeID].map((parentNode) => {
-            if(correctLoopHash[parentNode] == nodeID){
+            if(correctLoopHash.hasOwnProperty(nodeID+"_"+parentNode.source)){
                 return;
             }else{
-                correctLoopHash[parentNode] = nodeID;
+                correctLoopHash[nodeID+"_"+parentNode.source] = null;
                 nodeHash[parentNode.source].layer = counter;
                 correctDepthTraversalRecurssively(parentNode.source, (counter - 1));
             }
@@ -197,6 +193,27 @@ function getRootNodes(nodes) {
         return moment.utc(node1.timestamp).isAfter(moment.utc(node2.timestamp));
     });
     return sortedRootNodes;
+}
+
+function fixLayerCount(){
+    //Correct layer count
+    for (let node in nodeHash) {
+        if (nodeHash.hasOwnProperty(node)) {
+            if(nodeHash[node].layer < lowestNumOfLayers){
+                lowestNumOfLayers = nodeHash[node].layer;
+            }
+        }
+    }
+    if(lowestNumOfLayers < 0){
+        let positiveLowestLayer = Math.abs(lowestNumOfLayers);
+        for (let node in nodeHash) {
+            if (nodeHash.hasOwnProperty(node)) {
+                console.log(node, "was" , nodeHash[node].layer, " now ", (nodeHash[node].layer + positiveLowestLayer));
+                nodeHash[node].layer + positiveLowestLayer;
+            }
+        }
+        totalNumOfLayers += positiveLowestLayer;
+    }
 }
 
 function structureIntoTree(rootNodes){

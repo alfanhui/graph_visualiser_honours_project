@@ -69,7 +69,7 @@ class Menu extends React.Component {
           
         }, 
         colourTag:this.getRandomColor(),
-        edgeTypesCurrentIndex:0,
+        nodeTypesCurrentIndex:0,
         nodeTargetCurrentIndex:1,
         distancesToTarget,
       };
@@ -145,7 +145,7 @@ class Menu extends React.Component {
       displayOptionCreateEdge = (uuid) =>{
         return(
           <g key ={'createEdge' + "_" + uuid}>
-          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'createEdgeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid, "edgeTypes")}}/>
+          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'createEdgeBox' + "_" + uuid}/>
           <text x={this.state.origin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key={'createEdgeBoxText' + "_" + uuid} >Tap to Choose</text>
           
           <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'CreateEdgeTarget' + "_" + uuid} onClick={()=>{this.cycleDistanceIndex(uuid)}}/>
@@ -165,9 +165,19 @@ class Menu extends React.Component {
       }
       
       displayOptionEditNode = (uuid) =>{
+        let node = _.find(this.props.state.nodes, { "nodeID": menu.nodeID });
         return(
-          <g>
+          <g key ={'editEdge' + "_" + uuid}>
+          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'editEdgeBox' + "_" + uuid}/>
+          <text x={this.state.origin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key={'editEdgeBoxText' + "_" + uuid} >Current Type: </text>
+          <text x={this.state.origin + (this.state.menu_width*.75)} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key={'editEdgeBoxText' + "_" + uuid} >{node.type}</text>
+
+          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeTarget' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid,"nodeTypes")}}/>
+          <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key ={'editEdgeTargetText' + "_" + uuid}>New Type:</text>
+          <text x={this.state.origin + (this.state.menu_width*.5)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" key={'editEdgeBoxTarget' + "_" + uuid}>{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type}</text>
           
+          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeButton' + "_" + uuid} onClick={()=>{this.editNode(uuid)}}/>
+          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'editEdgeButtonText' + "_" + uuid} >Ammend</text>
           </g>
         );
       }
@@ -183,7 +193,6 @@ class Menu extends React.Component {
       createEdge(uuid){
         let menu = this.props.menu;
         let node = _.find(this.props.state.nodes, { "nodeID": menu.nodeID });
-
         let newEdge = makeEdge(node, {nodeID:this.state.distancesToTarget[this.state.nodeTargetCurrentIndex].targetNode});
         this.props.dispatch(UPDATE("links", newEdge)); //update local nodes
         this.props.dispatch(stopTimer(uuid, "elementMenu")); //remove menu
@@ -191,7 +200,30 @@ class Menu extends React.Component {
           this.props.dispatch(importEdge(newEdges)); //import edges into neo4j
         }
       }
+
+      editNode(uuid){
+        let menu = this.props.menu;
+        let node = _.find(this.props.state.nodes, { "nodeID": menu.nodeID });
+        this.props.dispatch(DROP("nodes", node)); //update local nodes
+        node.type = 
+        this.props.dispatch(UPDATE("nodes", node)); //update local nodes
+        this.props.dispatch(stopTimer(uuid, "elementMenu")); //remove menu
+        if(this.props.state.updateFromCreate){
+          this.props.dispatch(updateNode(newNode)); //import edges into neo4j
+        }
+      }
+
+      deleteNode(uuid){
+        let menu = this.props.menu;
+        let node = _.find(this.props.state.nodes, { "nodeID": menu.nodeID });
+        this.props.dispatch(DROP("nodes", node)); //update local nodes
+        this.props.dispatch(stopTimer(uuid, "elementMenu")); //remove menu
+        if(this.props.state.updateFromCreate){
+          this.props.dispatch(importEdge(newEdges)); //import edges into neo4j
+        }
+      }
     
+      
       cycleDistanceIndex(uuid){
         this.props.dispatch(DROP("highlightedNodes", "color", {color:this.state.colourTag}));
         let index = 1;
