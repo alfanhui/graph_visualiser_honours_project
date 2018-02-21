@@ -37,23 +37,23 @@ class InteractionEvents extends React.Component {
   constructor(props) {
     super(props);
     let height = window.innerHeight - 40,
-        width = window.innerWidth - 40;
+    width = window.innerWidth - 40;
     let defaultWidth = 1920 - 40,
-        defaultHeight = 1080 - 40; 
+    defaultHeight = 1080 - 40; 
     
     //if the screen is smaller, do not make the menus smaller.
     let scaledHeight = defaultHeight < height ?  ((height /defaultHeight)*.8) : 1,
-        scaledWidth = defaultWidth < width ? ((width / defaultWidth)*.8) : 1;
+    scaledWidth = defaultWidth < width ? ((width / defaultWidth)*.8) : 1;
     let averagedScale = (scaledHeight + scaledWidth) / 2;
     let menu_width = 150 * averagedScale, //original 110 x 30 
-        menu_height = 40.9 * averagedScale;
+    menu_height = 40.9 * averagedScale;
     this.state = {
       currentTouches: [],
       log: "",
       boundaryWidth: (menu_width*.9),
       boundaryHeight: (menu_height*3.5),
     };
-
+    
     this.props.dispatch(SET("averagedScale", averagedScale));
   }
   
@@ -71,18 +71,18 @@ class InteractionEvents extends React.Component {
       let $currentTouches = this.state.currentTouches;
       for (let i = 0; i < touches.length; i++) {
         let touch = touches[i];
-        if (event.target.getAttribute("id") == "main") {
+        let currentX = touch.clientX, 
+        currentY = touch.clientY;
+        if (event.target.getAttribute("id") == "main" && !this.props.state.paint) { 
           let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
           let uuid = getUuid();
           let newMenu = { x: newX, y: newY, uuid, type:"mainMenu"};
           this.props.dispatch(startTimer(newMenu));
-        } else {
+        }
+        //issue with rotated nodes positing is not correct upon moving
+        if (event.target.getAttribute("id") != "main") { 
           let transform = touch.target.getAttributeNS(null, "transform").slice(10, -1).split(',');
-          
-          let currentX = touch.clientX, 
-          currentY = touch.clientY;
           let node = _.find(this.props.state.nodes, { "nodeID": event.target.id });
-          //issue with rotated nodes positing is not correct upon moving
           if(!this.props.state.defaultNodeTypes.includes(node.type)){ 
             currentX += (60*this.props.state.averagedScale);
             currentY += (5*this.props.state.averagedScale);
@@ -95,20 +95,33 @@ class InteractionEvents extends React.Component {
             "transform": transform.map(parseFloat),
             "state": true,
           });
+        }else{
+          if(this.props.state.paint){
+            let $ctx = document.getElementById("paint").getContext('2d');
+            $ctx.beginPath();
+            $ctx.arc(currentX, currentY, 2.5, Math.PI*2, false);
+            $ctx.fillStyle = "violet";
+            $ctx.lineJoin = "round";
+            $ctx.lineWidth = 5;
+            $ctx.fill();
+            $ctx.closePath();
+          }
+          $currentTouches.push({
+            "id": touch.identifier,
+            "elem": touch.target,
+            currentX,
+            currentY,
+            "state": true,
+          });
         }
         this.setState({ currentTouches: $currentTouches });
       }
     }else{
-      if (event.target.getAttribute("id") == "main") {
-        let {newX, newY} = this.deadZone(event.clientX, event.clientY);
-        let uuid = getUuid();
-        let newMenu = { x: newX, y: newY, uuid, type:"mainMenu"};
-        this.props.dispatch(startTimer(newMenu));
-      } else {
-        if (!drag.state) {
-          drag.elem = event.target;
-          drag.currentX = event.clientX;
-          drag.currentY = event.clientY;
+      if (!drag.state) {
+        drag.elem = event.target;
+        drag.currentX = event.clientX;
+        drag.currentY = event.clientY;
+        if (event.target.getAttribute("id") != "main") {
           let node = _.find(this.props.state.nodes, { "nodeID": event.target.id });
           //issue with rotated nodes positing is not correct upon moving
           if(!this.props.state.defaultNodeTypes.includes(node.type)){ 
@@ -117,10 +130,10 @@ class InteractionEvents extends React.Component {
           }
           let transform = event.target.getAttributeNS(null, "transform").slice(10, -1).split(',');
           drag.transform = transform.map(parseFloat);
-          drag.state = true;
         }
-        return false;
+        drag.state = true;
       }
+      return false;
     }
   }
   
@@ -136,17 +149,36 @@ class InteractionEvents extends React.Component {
         let currentTouchIndex = _.findIndex($currentTouches, function (currentTouch) { return currentTouch.id == touch.identifier; });
         if (currentTouchIndex >= 0) {
           let currentTouch = $currentTouches[currentTouchIndex];
-          if (currentTouch.state) {
-            currentTouch.moved = true;
-            let node = _.find(this.props.state.nodes, { "nodeID": currentTouch.elem.getAttribute("id") });
-            node.x = currentTouch.transform[0] += touch.clientX - currentTouch.currentX;
-            node.y = currentTouch.transform[1] += touch.clientY - currentTouch.currentY;
-            let node_props = this.updateNode(this.props.state.nodes, { "nodeID": currentTouch.elem.getAttribute("id") }, node);
-            this.props.dispatch(SET("nodes", node_props));
-            currentTouch.currentX = touch.clientX;
-            currentTouch.currentY = touch.clientY;
+          if(currentTouch.elem.getAttribute("id") == "main"){
+            if(currentTouch.state){
+              currentTouch.moved = true;
+              if(this.props.state.paint){
+                let $ctx = document.getElementById("paint").getContext('2d');
+                $ctx.beginPath();
+                $ctx.moveTo(currentTouch.currentX, currentTouch.currentY);
+                $ctx.lineTo(touch.clientX, touch.clientY);
+                //$ctx.lineCap = "round";
+                $ctx.lineWidth = 5;
+                $ctx.strokeStyle = "violet";
+                $ctx.stroke();
+                $ctx.closePath();
+                currentTouch.currentX = touch.clientX;
+                currentTouch.currentY = touch.clientY;
+              }
+            }
+          }else{
+            if (currentTouch.state) {
+              currentTouch.moved = true;
+              let node = _.find(this.props.state.nodes, { "nodeID": currentTouch.elem.getAttribute("id") });
+              node.x = currentTouch.transform[0] += touch.clientX - currentTouch.currentX;
+              node.y = currentTouch.transform[1] += touch.clientY - currentTouch.currentY;
+              let node_props = this.updateNode(this.props.state.nodes, { "nodeID": currentTouch.elem.getAttribute("id") }, node);
+              this.props.dispatch(SET("nodes", node_props));
+              currentTouch.currentX = touch.clientX;
+              currentTouch.currentY = touch.clientY;
+            }
+            $currentTouches.splice(currentTouchIndex, 1, currentTouch);
           }
-          $currentTouches.splice(currentTouchIndex, 1, currentTouch);
         } else {
           //console.log("Touch was not found!");
         }
@@ -155,11 +187,13 @@ class InteractionEvents extends React.Component {
     }else{
       if (drag.state) {
         drag.moved = true;
-        let node = _.find(this.props.state.nodes, { "nodeID": drag.elem.getAttribute("id") });
-        node.x = drag.transform[0] += event.clientX - drag.currentX;
-        node.y = drag.transform[1] += event.clientY - drag.currentY;
-        let node_props = this.updateNode(this.props.state.nodes, { "nodeID": drag.elem.getAttribute("id") }, node);
-        this.props.dispatch(SET("nodes", node_props));
+        if(drag.elem.getAttribute("id") != "main"){
+          let node = _.find(this.props.state.nodes, { "nodeID": drag.elem.getAttribute("id") });
+          node.x = drag.transform[0] += event.clientX - drag.currentX;
+          node.y = drag.transform[1] += event.clientY - drag.currentY;
+          let node_props = this.updateNode(this.props.state.nodes, { "nodeID": drag.elem.getAttribute("id") }, node);
+          this.props.dispatch(SET("nodes", node_props));
+        }
         drag.currentX = event.clientX;
         drag.currentY = event.clientY;
       }
@@ -178,31 +212,57 @@ class InteractionEvents extends React.Component {
         if (currentTouchIndex >= 0) {
           let currentTouch = $currentTouches[currentTouchIndex];
           if (currentTouch.state) { //had hit element
-            if (!currentTouch.moved) {
-              let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
-              let uuid = getUuid();
-              let newMenu = { x: newX, y: newY, uuid,   type:"elementMenu", nodeID: event.target.id};
-              this.props.dispatch(startTimer(newMenu));
+            if (!currentTouch.moved){
+              if (currentTouch.elem.getAttribute("id") == "main" && !currentTouch.moved && this.props.state.paint) { 
+                let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
+                let uuid = getUuid();
+                let newMenu = { x: newX, y: newY, uuid, type:"mainMenu"};
+                this.props.dispatch(startTimer(newMenu));
+              }else if(currentTouch.elem.getAttribute("id") != "main" ){
+                let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
+                let uuid = getUuid();
+                let newMenu = { x: newX, y: newY, uuid,   type:"elementMenu", nodeID: event.target.id};
+                this.props.dispatch(startTimer(newMenu));
+              }
+            }
+            if(this.props.state.paint){
+              let $ctx = document.getElementById("paint").getContext('2d');
+              $ctx.beginPath();
+              $ctx.moveTo(currentTouch.currentX, currentTouch.currentY);
+              $ctx.lineTo(touch.clientX, touch.clientY);
+              $ctx.lineCap = "round";
+              $ctx.lineWidth = 5;
+              $ctx.strokeStyle = "violet";
+              $ctx.closePath();
+              $ctx.stroke();
             }
             currentTouch.state = currentTouch.moved = false;
             //remove record
             $currentTouches.splice(currentTouchIndex, 1);
             this.setState({ currentTouches: $currentTouches });
-          } else {
-            //console.log("Touch was not found!");
           }
-        } 
+        } else {
+          //console.log("Touch was not found!");
+        }
       }
     }else{
       if (drag.state) { //had hit element
         if (!drag.moved) {
-          let {newX, newY} = this.deadZone(event.clientX, event.clientY);
-          let uuid = getUuid();
-          let newMenu = { x: newX, y: newY, uuid, type:"elementMenu", nodeID: event.target.id };
-          this.props.dispatch(startTimer(newMenu));
+          if (event.target.getAttribute("id") == "main") {
+            let {newX, newY} = this.deadZone(event.clientX, event.clientY);
+            let uuid = getUuid();
+            let newMenu = { x: newX, y: newY, uuid, type:"mainMenu"};
+            this.props.dispatch(startTimer(newMenu));
+          } else {
+            let {newX, newY} = this.deadZone(event.clientX, event.clientY);
+            let uuid = getUuid();
+            let newMenu = { x: newX, y: newY, uuid, type:"elementMenu", nodeID: event.target.id };
+            this.props.dispatch(startTimer(newMenu));
+          }
         }
-        drag.state = drag.moved = false;
       }
+      drag.state = drag.moved = false;
+      drag.elem = null;
     }
   }
   
@@ -232,14 +292,14 @@ class InteractionEvents extends React.Component {
     return arr;
   }
   
-
+  
   //touch boundary
   deadZone(x, y){
     let newX = x > (width-this.state.boundaryWidth) ? (width-this.state.boundaryWidth) : x ;
     let newY = y > (height-this.state.boundaryHeight) ? (height-this.state.boundaryHeight) : y ;
     return {newX, newY};
   }
-
+  
   
   render() {
     return (

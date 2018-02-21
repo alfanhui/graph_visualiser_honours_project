@@ -284,7 +284,7 @@ class MenuElement extends React.Component {
         let pathTransform = "translate(" + (this.state.origin + (this.state.menu_width * .825)) + "," + (this.state.origin + 1) +") " + "scale( " + (1* this.props.state.averagedScale) + "," + (1* this.props.state.averagedScale)  + ")";
         return (
           <g transform={transform} key={menu.uuid}>
-          {/*<rect x={-(this.state.menu_width/2)} y={-(this.state.menu_height*3.5)} width={this.state.menu_width*1.8} height={this.state.menu_height*8} key={'touchborder' + menu.x + menu.y} style={{ fillOpacity:"1.0", fill:'blue'}}*/}/> {/* stops touches conflicting */}
+          {<rect x={this.state.origin-(this.state.origin*0.3)} y={this.state.origin -(this.state.origin*0.2)} width={this.state.menu_width*1.1} height={this.state.menu_height*4.2} key={'touchborder' + menu.x + menu.y} style={{fillOpacity:"0.0", fill:'none'}}/> } {/* stops touches conflicting */}
           <rect fill="white" x={this.state.origin} y={this.state.origin} width={this.state.menu_width} height={this.state.menu_height} key={'elementRect' + node.nodeID} onClick={()=>this.resetTimer(menu.uuid, menu.type)} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
           {this.state.layer > 0 ? 
             <g>

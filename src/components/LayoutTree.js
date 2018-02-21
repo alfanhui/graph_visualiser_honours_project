@@ -219,7 +219,7 @@ class LayoutTree extends React.Component {
   render() {
     return (
       <div>
-        { this.props.state.paint &&   <canvas className="paint" width={width} height={height} /> }
+        { this.props.state.paint &&   <canvas className="paint" id="paint" width={width-5} height={height} /> }
       <svg
       className="svg" id="svg" ref="svg"
       width={width}
