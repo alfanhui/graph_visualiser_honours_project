@@ -37,7 +37,6 @@
     "express": "4.16.2",
     "lodash": "4.17.4",
     "material-ui": "0.20.0",
-    "mdi": "2.1.19",
     "moment": "2.20.1",
     "neo4j": "1.1.1",
     "neo4j-driver": "1.5.0",
@@ -56,7 +55,6 @@
     "react-text-field": "0.4.0",
     "redux": "3.6.0",
     "redux-thunk": "2.1.0",
-    "superagent": "3.8.2",
     "uuid": "3.2.1"
   },
   "devDependencies": {

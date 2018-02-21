@@ -1,4 +1,4 @@
-import { postQuery, wipeDatabase, removeIndexes} from 'api/dbConnection';
+import { postQuery, wipeDatabase, removeIndexes} from 'utilities/DBConnection';
 import request from 'superagent';
 import {SET} from 'reducerActions';
 

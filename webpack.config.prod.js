@@ -14,6 +14,13 @@ const GLOBALS = {
 
 export default {
   resolve: {
+    alias: {
+      reducerActions: path.resolve(__dirname, 'src/reducerActions/index.js'),
+      constants: path.resolve(__dirname, 'src/constants/'),
+      components: path.resolve('src/components/'),
+      data: path.resolve('src/data/'),
+      utilities: path.resolve('src/utilities/')
+    },
     extensions: ['*', '.js', '.jsx', '.json']
   },
   devtool: 'source-map', // more info:https://webpack.github.io/docs/build-performance.html#sourcemaps and https://webpack.github.io/docs/configuration.html#devtool
@@ -23,6 +30,15 @@ export default {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
     filename: '[name].[chunkhash].js'
+  },
+    node: {
+      fs: 'empty',
+      net: 'empty',
+      tls: 'empty',
+      dns: 'empty',
+      dgram: 'empty',
+      readline: 'empty',
+      ws: 'empty'
   },
   plugins: [
     // Hash the files using MD5 so that their names change when the content changes.

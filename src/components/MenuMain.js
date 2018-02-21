@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import _ from 'lodash';
 import { UPDATE } from 'reducerActions';
 import { addToTimer, stopTimer } from 'utilities/Timer';
-import {wipeDatabase} from 'api/dbConnection';
+import {wipeDatabase} from 'utilities/DBConnection';
 import moment from 'moment';
 import Node from 'utilities/Node';
 import {importNode} from 'utilities/JsonIO';

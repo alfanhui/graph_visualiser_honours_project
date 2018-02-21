@@ -7,7 +7,6 @@ export default {
     resolve: {
         alias: {
             reducerActions: path.resolve(__dirname, 'src/reducerActions/index.js'),
-            api: path.resolve('src/api/'),
             constants: path.resolve(__dirname, 'src/constants/'),
             components: path.resolve('src/components/'),
             data: path.resolve('src/data/'),
