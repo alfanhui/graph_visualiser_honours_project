@@ -13,6 +13,8 @@ const initialState = {
   updateAuto: false,
   updateAvailable: false,
   lastUpdated: null,
+  paint:false,
+  loading:false,
   averagedScale: 1,
   creationHaltRefresh: false,
   highlightedNodes:[],

@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from "react-redux";
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import { UPDATE } from 'reducerActions';
+import { SET, UPDATE } from 'reducerActions';
 import { addToTimer, stopTimer } from 'utilities/Timer';
 import {wipeDatabase} from 'utilities/DBConnection';
 import moment from 'moment';
@@ -63,6 +63,16 @@ constructor(props) {
       fontSize:((18 * averagedScale) + 'px'),
       lineHeight:((36 * averagedScale) + 'px'),
       minHeight:((36 * averagedScale) + 'px'),
+    }, 
+    aboutItemFontAdjustment:{
+      fontSize:((10 * averagedScale) + 'px'),
+      lineHeight:((20 * averagedScale) + 'px'),
+      minHeight:((20 * averagedScale) + 'px'),
+    }, 
+    aboutCredFontAdjustment:{
+      fontSize:((11 * averagedScale) + 'px'),
+      lineHeight:((22 * averagedScale) + 'px'),
+      minHeight:((22 * averagedScale) + 'px'),
     }, 
     menuCreateNodeFontAdjustment:{
       textAnchor:'inherit',
@@ -156,7 +166,30 @@ constructor(props) {
   displayOptionAbout = (uuid) => {
     return(
       <g key ={'about' + "_" + uuid}>
-      
+      {/*first row*/}
+       <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 3)} className="menuItemRect" key={'AboutBox' + "_" + uuid} fill="white"/>
+       <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width/2} height={(this.state.menu_height)} className="menuItemRect" key={'AboutAutoUpdateBox' + "_" + uuid} fill="white" onClick={()=>{this.toggleProp(uuid, "updateAuto");}}/>
+       <text x={this.state.menuItemTextXOrigin - this.state.menu_width/4} y={this.state.menuItemTextYOrigin - (this.state.menu_height * .25)} className="menuItem" style={this.state.aboutItemFontAdjustment} key ={'AboutAutoUpdate1' + "_" + uuid}>Auto-Update</text>
+       <text x={this.state.menuItemTextXOrigin - this.state.menu_width/4} y={this.state.menuItemTextYOrigin + (this.state.menu_height * .25)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'AboutAutoUpdate2' + "_" + uuid}>{this.props.state.updateAuto ? "ON" : "OFF"}</text>
+       <rect x={this.state.origin + this.state.menu_width/2} y={this.state.menuItemRectYOrigin} width={this.state.menu_width/2} height={(this.state.menu_height)} className="menuItemRect" key={'AboutUpdateCreateBox' + "_" + uuid} fill="white" onClick={()=>{this.toggleProp(uuid, "updateFromCreate");}}/>
+       <text x={this.state.menuItemTextXOrigin + this.state.menu_width/4} y={this.state.menuItemTextYOrigin - (this.state.menu_height *.25)} className="menuItem" style={this.state.aboutItemFontAdjustment} key ={'AboutUpdateCreate1' + "_" + uuid} >Update-Changes</text>
+       <text x={this.state.menuItemTextXOrigin + this.state.menu_width/4} y={this.state.menuItemTextYOrigin + (this.state.menu_height * .25)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'AboutUpdateCreate2' + "_" + uuid} >{this.props.state.updateFromCreate ? "ON" : "OFF"}</text>
+      {/*second row*/}
+      <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width/2} height={(this.state.menu_height)} className="menuItemRect" key={'AboutPaintBox' + "_" + uuid} fill="white" onClick={()=>{this.toggleProp(uuid, "paint");}}/>
+       <text x={this.state.menuItemTextXOrigin - this.state.menu_width/4} y={this.state.menuItemTextYOrigin - (this.state.menu_height * .25) + (1 * this.state.menu_height)} className="menuItem" style={this.state.aboutItemFontAdjustment} key ={'AboutPaint1' + "_" + uuid}>Paint</text>
+       <text x={this.state.menuItemTextXOrigin - this.state.menu_width/4} y={this.state.menuItemTextYOrigin + (this.state.menu_height * .25) + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'AboutPaint2' + "_" + uuid}>{this.props.state.paint ? "ON" : "OFF"}</text>
+       <rect x={this.state.origin + this.state.menu_width/2} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width/2} height={(this.state.menu_height)} className="menuItemRect" key={'AboutDatabaseBox' + "_" + uuid} fill="white"/>
+       <text x={this.state.menuItemTextXOrigin + this.state.menu_width/4} y={this.state.menuItemTextYOrigin - (this.state.menu_height *.25) + (1 * this.state.menu_height)} className="menuItem" style={this.state.aboutItemFontAdjustment} key ={'AboutDatabase1' + "_" + uuid} >DATABASE</text>
+       <text x={this.state.menuItemTextXOrigin + this.state.menu_width/4} y={this.state.menuItemTextYOrigin + (this.state.menu_height * .25) + (1 * this.state.menu_height)} className="menuItem" 
+          style={{ fontSize:((18 * this.props.state.averagedScale) + 'px'),
+                  lineHeight:((36 * this.props.state.averagedScale) + 'px'),
+                  minHeight:((36 * this.props.averagedScale) + 'px'),
+                  fill:(this.props.state.databaseError == "#FFFFF" ? 'black' : this.props.state.databaseError )}} 
+          key ={'AboutDatabase2' + "_" + uuid} >{this.props.state.databaseError == "#FFFFF" ? "OK!" : "BAD"}</text>
+       {/*third row*/}
+       <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'AboutCredButton' + "_" + uuid} fill="white"/>
+      <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin - (this.state.menu_height *.25) + (2 * this.state.menu_height)} className="menuItem" style={this.state.aboutCredFontAdjustment} key ={'AboutCredText1' + "_" + uuid}>Many thanks to my supervisor</text>
+      <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (this.state.menu_height *.25) + (2 * this.state.menu_height)} className="menuItem" style={this.state.aboutCredFontAdjustment} key ={'AboutCredText2' + "_" + uuid}>Prof Chris Reed & ARG-Tech</text>
       </g>
     );
   }
@@ -247,6 +280,11 @@ constructor(props) {
     }else{
       this.setState({[variable]:( this.state[variable] + 1)});
     }
+  }
+
+  toggleProp(uuid, propName){
+    this.resetTimer(uuid, "mainMenu");
+    this.props.dispatch(SET(propName, !(this.props.state[propName])));
   }
 
 

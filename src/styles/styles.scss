@@ -39,11 +39,9 @@ body {
   font-weight: 300;
 }
 
-//sized via javascript
-svg{
-  //border: solid blue 1px;
+.svg{
   overflow: auto;
-  touch-action: none
+  touch-action: none;
 }
 
 line {
@@ -127,3 +125,153 @@ line {
   pointer-events:none;
 };
 
+/****  Spinner Code written by Zeeshan Ansari from CodePen  https://codepen.io/zeeshan_ansari/pen/gpwQvw on 22nd of May 2015   ****/
+.qp-circular-loader {
+  width: 64px; 
+  height: 64px;
+  stroke-width: 3px;
+ }
+ 
+ .qp-circular-loader-path {
+  stroke-dasharray: 58.9;
+  stroke-dashoffset: 58.9;
+ }
+ 
+ .qp-circular-loader,
+ .qp-circular-loader * {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+ }
+
+ @-webkit-keyframes rotate {
+  from {
+   -webkit-transform: rotate(0deg);
+  }
+  to {
+   -webkit-transform: rotate(360deg);
+  }
+ }
+ 
+ @keyframes rotate {
+  from {
+   transform: rotate(0deg);
+  }
+  to {
+   transform: rotate(360deg);
+  }
+ }
+ 
+ .qp-circular-loader {
+  -webkit-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-duration: 1568.63ms;
+  animation-duration: 1568.63ms;
+  /* 360 * ARCTIME / (ARCSTARTROT + (360-ARCSIZE)) */
+  
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+ }
+ /* Filling and unfilling the arc */
+ 
+ @-webkit-keyframes fillunfill {
+  from {
+   stroke-dashoffset: 58.8
+  }
+  50% {
+   stroke-dashoffset: 0;
+  }
+  to {
+   stroke-dashoffset: -58.4
+  }
+ }
+ 
+ @keyframes fillunfill {
+  from {
+   stroke-dashoffset: 58.8
+  }
+  50% {
+   stroke-dashoffset: 0;
+  }
+  to {
+   stroke-dashoffset: -58.4
+  }
+ }
+ 
+ @-webkit-keyframes rot {
+  from {
+   -webkit-transform: rotate(0deg);
+  }
+  to {
+   -webkit-transform: rotate(-360deg);
+  }
+ }
+ 
+ @keyframes rot {
+  from {
+   transform: rotate(0deg);
+  }
+  to {
+   transform: rotate(-360deg);
+  }
+ }
+ 
+ @-webkit-keyframes colors {
+  0% {
+   stroke: #754fa0;
+  }
+  20% {
+   stroke: #09b7bf;
+  }
+  40% {
+   stroke: #90d36b;
+  }
+  60% {
+   stroke: #f2d40d;
+  }
+  80% {
+   stroke: #fcb12b;
+  }
+  100% {
+   stroke: #ed1b72;
+  }
+ }
+ 
+ @keyframes colors {
+  0% {
+   stroke: #754fa0;
+  }
+  20% {
+   stroke: #09b7bf;
+  }
+  40% {
+   stroke: #90d36b;
+  }
+  60% {
+   stroke: #f2d40d;
+  }
+  80% {
+   stroke: #fcb12b;
+  }
+  100% {
+   stroke: #ed1b72;
+  }
+ }
+ 
+ .qp-circular-loader-path {
+  -webkit-animation-name: fillunfill, rot, colors;
+  animation-name: fillunfill, rot, colors;
+  -webkit-animation-duration: 1333ms, 5332ms, 5332ms;
+  animation-duration: 1333ms, 5332ms, 5332ms;
+  
+  -webkit-animation-iteration-count: infinite, infinite, infinite;
+  animation-iteration-count: infinite, infinite, infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1), steps(4), linear;
+  animation-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1), steps(4), linear;
+  -webkit-animation-play-state: running, running, running;
+  animation-play-state: running, running, running;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+ }
+ /**End of Third party spinner code ***/

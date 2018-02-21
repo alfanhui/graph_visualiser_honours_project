@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from "react-redux";
 import PropTypes from 'prop-types';
 import Paper from 'material-ui/Paper';
-import { postQuery, checkAddress } from 'api/dbConnection';
+import { postQuery, checkAddress } from 'utilities/DBConnection';
 import { SET } from 'reducerActions';
 import { convertRawToTree } from 'utilities/DataToTree';
 import InteractionEvents from './InteractionEvents';
@@ -58,6 +58,7 @@ class HomePage extends React.Component {
     this.props.dispatch(SET("nodes", []));
     this.props.dispatch(SET("links", []));
     this.props.dispatch(SET("elementMenu", []));
+    this.props.dispatch(SET("loading", true));
     if(dataFile){
       this.props.dispatch(importJSON(dataFile)).then(() => {
         this.retrieveDataFromDatabase();
@@ -92,6 +93,7 @@ class HomePage extends React.Component {
           this.props.dispatch(convertRawToTree({ "nodes": nodes, "links": links }));
           this.updateScheduler();
         }
+        this.props.dispatch(SET("loading", false));
       });
     });
   }

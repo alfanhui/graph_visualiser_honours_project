@@ -57,6 +57,12 @@ class LayoutTree extends React.Component {
         fontSize:((12 * averagedScale) + 'px'),
         lineHeight:((26 * averagedScale) + 'px'),
         minHeight:((26 * averagedScale) + 'px'),
+      },
+      creditFontAdjustment:{
+        fontSize:((10 * averagedScale) + 'px'),
+        lineHeight:((20 * averagedScale) + 'px'),
+        minHeight:((20 * averagedScale) + 'px'),
+        opacity:0.7
       }
     };
     console.log("Width: " + width + " Height: " + height + " Ratio: " + (width / height)); // eslint-disable-line
@@ -216,7 +222,6 @@ class LayoutTree extends React.Component {
       className="svg" id="svg" ref="svg"
       width={width}
       height={height}>
-
       <defs>
       <marker id="markerArrow" viewBox="0 0 10 10" 
       markerUnits="strokeWidth" markerWidth={7*this.props.state.averagedScale} markerHeight={7*this.props.state.averagedScale}
@@ -239,6 +244,15 @@ class LayoutTree extends React.Component {
       {this.props.state.links &&  this.props.state.links.length > 0 && this.props.state.links.map(this.renderPath)}
     }
     </g>
+    {/***** Spinner Code written by Zeeshan Ansari from CodePen  https://codepen.io/zeeshan_ansari/pen/gpwQvw on 22nd of May 2015 */}
+    <svg x={width/2} y={height/2} viewBox="0 0 28 28" width="80" height="80">
+      <g className="qp-circular-loader">
+      {this.props.state.loading && <path className="qp-circular-loader-path" fill="none" d={"M 15 1.5 A 12.5,12.5 0 1 1 1.5,14"} strokeLinecap="round" />}
+      </g>
+    </svg>
+    {/** End of third party Code*/}
+    <text x={width*.92} y={height*.98} className="menuItem" style={this.state.creditFontAdjustment}>Stuart Huddy, Computing & Cognitive Science</text> 
+    <text x={width*.92} y={height*.995} className="menuItem" style={this.state.creditFontAdjustment}>Honours project, University of Dundee, 2018</text> 
     {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map((nextMenu)=> {
        return (
             <MenuMain

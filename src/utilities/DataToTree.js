@@ -7,12 +7,12 @@ import _ from 'lodash';
 let linkHashBySource;
 let linkHashByTarget;
 let nodeHash;
-let lowestNumOfLayers = 0;
-let totalNumOfLayers = 0;
+let lowestNumOfLayers;
+let totalNumOfLayers;
 
 //loop protectors
-let possibleLoopHash = {};
-let correctLoopHash = {};
+let possibleLoopHash;
+let correctLoopHash;
 let applyChildrenLoopHash = {};
 
 let width = window.innerWidth - 50;
@@ -26,9 +26,8 @@ export function scaleHeight(number){
 }
 
 export function convertRawToTree(object) {
-    possibleLoopHash = {};
-    correctLoopHash = {};
-    applyChildrenLoopHash ={};
+    lowestNumOfLayers=0;
+    totalNumOfLayers=0;
     return (dispatch) => {
         if(object.nodes.length == 0){
             return;
@@ -134,10 +133,10 @@ function getNodesWithMaxDepth(){
 function applyChildrenRecurssively(node, children){ //linkHash is using link.source
     if (linkHashBySource.hasOwnProperty(node)){ //contains a link
         linkHashBySource[node].map((link) => { // cycle through the exisiting links
-            if(applyChildrenLoopHash[link.target] == link.source){
+            if(applyChildrenLoopHash.hasOwnProperty(link.target +"_"+link.source)){
                 return;
             }else{
-                applyChildrenLoopHash[link.target] = link.source;
+                applyChildrenLoopHash[link.target +"_"+link.source] = null;
                 children.push({"name": link.target,
                 "parent": link.source,
                 "children": applyChildrenRecurssively(link.target, []),
@@ -221,6 +220,7 @@ function structureIntoTree(rootNodes){
     let branches = [];
     //create a data tree for each root node. (hopefully we can stop the publishing of duplicate nodes upon visualising)
     rootNodes.map((rootNode)=> {
+        applyChildrenLoopHash = {};
         branches.push({
             "name":rootNode.nodeID,
             "parent": "",
