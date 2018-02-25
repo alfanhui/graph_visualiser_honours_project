@@ -1,7 +1,7 @@
 import { postQuery, wipeDatabase, removeIndexes} from 'utilities/DBConnection';
 import request from 'superagent';
 import {SET} from 'reducerActions';
-
+import _ from 'lodash';
 
 //Import json from local file. Await for database to be wiped via promise before continuing..
 export function importJSON(dataFile) {
@@ -89,7 +89,8 @@ function compileQuery(nodeStatements, dictionary, edgeStatements){
   };
 }
 
-export function importNode(newNode){
+export function importNode(_newNode){
+  let newNode = _.cloneDeep(_newNode);
   return (dispatch) => {
     let {nodeStatements, dictionary} = nodeToCypher({nodes:[newNode]});
     return dispatch(postQuery(nodeStatements, dictionary)).then(function(){
@@ -111,6 +112,7 @@ function nodeToCypher(jsonObj) {
     return;
   }
   nodeParameters.props.map((item) => {
+    item.text = item.text.join(" ");
     if (!dictionary[item.type]) {
       dictionary[item.type] = [item];
     } else {
@@ -130,7 +132,8 @@ function nodeToCypher(jsonObj) {
   return {nodeStatements, dictionary};
 }
 
-export function importEdge(newEdge){
+export function importEdge(_newEdge){
+  let newEdge = _.cloneDeep(_newEdge);
   return (dispatch) => {
     let {edgeStatements} = edgeToCypher({edges:[newEdge]});
     return dispatch(postQuery(edgeStatements));
@@ -140,6 +143,7 @@ export function importEdge(newEdge){
 //handle json object ready for cypher conversion
 function edgeToCypher(jsonObj) {
   //createEdgeStatements
+  console.log("object", jsonObj);
   let edgeStatements = [];
   jsonObj.edges.map((edge) => {
     edgeStatements.push('MATCH (n:' + edge.fromType + '),(m:' + edge.toType +
@@ -149,6 +153,7 @@ function edgeToCypher(jsonObj) {
     '\', target: \'' + edge.toID +
     '\', formEdgeID: \'' + edge.formEdgeID + '\'}]->(m)');
   });
+  console.log("edge statement" , edgeStatements);
   return {edgeStatements};
 }
 

@@ -189,8 +189,9 @@ class MenuElement extends React.Component {
       
       createEdge(uuid){
         let menu = this.props.menu;
-        let node = _.find(this.props.state.nodes, { "nodeID": menu.nodeID });
-        let newEdge = makeEdge(node, {nodeID:this.state.distancesToTarget[this.state.nodeTargetCurrentIndex].targetNode});
+        let source = _.find(this.props.state.nodes, { "nodeID": menu.nodeID }),
+            target = _.find(this.props.state.nodes, {"nodeID": this.state.distancesToTarget[this.state.nodeTargetCurrentIndex].targetNode} );
+        let newEdge = makeEdge(source, target);
         this.props.dispatch(UPDATE("links", newEdge)); //update local nodes
         this.props.dispatch(stopTimer(uuid, "elementMenu")); //remove menu
         if(this.props.state.updateFromCreate){

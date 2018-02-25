@@ -5,8 +5,10 @@ export function makeEdge(source, target){
     return ({
         edgeID,
         formEdgeID:"null",
+        fromID:source.nodeID,
         source:source.nodeID,
         fromType:source.type,
+        toID:target.nodeID,
         target:target.nodeID,
         toType:target.type
     });

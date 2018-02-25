@@ -172,7 +172,7 @@ class LayoutTree extends React.Component {
   renderPath = (link) => {
     let source = _.find(this.props.state.nodes, { "nodeID": link.source });
     let target = _.find(this.props.state.nodes, { "nodeID": link.target });
-    if(target && target.hasOwnProperty("x")){ //this is because DataToTree has not finished ordering
+    if((source && source.hasOwnProperty("x")) && (target && target.hasOwnProperty("x"))){ //this is because DataToTree has not finished ordering
       let yHeightAdjustment = (60 * this.props.state.averagedScale);//(nonContextWidth + nonContextHeight / 2);
       //for arrow placement.
       if(this.props.state.defaultNodeTypes.includes(source.type)){
@@ -205,7 +205,6 @@ class LayoutTree extends React.Component {
     let midy = ((source.y + this.state.contextHeight + yHeightAdjustment) + target.y)*.50;
     let midx2 = (midx + (target.x + this.state.contextWidth / 2))*.50;
     let midy2 = (midy + target.y)*.50;
-
     return (
       <g key={link.edgeID}>
       <line className="link" stroke={color(2)}
@@ -243,7 +242,7 @@ class LayoutTree extends React.Component {
         />
       <g>
       {this.props.state.nodes && this.props.state.nodes.length > 0 && this.props.state.nodes.map(this.renderNode)}
-      {this.props.state.links &&  this.props.state.links.length > 0 && this.props.state.links.map(this.renderPath)}
+      {this.props.state.links &&  this.props.state.nodes.length > 0 && this.props.state.links.length > 0 && this.props.state.links.map(this.renderPath)}
     }
     </g>
     {/***** Spinner Code written by Zeeshan Ansari from CodePen  https://codepen.io/zeeshan_ansari/pen/gpwQvw on 22nd of May 2015 */}
@@ -253,8 +252,8 @@ class LayoutTree extends React.Component {
       </g>
     </svg>
     {/** End of third party Code*/}
-    <text x={width*.92} y={height*.98} className="menuItem" style={this.state.creditFontAdjustment}>Stuart Huddy, Computing & Cognitive Science</text> 
-    <text x={width*.92} y={height*.995} className="menuItem" style={this.state.creditFontAdjustment}>Honours project, University of Dundee, 2018</text> 
+    <text x={width*.94} y={height*.98} className="menuItem" style={this.state.creditFontAdjustment}>Stuart Huddy, Computing & Cognitive Science</text> 
+    <text x={width*.94} y={height*.995} className="menuItem" style={this.state.creditFontAdjustment}>Honours project, University of Dundee, 2018</text> 
     {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map((nextMenu)=> {
        return (
             <MenuMain
