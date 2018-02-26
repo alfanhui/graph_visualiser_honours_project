@@ -18,6 +18,7 @@ const initialState = {
   averagedScale: 1,
   creationHaltRefresh: false,
   highlightedNodes:[],
+  highlightedEdges:[],
   nodeTypes:[
     {type:"I", name:"Information Node"},
     {type:"LA", name:"Locution Node"},

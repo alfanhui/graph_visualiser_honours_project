@@ -184,7 +184,7 @@ constructor(props) {
           style={{ fontSize:((18 * this.props.state.averagedScale) + 'px'),
                   lineHeight:((36 * this.props.state.averagedScale) + 'px'),
                   minHeight:((36 * this.props.state.averagedScale) + 'px'),
-                  fill:(this.props.state.databaseError == "#FFFFF" ? 'black' : this.props.state.databaseError )}} 
+                  fill:(this.props.state.databaseError == "#FFFFF" ? 'green' : this.props.state.databaseError )}} 
           key ={'AboutDatabase2' + "_" + uuid} >{this.props.state.databaseError == "#FFFFF" ? "OK!" : "BAD"}</text>
        {/*third row*/}
        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'AboutCredButton' + "_" + uuid} fill="white"/>

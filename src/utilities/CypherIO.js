@@ -143,7 +143,6 @@ export function importEdge(_newEdge){
 //handle json object ready for cypher conversion
 function edgeToCypher(jsonObj) {
   //createEdgeStatements
-  console.log("object", jsonObj);
   let edgeStatements = [];
   jsonObj.edges.map((edge) => {
     edgeStatements.push('MATCH (n:' + edge.fromType + '),(m:' + edge.toType +
@@ -157,19 +156,20 @@ function edgeToCypher(jsonObj) {
 }
 
 export function removeNode(nodeToRemove){
-  console.log("deleting node..")
   return(dispatch) => {
     return dispatch(postQuery("MATCH (n:" + nodeToRemove.type + ") WHERE n.nodeID=\'" + nodeToRemove.nodeID + "\' DELETE n"));// eslint-disable-line
   };
 }
 
 export function removeEdges(edgesToRemove){
-  console.log("deleteing edges");
+  if(!Array.isArray(edgesToRemove)){
+    edgesToRemove = [edgesToRemove];
+  }
   let removeStatements = edgesToRemove.map((edge)=>{
     return "MATCH (n)-[rel:LINK]->(r) WHERE n.nodeID=\'" + edge.source + "\' AND r.nodeID=\'" + edge.target + "\' DELETE rel";// eslint-disable-line
   });
   return(dispatch) => {
-      return dispatch(postQuery(removeStatements)); 
-    }
+    return dispatch(postQuery(removeStatements)); 
+  };
 }
 

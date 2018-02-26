@@ -155,7 +155,7 @@ class HomePage extends React.Component {
   }
   
   render() {
-    //console.log("PROPS Updated: ", JSON.parse(JSON.stringify(this.props))); // eslint-disable-line
+    console.log("PROPS Updated: ", JSON.parse(JSON.stringify(this.props))); // eslint-disable-line
     return (
       <Paper className="paper" id="paper" ref="paper">
       <InteractionEvents 

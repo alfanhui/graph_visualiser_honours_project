@@ -69,22 +69,6 @@ class LayoutTree extends React.Component {
     
   }
   
-  componentWillMount() {
-    
-  }
-  
-  componentDidMount() {
-    
-  }
-  
-  componentWillReceiveProps() {
-    
-  }
-  
-  componentWillUnmount() {
-    
-  }
-  
   renderNode = (node) => {
     if(this.props.state.defaultNodeTypes.includes(node.type)){
       return this.renderContentNode(node);
@@ -173,7 +157,7 @@ class LayoutTree extends React.Component {
     let source = _.find(this.props.state.nodes, { "nodeID": link.source });
     let target = _.find(this.props.state.nodes, { "nodeID": link.target });
     if((source && source.hasOwnProperty("x")) && (target && target.hasOwnProperty("x"))){ //this is because DataToTree has not finished ordering
-      let yHeightAdjustment = (60 * this.props.state.averagedScale);//(nonContextWidth + nonContextHeight / 2);
+      let yHeightAdjustment = (60 * this.props.state.averagedScale) - 2;//(nonContextWidth + nonContextHeight / 2);
       //for arrow placement.
       if(this.props.state.defaultNodeTypes.includes(source.type)){
         yHeightAdjustment = ((15*this.props.state.averagedScale) * source.text.length);
@@ -186,8 +170,16 @@ class LayoutTree extends React.Component {
       + " C " + (source.x + (this.state.contextWidth / 2)) + " " + (layerMidHeight)
       + "  " + (source.x + (this.state.contextWidth / 2)) + " " + (layerMidHeight) //change source.x to target to make correct curve.
       + "  " + (target.x + (this.state.contextWidth / 2)) + " " + (target.y);
+      
+      let style = {strokeWidth:"1.1px"};
+      let highlightedEdgeUUID = _.filter(this.props.state.highlightedEdges, {source:source.nodeID, target:target.nodeID});
+      if(highlightedEdgeUUID.length > 0){
+        highlightedEdgeUUID = highlightedEdgeUUID[0];
+        style = {strokeWidth:"2.5px"};
+      }
+
       return (
-        <path className="link" key={"label" + source.nodeID + " to " + target.nodeID} stroke={color(1)} fill={"none"} d={d} markerEnd={'url(#markerArrow)'} />
+        <path className="link" key={"label" + source.nodeID + " to " + target.nodeID} stroke={highlightedEdgeUUID.hasOwnProperty("color") ? highlightedEdgeUUID.color : "grey"} fill={"none"} d={d} style={style} markerEnd={'url(#markerArrow)'} />
       );
     }
   }
@@ -238,7 +230,7 @@ class LayoutTree extends React.Component {
       width={width}
       height={height}>
       <defs>
-      <marker id="markerArrow" viewBox="0 0 10 10" 
+      <marker id="markerArrow" viewBox="0 0 10 10"
       markerUnits="strokeWidth" markerWidth={7*this.props.state.averagedScale} markerHeight={7*this.props.state.averagedScale}
       refX="7"refY="5" orient="90">
       <path d="M 0 0 L 10 5 L 0 10 z" style={{fill: 'black'}}/>
@@ -262,8 +254,8 @@ class LayoutTree extends React.Component {
 
     {this.loadingSpinner()}
 
-    <text x={width-(115*this.props.state.averagedScale)} y={height*.98} className="menuItem" style={this.state.creditFontAdjustment}>Stuart Huddy, Computing & Cognitive Science</text> 
-    <text x={width-(115*this.props.state.averagedScale)} y={height*.995} className="menuItem" style={this.state.creditFontAdjustment}>Honours project, University of Dundee, 2018</text> 
+    <text x={width-(115*this.props.state.averagedScale)} y={height-(25*this.props.state.averagedScale)} className="menuItem" style={this.state.creditFontAdjustment}>Stuart Huddy, Computing & Cognitive Science</text> 
+    <text x={width-(115*this.props.state.averagedScale)} y={height-(10*this.props.state.averagedScale)} className="menuItem" style={this.state.creditFontAdjustment}>Honours project, University of Dundee, 2018</text> 
     {this.props.state.menuMainArray.length > 0 && this.props.state.menuMainArray.map((nextMenu)=> {
        return (
             <MenuMain

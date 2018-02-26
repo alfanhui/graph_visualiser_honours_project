@@ -76,7 +76,7 @@ class InteractionEvents extends React.Component {
         if (event.target.getAttribute("id") == "main" && !this.props.state.paint) { 
           let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
           let uuid = getUuid();
-          let newMenu = { x: newX, y: newY, uuid, type:"menuMain"};
+          let newMenu = { x: newX, y: newY, uuid, type:"menuMainArray"};
           this.props.dispatch(startTimer(newMenu));
         }
         //issue with rotated nodes positing is not correct upon moving
@@ -99,7 +99,7 @@ class InteractionEvents extends React.Component {
           if(this.props.state.paint){
             let $ctx = document.getElementById("paint").getContext('2d');
             $ctx.beginPath();
-            $ctx.arc(currentX, currentY, 2.5, Math.PI*2, false);
+            $ctx.arc((currentX-20), (currentY-20), 2.5, Math.PI*2, false);
             $ctx.fillStyle = "violet";
             $ctx.lineJoin = "round";
             $ctx.lineWidth = 5;
@@ -155,9 +155,8 @@ class InteractionEvents extends React.Component {
               if(this.props.state.paint){
                 let $ctx = document.getElementById("paint").getContext('2d');
                 $ctx.beginPath();
-                $ctx.moveTo(currentTouch.currentX, currentTouch.currentY);
-                $ctx.lineTo(touch.clientX, touch.clientY);
-                //$ctx.lineCap = "round";
+                $ctx.moveTo((currentTouch.currentX - 20), (currentTouch.currentY - 20));
+                $ctx.lineTo((touch.clientX -20), (touch.clientY-20));
                 $ctx.lineWidth = 5;
                 $ctx.strokeStyle = "violet";
                 $ctx.stroke();
@@ -228,8 +227,8 @@ class InteractionEvents extends React.Component {
             if(this.props.state.paint){
               let $ctx = document.getElementById("paint").getContext('2d');
               $ctx.beginPath();
-              $ctx.moveTo(currentTouch.currentX, currentTouch.currentY);
-              $ctx.lineTo(touch.clientX, touch.clientY);
+              $ctx.moveTo((currentTouch.currentX -20), (currentTouch.currentY-20));
+              $ctx.lineTo((touch.clientX-20), (touch.clientY-20));
               $ctx.lineCap = "round";
               $ctx.lineWidth = 5;
               $ctx.strokeStyle = "violet";
