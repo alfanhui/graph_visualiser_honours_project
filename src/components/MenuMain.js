@@ -7,7 +7,7 @@ import { addToTimer, stopTimer } from 'utilities/Timer';
 import {wipeDatabase} from 'utilities/DBConnection';
 import moment from 'moment';
 import Node from 'utilities/Node';
-import {importNode} from 'utilities/JsonIO';
+import {importNode} from 'utilities/CypherIO';
 
 @connect((store) => {
 return {
@@ -45,11 +45,11 @@ constructor(props) {
     menuItemTextXOrigin: (origin+(menu_width/2)),
     menuItemTextYOrigin: (menuItemRectYOrigin+(menu_height/1.75)),
     layer:0,
-    mainMenuLayer0:[
+    menuMainArrayLayer0:[
       {title:"Graph", onClick:(uuid) => this.clickGraph(uuid)},
       {title:"Create Node", onClick:(uuid)=> this.clickCreateNode(uuid)},
       {title:"About", onClick:(uuid)=> this.clickAbout(uuid)}],
-    mainMenuLayer1:[
+    menuMainArrayLayer1:[
       {title:"Import", onClick:(uuid) => this.clickImport(uuid)},
       {title:"Auto-Layout", onClick:(uuid)=> this.clickAutoLayout(uuid)},
       {title:"Export", onClick:(uuid)=> this.clickExport(uuid)}],
@@ -86,44 +86,44 @@ constructor(props) {
   };
 }   
   
-  resetTimer = (uuid, type) => {
-    this.props.dispatch(addToTimer(uuid, type));
+  resetTimer = (uuid) => {
+    this.props.dispatch(addToTimer(uuid, "menuMainArray"));
   }
   
-  clickBack = (uuid, type) => {
-    this.props.dispatch(addToTimer(uuid, type));
+  clickBack = (uuid) => {
+    this.props.dispatch(addToTimer(uuid, "menuMainArray"));
     this.setState({layer: 0});
   }
   
   //Main menu option click
   clickGraph = (uuid) =>{
-    this.resetTimer(uuid, "mainMenu");
+    this.resetTimer(uuid);
     this.setState({layer: 2});
   }
   
   clickCreateNode = (uuid) =>{
-    this.resetTimer(uuid, "mainMenu");
+    this.resetTimer(uuid);
     this.setState({layer: 1, clickedOption:(uuid) => this.displayOptionCreateNode(uuid)});
   }
   
   clickAbout = (uuid) => {
-    this.resetTimer(uuid, "mainMenu");
+    this.resetTimer(uuid);
     this.setState({layer: 1, clickedOption:(uuid)=>this.displayOptionAbout(uuid)});
   }
   
   //Main menu option click
   clickImport = (uuid) =>{
-    this.resetTimer(uuid, "mainMenu");
+    this.resetTimer(uuid);
     this.setState({layer: 1, clickedOption:(uuid) => this.displayOptionImport(uuid)});
   }
   
   clickAutoLayout = (uuid) =>{
-    this.resetTimer(uuid, "mainMenu");
+    this.resetTimer(uuid);
     this.setState({layer: 1, clickedOption:(uuid) => this.displayOptionAutoLayout(uuid)});
   }
   
   clickExport = (uuid) => {
-    this.resetTimer(uuid, "mainMenu");
+    this.resetTimer(uuid);
     this.setState({layer: 1, clickedOption:(uuid)=>this.displayOptionExport(uuid)});
   }
   
@@ -150,7 +150,7 @@ constructor(props) {
             <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuCreateNodeFontAdjustment} key ={'CreateNodeTargetText' + "_" + uuid}> Text:</text>
             <foreignObject key={"FO_Div" + uuid} x={this.state.menu_width/2.4} y={this.state.menuItemTextYOrigin + (0.5 * this.state.menu_height)} width={(this.state.menu_width / 2)} height={this.state.menu_height}>
               <div key={"inputDiv" + uuid}xmlns="http://www.w3.org/1999/xhtml">
-                <input key={"inputInput" + uuid} id={"inputInput" + uuid} style={{width:(this.state.menu_width/1.6)+"px", height:((this.state.menu_height*.7) + "px"), fontSize:((22 * this.props.state.averagedScale) + "px")}} onChange={()=>{this.resetTimer(uuid, "mainMenu");}}/>
+                <input key={"inputInput" + uuid} id={"inputInput" + uuid} style={{width:(this.state.menu_width/1.6)+"px", height:((this.state.menu_height*.7) + "px"), fontSize:((22 * this.props.state.averagedScale) + "px")}} onChange={()=>{this.resetTimer(uuid);}}/>
               </div>
             </foreignObject>
           </g>
@@ -183,7 +183,7 @@ constructor(props) {
        <text x={this.state.menuItemTextXOrigin + this.state.menu_width/4} y={this.state.menuItemTextYOrigin + (this.state.menu_height * .25) + (1 * this.state.menu_height)} className="menuItem" 
           style={{ fontSize:((18 * this.props.state.averagedScale) + 'px'),
                   lineHeight:((36 * this.props.state.averagedScale) + 'px'),
-                  minHeight:((36 * this.props.averagedScale) + 'px'),
+                  minHeight:((36 * this.props.state.averagedScale) + 'px'),
                   fill:(this.props.state.databaseError == "#FFFFF" ? 'black' : this.props.state.databaseError )}} 
           key ={'AboutDatabase2' + "_" + uuid} >{this.props.state.databaseError == "#FFFFF" ? "OK!" : "BAD"}</text>
        {/*third row*/}
@@ -222,7 +222,7 @@ constructor(props) {
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'AutoLayoutOptionBox0' + "_" + uuid} fill="white"/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'AutoLayoutOptionText0' + "_" + uuid} >Auto-Layout</text>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'AutoLayoutOptionText1' + "_" + uuid} >will refresh page</text>
-        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'AutoLayoutOptionBox1' + "_" + uuid} fill="white" onClick={()=>{this.props.dispatch(stopTimer(uuid, "mainMenu")), this.props.loadDatabase(null);}}/>
+        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'AutoLayoutOptionBox1' + "_" + uuid} fill="white" onClick={()=>{this.props.dispatch(stopTimer(uuid, "menuMainArray")), this.props.loadDatabase(null);}}/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'AutoLayoutOptionText2' + "_" + uuid}> OK </text>
         </g>
       );
@@ -266,14 +266,14 @@ constructor(props) {
     let nodeData = {type:this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type, text};
     let newNode = new Node(menu, nodeData, isContent);
     this.props.dispatch(UPDATE("nodes", newNode)); //update local nodes
-    this.props.dispatch(stopTimer(uuid, "mainMenu")); //remove menu
+    this.props.dispatch(stopTimer(uuid, "menuMainArray")); //remove menu
     if(this.props.state.updateFromCreate){
       this.props.dispatch(importNode(newNode)); //import into neo4j
     }
   }
 
   cycleIndex(uuid, type){
-    this.resetTimer(uuid, "mainMenu");
+    this.resetTimer(uuid);
     let variable = type + "CurrentIndex";
     if((this.props.state[type].length-1) == this.state[variable]){
       this.setState({[variable]:0});
@@ -283,7 +283,7 @@ constructor(props) {
   }
 
   toggleProp(uuid, propName){
-    this.resetTimer(uuid, "mainMenu");
+    this.resetTimer(uuid);
     this.props.dispatch(SET(propName, !(this.props.state[propName])));
   }
 
@@ -364,7 +364,7 @@ constructor(props) {
       case 1:{
         return( 
           <g>
-          <rect fill="white" x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={this.state.menu_height*3} key={'displayOption' + menu.uuid} onClick={()=>this.resetTimer(menu.uuid, menu.type)} style={{stroke:'black', strokeWidth:'1px', fill:'#FF8A80'}}/>
+          <rect fill="white" x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={this.state.menu_height*3} key={'displayOption' + menu.uuid} onClick={()=>this.resetTimer(menu.uuid)} style={{stroke:'black', strokeWidth:'1px', fill:'#FF8A80'}}/>
           {this.state.clickedOption(menu.uuid)}
           </g>
         );        
@@ -395,23 +395,23 @@ constructor(props) {
     return(
       <g transform={transform} key={menu.uuid}>
       {<rect x={this.state.origin-(this.state.origin*0.3)} y={this.state.origin -(this.state.origin*0.2)} width={this.state.menu_width*1.1} height={this.state.menu_height*4.2} key={'touchborder' + menu.x + menu.y} style={{fillOpacity:"0.0", fill:'none'}}/> }{/* stops touches conflicting */}
-      <rect x={this.state.origin} y={this.state.origin} width={this.state.menu_width} height={this.state.menu_height} key={'mainMenuRect' + menu.x + menu.y} fill="white" onClick={()=>this.resetTimer(menu.uuid, menu.type)} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
+      <rect x={this.state.origin} y={this.state.origin} width={this.state.menu_width} height={this.state.menu_height} key={'menuMainRect' + menu.x + menu.y} fill="white" onClick={()=>this.resetTimer(menu.uuid)} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
       {this.state.layer > 0 ? 
         <g>
-        <rect fill="white" width={25} height={25} transform={pathTransform} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
-        <path stroke={"black"} d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" transform={pathTransform} style={{fill:"black"}} onClick={()=>this.clickBack(menu.uuid, menu.type)}/>
+        <rect fill="white" width={25} height={25} transform={pathTransform} onClick={()=>this.clickBack(menu.uuid)}/>
+        <path stroke={"black"} d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" transform={pathTransform} style={{fill:"black"}} onClick={()=>this.clickBack(menu.uuid)}/>
         </g>
         :
         <g/>
       }
-      <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.3)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'mainMenuDetails1' + menu.x + menu.y} >{"Nodes: (" + this.props.state.nodes.length + ")"}</text>
-      <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.6)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'mainMenuDetails2' + menu.x + menu.y} >{"Edges: (" + this.props.state.links.length + ")"}</text>
+      <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.3)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'menuMainArrayDetails1' + menu.x + menu.y} >{"Nodes: (" + this.props.state.nodes.length + ")"}</text>
+      <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.6)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'menuMainArrayDetails2' + menu.x + menu.y} >{"Edges: (" + this.props.state.links.length + ")"}</text>
       {
         this.props.state.updateAvailable
         ?
-        <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.9)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'mainMenuDetails3' + menu.x + menu.y} stroke="none" fill="red">{"Update Available!"}</text>
+        <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.9)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'menuMainArrayDetails3' + menu.x + menu.y} stroke="none" fill="red">{"Update Available!"}</text>
         :
-        <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.9)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'mainMenuDetails3' + menu.x + menu.y} >{"Last updated: " + this.props.state.lastUpdated}</text>
+        <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.9)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'menuMainArrayDetails3' + menu.x + menu.y} >{"Last updated: " + this.props.state.lastUpdated}</text>
       }
       {this.menuItems(menu)}
       </g>

@@ -25,8 +25,8 @@ class LayoutTree extends React.Component {
   static propTypes = {
     dispatch: PropTypes.func,
     state: PropTypes.object,
-    mainMenu: PropTypes.func,
-    elementMenu: PropTypes.func,
+    menuMainArray: PropTypes.func,
+    menuElementArray: PropTypes.func,
     onTouchStart: PropTypes.func,
     onTouchMove: PropTypes.func,
     onTouchEnd: PropTypes.func,
@@ -44,10 +44,10 @@ class LayoutTree extends React.Component {
       nonContextWidth: (50 * averagedScale),
       nonContextHeight: (50 * averagedScale),
       layer:0,
-      elementMenuLayer0:[{title:"Create Edge", onClick:(uuid) => this.createEdge(uuid)}, 
+      menuElementArrayLayer0:[{title:"Create Edge", onClick:(uuid) => this.createEdge(uuid)}, 
                           {title:"Edit Node", onClick:this.editNode}, 
                           {title:"Delete Node", onClick:this.deleteNode}],
-      mainMenuLayer0:["Database", "Graph", "Options"],
+      menuMainArrayLayer0:["Database", "Graph", "Options"],
       contextFontAdjustment:{
         fontSize: ((10 * averagedScale) + 'px'),
         lineHeight:((22 * averagedScale) + 'px'),
@@ -214,6 +214,20 @@ class LayoutTree extends React.Component {
       </g>
     );
   }
+  
+  /* Spinner Code written by Zeeshan Ansari from CodePen  
+   * https://codepen.io/zeeshan_ansari/pen/gpwQvw 
+   * on 22nd of May 2015 
+   */
+  loadingSpinner(){
+    return(
+      <svg x={width/2} y={height/2} viewBox="0 0 28 28" width="80" height="80">
+        <g className="qp-circular-loader">
+        {this.props.state.loading && <path className="qp-circular-loader-path" fill="none" d={"M 15 1.5 A 12.5,12.5 0 1 1 1.5,14"} strokeLinecap="round" />}
+        </g>
+      </svg>
+    );
+  }
 
   render() {
     return (
@@ -245,16 +259,12 @@ class LayoutTree extends React.Component {
       {this.props.state.links &&  this.props.state.nodes.length > 0 && this.props.state.links.length > 0 && this.props.state.links.map(this.renderPath)}
     }
     </g>
-    {/***** Spinner Code written by Zeeshan Ansari from CodePen  https://codepen.io/zeeshan_ansari/pen/gpwQvw on 22nd of May 2015 */}
-    <svg x={width/2} y={height/2} viewBox="0 0 28 28" width="80" height="80">
-      <g className="qp-circular-loader">
-      {this.props.state.loading && <path className="qp-circular-loader-path" fill="none" d={"M 15 1.5 A 12.5,12.5 0 1 1 1.5,14"} strokeLinecap="round" />}
-      </g>
-    </svg>
-    {/** End of third party Code*/}
-    <text x={width*.94} y={height*.98} className="menuItem" style={this.state.creditFontAdjustment}>Stuart Huddy, Computing & Cognitive Science</text> 
-    <text x={width*.94} y={height*.995} className="menuItem" style={this.state.creditFontAdjustment}>Honours project, University of Dundee, 2018</text> 
-    {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map((nextMenu)=> {
+
+    {this.loadingSpinner()}
+
+    <text x={width-(115*this.props.state.averagedScale)} y={height*.98} className="menuItem" style={this.state.creditFontAdjustment}>Stuart Huddy, Computing & Cognitive Science</text> 
+    <text x={width-(115*this.props.state.averagedScale)} y={height*.995} className="menuItem" style={this.state.creditFontAdjustment}>Honours project, University of Dundee, 2018</text> 
+    {this.props.state.menuMainArray.length > 0 && this.props.state.menuMainArray.map((nextMenu)=> {
        return (
             <MenuMain
             key={"MM" + nextMenu.x + nextMenu.y}
@@ -263,7 +273,7 @@ class LayoutTree extends React.Component {
             />
           );
     })}
-    {this.props.state.elementMenu.length > 0 && this.props.state.elementMenu.map((nextMenu)=> {
+    {this.props.state.menuElementArray.length > 0 && this.props.state.menuElementArray.map((nextMenu)=> {
       return (
             <MenuElement
               key={"EM" + nextMenu.x + nextMenu.y}

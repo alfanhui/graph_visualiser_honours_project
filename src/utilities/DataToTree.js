@@ -202,6 +202,8 @@ function fixLayerCount(){
         if (nodeHash.hasOwnProperty(node)) {
             if(nodeHash[node].layer < lowestNumOfLayers){
                 lowestNumOfLayers = nodeHash[node].layer;
+            }else if(nodeHash[node].layer > totalNumOfLayers){
+                totalNumOfLayers = nodeHash[node].layer;
             }
         }
     }

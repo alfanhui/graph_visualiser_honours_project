@@ -12,10 +12,12 @@ export default class Node{
         //type of extended node
         let type = nodeData.type;
         let text;
-        if(isContext){
-            text = wrapContextTextToArray(nodeData.text);
-        }else{
-            text = wrapNonContextTextToArray(nodeData.text);
+        if(!Array.isArray(nodeData.text)){ //if its an array already: give up
+            if(isContext){
+                text = wrapContextTextToArray(nodeData.text);
+            }else{
+                text = wrapNonContextTextToArray(nodeData.text);
+            }
         }
     
         let layer = 0;

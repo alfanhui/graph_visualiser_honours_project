@@ -7,7 +7,7 @@ import { SET } from 'reducerActions';
 import { convertRawToTree } from 'utilities/DataToTree';
 import InteractionEvents from './InteractionEvents';
 import { wrapContextTextToArray, wrapNonContextTextToArray } from 'utilities/WrapText';
-import { importJSON } from 'utilities/JsonIO';
+import { importJSON } from 'utilities/CypherIO';
 import hash from 'object-hash';
 
 @connect((store) => {
@@ -57,7 +57,7 @@ class HomePage extends React.Component {
     //check the address of the database
     this.props.dispatch(SET("nodes", []));
     this.props.dispatch(SET("links", []));
-    this.props.dispatch(SET("elementMenu", []));
+    this.props.dispatch(SET("menuElementArray", []));
     this.props.dispatch(SET("loading", true));
     if(dataFile){
       this.props.dispatch(importJSON(dataFile)).then(() => {
@@ -155,7 +155,7 @@ class HomePage extends React.Component {
   }
   
   render() {
-    console.log("PROPS Updated: ", JSON.parse(JSON.stringify(this.props))); // eslint-disable-line
+    //console.log("PROPS Updated: ", JSON.parse(JSON.stringify(this.props))); // eslint-disable-line
     return (
       <Paper className="paper" id="paper" ref="paper">
       <InteractionEvents 

@@ -31,8 +31,8 @@ class LayoutForceDirected extends React.Component {
         onMouseDown: PropTypes.func,
         onMouseMove: PropTypes.func,
         onMouseUp: PropTypes.func,
-        mainMenu: PropTypes.func,
-        elementMenu: PropTypes.func,
+        menuMainArray: PropTypes.func,
+        menuElementArray: PropTypes.func,
     };
 
 
@@ -115,8 +115,8 @@ class LayoutForceDirected extends React.Component {
                     {this.props.state.nodes.length > 0 && this.props.state.nodes.map(this.renderNodes)}
                     {this.props.state.nodes.length > 0 && this.props.state.nodes.map(this.renderLabels)}
                 </g>
-                {this.props.state.mainMenu.length > 0 && this.props.state.mainMenu.map((menu) => this.props.mainMenu(menu))}
-                {this.props.state.elementMenu.length > 0 && this.props.state.elementMenu.map((menu) => this.props.elementMenu(menu))}
+                {this.props.state.menuMainArray.length > 0 && this.props.state.menuMainArray.map((menu) => this.props.menuMainArray(menu))}
+                {this.props.state.menuElementArray.length > 0 && this.props.state.menuElementArray.map((menu) => this.props.menuElementArray(menu))}
                 This Browser does not support html canvas.
       </svg>
         );

@@ -153,19 +153,23 @@ function edgeToCypher(jsonObj) {
     '\', target: \'' + edge.toID +
     '\', formEdgeID: \'' + edge.formEdgeID + '\'}]->(m)');
   });
-  console.log("edge statement" , edgeStatements);
   return {edgeStatements};
 }
 
 export function removeNode(nodeToRemove){
+  console.log("deleting node..")
   return(dispatch) => {
-    dispatch(postQuery("Match (n:" + nodeToRemove.type + ") where n.nodeID=\'" + nodeToRemove.nodeID + "\' delete n"));// eslint-disable-line
+    return dispatch(postQuery("MATCH (n:" + nodeToRemove.type + ") WHERE n.nodeID=\'" + nodeToRemove.nodeID + "\' DELETE n"));// eslint-disable-line
   };
 }
 
-export function removeEdge(edgeToRemove){
+export function removeEdges(edgesToRemove){
+  console.log("deleteing edges");
+  let removeStatements = edgesToRemove.map((edge)=>{
+    return "MATCH (n)-[rel:LINK]->(r) WHERE n.nodeID=\'" + edge.source + "\' AND r.nodeID=\'" + edge.target + "\' DELETE rel";// eslint-disable-line
+  });
   return(dispatch) => {
-    dispatch(postQuery("MATCH (n)-[rel:LINK]->(r) WHERE n.nodeID=\'" + edgeToRemove.source + "\' AND r.nodeID=\'" + edgeToRemove.target + "\' DELETE rel;")); // eslint-disable-line
-  };
+      return dispatch(postQuery(removeStatements)); 
+    }
 }
 

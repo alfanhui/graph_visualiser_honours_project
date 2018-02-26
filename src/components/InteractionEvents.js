@@ -76,7 +76,7 @@ class InteractionEvents extends React.Component {
         if (event.target.getAttribute("id") == "main" && !this.props.state.paint) { 
           let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
           let uuid = getUuid();
-          let newMenu = { x: newX, y: newY, uuid, type:"mainMenu"};
+          let newMenu = { x: newX, y: newY, uuid, type:"menuMain"};
           this.props.dispatch(startTimer(newMenu));
         }
         //issue with rotated nodes positing is not correct upon moving
@@ -216,12 +216,12 @@ class InteractionEvents extends React.Component {
               if (currentTouch.elem.getAttribute("id") == "main" && !currentTouch.moved && this.props.state.paint) { 
                 let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
                 let uuid = getUuid();
-                let newMenu = { x: newX, y: newY, uuid, type:"mainMenu"};
+                let newMenu = { x: newX, y: newY, uuid, type:"menuMainArray"};
                 this.props.dispatch(startTimer(newMenu));
               }else if(currentTouch.elem.getAttribute("id") != "main" ){
                 let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
                 let uuid = getUuid();
-                let newMenu = { x: newX, y: newY, uuid,   type:"elementMenu", nodeID: event.target.id};
+                let newMenu = { x: newX, y: newY, uuid,   type:"menuElementArray", nodeID: event.target.id};
                 this.props.dispatch(startTimer(newMenu));
               }
             }
@@ -251,12 +251,12 @@ class InteractionEvents extends React.Component {
           if (event.target.getAttribute("id") == "main") {
             let {newX, newY} = this.deadZone(event.clientX, event.clientY);
             let uuid = getUuid();
-            let newMenu = { x: newX, y: newY, uuid, type:"mainMenu"};
+            let newMenu = { x: newX, y: newY, uuid, type:"menuMainArray"};
             this.props.dispatch(startTimer(newMenu));
           } else {
             let {newX, newY} = this.deadZone(event.clientX, event.clientY);
             let uuid = getUuid();
-            let newMenu = { x: newX, y: newY, uuid, type:"elementMenu", nodeID: event.target.id };
+            let newMenu = { x: newX, y: newY, uuid, type:"menuElementArray", nodeID: event.target.id };
             this.props.dispatch(startTimer(newMenu));
           }
         }
@@ -309,8 +309,8 @@ class InteractionEvents extends React.Component {
       onMouseDown={this.onNewMouseStart}
       onMouseMove={this.onNewMouseMove}
       onMouseUp={this.onNewMouseUp}
-      mainMenu={this.mainMenu}
-      elementMenu={this.elementMenu}
+      menuMainArray={this.menuMainArray}
+      menuElementArray={this.menuElementArray}
       resetTimer={this.resetTimer}
       onTouchStart={this.touchStart}
       onTouchMove={this.touchMove}
@@ -321,8 +321,8 @@ class InteractionEvents extends React.Component {
       onMouseDown={this.onNewMouseStart}
       onMouseMove={this.onNewMouseMove}
       onMouseUp={this.onNewMouseUp}
-      mainMenu={this.mainMenu}
-      elementMenu={this.elementMenu}
+      menuMainArray={this.menuMainArray}
+      menuElementArray={this.menuElementArray}
       resetTimer={this.resetTimer}
       onTouchStart={this.touchStart}
       onTouchMove={this.touchMove}
