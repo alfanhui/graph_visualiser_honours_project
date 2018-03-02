@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from "react-redux";
 import PropTypes from 'prop-types';
 import _ from 'lodash';
+import classnames from 'classnames';
 import { UPDATE, DROP } from 'reducerActions';
 import { addToTimer, stopTimer } from 'utilities/Timer';
 import {makeEdge} from 'utilities/Edge';
@@ -54,22 +55,6 @@ class MenuElement extends React.Component {
           {title:"OR", onClick:(uuid) => this.resetTimer(uuid)}, 
           {title:"Edge..", onClick:(uuid) => this.clickDeleteEdges(uuid)}],
           clickedOption: ()=>{},
-          menuDetailsFontAdjustment:{
-            fontSize: ((12 * averagedScale) + 'px'),
-            lineHeight:((26 * averagedScale) + 'px'),
-            minHeight:((26 * averagedScale) + 'px'),
-          },
-          menuItemFontAdjustment:{
-            fontSize:((18 * averagedScale) + 'px'),
-            lineHeight:((36 * averagedScale) + 'px'),
-            minHeight:((36 * averagedScale) + 'px'),
-          }, 
-          menuCreateEdgeFontAdjustment:{
-            fontSize:((18 * averagedScale) + 'px'),
-            lineHeight:((36 * averagedScale) + 'px'),
-            minHeight:((36 * averagedScale) + 'px'),
-            
-          }, 
           colourTag:this.getRandomColor(),
           nodeTypesCurrentIndex:0,
           nodeTargetCurrentIndex:1,
@@ -159,22 +144,18 @@ class MenuElement extends React.Component {
           return(
             <g key ={'createEdge' + "_" + uuid}>
             <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'createEdgeBox' + "_" + uuid}/>
-            <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key={'createEdgeBoxText' + "_" + uuid} >[Tap to Choose]</text>
+            <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'createEdgeBoxText' + "_" + uuid} >[Tap to Choose]</text>
             
             <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'CreateEdgeTarget' + "_" + uuid} onClick={()=>{this.cycleDistanceIndex(uuid);}}/>
-            <text x={this.state.origin + (this.state.menu_width*.25)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key ={'CreateEdgeTargetText' + "_" + uuid}> Target:</text>
-            <text x={this.state.origin + (this.state.menu_width*.75)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" 
-            style={{fontSize:((18 * this.props.state.averagedScale) + 'px'), 
-            lineHeight:((36 * this.props.state.averagedScale) + 'px'),
-            minHeight:((36 * this.props.state.averagedScale) + 'px'),
-            stroke:this.state.colourTag,
-            strokeWidth:"2" }} 
+            <text x={this.state.origin + (this.state.menu_width*.25)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")}  key ={'CreateEdgeTargetText' + "_" + uuid}> Target:</text>
+            <text x={this.state.origin + (this.state.menu_width*.75)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} 
+            style={{ stroke:this.state.colourTag, strokeWidth:"2" }} 
             key={'createEdgeBoxTarget' + "_" + uuid}> 
             {this.state.distancesToTarget.length > 1 && this.state.distancesToTarget[this.state.nodeTargetCurrentIndex].targetNode}
             </text>
             
             <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'createEdgeButton' + "_" + uuid} onClick={()=>{this.createEdge(uuid);}}/>
-            <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'createEdgeButtonText' + "_" + uuid} >Create</text>
+            <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem","fontAdjustment18")} key ={'createEdgeButtonText' + "_" + uuid} >Create</text>
             </g>
           );
         }
@@ -184,14 +165,14 @@ class MenuElement extends React.Component {
           return(
             <g key ={'editEdge' + "_" + uuid}>
             <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'editEdgeBox' + "_" + uuid}/>
-            <text x={this.state.origin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key={'editEdgeCurrentText' + "_" + uuid} >Current Type:</text>
-            <text x={this.state.origin + (this.state.menu_width*.80)} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key={'editEdgeBoxCurrentText' + "_" + uuid} >{node.type}</text>
+            <text x={this.state.origin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18_E")} key={'editEdgeCurrentText' + "_" + uuid} >Current Type:</text>
+            <text x={this.state.origin + (this.state.menu_width*.80)} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'editEdgeBoxCurrentText' + "_" + uuid} >{node.type}</text>
             
             <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeTarget' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid,"nodeTypes");}}/>
-            <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key={'editEdgeBoxTarget' + "_" + uuid}>{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].name}</text>
+            <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18_E")} key={'editEdgeBoxTarget' + "_" + uuid}>{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].name}</text>
             
             <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeButton' + "_" + uuid} onClick={()=>{this.editNode(uuid);}}/>
-            <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'editEdgeButtonText' + "_" + uuid} >Ammend</text>
+            <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem","fontAdjustment18")} key ={'editEdgeButtonText' + "_" + uuid} >Ammend</text>
             </g>
           );
         }
@@ -200,22 +181,18 @@ class MenuElement extends React.Component {
           return(
           <g key ={'deleteEdges' + "_" + uuid}>
           <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'deleteEdgesBox' + "_" + uuid}/>
-          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key={'deleteEdgesBoxText' + "_" + uuid} >[Tap to Choose]</text>
+          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'deleteEdgesBoxText' + "_" + uuid} >[Tap to Choose]</text>
           
           <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'deleteEdgesTarget' + "_" + uuid} onClick={()=>{this.cycleEdges(uuid);}}/>
-          <text x={this.state.origin  + (this.state.menu_width*.25)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" style={this.state.menuCreateEdgeFontAdjustment} key ={'deleteEdgesTargetText' + "_" + uuid}> Target:</text>
-          <text x={this.state.origin + (this.state.menu_width*.75)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className="menuItem" 
-          style={{fontSize:((18 * this.props.state.averagedScale) + 'px'), 
-          lineHeight:((36 * this.props.state.averagedScale) + 'px'),
-          minHeight:((36 * this.props.state.averagedScale) + 'px'),
-          stroke:this.state.colourTag,
-          strokeWidth:"2" }} 
+          <text x={this.state.origin  + (this.state.menu_width*.25)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key ={'deleteEdgesTargetText' + "_" + uuid}> Target:</text>
+          <text x={this.state.origin + (this.state.menu_width*.75)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} 
+          style={{ stroke:this.state.colourTag, strokeWidth:"2" }} 
           key={'deleteEdgesBoxTarget' + "_" + uuid}> 
           {this.state.connectedEdges[this.state.connectedEdgesCurrentIndex].edgeID}
           </text>
           
           <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'deleteEdgesButton' + "_" + uuid} onClick={()=>{this.deleteEdge(uuid);}}/>
-          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'deleteEdgesButtonText' + "_" + uuid} >Delete Edge</text>
+          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem","fontAdjustment18")} key ={'deleteEdgesButtonText' + "_" + uuid} >Delete Edge</text>
           </g>
           );
         }
@@ -358,7 +335,7 @@ class MenuElement extends React.Component {
           return ( 
             <g key ={'ItemGroup' + index + "_" + uuid}>
             <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (index * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'menuRect' + index + "_" + uuid} fill="white" onClick={() => menuObject.onClick(uuid)}/>
-            <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (index * this.state.menu_height)} className="menuItem" style={this.state.menuItemFontAdjustment} key ={'MenuItem' + index + "_" + uuid} >{menuObject.title}</text>
+            <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (index * this.state.menu_height)} className={classnames("menuItem","fontAdjustment18")} key ={'MenuItem' + index + "_" + uuid} >{menuObject.title}</text>
             </g>
           );
         }
@@ -380,9 +357,9 @@ class MenuElement extends React.Component {
               :
               <g/>
             }
-            <text x={this.state.origin*2} y={this.state.origin + (this.state.menu_height *.3)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'elementDetails1' + node.nodeID}>{"ID: " + node.type + "_" + node.nodeID}</text>
-            <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.6)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'elementDetails2' + node.nodeID} >{"Date: " + node.date}</text>
-            <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.9)} className="menuDetails" style={this.state.menuDetailsFontAdjustment} key={'elementDetails3' + node.nodeID} >{"Time: " + node.time}</text>
+            <text x={this.state.origin*2} y={this.state.origin + (this.state.menu_height *.3)} className={classnames("menuDetails", "fontAdjustment12")} key={'elementDetails1' + node.nodeID}>{"ID: " + node.type + "_" + node.nodeID}</text>
+            <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.6)} className={classnames("menuDetails", "fontAdjustment12")} key={'elementDetails2' + node.nodeID} >{"Date: " + node.date}</text>
+            <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.9)} className={classnames("menuDetails", "fontAdjustment12")} key={'elementDetails3' + node.nodeID} >{"Time: " + node.time}</text>
             {this.menuItems(menu)}
             </g>
           );

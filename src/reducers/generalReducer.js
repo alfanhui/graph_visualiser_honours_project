@@ -22,11 +22,14 @@ const initialState = {
   nodeTypes:[
     {type:"I", name:"Information Node"},
     {type:"LA", name:"Locution Node"},
-    {type:"RA", name:"Default Inference"},
-    {type:"CA", name:"Default Conflict"},
-    {type:"TA", name:"Default Transition"},
-    {type:"MA", name:"Default Rephrase"},
-    {type:"PA", name:"Default Preference"},
+    {type:"RA", name:"Default Inference", scheme:"Default Inference", schemeID:"72"},
+    {type:"CA", name:"Default Conflict", scheme:"Default Conflict", schemeID:"71"},
+    {type:"TA", name:"Default Transition", scheme:"Default Transition", schemeID:"82"},
+    {type:"MA", name:"Default Rephrase", scheme:"Default Rephrase", schemeID:"144"},
+    {type:"PA", name:"Default Preference", scheme:"Default Preference", schemeID:"161"},
+    {type:"YA", name: "Restating", scheme:"Restating", schemeID:"101"},
+    {type:"YA", name: "Disagreeing", scheme:"Disagreeing", schemeID:"78"},
+    {type:"YA", name: "Arguing", scheme:"Arguing", schemeID:"80"}
   ],
   edgeTypesTEST:{
     "DAD":"FATHER TO",

@@ -6,7 +6,7 @@ import _ from 'lodash';
 import {scaleHeight} from 'utilities/DataToTree';
 import MenuElement from 'components/MenuElement';
 import MenuMain from 'components/MenuMain';
-
+import classnames from 'classnames';
 let width = window.innerWidth - 40;
 let height = window.innerHeight - 40;
 
@@ -37,7 +37,6 @@ class LayoutTree extends React.Component {
   constructor(props) {
     super(props);
     let averagedScale = this.props.state.averagedScale;
-
     this.state = {
       contextWidth: (150 * averagedScale),
       contextHeight: (10 * averagedScale),
@@ -48,22 +47,6 @@ class LayoutTree extends React.Component {
                           {title:"Edit Node", onClick:this.editNode}, 
                           {title:"Delete Node", onClick:this.deleteNode}],
       menuMainArrayLayer0:["Database", "Graph", "Options"],
-      contextFontAdjustment:{
-        fontSize: ((10 * averagedScale) + 'px'),
-        lineHeight:((22 * averagedScale) + 'px'),
-        minHeight:((22 * averagedScale) + 'px'),
-      },
-      nonContextFontAdjustment:{
-        fontSize:((12 * averagedScale) + 'px'),
-        lineHeight:((26 * averagedScale) + 'px'),
-        minHeight:((26 * averagedScale) + 'px'),
-      },
-      creditFontAdjustment:{
-        fontSize:((10 * averagedScale) + 'px'),
-        lineHeight:((20 * averagedScale) + 'px'),
-        minHeight:((20 * averagedScale) + 'px'),
-        opacity:0.7
-      }
     };
     console.log("Width: " + width + " Height: " + height + " Ratio: " + (width / height)); // eslint-disable-line
     
@@ -103,7 +86,7 @@ class LayoutTree extends React.Component {
           node.text.map((line, index) => {
             let transformLabel = 'translate(' + (node.x + 5) + ',' + (node.y + (15*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
             return(
-              <text className="ContentText" style={this.state.contextFontAdjustment} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
+              <text className={classnames("ContentText", "fontAdjustment10")} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
             );
           })
         }      
@@ -142,7 +125,7 @@ class LayoutTree extends React.Component {
               transformLabel = 'translate(' + (node.x + this.state.contextWidth/2) + ',' + (node.y + (28*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
             }
             return(
-              <text className="NonContentText" style={this.state.nonContextFontAdjustment} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
+              <text className={classnames("NonContentText", "fontAdjustment10")} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
             );
           })
         }      
@@ -226,7 +209,7 @@ class LayoutTree extends React.Component {
       <div>
         { this.props.state.paint &&   <canvas className="paint" id="paint" width={width-5} height={height} /> }
       <svg
-      className="svg" id="svg" ref="svg"
+      className="svg" id="svg" ref="svg" key="svg"
       width={width}
       height={height}>
       <defs>
@@ -254,8 +237,9 @@ class LayoutTree extends React.Component {
 
     {this.loadingSpinner()}
 
-    <text x={width-(115*this.props.state.averagedScale)} y={height-(25*this.props.state.averagedScale)} className="menuItem" style={this.state.creditFontAdjustment}>Stuart Huddy, Computing & Cognitive Science</text> 
-    <text x={width-(115*this.props.state.averagedScale)} y={height-(10*this.props.state.averagedScale)} className="menuItem" style={this.state.creditFontAdjustment}>Honours project, University of Dundee, 2018</text> 
+    <text x={width-(115*this.props.state.averagedScale)} y={height-(25*this.props.state.averagedScale)} className={classnames("menuItem", "fontAdjustment10_E")} >Stuart Huddy, Computing & Cognitive Science</text> 
+    <text x={width-(115*this.props.state.averagedScale)} y={height-(10*this.props.state.averagedScale)} className={classnames("menuItem", "fontAdjustment10_E")}>Honours project, University of Dundee, 2018</text> 
+    <g id="menus" ref="menus" key="menus">
     {this.props.state.menuMainArray.length > 0 && this.props.state.menuMainArray.map((nextMenu)=> {
        return (
             <MenuMain
@@ -273,6 +257,7 @@ class LayoutTree extends React.Component {
             />
           );
     })}
+    </g>
     This Browser does not support html canvas.
     </svg>
     </div>

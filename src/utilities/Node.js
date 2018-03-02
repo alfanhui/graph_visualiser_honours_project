@@ -34,5 +34,9 @@ export default class Node{
         this.text = text;
         this.x = x;
         this.y = y;
+        if(nodeData.hasOwnProperty("scheme")){
+            this.scheme = nodeData.scheme;
+            this.schemeID = nodeData.schemeID;
+        }
     }
 }

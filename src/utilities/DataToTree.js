@@ -38,7 +38,6 @@ export function convertRawToTree(object) {
         linkHashBySource = {};
         linkHashByTarget = {};
         nodeHash = {};
-        
         createDataHashes(nodes, links);
         
         //Calculate possible depths for all nodes, starting from roots
@@ -72,7 +71,6 @@ export function convertRawToTree(object) {
         root = tree(root);
         
         let newNodes = treeIntoNodes(root);
-        
         dispatch(SET("nodes", newNodes));
         dispatch(SET("layoutReady",true));
     };
@@ -264,7 +262,9 @@ function structureIntoTree(rootNodes){
                         "time":node_children.data.time,
                         "date":node_children.data.date,      
                         "x":node_children.x,      
-                        "y":node_children.data.scaleLayer,           
+                        "y":node_children.data.scaleLayer,         
+                        "scheme":node_children.data.scheme,
+                        "schemeID":node_children.data.schemeID,
                     });
                 }
             };
@@ -274,15 +274,18 @@ function structureIntoTree(rootNodes){
                 });
             }
             if(!_.find(newNodeArray, {"nodeID": node.data.nodeID})){
-                newNodeArray.push({"nodeID":node.data.nodeID,
-                "text":node.data.text, 
-                "type":node.data.type,
-                "timestamp":node.data.timestamp,      
-                "layer":node.data.layer,
-                "time":node.data.time,
-                "date":node.data.date,        
-                "x":node.x,      
-                "y":node.data.scaleLayer,           
+                newNodeArray.push({
+                    "nodeID":node.data.nodeID,
+                    "text":node.data.text, 
+                    "type":node.data.type,
+                    "timestamp":node.data.timestamp,      
+                    "layer":node.data.layer,
+                    "time":node.data.time,
+                    "date":node.data.date,        
+                    "x":node.x,      
+                    "y":node.data.scaleLayer,  
+                    "scheme":node.data.scheme,
+                    "schemeID":node.data.schemeID,         
             });
         }
     });  
