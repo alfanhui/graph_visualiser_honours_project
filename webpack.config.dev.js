@@ -8,9 +8,10 @@ export default {
         alias: {
             reducerActions: path.resolve(__dirname, 'src/reducerActions/index.js'),
             constants: path.resolve(__dirname, 'src/constants/'),
-            components: path.resolve('src/components/'),
-            data: path.resolve('src/data/'),
-            utilities: path.resolve('src/utilities/')
+            components: path.resolve(__dirname, 'src/components/'),
+            data: path.resolve(__dirname, 'src/data/'),
+            utilities: path.resolve(__dirname, 'src/utilities/'),
+            config: path.resolve(__dirname, 'src/config.js')
         },
         extensions: ['*', '.js', '.jsx', '.json']
   },

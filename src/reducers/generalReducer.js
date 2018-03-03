@@ -8,6 +8,7 @@ const initialState = {
   layout: "TREE",
   layoutReady: false,
   defaultNodeTypes: ["I", "L"],
+  connectionType: "",
   updateInterval: 15000,
   updateFromCreate: false,
   updateAuto: false,

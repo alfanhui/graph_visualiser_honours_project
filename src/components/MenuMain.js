@@ -8,7 +8,6 @@ import {wipeDatabase} from 'utilities/DBConnection';
 import moment from 'moment';
 import Node from 'utilities/Node';
 import {importNode} from 'utilities/CypherIO';
-import LayoutTree from './LayoutTree';
 import classnames from 'classnames';
 
 @connect((store) => {
