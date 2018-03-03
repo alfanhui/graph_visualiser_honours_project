@@ -76,8 +76,6 @@ class InteractionEvents extends React.Component {
     newStyles.push(".fontAdjustment11 { text-anchor: middle; font-size:" + (11 * averagedScale) + "px; line-height: " + (22 * averagedScale) + "px; min-height: " + (22 * averagedScale) + "px;}");  
     newStyles.push(".fontAdjustment18_E { text-anchor: start; font-size: " + (18 * averagedScale) + "px; line-height: " + (36 * averagedScale) + "px; min-height: " + (36 * averagedScale) + "px;}"); 
 
-    console.log(document.styleSheets)
-
     newStyles.map((style)=>{
       document.styleSheets[0].insertRule(style,0)
     });

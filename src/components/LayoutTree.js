@@ -125,7 +125,7 @@ class LayoutTree extends React.Component {
               transformLabel = 'translate(' + (node.x + this.state.contextWidth/2) + ',' + (node.y + (28*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
             }
             return(
-              <text className={classnames("NonContentText", "fontAdjustment10")} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
+              <text className={classnames("NonContentText", "fontAdjustment12")} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
             );
           })
         }      

@@ -1,26 +1,29 @@
 import request from 'superagent';
 import {SET} from 'reducerActions';
-
+import configFile from 'config';
 /*Code in file written by Stephen Wright from Stackoverflow on 12th of Mar 2014 at 23:00, see config.js */
 let env = process.env.NODE_ENV || 'development';
-let config = require('../config')[env];
-/******* */
-
-let url = config.localhost + config.port + config.transaction ; //subject to change after check
+let config = configFile[env];
+let url;
+/*******/
 
 export function checkAddress() {
+  url = config.localhost + config.port + config.transaction;
   return (dispatch) => {
     return request.post(url)
     .auth(config.login.username, config.login.password)
     .then((res) => {
       if (res.ok) {
         dispatch(SET("databaseError", '#FFFFF'));
+        dispatch(SET("connectionType", 'local'));
         console.log("LOCALHOST AVALIABLE"); // eslint-disable-line
         //run localhost, no change needed
       }
     })
     .catch(() => {
       url = config.remotehost + config.port + config.transaction;
+      dispatch(SET("databaseError", '#FFFFF'));
+      dispatch(SET("connectionType", 'remote'));
       console.log("SWITCHED TO REMOTEHOST"); // eslint-disable-line
     });
   };
