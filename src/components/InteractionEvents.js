@@ -69,15 +69,16 @@ class InteractionEvents extends React.Component {
   
   updateStyleSheetsWithScales(averagedScale){
     let newStyles = [];
-    newStyles.push(".fontAdjustment10 { text-anchor: start; font-size: " + (10 * averagedScale) + "px; line-height: " + (22 * averagedScale) + "px; min-height: " + (22 * averagedScale) + "px;}");
-    newStyles.push(".fontAdjustment12 { text-anchor: start; font-size: " + (12 * averagedScale) + "px; line-height: " + (26 * averagedScale) + "px; min-height: " + (26 * averagedScale) + "px;}"); 
-    newStyles.push(".fontAdjustment10_E { text-anchor: middle; font-size: " + (10 * averagedScale) + "px; line-height: " + (20 * averagedScale) + "px; min-height: " + (20 * averagedScale) + "px; opacity:0.7;}");
-    newStyles.push(".fontAdjustment18 { text-anchor: middle; font-size: " + (18 * averagedScale) + "px; line-height: " + (36 * averagedScale) + "px; min-height: " + (36 * averagedScale) + "px;}");
+    newStyles.push(".fontAdjustment10 { text-anchor: middle; font-size: " + (10 * averagedScale) + "px; line-height: " + (20 * averagedScale) + "px; min-height: " + (20 * averagedScale) + "px; opacity:0.7;}");
+    newStyles.push(".fontAdjustment10_E { text-anchor: start; font-size: " + (10 * averagedScale) + "px; line-height: " + (22 * averagedScale) + "px; min-height: " + (22 * averagedScale) + "px;}");
     newStyles.push(".fontAdjustment11 { text-anchor: middle; font-size:" + (11 * averagedScale) + "px; line-height: " + (22 * averagedScale) + "px; min-height: " + (22 * averagedScale) + "px;}");  
+    newStyles.push(".fontAdjustment12_E { text-anchor: start; font-size: " + (12 * averagedScale) + "px; line-height: " + (26 * averagedScale) + "px; min-height: " + (26 * averagedScale) + "px;}");
+    newStyles.push(".fontAdjustment14 { text-anchor: middle; font-size: " + (14 * averagedScale) + "px; line-height: " + (28 * averagedScale) + "px; min-height: " + (28 * averagedScale) + "px;}");  
+    newStyles.push(".fontAdjustment15 { text-anchor: middle; font-size: " + (15 * averagedScale) + "px; line-height: " + (30 * averagedScale) + "px; min-height: " + (30 * averagedScale) + "px;}");
+    newStyles.push(".fontAdjustment18 { text-anchor: middle; font-size: " + (18 * averagedScale) + "px; line-height: " + (36 * averagedScale) + "px; min-height: " + (36 * averagedScale) + "px;}");
     newStyles.push(".fontAdjustment18_E { text-anchor: start; font-size: " + (18 * averagedScale) + "px; line-height: " + (36 * averagedScale) + "px; min-height: " + (36 * averagedScale) + "px;}"); 
-
     newStyles.map((style)=>{
-      document.styleSheets[0].insertRule(style,0)
+      document.styleSheets[0].insertRule(style,0);
     });
   }
   

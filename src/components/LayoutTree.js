@@ -86,7 +86,7 @@ class LayoutTree extends React.Component {
           node.text.map((line, index) => {
             let transformLabel = 'translate(' + (node.x + 5) + ',' + (node.y + (15*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
             return(
-              <text className={classnames("ContentText", "fontAdjustment10")} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
+              <text className={classnames("ContentText", "fontAdjustment10_E")} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
             );
           })
         }      
@@ -125,7 +125,7 @@ class LayoutTree extends React.Component {
               transformLabel = 'translate(' + (node.x + this.state.contextWidth/2) + ',' + (node.y + (28*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
             }
             return(
-              <text className={classnames("NonContentText", "fontAdjustment12")} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
+              <text className={classnames("NonContentText", "fontAdjustment12_E")} key={'label' + index + node.nodeID} transform={transformLabel} >{line}</text>
             );
           })
         }      
@@ -237,8 +237,9 @@ class LayoutTree extends React.Component {
 
     {this.loadingSpinner()}
 
-    <text x={width-(115*this.props.state.averagedScale)} y={height-(25*this.props.state.averagedScale)} className={classnames("menuItem", "fontAdjustment10_E")} >Stuart Huddy, Computing & Cognitive Science</text> 
-    <text x={width-(115*this.props.state.averagedScale)} y={height-(10*this.props.state.averagedScale)} className={classnames("menuItem", "fontAdjustment10_E")}>Honours project, University of Dundee, 2018</text> 
+    <text x={width-(115*this.props.state.averagedScale)} y={height-(40*this.props.state.averagedScale)} className={classnames("menuItem", "fontAdjustment10")} >Stuart Huddy, Computing & Cognitive Science</text> 
+    <text x={width-(115*this.props.state.averagedScale)} y={height-(25*this.props.state.averagedScale)} className={classnames("menuItem", "fontAdjustment10")}>Superviser Prof. Chris Reed (ARG-Tech)</text> 
+    <text x={width-(115*this.props.state.averagedScale)} y={height-(10*this.props.state.averagedScale)} className={classnames("menuItem", "fontAdjustment10")}>Honours project, University of Dundee, 2018</text> 
     <g id="menus" ref="menus" key="menus">
     {this.props.state.menuMainArray.length > 0 && this.props.state.menuMainArray.map((nextMenu)=> {
        return (
