@@ -44,16 +44,12 @@ const initialState = {
   },
   currentDataFile:'11130',
   dataFiles:[
-    "11257", //looper
+    "11257",
     "11166",
-    //"11161", //looper
-    //"11157", //looper (possibleDepth)
     "11130",
     "11118",
     "11116",
     "11108",
-    //"10852", //too big
-    //"10701", //too wide
     "10612",
     "CLEAR"]
 };

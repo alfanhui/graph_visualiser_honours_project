@@ -1,6 +1,6 @@
 import { UPDATE, DROP } from 'reducerActions';
 
-let timeDelay = 450000000;
+let timeDelay = 4500;
 /*
 The purpose of the interalArray:
 the timerId can change for the same menu

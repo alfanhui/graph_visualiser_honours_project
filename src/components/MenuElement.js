@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import classnames from 'classnames';
-import { UPDATE, DROP } from 'reducerActions';
+import { SET, UPDATE, DROP } from 'reducerActions';
 import { addToTimer, stopTimer } from 'utilities/Timer';
 import {makeEdge} from 'utilities/Edge';
 import {importEdge, updateNode, removeNode, removeEdges} from 'utilities/CypherIO';
@@ -59,10 +59,15 @@ class MenuElement extends React.Component {
         connectedEdges,
       };
     }  
+
+    componentWillMount(){
+      this.props.dispatch(SET("creationHaltRefresh", true));
+    }
     
     componentWillUnmount(){
       this.props.dispatch(DROP("highlightedNodes", "color", {color:this.state.colourTag}));
       this.props.dispatch(DROP("highlightedEdges", "color", {color:this.state.colourTag}));
+      this.props.dispatch(SET("creationHaltRefresh", false));
     }
     
     /* Code written by Anatoliy from Stackoverflow on 27th Sep 2009 at 21:25
