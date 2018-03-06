@@ -1,14 +1,21 @@
 import request from 'superagent';
 import {SET} from 'reducerActions';
-import configFile from 'config';
 /*Code in file written by Stephen Wright from Stackoverflow on 12th of Mar 2014 at 23:00, see config.js */
-let env = process.env.NODE_ENV || 'development';
-let config = configFile[env];
-let url;
+const env = process.env.NODE_ENV || 'development';
+const config = {
+      port: ':7475',
+      remotehost: 'http://10.201.84.137',
+      localhost: 'http://localhost',
+      transaction: '/db/data/transaction/commit',
+      login:{
+          username:'neo4j',
+          password:'jazzyrice80'
+      }
+};
+let url = config.localhost + config.port + config.transaction;
 /*******/
 
 export function checkAddress() {
-  url = config.localhost + config.port + config.transaction;
   return (dispatch) => {
     return request.post(url)
     .auth(config.login.username, config.login.password)
@@ -18,6 +25,8 @@ export function checkAddress() {
         dispatch(SET("connectionType", 'local'));
         console.log("LOCALHOST AVALIABLE"); // eslint-disable-line
         //run localhost, no change needed
+      }else{
+        throw "error";
       }
     })
     .catch(() => {
@@ -49,11 +58,14 @@ export function postQuery(statements, parameters = null) {
           dispatch(SET("databaseError", '#FFFFF'));
           return(res.body.results);
         }
+      }else{
+        throw res.body.errors;
       }
     })
     .catch((err)=> {
       console.log("This error occcured: " , err, "statement:", preparedStatement); // eslint-disable-line
       dispatch(SET("databaseError", '#F50057'));
+      return 0;
     });
   };
 }
@@ -73,7 +85,10 @@ export function wipeDatabase() {
       return dispatch(removeIndexes());
     }).catch((err)=> {
       console.log("This error occcured: " , err); // eslint-disable-line
+      dispatch(SET("nodes", []));
+      dispatch(SET("links", []));
       dispatch(SET("databaseError", '#F50057'));
+      return 0;
     });
   };
 }
@@ -89,16 +104,16 @@ export function removeIndexes() {
           throw res.body.errors;
         }else if (res.body.results.length > 0){
           let data = res.body.results[0].data;
-          data.map((item) => {
+          return data.map((item) => {
             dispatch(SET("databaseError", '#FFFFF'));
-            dispatch(postQuery(["DROP " + item.row[0]], null));
+            return dispatch(postQuery(["DROP " + item.row[0]], null));
           });
         }
       }
-    })
-    .catch((err)=> {
+    }).catch((err)=> {
       console.log("This error occcured: " , err); // eslint-disable-line
       dispatch(SET("databaseError", '#F50057'));
+      return 0;
     });
   };
 }

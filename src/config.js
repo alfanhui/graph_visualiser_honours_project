@@ -4,7 +4,7 @@
 *https://stackoverflow.com/questions/22348705/best-way-to-store-db-config-in-node-js-express-app
 */
 
-const config = {
+export const configurations = {
     development: {
         port: ':7475',
         remotehost: 'http://10.201.84.137',
@@ -26,4 +26,4 @@ const config = {
         },
     }
 };
-module.exports = config;
+//module.exports = config;
