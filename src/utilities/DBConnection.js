@@ -1,7 +1,6 @@
 import request from 'superagent';
 import {SET} from 'reducerActions';
 /*Code in file written by Stephen Wright from Stackoverflow on 12th of Mar 2014 at 23:00, see config.js */
-const env = process.env.NODE_ENV || 'development';
 const config = {
       port: ':7475',
       remotehost: 'http://10.201.84.137',
@@ -47,6 +46,7 @@ export function postQuery(statements, parameters = null) {
     preparedStatement.push({statement: s, parameters: parameters});
   });
   return (dispatch) => {
+    dispatch(SET("databaseError", '#F50057'));
     return request.post(url)
     .send({ statements: preparedStatement })
     .auth(config.login.username,config.login.password)
@@ -64,7 +64,6 @@ export function postQuery(statements, parameters = null) {
     })
     .catch((err)=> {
       console.log("This error occcured: " , err, "statement:", preparedStatement); // eslint-disable-line
-      dispatch(SET("databaseError", '#F50057'));
       return 0;
     });
   };

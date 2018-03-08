@@ -71,6 +71,9 @@ class HomePage extends React.Component {
   retrieveDataFromDatabase(){
     let nodes, links;
     this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
+      if(result==0){
+        throw "no data";
+      }
       this.props.dispatch(SET("updateAvailable", false));
       let now = Date.now();
       let hours = new Date(now).getHours(),
@@ -93,9 +96,9 @@ class HomePage extends React.Component {
           this.props.dispatch(convertRawToTree({ "nodes": nodes, "links": links }));
           this.updateScheduler();
         }
-        this.props.dispatch(SET("loading", false));
       });
-    });
+    }).catch(()=>{});
+    this.props.dispatch(SET("loading", false));
   }
   
   //wraps the text, splits the date and time to readable formats

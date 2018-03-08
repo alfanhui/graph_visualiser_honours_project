@@ -192,7 +192,8 @@ describe('dbconnection async actions', () => {
             toError: jest.genMockFunction()
         });  
         myModule.auth = function(){return Promise.resolve(myModule.__getMockResponse());};  
-        
+
+
         const store = mockStore({ databaseError: ''})
         return store.dispatch(dbconnection.removeIndexes()).then((data)=>{
             expect(data).toEqual(expectedActions_SUCCESS);
