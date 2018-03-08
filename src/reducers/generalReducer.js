@@ -4,10 +4,10 @@ const initialState = {
   links: [],
   menuMainArray: [],
   menuElementArray: [],
-  treeData: [],
   layout: "TREE",
   layoutReady: false,
   defaultNodeTypes: ["I", "L"],
+  //defaultNodeTypes: ["A"], //TEST PURPOSES
   connectionType: "",
   updateInterval: 15000,
   updateFromCreate: false,
@@ -32,16 +32,17 @@ const initialState = {
     {type:"YA", name: "Disagreeing", scheme:"Disagreeing", schemeID:"78"},
     {type:"YA", name: "Arguing", scheme:"Arguing", schemeID:"80"}
   ],
-  edgeTypesTEST:{
-    "DAD":"FATHER TO",
-    "MUM":"MOTHER TO",
-    "BROTHER":"BROTHER TO",
-    "SISTER":"SISTER TO",
-    "AUNT":"AUNT TO",
-    "UNCLE":"UNCLE TO",
-    "SON":"SON TO",
-    "DAUGHTER":"DAUGHTER TO",
-  },
+  // nodeTypes:[ //TEST
+  //   {type:"A", name:"Person"},
+  //   {type:"B", name:"Married", scheme:"Default Inference", schemeID:"72"},
+  //   {type:"C", name:"Sibling", scheme:"Default Conflict", schemeID:"71"},
+  //   {type:"D", name:"Father/Son", scheme:"Default Transition", schemeID:"82"},
+  //   {type:"E", name:"Father/Daughter", scheme:"Default Rephrase", schemeID:"144"},
+  //   {type:"F", name:"Mother/Son", scheme:"Default Preference", schemeID:"161"},
+  //   {type:"G", name: "Mother/Daughter", scheme:"Restating", schemeID:"101"},
+  //   {type:"H", name: "Relationship", scheme:"Disagreeing", schemeID:"78"},
+  //   {type:"I", name: "Friendship", scheme:"Arguing", schemeID:"80"}
+  // ],
   currentDataFile:'11130',
   dataFiles:[
     "11257",
@@ -51,7 +52,11 @@ const initialState = {
     "11116",
     "11108",
     "10612",
-    "CLEAR"]
+    "CLEAR"],
+    // dataFiles:[ //TEST
+    //   "TEST_1",
+    //   "TEST_2",
+    //   "CLEAR"]
 };
 
 
