@@ -1,7 +1,11 @@
-// Framework for simulating touch events without a mobile device
-// Trying to be compatible with
-//  http://dvcs.w3.org/hg/webevents/raw-file/tip/touchevents.html
-// TODO: support more of the touch API: touch{enter, leave, cancel}
+/* Code written by borismus from GitHub 23rd of June 2014
+* https://github.com/borismus/MagicTouch
+*
+* Framework for simulating touch events without a mobile device
+* Trying to be compatible with
+* http://dvcs.w3.org/hg/webevents/raw-file/tip/touchevents.html
+* TODO: support more of the touch API: touch{enter, leave, cancel}
+*/ 
 let tuio = {
 	cursors: [],
 
@@ -10,19 +14,19 @@ let tuio = {
 
   _touchstart:    function(touch) {
     // Create a touchstart event
-    console.log("TUIO TOUCH START");
+    console.log("TUIO TOUCH START");// eslint-disable-line
     this._create_event('touchstart', touch, {});
   },
 
   _touchmove: function(touch) {
     // Create a touchmove event
-    //console.log("MOVING!!!");
+    //console.log("MOVING!!!");// eslint-disable-line
     this._create_event('touchmove', touch, {});
   },
 
   _touchend: function(touch) {
     // Create a touchend event
-    //console.log("ENDING!!!");
+    //console.log("ENDING!!!");// eslint-disable-line
     this._create_event('touchend', touch, {});
   },
 
@@ -61,9 +65,9 @@ let tuio = {
   },
 
 	// Callback from the main event handler
-	callback: function(type, sid, fid, x, y, angle) {
+	callback: function(type, sid, fid, x, y, angle) {// eslint-disable-line
     //console.log('callback type: ' + type + ' sid: ' + sid + ' fid: ' + fid);
-    console.log("callback: x:", x, ", y:",y,", pageX:", window.innerWidth * x, ", pageY:", window.innerHeight * y);
+    console.log("callback: x:", x, ", y:",y,", pageX:", window.innerWidth * x, ", pageY:", window.innerHeight * y); // eslint-disable-line
 		let data;
 
 		if (type !== 3) {
@@ -111,6 +115,6 @@ let tuio = {
 
 };
 
-function tuio_callback(type, sid, fid, x, y, angle)	{
+function tuio_callback(type, sid, fid, x, y, angle)	{ // eslint-disable-line
 	tuio.callback(type, sid, fid, x, y, angle);
 }

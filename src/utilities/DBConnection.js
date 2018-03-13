@@ -25,7 +25,7 @@ export function checkAddress() {
         console.log("LOCALHOST AVALIABLE"); // eslint-disable-line
         //run localhost, no change needed
       }else{
-        throw "error";
+        throw 'error';
       }
     })
     .catch(() => {

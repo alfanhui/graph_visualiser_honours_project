@@ -9,14 +9,13 @@ import InteractionEvents from './InteractionEvents';
 import { wrapContextTextToArray, wrapNonContextTextToArray } from 'utilities/WrapText';
 import { importJSON } from 'utilities/CypherIO';
 import hash from 'object-hash';
+import { wipeDatabase } from '../utilities/DBConnection';
 
 @connect((store) => {
   return {
     state: store.generalReducer
   };
 })
-
-//console.log(JSON.parse(JSON.stringify(err)));
 
 class HomePage extends React.Component {
   
@@ -33,26 +32,46 @@ class HomePage extends React.Component {
   }
   
   componentWillMount() {
+    this.windowConsoleCheck(); //this is to stop production crashing with console.logs
     this.props.dispatch(checkAddress()).then(() => {
+      if(this.props.state.testMode){
+        console.log("test mode"); // eslint-disable-line
+        this.props.dispatch(wipeDatabase()).then(()=>{
+          this.props.dispatch(SET('defaultNodeTypes', [
+            "A"]));
+          this.props.dispatch(SET('nodeTypes', [
+            {type:"A", name:"Person"},
+            {type:"B", name:"Relationship", scheme:"Disagreeing", schemeID:"78"},
+            {type:"C", name:"Friendship", scheme:"Arguing", schemeID:"80"},
+            {type:"D", name:"Following", scheme:"Default Conflict", schemeID:"71"},
+            {type:"E", name:"BFFs", scheme:"Restating", schemeID:"101"},            
+            {type:"F", name:"Father to", scheme:"Default Transition", schemeID:"82"},
+            {type:"G", name:"Mother to", scheme:"Default Rephrase", schemeID:"144"},
+            {type:"H", name:"Knows of", scheme:"Default Preference", schemeID:"161"},
+          ]));
+          this.props.dispatch(SET('dataFiles', [
+            "TEST_1",
+            "TEST_2",
+            "CLEAR"]));
+          this.props.dispatch(SET('currentDataFile', "TEST_1"));
+        });
+      }
       this.loadDatabase();
     });
   }
   
   componentDidMount() {
     this.initPaper();
-    //load data into nodes and links props.
-  }
-  
-  componentDidUpdate() {
-    
-  }
-  
-  componentWillUnmount() {
-    
   }
 
-
-  
+  windowConsoleCheck(){
+    if (!window.console) {
+      window.console = {
+          log: function () {},
+      };
+    }
+  }
+    
   loadDatabase(dataFile = null){
     //check the address of the database
     this.props.dispatch(SET("nodes", []));
@@ -87,7 +106,7 @@ class HomePage extends React.Component {
       //format data (wordwrap and other activities)
       nodes = this.formatNodes(nodes);
       this.props.dispatch(SET('nodes', nodes));
-      //Grab edges   'START r=rel(*) WHERE NOT ((:L)-[r]->()) AND NOT (()-[r]->(:L)) RETURN r'
+      //Grab edges
       this.props.dispatch(postQuery('START r=rel(*) RETURN r')).then((result) => {
         links = this.convertNeo4jResult(result);
         this.props.dispatch(SET('links', links));
@@ -118,7 +137,6 @@ class HomePage extends React.Component {
       }
       return node;
     });
-    
     return nodes;
   }
   
@@ -136,10 +154,10 @@ class HomePage extends React.Component {
       if (newHash !== this.state.currentHash) {
         //Autoupdate if enabled - or prompt user
         if (this.props.state.updateAuto) {
-          console.log("Update taking place.."); // eslint-disable-line
+          //console.log("Update taking place.."); // eslint-disable-line
           this.componentWillMount();
         } else {
-          console.log("There is a new update available"); // eslint-disable-line
+          //console.log("There is a new update available"); // eslint-disable-line
           this.props.dispatch(SET("updateAvailable", true));
         }
       }

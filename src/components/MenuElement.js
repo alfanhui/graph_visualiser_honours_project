@@ -15,8 +15,6 @@ import {wrapNonContextTextToArray} from 'utilities/WrapText';
   };
 })
 
-//console.log(JSON.parse(JSON.stringify(err)));
-
 class MenuElement extends React.Component {
   
   static propTypes = {
@@ -98,7 +96,6 @@ class MenuElement extends React.Component {
             , .5)}
           );
         }); 
-        //distanceArray = distanceArray.filter(item => !item.invalid_layer);
         distanceArray = _.orderBy(distanceArray, ['distance'],['asc']);
         return distanceArray;
       }
@@ -168,7 +165,7 @@ class MenuElement extends React.Component {
           <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18_E")} key={'editEdgeBoxTarget' + "_" + uuid}>{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].name}</text>
           
           <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeButton' + "_" + uuid} onClick={()=>{this.editNode(uuid);}}/>
-          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem","fontAdjustment18")} key ={'editEdgeButtonText' + "_" + uuid} >Ammend</text>
+          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem","fontAdjustment18")} key ={'editEdgeButtonText' + "_" + uuid} >Amend</text>
           </g>
         );
       }
@@ -230,18 +227,14 @@ class MenuElement extends React.Component {
         let menu = this.props.menu;
         let node = _.find(this.props.state.nodes, { "nodeID": menu.nodeID });
         let nodeToDelete = _.cloneDeep(node);
-        
-        
         //remove edges associated with node!!
         let edgesToDelete = _.filter(this.props.state.links, {"source":nodeToDelete.nodeID});
         edgesToDelete = edgesToDelete.concat(_.filter(this.props.state.links, {"target":nodeToDelete.nodeID}));
-        
         //Drop edges and nodes from local
         edgesToDelete && edgesToDelete.map((edge)=>{ 
           this.props.dispatch(DROP("links", "edgeID", edge));
         });
         this.props.dispatch(DROP("nodes", "nodeID", node)); //update local nodes
-        
         if(this.props.state.updateFromCreate){
           //drop from remote
           if(edgesToDelete.length > 0){
@@ -256,12 +249,9 @@ class MenuElement extends React.Component {
       
       deleteEdge(uuid){
         this.props.dispatch(stopTimer(uuid, "menuElementArray")); //remove menu
-        
         let edgeToDelete = this.state.connectedEdges[this.state.connectedEdgesCurrentIndex];
-        
         //drop Local
         this.props.dispatch(DROP("links", "edgeID", edgeToDelete));
-        
         if(this.props.state.updateFromCreate){
           //drop from remote
           this.props.dispatch(removeEdges(edgeToDelete)); 

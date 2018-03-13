@@ -19,15 +19,14 @@ export default class Node{
                 text = wrapNonContextTextToArray(nodeData.text);
             }
         }
-    
-        let layer = 0;
+
         let x = menu.x; //need to move this node to a new location
         let y = menu.y; 
         
         //Assign
         this.nodeID = nodeID;
         this.timestamp = timestamp;
-        this.layer = layer;
+        this.layer = 0;
         this.date = date; 
         this.time = time;
         this.type = type; 
