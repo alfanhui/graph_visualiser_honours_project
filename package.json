@@ -2,6 +2,7 @@
   "name": "graph-visualiser",
   "version": "0.1.0",
   "description": "An AIF graph visualiser for ARG-Tech",
+  "main": "src/renderApp.js",
   "license": "UNLICENSED",
   "engines": {
     "npm": ">=3"
@@ -119,7 +120,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:alfanhui/graph_visualiser_honours_project.git"
   },
   "jest": {},
   "eslintConfig": {

@@ -8,7 +8,6 @@
 */ 
 let tuio = {
 	cursors: [],
-
   // Data structure for associating cursors with objects
 	_data: {},
 
@@ -20,17 +19,18 @@ let tuio = {
 
   _touchmove: function(touch) {
     // Create a touchmove event
-    //console.log("MOVING!!!");// eslint-disable-line
+    console.log("MOVING!!!");// eslint-disable-line
     this._create_event('touchmove', touch, {});
   },
 
   _touchend: function(touch) {
     // Create a touchend event
-    //console.log("ENDING!!!");// eslint-disable-line
+    console.log("ENDING!!!");// eslint-disable-line
     this._create_event('touchend', touch, {});
   },
 
   _create_event: function(name, touch, attrs) {
+    console.log("tuio event created");
     // Creates a custom DOM event
     let evt = document.createEvent('CustomEvent');
     evt.initEvent(name, true, true);
@@ -54,6 +54,7 @@ let tuio = {
   },
 
   _get_target_touches: function(element) {
+    console.log("getting touches");
     let targetTouches = [];
     for (let i = 0; i < this.cursors.length; i++) {
       let touch = this.cursors[i];
@@ -116,5 +117,6 @@ let tuio = {
 };
 
 function tuio_callback(type, sid, fid, x, y, angle)	{ // eslint-disable-line
+  console.log("tuio event callback");
 	tuio.callback(type, sid, fid, x, y, angle);
 }
