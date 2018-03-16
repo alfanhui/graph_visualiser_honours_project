@@ -17,17 +17,13 @@ describe('dbconnection async actions', () => {
     afterEach(() => {
         fetchMock.reset();
         fetchMock.restore();
-        jest.mock('../__mocks__/superagent');
-        //jest.resetModules();
     });
-    it('updates connectionType to LOCAL when database URL succeeds', () => {
+     it('updates connectionType to LOCAL when database URL succeeds', () => {
         const expectedActions_SUCCESS = [
             {type: types.SET , variable:"databaseError", payload: '#FFFFF'},
             {type: types.SET , variable:"connectionType", payload: 'local'}
         ];
         const store = mockStore({ databaseError: '', connectionType: ''});
-        
-        jest.mock('../__mocks__/superagent');
 
         return store.dispatch(dbconnection.checkAddress()).then(()=>{
             expect(store.getActions()).toEqual(expectedActions_SUCCESS)

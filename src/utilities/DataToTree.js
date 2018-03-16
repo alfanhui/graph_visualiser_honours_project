@@ -34,10 +34,11 @@ export function convertRawToTree(object) {
         }
         let nodes = object.nodes,
         links = object.links;
-        nodeHash = {};
+
+        nodeHash = {},
         linkHashBySource = {};
-        linkHashByTarget = {};
-        nodeHash = {};
+        linkHashByTarget = {}
+        
         createDataHashes(nodes, links);
         
         //Calculate possible depths for all nodes, starting from roots
@@ -99,15 +100,37 @@ function createDataHashes(nodes, links){
         }
         linkHashByTarget[link.target].push(link);
     }
+    return {nodeHash, linkHashBySource, linkHashByTarget};
 }
 
 function calculatePossibleDepths(rootNodes){
     rootNodes.map((rootNode) => {
         nodeHash[rootNode.nodeID].layer = 0;
         possibleLoopHash = {};
-        possibleDepthTraversalRecurssively(rootNode.nodeID, 1);
+        possibleDepthTraversalRecurssively(rootNode.nodeID, 1, nodeHash);
     });
+    return rootNodes;
 }
+
+
+//adds suspected layer to depthLayer array
+function possibleDepthTraversalRecurssively(nodeID, counter, nodeHash) {
+    if (linkHashBySource.hasOwnProperty(nodeID)) {
+        linkHashBySource[nodeID].map((childNode) => {
+             if(possibleLoopHash.hasOwnProperty(nodeID+"_"+childNode.target)){
+                 return;
+             }else{
+                possibleLoopHash[nodeID+"_"+childNode.target] = null;
+                nodeHash[childNode.target].depthArray.push(counter);
+                nodeHash[childNode.target].layer = counter;
+                if(nodeID !== childNode.target){
+                    possibleDepthTraversalRecurssively(childNode.target, (counter + 1), nodeHash);
+                }
+            }
+        });
+    }
+}
+
 
 function getNodesWithMaxDepth(){
     let nodeDepthConflict = [];
@@ -143,28 +166,6 @@ function applyChildrenRecurssively(node, children){ //linkHash is using link.sou
         });
     }
     return children;
-}
-
-/*
-*
-*
-*/
-//adds suspected layer to depthLayer array
-function possibleDepthTraversalRecurssively(nodeID, counter) {
-    if (linkHashBySource.hasOwnProperty(nodeID)) {
-        linkHashBySource[nodeID].map((childNode) => {
-             if(possibleLoopHash.hasOwnProperty(nodeID+"_"+childNode.target)){
-                 return;
-             }else{
-                possibleLoopHash[nodeID+"_"+childNode.target] = null;
-                nodeHash[childNode.target].depthArray.push(counter);
-                nodeHash[childNode.target].layer = counter;
-                if(nodeID !== childNode.target){
-                    possibleDepthTraversalRecurssively(childNode.target, (counter + 1));
-                }
-            }
-        });
-    }
 }
 
 //Adjusts layer height based off maximum layer found in child

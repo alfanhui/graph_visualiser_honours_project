@@ -22,7 +22,6 @@ export function checkAddress() {
       if (res.ok) {
         dispatch(SET("databaseError", '#FFFFF'));
         dispatch(SET("connectionType", 'local'));
-        console.log("LOCALHOST AVALIABLE"); // eslint-disable-line
         //run localhost, no change needed
       }else{
         throw 'error';
@@ -32,7 +31,6 @@ export function checkAddress() {
       url = config.remotehost + config.port + config.transaction;
       dispatch(SET("databaseError", '#FFFFF'));
       dispatch(SET("connectionType", 'remote'));
-      console.log("SWITCHED TO REMOTEHOST"); // eslint-disable-line
     });
   };
 }
@@ -79,7 +77,6 @@ export function wipeDatabase() {
       dispatch(SET("nodes", []));
       dispatch(SET("links", []));
       dispatch(SET("databaseError", '#FFFFF'));
-      console.log("Database wiped"); // eslint-disable-line
     }).then(()=>{
       return dispatch(removeIndexes());
     }).catch((err)=> {

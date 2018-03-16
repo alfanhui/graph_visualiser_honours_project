@@ -1,7 +1,7 @@
-import { postQuery, wipeDatabase, removeIndexes} from 'utilities/DBConnection';
+import {wipeDatabase, removeIndexes, postQuery} from 'utilities/DBConnection'; //
 import request from 'superagent';
 import {SET} from 'reducerActions';
-import _ from 'lodash';
+import _ from 'lodash'; 
 
 //Import json from local file. Await for database to be wiped via promise before continuing..
 export function importJSON(dataFile) {
@@ -15,6 +15,7 @@ export function importJSON(dataFile) {
           dispatch(SET("currentDataFile", dataFile));
           console.log(res.body); // eslint-disable-line
           let {nodeStatements, dictionary, edgeStatements} = graphMLtoCypher(res.body);
+          if(nodeStatements.length == 0) return;
           return dispatch(compileQuery(nodeStatements, dictionary, edgeStatements));
         })
         .catch((err)=> {
@@ -26,53 +27,11 @@ export function importJSON(dataFile) {
   };
 }
 
-
-//handle json object ready for cypher conversion
-function graphMLtoCypher(jsonObj) {
-  let nodeParameters = { "props": jsonObj.nodes };
-  //Sort by type
-  let dictionary = {};
-  let hashMap = {};
-  if(nodeParameters.props.length < 1){
-    console.log("Nothing to import"); // eslint-disable-line
-    return;
-  }
-  nodeParameters.props.map((item) => {
-    if (!dictionary[item.type]) {
-      dictionary[item.type] = [item];
-    } else {
-      dictionary[item.type].push(item);
-    }
-    hashMap[item.nodeID] = item; //aid in creating edges
-  });
-  
-  //create nodes
-  let nodeStatements = [];
-  for (let nodeType in dictionary) {
-    nodeStatements.push('UNWIND {' + nodeType + '} AS map CREATE (n:' + nodeType + ') SET n = map');
-  }
-  
-  //create edges
-  let edgeParameters = { "rows": jsonObj.edges };
-  edgeParameters && edgeParameters.rows.map((item) => {
-    item["toType"] = hashMap[item.toID].type;
-    item["fromType"] = hashMap[item.fromID].type;
-  });
-  let edgeStatements = [];
-  edgeParameters && edgeParameters.rows.map((edge) => {
-    edgeStatements.push('MATCH (n:' + edge.fromType + '),(m:' + edge.toType +
-    ') WHERE n.nodeID=\'' + edge.fromID + '\' AND m.nodeID=\'' + edge.toID +
-    '\' CREATE (n)-[r:LINK{edgeID:\'' + edge.edgeID +
-    '\', source: \'' + edge.fromID +
-    '\', target: \'' + edge.toID +
-    '\', formEdgeID: \'' + edge.formEdgeID + '\'}]->(m)');
-  });
-  
-  //locutions?
-  
-  return {nodeStatements, dictionary, edgeStatements};
+export function test(){
+  return wipeDatabase();// return (dispatch) => {
+  //   return dispatch(wipeDatabase());
+  // }
 }
-
 
 //post dispatches
 function compileQuery(nodeStatements, dictionary, edgeStatements){
@@ -89,55 +48,57 @@ function compileQuery(nodeStatements, dictionary, edgeStatements){
   };
 }
 
-export function importNode(_newNode){
-  let newNode = _.cloneDeep(_newNode);
-  return (dispatch) => {
-    let {nodeStatements, dictionary} = nodeToCypher({nodes:[newNode]});
-    return dispatch(postQuery(nodeStatements, dictionary)).then(function(){
-      for (let nodeType in dictionary) {
-        dispatch(postQuery(['CREATE INDEX ON :' + nodeType + '(nodeID)'], null)); //create index
-      }
-    });
-  };
+
+//handle json object ready for cypher conversion
+function graphMLtoCypher(jsonObj) {
+  let edgeStatements = [];
+  
+  let {nodeStatements, dictionary, hashMap} = nodeToCypher(jsonObj);
+  if(nodeStatements.length > 0){
+    //create edges
+    if(jsonObj.hasOwnProperty('edges')){
+      let edgeParameters = { "edges": jsonObj.edges };
+      edgeParameters && edgeParameters.edges.map((item) => {
+        if(hashMap.hasOwnProperty(item.toID) && hashMap.hasOwnProperty(item.fromID)){
+          item["toType"] = hashMap[item.toID].type;
+          item["fromType"] = hashMap[item.fromID].type;
+        }
+      });
+      edgeStatements = edgeToCypher(edgeParameters);
+    }  
+  }
+  //locutions?
+  return {nodeStatements, dictionary, edgeStatements};
 }
 
 //handle json object ready for cypher conversion
 function nodeToCypher(jsonObj) {
-  let nodeParameters = { "props": jsonObj.nodes };
-  //Sort by type
-  let dictionary = {};
-  let hashMap = {};
-  if(nodeParameters.props.length < 1){
-    console.log("Nothing to import"); // eslint-disable-line
-    return;
-  }
-  nodeParameters.props.map((item) => {
-    item.text = item.text.join(" ");
-    if (!dictionary[item.type]) {
-      dictionary[item.type] = [item];
-    } else {
-      dictionary[item.type].push(item);
+  let nodeStatements = [],
+      dictionary = {},
+      hashMap = {};
+  if(jsonObj.hasOwnProperty('nodes')){
+    let nodeParameters = { "props": jsonObj.nodes };
+    //Sort by type
+    
+    if(nodeParameters.props.length < 1){
+      return {nodeStatements, dictionary, hashMap};
     }
-    hashMap[item.nodeID] = item; //aid in creating edges
-  });
-  
-  //create nodes
-  let nodeStatements = [];
-  for (let nodeType in dictionary) {
-    nodeStatements.push('UNWIND {' + nodeType + '} AS map CREATE (n:' + nodeType + ') SET n = map');
+    nodeParameters.props.map((item) => {
+      if(item.hasOwnProperty('type')){
+        if (!dictionary[item.type]) {
+          dictionary[item.type] = [item];
+        } else {
+          dictionary[item.type].push(item);
+        }
+        hashMap[item.nodeID] = item; //aid in creating edges
+      }
+    });
+    //create nodes
+    for (let nodeType in dictionary) {
+      nodeStatements.push('UNWIND {' + nodeType + '} AS map CREATE (n:' + nodeType + ') SET n = map');
+    }
   }
-  
-  //locutions?
-  
-  return {nodeStatements, dictionary};
-}
-
-export function importEdge(_newEdge){
-  let newEdge = _.cloneDeep(_newEdge);
-  return (dispatch) => {
-    let {edgeStatements} = edgeToCypher({edges:[newEdge]});
-    return dispatch(postQuery(edgeStatements));
-  };
+  return {nodeStatements, dictionary, hashMap};
 }
 
 //handle json object ready for cypher conversion
@@ -152,7 +113,27 @@ function edgeToCypher(jsonObj) {
     '\', target: \'' + edge.toID +
     '\', formEdgeID: \'' + edge.formEdgeID + '\'}]->(m)');
   });
-  return {edgeStatements};
+  return edgeStatements;
+}
+
+export function importNode(_newNode){
+  let newNode = _.cloneDeep(_newNode);
+  return (dispatch) => {
+    let {nodeStatements, dictionary} = nodeToCypher({nodes:[newNode]});
+    return dispatch(postQuery(nodeStatements, dictionary)).then(function(){
+      for (let nodeType in dictionary) {
+        dispatch(postQuery(['CREATE INDEX ON :' + nodeType + '(nodeID)'], null)); //create index
+      }
+    });
+  };
+}
+
+export function importEdge(_newEdge){
+  let newEdge = _.cloneDeep(_newEdge);
+  return (dispatch) => {
+    let edgeStatements = edgeToCypher({edges:[newEdge]});
+    return dispatch(postQuery(edgeStatements));
+  };
 }
 
 export function removeNode(nodeToRemove){
