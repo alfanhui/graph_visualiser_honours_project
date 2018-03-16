@@ -21,8 +21,6 @@ const color = d3.scaleOrdinal(d3.schemeCategory20); //range the colours
     };
 })
 
-//console.log(JSON.parse(JSON.stringify(err)));
-
 class LayoutForceDirected extends React.Component {
 
     static propTypes = {

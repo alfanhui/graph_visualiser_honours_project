@@ -2,6 +2,7 @@
   "name": "graph-visualiser",
   "version": "0.1.0",
   "description": "An AIF graph visualiser for ARG-Tech",
+  "license": "UNLICENSED",
   "engines": {
     "npm": ">=3"
   },
@@ -12,6 +13,7 @@
     "prestart": "npm-run-all --parallel start-message",
     "start_backup": "npm-run-all --parallel test:watch open:src lint:watch",
     "start": "npm-run-all --parallel open:src lint:watch",
+    "start_prod": "NODE_ENV=production && npm start",
     "open:src": "babel-node tools/srcServer.js",
     "open:dist": "babel-node tools/distServer.js",
     "lint": "esw webpack.config.* src tools --color",
@@ -29,7 +31,6 @@
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js"
   },
   "author": "Stuart Huddy",
-  "license": "CC BY-NC",
   "dependencies": {
     "babel-plugin-transform-decorators-legacy": "1.3.4",
     "classnames": "2.2.5",
@@ -80,7 +81,6 @@
     "connect-history-api-fallback": "1.3.0",
     "coveralls": "2.13.1",
     "css-loader": "0.28.4",
-    "enzyme-adapter-react-15": "1.0.5",
     "eslint": "4.2.0",
     "eslint-plugin-import": "2.7.0",
     "eslint-plugin-react": "7.1.0",
@@ -96,7 +96,7 @@
     "jsdom": "11.6.2",
     "json-loader": "0.5.4",
     "mockdate": "2.0.1",
-    "node-sass": "4.5.3",
+    "node-sass": "4.7.2",
     "opn-cli": "3.1.0",
     "postcss-loader": "1.2.1",
     "prompt": "1.0.0",
@@ -109,6 +109,7 @@
     "rimraf": "2.6.1",
     "sass-loader": "6.0.6",
     "style-loader": "0.18.2",
+    "superagent-mock": "3.7.0",
     "url-loader": "0.5.9",
     "webpack": "3.1.0",
     "webpack-bundle-analyzer": "2.8.2",
@@ -119,19 +120,9 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:alfanhui/graph_visualiser_honours_project.git"
   },
-  "jest_BACKUP": {
-    "moduleNameMapper": {
-      "^reducerActions$": "<rootDir>/src/reducerActions/index.js",
-      "constants(.*)$": "<rootDir>/src/constants/$1",
-      "components(.*)$": "<rootDir>/src/components/$1",
-      "data(.*)$": "<rootDir>/src/data/$1",
-      "utilities(.*)$": "<rootDir>/src/utilities/$1",
-      "\\.(css|scss)$": "identity-obj-proxy",
-      "^.+\\.(gif|ttf|eot|svg|woff|woff2|ico)$": "<rootDir>/tools/fileMock.js"
-    }
-  },
+  "jest": {},
   "eslintConfig": {
     "root": true,
     "extends": [

@@ -62,11 +62,6 @@ class InteractionEvents extends React.Component {
     this.props.dispatch(SET("averagedScale", averagedScale));
   }
   
-  componentWillMount(){
-    
-    
-  }
-  
   updateStyleSheetsWithScales(averagedScale){
     let newStyles = [];
     newStyles.push(".fontAdjustment10 { text-anchor: middle; font-size: " + (10 * averagedScale) + "px; line-height: " + (20 * averagedScale) + "px; min-height: " + (20 * averagedScale) + "px; opacity:0.7;}");
@@ -137,6 +132,7 @@ class InteractionEvents extends React.Component {
       }
     }else{
       if (!drag.state) {
+        console.log("mouse: x:", event.clientX, ", y:" , event.clientY);
         drag.elem = event.target;
         drag.currentX = event.clientX;
         drag.currentY = event.clientY;

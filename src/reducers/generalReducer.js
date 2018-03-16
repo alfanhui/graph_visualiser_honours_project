@@ -1,25 +1,29 @@
 const initialState = {
-  databaseError: "#FFFFF",
-  nodes: [],
-  links: [],
-  menuMainArray: [],
-  menuElementArray: [],
-  treeData: [],
-  layout: "TREE",
-  layoutReady: false,
-  defaultNodeTypes: ["I", "L"],
-  connectionType: "",
-  updateInterval: 15000,
-  updateFromCreate: false,
-  updateAuto: false,
-  updateAvailable: false,
-  lastUpdated: null,
-  paint:false,
-  loading:false,
   averagedScale: 1,
+  connectionType: "",
   creationHaltRefresh: false,
+  currentDataFile:'11130',
+  databaseError: "#FFFFF",
+  dataFiles:[
+    "11257",
+    "11166",
+    "11130",
+    "11118",
+    "11116",
+    "11108",
+    "10612",
+    "CLEAR"],
+  defaultNodeTypes: ["I", "L"],
   highlightedNodes:[],
   highlightedEdges:[],
+  lastUpdated: null,
+  layout: "TREE",
+  layoutReady: false,
+  links: [],
+  loading:false,
+  menuElementArray: [],
+  menuMainArray: [],
+  nodes: [],
   nodeTypes:[
     {type:"I", name:"Information Node"},
     {type:"LA", name:"Locution Node"},
@@ -32,30 +36,12 @@ const initialState = {
     {type:"YA", name: "Disagreeing", scheme:"Disagreeing", schemeID:"78"},
     {type:"YA", name: "Arguing", scheme:"Arguing", schemeID:"80"}
   ],
-  edgeTypesTEST:{
-    "DAD":"FATHER TO",
-    "MUM":"MOTHER TO",
-    "BROTHER":"BROTHER TO",
-    "SISTER":"SISTER TO",
-    "AUNT":"AUNT TO",
-    "UNCLE":"UNCLE TO",
-    "SON":"SON TO",
-    "DAUGHTER":"DAUGHTER TO",
-  },
-  currentDataFile:'11130',
-  dataFiles:[
-    "11257", //looper
-    "11166",
-    //"11161", //looper
-    //"11157", //looper (possibleDepth)
-    "11130",
-    "11118",
-    "11116",
-    "11108",
-    //"10852", //too big
-    //"10701", //too wide
-    "10612",
-    "CLEAR"]
+  paint:false,
+  testMode: false,
+  updateFromCreate: false,
+  updateInterval: 15000,
+  updateAuto: false,
+  updateAvailable: false,
 };
 
 

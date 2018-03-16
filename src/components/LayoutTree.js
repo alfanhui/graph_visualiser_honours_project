@@ -18,8 +18,6 @@ const color = d3.scaleOrdinal(d3.schemeCategory20); //range the colours
   };
 })
 
-//console.log(JSON.parse(JSON.stringify(err)));
-
 class LayoutTree extends React.Component {
   
   static propTypes = {
@@ -44,11 +42,11 @@ class LayoutTree extends React.Component {
       nonContextHeight: (50 * averagedScale),
       layer:0,
       menuElementArrayLayer0:[{title:"Create Edge", onClick:(uuid) => this.createEdge(uuid)}, 
-                          {title:"Edit Node", onClick:this.editNode}, 
-                          {title:"Delete Node", onClick:this.deleteNode}],
+      {title:"Edit Node", onClick:this.editNode}, 
+      {title:"Delete Node", onClick:this.deleteNode}],
       menuMainArrayLayer0:["Database", "Graph", "Options"],
     };
-    console.log("Width: " + width + " Height: " + height + " Ratio: " + (width / height)); // eslint-disable-line
+    //console.log("Width: " + width + " Height: " + height + " Ratio: " + (width / height)); // eslint-disable-line
     
   }
   
@@ -61,7 +59,6 @@ class LayoutTree extends React.Component {
   }
   
   //These nodes are the transcript elements: ie. content
-
   renderContentNode = (node) => {
     if(node.hasOwnProperty("x")){ //this is because DataToTree has not finished ordering
       let transform = 'translate(' + node.x + ',' + node.y + ')';
@@ -94,7 +91,7 @@ class LayoutTree extends React.Component {
       );
     }
   }
-
+  
   //Non-default are AIF added extended nodes
   renderNonContentNode = (node) => {
     if(node.hasOwnProperty("x")){ //this is because DataToTree has not finished ordering
@@ -116,7 +113,7 @@ class LayoutTree extends React.Component {
         onTouchMove={(event) => this.props.onTouchMove(event, false)}
         onTouchEnd={(event) => this.props.onTouchEnd(event, false)}
         onTouchCancel={(event) => this.props.onTouchCancel(event, false)} />
-          {
+        {
           node.text.map((line, index) => {
             let transformLabel;
             if(node.text.length == 1){
@@ -160,13 +157,13 @@ class LayoutTree extends React.Component {
         highlightedEdgeUUID = highlightedEdgeUUID[0];
         style = {strokeWidth:"2.5px"};
       }
-
+      
       return (
         <path className="link" key={"label" + source.nodeID + " to " + target.nodeID} stroke={highlightedEdgeUUID.hasOwnProperty("color") ? highlightedEdgeUUID.color : "grey"} fill={"none"} d={d} style={style} markerEnd={'url(#markerArrow)'} />
       );
     }
   }
-
+  
   //Deprecated
   renderLink = (link) => {
     let source = _.find(this.props.state.nodes, { "nodeID": link.source });
@@ -191,23 +188,23 @@ class LayoutTree extends React.Component {
   }
   
   /* Spinner Code written by Zeeshan Ansari from CodePen  
-   * https://codepen.io/zeeshan_ansari/pen/gpwQvw 
-   * on 22nd of May 2015 
-   */
+  * https://codepen.io/zeeshan_ansari/pen/gpwQvw 
+  * on 22nd of May 2015 
+  */
   loadingSpinner(){
     return(
       <svg x={width/2} y={height/2} viewBox="0 0 28 28" width="80" height="80">
-        <g className="qp-circular-loader">
-        {this.props.state.loading && <path className="qp-circular-loader-path" fill="none" d={"M 15 1.5 A 12.5,12.5 0 1 1 1.5,14"} strokeLinecap="round" />}
-        </g>
+      <g className="qp-circular-loader">
+      {this.props.state.loading && <path className="qp-circular-loader-path" fill="none" d={"M 15 1.5 A 12.5,12.5 0 1 1 1.5,14"} strokeLinecap="round" />}
+      </g>
       </svg>
     );
   }
-
+  
   render() {
     return (
       <div>
-        { this.props.state.paint &&   <canvas className="paint" id="paint" width={width-5} height={height} /> }
+      { this.props.state.paint &&   <canvas className="paint" id="paint" width={width-5} height={height} /> }
       <svg
       className="svg" id="svg" ref="svg" key="svg"
       width={width}
@@ -219,51 +216,51 @@ class LayoutTree extends React.Component {
       <path d="M 0 0 L 10 5 L 0 10 z" style={{fill: 'black'}}/>
       </marker>     
       </defs>
-
+      
       <rect id="main" width={width} height={height} style={{ fill: 'white', pointerEvents: 'fill', strokeWidth: '0' }}
-        onMouseDown={(event)=>this.props.onTouchStart(event, true)} 
-        onMouseMove={(event)=>this.props.onTouchMove(event, true)} 
-        onMouseUp={(event)=>this.props.onTouchEnd(event, true)} 
-        onTouchStart={(event) => this.props.onTouchStart(event, false)}
-        onTouchMove={(event) => this.props.onTouchMove(event, false)}
-        onTouchEnd={(event) => this.props.onTouchEnd(event, false)}
-        onTouchCancel={(event) => this.props.onTouchCancel(event, false)} 
-        />
+      onMouseDown={(event)=>this.props.onTouchStart(event, true)} 
+      onMouseMove={(event)=>this.props.onTouchMove(event, true)} 
+      onMouseUp={(event)=>this.props.onTouchEnd(event, true)} 
+      onTouchStart={(event) => this.props.onTouchStart(event, false)}
+      onTouchMove={(event) => this.props.onTouchMove(event, false)}
+      onTouchEnd={(event) => this.props.onTouchEnd(event, false)}
+      onTouchCancel={(event) => this.props.onTouchCancel(event, false)} 
+      />
       <g>
       {this.props.state.nodes && this.props.state.nodes.length > 0 && this.props.state.nodes.map(this.renderNode)}
       {this.props.state.links &&  this.props.state.nodes.length > 0 && this.props.state.links.length > 0 && this.props.state.links.map(this.renderPath)}
     }
     </g>
-
+    
     {this.loadingSpinner()}
-
+    
     <text x={width-(115*this.props.state.averagedScale)} y={height-(40*this.props.state.averagedScale)} className={classnames("menuItem", "fontAdjustment10")} >Stuart Huddy, Computing & Cognitive Science</text> 
     <text x={width-(115*this.props.state.averagedScale)} y={height-(25*this.props.state.averagedScale)} className={classnames("menuItem", "fontAdjustment10")}>Superviser Prof. Chris Reed (ARG-Tech)</text> 
     <text x={width-(115*this.props.state.averagedScale)} y={height-(10*this.props.state.averagedScale)} className={classnames("menuItem", "fontAdjustment10")}>Honours project, University of Dundee, 2018</text> 
     <g id="menus" ref="menus" key="menus">
     {this.props.state.menuMainArray.length > 0 && this.props.state.menuMainArray.map((nextMenu)=> {
-       return (
-            <MenuMain
-            key={"MM" + nextMenu.x + nextMenu.y}
-            menu={nextMenu}
-            loadDatabase={(dataFile)=>this.props.loadDatabase(dataFile)}
-            />
-          );
+      return (
+        <MenuMain
+        key={"MM" + nextMenu.x + nextMenu.y}
+        menu={nextMenu}
+        loadDatabase={(dataFile)=>this.props.loadDatabase(dataFile)}
+        />
+      );
     })}
     {this.props.state.menuElementArray.length > 0 && this.props.state.menuElementArray.map((nextMenu)=> {
       return (
-            <MenuElement
-              key={"EM" + nextMenu.x + nextMenu.y}
-              menu={nextMenu}
-            />
-          );
+        <MenuElement
+        key={"EM" + nextMenu.x + nextMenu.y}
+        menu={nextMenu}
+        />
+      );
     })}
     </g>
     This Browser does not support html canvas.
     </svg>
     </div>
   );
-}
+  }
 }
 
 export default LayoutTree;

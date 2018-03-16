@@ -1,0 +1,49 @@
+{
+    "nodes": [
+        {
+            "nodeID": "231441",
+            "text": "KATIE",
+            "type": "A",
+            "timestamp": "2016-11-08 18:14:11"
+        },
+        {
+            "nodeID": "231442",
+            "text": "KIERAN",
+            "type": "A",
+            "timestamp": "2016-11-08 18:14:11"
+        },
+        {
+            "nodeID": "231443",
+            "text": "JOE",
+            "type": "A",
+            "timestamp": "2016-11-08 18:14:11"
+        },
+        {
+            "nodeID": "231444",
+            "text": "LUCA",
+            "type": "A",
+            "timestamp": "2016-11-08 18:14:11"
+        },
+        {
+            "nodeID": "231445",
+            "text": "CHARLIE",
+            "type": "A",
+            "timestamp": "2016-11-08 18:14:11"
+        },
+        {
+            "nodeID": "231446",
+            "text": "Follows",
+            "type": "B",
+            "timestamp": "2016-11-08 18:14:11"
+        }
+    ],
+    "edges": [
+        {
+            "edgeID": "317472",
+            "fromID": "231445",
+            "toID": "231446",
+            "formEdgeID": null
+        }
+    ],
+    "locutions": []
+}

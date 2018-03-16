@@ -170,9 +170,9 @@ class MenuMain extends React.Component {
         return( //tell user this is not possible because someone is creating a node.
           <g>
           <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 3)} className="menuItemRect" key={'AutoLayoutOptionBox' + "_" + uuid} fill="white"/>
-          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key ={'AutoLayoutOptionText0' + "_" + uuid} >Unable to Refresh</text>
-          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")}  key ={'AutoLayoutOptionText1' + "_" + uuid} >Another user is</text>
-          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")}  key ={'AutoLayoutOptionText2' + "_" + uuid} >creating elements</text>
+          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key ={'AutoLayoutOptionText0' + "_" + uuid} >Unable to Refresh.</text>
+          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")}  key ={'AutoLayoutOptionText1' + "_" + uuid} >An Element Menu</text>
+          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")}  key ={'AutoLayoutOptionText2' + "_" + uuid} >is in use</text>
           </g>
         );
       }else{ //show refresh button
