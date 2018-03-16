@@ -2,7 +2,6 @@
   "name": "graph-visualiser",
   "version": "0.1.0",
   "description": "An AIF graph visualiser for ARG-Tech",
-  "main": "src/renderApp.js",
   "license": "UNLICENSED",
   "engines": {
     "npm": ">=3"
@@ -14,6 +13,7 @@
     "prestart": "npm-run-all --parallel start-message",
     "start_backup": "npm-run-all --parallel test:watch open:src lint:watch",
     "start": "npm-run-all --parallel open:src lint:watch",
+    "start_prod": "NODE_ENV=production && npm start",
     "open:src": "babel-node tools/srcServer.js",
     "open:dist": "babel-node tools/distServer.js",
     "lint": "esw webpack.config.* src tools --color",
@@ -42,6 +42,7 @@
     "neo4j": "1.1.1",
     "neo4j-driver": "1.5.0",
     "npm": "5.7.1",
+    "npm-run-all": "4.0.2",
     "object-assign": "4.1.0",
     "object-hash": "1.2.0",
     "react": "15.5.4",

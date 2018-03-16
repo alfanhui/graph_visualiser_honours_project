@@ -26,6 +26,11 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
+#Neo4j Database information except for data/dbms for docker
+!neo4j_Data/
+neo4j_Data/*
+!neo4j_Data/data/
+
 #dist folder
 dist
 

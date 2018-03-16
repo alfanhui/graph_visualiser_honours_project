@@ -1,0 +1,17 @@
+app:
+  image: node:latest
+  volumes:
+   - ./graph_visualiser_honours_project:/app
+  links:
+   - neo4j
+  ports: ["13000:3000"]
+  working_dir: /app
+  entrypoint: npm start
+
+neo4j:
+  image: neo4j:latest
+  environment:
+   - NEO4J_AUTH=neo4j/jazzyrice80
+  volumes:
+   - ./graph_visualiser_honours_project/neo4j_Data/db/dbms:/data/dbms
+  ports: ["17474:7474", "7474:7474", "17687:7687", "17475:7475"]
