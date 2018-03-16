@@ -2,7 +2,7 @@ import request from 'superagent';
 import {SET} from 'reducerActions';
 /*Code in file written by Stephen Wright from Stackoverflow on 12th of Mar 2014 at 23:00, see config.js */
 const config = {
-      port: ':17475',
+      port: ':17474',
       remotehost: 'http://10.201.84.137',
       localhost: 'http://localhost',
       transaction: '/db/data/transaction/commit',
