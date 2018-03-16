@@ -6,7 +6,7 @@
 
 const config = {
     development: {
-        port: ':17475',
+        port: ':17474',
         remotehost: 'http://10.201.84.137',
         localhost: 'http://localhost',
         transaction: '/db/data/transaction/commit',
@@ -16,7 +16,7 @@ const config = {
         },
     },
     production: {
-        port: ':17475',
+        port: ':17474',
         remotehost: 'http://10.201.84.137',
         localhost: 'http://localhost',
         transaction: '/db/data/transaction/commit',
