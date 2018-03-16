@@ -13,24 +13,24 @@ let tuio = {
 
   _touchstart:    function(touch) {
     // Create a touchstart event
-    console.log("TUIO TOUCH START");// eslint-disable-line
+    //console.log("TUIO TOUCH START");// eslint-disable-line
     this._create_event('touchstart', touch, {});
   },
 
   _touchmove: function(touch) {
     // Create a touchmove event
-    console.log("MOVING!!!");// eslint-disable-line
+    //console.log("MOVING!!!");// eslint-disable-line
     this._create_event('touchmove', touch, {});
   },
 
   _touchend: function(touch) {
     // Create a touchend event
-    console.log("ENDING!!!");// eslint-disable-line
+    //console.log("ENDING!!!");// eslint-disable-line
     this._create_event('touchend', touch, {});
   },
 
   _create_event: function(name, touch, attrs) {
-    console.log("tuio event created");
+    //console.log("tuio event created");
     // Creates a custom DOM event
     let evt = document.createEvent('CustomEvent');
     evt.initEvent(name, true, true);
@@ -54,7 +54,7 @@ let tuio = {
   },
 
   _get_target_touches: function(element) {
-    console.log("getting touches");
+    //console.log("getting touches");
     let targetTouches = [];
     for (let i = 0; i < this.cursors.length; i++) {
       let touch = this.cursors[i];
@@ -68,7 +68,7 @@ let tuio = {
 	// Callback from the main event handler
 	callback: function(type, sid, fid, x, y, angle) {// eslint-disable-line
     //console.log('callback type: ' + type + ' sid: ' + sid + ' fid: ' + fid);
-    console.log("callback: x:", x, ", y:",y,", pageX:", window.innerWidth * x, ", pageY:", window.innerHeight * y); // eslint-disable-line
+    //console.log("callback: x:", x, ", y:",y,", pageX:", window.innerWidth * x, ", pageY:", window.innerHeight * y); // eslint-disable-line
 		let data;
 
 		if (type !== 3) {
@@ -117,6 +117,6 @@ let tuio = {
 };
 
 function tuio_callback(type, sid, fid, x, y, angle)	{ // eslint-disable-line
-  console.log("tuio event callback");
+  //console.log("tuio event callback");
 	tuio.callback(type, sid, fid, x, y, angle);
 }

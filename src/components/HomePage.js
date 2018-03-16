@@ -35,7 +35,7 @@ class HomePage extends React.Component {
     this.windowConsoleCheck(); //this is to stop production crashing with console.logs
     this.props.dispatch(checkAddress()).then(() => {
       if(this.props.state.testMode){
-        console.log("test mode"); // eslint-disable-line
+        //console.log("test mode"); // eslint-disable-line
         this.props.dispatch(wipeDatabase()).then(()=>{
           this.props.dispatch(SET('defaultNodeTypes', [
             "A"]));

@@ -132,7 +132,7 @@ class InteractionEvents extends React.Component {
       }
     }else{
       if (!drag.state) {
-        console.log("mouse: x:", event.clientX, ", y:" , event.clientY);
+        //console.log("mouse: x:", event.clientX, ", y:" , event.clientY);
         drag.elem = event.target;
         drag.currentX = event.clientX;
         drag.currentY = event.clientY;

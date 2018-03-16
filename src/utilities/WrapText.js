@@ -23,7 +23,7 @@ export function wrapContextTextToArray(text) {
                         }
                     }
                     if(!pushChecker){
-                        console.log("Invalid text string"); // eslint-disable-line
+                        //console.log("Invalid text string"); // eslint-disable-line
                         wrappedArray.push(text.slice(indexStart, remainingLength));
                         text = text.slice(remainingLength);
                     }

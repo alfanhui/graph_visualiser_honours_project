@@ -13,12 +13,12 @@ export function importJSON(dataFile) {
         return request.get("data/US2016G1/" + fileName + ".json")
         .then((res)=> {
           dispatch(SET("currentDataFile", dataFile));
-          console.log(res.body); // eslint-disable-line
+          //console.log(res.body); // eslint-disable-line
           let {nodeStatements, dictionary, edgeStatements} = graphMLtoCypher(res.body);
           return dispatch(compileQuery(nodeStatements, dictionary, edgeStatements));
         })
         .catch((err)=> {
-          console.log("This error: " , err); // eslint-disable-line
+          //console.log("This error: " , err); // eslint-disable-line
           dispatch(SET("databaseError", "#F50057"));
         });
       });
@@ -34,7 +34,7 @@ function graphMLtoCypher(jsonObj) {
   let dictionary = {};
   let hashMap = {};
   if(nodeParameters.props.length < 1){
-    console.log("Nothing to import"); // eslint-disable-line
+    //console.log("Nothing to import"); // eslint-disable-line
     return;
   }
   nodeParameters.props.map((item) => {
@@ -108,7 +108,7 @@ function nodeToCypher(jsonObj) {
   let dictionary = {};
   let hashMap = {};
   if(nodeParameters.props.length < 1){
-    console.log("Nothing to import"); // eslint-disable-line
+    //console.log("Nothing to import"); // eslint-disable-line
     return;
   }
   nodeParameters.props.map((item) => {

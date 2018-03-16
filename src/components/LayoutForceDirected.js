@@ -39,7 +39,7 @@ class LayoutForceDirected extends React.Component {
         this.state = {
 
         };
-        console.log("Width: " + width + " Height: " + height + " Ratio: " + (width / height)); // eslint-disable-line
+        //console.log("Width: " + width + " Height: " + height + " Ratio: " + (width / height)); // eslint-disable-line
     }
 
     componentWillMount() {
