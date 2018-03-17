@@ -49,7 +49,6 @@ export function convertRawToTree(object) {
         let nodeDepthConflict = getNodesWithMaxDepth();
         
         //recursively amend layer heights from conflicts in asceding order so we don't override higher ordered layers
-        nodeDepthConflict = _.orderBy(nodeDepthConflict, ['size'],['asc']);
         nodeDepthConflict.map((childNode) =>{
             correctLoopHash = {};
             correctDepthTraversalRecurssively(childNode.nodeID, (childNode.size -1));
@@ -147,6 +146,7 @@ function getNodesWithMaxDepth(){
             }
         }
     }
+    nodeDepthConflict = _.orderBy(nodeDepthConflict, ['size'],['asc']);
     return nodeDepthConflict;
 }
 
@@ -176,7 +176,9 @@ function correctDepthTraversalRecurssively(nodeID, counter) {
                 return;
             }else{
                 correctLoopHash[nodeID+"_"+parentNode.source] = null;
+                console.log("before", nodeHash[parentNode.source]);
                 nodeHash[parentNode.source].layer = counter;
+                console.log("after", nodeHash[parentNode.source]);
                 correctDepthTraversalRecurssively(parentNode.source, (counter - 1));
             }
         });
