@@ -13,7 +13,7 @@ let totalNumOfLayers;
 //loop protectors
 let possibleLoopHash;
 let correctLoopHash;
-let applyChildrenLoopHash = {};
+let applyChildrenLoopHash;
 
 let width = window.innerWidth - 50;
 let height = window.innerHeight - 100;
@@ -26,8 +26,12 @@ export function scaleHeight(number){
 }
 
 export function convertRawToTree(object) {
-    lowestNumOfLayers=0;
-    totalNumOfLayers=0;
+    lowestNumOfLayers=0,
+    totalNumOfLayers=0,
+    nodeHash = {},
+    linkHashBySource = {},
+    linkHashByTarget = {};
+
     return (dispatch) => {
         if(object.nodes.length == 0){
             return;
@@ -35,10 +39,6 @@ export function convertRawToTree(object) {
         let nodes = object.nodes,
         links = object.links;
 
-        nodeHash = {},
-        linkHashBySource = {};
-        linkHashByTarget = {}
-        
         createDataHashes(nodes, links);
         
         //Calculate possible depths for all nodes, starting from roots
@@ -66,9 +66,8 @@ export function convertRawToTree(object) {
         //Structure into tree for d3
         let dataTree = structureIntoTree(rootNodes);
         
-        //Apply horizontal positioning
-        let root = d3.hierarchy(dataTree);  
-        root = tree(root);
+        //Apply horizontal positioning 
+        let root = tree(d3.hierarchy(dataTree));
         
         let newNodes = treeIntoNodes(root);
         dispatch(SET("nodes", newNodes));
@@ -176,9 +175,7 @@ function correctDepthTraversalRecurssively(nodeID, counter) {
                 return;
             }else{
                 correctLoopHash[nodeID+"_"+parentNode.source] = null;
-                console.log("before", nodeHash[parentNode.source]);
                 nodeHash[parentNode.source].layer = counter;
-                console.log("after", nodeHash[parentNode.source]);
                 correctDepthTraversalRecurssively(parentNode.source, (counter - 1));
             }
         });
@@ -189,7 +186,13 @@ function correctDepthTraversalRecurssively(nodeID, counter) {
 function getRootNodes(nodes) {
     //any node not in target is a parent node
     let rootNodes = nodes.filter(node => !linkHashByTarget.hasOwnProperty(node.nodeID));
+    if(rootNodes.length == 0){
+        return [nodes[0]];
+    }
     let sortedRootNodes = rootNodes.sort(function(node1, node2) {
+        if(!node1.hasOwnProperty("timestamp")){
+            return true;
+        }
         return moment.utc(node1.timestamp).isAfter(moment.utc(node2.timestamp));
     });
     return sortedRootNodes;
@@ -212,9 +215,10 @@ function fixLayerCount(){
         let positiveLowestLayer = Math.abs(lowestNumOfLayers);
         for (let node in nodeHash) {
             if (nodeHash.hasOwnProperty(node)) {
-                nodeHash[node].layer + positiveLowestLayer;
+                nodeHash[node].layer += positiveLowestLayer;
             }
         }
+        lowestNumOfLayers = 0;
         totalNumOfLayers += positiveLowestLayer;
     }
 }
