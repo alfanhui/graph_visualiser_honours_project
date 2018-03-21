@@ -4,7 +4,6 @@ import _ from 'lodash';
 import PropTypes from 'prop-types';
 import { SET} from 'reducerActions';
 import getUuid from 'uuid/v1';
-import ForceDirected from './LayoutForceDirected';
 import Tree from './LayoutTree';
 import { startTimer } from 'utilities/Timer';
 
@@ -318,19 +317,6 @@ class InteractionEvents extends React.Component {
   render() {
     return (
       <div>
-      {this.props.state.layout == "FORCE" ?
-      <ForceDirected
-      onMouseDown={this.onNewMouseStart}
-      onMouseMove={this.onNewMouseMove}
-      onMouseUp={this.onNewMouseUp}
-      menuMainArray={this.menuMainArray}
-      menuElementArray={this.menuElementArray}
-      resetTimer={this.resetTimer}
-      onTouchStart={this.touchStart}
-      onTouchMove={this.touchMove}
-      onTouchEnd={this.touchEnd}
-      onTouchCancel={this.touchCancel} />
-      :
       <Tree
       onMouseDown={this.onNewMouseStart}
       onMouseMove={this.onNewMouseMove}
@@ -343,7 +329,6 @@ class InteractionEvents extends React.Component {
       onTouchEnd={this.touchEnd}
       onTouchCancel={this.touchCancel} 
       loadDatabase={(dataFile)=>this.props.loadDatabase(dataFile)}/>
-    }
     </div>
   );
 }

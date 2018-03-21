@@ -150,7 +150,6 @@ class LayoutTree extends React.Component {
       + " C " + (source.x + (this.state.contextWidth / 2)) + " " + (layerMidHeight)
       + "  " + (source.x + (this.state.contextWidth / 2)) + " " + (layerMidHeight) //change source.x to target to make correct curve.
       + "  " + (target.x + (this.state.contextWidth / 2)) + " " + (target.y);
-      
       let style = {strokeWidth:"1.1px"};
       let highlightedEdgeUUID = _.filter(this.props.state.highlightedEdges, {source:source.nodeID, target:target.nodeID});
       if(highlightedEdgeUUID.length > 0){
