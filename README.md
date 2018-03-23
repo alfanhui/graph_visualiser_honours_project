@@ -7,15 +7,13 @@ Graph visualiser is my honours project for my Computing & Cognitive Science BSc,
 
 ## How To Use
 
-
-
-### Prerequisites
+TODO
 
 ## Initial Machine Setup
 1. **Install [Node 5.0.0 or greater](https://nodejs.org)**. 
 2. **Install [Git](https://git-scm.com/downloads)**. 
 
-### Installing
+## Installing
 
 Type `npm install && npm start` to start development in Chrome or Firefox browser. (Other browsers may work, but are not tested)
 
