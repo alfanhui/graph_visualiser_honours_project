@@ -41,7 +41,7 @@ class HomePage extends React.Component {
             "A"]));
           this.props.dispatch(SET('nodeTypes', [
             {type:"A", name:"Person"},
-            {type:"B", name:"Relationship", scheme:"Disagreeing", schemeID:"78"},
+            {type:"B", name:"Sibling", scheme:"Disagreeing", schemeID:"78"},
             {type:"C", name:"Friendship", scheme:"Arguing", schemeID:"80"},
             {type:"D", name:"Following", scheme:"Default Conflict", schemeID:"71"},
             {type:"E", name:"BFFs", scheme:"Restating", schemeID:"101"},            
@@ -52,6 +52,7 @@ class HomePage extends React.Component {
           this.props.dispatch(SET('dataFiles', [
             "TEST_1",
             "TEST_2",
+            "TEST_3",
             "CLEAR"]));
           this.props.dispatch(SET('currentDataFile', "TEST_1"));
         });

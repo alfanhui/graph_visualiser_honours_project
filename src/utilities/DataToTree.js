@@ -58,7 +58,7 @@ export function convertRawToTree(object) {
         
         //Scale all nodes according to correct layer
         if(totalNumOfLayers == 1){ //this stops long edges when adding to a 1 layer (because diff in space beween edges is huge!)
-            height = height/2;
+            height = (window.innerHeight - 100)/2;
         }else{
             width = window.innerWidth - 50;
             height = window.innerHeight - 100;
