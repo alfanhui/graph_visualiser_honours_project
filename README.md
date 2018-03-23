@@ -1,4 +1,4 @@
-<p align="center"><img src="https://moduscreate.com/wp-content/uploads/2014/03/react-opti.png"/></p>
+<p align="center"><img src="https://github.com/alfanhui/graph_visualiser_honours_project/blob/Test/docs/logoREADME.png?raw=true"/></p>
 
 
 # Graph Visualiser
