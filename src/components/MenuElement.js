@@ -166,8 +166,8 @@ class MenuElement extends React.Component {
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'editEdgeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid,"nodeTypes");}}/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'editEdgeBoxText' + "_" + uuid} >[Tap to Choose]</text>
         
-        <rect x={this.state.origin + (this.state.menu_width/2)} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeTarget' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid,"nodeTypes");}}/>
-        <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key={'editEdgeBoxTarget' + "_" + uuid}>{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].name}</text>
+        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeTarget' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid,"nodeTypes");}}/>
+        <text x={this.state.origin  + (this.state.menu_width/2)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key={'editEdgeBoxTarget' + "_" + uuid}>{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].name}</text>
         
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeButton' + "_" + uuid} onClick={()=>{this.editNode(uuid);}}/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem","fontAdjustment18")} key ={'editEdgeButtonText' + "_" + uuid} >Amend</text>
