@@ -89,6 +89,7 @@ class MenuElement extends React.Component {
     let current_node = _.find(props.state.nodes, { "nodeID": menu.nodeID });
     let distanceArray = nodes.map((target_node, index)=> {
       if(!_.find(connectedEdges, { "source":menu.nodeID, "target": target_node.nodeID })){
+        if(!_.find(connectedEdges, { "target": menu.nodeID })){ //stops self referencing for now
         return({ targetNode:target_node.nodeID,
           index,
           invalid_layer:target_node.layer < current_node.layer ? true : false,
@@ -100,6 +101,7 @@ class MenuElement extends React.Component {
           );
           
         }
+      }
       });
       distanceArray = distanceArray.filter(function(n){ return n != undefined }); 
       distanceArray = _.orderBy(distanceArray, ['distance'],['asc']);
