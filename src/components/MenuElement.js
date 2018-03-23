@@ -163,12 +163,11 @@ class MenuElement extends React.Component {
       let node = _.find(this.props.state.nodes, { "nodeID": this.props.menu.nodeID });
       return(
         <g key ={'editEdge' + "_" + uuid}>
-        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'editEdgeBox' + "_" + uuid}/>
-        <text x={this.state.origin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18_E")} key={'editEdgeCurrentText' + "_" + uuid} >Current Type:</text>
-        <text x={this.state.origin + (this.state.menu_width*.80)} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'editEdgeBoxCurrentText' + "_" + uuid} >{node.type}</text>
+        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'editEdgeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid,"nodeTypes");}}/>
+        <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'editEdgeBoxText' + "_" + uuid} >[Tap to Choose]</text>
         
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeTarget' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid,"nodeTypes");}}/>
-        <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18_E")} key={'editEdgeBoxTarget' + "_" + uuid}>{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].name}</text>
+        <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key={'editEdgeBoxTarget' + "_" + uuid}>{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].name}</text>
         
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeButton' + "_" + uuid} onClick={()=>{this.editNode(uuid);}}/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem","fontAdjustment18")} key ={'editEdgeButtonText' + "_" + uuid} >Amend</text>
