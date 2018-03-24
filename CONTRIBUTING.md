@@ -14,15 +14,12 @@ All features should be worked out of a well named feature branch. Branch off the
 ## npm Scripts
 This project uses npm scripts for automation
 
-|Script|Description|
-|------|-----------|
-|start|Start local webserver to host the docs at localhost:3000|
-|test|Run tests|
+|Script        |Description                                             |
+|--------------|--------------------------------------------------------|
+|start         |Start local webserver to host the docs at localhost:3000|
+|run test:watch|Run tests                                               |
 
 There are many other scripts in package.json, but these are the two you're most likely to run.
-
-## Semantic Versioning
-This project follows [semantic versioning](http://semver.org). We release patch versions for bugfixes, minor versions for new features, and major versions for any breaking changes.
 
 ## Proposing a Change
 If you intend to change the public API, or make any non-trivial changes to the implementation, we recommend filing an issue. This lets us reach an agreement on your proposal before you put significant effort into it.
