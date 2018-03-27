@@ -31,14 +31,14 @@ export function convertRawToTree(object) {
     nodeHash = {},
     linkHashBySource = {},
     linkHashByTarget = {};
-
+    
     return (dispatch) => {
         if(object.nodes.length == 0){
             return;
         }
         let nodes = object.nodes,
         links = object.links;
-
+        
         createDataHashes(nodes, links);
         
         //Calculate possible depths for all nodes, starting from roots
@@ -53,7 +53,7 @@ export function convertRawToTree(object) {
             correctLoopHash = {};
             correctDepthTraversalRecurssively(childNode.nodeID, (childNode.size -1));
         });    
-
+        
         fixLayerCount();
         
         //Scale all nodes according to correct layer
@@ -68,7 +68,7 @@ export function convertRawToTree(object) {
                 nodeHash[node].scaleLayer = scaleHeight(nodeHash[node].layer);
             }
         }
-           
+        
         //Structure into tree for d3
         let dataTree = structureIntoTree(rootNodes);
         
@@ -76,8 +76,9 @@ export function convertRawToTree(object) {
         let root = tree(d3.hierarchy(dataTree));
         
         let newNodes = treeIntoNodes(root);
-        dispatch(SET("nodes", newNodes));
+        
         dispatch(SET("layoutReady",true));
+        dispatch(SET("nodes", newNodes));
     };
 }
 
@@ -121,9 +122,9 @@ function calculatePossibleDepths(rootNodes){
 function possibleDepthTraversalRecurssively(nodeID, counter, nodeHash) {
     if (linkHashBySource.hasOwnProperty(nodeID)) {
         linkHashBySource[nodeID].map((childNode) => {
-             if(possibleLoopHash.hasOwnProperty(nodeID+"_"+childNode.target)){
-                 return;
-             }else{
+            if(possibleLoopHash.hasOwnProperty(nodeID+"_"+childNode.target)){
+                return;
+            }else{
                 possibleLoopHash[nodeID+"_"+childNode.target] = null;
                 nodeHash[childNode.target].depthArray.push(counter);
                 nodeHash[childNode.target].layer = counter;
@@ -153,24 +154,6 @@ function getNodesWithMaxDepth(){
     }
     nodeDepthConflict = _.orderBy(nodeDepthConflict, ['size'],['asc']);
     return nodeDepthConflict;
-}
-
-//Recursively goes through and adds correct children to each node
-function applyChildrenRecurssively(node, children){ //linkHash is using link.source
-    if (linkHashBySource.hasOwnProperty(node)){ //contains a link
-        linkHashBySource[node].map((link) => { // cycle through the exisiting links
-            if(applyChildrenLoopHash.hasOwnProperty(link.target +"_"+link.source)){
-                return;
-            }else{
-                applyChildrenLoopHash[link.target +"_"+link.source] = null;
-                children.push({"name": link.target,
-                "parent": link.source,
-                "children": applyChildrenRecurssively(link.target, []),
-                ...nodeHash[link.target]});
-            }
-        });
-    }
-    return children;
 }
 
 //Adjusts layer height based off maximum layer found in child
@@ -254,6 +237,26 @@ function structureIntoTree(rootNodes){
     }
     
     
+    //Recursively goes through and adds correct children to each node
+    function applyChildrenRecurssively(node, children){ //linkHash is using link.source
+        if (linkHashBySource.hasOwnProperty(node)){ //contains a link
+            linkHashBySource[node].map((link) => { // cycle through the exisiting links
+                if(applyChildrenLoopHash.hasOwnProperty(link.target +"_"+link.source)){
+                    return;
+                }else{
+                    applyChildrenLoopHash[link.target +"_"+link.source] = null;
+                    children.push({"name": link.target,
+                    "parent": link.source,
+                    "children": applyChildrenRecurssively(link.target, []),
+                    ...nodeHash[link.target]});
+                }
+            });
+        }
+        return children;
+    }
+    
+    
+    
     //This converts the hierarchal data of all the root nodes and their children back into normal node data.  
     function treeIntoNodes(root){
         let newNodeArray = [];
@@ -299,8 +302,8 @@ function structureIntoTree(rootNodes){
                     "y":node.data.scaleLayer,  
                     "scheme":node.data.scheme,
                     "schemeID":node.data.schemeID,         
-            });
-        }
-    });  
-    return newNodeArray;
-}
+                });
+            }
+        });  
+        return newNodeArray;
+    }

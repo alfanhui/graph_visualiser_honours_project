@@ -38,7 +38,7 @@ const initialState = {
     {type:"YA", name: "Arguing", scheme:"Arguing", schemeID:"80"}
   ],
   paint:false,
-  testMode: true,
+  testMode: false,
   updateFromCreate: true,
   updateInterval: 15000,
   updateAuto: false,
