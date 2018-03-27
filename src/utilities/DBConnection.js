@@ -1,5 +1,6 @@
 import request from 'superagent';
-import {SET} from 'reducerActions';
+import { SET } from 'reducerActions';
+import hash from 'object-hash';
 /*Code in file written by Stephen Wright from Stackoverflow on 12th of Mar 2014 at 23:00, see config.js */
 const config = {
       port: ':7475',
@@ -44,7 +45,6 @@ export function postQuery(statements, parameters = null) {
     preparedStatement.push({statement: s, parameters: parameters});
   });
   return (dispatch) => {
-    dispatch(SET("databaseError", '#F50057'));
     return request.post(url)
     .send({ statements: preparedStatement })
     .auth(config.login.username,config.login.password)
@@ -56,12 +56,14 @@ export function postQuery(statements, parameters = null) {
           dispatch(SET("databaseError", '#FFFFF'));
           return(res.body.results);
         }
-      }else{
-        throw res.body.errors;
+      } else {
+          dispatch(SET("databaseError", '#F50057'));
+          throw res.body.errors;
       }
     })
     .catch((err)=> {
-      console.log("This error occcured: " , err, "statement:", preparedStatement); // eslint-disable-line
+      console.log("This error occcured: ", err, "statement:", preparedStatement); // eslint-disable-line
+      dispatch(SET("databaseError", '#F50057'));
       return 0;
     });
   };
@@ -112,4 +114,29 @@ export function removeIndexes() {
       return 0;
     });
   };
+}
+
+export function updateHash() {
+    return (dispatch) => {
+        return dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
+            let newHash = hash(result, { algorithm: 'md5' });
+            return dispatch(SET("currentHash", newHash));
+        });
+    }
+}
+
+
+export function checkDatabase(currentHash) {
+    return (dispatch) => {
+        //get all data 
+        return dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
+            if (result[0].data.length == 0) { //stops empty database autoupdate complaints
+                return;
+            }
+            let newHash = hash(result, { algorithm: 'md5' });
+            if (newHash !== currentHash) {
+                dispatch(SET("updateAvailable", true));
+            }
+        });
+    }
 }

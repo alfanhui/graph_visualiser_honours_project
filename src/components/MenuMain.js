@@ -100,19 +100,19 @@ class MenuMain extends React.Component {
       displayOptionCreateNode = (uuid) =>{
         return(
           <g key ={'createNode' + "_" + uuid}>
-          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height)} className="menuItemRect" key={'createNodeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid, "nodeTypes");}}/>
+          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'createNodeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid, "nodeTypes");}}/>
           <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'createNodeBoxText' + "_" + uuid} >[Tap to Choose]</text>
           {/* <text x={this.state.origin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18_E")} key={'createNodeBoxText' + "_" + uuid} >Type:</text>
           <text x={this.state.origin + (this.state.menu_width/2)} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'createNodeBoxTextType1' + "_" + uuid} >{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type}</text>
            */}
-          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'CreateNodeTarget' + "_" + uuid} onClick={()=>{}}/>
+          {/*<rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'CreateNodeTarget' + "_" + uuid} onClick={()=>{}}/>*/}
           {
             this.props.state.defaultNodeTypes.includes(this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type) ? 
             <g>
             <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18_E")} key ={'CreateNodeTargetText' + "_" + uuid}> Text:</text>
             <foreignObject key={"FO_Div" + uuid} x={this.state.menu_width/2.4} y={this.state.menuItemTextYOrigin + (0.5 * this.state.menu_height)} width={(this.state.menu_width / 2)} height={this.state.menu_height}>
             <div key={"inputDiv" + uuid}xmlns="http://www.w3.org/1999/xhtml">
-            <textarea key={"inputInput" + uuid} id={"inputInput" + uuid} name="text" rows="14" cols="10" wrap="soft" maxLength="120" style={{width:(this.state.menu_width/1.6)+"px", height:((this.state.menu_height*.7) + "px"), fontSize:((22 * this.props.state.averagedScale) + "px"), overflow:"hidden", resize:"none"}}></textarea>
+              <textarea key={"inputInput" + uuid} id={"inputInput" + uuid} onInput={() => {this.resetTimer(uuid)}}name="text" rows="14" cols="10" wrap="soft" maxLength="120" placeholder="NODE" style={{ width: (this.state.menu_width / 1.6) + "px", height: ((this.state.menu_height * .7) + "px"), fontSize: ((22 * this.props.state.averagedScale) + "px"), overflow: "hidden", resize: "none" }}/>
             </div>
             </foreignObject>
             </g>
@@ -176,7 +176,10 @@ class MenuMain extends React.Component {
           <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")}  key ={'AutoLayoutOptionText2' + "_" + uuid} >is in use</text>
           </g>
         );
-      }else{ //show refresh button
+      } else { //show refresh button
+          this.props.dispatch(stopTimer(uuid, "menuMainArray"));
+          this.props.loadDatabase(null);
+          /*
         return(
           <g>
           <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'AutoLayoutOptionBox0' + "_" + uuid} fill="white"/>
@@ -186,6 +189,7 @@ class MenuMain extends React.Component {
           <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")}  key ={'AutoLayoutOptionText2' + "_" + uuid}> OK </text>
           </g>
         );
+          */
       }
     }
     

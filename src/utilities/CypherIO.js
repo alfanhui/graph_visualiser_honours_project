@@ -1,4 +1,4 @@
-import {wipeDatabase, removeIndexes, postQuery} from 'utilities/DBConnection'; //
+import { wipeDatabase, removeIndexes, postQuery, updateHash} from 'utilities/DBConnection'; //
 import request from 'superagent';
 import {SET} from 'reducerActions';
 import _ from 'lodash'; 
@@ -116,6 +116,18 @@ function edgeToCypher(jsonObj) {
   return edgeStatements;
 }
 
+
+export function updateNode(oldNode, amendedNode) {
+    let newNode = _.cloneDeep(amendedNode);
+    return (dispatch) => {
+        return dispatch(removeNode(oldNode)).then(() => {
+            return dispatch(importNode(newNode)).then(() => {
+                dispatch(updateHash());
+            });
+        });
+    }
+}
+
 export function importNode(_newNode){
   let newNode = _.cloneDeep(_newNode);
   newNode.text = newNode.text.join("");
@@ -123,8 +135,10 @@ export function importNode(_newNode){
     let {nodeStatements, dictionary} = nodeToCypher({nodes:[newNode]});
     return dispatch(postQuery(nodeStatements, dictionary)).then(function(){
       for (let nodeType in dictionary) {
-        dispatch(postQuery(['CREATE INDEX ON :' + nodeType + '(nodeID)'], null)); //create index
+        dispatch(postQuery(['CREATE INDEX ON :' + nodeType + '(nodeID)'], null))
       }
+    }).then(() => {
+        dispatch(updateHash());
     });
   };
 }
@@ -133,13 +147,17 @@ export function importEdge(_newEdge){
   let newEdge = _.cloneDeep(_newEdge);
   return (dispatch) => {
     let edgeStatements = edgeToCypher({edges:[newEdge]});
-    return dispatch(postQuery(edgeStatements));
+    return dispatch(postQuery(edgeStatements)).then(() => {
+        dispatch(updateHash());
+    });
   };
 }
 
 export function removeNode(nodeToRemove){
   return(dispatch) => {
-    return dispatch(postQuery("MATCH (n:" + nodeToRemove.type + ") WHERE n.nodeID=\'" + nodeToRemove.nodeID + "\' DELETE n"));// eslint-disable-line
+      return dispatch(postQuery("MATCH (n:" + nodeToRemove.type + ") WHERE n.nodeID=\'" + nodeToRemove.nodeID + "\' DELETE n")).then(() => {// eslint-disable-line
+          dispatch(updateHash());
+      });
   };
 }
 
@@ -151,7 +169,9 @@ export function removeEdges(edgesToRemove){
     return "MATCH (n)-[rel:LINK]->(r) WHERE n.nodeID=\'" + edge.source + "\' AND r.nodeID=\'" + edge.target + "\' DELETE rel";// eslint-disable-line
   });
   return(dispatch) => {
-    return dispatch(postQuery(removeStatements)); 
+      return dispatch(postQuery(removeStatements)).then(() => {
+          dispatch(updateHash());
+      }); 
   };
 }
 

@@ -9,7 +9,7 @@ import InteractionEvents from './InteractionEvents';
 import { wrapContextTextToArray, wrapNonContextTextToArray } from 'utilities/WrapText';
 import { importJSON } from 'utilities/CypherIO';
 import hash from 'object-hash';
-import { wipeDatabase } from '../utilities/DBConnection';
+import { wipeDatabase, checkDatabase } from '../utilities/DBConnection';
 
 @connect((store) => {
   return {
@@ -40,7 +40,7 @@ class HomePage extends React.Component {
           this.props.dispatch(SET('defaultNodeTypes', [
             "A"]));
           this.props.dispatch(SET('nodeTypes', [
-            {type:"A", name:"Person"},
+            {type:"A", name:"Default"},
             {type:"B", name:"Sibling", scheme:"Disagreeing", schemeID:"78"},
             {type:"C", name:"Friendship", scheme:"Arguing", schemeID:"80"},
             {type:"D", name:"Following", scheme:"Default Conflict", schemeID:"71"},
@@ -91,18 +91,18 @@ class HomePage extends React.Component {
   retrieveDataFromDatabase(){
     let nodes, links;
     this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
-      if(result==0){
-        throw "no data";
-      }
-      this.props.dispatch(SET("updateAvailable", false));
-      let now = Date.now();
-      let hours = new Date(now).getHours(),
-      minutes = new Date(now).getMinutes();
-      if (minutes < 10){
-        minutes = "0" + minutes;
-      }
-      this.props.dispatch(SET("lastUpdated", hours + ":" + minutes));
-      this.setState({ currentHash: hash(result, { algorithm: 'md5' }) });
+        if (result == 0) {
+            throw "no data";
+        }
+        this.props.dispatch(SET("updateAvailable", false));
+        let now = Date.now();
+        let hours = new Date(now).getHours(),
+            minutes = new Date(now).getMinutes();
+        if (minutes < 10) {
+            minutes = "0" + minutes;
+        }
+        this.props.dispatch(SET("lastUpdated", hours + ":" + minutes));
+        this.props.dispatch(SET("currentHash", hash(result, { algorithm: 'md5' })));
       nodes = this.convertNeo4jResult(result);
       //format data (wordwrap and other activities)
       nodes = this.formatNodes(nodes);
@@ -146,22 +146,19 @@ class HomePage extends React.Component {
   }
   
   checkUpdate() {
-    //get all data 
-    this.props.dispatch(postQuery('MATCH (n) RETURN n')).then((result) => {
-      if(result[0].data.length == 0){ //stops empty database autoupdate complaints
-        return;
-      }
-      let newHash = hash(result, { algorithm: 'md5' });
-      if (newHash !== this.state.currentHash) {
-        //Autoupdate if enabled - or prompt user
-        if (this.props.state.updateAuto) {
-          //console.log("Update taking place.."); // eslint-disable-line
-          this.componentWillMount();
-        } else {
-          //console.log("There is a new update available"); // eslint-disable-line
-          this.props.dispatch(SET("updateAvailable", true));
-        }
-      }
+      this.props.dispatch(checkDatabase(this.props.state.currentHash)).then(() => {
+          if (this.props.state.updateAvailable) {
+              //Autoupdate if enabled - or prompt user
+              if (this.props.state.updateAuto) {
+                  this.componentWillMount();
+              } else {
+                  this.props.dispatch(SET('showUpdateAvailable', true));
+              }
+          } else {
+              if (this.props.state.showUpdateAvailable) {
+                  this.props.dispatch(SET('showUpdateAvailable', false));
+              }
+          }
     });
   }
   

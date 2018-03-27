@@ -69,6 +69,7 @@ class InteractionEvents extends React.Component {
     newStyles.push(".fontAdjustment12_E { text-anchor: start; font-size: " + (12 * averagedScale) + "px; line-height: " + (26 * averagedScale) + "px; min-height: " + (26 * averagedScale) + "px;}");
     newStyles.push(".fontAdjustment14 { text-anchor: middle; font-size: " + (14 * averagedScale) + "px; line-height: " + (28 * averagedScale) + "px; min-height: " + (28 * averagedScale) + "px;}");  
     newStyles.push(".fontAdjustment15 { text-anchor: middle; font-size: " + (15 * averagedScale) + "px; line-height: " + (30 * averagedScale) + "px; min-height: " + (30 * averagedScale) + "px;}");
+    newStyles.push(".fontAdjustment17 { text-anchor: middle; font-size: " + (17 * averagedScale) + "px; line-height: " + (34 * averagedScale) + "px; min-height: " + (34 * averagedScale) + "px;}");
     newStyles.push(".fontAdjustment18 { text-anchor: middle; font-size: " + (18 * averagedScale) + "px; line-height: " + (36 * averagedScale) + "px; min-height: " + (36 * averagedScale) + "px;}");
     newStyles.push(".fontAdjustment18_E { text-anchor: start; font-size: " + (18 * averagedScale) + "px; line-height: " + (36 * averagedScale) + "px; min-height: " + (36 * averagedScale) + "px;}"); 
     newStyles.map((style)=>{

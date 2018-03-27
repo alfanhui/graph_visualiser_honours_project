@@ -2,7 +2,8 @@ const initialState = {
   averagedScale: 1,
   connectionType: "",
   creationHaltRefresh: false,
-  currentDataFile:'11130',
+  currentDataFile: '11130',
+  currentHash: "",
   databaseError: "#FFFFF",
   dataFiles:[
     "11257",

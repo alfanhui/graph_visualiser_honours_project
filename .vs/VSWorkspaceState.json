@@ -2,12 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\api",
     "\\src\\components",
     "\\src\\constants",
     "\\src\\styles",
     "\\src\\utilities"
   ],
-  "SelectedNode": "\\src\\components\\Layout_Tree.js",
+  "SelectedNode": "\\src\\components\\MenuMain.js",
   "PreviewInSolutionExplorer": false
 }
