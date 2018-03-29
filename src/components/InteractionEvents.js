@@ -90,7 +90,6 @@ class InteractionEvents extends React.Component {
         if (event.target.getAttribute("id") == "main" && !this.props.state.paint) { 
           let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
           let uuid = getUuid();
-          console.log("hello");
           this.isMenuNearBy(newX, newY);
           let newMenu = { x: newX, y: newY, uuid, type:"menuMainArray"};
           this.props.dispatch(startTimer(newMenu));
@@ -132,21 +131,27 @@ class InteractionEvents extends React.Component {
         }
         this.setState({ currentTouches: $currentTouches });
       }
-    }else{
-      if (!drag.state) {
-        console.log("mouse: x:", event.clientX, ", y:" , event.clientY);
+    } else {
+        if (!drag.state) {
         drag.elem = event.target;
         drag.currentX = event.clientX;
         drag.currentY = event.clientY;
         if (event.target.getAttribute("id") != "main") {
-          let node = _.find(this.props.state.nodes, { "nodeID": event.target.id });
-          //issue with rotated nodes positing is not correct upon moving
-          if(!this.props.state.defaultNodeTypes.includes(node.type)){ 
-            drag.currentX += 60;
-            drag.currentY += 5;
-          }
-          let transform = event.target.getAttributeNS(null, "transform").slice(10, -1).split(',');
-          drag.transform = transform.map(parseFloat);
+            let node = _.find(this.props.state.nodes, { "nodeID": event.target.id });
+            //issue with rotated nodes positing is not correct upon moving
+            if(!this.props.state.defaultNodeTypes.includes(node.type)){ 
+              drag.currentX += 60;
+              drag.currentY += 5;
+            }
+            let transform = event.target.getAttributeNS(null, "transform").slice(10, -1).split(',');
+            drag.transform = transform.map(parseFloat);
+        } else {
+            if (this.isMenuNearBy(drag.currentX, drag.currentY)) return; //if too close to another menu
+            let { newX, newY } = this.deadZone(event.clientX, event.clientY);
+            let uuid = getUuid();
+            let newMenu = { x: newX, y: newY, uuid, type: "menuMainArray" };
+            this.props.dispatch(startTimer(newMenu));
+            return;
         }
         drag.state = true;
       }
@@ -263,15 +268,9 @@ class InteractionEvents extends React.Component {
         }
       }
     }else{
-      if (drag.state) { //had hit element
-        if (!drag.moved) {
-            if (event.target.getAttribute("id") == "main") {
-                if (this.isMenuNearBy(drag.currentX, drag.currentY)) return; //if too close to another menu
-                let {newX, newY} = this.deadZone(event.clientX, event.clientY);
-                let uuid = getUuid();
-                let newMenu = { x: newX, y: newY, uuid, type:"menuMainArray"};
-                this.props.dispatch(startTimer(newMenu));
-          } else {
+        if (drag.state) { //had hit element
+          if (!drag.moved) {
+            if (event.target.getAttribute("id") != "main") {
                 let {newX, newY} = this.deadZone(event.clientX, event.clientY);
                 let uuid = getUuid();
                 let newMenu = { x: newX, y: newY, uuid, type:"menuElementArray", nodeID: event.target.id };

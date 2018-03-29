@@ -66,7 +66,7 @@ class LayoutTree extends React.Component {
         let style = { pointerEvents: 'none', touchAction: 'none'};
       let highlightedNodeUUID = _.find(this.props.state.highlightedNodes, {nodeID:node.nodeID});
       if(highlightedNodeUUID){
-          style = { stroke: highlightedNodeUUID.color, strokeWidth: "10px", opacity: 1, pointerEvents: 'none', touchAction: 'none'};
+          style = { stroke: highlightedNodeUUID.color, strokeWidth: "8px", opacity: 1, pointerEvents: 'none', touchAction: 'none'};
       }
       return (
           <g key={"group" + node.nodeID}  >
@@ -227,7 +227,8 @@ class LayoutTree extends React.Component {
                 />
       <g>
       {this.props.state.nodes && this.props.state.nodes.length > 0 && this.props.state.nodes.map(this.renderNode)}
-      {this.props.state.links &&  this.props.state.nodes.length > 0 && this.props.state.links.length > 0 && this.props.state.links.map(this.renderPath)}
+      {this.props.state.links && this.props.state.nodes.length > 0 && this.props.state.links.length > 0 && this.props.state.links.map(this.renderPath)}
+      {this.props.state.newLinks && this.props.state.nodes.length > 0 && this.props.state.newLinks.length > 0 && this.props.state.newLinks.map(this.renderPath)}
     }
     </g>
     

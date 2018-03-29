@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import classnames from 'classnames';
-import { SET, UPDATE, DROP } from 'reducerActions';
+import { SET, UPDATE, DROP, REPLACE } from 'reducerActions';
 import { addToTimer, stopTimer } from 'utilities/Timer';
 import {makeEdge} from 'utilities/Edge';
 import {importEdge, updateNode, removeNode, removeEdges} from 'utilities/CypherIO';
@@ -63,10 +63,23 @@ class MenuElement extends React.Component {
   componentWillMount(){
     this.props.dispatch(SET("creationHaltRefresh", true));
   }
-  
-  componentWillUnmount(){
+
+  componentWillReceiveProps(nextProps, nextState) {
+      let connectedEdges = _.filter(nextProps.state.links, { "source": nextProps.menu.nodeID });
+      connectedEdges = connectedEdges.concat(_.filter(nextProps.state.links, { "target": nextProps.menu.nodeID }));
+      //order Targetable nodes by closest
+      let distancesToTarget = this.distancesToTarget(nextProps, connectedEdges);
+      if (nextState.connectedEdges != this.state.connectedEdges) {
+          console.log("updating state");
+          this.setState({ connectedEdges, distancesToTarget, nodeTargetCurrentIndex: (nextState.nodeTargetCurrentIndex - 1) });
+      }
+  }
+
+  componentWillUnmount() {
+    let menu = this.props.menu;
     this.props.dispatch(DROP("highlightedNodes", "color", {color:this.state.colourTag}));
-    this.props.dispatch(DROP("highlightedEdges", "color", {color:this.state.colourTag}));
+    this.props.dispatch(DROP("highlightedEdges", "color", { color: this.state.colourTag }));
+    this.props.dispatch(DROP("newLinks", "edgeID", { edgeID: menu.uuid }));
     this.props.dispatch(SET("creationHaltRefresh", false));
   }
   
@@ -119,16 +132,20 @@ class MenuElement extends React.Component {
     
     clickBack = (uuid) => {
       this.props.dispatch(DROP("highlightedNodes", "color", {color:this.state.colourTag}));
-      this.props.dispatch(DROP("highlightedEdges", "color", {color:this.state.colourTag}));
+      this.props.dispatch(DROP("highlightedEdges", "color", { color: this.state.colourTag }));
+      this.props.dispatch(DROP("newLinks", "edgeID", { edgeID: uuid }));
       this.props.dispatch(addToTimer(uuid, "menuElementArray"));
       this.setState({layer: 0});
     }
     
     //element menu option click
-    clickCreateEdge = (uuid) =>{
-      this.props.dispatch(UPDATE("highlightedNodes", {nodeID:this.state.distancesToTarget[this.state.nodeTargetCurrentIndex].targetNode, color:this.state.colourTag}));
+    clickCreateEdge = (uuid) => {
+      let menu = this.props.menu;
+      this.props.dispatch(UPDATE("highlightedNodes", { nodeID: this.state.distancesToTarget[this.state.nodeTargetCurrentIndex].targetNode, color: this.state.colourTag }));
+      this.props.dispatch(UPDATE("highlightedEdges", { edgeID: this.props.menu.nodeID, source: this.props.menu.nodeID, target: this.state.distancesToTarget[this.state.nodeTargetCurrentIndex].targetNode, color: this.state.colourTag }));
+      this.props.dispatch(UPDATE('newLinks', { edgeID: uuid, source: menu.nodeID, target: this.state.distancesToTarget[this.state.nodeTargetCurrentIndex].targetNode}));
       this.resetTimer(uuid);
-      this.setState({layer: 1, clickedOption:(uuid)=>this.displayOptionCreateEdge(uuid)});
+      this.setState({ layer: 1, clickedOption: (uuid) => this.displayOptionCreateEdge(uuid)});
     }
     
     clickEditNode = (uuid) =>{
@@ -138,7 +155,7 @@ class MenuElement extends React.Component {
     
     clickDeleteEdges = (uuid) => {
       if(this.state.connectedEdges.length > 0){
-        this.props.dispatch(UPDATE("highlightedEdges", {source:this.state.connectedEdges[this.state.connectedEdgesCurrentIndex].source, target:this.state.connectedEdges[this.state.connectedEdgesCurrentIndex].target, color:this.state.colourTag}));
+        this.props.dispatch(UPDATE("highlightedEdges", {edgeID: uuid, source:this.state.connectedEdges[this.state.connectedEdgesCurrentIndex].source, target:this.state.connectedEdges[this.state.connectedEdgesCurrentIndex].target, color:this.state.colourTag}));
         this.resetTimer(uuid);
         this.setState({layer:1, clickedOption:(uuid)=>this.displayOptionDeleteEdges(uuid)});
       }
@@ -154,10 +171,9 @@ class MenuElement extends React.Component {
         }
       return(
         <g key ={'createEdge' + "_" + uuid}>
-        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'createEdgeBox' + "_" + uuid} onClick={()=>{this.cycleDistanceIndex(uuid);}}/>
+              <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'createEdgeBox' + "_" + uuid} onClick={() => { this.cycleDistanceIndex(uuid);}}/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'createEdgeBoxText' + "_" + uuid} >[Tap to Choose]</text>
         
-        {/*<rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'CreateEdgeTarget' + "_" + uuid} onClick={()=>{this.cycleDistanceIndex(uuid);}}/>*/}
         <text x={this.state.origin + (this.state.menu_width*.25)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")}  key ={'CreateEdgeTargetText' + "_" + uuid}> Target:</text>
         <text x={this.state.origin + (this.state.menu_width*.7)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment17")} 
         style={{ stroke:this.state.colourTag, strokeWidth:"2" }} 
@@ -178,7 +194,6 @@ class MenuElement extends React.Component {
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'editEdgeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid,"nodeTypes");}}/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'editEdgeBoxText' + "_" + uuid} >[Tap to Choose]</text>
         
-        {/*<rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeTarget' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid,"nodeTypes");}}/>*/}
         <text x={this.state.origin  + (this.state.menu_width/2)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key={'editEdgeBoxTarget' + "_" + uuid}>{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].name}</text>
         
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeButton' + "_" + uuid} onClick={()=>{this.editNode(uuid);}}/>
@@ -219,6 +234,7 @@ class MenuElement extends React.Component {
           this.props.dispatch(importEdge(newEdge)); //import edges into neo4j
         }
       }
+      this.props.dispatch(DROP("highlightedEdges", 'edgeID', { edgeID: this.props.menu.nodeID}));
       this.props.dispatch(stopTimer(uuid, "menuElementArray")); //remove menu
     }
     
@@ -283,18 +299,20 @@ class MenuElement extends React.Component {
         index = this.state.connectedEdgesCurrentIndex + 1;
       }
       this.setState({connectedEdgesCurrentIndex:index});
-      this.props.dispatch(UPDATE("highlightedEdges", {source:this.state.connectedEdges[index].source, target:this.state.connectedEdges[index].target, color:this.state.colourTag}));
+      this.props.dispatch(UPDATE("highlightedEdges", {edgeID: uuid, source:this.state.connectedEdges[index].source, target:this.state.connectedEdges[index].target, color:this.state.colourTag}));
     }
     
     
-    cycleDistanceIndex(uuid){
-      this.props.dispatch(DROP("highlightedNodes", "color", {color:this.state.colourTag}));
+    cycleDistanceIndex(uuid) {
+      this.props.dispatch(DROP("highlightedNodes", "color", { color: this.state.colourTag }));
       let index = 1;
       this.resetTimer(uuid);
       if((this.state.distancesToTarget.length-1) != this.state.nodeTargetCurrentIndex){
         index = this.state.nodeTargetCurrentIndex + 1;
       }
-      this.setState({nodeTargetCurrentIndex:index});
+      this.setState({ nodeTargetCurrentIndex: index });
+      this.props.dispatch(REPLACE('newLinks', 'edgeID', { edgeID: this.props.menu.uuid, source: this.props.menu.nodeID, target: this.state.distancesToTarget[index].targetNode }));
+      this.props.dispatch(REPLACE("highlightedEdges", 'edgeID', { edgeID: this.props.menu.nodeID, source: this.props.menu.nodeID, target: this.state.distancesToTarget[index].targetNode, color:this.state.colourTag }));
       this.props.dispatch(UPDATE("highlightedNodes", {nodeID:this.state.distancesToTarget[index].targetNode, color:this.state.colourTag}));
     }
     

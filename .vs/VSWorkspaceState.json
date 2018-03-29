@@ -4,10 +4,12 @@
     "\\src",
     "\\src\\components",
     "\\src\\constants",
+    "\\src\\reducerActions",
     "\\src\\reducers",
     "\\src\\styles",
-    "\\src\\utilities"
+    "\\src\\utilities",
+    "\\src\\__tests__"
   ],
-  "SelectedNode": "\\src\\components\\InteractionEvents.js",
+  "SelectedNode": "\\src\\components\\MenuElement.js",
   "PreviewInSolutionExplorer": false
 }

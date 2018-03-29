@@ -24,6 +24,7 @@ const initialState = {
   loading:false,
   menuElementArray: [],
   menuMainArray: [],
+  newLinks: [],
   nodes: [],
   nodeTypes:[
     {type:"I", name:"Information Node"},
