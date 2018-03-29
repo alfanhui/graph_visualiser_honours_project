@@ -4,9 +4,10 @@
     "\\src",
     "\\src\\components",
     "\\src\\constants",
+    "\\src\\reducers",
     "\\src\\styles",
     "\\src\\utilities"
   ],
-  "SelectedNode": "\\src\\components\\MenuMain.js",
+  "SelectedNode": "\\src\\utilities\\DataToTree.js",
   "PreviewInSolutionExplorer": false
 }
