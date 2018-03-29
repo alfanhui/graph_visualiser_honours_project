@@ -65,7 +65,7 @@ export function convertRawToTree(object) {
         }
         for (let node in nodeHash) {
             if (nodeHash.hasOwnProperty(node)) {
-                nodeHash[node].scaleLayer = scaleHeight(nodeHash[node].layer);
+                nodeHash[node].y = scaleHeight(nodeHash[node].layer);
             }
         }
         
@@ -257,53 +257,51 @@ function structureIntoTree(rootNodes){
     
     
     
-    //This converts the hierarchal data of all the root nodes and their children back into normal node data.  
-    function treeIntoNodes(root){
-        let newNodeArray = [];
-        root.children.map((node) => { 
-            //recursion function inside this function because keeping newNodeArray a local variable.
-            let findChildren = function(node_children){
-                if (node_children.children && node_children.children.length > 0){ 
-                    node_children.children.map((child)=>{
-                        findChildren(child);
-                    });
-                }
-                if(!_.find(newNodeArray, {"nodeID": node_children.data.nodeID})){
-                    newNodeArray.push({
-                        "nodeID":node_children.data.nodeID,
-                        "type":node_children.data.type,
-                        "text":node_children.data.text, 
-                        "timestamp":node_children.data.timestamp,      
-                        "layer":node_children.data.layer,
-                        "time":node_children.data.time,
-                        "date":node_children.data.date,      
-                        "x":node_children.x,      
-                        "y":node_children.data.scaleLayer,         
-                        "scheme":node_children.data.scheme,
-                        "schemeID":node_children.data.schemeID,
-                    });
-                }
-            };
-            if (node.children && node.children.length > 0){ 
-                node.children.map((child)=>{
-                    findChildren(child);
-                });
-            }
-            if(!_.find(newNodeArray, {"nodeID": node.data.nodeID})){
-                newNodeArray.push({
-                    "nodeID":node.data.nodeID,
-                    "text":node.data.text, 
-                    "type":node.data.type,
-                    "timestamp":node.data.timestamp,      
-                    "layer":node.data.layer,
-                    "time":node.data.time,
-                    "date":node.data.date,        
-                    "x":node.x,      
-                    "y":node.data.scaleLayer,  
-                    "scheme":node.data.scheme,
-                    "schemeID":node.data.schemeID,         
-                });
-            }
-        });  
-        return newNodeArray;
+  //This converts the hierarchal data of all the root nodes and their children back into normal node data.  
+  function treeIntoNodes(root){
+      let newNodeArray = [];
+      root.children.map((node) => { 
+          //recursion function inside this function because keeping newNodeArray a local variable.
+          let findChildren = function(node_children){
+              if (node_children.children && node_children.children.length > 0){ 
+                  node_children.children.map((child)=>{
+                      findChildren(child);
+                  });
+              }
+              if (!_.find(newNodeArray, { "nodeID": node_children.data.nodeID })) {
+                  newNodeArray.push(formatNode(node_children));
+              }
+          };
+          if (node.children && node.children.length > 0){ 
+              node.children.map((child)=>{
+                  findChildren(child);
+              });
+          }
+          if(!_.find(newNodeArray, {"nodeID": node.data.nodeID})){
+              newNodeArray.push(formatNode(node));
+          }
+    });  
+    return newNodeArray;
+}
+
+//This formats the node to rid any data that is unnessary and to make all necessay properties apparent.
+function formatNode(node) {
+    if (!node.data.hasOwnProperty('text')) {
+        node.data['text'] = "";
     }
+    if (!node.data.hasOwnProperty('timestamp')) {
+        node.data['timestamp'] = moment().format("YYYY-MM-DD HH:MM:SS");
+    }
+
+    let infantNode = _.cloneDeep(node.data);
+    infantNode.x = node.x;
+
+    delete (infantNode.parent);
+    delete (infantNode.depthArray);
+
+    if (infantNode.hasOwnProperty('children')) {
+        delete (infantNode.children);
+    }
+
+    return infantNode;
+}

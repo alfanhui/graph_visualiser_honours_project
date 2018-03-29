@@ -87,26 +87,31 @@ class MenuElement extends React.Component {
     let nodes = _.cloneDeep(props.state.nodes);
     let menu = props.menu;
     let current_node = _.find(props.state.nodes, { "nodeID": menu.nodeID });
-    let distanceArray = nodes.map((target_node, index)=> {
-      if(!_.find(connectedEdges, { "source":menu.nodeID, "target": target_node.nodeID })){
-        if(!_.find(connectedEdges, { "target": menu.nodeID })){ //stops self referencing for now
-        return({ targetNode:target_node.nodeID,
-          index,
-          invalid_layer:target_node.layer < current_node.layer ? true : false,
-          distance: Math.pow(
-            Math.pow((target_node.x - current_node.x), 2) 
-            + 
-            Math.pow((target_node.y - current_node.y), 2)
-            , .5)}
-          );
-          
+
+    let distanceArray = nodes.filter((target_node) => {
+        if (_.find(connectedEdges, { "source": menu.nodeID, "target": target_node.nodeID })) {
+            return false;
+        } else if (_.find(connectedEdges, { "target": target_node.nodeID })) {
+            return false;
+        } else {
+            return true;
         }
-      }
-      });
-      distanceArray = distanceArray.filter(function(n){ return n != undefined }); 
-      distanceArray = _.orderBy(distanceArray, ['distance'],['asc']);
-      return distanceArray;
-    }
+    });
+
+    distanceArray = distanceArray.map((target_node, index) => {
+        return ({index,
+                targetNode: target_node.nodeID,
+                invalid_layer: (target_node.layer < current_node.layer) ? true : false,
+                distance: Math.pow(
+                    Math.pow((target_node.x - current_node.x), 2) + Math.pow((target_node.y - current_node.y), 2)
+                    , .5)
+                });
+    });
+      
+    distanceArray = _.orderBy(distanceArray, ['distance'], ['asc']);
+    
+    return distanceArray;
+  }
     
     resetTimer = (uuid) => {
       this.props.dispatch(addToTimer(uuid, "menuElementArray"));
@@ -143,7 +148,7 @@ class MenuElement extends React.Component {
     //Element menu display option
     displayOptionCreateEdge = (uuid) => {
         let text;
-        if(this.state.distancesToTarget.length > 1) {
+        if(this.state.distancesToTarget.length > 0) {
             text = _.find(this.props.state.nodes, { "nodeID": this.state.distancesToTarget[this.state.nodeTargetCurrentIndex].targetNode }).text;
             text = text[0].length > 7 ? (text[0].slice(0, 7) + "..") : text[0];
         }

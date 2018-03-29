@@ -79,8 +79,16 @@ class MenuMain extends React.Component {
       }
       
       clickAutoLayout = (uuid) =>{
-        this.resetTimer(uuid);
-        this.setState({layer: 1, clickedOption:(uuid) => this.displayOptionAutoLayout(uuid)});
+          this.resetTimer(uuid);
+          this.props.state.creationHaltRefresh ? 
+              this.setState({ layer: 1, clickedOption: (uuid) => this.displayOptionAutoLayout(uuid)})
+              :
+              this.autoRefresh(uuid);
+      }
+
+      autoRefresh = (uuid) => {
+          this.props.dispatch(stopTimer(uuid, "menuMainArray"));
+          this.props.loadDatabase(null);
       }
       
       clickExport = (uuid) => {
@@ -102,10 +110,6 @@ class MenuMain extends React.Component {
           <g key ={'createNode' + "_" + uuid}>
           <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'createNodeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid, "nodeTypes");}}/>
           <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'createNodeBoxText' + "_" + uuid} >[Tap to Choose]</text>
-          {/* <text x={this.state.origin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18_E")} key={'createNodeBoxText' + "_" + uuid} >Type:</text>
-          <text x={this.state.origin + (this.state.menu_width/2)} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'createNodeBoxTextType1' + "_" + uuid} >{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type}</text>
-           */}
-          {/*<rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (1 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'CreateNodeTarget' + "_" + uuid} onClick={()=>{}}/>*/}
           {
             this.props.state.defaultNodeTypes.includes(this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type) ? 
             <g>
@@ -159,16 +163,17 @@ class MenuMain extends React.Component {
         <g key ={'import' + "_" + uuid}>
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'importOptionBox' + "_" + uuid} fill="white" onClick={()=>{this.cycleIndex(uuid, "dataFiles");}}/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key ={'importInfo' + "_" + uuid} >[Tap to Choose]</text>
-        <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key ={'importFileName' + "_" + uuid} >{("nodeset " + this.props.state.dataFiles[this.state.dataFilesCurrentIndex])}</text>
+        <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key={'importFileName' + "_" + uuid} >
+                  {this.props.state.dataFiles[this.state.dataFilesCurrentIndex] == "CLEAR" ? "Clear Screen" : ("nodeset " + this.props.state.dataFiles[this.state.dataFilesCurrentIndex])}
+        </text>
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'importButton' + "_" + uuid} fill="white" onClick={()=>{this.importDatabase();}}/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key ={'importButtonText' + "_" + uuid} >IMPORT</text>
         </g>
       );
     }
     
-    displayOptionAutoLayout = (uuid) =>{
-      if(this.props.state.creationHaltRefresh){
-        return( //tell user this is not possible because someone is creating a node.
+    displayOptionAutoLayout = (uuid) => {
+     return( //tell user this is not possible because someone is creating a node.
           <g>
           <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 3)} className="menuItemRect" key={'AutoLayoutOptionBox' + "_" + uuid} fill="white"/>
           <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key ={'AutoLayoutOptionText0' + "_" + uuid} >Unable to Refresh.</text>
@@ -176,21 +181,7 @@ class MenuMain extends React.Component {
           <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")}  key ={'AutoLayoutOptionText2' + "_" + uuid} >is in use</text>
           </g>
         );
-      } else { //show refresh button
-          this.props.dispatch(stopTimer(uuid, "menuMainArray"));
-          this.props.loadDatabase(null);
-          /*
-        return(
-          <g>
-          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'AutoLayoutOptionBox0' + "_" + uuid} fill="white"/>
-          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")}  key ={'AutoLayoutOptionText0' + "_" + uuid} >Auto-Layout</text>
-          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")}  key ={'AutoLayoutOptionText1' + "_" + uuid} >will refresh page</text>
-          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'AutoLayoutOptionBox1' + "_" + uuid} fill="white" onClick={()=>{this.props.dispatch(stopTimer(uuid, "menuMainArray")), this.props.loadDatabase(null);}}/>
-          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")}  key ={'AutoLayoutOptionText2' + "_" + uuid}> OK </text>
-          </g>
-        );
-          */
-      }
+  
     }
     
     

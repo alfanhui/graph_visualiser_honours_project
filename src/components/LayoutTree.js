@@ -71,7 +71,7 @@ class LayoutTree extends React.Component {
       return (
           <g key={"group" + node.nodeID}  >
               <rect id={node.nodeID} key={'node' + node.nodeID} width={this.state.contextWidth + (this.state.contextWidth * .2)} height={this.state.contextHeight + (node.text.length * (15 * this.props.state.averagedScale)) + (this.state.contextHeight + (node.text.length * (15 * this.props.state.averagedScale)) *.2)}
-                   style={{fill:'white', opacity:'0', cursor:'pointer'}} transform={boundaryTransform}
+                   style={{fill:'white', opacity:'0', cursor:'move'}} transform={boundaryTransform}
         onMouseDown={(event)=>this.props.onTouchStart(event, true)} 
         onMouseMove={(event)=>this.props.onTouchMove(event, true)} 
         onMouseUp={(event)=>this.props.onTouchEnd(event, true)} 
