@@ -122,7 +122,7 @@ export function updateHash() {
             let newHash = hash(result, { algorithm: 'md5' });
             return dispatch(SET("currentHash", newHash));
         });
-    }
+    };
 }
 
 
@@ -138,5 +138,5 @@ export function checkDatabase(currentHash) {
                 dispatch(SET("updateAvailable", true));
             }
         });
-    }
+    };
 }

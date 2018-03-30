@@ -116,7 +116,7 @@ class MenuMain extends React.Component {
             <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18_E")} key ={'CreateNodeTargetText' + "_" + uuid}> Text:</text>
             <foreignObject key={"FO_Div" + uuid} x={this.state.menu_width/2.4} y={this.state.menuItemTextYOrigin + (0.5 * this.state.menu_height)} width={(this.state.menu_width / 2)} height={this.state.menu_height}>
             <div key={"inputDiv" + uuid}xmlns="http://www.w3.org/1999/xhtml">
-              <textarea key={"inputInput" + uuid} id={"inputInput" + uuid} onInput={() => {this.resetTimer(uuid)}}name="text" rows="14" cols="10" wrap="soft" maxLength="120" placeholder="NODE" style={{ width: (this.state.menu_width / 1.6) + "px", height: ((this.state.menu_height * .7) + "px"), fontSize: ((22 * this.props.state.averagedScale) + "px"), overflow: "hidden", resize: "none" }}/>
+              <textarea key={"inputInput" + uuid} id={"inputInput" + uuid} onInput={() => this.resetTimer(uuid)}name="text" rows="14" cols="10" wrap="soft" maxLength="120" placeholder="NODE" style={{ width: (this.state.menu_width / 1.6) + "px", height: ((this.state.menu_height * .7) + "px"), fontSize: ((22 * this.props.state.averagedScale) + "px"), overflow: "hidden", resize: "none" }}/>
             </div>
             </foreignObject>
             </g>

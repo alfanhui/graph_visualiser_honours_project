@@ -125,7 +125,7 @@ export function updateNode(oldNode, amendedNode) {
                 dispatch(updateHash());
             });
         });
-    }
+    };
 }
 
 export function importNode(_newNode){
@@ -135,7 +135,7 @@ export function importNode(_newNode){
     let {nodeStatements, dictionary} = nodeToCypher({nodes:[newNode]});
     return dispatch(postQuery(nodeStatements, dictionary)).then(function(){
       for (let nodeType in dictionary) {
-        dispatch(postQuery(['CREATE INDEX ON :' + nodeType + '(nodeID)'], null))
+        dispatch(postQuery(['CREATE INDEX ON :' + nodeType + '(nodeID)'], null));
       }
     }).then(() => {
         dispatch(updateHash());

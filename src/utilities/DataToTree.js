@@ -43,8 +43,8 @@ export function convertRawToTree(object) {
         
         //Calculate possible depths for all nodes, starting from roots
         let rootNodes = getRootNodes(nodes);
-        calculatePossibleDepths(rootNodes);
         
+        calculatePossibleDepths(rootNodes);
         //find which nodes have biggest max depth
         let nodeDepthConflict = getNodesWithMaxDepth();
         
@@ -53,7 +53,6 @@ export function convertRawToTree(object) {
             correctLoopHash = {};
             correctDepthTraversalRecurssively(childNode.nodeID, (childNode.size -1));
         });    
-        
         fixLayerCount();
         
         //Scale all nodes according to correct layer
@@ -71,12 +70,10 @@ export function convertRawToTree(object) {
         
         //Structure into tree for d3
         let dataTree = structureIntoTree(rootNodes);
-        
         //Apply horizontal positioning 
         let root = tree(d3.hierarchy(dataTree));
         
         let newNodes = treeIntoNodes(root);
-        
         dispatch(SET("layoutReady",true));
         dispatch(SET("nodes", newNodes));
     };
@@ -123,15 +120,16 @@ function possibleDepthTraversalRecurssively(nodeID, counter, nodeHash) {
     if (linkHashBySource.hasOwnProperty(nodeID)) {
         linkHashBySource[nodeID].map((childNode) => {
             if(possibleLoopHash.hasOwnProperty(nodeID+"_"+childNode.target)){
+                //possibleLoopHash = {};
                 return;
-            }else{
-                possibleLoopHash[nodeID+"_"+childNode.target] = null;
-                nodeHash[childNode.target].depthArray.push(counter);
-                nodeHash[childNode.target].layer = counter;
-                if(nodeID !== childNode.target){
-                    possibleDepthTraversalRecurssively(childNode.target, (counter + 1), nodeHash);
-                }
             }
+            possibleLoopHash[nodeID+"_"+childNode.target] = null;
+            nodeHash[childNode.target].depthArray.push(counter);
+            nodeHash[childNode.target].layer = counter;
+            if(nodeID !== childNode.target){
+                possibleDepthTraversalRecurssively(childNode.target, (counter + 1), nodeHash);
+            }
+
         });
     }
 }
@@ -175,6 +173,8 @@ function correctDepthTraversalRecurssively(nodeID, counter) {
 function getRootNodes(nodes) {
     //any node not in target is a parent node
     let rootNodes = nodes.filter(node => !linkHashByTarget.hasOwnProperty(node.nodeID));
+    let connectedNodes = nodes.filter(node => linkHashByTarget.hasOwnProperty(node.nodeID));
+    rootNodes = checkForDisconnectedLoopedNodes(connectedNodes, rootNodes);
     if(rootNodes.length == 0){
         return [nodes[0]];
     }
@@ -185,6 +185,80 @@ function getRootNodes(nodes) {
         return moment.utc(node1.timestamp).isAfter(moment.utc(node2.timestamp));
     });
     return sortedRootNodes;
+}
+
+function checkForDisconnectedLoopedNodes(connectedNodes, rootNodes){
+    let loopCheck = {},
+        loopList =[],
+        nodesToAdd =[];
+    //check which nodes are not connencted to a root
+    let nodesNotConnectedToRoot = connectedNodes.filter((node)=>{
+            if(linkHashByTarget.hasOwnProperty(node.nodeID)){
+                let truthyArray = rootNodes.map((root)=>{
+                    let itemFound = _.find(linkHashByTarget[node.nodeID], { "source": root.nodeID });
+                    return (itemFound != undefined) ? true : false;
+                });
+                if(truthyArray.find((item)=> item == true)){
+                    return false;
+                }else{
+                    return true;
+                }
+            }      
+        });
+
+    //returns nodeID's of unconnected looped nodes
+    const traversal = function(nodeID){
+        let check;
+        let rootCheck = rootNodes.find((root) => root.nodeID == nodeID);
+        if(rootCheck){ //hit root, not disconnected
+            return false;
+        }
+        if (linkHashByTarget.hasOwnProperty(nodeID)) {
+            linkHashByTarget[nodeID].map((linkedNode)=>{
+                if(loopCheck.hasOwnProperty(nodeID+"_"+linkedNode.source)){
+                    if(_.find(loopList, loopCheck) == undefined){
+                        loopList.push(loopCheck);
+                        loopCheck = {};
+                    }
+                    check = nodeID;
+                    return check;
+                }
+                loopCheck[nodeID+"_"+linkedNode.source] = nodeID;
+                check = traversal(linkedNode.source);
+            });
+        }else{
+            check = nodeID;
+        }
+        return check;
+    };
+
+    if(nodesNotConnectedToRoot.length > 0){
+        let brokenNodes = nodesNotConnectedToRoot.map((node) =>{ 
+            loopCheck = {};
+            let brokenNode = traversal(node.nodeID);
+            if(brokenNode == undefined){
+                brokenNode = false;
+            }
+            if(brokenNode != false){
+                return brokenNode;
+            }
+
+        });
+        brokenNodes = brokenNodes.filter((brokenNode) => brokenNode != undefined);
+
+        //Here we want to add one node of each individual loop to the root list
+        if(brokenNodes != undefined){
+            nodesToAdd = loopList.map((item) => {
+                return item[Object.keys(item)[0]]; 
+            });
+        }
+    }
+    if(nodesToAdd.length >0){
+        rootNodes = rootNodes.concat(nodesToAdd.map((item) => {
+            return _.find(connectedNodes, {"nodeID": item});
+        }));
+    }
+    return rootNodes;
 }
 
 
@@ -218,7 +292,7 @@ function structureIntoTree(rootNodes){
     rootNodes.map((rootNode)=> {
         applyChildrenLoopHash = {};
         branches.push({
-            "name":rootNode.nodeID,
+            "nodeID":rootNode.nodeID,
             "parent": "",
             "children":applyChildrenRecurssively(rootNode.nodeID, []),
             ...rootNode});
@@ -245,7 +319,7 @@ function structureIntoTree(rootNodes){
                     return;
                 }else{
                     applyChildrenLoopHash[link.target +"_"+link.source] = null;
-                    children.push({"name": link.target,
+                    children.push({"nodeID": link.target,
                     "parent": link.source,
                     "children": applyChildrenRecurssively(link.target, []),
                     ...nodeHash[link.target]});
@@ -287,15 +361,16 @@ function structureIntoTree(rootNodes){
 //This formats the node to rid any data that is unnessary and to make all necessay properties apparent.
 function formatNode(node) {
     if (!node.data.hasOwnProperty('text')) {
-        node.data['text'] = "";
+        node.data.text = "";
     }
     if (!node.data.hasOwnProperty('timestamp')) {
-        node.data['timestamp'] = moment().format("YYYY-MM-DD HH:MM:SS");
+        node.data.timestamp = moment().format("YYYY-MM-DD HH:MM:SS");
     }
 
     let infantNode = _.cloneDeep(node.data);
     infantNode.x = node.x;
 
+    delete (infantNode.name);
     delete (infantNode.parent);
     delete (infantNode.depthArray);
 
