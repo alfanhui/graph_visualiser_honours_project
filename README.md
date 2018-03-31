@@ -10,8 +10,8 @@ Graph visualiser is my honours project for my Computing & Cognitive Science BSc,
 TODO
 
 ## Initial Machine Setup
-0. **[Mac] `brew install node git neo4j` **
-1. **Install [Node 5.0.0 or greater](https://nodejs.org)**    
+Got a Mac? `brew install node git neo4j`
+1. **Install [Node 5.0.0 or greater](https://nodejs.org)**.
 2. **Install [Git](https://git-scm.com/downloads)**.
 3. **Install [Neo4j Community Edition](https://neo4j.com/download/?ref=subscriptions)**.
 4. Git Clone this project
