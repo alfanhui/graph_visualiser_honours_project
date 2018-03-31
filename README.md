@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/alfanhui/graph_visualiser_honours_project/blob/Test/docs/logoREADME.png?raw=true"/></p>
+<p align="center"><img src="https://github.com/alfanhui/graph_visualiser_honours_project/blob/master/docs/logoREADME.png?raw=true"/></p>
 
 
 # Graph Visualiser
@@ -7,7 +7,15 @@ Graph visualiser is my honours project for my Computing & Cognitive Science BSc,
 
 ## How To Use
 
-TODO
+You will be presented with a whitescreen with a grey border around it. 
+
+With touch or click anywhere will bring up the main menu. 
+<p align="center"><img src="https://github.com/alfanhui/graph_visualiser_honours_project/blob/master/docs/main_menu.png?raw=true"/></p>
+This menu is on a timer and will disappear when inactive. At the main menu, you can `Import Database` to load data from the database to visualise. Upon every import, the nodes process through to the `Auto-Layout` function, and can be manually processed via the main menu. The `Create Node` option allows for you to create a new node. There is an input box to type on a physical keyboard, or you can change its type to create an extended node to be able to describe Argument Analysis Structure. Finally, `Options` contains three toggle switches to control different elements of the application and two export functions. For the toggle switches, `Auto-Update` checked will refresh the database if new nodes are updated to the database externally. `Update-Changes` when checked will push any CRUD actions to the database. `Paint` option gives the ability to use the whitespace as a whiteboard if needs be: note there is only 1 colour. In the last quadrant, there is a Database connection health status, this will either say OK or BAD. The last row of options are the exports, one button for PNG image exports and the other for JSON export of the current data being visualised.
+
+Here are three standard nodes, two of content and a AIF extended node joining the two information nodes together.
+<p align="center"><img src="https://github.com/alfanhui/graph_visualiser_honours_project/blob/master/docs/nodes.png?raw=true"/></p>
+
 
 ## Initial Machine Setup
 Got a Mac? `brew install node git neo4j`
@@ -20,7 +28,10 @@ Got a Mac? `brew install node git neo4j`
 ## Starting up
 
 1. Run `npm start` to start development in Chrome or Firefox browser. (Other browsers may work, but are not tested)
-2. Run `./neo4j_start` to start neo4j 
+2. Run `./neo4j_start` to start neo4j
+3. [http://localhost:3000](http://localhost:3000) to access website
+4. [http://localhost:7475/browser](http://localhost:7475/browser) to access neo4j directly
+
 
 ## Running the tests
 
@@ -28,7 +39,7 @@ Type `npm run test:watch` to start the testing suite.
 
 ## Deployment
 
-Deployment is best done through docker and docker-compose. In **docker_setup/** directory, there is a **RUN_ME.sh** and a pre-configured **docker-compose.yml** file that will take care of deployment. Make sure teh **docker-compose.yml** points to the correct location of the **graph_visualiser_honours_project/** directory before running `./RUN_ME.sh`. 
+Deployment is best done through docker and docker-compose. Please contact me if you want the docker_setup details as they contain sensitive database information. Once you have the folder, in **docker_setup/** directory, there is a **RUN_ME.sh** and a pre-configured **docker-compose.yml** file that will take care of deployment. Make sure the **docker-compose.yml** points to the correct location of the **graph_visualiser_honours_project/** directory before running `./RUN_ME.sh`. 
 Note: this will run docker versions of neo4j and node.js as a daemon process.
 
 ## Built With
