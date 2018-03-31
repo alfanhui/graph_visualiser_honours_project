@@ -123,7 +123,7 @@ export function updateNode(oldNode, amendedNode) {
 
 export function importNode(_newNode){
   let newNode = _.cloneDeep(_newNode);
-  newNode.text = newNode.text.join("");
+  newNode.text = newNode.text.join(" ");
   return (dispatch) => {
     let {nodeStatements, dictionary} = nodeToCypher({nodes:[newNode]});
     return dispatch(postQuery(nodeStatements, dictionary)).then(function(){

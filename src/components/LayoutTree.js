@@ -246,6 +246,7 @@ class LayoutTree extends React.Component {
         <MenuMain
         key={"MM" + nextMenu.x + nextMenu.y}
         menu={nextMenu}
+        loadDatabase={(dataFile)=>this.props.loadDatabase(dataFile)}
         />
       );
     })}

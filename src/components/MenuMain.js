@@ -21,7 +21,8 @@ class MenuMain extends React.Component {
   static propTypes = {
     dispatch: PropTypes.func,
     state: PropTypes.object,
-    menu: PropTypes.object
+    menu: PropTypes.object,
+    loadDatabase: PropTypes.func
   };
   
   constructor(props) {
