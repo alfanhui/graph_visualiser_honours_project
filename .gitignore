@@ -30,6 +30,7 @@ node_modules
 !neo4j_Data/
 neo4j_Data/*
 !neo4j_Data/data/
+src/config.js
 
 #dist folder
 dist

@@ -24,7 +24,7 @@ describe('createDataHashes function', () => {
     afterEach(() => {
         
     });
-    
+    console.log = jest.fn();
     it('creates hashtables from nodes', () => {
         
         const nodes = [{nodeID:"id1"}, {"nodeID":"id2"}, {"nodeID":"id3"}];

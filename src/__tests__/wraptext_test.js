@@ -16,7 +16,7 @@ describe('WrapText function', () => {
     afterEach(() => {
         
     });
-    
+    console.log = jest.fn();
     it('string with nothing passes wrapContextTextToArray', () => {
         return expect(wrapContextTextToArray("")).toEqual([""]);
     });   

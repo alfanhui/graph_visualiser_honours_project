@@ -18,7 +18,7 @@ describe('Node function', () => {
     afterEach(() => {
         
     });
-    
+    console.log = jest.fn();
     it('New Node object returned given menu nodeData and isContext true', () => {
         
         let menu = {

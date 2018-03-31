@@ -88,6 +88,7 @@ class InteractionEvents extends React.Component {
         let currentX = touch.clientX, 
         currentY = touch.clientY;
         if (event.target.getAttribute("id") == "main" && !this.props.state.paint) { 
+          if (this.isMenuNearBy(touch.clientX,  touch.clientY)) return; //if too close to another menu
           let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
           let uuid = getUuid();
           this.isMenuNearBy(newX, newY);

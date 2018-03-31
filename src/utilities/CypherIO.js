@@ -14,9 +14,9 @@ export function importJSON(dataFile) {
         .then((res)=> {
           dispatch(SET("currentDataFile", dataFile));
           console.log(res.body); // eslint-disable-line
-          let {nodeStatements, dictionary, edgeStatements} = graphMLtoCypher(res.body);
+          let {nodeStatements, dictionary, edgeStatements, edgeParameters} = graphMLtoCypher(res.body);
           if(nodeStatements.length == 0) return;
-          return dispatch(compileQuery(nodeStatements, dictionary, edgeStatements));
+          return dispatch(compileQuery(nodeStatements, dictionary, edgeStatements, edgeParameters));
         })
         .catch((err)=> {
           console.log("This error: " , err); // eslint-disable-line
@@ -27,23 +27,18 @@ export function importJSON(dataFile) {
   };
 }
 
-export function test(){
-  return wipeDatabase();// return (dispatch) => {
-  //   return dispatch(wipeDatabase());
-  // }
-}
-
 //post dispatches
-function compileQuery(nodeStatements, dictionary, edgeStatements){
+function compileQuery(nodeStatements, dictionary, edgeStatements, edgeParameters){
   return (dispatch) => {
     //send off queries, as promises, because you cannot create edges from nodes that don't already exist
     return dispatch(postQuery(nodeStatements, dictionary)).then(function(){
+      let indexStatements = [];
       for (let nodeType in dictionary) {
-        dispatch(postQuery(['CREATE INDEX ON :' + nodeType + '(nodeID)'], null)); //create index
+        indexStatements.push('CREATE INDEX ON :'+ nodeType + ' (nodeID)');
       }
-      
-    }).then(function(){
-      return dispatch(postQuery(edgeStatements, null));
+      return dispatch(postQuery(indexStatements)).then(function(){
+        return dispatch(postQuery(edgeStatements, edgeParameters));
+      });
     });
   };
 }
@@ -51,14 +46,14 @@ function compileQuery(nodeStatements, dictionary, edgeStatements){
 
 //handle json object ready for cypher conversion
 function graphMLtoCypher(jsonObj) {
-  let edgeStatements = [];
-  
+  let edgeStatements = [],
+      edgeParameters = [];
   let {nodeStatements, dictionary, hashMap} = nodeToCypher(jsonObj);
   if(nodeStatements.length > 0){
     //create edges
     if(jsonObj.hasOwnProperty('edges')){
-      let edgeParameters = { "edges": jsonObj.edges };
-      edgeParameters && edgeParameters.edges.map((item) => {
+      edgeParameters = _.cloneDeep(jsonObj.edges);
+      edgeParameters && edgeParameters.map((item) => {
         if(hashMap.hasOwnProperty(item.toID) && hashMap.hasOwnProperty(item.fromID)){
           item["toType"] = hashMap[item.toID].type;
           item["fromType"] = hashMap[item.fromID].type;
@@ -68,7 +63,7 @@ function graphMLtoCypher(jsonObj) {
     }  
   }
   //locutions?
-  return {nodeStatements, dictionary, edgeStatements};
+  return {nodeStatements, dictionary, edgeStatements, edgeParameters};
 }
 
 //handle json object ready for cypher conversion
@@ -102,16 +97,14 @@ function nodeToCypher(jsonObj) {
 }
 
 //handle json object ready for cypher conversion
-function edgeToCypher(jsonObj) {
+function edgeToCypher(edgeParameters) {
   //createEdgeStatements
   let edgeStatements = [];
-  jsonObj.edges.map((edge) => {
+  edgeParameters.map((edge) => {
     edgeStatements.push('MATCH (n:' + edge.fromType + '),(m:' + edge.toType +
-    ') WHERE n.nodeID=\'' + edge.fromID + '\' AND m.nodeID=\'' + edge.toID +
-    '\' CREATE (n)-[r:LINK{edgeID:\'' + edge.edgeID +
-    '\', source: \'' + edge.fromID +
-    '\', target: \'' + edge.toID +
-    '\', formEdgeID: \'' + edge.formEdgeID + '\'}]->(m)');
+    ') WHERE n.nodeID=$fromID AND m.nodeID= $toID ' + 
+    ' CREATE (n)-[r:LINK{edgeID:$edgeID, source: $fromID, target: $toID, formEdgeID: $formEdgeID}]->(m)'
+    );
   });
   return edgeStatements;
 }
@@ -144,10 +137,10 @@ export function importNode(_newNode){
 }
 
 export function importEdge(_newEdge){
-  let newEdge = _.cloneDeep(_newEdge);
+  let newEdgeParamenters = _.cloneDeep(_newEdge);
   return (dispatch) => {
-    let edgeStatements = edgeToCypher({edges:[newEdge]});
-    return dispatch(postQuery(edgeStatements)).then(() => {
+    let edgeStatements = edgeToCypher([newEdgeParamenters]);
+    return dispatch(postQuery(edgeStatements, newEdgeParamenters)).then(() => {
         dispatch(updateHash());
     });
   };
@@ -155,7 +148,7 @@ export function importEdge(_newEdge){
 
 export function removeNode(nodeToRemove){
   return(dispatch) => {
-      return dispatch(postQuery("MATCH (n:" + nodeToRemove.type + ") WHERE n.nodeID=\'" + nodeToRemove.nodeID + "\' DELETE n")).then(() => {// eslint-disable-line
+      return dispatch(postQuery("MATCH (n:" + nodeToRemove.type + ")  WHERE n.nodeID=$nodeToRemoveNodeID DELETE n", {"nodeToRemoveNodeID": nodeToRemove.nodeID})).then(() => {// eslint-disable-line
           dispatch(updateHash());
       });
   };
@@ -166,10 +159,13 @@ export function removeEdges(edgesToRemove){
     edgesToRemove = [edgesToRemove];
   }
   let removeStatements = edgesToRemove.map((edge)=>{
-    return "MATCH (n)-[rel:LINK]->(r) WHERE n.nodeID=\'" + edge.source + "\' AND r.nodeID=\'" + edge.target + "\' DELETE rel";// eslint-disable-line
+    return "MATCH (n)-[rel:LINK]->(r) WHERE n.nodeID=$edgeSource AND r.nodeID=$edgeTarget DELETE rel";// eslint-disable-line
+  });
+  let removeParameters = edgesToRemove.map((edge)=>{
+    return {"edgeSource": edge.source, "edgeTarget": edge.target }
   });
   return(dispatch) => {
-      return dispatch(postQuery(removeStatements)).then(() => {
+      return dispatch(postQuery(removeStatements, removeParameters)).then(() => {
           dispatch(updateHash());
       }); 
   };

@@ -16,7 +16,7 @@ describe('Edge function', () => {
     afterEach(() => {
         
     });
-    
+    console.log = jest.fn();
     it('Edge returns edgeObject from source and target objects', () => {
         
         let source = {

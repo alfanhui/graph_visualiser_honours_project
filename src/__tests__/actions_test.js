@@ -2,6 +2,7 @@ import * as actions from 'reducerActions';
 import * as types from 'constants/reducerActionTypes.js';
 
 describe('actions', ()=>{
+    console.log = jest.fn();
     it('should create an action to SET variable', ()=>{
         const variable = 'string'
         const payload = "Hello World"
@@ -15,6 +16,7 @@ describe('actions', ()=>{
 })
 
 describe('actions', ()=>{
+    console.log = jest.fn();
     it('should create an action to UPDATE item in variable', ()=>{
         const variable = 'string'
         const payload = "Hello World"
@@ -28,6 +30,7 @@ describe('actions', ()=>{
 })
 
 describe('actions', ()=>{
+    console.log = jest.fn();
     it('should create an action to REPLACE item in variable', ()=>{
         const variable = 'List_of_names'
         const payload = "Bob Smith"
@@ -43,6 +46,7 @@ describe('actions', ()=>{
 })
 
 describe('actions', ()=>{
+    console.log = jest.fn();
     it('should create an action to DROP item in variable', ()=>{
         const variable = 'List_of_names'
         const payload = "Bob Smith"

@@ -1,24 +1,14 @@
 import request from 'superagent';
 import { SET } from 'reducerActions';
 import hash from 'object-hash';
-/*Code in file written by Stephen Wright from Stackoverflow on 12th of Mar 2014 at 23:00, see config.js */
-const config = {
-      port: ':7475',
-      remotehost: 'http://10.201.84.137',
-      localhost: 'http://localhost',
-      transaction: '/db/data/transaction/commit',
-      login:{
-          username:'neo4j',
-          password:'jazzyrice80'
-      }
-};
+let config = require('config');
 let url = config.localhost + config.port + config.transaction;
-/*******/
+
 
 export function checkAddress() {
   return (dispatch) => {
     return request.post(url)
-    .auth(config.login.username, config.login.password)
+    .auth(config.u, config.p)
     .then((res) => {
       if (res.ok) {
         dispatch(SET("databaseError", '#FFFFF'));
@@ -40,14 +30,19 @@ export function postQuery(statements, parameters = null) {
   if(!(statements.constructor === Array)){
     statements = [statements];
   }
-  let preparedStatement = [];
-  statements.map((s) => {
-    preparedStatement.push({statement: s, parameters: parameters});
+
+  let preparedStatements = [];
+  statements.map((s, index) => {
+    if(parameters == null || parameters.length != statements.length){
+      preparedStatements.push({statement: s, parameters: parameters});
+    }else{
+      preparedStatements.push({statement: s, parameters: parameters[index]});
+    }
   });
   return (dispatch) => {
     return request.post(url)
-    .send({ statements: preparedStatement })
-    .auth(config.login.username,config.login.password)
+    .send({ statements: preparedStatements })
+    .auth(config.u,config.p)
     .then((res)=> {
       if(res.ok){
         if(res.body.errors.length >0){
@@ -62,7 +57,7 @@ export function postQuery(statements, parameters = null) {
       }
     })
     .catch((err)=> {
-      console.log("This error occcured: ", err, "statement:", preparedStatement); // eslint-disable-line
+      console.log("This error occcured: ", err, "statement:", preparedStatements); // eslint-disable-line
       dispatch(SET("databaseError", '#F50057'));
       return 0;
     });
@@ -74,7 +69,7 @@ export function wipeDatabase() {
   return (dispatch) => {
     return request.post(url)
     .send({ statements: [{ statement: 'MATCH (n) OPTIONAL MATCH (n) - [r] - () DELETE n, r'}] })
-    .auth(config.login.username,config.login.password)
+    .auth(config.u,config.p)
     .then(()=> {
       dispatch(SET("nodes", []));
       dispatch(SET("links", []));
@@ -95,17 +90,19 @@ export function removeIndexes() {
   return (dispatch) => {
     return request.post(url)
     .send({ statements: [{ statement: 'CALL db.indexes()'}] })
-    .auth(config.login.username,config.login.password)
+    .auth(config.u,config.p)
     .then((res)=> {
       if(res.ok){
         if(res.body.errors.length >0){
           throw res.body.errors;
         }else if (res.body.results.length > 0){
           let data = res.body.results[0].data;
-          return data.map((item) => {
-            dispatch(SET("databaseError", '#FFFFF'));
-            return dispatch(postQuery(["DROP " + item.row[0]], null));
+          let dropStatement = [];
+          data.map((item) => {
+            dropStatement.push("DROP " + item.row[0])
           });
+          dispatch(SET("databaseError", '#FFFFF'));
+          return dispatch(postQuery(dropStatement));
         }
       }
     }).catch((err)=> {

@@ -20,7 +20,7 @@ describe('Timer function', () => {
     afterEach(() => {
         
     });
-
+    console.log = jest.fn();
     test('check start timer to update then drop after timer completes', () => {
 
         let menu = {
