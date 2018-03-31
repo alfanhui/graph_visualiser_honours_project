@@ -13,7 +13,7 @@ let totalNumOfLayers;
 //loop protectors
 let possibleLoopHash;
 let correctLoopHash;
-let applyChildrenLoopHash = {};
+let applyChildrenLoopHash;
 
 let width = window.innerWidth - 50;
 let height = window.innerHeight - 100;
@@ -26,54 +26,56 @@ export function scaleHeight(number){
 }
 
 export function convertRawToTree(object) {
-    lowestNumOfLayers=0;
-    totalNumOfLayers=0;
+    lowestNumOfLayers=0,
+    totalNumOfLayers=0,
+    nodeHash = {},
+    linkHashBySource = {},
+    linkHashByTarget = {};
+    
     return (dispatch) => {
         if(object.nodes.length == 0){
             return;
         }
         let nodes = object.nodes,
         links = object.links;
-
-        nodeHash = {},
-        linkHashBySource = {};
-        linkHashByTarget = {}
         
         createDataHashes(nodes, links);
         
         //Calculate possible depths for all nodes, starting from roots
         let rootNodes = getRootNodes(nodes);
-        calculatePossibleDepths(rootNodes);
         
+        calculatePossibleDepths(rootNodes);
         //find which nodes have biggest max depth
         let nodeDepthConflict = getNodesWithMaxDepth();
         
         //recursively amend layer heights from conflicts in asceding order so we don't override higher ordered layers
-        nodeDepthConflict = _.orderBy(nodeDepthConflict, ['size'],['asc']);
         nodeDepthConflict.map((childNode) =>{
             correctLoopHash = {};
             correctDepthTraversalRecurssively(childNode.nodeID, (childNode.size -1));
         });    
-
         fixLayerCount();
         
         //Scale all nodes according to correct layer
+        if(totalNumOfLayers == 1){ //this stops long edges when adding to a 1 layer (because diff in space beween edges is huge!)
+            height = (window.innerHeight - 100)/2;
+        }else{
+            width = window.innerWidth - 50;
+            height = window.innerHeight - 100;
+        }
         for (let node in nodeHash) {
             if (nodeHash.hasOwnProperty(node)) {
-                nodeHash[node].scaleLayer = scaleHeight(nodeHash[node].layer);
+                nodeHash[node].y = scaleHeight(nodeHash[node].layer);
             }
         }
-           
+        
         //Structure into tree for d3
         let dataTree = structureIntoTree(rootNodes);
-        
-        //Apply horizontal positioning
-        let root = d3.hierarchy(dataTree);  
-        root = tree(root);
+        //Apply horizontal positioning 
+        let root = tree(d3.hierarchy(dataTree));
         
         let newNodes = treeIntoNodes(root);
-        dispatch(SET("nodes", newNodes));
         dispatch(SET("layoutReady",true));
+        dispatch(SET("nodes", newNodes));
     };
 }
 
@@ -117,16 +119,17 @@ function calculatePossibleDepths(rootNodes){
 function possibleDepthTraversalRecurssively(nodeID, counter, nodeHash) {
     if (linkHashBySource.hasOwnProperty(nodeID)) {
         linkHashBySource[nodeID].map((childNode) => {
-             if(possibleLoopHash.hasOwnProperty(nodeID+"_"+childNode.target)){
-                 return;
-             }else{
-                possibleLoopHash[nodeID+"_"+childNode.target] = null;
-                nodeHash[childNode.target].depthArray.push(counter);
-                nodeHash[childNode.target].layer = counter;
-                if(nodeID !== childNode.target){
-                    possibleDepthTraversalRecurssively(childNode.target, (counter + 1), nodeHash);
-                }
+            if(possibleLoopHash.hasOwnProperty(nodeID+"_"+childNode.target)){
+                //possibleLoopHash = {};
+                return;
             }
+            possibleLoopHash[nodeID+"_"+childNode.target] = null;
+            nodeHash[childNode.target].depthArray.push(counter);
+            nodeHash[childNode.target].layer = counter;
+            if(nodeID !== childNode.target){
+                possibleDepthTraversalRecurssively(childNode.target, (counter + 1), nodeHash);
+            }
+
         });
     }
 }
@@ -147,25 +150,8 @@ function getNodesWithMaxDepth(){
             }
         }
     }
+    nodeDepthConflict = _.orderBy(nodeDepthConflict, ['size'],['asc']);
     return nodeDepthConflict;
-}
-
-//Recursively goes through and adds correct children to each node
-function applyChildrenRecurssively(node, children){ //linkHash is using link.source
-    if (linkHashBySource.hasOwnProperty(node)){ //contains a link
-        linkHashBySource[node].map((link) => { // cycle through the exisiting links
-            if(applyChildrenLoopHash.hasOwnProperty(link.target +"_"+link.source)){
-                return;
-            }else{
-                applyChildrenLoopHash[link.target +"_"+link.source] = null;
-                children.push({"name": link.target,
-                "parent": link.source,
-                "children": applyChildrenRecurssively(link.target, []),
-                ...nodeHash[link.target]});
-            }
-        });
-    }
-    return children;
 }
 
 //Adjusts layer height based off maximum layer found in child
@@ -187,10 +173,92 @@ function correctDepthTraversalRecurssively(nodeID, counter) {
 function getRootNodes(nodes) {
     //any node not in target is a parent node
     let rootNodes = nodes.filter(node => !linkHashByTarget.hasOwnProperty(node.nodeID));
+    let connectedNodes = nodes.filter(node => linkHashByTarget.hasOwnProperty(node.nodeID));
+    rootNodes = checkForDisconnectedLoopedNodes(connectedNodes, rootNodes);
+    if(rootNodes.length == 0){
+        return [nodes[0]];
+    }
     let sortedRootNodes = rootNodes.sort(function(node1, node2) {
+        if(!node1.hasOwnProperty("timestamp")){
+            return true;
+        }
         return moment.utc(node1.timestamp).isAfter(moment.utc(node2.timestamp));
     });
     return sortedRootNodes;
+}
+
+function checkForDisconnectedLoopedNodes(connectedNodes, rootNodes){
+    let loopCheck = {},
+        loopList =[],
+        nodesToAdd =[];
+    //check which nodes are not connencted to a root
+    let nodesNotConnectedToRoot = connectedNodes.filter((node)=>{
+            if(linkHashByTarget.hasOwnProperty(node.nodeID)){
+                let truthyArray = rootNodes.map((root)=>{
+                    let itemFound = _.find(linkHashByTarget[node.nodeID], { "source": root.nodeID });
+                    return (itemFound != undefined) ? true : false;
+                });
+                if(truthyArray.find((item)=> item == true)){
+                    return false;
+                }else{
+                    return true;
+                }
+            }      
+        });
+
+    //returns nodeID's of unconnected looped nodes
+    const traversal = function(nodeID){
+        let check;
+        let rootCheck = rootNodes.find((root) => root.nodeID == nodeID);
+        if(rootCheck){ //hit root, not disconnected
+            return false;
+        }
+        if (linkHashByTarget.hasOwnProperty(nodeID)) {
+            linkHashByTarget[nodeID].map((linkedNode)=>{
+                if(loopCheck.hasOwnProperty(nodeID+"_"+linkedNode.source)){
+                    if(_.find(loopList, loopCheck) == undefined){
+                        loopList.push(loopCheck);
+                        loopCheck = {};
+                    }
+                    check = nodeID;
+                    return check;
+                }
+                loopCheck[nodeID+"_"+linkedNode.source] = nodeID;
+                check = traversal(linkedNode.source);
+            });
+        }else{
+            check = nodeID;
+        }
+        return check;
+    };
+
+    if(nodesNotConnectedToRoot.length > 0){
+        let brokenNodes = nodesNotConnectedToRoot.map((node) =>{ 
+            loopCheck = {};
+            let brokenNode = traversal(node.nodeID);
+            if(brokenNode == undefined){
+                brokenNode = false;
+            }
+            if(brokenNode != false){
+                return brokenNode;
+            }
+
+        });
+        brokenNodes = brokenNodes.filter((brokenNode) => brokenNode != undefined);
+
+        //Here we want to add one node of each individual loop to the root list
+        if(brokenNodes != undefined){
+            nodesToAdd = loopList.map((item) => {
+                return item[Object.keys(item)[0]]; 
+            });
+        }
+    }
+    if(nodesToAdd.length >0){
+        rootNodes = rootNodes.concat(nodesToAdd.map((item) => {
+            return _.find(connectedNodes, {"nodeID": item});
+        }));
+    }
+    return rootNodes;
 }
 
 
@@ -210,9 +278,10 @@ function fixLayerCount(){
         let positiveLowestLayer = Math.abs(lowestNumOfLayers);
         for (let node in nodeHash) {
             if (nodeHash.hasOwnProperty(node)) {
-                nodeHash[node].layer + positiveLowestLayer;
+                nodeHash[node].layer += positiveLowestLayer;
             }
         }
+        lowestNumOfLayers = 0;
         totalNumOfLayers += positiveLowestLayer;
     }
 }
@@ -223,7 +292,7 @@ function structureIntoTree(rootNodes){
     rootNodes.map((rootNode)=> {
         applyChildrenLoopHash = {};
         branches.push({
-            "name":rootNode.nodeID,
+            "nodeID":rootNode.nodeID,
             "parent": "",
             "children":applyChildrenRecurssively(rootNode.nodeID, []),
             ...rootNode});
@@ -242,53 +311,72 @@ function structureIntoTree(rootNodes){
     }
     
     
-    //This converts the hierarchal data of all the root nodes and their children back into normal node data.  
-    function treeIntoNodes(root){
-        let newNodeArray = [];
-        root.children.map((node) => { 
-            //recursion function inside this function because keeping newNodeArray a local variable.
-            let findChildren = function(node_children){
-                if (node_children.children && node_children.children.length > 0){ 
-                    node_children.children.map((child)=>{
-                        findChildren(child);
-                    });
+    //Recursively goes through and adds correct children to each node
+    function applyChildrenRecurssively(node, children){ //linkHash is using link.source
+        if (linkHashBySource.hasOwnProperty(node)){ //contains a link
+            linkHashBySource[node].map((link) => { // cycle through the exisiting links
+                if(applyChildrenLoopHash.hasOwnProperty(link.target +"_"+link.source)){
+                    return;
+                }else{
+                    applyChildrenLoopHash[link.target +"_"+link.source] = null;
+                    children.push({"nodeID": link.target,
+                    "parent": link.source,
+                    "children": applyChildrenRecurssively(link.target, []),
+                    ...nodeHash[link.target]});
                 }
-                if(!_.find(newNodeArray, {"nodeID": node_children.data.nodeID})){
-                    newNodeArray.push({
-                        "nodeID":node_children.data.nodeID,
-                        "type":node_children.data.type,
-                        "text":node_children.data.text, 
-                        "timestamp":node_children.data.timestamp,      
-                        "layer":node_children.data.layer,
-                        "time":node_children.data.time,
-                        "date":node_children.data.date,      
-                        "x":node_children.x,      
-                        "y":node_children.data.scaleLayer,         
-                        "scheme":node_children.data.scheme,
-                        "schemeID":node_children.data.schemeID,
-                    });
-                }
-            };
-            if (node.children && node.children.length > 0){ 
-                node.children.map((child)=>{
-                    findChildren(child);
-                });
-            }
-            if(!_.find(newNodeArray, {"nodeID": node.data.nodeID})){
-                newNodeArray.push({
-                    "nodeID":node.data.nodeID,
-                    "text":node.data.text, 
-                    "type":node.data.type,
-                    "timestamp":node.data.timestamp,      
-                    "layer":node.data.layer,
-                    "time":node.data.time,
-                    "date":node.data.date,        
-                    "x":node.x,      
-                    "y":node.data.scaleLayer,  
-                    "scheme":node.data.scheme,
-                    "schemeID":node.data.schemeID,         
             });
         }
+        return children;
+    }
+    
+    
+    
+  //This converts the hierarchal data of all the root nodes and their children back into normal node data.  
+  function treeIntoNodes(root){
+      let newNodeArray = [];
+      root.children.map((node) => { 
+          //recursion function inside this function because keeping newNodeArray a local variable.
+          let findChildren = function(node_children){
+              if (node_children.children && node_children.children.length > 0){ 
+                  node_children.children.map((child)=>{
+                      findChildren(child);
+                  });
+              }
+              if (!_.find(newNodeArray, { "nodeID": node_children.data.nodeID })) {
+                  newNodeArray.push(formatNode(node_children));
+              }
+          };
+          if (node.children && node.children.length > 0){ 
+              node.children.map((child)=>{
+                  findChildren(child);
+              });
+          }
+          if(!_.find(newNodeArray, {"nodeID": node.data.nodeID})){
+              newNodeArray.push(formatNode(node));
+          }
     });  
     return newNodeArray;
+}
+
+//This formats the node to rid any data that is unnessary and to make all necessay properties apparent.
+function formatNode(node) {
+    if (!node.data.hasOwnProperty('text')) {
+        node.data.text = "";
+    }
+    if (!node.data.hasOwnProperty('timestamp')) {
+        node.data.timestamp = moment().format("YYYY-MM-DD HH:MM:SS");
+    }
+
+    let infantNode = _.cloneDeep(node.data);
+    infantNode.x = node.x;
+
+    delete (infantNode.name);
+    delete (infantNode.parent);
+    delete (infantNode.depthArray);
+
+    if (infantNode.hasOwnProperty('children')) {
+        delete (infantNode.children);
+    }
+
+    return infantNode;
 }

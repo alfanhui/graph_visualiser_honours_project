@@ -30,7 +30,7 @@ let tuio = {
   },
 
   _create_event: function(name, touch, attrs) {
-    console.log("tuio event created");
+    console.log("tuio event created");// eslint-disable-line
     // Creates a custom DOM event
     let evt = document.createEvent('CustomEvent');
     evt.initEvent(name, true, true);
@@ -54,7 +54,7 @@ let tuio = {
   },
 
   _get_target_touches: function(element) {
-    console.log("getting touches");
+    console.log("getting touches");// eslint-disable-line
     let targetTouches = [];
     for (let i = 0; i < this.cursors.length; i++) {
       let touch = this.cursors[i];
@@ -117,6 +117,6 @@ let tuio = {
 };
 
 function tuio_callback(type, sid, fid, x, y, angle)	{ // eslint-disable-line
-  console.log("tuio event callback");
+  console.log("tuio event callback");// eslint-disable-line
 	tuio.callback(type, sid, fid, x, y, angle);
 }

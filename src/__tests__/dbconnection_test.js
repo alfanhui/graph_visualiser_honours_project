@@ -18,6 +18,8 @@ describe('dbconnection async actions', () => {
         fetchMock.reset();
         fetchMock.restore();
     });
+
+    console.log = jest.fn();
      it('updates connectionType to LOCAL when database URL succeeds', () => {
         const expectedActions_SUCCESS = [
             {type: types.SET , variable:"databaseError", payload: '#FFFFF'},
@@ -172,7 +174,7 @@ describe('dbconnection async actions', () => {
     })
 
     it('successful on removeIndex', () => {
-        const expectedActions_SUCCESS = [Promise.resolve({})];
+        const expectedActions_SUCCESS = [{data:[{row:["index1", "index2"]}]}];
 
         jest.unmock('../__mocks__/superagent');
         const myModule = require('../__mocks__/superagent');

@@ -2,7 +2,8 @@ const initialState = {
   averagedScale: 1,
   connectionType: "",
   creationHaltRefresh: false,
-  currentDataFile:'11130',
+  currentDataFile: '11130',
+  currentHash: "",
   databaseError: "#FFFFF",
   dataFiles:[
     "11257",
@@ -23,6 +24,7 @@ const initialState = {
   loading:false,
   menuElementArray: [],
   menuMainArray: [],
+  newLinks: [],
   nodes: [],
   nodeTypes:[
     {type:"I", name:"Information Node"},
@@ -38,7 +40,7 @@ const initialState = {
   ],
   paint:false,
   testMode: false,
-  updateFromCreate: false,
+  updateFromCreate: true,
   updateInterval: 15000,
   updateAuto: false,
   updateAvailable: false,

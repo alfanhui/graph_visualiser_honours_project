@@ -61,17 +61,17 @@ class LayoutTree extends React.Component {
   //These nodes are the transcript elements: ie. content
   renderContentNode = (node) => {
     if(node.hasOwnProperty("x")){ //this is because DataToTree has not finished ordering
-      let transform = 'translate(' + node.x + ',' + node.y + ')';
-      let style = {};
+        let transform = 'translate(' + node.x + ',' + node.y + ')';
+        let boundaryTransform = 'translate(' + (node.x - (this.state.contextWidth * .1)) + ',' + (node.y - (this.state.contextHeight + (node.text.length * (15 * this.props.state.averagedScale)) * .06)) + ')';
+        let style = { pointerEvents: 'none', touchAction: 'none'};
       let highlightedNodeUUID = _.find(this.props.state.highlightedNodes, {nodeID:node.nodeID});
       if(highlightedNodeUUID){
-        style = {stroke:highlightedNodeUUID.color, strokeWidth:"10px", opacity:1};
+          style = { stroke: highlightedNodeUUID.color, strokeWidth: "8px", opacity: 1, pointerEvents: 'none', touchAction: 'none'};
       }
       return (
-        <g key={"group" + node.nodeID}  >
-        <rect className="node" id={node.nodeID} key={'node' + node.nodeID} width={this.state.contextWidth} height={this.state.contextHeight + (node.text.length * (15*this.props.state.averagedScale))}
-        fill={color(node.type)} transform={transform}
-        style={style}
+          <g key={"group" + node.nodeID}  >
+              <rect id={node.nodeID} key={'node' + node.nodeID} width={this.state.contextWidth + (this.state.contextWidth * .2)} height={this.state.contextHeight + (node.text.length * (15 * this.props.state.averagedScale)) + (this.state.contextHeight + (node.text.length * (15 * this.props.state.averagedScale)) *.2)}
+                   style={{fill:'white', opacity:'0', cursor:'move'}} transform={boundaryTransform}
         onMouseDown={(event)=>this.props.onTouchStart(event, true)} 
         onMouseMove={(event)=>this.props.onTouchMove(event, true)} 
         onMouseUp={(event)=>this.props.onTouchEnd(event, true)} 
@@ -79,6 +79,7 @@ class LayoutTree extends React.Component {
         onTouchMove={(event) => this.props.onTouchMove(event, false)}
         onTouchEnd={(event) => this.props.onTouchEnd(event, false)}
         onTouchCancel={(event) => this.props.onTouchCancel(event, false)} />
+              <rect className="node" width={this.state.contextWidth} height={this.state.contextHeight + (node.text.length * (15 * this.props.state.averagedScale))} style={style} fill={color(node.type)} transform={transform}/>
         {
           node.text.map((line, index) => {
             let transformLabel = 'translate(' + (node.x + 5) + ',' + (node.y + (15*this.props.state.averagedScale) + (index * (15*this.props.state.averagedScale))) + ')';
@@ -150,7 +151,6 @@ class LayoutTree extends React.Component {
       + " C " + (source.x + (this.state.contextWidth / 2)) + " " + (layerMidHeight)
       + "  " + (source.x + (this.state.contextWidth / 2)) + " " + (layerMidHeight) //change source.x to target to make correct curve.
       + "  " + (target.x + (this.state.contextWidth / 2)) + " " + (target.y);
-      
       let style = {strokeWidth:"1.1px"};
       let highlightedEdgeUUID = _.filter(this.props.state.highlightedEdges, {source:source.nodeID, target:target.nodeID});
       if(highlightedEdgeUUID.length > 0){
@@ -203,8 +203,8 @@ class LayoutTree extends React.Component {
   
   render() {
     return (
-      <div>
-      { this.props.state.paint &&   <canvas className="paint" id="paint" width={width-5} height={height} /> }
+        <div>
+            {this.props.state.paint && <canvas className="paint" id="paint" width={width - 5} height={height} />}
       <svg
       className="svg" id="svg" ref="svg" key="svg"
       width={width}
@@ -215,9 +215,8 @@ class LayoutTree extends React.Component {
       refX="7"refY="5" orient="90">
       <path d="M 0 0 L 10 5 L 0 10 z" style={{fill: 'black'}}/>
       </marker>     
-      </defs>
-      
-      <rect id="main" width={width} height={height} style={{ fill: 'white', pointerEvents: 'fill', strokeWidth: '0' }}
+                </defs>     
+      <rect id="main" width={width} height={height} style={{ fill: 'white', opacity:'1', pointerEvents: 'fill', strokeWidth: '0' }}
       onMouseDown={(event)=>this.props.onTouchStart(event, true)} 
       onMouseMove={(event)=>this.props.onTouchMove(event, true)} 
       onMouseUp={(event)=>this.props.onTouchEnd(event, true)} 
@@ -225,10 +224,11 @@ class LayoutTree extends React.Component {
       onTouchMove={(event) => this.props.onTouchMove(event, false)}
       onTouchEnd={(event) => this.props.onTouchEnd(event, false)}
       onTouchCancel={(event) => this.props.onTouchCancel(event, false)} 
-      />
+                />
       <g>
       {this.props.state.nodes && this.props.state.nodes.length > 0 && this.props.state.nodes.map(this.renderNode)}
-      {this.props.state.links &&  this.props.state.nodes.length > 0 && this.props.state.links.length > 0 && this.props.state.links.map(this.renderPath)}
+      {this.props.state.links && this.props.state.nodes.length > 0 && this.props.state.links.length > 0 && this.props.state.links.map(this.renderPath)}
+      {this.props.state.newLinks && this.props.state.nodes.length > 0 && this.props.state.newLinks.length > 0 && this.props.state.newLinks.map(this.renderPath)}
     }
     </g>
     

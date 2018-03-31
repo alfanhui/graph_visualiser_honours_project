@@ -2,15 +2,6 @@
 $vin-blue: #5bb7db;
 $vin-green: #60b044;
 $vin-red: #ff0000;
-/*
-* {
--webkit-transform: translatez(0);
--moz-transform: translatez(0);
--ms-transform: translatez(0);
--o-transform: translatez(0);
-transform: translatez(0);
-}
-*/
 
 /* Styles */
 html, body {
@@ -39,7 +30,7 @@ body {
   font-weight: 300;
 }
 
-.svg{
+.svg {
   overflow: auto;
   touch-action: none;
 }

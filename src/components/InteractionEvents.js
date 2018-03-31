@@ -4,7 +4,6 @@ import _ from 'lodash';
 import PropTypes from 'prop-types';
 import { SET} from 'reducerActions';
 import getUuid from 'uuid/v1';
-import ForceDirected from './LayoutForceDirected';
 import Tree from './LayoutTree';
 import { startTimer } from 'utilities/Timer';
 
@@ -42,8 +41,8 @@ class InteractionEvents extends React.Component {
     defaultHeight = 1080 - 40; 
     
     //if the screen is smaller, do not make the menus smaller.
-    let scaledHeight = defaultHeight < height ?  ((height /defaultHeight)*.8) : 1,
-    scaledWidth = defaultWidth < width ? ((width / defaultWidth)*.8) : 1;
+    let scaledHeight = defaultHeight < height ?  ((height /defaultHeight)*.8) : 1.1,
+    scaledWidth = defaultWidth < width ? ((width / defaultWidth)*.8) : 1.1;
     let averagedScale = (scaledHeight + scaledWidth) / 2;
     let menu_width = 150 * averagedScale, //original 110 x 30 
     menu_height = 40.9 * averagedScale;
@@ -64,14 +63,15 @@ class InteractionEvents extends React.Component {
   
   updateStyleSheetsWithScales(averagedScale){
     let newStyles = [];
-    newStyles.push(".fontAdjustment10 { text-anchor: middle; font-size: " + (10 * averagedScale) + "px; line-height: " + (20 * averagedScale) + "px; min-height: " + (20 * averagedScale) + "px; opacity:0.7;}");
-    newStyles.push(".fontAdjustment10_E { text-anchor: start; font-size: " + (10 * averagedScale) + "px; line-height: " + (22 * averagedScale) + "px; min-height: " + (22 * averagedScale) + "px;}");
-    newStyles.push(".fontAdjustment11 { text-anchor: middle; font-size:" + (11 * averagedScale) + "px; line-height: " + (22 * averagedScale) + "px; min-height: " + (22 * averagedScale) + "px;}");  
-    newStyles.push(".fontAdjustment12_E { text-anchor: start; font-size: " + (12 * averagedScale) + "px; line-height: " + (26 * averagedScale) + "px; min-height: " + (26 * averagedScale) + "px;}");
-    newStyles.push(".fontAdjustment14 { text-anchor: middle; font-size: " + (14 * averagedScale) + "px; line-height: " + (28 * averagedScale) + "px; min-height: " + (28 * averagedScale) + "px;}");  
-    newStyles.push(".fontAdjustment15 { text-anchor: middle; font-size: " + (15 * averagedScale) + "px; line-height: " + (30 * averagedScale) + "px; min-height: " + (30 * averagedScale) + "px;}");
-    newStyles.push(".fontAdjustment18 { text-anchor: middle; font-size: " + (18 * averagedScale) + "px; line-height: " + (36 * averagedScale) + "px; min-height: " + (36 * averagedScale) + "px;}");
-    newStyles.push(".fontAdjustment18_E { text-anchor: start; font-size: " + (18 * averagedScale) + "px; line-height: " + (36 * averagedScale) + "px; min-height: " + (36 * averagedScale) + "px;}"); 
+    newStyles.push(".fontAdjustment10 { text-anchor: middle; font-size: " + (10 * averagedScale) + "px; line-height: " + (20 * averagedScale) + "px; min-height: " + (20 * averagedScale) + "px; opacity:0.7; pointer-events: none; touch-action: none;}");
+    newStyles.push(".fontAdjustment10_E { text-anchor: start; font-size: " + (10 * averagedScale) + "px; line-height: " + (22 * averagedScale) + "px; min-height: " + (22 * averagedScale) + "px; pointer-events: none; touch-action: none;}");
+    newStyles.push(".fontAdjustment11 { text-anchor: middle; font-size:" + (11 * averagedScale) + "px; line-height: " + (22 * averagedScale) + "px; min-height: " + (22 * averagedScale) + "px; pointer-events: none; touch-action: none;}");  
+    newStyles.push(".fontAdjustment12_E { text-anchor: start; font-size: " + (12 * averagedScale) + "px; line-height: " + (26 * averagedScale) + "px; min-height: " + (26 * averagedScale) + "px; pointer-events: none; touch-action: none;}");
+    newStyles.push(".fontAdjustment14 { text-anchor: middle; font-size: " + (14 * averagedScale) + "px; line-height: " + (28 * averagedScale) + "px; min-height: " + (28 * averagedScale) + "px; pointer-events: none; touch-action: none;}");  
+    newStyles.push(".fontAdjustment15 { text-anchor: middle; font-size: " + (15 * averagedScale) + "px; line-height: " + (30 * averagedScale) + "px; min-height: " + (30 * averagedScale) + "px; pointer-events: none; touch-action: none;}");
+    newStyles.push(".fontAdjustment17 { text-anchor: middle; font-size: " + (17 * averagedScale) + "px; line-height: " + (34 * averagedScale) + "px; min-height: " + (34 * averagedScale) + "px; pointer-events: none; touch-action: none;}");
+    newStyles.push(".fontAdjustment18 { text-anchor: middle; font-size: " + (18 * averagedScale) + "px; line-height: " + (36 * averagedScale) + "px; min-height: " + (36 * averagedScale) + "px; pointer-events: none; touch-action: none;}");
+    newStyles.push(".fontAdjustment18_E { text-anchor: start; font-size: " + (18 * averagedScale) + "px; line-height: " + (36 * averagedScale) + "px; min-height: " + (36 * averagedScale) + "px; pointer-events: none; touch-action: none;}"); 
     newStyles.map((style)=>{
       document.styleSheets[0].insertRule(style,0);
     });
@@ -88,8 +88,10 @@ class InteractionEvents extends React.Component {
         let currentX = touch.clientX, 
         currentY = touch.clientY;
         if (event.target.getAttribute("id") == "main" && !this.props.state.paint) { 
+          if (this.isMenuNearBy(touch.clientX,  touch.clientY)) return; //if too close to another menu
           let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
           let uuid = getUuid();
+          this.isMenuNearBy(newX, newY);
           let newMenu = { x: newX, y: newY, uuid, type:"menuMainArray"};
           this.props.dispatch(startTimer(newMenu));
         }
@@ -130,21 +132,27 @@ class InteractionEvents extends React.Component {
         }
         this.setState({ currentTouches: $currentTouches });
       }
-    }else{
-      if (!drag.state) {
-        console.log("mouse: x:", event.clientX, ", y:" , event.clientY);
+    } else {
+        if (!drag.state) {
         drag.elem = event.target;
         drag.currentX = event.clientX;
         drag.currentY = event.clientY;
         if (event.target.getAttribute("id") != "main") {
-          let node = _.find(this.props.state.nodes, { "nodeID": event.target.id });
-          //issue with rotated nodes positing is not correct upon moving
-          if(!this.props.state.defaultNodeTypes.includes(node.type)){ 
-            drag.currentX += 60;
-            drag.currentY += 5;
-          }
-          let transform = event.target.getAttributeNS(null, "transform").slice(10, -1).split(',');
-          drag.transform = transform.map(parseFloat);
+            let node = _.find(this.props.state.nodes, { "nodeID": event.target.id });
+            //issue with rotated nodes positing is not correct upon moving
+            if(!this.props.state.defaultNodeTypes.includes(node.type)){ 
+              drag.currentX += 60;
+              drag.currentY += 5;
+            }
+            let transform = event.target.getAttributeNS(null, "transform").slice(10, -1).split(',');
+            drag.transform = transform.map(parseFloat);
+        } else {
+            if (this.isMenuNearBy(drag.currentX, drag.currentY)) return; //if too close to another menu
+            let { newX, newY } = this.deadZone(event.clientX, event.clientY);
+            let uuid = getUuid();
+            let newMenu = { x: newX, y: newY, uuid, type: "menuMainArray" };
+            this.props.dispatch(startTimer(newMenu));
+            return;
         }
         drag.state = true;
       }
@@ -227,7 +235,8 @@ class InteractionEvents extends React.Component {
           let currentTouch = $currentTouches[currentTouchIndex];
           if (currentTouch.state) { //had hit element
             if (!currentTouch.moved){
-              if (currentTouch.elem.getAttribute("id") == "main" && !currentTouch.moved && this.props.state.paint) { 
+                if (currentTouch.elem.getAttribute("id") == "main" && !currentTouch.moved && this.props.state.paint) {
+                    if (this.isMenuNearBy(newX, newY)) continue; //if too close to another menu
                 let {newX, newY} = this.deadZone(touch.clientX, touch.clientY);
                 let uuid = getUuid();
                 let newMenu = { x: newX, y: newY, uuid, type:"menuMainArray"};
@@ -260,18 +269,13 @@ class InteractionEvents extends React.Component {
         }
       }
     }else{
-      if (drag.state) { //had hit element
-        if (!drag.moved) {
-          if (event.target.getAttribute("id") == "main") {
-            let {newX, newY} = this.deadZone(event.clientX, event.clientY);
-            let uuid = getUuid();
-            let newMenu = { x: newX, y: newY, uuid, type:"menuMainArray"};
-            this.props.dispatch(startTimer(newMenu));
-          } else {
-            let {newX, newY} = this.deadZone(event.clientX, event.clientY);
-            let uuid = getUuid();
-            let newMenu = { x: newX, y: newY, uuid, type:"menuElementArray", nodeID: event.target.id };
-            this.props.dispatch(startTimer(newMenu));
+        if (drag.state) { //had hit element
+          if (!drag.moved) {
+            if (event.target.getAttribute("id") != "main") {
+                let {newX, newY} = this.deadZone(event.clientX, event.clientY);
+                let uuid = getUuid();
+                let newMenu = { x: newX, y: newY, uuid, type:"menuElementArray", nodeID: event.target.id };
+                this.props.dispatch(startTimer(newMenu));
           }
         }
       }
@@ -296,6 +300,30 @@ class InteractionEvents extends React.Component {
     }
     this.setState({ currentTouches: $currentTouches });
   }
+
+
+  isMenuNearBy(x, y) {
+      let north = (150 * this.props.state.averagedScale),
+          east = (250 * this.props.state.averagedScale),
+          south = (250 * this.props.state.averagedScale),
+          west = (150 * this.props.state.averagedScale);
+      let nearByMainMenus = this.props.state.menuMainArray.filter((menu_item) => {
+          if ((x >= (menu_item.x - west) && x <= (menu_item.x + east)) && (y <= (menu_item.y + south) && y >= (menu_item.y - north))){
+              return true;
+          }
+          return false;
+      });
+
+      let nearByElementMenus = this.props.state.menuElementArray.filter((menu_item) => {
+          if ((x >= (menu_item.x - west) && x <= (menu_item.x + east)) && (y <= (menu_item.y + south) && y >= (menu_item.y - north))) {
+              return true;
+          }
+          return false;
+      });
+
+      let menusTooClose = nearByMainMenus.concat(nearByElementMenus);
+      return (menusTooClose.length > 0) ? true : false;
+  }
   
   //https://stackoverflow.com/questions/27641731/is-there-a-function-in-lodash-to-replace-matched-item
   //24th of Dec 2014 at 20:24
@@ -318,19 +346,6 @@ class InteractionEvents extends React.Component {
   render() {
     return (
       <div>
-      {this.props.state.layout == "FORCE" ?
-      <ForceDirected
-      onMouseDown={this.onNewMouseStart}
-      onMouseMove={this.onNewMouseMove}
-      onMouseUp={this.onNewMouseUp}
-      menuMainArray={this.menuMainArray}
-      menuElementArray={this.menuElementArray}
-      resetTimer={this.resetTimer}
-      onTouchStart={this.touchStart}
-      onTouchMove={this.touchMove}
-      onTouchEnd={this.touchEnd}
-      onTouchCancel={this.touchCancel} />
-      :
       <Tree
       onMouseDown={this.onNewMouseStart}
       onMouseMove={this.onNewMouseMove}
@@ -343,7 +358,6 @@ class InteractionEvents extends React.Component {
       onTouchEnd={this.touchEnd}
       onTouchCancel={this.touchCancel} 
       loadDatabase={(dataFile)=>this.props.loadDatabase(dataFile)}/>
-    }
     </div>
   );
 }

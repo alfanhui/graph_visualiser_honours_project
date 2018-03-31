@@ -22,7 +22,7 @@ describe('graphMLtoCypher function', () => {
     afterEach(() => {
         
     });
-
+    console.log = jest.fn();
     it('converts multiple node json data (without edges) into correct cypher statements', () => {
         const inputData = { //taken from test data
             "nodes": [
@@ -77,11 +77,12 @@ describe('graphMLtoCypher function', () => {
                 "schemeID": "74"
             }]
         };
-        const expectedEdgeStatements = [];
-        
+        const expectedEdgeStatements = [],
+              expectedEdgeParameters = [];
+
         let graphMLtoCypher = CypherIO.__get__('graphMLtoCypher');
         
-        return expect(graphMLtoCypher(inputData)).toEqual({nodeStatements: expectedNodeStatement, dictionary: expectedDictionary, edgeStatements: expectedEdgeStatements});
+        return expect(graphMLtoCypher(inputData)).toEqual({nodeStatements: expectedNodeStatement, dictionary: expectedDictionary, edgeStatements: expectedEdgeStatements, edgeParameters: expectedEdgeParameters});
     });
     
     it('converts node and edge json data into correct cypher statements', () => {
@@ -133,12 +134,12 @@ describe('graphMLtoCypher function', () => {
         }]
     };
     const expectedEdgeStatements = [
-        'MATCH (n:YA),(m:MA) WHERE n.nodeID=\'262660\' AND m.nodeID=\'262658\' CREATE (n)-[r:LINK{edgeID:\'316914\', source: \'262660\', target: \'262658\', formEdgeID: \'null\'}]->(m)'
-    ];
+        'MATCH (n:YA),(m:MA) WHERE n.nodeID=$fromID AND m.nodeID= $toID  CREATE (n)-[r:LINK{edgeID:$edgeID, source: $fromID, target: $toID, formEdgeID: $formEdgeID}]->(m)'
+    ],   expectedEdgeParameters = [{"edgeID": "316914", "formEdgeID": null, "fromID": "262660", "fromType": "YA", "toID": "262658", "toType": "MA" }];
     
     let graphMLtoCypher = CypherIO.__get__('graphMLtoCypher');
     
-    return expect(graphMLtoCypher(inputData)).toEqual({nodeStatements: expectedNodeStatement, dictionary: expectedDictionary, edgeStatements: expectedEdgeStatements});
+    return expect(graphMLtoCypher(inputData)).toEqual({nodeStatements: expectedNodeStatement, dictionary: expectedDictionary, edgeStatements: expectedEdgeStatements, edgeParameters: expectedEdgeParameters});
     });
 
     it('does not error when passed empty json data', () => {
@@ -149,11 +150,12 @@ describe('graphMLtoCypher function', () => {
         };
         const expectedNodeStatement = [];
         const expectedDictionary = {};
-        const expectedEdgeStatements = [];
+        const expectedEdgeStatements = [],
+              expectedEdgeParameters = [];
         
         let graphMLtoCypher = CypherIO.__get__('graphMLtoCypher');
         
-        return expect(graphMLtoCypher(inputData)).toEqual({nodeStatements: expectedNodeStatement, dictionary: expectedDictionary, edgeStatements: expectedEdgeStatements});
+        return expect(graphMLtoCypher(inputData)).toEqual({nodeStatements: expectedNodeStatement, dictionary: expectedDictionary, edgeStatements: expectedEdgeStatements, edgeParameters: expectedEdgeParameters});
     });
 
     it('does not error when passed invalid json data', () => {
@@ -163,11 +165,12 @@ describe('graphMLtoCypher function', () => {
         };
         const expectedNodeStatement = [];
         const expectedDictionary = {};
-        const expectedEdgeStatements = [];
+        const expectedEdgeStatements = [],
+              expectedEdgeParameters = [];
         
         let graphMLtoCypher = CypherIO.__get__('graphMLtoCypher');
         
-        return expect(graphMLtoCypher(inputData)).toEqual({nodeStatements: expectedNodeStatement, dictionary: expectedDictionary, edgeStatements: expectedEdgeStatements});
+        return expect(graphMLtoCypher(inputData)).toEqual({nodeStatements: expectedNodeStatement, dictionary: expectedDictionary, edgeStatements: expectedEdgeStatements, edgeParameters: expectedEdgeParameters});
     });
 
     //This is because neo4j requires an node before it can create a link.
@@ -186,11 +189,12 @@ describe('graphMLtoCypher function', () => {
         };
         const expectedNodeStatement = [];
         const expectedDictionary = {};
-        const expectedEdgeStatements = [];
+        const expectedEdgeStatements = [],
+              expectedEdgeParameters = [];
         
         let graphMLtoCypher = CypherIO.__get__('graphMLtoCypher');
         
-        return expect(graphMLtoCypher(inputData)).toEqual({nodeStatements: expectedNodeStatement, dictionary: expectedDictionary, edgeStatements: expectedEdgeStatements});
+        return expect(graphMLtoCypher(inputData)).toEqual({nodeStatements: expectedNodeStatement, dictionary: expectedDictionary, edgeStatements: expectedEdgeStatements, edgeParameters: expectedEdgeParameters});
     });
 
     it('returns empty when only passed node json without \'type\' property', () => {
@@ -207,11 +211,12 @@ describe('graphMLtoCypher function', () => {
         };
         const expectedNodeStatement = [];
         const expectedDictionary = {};
-        const expectedEdgeStatements = [];
+        const expectedEdgeStatements = [],
+              expectedEdgeParameters = [];
         
         let graphMLtoCypher = CypherIO.__get__('graphMLtoCypher');
         
-        return expect(graphMLtoCypher(inputData)).toEqual({nodeStatements: expectedNodeStatement, dictionary: expectedDictionary, edgeStatements: expectedEdgeStatements});
+        return expect(graphMLtoCypher(inputData)).toEqual({nodeStatements: expectedNodeStatement, dictionary: expectedDictionary, edgeStatements: expectedEdgeStatements, edgeParameters: expectedEdgeParameters});
     });
 
  })
