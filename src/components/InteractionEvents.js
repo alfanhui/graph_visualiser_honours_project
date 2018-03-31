@@ -350,12 +350,12 @@ class InteractionEvents extends React.Component {
     return (
       <div>
       <Tree
-      onMouseDown={this.onNewMouseStart}
-      onMouseMove={this.onNewMouseMove}
-      onMouseUp={this.onNewMouseUp}
       menuMainArray={this.menuMainArray}
       menuElementArray={this.menuElementArray}
       resetTimer={this.resetTimer}
+      onMouseDown={this.onNewMouseStart}
+      onMouseMove={this.onNewMouseMove}
+      onMouseUp={this.onNewMouseUp}
       onTouchStart={this.touchStart}
       onTouchMove={this.touchMove}
       onTouchEnd={this.touchEnd}
