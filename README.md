@@ -10,12 +10,17 @@ Graph visualiser is my honours project for my Computing & Cognitive Science BSc,
 TODO
 
 ## Initial Machine Setup
-1. **Install [Node 5.0.0 or greater](https://nodejs.org)**. 
-2. **Install [Git](https://git-scm.com/downloads)**. 
+Got a Mac? `brew install node git neo4j`
+1. **Install [Node 5.0.0 or greater](https://nodejs.org)**.
+2. **Install [Git](https://git-scm.com/downloads)**.
+3. **Install [Neo4j Community Edition](https://neo4j.com/download/?ref=subscriptions)**.
+4. Git Clone this project
+5. Update /src/config.js with neo4j username, password, port and url (original not uploaded for security reasons)
 
-## Installing
+## Starting up
 
-Type `npm install && npm start` to start development in Chrome or Firefox browser. (Other browsers may work, but are not tested)
+1. Run `npm start` to start development in Chrome or Firefox browser. (Other browsers may work, but are not tested)
+2. Run `./neo4j_start` to start neo4j 
 
 ## Running the tests
 
