@@ -7,7 +7,7 @@
 
 const config = {
   port: ':7475',
-  remotehost: 'http://10.201.84.137',
+  remotehost: 'http://localhost',
   localhost: 'http://localhost',
   transaction: '/db/data/transaction/commit',
   login:{
