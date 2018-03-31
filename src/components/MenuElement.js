@@ -33,7 +33,7 @@ class MenuElement extends React.Component {
     let menuItemRectYOrigin = (origin + menu_height);
     
     let {connectedEdges, distancesToTarget} = this.updateNodeConnections(this.props);
-
+    
     this.state = {
       clickedOption: ()=>{},
       connectedEdgesCurrentIndex:0,
@@ -61,16 +61,16 @@ class MenuElement extends React.Component {
   componentWillMount(){
     this.props.dispatch(SET("creationHaltRefresh", true));
   }
-
+  
   componentWillReceiveProps(nextProps) {
     if(this.state.currentNodesLength != nextProps.state.nodes.length){
       let {connectedEdges, distancesToTarget} = this.updateNodeConnections(nextProps);
       if (distancesToTarget != this.state.distancesToTarget) {
-          this.setState({ connectedEdges, distancesToTarget, currentNodesLength: nextProps.state.nodes.length});
+        this.setState({ connectedEdges, distancesToTarget, currentNodesLength: nextProps.state.nodes.length});
       }
     }
   }
-
+  
   componentWillUnmount() {
     let menu = this.props.menu;
     this.props.dispatch(DROP("highlightedNodes", "color", {color:this.state.colourTag}));
@@ -78,13 +78,18 @@ class MenuElement extends React.Component {
     this.props.dispatch(DROP("newLinks", "edgeID", { edgeID: menu.uuid }));
     this.props.dispatch(SET("creationHaltRefresh", false));
   }
-
+  
+  cancelTimer = (uuid) => {
+    this.props.dispatch(stopTimer(uuid, "menuElementArray"));
+  }
+  
+  
   updateNodeConnections(props){
     let connectedEdges = _.filter(props.state.links, {"source":props.menu.nodeID});
     connectedEdges = connectedEdges.concat(_.filter(props.state.links, {"target":props.menu.nodeID}));
     //order Targetable nodes by closest
     let distancesToTarget = this.distancesToTarget(props, connectedEdges);
-
+    
     return{connectedEdges, distancesToTarget};
   }
   
@@ -105,31 +110,29 @@ class MenuElement extends React.Component {
     let nodes = _.cloneDeep(props.state.nodes);
     let menu = props.menu;
     let current_node = _.find(props.state.nodes, { "nodeID": menu.nodeID });
-
-    let distanceArray = nodes.filter((target_node) => {
-        if (_.find(connectedEdges, { "source": menu.nodeID, "target": target_node.nodeID })) {
-            return false;
-        //} else if (_.find(connectedEdges, { "target": target_node.nodeID })) {
-            //return false;
-        } else {
-            return true;
-        }
-    });
-
-    distanceArray = distanceArray.map((target_node, index) => {
-        return ({index,
-                targetNode: target_node.nodeID,
-                invalid_layer: (target_node.layer < current_node.layer) ? true : false,
-                distance: Math.pow(
-                    Math.pow((target_node.x - current_node.x), 2) + Math.pow((target_node.y - current_node.y), 2)
-                    , .5)
-                });
-    });
-      
-    distanceArray = _.orderBy(distanceArray, ['distance'], ['asc']);
     
-    return distanceArray;
-  }
+    let distanceArray = nodes.filter((target_node) => {
+      if (_.find(connectedEdges, { "source": menu.nodeID, "target": target_node.nodeID })) {
+        return false;
+      } else {
+        return true;
+      }
+    });
+    
+    distanceArray = distanceArray.map((target_node, index) => {
+      return ({index,
+        targetNode: target_node.nodeID,
+        invalid_layer: (target_node.layer < current_node.layer) ? true : false,
+        distance: Math.pow(
+          Math.pow((target_node.x - current_node.x), 2) + Math.pow((target_node.y - current_node.y), 2)
+          , .5)
+        });
+      });
+      
+      distanceArray = _.orderBy(distanceArray, ['distance'], ['asc']);
+      
+      return distanceArray;
+    }
     
     resetTimer = (uuid) => {
       this.props.dispatch(addToTimer(uuid, "menuElementArray"));
@@ -165,20 +168,20 @@ class MenuElement extends React.Component {
         this.setState({layer:1, clickedOption:(uuid)=>this.displayOptionDeleteEdges(uuid)});
       }
     }
+
+
     
     
     //Element menu display option
     displayOptionCreateEdge = (uuid) => {
-        let text;
-        if(this.state.distancesToTarget.length > 0) {
-            text = _.find(this.props.state.nodes, { "nodeID": this.state.distancesToTarget[this.state.nodeTargetCurrentIndex].targetNode }).text;
-            text = text[0].length > 7 ? (text[0].slice(0, 7) + "..") : text[0];
-        }
+      let text;
+      if(this.state.distancesToTarget.length > 0) {
+        text = _.find(this.props.state.nodes, { "nodeID": this.state.distancesToTarget[this.state.nodeTargetCurrentIndex].targetNode }).text;
+        text = text[0].length > 7 ? (text[0].slice(0, 7) + "..") : text[0];
+      }
       return(
         <g key ={'createEdge' + "_" + uuid}>
-              <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'createEdgeBox' + "_" + uuid} onClick={() => { this.cycleDistanceIndex(uuid);}}/>
-        <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'createEdgeBoxText' + "_" + uuid} >[Tap to Choose]</text>
-        
+        {this.displayCycle(uuid, (uuid, bool)=>{this.cycleDistanceIndex(uuid, bool)})}
         <text x={this.state.origin + (this.state.menu_width*.25)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")}  key ={'CreateEdgeTargetText' + "_" + uuid}> Target:</text>
         <text x={this.state.origin + (this.state.menu_width*.7)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment17")} 
         style={{ stroke:this.state.colourTag, strokeWidth:"2" }} 
@@ -193,12 +196,9 @@ class MenuElement extends React.Component {
     }
     
     displayOptionEditNode = (uuid) =>{
-      // let node = _.find(this.props.state.nodes, { "nodeID": this.props.menu.nodeID });
       return(
         <g key ={'editEdge' + "_" + uuid}>
-        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'editEdgeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid,"nodeTypes");}}/>
-        <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'editEdgeBoxText' + "_" + uuid} >[Tap to Choose]</text>
-        
+        {this.displayCycle(uuid, (uuid, bool)=>{this.cycleIndex(uuid, bool)})}
         <text x={this.state.origin  + (this.state.menu_width/2)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key={'editEdgeBoxTarget' + "_" + uuid}>{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].name}</text>
         
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeButton' + "_" + uuid} onClick={()=>{this.editNode(uuid);}}/>
@@ -210,8 +210,7 @@ class MenuElement extends React.Component {
     displayOptionDeleteEdges = (uuid) =>{
       return(
         <g key ={'deleteEdges' + "_" + uuid}>
-        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'deleteEdgesBox' + "_" + uuid} onClick={()=>{this.cycleEdges(uuid);}}/>
-        <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'deleteEdgesBoxText' + "_" + uuid} >[Tap to Choose]</text>
+        {this.displayCycle(uuid, (uuid, bool)=>{this.cycleEdges(uuid, bool)})}
         <text x={this.state.origin  + (this.state.menu_width*.25)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key ={'deleteEdgesTargetText' + "_" + uuid}> Target:</text>
         <text x={this.state.origin + (this.state.menu_width*.75)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} 
         style={{ stroke:this.state.colourTag, strokeWidth:"2" }} 
@@ -221,6 +220,17 @@ class MenuElement extends React.Component {
         
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'deleteEdgesButton' + "_" + uuid} onClick={()=>{this.deleteEdge(uuid);}}/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem","fontAdjustment18")} key ={'deleteEdgesButtonText' + "_" + uuid} >Delete Edge</text>
+        </g>
+      );
+    }
+
+    displayCycle = (uuid, clickFunction) =>{
+      return(
+        <g>
+          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width/2} height={(this.state.menu_height * 2)} className="menuItemRectLR" key={'createEdgeBoxLeft' + "_" + uuid} onClick={() => { clickFunction(uuid, false);}}/>
+          <rect x={this.state.origin+this.state.menu_width/2} y={this.state.menuItemRectYOrigin} width={this.state.menu_width/2} height={(this.state.menu_height * 2)} className="menuItemRectLR" key={'createEdgeBoxRight' + "_" + uuid} onClick={() => { clickFunction(uuid, true);}}/>
+          <text x={this.state.origin+this.state.menu_width*.25} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment17")} key={'createEdgeBoxText1' + "_" + uuid} >{"<-Left"}</text>
+          <text x={this.state.origin+this.state.menu_width*.75} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment17")} key={'createEdgeBoxText2' + "_" + uuid} >{"Right->"}</text>
         </g>
       );
     }
@@ -253,7 +263,7 @@ class MenuElement extends React.Component {
       }
       this.props.dispatch(UPDATE("nodes", amendedNode)); //update local nodes
       if(this.props.state.updateFromCreate){
-          this.props.dispatch(updateNode(node, amendedNode)); //import edges into neo4j
+        this.props.dispatch(updateNode(node, amendedNode)); //import edges into neo4j
       }
       
     }
@@ -294,24 +304,38 @@ class MenuElement extends React.Component {
       }
     }
     
-    cycleEdges(uuid){
+    cycleEdges(uuid, direction){
       this.props.dispatch(DROP("highlightedEdges", "color", {color:this.state.colourTag}));
       this.resetTimer(uuid);
       let index = 0;
-      if((this.state.connectedEdges.length-1) != this.state.connectedEdgesCurrentIndex){
-        index = this.state.connectedEdgesCurrentIndex + 1;
+      if(direction){
+        if((this.state.connectedEdges.length-1) != this.state.connectedEdgesCurrentIndex){
+          index = this.state.connectedEdgesCurrentIndex + 1;
+        }
+      }else{
+        index = (this.state.connectedEdges.length -1)
+        if(this.state.connectedEdgesCurrentIndex != 0){
+          index = this.state.connectedEdgesCurrentIndex - 1;
+        } 
       }
       this.setState({connectedEdgesCurrentIndex:index});
       this.props.dispatch(UPDATE("highlightedEdges", {edgeID: uuid, source:this.state.connectedEdges[index].source, target:this.state.connectedEdges[index].target, color:this.state.colourTag}));
     }
     
     
-    cycleDistanceIndex(uuid) {
+    cycleDistanceIndex(uuid, direction) {
       this.props.dispatch(DROP("highlightedNodes", "color", { color: this.state.colourTag }));
       let index = 1;
       this.resetTimer(uuid);
-      if((this.state.distancesToTarget.length-1) != this.state.nodeTargetCurrentIndex){
-        index = this.state.nodeTargetCurrentIndex + 1;
+      if(direction){
+        if((this.state.distancesToTarget.length-1) != this.state.nodeTargetCurrentIndex){
+          index = this.state.nodeTargetCurrentIndex + 1;
+        }
+      }else{
+        index = (this.state.distancesToTarget.length -1)
+        if(this.state.nodeTargetCurrentIndex != 1){
+          index = this.state.nodeTargetCurrentIndex -= 1;
+        } 
       }
       this.setState({ nodeTargetCurrentIndex: index });
       this.props.dispatch(REPLACE('newLinks', 'edgeID', { edgeID: this.props.menu.uuid, source: this.props.menu.nodeID, target: this.state.distancesToTarget[index].targetNode }));
@@ -319,13 +343,21 @@ class MenuElement extends React.Component {
       this.props.dispatch(UPDATE("highlightedNodes", {nodeID:this.state.distancesToTarget[index].targetNode, color:this.state.colourTag}));
     }
     
-    cycleIndex(uuid, type){
+    cycleIndex(uuid, direction){
       this.resetTimer(uuid);
-      let variable = type + "CurrentIndex";
-      if((this.props.state[type].length-1) == this.state[variable]){
-        this.setState({[variable]:0});
+      let variable = "nodeTypesCurrentIndex";
+      if(direction){
+        if((this.props.state["nodeTypes"].length-1) == this.state[variable]){
+          this.setState({[variable]:0});
+        }else{
+          this.setState({[variable]:( this.state[variable] + 1)});
+        }
       }else{
-        this.setState({[variable]:( this.state[variable] + 1)});
+        if(this.state[variable] == 0){
+          this.setState({[variable]:(this.props.state["nodeTypes"].length-1)});
+        }else{
+          this.setState({[variable]:( this.state[variable] - 1)});
+        }
       }
     }
     
@@ -339,7 +371,7 @@ class MenuElement extends React.Component {
         case 1:{
           return( 
             <g>
-            <rect fill="white" x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={this.state.menu_height*3} key={'displayOption' + menu.uuid} onClick={()=>this.resetTimer(menu.uuid)} style={{stroke:'black', strokeWidth:'1px', fill:'#FF8A80'}}/>
+            <rect fill="white" x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={this.state.menu_height*3} key={'displayOption' + menu.uuid} onClick={()=>this.resetTimer(menu.uuid)} style={{stroke:'black', strokeWidth:'1px'/*, fill:'#FF8A80'*/}}/>
             {this.state.clickedOption(menu.uuid)}
             </g>
           );        
@@ -389,10 +421,15 @@ class MenuElement extends React.Component {
         {this.state.layer > 0 ? 
           <g>
           <rect fill="white" width={25} height={25} transform={pathTransform} onClick={()=>this.clickBack(menu.uuid)}/>
+          {/*PATH d for Left Arrow taken from https://material.io/*/}
           <path stroke={"black"} d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" transform={pathTransform} style={{fill:"black"}} onClick={()=>this.clickBack(menu.uuid)}/>
           </g>
           :
-          <g/>
+          <g>
+          <rect fill="white" width={25} height={25} transform={pathTransform} onClick={()=>this.cancelTimer(menu.uuid)}/>
+          {/*PATH d for Cancel taken from https://material.io/*/}
+          <path stroke={"black"} d="M12,2C6.47,2,2,6.47,2,12s4.47,10,10,10,s10,-4.47,10,-10,S17.53,2,12,2,Zm5,13.59L15.59,17L12,13.41L8.41,17L7,15.59L10.59,12L7,8.41L8.41,7L12,10.59L15.59,7L17,8.41L13.41,12L17,15.59Z" transform={pathTransform} style={{fill:"black"}} onClick={()=>this.cancelTimer(menu.uuid)}/>
+          </g>
         }
         <text x={this.state.origin*2} y={this.state.origin + (this.state.menu_height *.3)} className={classnames("menuDetails", "fontAdjustment12_E")} key={'elementDetails1' + node.nodeID}>{"ID: " + node.type + "_" + node.nodeID}</text>
         <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.6)} className={classnames("menuDetails", "fontAdjustment12_E")} key={'elementDetails2' + node.nodeID} >{"Date: " + node.date}</text>
@@ -405,3 +442,4 @@ class MenuElement extends React.Component {
   }
   
   export default MenuElement;
+  

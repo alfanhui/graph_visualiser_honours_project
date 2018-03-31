@@ -113,11 +113,11 @@ function edgeToCypher(edgeParameters) {
 export function updateNode(oldNode, amendedNode) {
     let newNode = _.cloneDeep(amendedNode);
     return (dispatch) => {
-        return dispatch(removeNode(oldNode)).then(() => {
             return dispatch(importNode(newNode)).then(() => {
+              return dispatch(removeNode(oldNode)).then(() => {
                 dispatch(updateHash());
             });
-        });
+         });
     };
 }
 

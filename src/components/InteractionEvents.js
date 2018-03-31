@@ -141,8 +141,11 @@ class InteractionEvents extends React.Component {
             let node = _.find(this.props.state.nodes, { "nodeID": event.target.id });
             //issue with rotated nodes positing is not correct upon moving
             if(!this.props.state.defaultNodeTypes.includes(node.type)){ 
-              drag.currentX += 60;
-              drag.currentY += 5;
+              drag.currentX += 65;
+              drag.currentY += 4;
+            }else{
+              drag.currentX -= 15;
+              drag.currentY -= 12;
             }
             let transform = event.target.getAttributeNS(null, "transform").slice(10, -1).split(',');
             drag.transform = transform.map(parseFloat);
@@ -303,19 +306,19 @@ class InteractionEvents extends React.Component {
 
 
   isMenuNearBy(x, y) {
-      let north = (150 * this.props.state.averagedScale),
-          east = (250 * this.props.state.averagedScale),
-          south = (250 * this.props.state.averagedScale),
-          west = (150 * this.props.state.averagedScale);
+      let up = (170 * this.props.state.averagedScale),
+          right = (250 * this.props.state.averagedScale),
+          down = (250 * this.props.state.averagedScale),
+          left = (150 * this.props.state.averagedScale);
       let nearByMainMenus = this.props.state.menuMainArray.filter((menu_item) => {
-          if ((x >= (menu_item.x - west) && x <= (menu_item.x + east)) && (y <= (menu_item.y + south) && y >= (menu_item.y - north))){
+          if ((x >= (menu_item.x - left) && x <= (menu_item.x + right)) && (y <= (menu_item.y + down) && y >= (menu_item.y - up))){
               return true;
           }
           return false;
       });
 
       let nearByElementMenus = this.props.state.menuElementArray.filter((menu_item) => {
-          if ((x >= (menu_item.x - west) && x <= (menu_item.x + east)) && (y <= (menu_item.y + south) && y >= (menu_item.y - north))) {
+          if ((x >= (menu_item.x - left) && x <= (menu_item.x + right)) && (y <= (menu_item.y + down) && y >= (menu_item.y - up))) {
               return true;
           }
           return false;

@@ -25,6 +25,9 @@ class LayoutTree extends React.Component {
     state: PropTypes.object,
     menuMainArray: PropTypes.func,
     menuElementArray: PropTypes.func,
+    onMouseDown: PropTypes.func,
+    onMouseMove: PropTypes.func,
+    onMouseUp: PropTypes.func,
     onTouchStart: PropTypes.func,
     onTouchMove: PropTypes.func,
     onTouchEnd: PropTypes.func,
@@ -243,7 +246,6 @@ class LayoutTree extends React.Component {
         <MenuMain
         key={"MM" + nextMenu.x + nextMenu.y}
         menu={nextMenu}
-        loadDatabase={(dataFile)=>this.props.loadDatabase(dataFile)}
         />
       );
     })}

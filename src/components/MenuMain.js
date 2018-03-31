@@ -21,8 +21,7 @@ class MenuMain extends React.Component {
   static propTypes = {
     dispatch: PropTypes.func,
     state: PropTypes.object,
-    menu: PropTypes.object,
-    loadDatabase: PropTypes.func,
+    menu: PropTypes.object
   };
   
   constructor(props) {
@@ -53,6 +52,10 @@ class MenuMain extends React.Component {
         };
       }   
       
+      cancelTimer = (uuid) => {
+        this.props.dispatch(stopTimer(uuid, "menuMainArray"));
+      }
+
       resetTimer = (uuid) => {
         this.props.dispatch(addToTimer(uuid, "menuMainArray"));
       }
@@ -108,8 +111,9 @@ class MenuMain extends React.Component {
       displayOptionCreateNode = (uuid) =>{
         return(
           <g key ={'createNode' + "_" + uuid}>
-          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'createNodeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid, "nodeTypes");}}/>
-          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'createNodeBoxText' + "_" + uuid} >[Tap to Choose]</text>
+          {this.displayCycle(uuid, (uuid, bool, type)=>{this.cycleIndex(uuid, bool, type)}, "nodeTypes")}
+          {/* <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'createNodeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid, "nodeTypes");}}/>
+          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'createNodeBoxText' + "_" + uuid} >[Tap to Choose]</text> */}
           {
             this.props.state.defaultNodeTypes.includes(this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type) ? 
             <g>
@@ -161,8 +165,9 @@ class MenuMain extends React.Component {
     displayOptionImport = (uuid) =>{
       return(
         <g key ={'import' + "_" + uuid}>
-        <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'importOptionBox' + "_" + uuid} fill="white" onClick={()=>{this.cycleIndex(uuid, "dataFiles");}}/>
-        <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key ={'importInfo' + "_" + uuid} >[Tap to Choose]</text>
+        {this.displayCycle(uuid, (uuid, bool, type)=>{this.cycleIndex(uuid, bool, type)}, "dataFiles")}
+        {/* <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'importOptionBox' + "_" + uuid} fill="white" onClick={()=>{this.cycleIndex(uuid, "dataFiles");}}/>
+        <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key ={'importInfo' + "_" + uuid} >[Tap to Choose]</text> */}
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key={'importFileName' + "_" + uuid} >
                   {this.props.state.dataFiles[this.state.dataFilesCurrentIndex] == "CLEAR" ? "Clear Screen" : ("nodeset " + this.props.state.dataFiles[this.state.dataFilesCurrentIndex])}
         </text>
@@ -194,6 +199,17 @@ class MenuMain extends React.Component {
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key ={'ExportOptionText1' + "_" + uuid} >.PNG</text>
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'ExportOptionBox2' + "_" + uuid} fill="white" onClick={()=>{this.svgToJSON();}}/>
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (2 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key ={'ExportOptionText2' + "_" + uuid}>.JSON</text>
+        </g>
+      );
+    }
+
+    displayCycle = (uuid, clickFunction, type) =>{
+      return(
+        <g>
+          <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width/2} height={(this.state.menu_height * 2)} className="menuItemRectLR" key={'createEdgeBoxLeft' + "_" + uuid} onClick={() => { clickFunction(uuid, false, type);}}/>
+          <rect x={this.state.origin+this.state.menu_width/2} y={this.state.menuItemRectYOrigin} width={this.state.menu_width/2} height={(this.state.menu_height * 2)} className="menuItemRectLR" key={'createEdgeBoxRight' + "_" + uuid} onClick={() => { clickFunction(uuid, true, type);}}/>
+          <text x={this.state.origin+this.state.menu_width*.25} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment17")} key={'createEdgeBoxText1' + "_" + uuid} >{"<-Left"}</text>
+          <text x={this.state.origin+this.state.menu_width*.75} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment17")} key={'createEdgeBoxText2' + "_" + uuid} >{"Right->"}</text>
         </g>
       );
     }
@@ -230,14 +246,24 @@ class MenuMain extends React.Component {
         }
       }
       
-      cycleIndex(uuid, type){
+      cycleIndex(uuid, direction, type){
         this.resetTimer(uuid);
         let variable = type + "CurrentIndex";
-        if((this.props.state[type].length-1) == this.state[variable]){
-          this.setState({[variable]:0});
+        let index;
+        if(direction){
+          if((this.props.state[type].length-1) == this.state[variable]){
+            index = 0;
+          }else{
+            index = this.state[variable] + 1;
+          }
         }else{
-          this.setState({[variable]:( this.state[variable] + 1)});
+          if(this.state[variable] == 0){
+            index = this.props.state[type].length-1;
+          }else{
+            index = this.state[variable] - 1;
+          }
         }
+        this.setState({[variable]:index});
       }
       
       toggleProp(uuid, propName){
@@ -377,7 +403,7 @@ class MenuMain extends React.Component {
         case 1:{
           return( 
             <g>
-            <rect fill="white" x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={this.state.menu_height*3} key={'displayOption' + menu.uuid} onClick={()=>this.resetTimer(menu.uuid)} style={{stroke:'black', strokeWidth:'1px', fill:'#FF8A80'}}/>
+            <rect fill="white" x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={this.state.menu_height*3} key={'displayOption' + menu.uuid} onClick={()=>this.resetTimer(menu.uuid)} style={{stroke:'black', strokeWidth:'1px'}}/>
             {this.state.clickedOption(menu.uuid)}
             </g>
           );        
@@ -414,16 +440,21 @@ class MenuMain extends React.Component {
       let transform = "translate(" + (menu.x - 40) + "," + (menu.y - 40) + ")"; //minus margins
       let pathTransform = "translate(" + (this.state.origin + (this.state.menu_width * .825)) + "," + (this.state.origin +1) +") " + "scale( " + (1* this.props.state.averagedScale) + "," + (1* this.props.state.averagedScale)  + ")";
       return(
-        <g transform={transform} key={menu.uuid}>
-        {<rect x={this.state.origin-(this.state.origin*0.3)} y={this.state.origin -(this.state.origin*0.2)} width={this.state.menu_width*1.1} height={this.state.menu_height*4.2} key={'touchborder' + menu.x + menu.y} style={{fillOpacity:"0.0", fill:'none'}}/> }{/* stops touches conflicting */}
-        <rect x={this.state.origin} y={this.state.origin} width={this.state.menu_width} height={this.state.menu_height} key={'menuMainRect' + menu.x + menu.y} fill="white" onClick={()=>this.resetTimer(menu.uuid)} style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
+        <g transform={transform} key={menu.uuid} >
+        {<rect x={this.state.origin-(this.state.origin*0.3)} y={this.state.origin -(this.state.origin*0.2)} width={this.state.menu_width*1.1} height={this.state.menu_height*4.2} key={'touchborder' + menu.x + menu.y} style={{fillOpacity:"0.0", fill:'none'}}/> }{/* stops touches conflicting */} {/*onClick={()=>this.resetTimer(menu.uuid)}*/}
+        <rect x={this.state.origin} y={this.state.origin} width={this.state.menu_width} height={this.state.menu_height} key={'menuMainRect' + menu.x + menu.y} fill="white"  style={{stroke:'black', strokeWidth:'1px', fill:'white'}}/>
         {this.state.layer > 0 ? 
           <g>
           <rect fill="white" width={25} height={25} transform={pathTransform} onClick={()=>this.clickBack(menu.uuid)}/>
+          {/*PATH d for Left Arrow taken from https://material.io/*/}
           <path stroke={"black"} d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" transform={pathTransform} style={{fill:"black"}} onClick={()=>this.clickBack(menu.uuid)}/>
           </g>
           :
-          <g/>
+          <g>
+          <rect fill="white" width={25} height={25} transform={pathTransform} onClick={()=>this.cancelTimer(menu.uuid)}/>
+           {/*PATH d for Cancel taken from https://material.io/*/}
+          <path stroke={"black"} d="M12,2C6.47,2,2,6.47,2,12s4.47,10,10,10,s10,-4.47,10,-10,S17.53,2,12,2,Zm5,13.59L15.59,17L12,13.41L8.41,17L7,15.59L10.59,12L7,8.41L8.41,7L12,10.59L15.59,7L17,8.41L13.41,12L17,15.59Z" transform={pathTransform} style={{fill:"black"}} onClick={()=>this.cancelTimer(menu.uuid)}/>
+          </g>
         }
         <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.3)} className={classnames("menuDetails", "fontAdjustment12_E")} key={'menuMainArrayDetails1' + menu.x + menu.y} >{"Nodes: (" + this.props.state.nodes.length + ")"}</text>
         <text x={this.state.origin*1.2} y={this.state.origin + (this.state.menu_height *.6)} className={classnames("menuDetails", "fontAdjustment12_E")} key={'menuMainArrayDetails2' + menu.x + menu.y} >{"Edges: (" + this.props.state.links.length + ")"}</text>

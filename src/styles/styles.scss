@@ -30,6 +30,10 @@ body {
   font-weight: 300;
 }
 
+text {
+  user-select: none; 
+}
+
 .svg {
   overflow: auto;
   touch-action: none;
@@ -72,6 +76,10 @@ line {
 .menuItemRect {
   stroke:grey;
   stroke-width:0.25px;
+  fill:white;
+}
+
+.menuItemRectLR {
   fill:white;
 }
 
