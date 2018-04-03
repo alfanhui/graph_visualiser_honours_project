@@ -55,7 +55,7 @@ Note: this will run docker versions of neo4j and node.js as a daemon process.
 
 ## Authors
 
-* **Stuart Huddy** - *full design and implementation* - 
+* **Stuart Huddy** *(Full design and implementation)*
 
 ## License
 
