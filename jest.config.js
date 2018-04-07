@@ -7,7 +7,7 @@ module.exports = {
         './jestsetup.js',
     ],
     collectCoverage: false,
-    collectCoverageFrom: ['components/*.jsx'],
+    collectCoverageFrom: ['src/*.jsx'],
     coverageThreshold: {
         global: {
             branches: 100,

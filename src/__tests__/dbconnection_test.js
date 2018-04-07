@@ -26,7 +26,6 @@ describe('dbconnection async actions', () => {
             {type: types.SET , variable:"connectionType", payload: 'local'}
         ];
         const store = mockStore({ databaseError: '', connectionType: ''});
-
         return store.dispatch(dbconnection.checkAddress()).then(()=>{
             expect(store.getActions()).toEqual(expectedActions_SUCCESS)
         });//.catch(e => {expect(e).toBeTruthy(); expect(store.getActions()).toEqual(expectedActions_FAILURE)});
@@ -43,7 +42,8 @@ describe('dbconnection async actions', () => {
         jest.unmock('../__mocks__/superagent');
         const myModule = require('../__mocks__/superagent');
         myModule.auth = function(){return Promise.reject({});};  
-        
+    
+
         return store.dispatch(dbconnection.checkAddress()).then(()=>{
             expect(store.getActions()).toEqual(expectedActions_FAILURE)
         });

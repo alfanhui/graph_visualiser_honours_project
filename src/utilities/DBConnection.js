@@ -1,7 +1,7 @@
 import request from 'superagent';
 import { SET } from 'reducerActions';
 import hash from 'object-hash';
-let config = require('config');
+import config from '../config';
 let url = config.localhost + config.port + config.transaction;
 
 
@@ -99,7 +99,7 @@ export function removeIndexes() {
           let data = res.body.results[0].data;
           let dropStatement = [];
           data.map((item) => {
-            dropStatement.push("DROP " + item.row[0])
+            dropStatement.push("DROP " + item.row[0]);
           });
           dispatch(SET("databaseError", '#FFFFF'));
           return dispatch(postQuery(dropStatement));

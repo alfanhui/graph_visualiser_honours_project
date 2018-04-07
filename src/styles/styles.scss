@@ -99,6 +99,12 @@ line {
   touch-action: none;
 }
 
+::-webkit-input-placeholder{
+   text-anchor: start;
+   font-size:16px;
+   line-height: 32px;
+   min-height: 32px;
+}
 
 .menuItem {
   border:10px;

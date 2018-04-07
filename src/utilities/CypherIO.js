@@ -158,11 +158,11 @@ export function removeEdges(edgesToRemove){
   if(!Array.isArray(edgesToRemove)){
     edgesToRemove = [edgesToRemove];
   }
-  let removeStatements = edgesToRemove.map((edge)=>{
+  let removeStatements = edgesToRemove.map(()=>{
     return "MATCH (n)-[rel:LINK]->(r) WHERE n.nodeID=$edgeSource AND r.nodeID=$edgeTarget DELETE rel";// eslint-disable-line
   });
   let removeParameters = edgesToRemove.map((edge)=>{
-    return {"edgeSource": edge.source, "edgeTarget": edge.target }
+    return {"edgeSource": edge.source, "edgeTarget": edge.target };
   });
   return(dispatch) => {
       return dispatch(postQuery(removeStatements, removeParameters)).then(() => {

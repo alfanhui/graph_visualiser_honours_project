@@ -16,11 +16,11 @@ const mockStore = configureMockStore(middlewares);
 // // }
 describe('graphMLtoCypher function', () => {
     beforeEach(()=>{
-        
     });
     
     afterEach(() => {
-        
+        fetchMock.reset();
+        fetchMock.restore();
     });
     console.log = jest.fn();
     it('converts multiple node json data (without edges) into correct cypher statements', () => {

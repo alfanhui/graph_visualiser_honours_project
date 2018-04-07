@@ -181,7 +181,7 @@ class MenuElement extends React.Component {
       }
       return(
         <g key ={'createEdge' + "_" + uuid}>
-        {this.displayCycle(uuid, (uuid, bool)=>{this.cycleDistanceIndex(uuid, bool)})}
+        {this.displayCycle(uuid, (uuid, bool)=>{this.cycleDistanceIndex(uuid, bool);})}
         <text x={this.state.origin + (this.state.menu_width*.25)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")}  key ={'CreateEdgeTargetText' + "_" + uuid}> Target:</text>
         <text x={this.state.origin + (this.state.menu_width*.7)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment17")} 
         style={{ stroke:this.state.colourTag, strokeWidth:"2" }} 
@@ -198,7 +198,7 @@ class MenuElement extends React.Component {
     displayOptionEditNode = (uuid) =>{
       return(
         <g key ={'editEdge' + "_" + uuid}>
-        {this.displayCycle(uuid, (uuid, bool)=>{this.cycleIndex(uuid, bool)})}
+        {this.displayCycle(uuid, (uuid, bool)=>{this.cycleIndex(uuid, bool);})}
         <text x={this.state.origin  + (this.state.menu_width/2)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key={'editEdgeBoxTarget' + "_" + uuid}>{this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].name}</text>
         
         <rect x={this.state.origin} y={this.state.menuItemRectYOrigin + (2 * this.state.menu_height)} width={this.state.menu_width} height={this.state.menu_height} className="menuItemRect" key={'editEdgeButton' + "_" + uuid} onClick={()=>{this.editNode(uuid);}}/>
@@ -210,7 +210,7 @@ class MenuElement extends React.Component {
     displayOptionDeleteEdges = (uuid) =>{
       return(
         <g key ={'deleteEdges' + "_" + uuid}>
-        {this.displayCycle(uuid, (uuid, bool)=>{this.cycleEdges(uuid, bool)})}
+        {this.displayCycle(uuid, (uuid, bool)=>{this.cycleEdges(uuid, bool);})}
         <text x={this.state.origin  + (this.state.menu_width*.25)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key ={'deleteEdgesTargetText' + "_" + uuid}> Target:</text>
         <text x={this.state.origin + (this.state.menu_width*.75)} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} 
         style={{ stroke:this.state.colourTag, strokeWidth:"2" }} 
@@ -229,9 +229,9 @@ class MenuElement extends React.Component {
         <g>
           <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width/2} height={(this.state.menu_height * 2)} className="menuItemRectLR" key={'createEdgeBoxLeft' + "_" + uuid} onClick={() => { clickFunction(uuid, false);}}/>
           <rect x={this.state.origin+this.state.menu_width/2} y={this.state.menuItemRectYOrigin} width={this.state.menu_width/2} height={(this.state.menu_height * 2)} className="menuItemRectLR" key={'createEdgeBoxRight' + "_" + uuid} onClick={() => { clickFunction(uuid, true);}}/>
-          <text x={this.state.origin+this.state.menu_width*.25} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment17")} key={'createEdgeBoxText1' + "_" + uuid} >{"<-Left"}</text>
-          <text x={this.state.origin+this.state.menu_width*.75} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment17")} key={'createEdgeBoxText2' + "_" + uuid} >{"Right->"}</text>
-        </g>
+          <text x={this.state.origin+this.state.menu_width*.3} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment17")} key={'createEdgeBoxText1' + "_" + uuid} >{"<Previous"}</text>
+          <text x={this.state.origin+this.state.menu_width*.8} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment17")} key={'createEdgeBoxText2' + "_" + uuid} >{"Next>"}</text>
+       </g>
       );
     }
     
@@ -313,7 +313,7 @@ class MenuElement extends React.Component {
           index = this.state.connectedEdgesCurrentIndex + 1;
         }
       }else{
-        index = (this.state.connectedEdges.length -1)
+        index = (this.state.connectedEdges.length -1);
         if(this.state.connectedEdgesCurrentIndex != 0){
           index = this.state.connectedEdgesCurrentIndex - 1;
         } 
@@ -332,9 +332,9 @@ class MenuElement extends React.Component {
           index = this.state.nodeTargetCurrentIndex + 1;
         }
       }else{
-        index = (this.state.distancesToTarget.length -1)
+        index = (this.state.distancesToTarget.length -1);
         if(this.state.nodeTargetCurrentIndex != 1){
-          index = this.state.nodeTargetCurrentIndex -= 1;
+          index = this.state.nodeTargetCurrentIndex - 1;
         } 
       }
       this.setState({ nodeTargetCurrentIndex: index });

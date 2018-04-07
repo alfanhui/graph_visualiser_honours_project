@@ -26,6 +26,17 @@ const initialState = {
   menuMainArray: [],
   newLinks: [],
   nodes: [],
+  nodeColourTypesHash:{
+    "I": "#81d4fa",
+    "L": "#90caf9",
+    "LA": "#90caf9",
+    "RA": "#a5d6a7",
+    "CA": "#ef9a9a",
+    "TA": "#ce93d8",
+    "MA": "#ffab91",
+    "PA": "#80cbc4",
+    "YA": "#fff59d" 
+  },
   nodeTypes:[
     {type:"I", name:"Information Node"},
     {type:"LA", name:"Locution Node"},
@@ -42,7 +53,7 @@ const initialState = {
   testMode: false,
   updateFromCreate: true,
   updateInterval: 15000,
-  updateAuto: false,
+  updateAuto: true,
   updateAvailable: false,
 };
 

@@ -101,6 +101,7 @@ class MenuMain extends React.Component {
       }
       
       importDatabase(){
+        this.props.dispatch(stopTimer(this.props.menu.uuid, "menuMainArray"));
         if(this.props.state.dataFiles[this.state.dataFilesCurrentIndex] == "CLEAR"){
           this.props.dispatch(wipeDatabase());
         }else{
@@ -112,16 +113,14 @@ class MenuMain extends React.Component {
       displayOptionCreateNode = (uuid) =>{
         return(
           <g key ={'createNode' + "_" + uuid}>
-          {this.displayCycle(uuid, (uuid, bool, type)=>{this.cycleIndex(uuid, bool, type)}, "nodeTypes")}
-          {/* <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'createNodeBox' + "_" + uuid} onClick={()=>{this.cycleIndex(uuid, "nodeTypes");}}/>
-          <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key={'createNodeBoxText' + "_" + uuid} >[Tap to Choose]</text> */}
+          {this.displayCycle(uuid, (uuid, bool, type)=>{this.cycleIndex(uuid, bool, type);}, "nodeTypes")}
           {
             this.props.state.defaultNodeTypes.includes(this.props.state.nodeTypes[this.state.nodeTypesCurrentIndex].type) ? 
             <g>
             <text x={this.state.origin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18_E")} key ={'CreateNodeTargetText' + "_" + uuid}> Text:</text>
             <foreignObject key={"FO_Div" + uuid} x={this.state.menu_width/2.4} y={this.state.menuItemTextYOrigin + (0.5 * this.state.menu_height)} width={(this.state.menu_width / 2)} height={this.state.menu_height}>
             <div key={"inputDiv" + uuid}xmlns="http://www.w3.org/1999/xhtml">
-              <textarea key={"inputInput" + uuid} id={"inputInput" + uuid} onInput={() => this.resetTimer(uuid)}name="text" rows="14" cols="10" wrap="soft" maxLength="120" placeholder="NODE" style={{ width: (this.state.menu_width / 1.6) + "px", height: ((this.state.menu_height * .7) + "px"), fontSize: ((22 * this.props.state.averagedScale) + "px"), overflow: "hidden", resize: "none" }}/>
+              <textarea key={"inputInput" + uuid} id={"inputInput" + uuid} onInput={() => this.resetTimer(uuid)}name="text" rows="14" cols="10" wrap="soft" maxLength="120" placeholder="default text" style={{ width: (this.state.menu_width / 1.6) + "px", height: ((this.state.menu_height * .7) + "px"), fontSize: ((22 * this.props.state.averagedScale) + "px"), overflow: "hidden", resize: "none" }}/>
             </div>
             </foreignObject>
             </g>
@@ -166,9 +165,7 @@ class MenuMain extends React.Component {
     displayOptionImport = (uuid) =>{
       return(
         <g key ={'import' + "_" + uuid}>
-        {this.displayCycle(uuid, (uuid, bool, type)=>{this.cycleIndex(uuid, bool, type)}, "dataFiles")}
-        {/* <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width} height={(this.state.menu_height * 2)} className="menuItemRect" key={'importOptionBox' + "_" + uuid} fill="white" onClick={()=>{this.cycleIndex(uuid, "dataFiles");}}/>
-        <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment18")} key ={'importInfo' + "_" + uuid} >[Tap to Choose]</text> */}
+        {this.displayCycle(uuid, (uuid, bool, type)=>{this.cycleIndex(uuid, bool, type);}, "dataFiles")}
         <text x={this.state.menuItemTextXOrigin} y={this.state.menuItemTextYOrigin + (1 * this.state.menu_height)} className={classnames("menuItem", "fontAdjustment18")} key={'importFileName' + "_" + uuid} >
                   {this.props.state.dataFiles[this.state.dataFilesCurrentIndex] == "CLEAR" ? "Clear Screen" : ("nodeset " + this.props.state.dataFiles[this.state.dataFilesCurrentIndex])}
         </text>
@@ -209,8 +206,8 @@ class MenuMain extends React.Component {
         <g>
           <rect x={this.state.origin} y={this.state.menuItemRectYOrigin} width={this.state.menu_width/2} height={(this.state.menu_height * 2)} className="menuItemRectLR" key={'createEdgeBoxLeft' + "_" + uuid} onClick={() => { clickFunction(uuid, false, type);}}/>
           <rect x={this.state.origin+this.state.menu_width/2} y={this.state.menuItemRectYOrigin} width={this.state.menu_width/2} height={(this.state.menu_height * 2)} className="menuItemRectLR" key={'createEdgeBoxRight' + "_" + uuid} onClick={() => { clickFunction(uuid, true, type);}}/>
-          <text x={this.state.origin+this.state.menu_width*.25} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment17")} key={'createEdgeBoxText1' + "_" + uuid} >{"<-Left"}</text>
-          <text x={this.state.origin+this.state.menu_width*.75} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment17")} key={'createEdgeBoxText2' + "_" + uuid} >{"Right->"}</text>
+          <text x={this.state.origin+this.state.menu_width*.3} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment17")} key={'createEdgeBoxText1' + "_" + uuid} >{"<Previous"}</text>
+          <text x={this.state.origin+this.state.menu_width*.8} y={this.state.menuItemTextYOrigin} className={classnames("menuItem", "fontAdjustment17")} key={'createEdgeBoxText2' + "_" + uuid} >{"Next>"}</text>
         </g>
       );
     }
