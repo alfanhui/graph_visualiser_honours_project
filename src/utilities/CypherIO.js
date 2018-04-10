@@ -9,26 +9,29 @@ export function importJSON(dataFile) {
   return (dispatch) => {
     dispatch(SET('databaseError', "#FFFFFF"));
     return dispatch(wipeDatabase()).then(function(){
-      return dispatch(removeIndexes()).then(function(){ //remove indexes
-        return request.get("data/US2016G1/" + fileName + ".json")
-        .then((res)=> {
-          dispatch(SET("currentDataFile", dataFile));
-          console.log(res.body); // eslint-disable-line
-          let {nodeStatements, dictionary, edgeStatements, edgeParameters} = graphMLtoCypher(res.body);
-          if(nodeStatements.length == 0) return;
-          return dispatch(compileQuery(nodeStatements, dictionary, edgeStatements, edgeParameters));
-        })
-        .catch((err)=> {
-          console.log("This error: " , err); // eslint-disable-line
-          dispatch(SET("databaseError", "#F50057"));
-        });
+      //return dispatch(removeIndexes()).then(function(){ //remove indexes
+      return request.get("data/US2016G1/" + fileName + ".json")
+      .then((res)=> {
+        if(!res || !res.hasOwnProperty('body')) throw "file not found"
+        dispatch(SET("currentDataFile", dataFile));
+        console.log(res.body); // eslint-disable-line
+        let {nodeStatements, dictionary, edgeStatements, edgeParameters} = graphMLtoCypher(res.body);
+        if(nodeStatements.length == 0) throw "no statements to push";
+        if(_.isEmpty(dictionary)) throw "Data has no types"
+        return dispatch(compileQuery(nodeStatements, dictionary, edgeStatements, edgeParameters));
+        
+      })
+      .catch((err)=> {
+        console.log("This error: " , err); // eslint-disable-line
+        dispatch(SET("databaseError", "#F50057"));
       });
     });
+    // });
   };
 }
 
 //post dispatches
-function compileQuery(nodeStatements, dictionary, edgeStatements, edgeParameters){
+export function compileQuery(nodeStatements, dictionary, edgeStatements, edgeParameters){
   return (dispatch) => {
     //send off queries, as promises, because you cannot create edges from nodes that don't already exist
     return dispatch(postQuery(nodeStatements, dictionary)).then(function(){
@@ -47,7 +50,7 @@ function compileQuery(nodeStatements, dictionary, edgeStatements, edgeParameters
 //handle json object ready for cypher conversion
 function graphMLtoCypher(jsonObj) {
   let edgeStatements = [],
-      edgeParameters = [];
+  edgeParameters = [];
   let {nodeStatements, dictionary, hashMap} = nodeToCypher(jsonObj);
   if(nodeStatements.length > 0){
     //create edges
@@ -69,8 +72,8 @@ function graphMLtoCypher(jsonObj) {
 //handle json object ready for cypher conversion
 function nodeToCypher(jsonObj) {
   let nodeStatements = [],
-      dictionary = {},
-      hashMap = {};
+  dictionary = {},
+  hashMap = {};
   if(jsonObj.hasOwnProperty('nodes')){
     let nodeParameters = { "props": jsonObj.nodes };
     //Sort by type
@@ -100,28 +103,32 @@ function nodeToCypher(jsonObj) {
 function edgeToCypher(edgeParameters) {
   //createEdgeStatements
   let edgeStatements = [];
-  edgeParameters.map((edge) => {
-    edgeStatements.push('MATCH (n:' + edge.fromType + '),(m:' + edge.toType +
-    ') WHERE n.nodeID=$fromID AND m.nodeID= $toID ' + 
-    ' CREATE (n)-[r:LINK{edgeID:$edgeID, source: $fromID, target: $toID, formEdgeID: $formEdgeID}]->(m)'
-    );
+  edgeParameters && edgeParameters.map((edge) => {
+    if(edge.hasOwnProperty('fromType') && edge.hasOwnProperty('toType')){
+      edgeStatements.push('MATCH (n:' + edge.fromType + '),(m:' + edge.toType +
+      ') WHERE n.nodeID=$fromID AND m.nodeID= $toID ' + 
+      ' CREATE (n)-[r:LINK{edgeID:$edgeID, source: $fromID, target: $toID, formEdgeID: $formEdgeID}]->(m)'
+      );
+    }
   });
   return edgeStatements;
 }
 
 
-export function updateNode(oldNode, amendedNode) {
-    let newNode = _.cloneDeep(amendedNode);
-    return (dispatch) => {
-            return dispatch(importNode(newNode)).then(() => {
-              return dispatch(removeNode(oldNode)).then(() => {
-                dispatch(updateHash());
-            });
-         });
-    };
+export function updateNode(oldNode, newNode) {
+  return (dispatch) => {
+    return dispatch(importNode(newNode)).then(() => {
+      return dispatch(removeNode(oldNode)).then(() => {
+        return dispatch(updateHash());
+      });
+    });
+  };
 }
 
 export function importNode(_newNode){
+  if(_.isEmpty(_newNode)) return;
+  if(!_newNode.hasOwnProperty('text')) return;
+  if(!_newNode.hasOwnProperty("type")) return;
   let newNode = _.cloneDeep(_newNode);
   newNode.text = newNode.text.join(" ");
   return (dispatch) => {
@@ -131,9 +138,9 @@ export function importNode(_newNode){
         dispatch(postQuery(['CREATE INDEX ON :' + nodeType + '(nodeID)'], null));
       }
     }).then(() => {
-        dispatch(updateHash());
+      return dispatch(updateHash());
     });
-  };
+  }
 }
 
 export function importEdge(_newEdge){
@@ -141,16 +148,16 @@ export function importEdge(_newEdge){
   return (dispatch) => {
     let edgeStatements = edgeToCypher([newEdgeParamenters]);
     return dispatch(postQuery(edgeStatements, newEdgeParamenters)).then(() => {
-        dispatch(updateHash());
+      dispatch(updateHash());
     });
   };
 }
 
 export function removeNode(nodeToRemove){
   return(dispatch) => {
-      return dispatch(postQuery("MATCH (n:" + nodeToRemove.type + ")  WHERE n.nodeID=$nodeToRemoveNodeID DELETE n", {"nodeToRemoveNodeID": nodeToRemove.nodeID})).then(() => {// eslint-disable-line
-          dispatch(updateHash());
-      });
+    return dispatch(postQuery("MATCH (n:" + nodeToRemove.type + ")  WHERE n.nodeID=$nodeToRemoveNodeID DELETE n", {"nodeToRemoveNodeID": nodeToRemove.nodeID})).then(() => {// eslint-disable-line
+      dispatch(updateHash());
+    });
   };
 }
 
@@ -165,9 +172,9 @@ export function removeEdges(edgesToRemove){
     return {"edgeSource": edge.source, "edgeTarget": edge.target };
   });
   return(dispatch) => {
-      return dispatch(postQuery(removeStatements, removeParameters)).then(() => {
-          dispatch(updateHash());
-      }); 
+    return dispatch(postQuery(removeStatements, removeParameters)).then(() => {
+      dispatch(updateHash());
+    }); 
   };
 }
 

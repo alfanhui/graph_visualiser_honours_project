@@ -57,7 +57,7 @@ export function postQuery(statements, parameters = null) {
       }
     })
     .catch((err)=> {
-      console.log("This error occcured: ", err, "statement:", preparedStatements); // eslint-disable-line
+      console.log("This error occcured when posting query: ", err, "statement:", preparedStatements); // eslint-disable-line
       dispatch(SET("databaseError", '#F50057'));
       return 0;
     });
@@ -77,7 +77,7 @@ export function wipeDatabase() {
     }).then(()=>{
       return dispatch(removeIndexes());
     }).catch((err)=> {
-      console.log("This error occcured: " , err); // eslint-disable-line
+      console.log("This error occcured when wiping Database: " , err); // eslint-disable-line
       dispatch(SET("nodes", []));
       dispatch(SET("links", []));
       dispatch(SET("databaseError", '#F50057'));
@@ -93,7 +93,7 @@ export function removeIndexes() {
     .auth(config.u,config.p)
     .then((res)=> {
       if(res.ok){
-        if(res.body.errors.length >0){
+        if(res.body.errors && res.body.errors.length >0){
           throw res.body.errors;
         }else if (res.body.results.length > 0){
           let data = res.body.results[0].data;
@@ -106,7 +106,7 @@ export function removeIndexes() {
         }
       }
     }).catch((err)=> {
-      console.log("This error occcured: " , err); // eslint-disable-line
+      console.log("This error occcured when removing indexes: " , err); // eslint-disable-line
       dispatch(SET("databaseError", '#F50057'));
       return 0;
     });
