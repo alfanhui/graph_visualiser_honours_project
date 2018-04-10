@@ -144,6 +144,9 @@ export function importNode(_newNode){
 }
 
 export function importEdge(_newEdge){
+  if(_.isEmpty(_newEdge)) return;
+  if(!_newEdge.hasOwnProperty("fromType")) return;
+  if(!_newEdge.hasOwnProperty("toType")) return;
   let newEdgeParamenters = _.cloneDeep(_newEdge);
   return (dispatch) => {
     let edgeStatements = edgeToCypher([newEdgeParamenters]);

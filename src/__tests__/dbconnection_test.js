@@ -9,7 +9,7 @@ import expect from 'expect';
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 
-describe('dbconnection async actions', () => {
+describe('checkAddress async actions', () => {
     beforeEach(()=>{
         jest.mock('../__mocks__/superagent');
     });
@@ -48,6 +48,19 @@ describe('dbconnection async actions', () => {
             expect(store.getActions()).toEqual(expectedActions_FAILURE)
         });
     })
+})
+
+describe('postQuery async actions', () => {
+    beforeEach(()=>{
+        jest.mock('../__mocks__/superagent');
+    });
+    
+    afterEach(() => {
+        fetchMock.reset();
+        fetchMock.restore();
+    });
+
+    console.log = jest.fn();
     
     it('returns data if no errors on postQuery', () => {
         const expectedResult_SUCCESS = [
@@ -119,6 +132,19 @@ describe('dbconnection async actions', () => {
             expect(data).toEqual(expectedResult_FAILURE);
         });
     })
+})
+
+describe('wipeDatabase async actions', () => {
+    beforeEach(()=>{
+        jest.mock('../__mocks__/superagent');
+    });
+    
+    afterEach(() => {
+        fetchMock.reset();
+        fetchMock.restore();
+    });
+
+    console.log = jest.fn();
 
     it('successful wipe on wipedatabase', () => {
         const expectedActions_SUCCESS = [
@@ -172,6 +198,19 @@ describe('dbconnection async actions', () => {
             expect(store.getActions()).toEqual(expectedActions_FAILURE);
         })
     })
+
+})
+describe('removeIndexes async actions', () => {
+    beforeEach(()=>{
+        jest.mock('../__mocks__/superagent');
+    });
+    
+    afterEach(() => {
+        fetchMock.reset();
+        fetchMock.restore();
+    });
+
+    console.log = jest.fn();
 
     it('successful on removeIndex', () => {
         const expectedActions_SUCCESS = [{data:[{row:["index1", "index2"]}]}];

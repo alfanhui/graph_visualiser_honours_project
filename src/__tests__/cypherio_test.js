@@ -20,7 +20,7 @@ describe('graphMLtoCypher function', () => {
         fetchMock.reset();
         fetchMock.restore();
     });
-    //console.log = jest.fn();
+    console.log = jest.fn();
     it('converts multiple node json data (without edges) into correct cypher statements', () => {
         const inputData = { //taken from test data
             "nodes": [
@@ -648,17 +648,17 @@ describe('importNode function', () => {
     it('check it returns when no object passed', () => {
         expect(cypherio.importNode({})).toEqual();
     });
-
+    
     it('check it returns when not text property', () => {
         expect(cypherio.importNode({"nodeID":"001"})).toEqual();
     });
-
+    
     it('check it returns nothing when nodeToCypher fails', () => {
         const store = mockStore({ });
         const expectedActions_SUCCESS = 
         [{"payload": [], "type": "SET", "variable": "statements"}, {"payload": {}, "type": "SET", "variable": "parameters"}, {"payload": "A", "type": "SET", "variable": "hash"}];
         
-
+        
         const myModule3 = require('../utilities/DBConnection');
         myModule3.postQuery = (statements, parameters = null) =>{
             return (dispatch) =>{
@@ -667,78 +667,20 @@ describe('importNode function', () => {
                 return Promise.resolve();   
             }
         }
-
+        
         myModule3.updateHash = () =>{
             return (dispatch) =>{
                 dispatch(actions.SET('hash', "A"));
                 return Promise.resolve();   
             }
         }
-
+        
         CypherIO.__set__('nodeToCypher', (object) => {
-                return {nodeStatements:[], dictionary:{}};
+            return {nodeStatements:[], dictionary:{}};
         });
-
+        
         store.dispatch(cypherio.importNode({"nodeID":"001", text:["text here"], type:"A"})).then((string)=>{
             expect(store.getActions()).toEqual(expectedActions_SUCCESS);
         });
     });
 })
-// //export function importEdge(_newEdge){
-//     describe('importEdge function', () => {
-//         beforeEach(()=>{
-
-//         });
-
-//         afterEach(() => {
-//             fetchMock.reset();
-//             fetchMock.restore();
-//         });
-//         it('', () => {
-//             const store = mockStore({ });
-//             const expectedActions_SUCCESS = {};
-
-//             return store.dispatch(cypherio.importEdge()).then((data)=>{
-//                 expect(data).toEqual(expectedActions_SUCCESS);
-//             });
-//         });
-//     })
-// //export function removeNode(nodeToRemove){
-//     describe('removeNode function', () => {
-//         beforeEach(()=>{
-
-//         });
-
-//         afterEach(() => {
-//             fetchMock.reset();
-//             fetchMock.restore();
-//         });
-//         it('', () => {
-//             const store = mockStore({ });
-//             const expectedActions_SUCCESS = {};
-
-//             return store.dispatch(cypherio.removeNode()).then((data)=>{
-//                 expect(data).toEqual(expectedActions_SUCCESS);
-//             });
-//         });
-//     })
-
-// //export function removeEdges(edgesToRemove){
-//     describe('removeEdges function', () => {
-//         beforeEach(()=>{
-
-//         });
-
-//         afterEach(() => {
-//             fetchMock.reset();
-//             fetchMock.restore();
-//         });
-//         it('', () => {
-//             const store = mockStore({ });
-//             const expectedActions_SUCCESS = {};
-
-//             return store.dispatch(cypherio.removeEdges()).then((data)=>{
-//                 expect(data).toEqual(expectedActions_SUCCESS);
-//             });
-//         });
-//     })
