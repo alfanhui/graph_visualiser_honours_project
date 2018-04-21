@@ -14,7 +14,7 @@ Got a Mac? `brew install node git neo4j`
 
 ## Starting up
 
-1. Run `npm start` to start development in Chrome or Firefox browser. (Other browsers may work, but are not tested)
+1. Run `npm install && npm start` to start development in Chrome or Firefox browser. (Other browsers may work, but are not tested)
 2. Run `./neo4j_start` to start neo4j
 3. [http://localhost:3000](http://localhost:3000) to access website
 4. [http://localhost:7475/browser](http://localhost:7475/browser) to access neo4j directly
