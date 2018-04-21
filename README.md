@@ -3,7 +3,7 @@
 
 # Graph Visualiser
 
-Graph visualiser is my honours project for my Computing & Cognitive Science BSc, graduating in 2018. It is a multi-user multi-touch interactive web application, that displays Graphs created by ARG-Tech, a Argument Analysis group at the University of Dundee. It was closely inspired by OVA+(http://ova.arg-tech.org/), ARG-Tech's current graph visualisation web application.
+Graph visualiser is my honours project for my Computing & Cognitive Science BSc, graduating in 2018. It is a multi-user multi-touch interactive web application, that displays Graphs created by [ARG-Tech](http://arg-tech.org/), a Argument Analysis group at the University of Dundee. It was closely inspired by [OVA+](http://ova.arg-tech.org/), ARG-Tech's current graph visualisation web application.
 
 ## How To Use
 
@@ -63,4 +63,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Many thanks to my supervisor Professor Chris Reed and ARG-Tech at the University of Dundee
+* Many thanks to my supervisor Professor [Chris Reed](http://staff.computing.dundee.ac.uk/creed/index.html) and [ARG-Tech](http://arg-tech.org/) at the University of Dundee
