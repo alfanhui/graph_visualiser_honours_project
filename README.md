@@ -51,10 +51,6 @@ Note: this will run docker versions of neo4j and node.js as a daemon process.
 * [D3](https://d3js.org/) - Helps with positioning the nodes
 * [NEO4J](https://neo4j.com/) - NoSQL Database to store data
 
-## Authors
-
-* **Stuart Huddy** *(Full design and implementation)*
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE.md)
